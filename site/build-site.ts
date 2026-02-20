@@ -45,7 +45,7 @@ const html = `<!DOCTYPE html>
 </head>
 <body>
   <div id="root"></div>
-  <script type="module" src="/${jsFile}"></script>
+  <script type="module" src="${jsFile}"></script>
 </body>
 </html>`;
 
