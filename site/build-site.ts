@@ -1,7 +1,7 @@
 /**
  * Build the React site using Bun's bundler.
  */
-import { copyFileSync, mkdirSync, cpSync } from "fs";
+import { copyFileSync, mkdirSync, cpSync, readdirSync, existsSync } from "fs";
 import { join } from "path";
 
 const SITE_DIR = import.meta.dir;
@@ -53,6 +53,22 @@ Bun.write(join(DIST_DIR, "index.html"), html);
 
 // Copy public data directory to dist
 cpSync(join(SITE_DIR, "public", "data"), join(DIST_DIR, "data"), { recursive: true });
+
+// Copy form PDFs to dist/forms/{org_id}/
+const formsSource = join(SITE_DIR, "..", "data", "forms");
+if (existsSync(formsSource)) {
+  let pdfCount = 0;
+  for (const orgId of readdirSync(formsSource)) {
+    const orgDir = join(formsSource, orgId);
+    for (const f of readdirSync(orgDir).filter((f) => f.endsWith(".pdf"))) {
+      const destDir = join(DIST_DIR, "forms", orgId);
+      mkdirSync(destDir, { recursive: true });
+      copyFileSync(join(orgDir, f), join(destDir, f));
+      pdfCount++;
+    }
+  }
+  console.log(`   PDFs: ${pdfCount} copied to dist/forms/`);
+}
 
 console.log(`✅ Site built → ${DIST_DIR}`);
 console.log(`   JS: ${jsFile} (${(result.outputs[0].size / 1024).toFixed(1)}KB)`);

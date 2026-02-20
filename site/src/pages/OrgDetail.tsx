@@ -181,13 +181,17 @@ export function OrgDetail({ orgs, orgId }: { orgs: OrgData[]; orgId: string }) {
           <div style={styles.formGrid}>
             {org.forms.map((f, i) => (
               <div key={i} style={styles.formCard}>
-                <div style={{ fontWeight: 600, fontSize: 13 }}>📄 {f.filename}</div>
+                <div style={{ fontWeight: 600, fontSize: 13 }}>
+                  <a href={`forms/${org.org_id}/${f.filename}`} target="_blank" rel="noopener" style={{ color: "#2563eb" }}>
+                    📄 {f.filename}
+                  </a>
+                </div>
                 <div style={{ fontSize: 12, color: "#6b7280" }}>
                   {f.document_type} · {f.scope} · {f.language}
                 </div>
                 {f.source_url && (
                   <a href={f.source_url} target="_blank" rel="noopener" style={{ fontSize: 11 }}>
-                    Source →
+                    Original source →
                   </a>
                 )}
                 {f.filename === org.primary_form && (
