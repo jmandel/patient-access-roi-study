@@ -1,0 +1,235 @@
+You are synthesizing findings from multiple analysis batches about best practices
+in healthcare ROI forms.
+
+Read DESIGN.md and ANALYSIS-PLAN.md for context.
+
+Findings from individual map batches are included inline below.
+
+Your task: produce a cohesive analysis of best practices observed across the entire study.
+
+- Select the most compelling examples across all batches
+- Identify common patterns — what do the best forms/processes share?
+- Organize by theme, not by batch
+- Include specific org names and quoted form features
+- Discuss what makes these practices effective for patients
+- End with actionable recommendations other organizations could adopt
+
+Write your analysis to "output.md". Aim for 1500-2500 words.
+
+<batch-summaries>
+<file name="batch-0.md">
+# Best Practices Showcase — Batch 0
+
+## Standout Organizations
+
+### Barnes-Jewish Hospital — The Gold Standard for Pathway Differentiation
+
+Barnes-Jewish Hospital (BJC HealthCare, 1,278-bed teaching hospital, St. Louis) is the clearest example in this batch of an organization that designed its records process *around* the patient. It maintains a **dedicated "Request for Access to Protected Health Information by Individual Patients"** form, completely separate from its third-party authorization form. The website's Medical Records Requests page explicitly categorizes "Individual requests" separately from "Third-party requests," so patients see an unambiguous path. The patient form uses right-of-access language ("requesting access") rather than authorization language — the correct legal framing under HIPAA § 164.524. At just one page with ~12 fields, it minimizes patient burden. The "Abstract" checkbox bundles all starred record types into a single selection — a clever shortcut for patients who want comprehensive records without checking thirteen boxes. Electronic delivery via email is explicitly offered. Fee language aligns with HIPAA's cost-based standard, and a 30-day response time is clearly stated. The only real weakness: zero fillable fields on an otherwise exemplary form.
+
+### Northwell Health (Huntington & Phelps Hospitals) — Dedicated Access Form with HIPAA Citation and Instructions
+
+Northwell Health's system-wide "Request for Access to Health Information" form (VD087) explicitly cites **HIPAA 45 CFR § 164.524** — making the patient's legal right visible on the document itself. The form offers "To me" as the first recipient option, includes 28 fillable interactive fields for digital completion, and is accompanied by a **companion instruction document with annotated visual examples** showing patients how to complete each section. Seven delivery format options — including USB flash drive, CD, secure email, unsecure email (with informed consent), fax, mail, and pickup — give patients genuine choice. This level of documentation and format flexibility is rare and reflects institutional investment in the patient experience.
+
+### Advocate Health (Good Samaritan & Aurora Medical Center - Grafton) — Portal-First with Dedicated Forms
+
+Advocate Health's patient access form opens with a prominent callout: *"Did you know you can request and access your medical records online through your patient portal? Visit: https://livewell.aah.org."* The form's first recipient option is "☐ Myself," and it requires no purpose-of-release statement for patient requests — correctly recognizing that HIPAA does not require patients to justify accessing their own records. The system maintains separate patient access and third-party authorization forms across facilities, with Spanish versions available. Five delivery methods include encrypted email — an uncommon and welcome option. This portal-first, patient-second, paper-third hierarchy is a model for how organizations should layer their access pathways.
+
+### Merit Health Central — Patient-Titled Fillable Bilingual Form
+
+This CHS-affiliated for-profit hospital in Jackson, MS stands out with a form titled **"Patient Request for Health Information"** — not "Authorization for Release." With 66 fillable interactive fields, "Myself" as the first recipient option, and a full Spanish translation with identical field count, it demonstrates that patient-centered design is achievable within a large for-profit system. The footer acknowledges: *"This Healthcare Facility recognizes a patient's right under HIPAA to access copies of his/her health information."* Five delivery methods include removable media with password protection — an unusually thoughtful security option. A Swellbox online portal provides a fully digital alternative.
+
+### Olmsted Medical Center — Technical Excellence in Form Design
+
+This independent nonprofit practice in Rochester, MN delivers a **single-page fillable PDF with 62 interactive fields** — genuinely digital-first. It is available in **English, Spanish, and Somali** — the Somali translation being notably responsive to Rochester's refugee community. The form explicitly references CFR 164.524 and includes a non-conditioning statement. Patient portal delivery is offered alongside traditional methods. For a 61-bed independent practice, this level of multilingual, digitally accessible form design is exceptional.
+
+### Broward Health — Four-Language Accessibility
+
+This government-owned system in South Florida offers its ROI form in **English, Spanish, Haitian Creole, and Portuguese** — reflecting genuine attention to the community's linguistic diversity. Combined with a Swellbox online portal and explicit CFR 164.524 citation, this represents meaningful investment in equitable access, even though the English form itself is unfortunately an image-only scan.
+
+## Patterns Across This Batch
+
+**Dedicated patient access forms are the single strongest differentiator.** The seven organizations that maintain separate patient self-access forms (Barnes-Jewish, Northwell/Huntington, Northwell/Phelps, Advocate Good Samaritan, Aurora-Grafton, Erlanger, Merit Health Central, Philadelphia FIGHT, UTMB, West Tennessee Healthcare, St. Joseph's Phoenix, Baton Rouge Clinic) consistently score higher on patient-centeredness. Yet the vast majority — roughly 35 of 47 organizations in this batch — still funnel patients through generic third-party authorization forms.
+
+**Fillable fields remain uncommon but transformative.** Organizations with 50+ fillable fields (Yale New Haven at 97, Northwestern at 79, Duke at 67, Merit Health at 66, Saratoga at 65, Ben Taub at 65, Olmsted at 62, UW Medical Center at 61, Sturdy Memorial at 59) demonstrate that interactive PDFs are technically achievable. Yet most organizations in this batch publish flat, print-and-handwrite PDFs — even when digitally authored.
+
+**System affiliation enables but doesn't guarantee quality.** Advocate Health and Northwell Health show how system-level investment creates consistent patient-centered forms across facilities. But other large systems (HCA/Riverside, Tenet/Good Samaritan WPB) deploy generic, non-fillable authorization forms system-wide, propagating mediocrity at scale.
+
+**Multilingual availability correlates with community awareness, not org size.** Olmsted Medical Center (61 beds, three languages), Broward Health (four languages), and Prevea Health (four languages including Hmong and Somali) show that smaller organizations serving diverse communities can lead on language access, while many large teaching hospitals offer English only.
+
+</file>
+
+<file name="batch-1.md">
+# Best Practices — Batch 1 Findings
+
+## Standout Organizations
+
+### Flowers Hospital (Dothan, AL) — The Gold Standard for Patient Self-Access
+This 235-bed for-profit community hospital earned the batch's only A grade (4.40). Its form is titled "Patient Request for Health Information" — not "Authorization for Release" — and lists **"Myself"** as the first recipient option, before "Personal Representative" or "Other Third Party." The 66-field fillable PDF was built in Adobe InDesign with every checkbox and text input interactive. A removable media delivery option includes a password-protection toggle — an unusually thoughtful security feature. The co-equal Spanish translation (HIM-1406S) and a Swellbox online portal round out a genuinely patient-centered experience. For a mid-size for-profit hospital in rural Alabama, this level of design investment is remarkable.
+
+### Intermountain Medical Center (Murray, UT) — Separate Forms Done Right
+Intermountain Health publishes two distinct forms: one explicitly for patients ("Patient Request for Health Information") and one for third-party release. The patient form uses question-based section headings — *"What records do you want?"*, *"How do you want your records delivered?"* — that make bureaucratic paperwork feel conversational. Its 48 fillable fields on a single page, with email submission accepted, create a genuinely digital-first pathway. This matters because patients don't have to figure out how to shoehorn their self-request into a form designed for lawyers and insurers.
+
+### Labette Health (Parsons, KS) — Digital-First from a Small Independent Hospital
+This independent nonprofit community hospital in rural Kansas offers a fully digital Formstack workflow with electronic signature, photo ID upload, and email delivery — no printing or mailing required. The form earned the batch's highest overall score (4.25/B). A "Patient/Self" option explicitly accommodates self-access. For an independent community hospital, achieving a technical accessibility score of 5 is exceptional. The only blemish: a typo in the Formstack subdomain URL ("labetteheatlh").
+
+### Providence Sacred Heart (Spokane, WA) — Enterprise-Scale Patient Centeredness
+Providence publishes a dedicated **"Patient Request for Access to Designated Record Set"** — using correct HIPAA terminology — separate from its third-party authorization. The centralized portal offers per-facility pages with Spanish translations, five delivery formats (MyChart, Email, Paper, Disc, Fax), and even offers to fax the form to other Providence facilities on the patient's behalf. The multi-facility coordination language — "we would be glad to fax a copy of this form to other facilities" — shows genuine systemic thinking about reducing patient burden.
+
+### Group Health Cooperative of South Central Wisconsin — The Quiet Overachiever
+This independent nonprofit practice in Madison publishes a dedicated "Patient Request for Health Information Form" with 49 fillable fields, encrypted email as the default delivery method, and a stated 5-business-day processing time — well under HIPAA's 30 days. The form's question-based headers (*"What records do you want?"*) and concise single-page design make it one of the most approachable in the batch. The privacy-by-design choice of defaulting to encrypted email with an opt-in for unencrypted delivery is a detail other organizations should copy.
+
+### A.O. Fox Hospital / Bassett Healthcare (Oneonta, NY) — Technical Excellence
+The Bassett network's form packs **83 fillable fields** into two pages and defaults delivery to the MyBassett patient portal — a progressive "portal-first" design choice that nudges patients toward the fastest fulfillment channel. Seven delivery format options include encrypted email with explicit risk acknowledgment, and the opt-out model for sensitive records defaults toward completeness rather than requiring patients to opt in category by category.
+
+### UCHealth University of Colorado Hospital — Fee Transparency Leader
+UCHealth stands out for explicitly stating that patient self-access is **free** via portal and free for paper up to 100 pages — a rare concrete fee commitment. The form includes a post-Dobbs reproductive healthcare warning alerting patients to litigation risks, demonstrating real-time responsiveness to the legal environment. The "Visit Record vs. Visit Summary" definitions help patients understand what they're actually requesting.
+
+## Patterns Across This Batch
+
+**Dedicated patient access forms correlate with quality.** Organizations that maintain a separate form for patient self-access (Flowers, Intermountain, Providence, GHC-SCW, Erlanger, West Tennessee, Aurora Grafton) consistently scored B or above. Those relying solely on generic third-party authorization forms clustered around C grades regardless of other strengths.
+
+**FQHCs and small hospitals punch above their weight on digital access.** Labette Health (Formstack), CrescentCare (online portal + bilingual forms), and Gritman Medical Center (63 fillable fields, email delivery) demonstrate that budget constraints don't prevent good design. Conversely, several large system-affiliated hospitals scored worse than independent critical access hospitals.
+
+**Bilingual forms are more common than expected** — roughly a third of organizations in this batch offer Spanish-language versions — but quality varies. The best (Flowers, CrescentCare) provide identical structure and field counts; the worst leave footers and contact blocks in English, undermining the translation effort.
+
+**The biggest gap is between form design and submission workflow.** Many organizations invest in fillable PDFs but still require printing for a wet signature, then faxing or mailing. The fully digital end-to-end pathway (Labette's Formstack, Swellbox portals) remains the exception rather than the rule.
+
+</file>
+
+<file name="batch-2.md">
+# Best Practices — Batch 2
+
+## Standout Organizations
+
+### Intermountain Medical Center (Murray, UT) — The Gold Standard for Patient Self-Access Forms
+
+Intermountain Health earns the highest overall score in this batch (4.4/5) and deserves it. Their dedicated "Patient Request for Health Information" form is a model other systems should study. What sets it apart is the **question-based section headings** — instead of bureaucratic labels like "Section 3: Record Type Selection," patients see conversational prompts that guide them through the form naturally. The form is a single page with 48 fillable fields and Print/Clear buttons, meaning a patient can complete the entire process digitally. Crucially, Intermountain maintains a **separate third-party authorization form**, so patients requesting their own records never encounter fields designed for attorneys or insurers. Email submission is accepted, creating a fully digital pathway from completion to delivery.
+
+**Why this matters**: When a patient sees a form designed *for them* rather than repurposed from an institutional disclosure workflow, the implicit message is "we expected you to ask for this." That framing reduces anxiety and confusion.
+
+### UAB Hospital (Birmingham, AL) — Graduated Record Packages
+
+UAB matches Intermountain's 4.4 overall score with a distinctly innovative approach: a **five-tier graduated record package system** that lets patients choose scope without needing to understand medical record taxonomy. Rather than presenting 20+ checkboxes for individual record types, UAB offers curated bundles. The form opens with a rights-affirming statement, and the website cleanly separates "Patient Request own medical records" from "Authorization" (third-party release). The dedicated patient form has 51 fillable fields with multiple electronic delivery options including email, CD, and fax.
+
+**Why this matters**: Most patients don't know the difference between an H&P and a progress note. Package-based selection respects that reality while still giving granular control to patients who want it.
+
+### Phelps Hospital / Northwell Health (Sleepy Hollow, NY) — Best Structural Design
+
+Northwell Health's dual-form architecture is the clearest example of pathway differentiation in this batch. The patient access form is titled "Request for Access to Health Information by Patient or Personal Representative" and **opens by citing HIPAA's Right of Access (45 CFR 164.524)** — framing the request as an exercise of legal rights rather than a permission grant. A "To me" checkbox makes self-access concrete. The companion instruction document provides **annotated visual examples with sample data**, dramatically lowering the completion barrier. The delivery options grid — pairing manner (mail, pickup, email, fax) with format (paper, USB, CD, secure email) — is the most structured and clear presentation of delivery choices in the batch.
+
+**Why this matters**: When a form cites the patient's legal right of access, it shifts the power dynamic. The patient is exercising a right, not asking a favor.
+
+### Samaritan Lebanon Community Hospital (Lebanon, OR) — Rare EHI Export Form
+
+Samaritan Health Services, a 25-bed community hospital's parent system, offers something almost no other organization in the study provides: a **dedicated "Computer Readable EHI Export Request" form** in both English and Spanish. This form exists specifically for patients who want their records in a machine-readable format — a right established by the 21st Century Cures Act. The standard ROI form also commits to **"No Charge" for initial patient requests** and offers six delivery formats including MyChart and email.
+
+**Why this matters**: The EHI export form demonstrates awareness of modern interoperability requirements that most health systems — including those many times Samaritan's size — have not yet translated into patient-facing processes.
+
+### Cherokee Health Systems / River Valley Health (Knoxville, TN) — Bilingual Instructional Guides
+
+This independent FQHC provides **color-coded instructional guides** that overlay plain-language annotations on the authorization form, explaining each section in accessible terms. Both the form and the guides are available in English and Spanish — not bilingual summaries, but complete standalone documents. The guides translate bureaucratic headers like "Release Information From" into clear instructions like "You are authorizing River Valley Health to obtain records from the following healthcare provider."
+
+**Why this matters**: For an FQHC serving potentially underserved populations, the investment in annotated bilingual guides demonstrates genuine commitment to comprehension — not just translation, but explanation.
+
+### Wayne County Hospital (Monticello, KY) — Small Hospital, Big Innovation
+
+This 25-bed critical access hospital in rural Kentucky punches well above its weight. It offers a **parallel online web form** at `/Release-of-Health-Form` alongside its PDF — rare for any critical access hospital. The form is titled "Request to Review/Receive Medical Information" with "self" listed first, and it prints Kentucky's **KRS 422.317 free-copy disclosure** directly on the form — unusually transparent fee communication. Email is offered as a delivery option.
+
+**Why this matters**: Wayne County proves that patient-centered design isn't a function of budget or bed count. A 25-bed rural facility can offer an online submission pathway when patient access is prioritized.
+
+### Fallon Medical Complex (Baker, MT) — Seven Delivery Formats from Rural Montana
+
+This 25-bed critical access hospital in eastern Montana offers **seven record delivery formats**: paper mail, USB drive, CD, electronic fax, in-person review, unencrypted email with informed consent, and patient portal access. The form explicitly states patients may receive their **first copy free**. For a hospital serving one of the most remote communities in the continental United States, this breadth of delivery options is remarkable.
+
+## Patterns Across This Batch
+
+The clearest signal is that **dedicated patient access forms correlate with the highest scores** — Intermountain, UAB, Phelps/Northwell, and UTMB all maintain separate patient and third-party forms and all score B or above. Only 5 of ~45 organizations in this batch differentiate the two pathways. The most innovative practices come from unexpected places: a 25-bed Kentucky hospital offers online submission, a rural Montana facility offers seven delivery formats, and an Oregon regional system publishes an EHI export form. Teaching hospitals and major systems have technical polish (fillable fields, multiple languages) but often lack the structural decision to create a dedicated patient pathway. The best forms share three traits: they use plain language, they were designed for the patient (not repurposed from institutional workflows), and they offer electronic alternatives at every step.
+
+</file>
+
+<file name="batch-3.md">
+# Batch 3 — Best Practices Showcase
+
+## Standout Organizations
+
+### Valleywise Health Medical Center — Dedicated Patient Access Form
+**Phoenix, AZ · Government-owned community hospital · 204 beds**
+
+Valleywise is the only organization in this batch that earned a Level 5 patient-centeredness score, and for good reason: it maintains a **dedicated "Patient Request for Access to Protected Health Information" form (Form 45643)** that is clearly separate from its third-party authorization form (Form 43439). This is the fundamental design choice that most organizations get wrong — conflating patient self-access with third-party release. Valleywise's form is bilingual English/Spanish as a single integrated document, appropriate for Phoenix's demographics. It offers six delivery formats including MyChart, CD, USB, email, fax, and paper, and states a 30-day response timeline. The form also includes email encryption transparency: encrypted delivery is the default, with an informed opt-out option for unencrypted email. The SSN field and lack of fillable PDF fields are weaknesses, but the structural decision to center patient access as a distinct right is what other organizations should emulate.
+
+### Samaritan Health Services (Lebanon Community Hospital) — EHI Export Form and Fee Transparency
+**Lebanon, OR · Nonprofit community hospital · Regional system**
+
+Samaritan stands out for two rare innovations. First, it offers a **dedicated "Computer Readable EHI Export Request" form** — a separate document specifically for patients wanting machine-readable health data, available in both English and Spanish. This is exceptionally uncommon and demonstrates genuine 21st Century Cures Act awareness. Second, its fee disclosure is exemplary: the standard authorization form explicitly states **"Initial Patient Request: No Charge"** and **"Continuing Care: No Charge,"** with fees applying only to third-party requests. This three-tier structure gives patients immediate cost certainty — a stark contrast to the vague "there may be a fee" language used by most organizations in this batch. Samaritan also provides bilingual forms across all document types, six delivery format options (including MyChart and email), and email-based form submission.
+
+### Memorial Healthcare System — Trilingual Forms and Fast Processing
+**Hollywood, FL · Government-owned regional system · 721 beds**
+
+Memorial Healthcare System provides ROI forms in **English, Spanish, and Haitian Creole** — the only trilingual offering in this batch, reflecting South Florida's linguistic diversity. It also commits to a **two-business-day processing time**, dramatically faster than the HIPAA-allowed 30 days and the best turnaround commitment observed. The form offers five delivery methods including e-Delivery and MyChart. While the form itself is non-fillable and uses generic authorization framing, these community-responsive choices demonstrate that a government-owned hospital can lead on accessibility.
+
+### TriStar Centennial / HCA Healthcare — Technical Form Excellence
+**Nashville, TN · For-profit community hospital · HCA system**
+
+The HCA authorization form used at TriStar Centennial is a technical standout: a **single-page PDF with 52 fillable fields** in both English and Spanish, with a lean 170 KB file size. It offers four delivery formats including encrypted email and a forward-looking **USCDI Release Request option** for structured health data interoperability — rare on any ROI form. The SSN field is explicitly marked optional. Combined with Swellbox and MyHealthONE portal alternatives, this represents one of the most technically complete form ecosystems in the batch.
+
+### Owensboro Health — EHI Export with Detailed Explanation
+**Owensboro, KY · Independent nonprofit · 477 beds**
+
+Owensboro Health's form includes an **EHI Export option with a detailed explanation** covering all electronic protected health information across the organization and named Community Connect Partners. It offers **seven format options** (Paper, MyChart, EHI Export, Email, Fax, CD, USB) and six delivery methods. A dedicated two-page companion instruction document walks patients through each section in plain language, and a help phone number is provided for assistance — thoughtful touches that address health literacy barriers.
+
+### Wayne County Hospital — Dual Pathways from a 25-Bed CAH
+**Monticello, KY · Independent nonprofit critical access hospital · 25 beds**
+
+Wayne County Hospital punches far above its weight. This tiny rural hospital offers both a **downloadable PDF and an online HTML web form** — an exceptional dual-pathway approach for a 25-bed facility. The form prominently states that **"Based on KRS 422.317 a first copy of a patient's record will be provided free"** — on-form fee transparency that larger systems routinely omit. It also offers email as a delivery method, reducing barriers for rural patients who may live far from the facility. The form is titled "Request to Review/Receive Medical Information" rather than the typical third-party "Authorization for Release," signaling a patient-access-first orientation.
+
+## Patterns Across This Batch
+
+The strongest differentiator in this batch is whether an organization treats patient self-access as a **distinct right** or merely a checkbox on a third-party release form. Only Valleywise and St. Joseph's (Phoenix) maintain truly separate patient access forms, and only Samaritan offers a dedicated EHI export pathway. Organizations that invested in **bilingual or trilingual forms** (Memorial, TriStar/HCA, Erie, Samaritan, Nevada Health Centers) tended to score higher overall, suggesting that language access correlates with broader patient-centeredness. The most innovative features — EHI Export options, USCDI references, fee transparency — appeared across facility types and sizes, from 25-bed CAHs to major teaching hospitals, suggesting that best practices are driven by organizational intent rather than resources.
+
+</file>
+
+<file name="batch-4.md">
+# Batch 4 — Best Practices Showcase
+
+## Standout Organizations
+
+### Flowers Hospital (Dothan, AL) — The Gold Standard in This Batch
+**Grade: A | For-profit community hospital, Community Health Systems**
+
+Flowers Hospital earned the highest score in this batch (4.65) by combining nearly every best practice into a single coherent experience. The form is titled "Patient Request for Health Information" — not "Authorization to Disclose" — with "Myself" as the first recipient option, signaling that patient self-access is the primary use case. The 66-field fillable PDF allows full digital completion, and a co-equal Spanish translation (HIM-1406S) mirrors the English form field-for-field. A Swellbox online portal provides an alternative fully digital pathway. Delivery options include removable media with patient-chosen password protection. This is a for-profit CHS facility in rural Alabama doing what many academic medical centers do not: treating patient access as a first-class workflow.
+
+### Group Health Cooperative of South Central Wisconsin — Patient-Centered by Design
+**Grade: B (4.4) | Independent nonprofit physician practice, Midwest**
+
+GHC-SCW maintains separate forms for patient self-access and third-party release — a structural best practice few organizations implement. The dedicated "Patient Request for Health Information Form" is a single-page fillable PDF with 49 interactive fields and question-based section headers like plain-English prompts. Delivery defaults to encrypted email (privacy by design), with MyChart, CD, USB, and paper also available. The form commits to a **5-business-day turnaround** — far exceeding HIPAA's 30-day requirement. For a small cooperative practice, this level of intentional design is remarkable.
+
+### Huntington Hospital / Northwell Health — Two-Form Architecture
+**Grade: B | Major nonprofit community hospital, Northeast**
+
+Northwell Health distinguishes itself with a rare two-form system: a general third-party authorization and a dedicated "Request for Access to Health Information by Patient or Personal Representative" that opens with an explicit citation of HIPAA 45 CFR § 164.524. The patient form presents "To me" as the first recipient option and includes 28 fillable fields. Companion instruction documents with annotated examples ("Jane Patient," "Dr. Jane Jones at 300 Northwell Drive") are a genuine accessibility aid. Delivery options span seven methods including USB flash drive and secure/unsecure email with informed consent. The main gap — no submission instructions on any form — is a significant miss on an otherwise strong package.
+
+### Labette Health (Parsons, KS) — Digital-First Community Hospital
+**Grade: B | Independent nonprofit community hospital, Midwest**
+
+This small Kansas community hospital leapfrogged peers with a Formstack online form featuring electronic signature, photo ID upload for identity verification, and email delivery of records. The form explicitly lists "Patient/Self" as the first relationship option. For a facility of this size, the fully digital no-paper workflow — with 15+ specific record-type checkboxes and sensitive-information exclusion options — is genuinely innovative. The approach shows that digital-first design is not limited to large systems with big IT budgets.
+
+### Owensboro Health (Owensboro, KY) — EHI Export and Plain-Language Instructions
+**Grade: ~B | Independent nonprofit regional system, South**
+
+Owensboro Health stands out for two features rarely seen together. First, it explicitly offers **EHI Export** as a delivery format — naming Community Connect partner organizations and specifying TSV format — putting it well ahead of industry norms on interoperability. Second, a dedicated two-page plain-language instruction document walks patients through every section of the form, closing with a direct help phone number. The instruction sheet advises: "If you are wanting to receive your records check the box labeled 'Me.'" Seven format choices and six delivery methods (including encrypted/unencrypted email with clear risk disclosure) round out a comprehensive offering.
+
+### Advocate Good Samaritan Hospital — Portal-First Messaging
+**Grade: B (4.0) | Major nonprofit community hospital, Midwest**
+
+Advocate Health's dedicated "Patient Request for Health Information" form places a prominent LiveWell patient portal callout at the top, directing patients to self-service digital access before the paper process even begins. The form lists "Myself" as the first recipient and offers five delivery methods including encrypted email and portal. At 22+ record-type checkboxes on a single concise page, it balances comprehensiveness with usability. The November 2025 revision date and companion Spanish-language authorization show active maintenance.
+
+## Patterns Across This Batch
+
+The clearest signal in this batch is that **dedicated patient access forms correlate with better outcomes** — organizations that separate patient self-access from third-party authorization (Flowers, GHC-SCW, Northwell, Advocate, Providence, UAB) consistently score higher on patient-centeredness. Most organizations (roughly 75% of this batch) still funnel patients through generic third-party authorization forms, forcing patients to write their own name in the "recipient" field of a form designed for attorneys and insurers.
+
+**Facility type does not predict quality.** The top performer is a for-profit community hospital; the worst experiences came from organizations of all types. Small critical access hospitals (Labette, Myrtue) sometimes outperform major teaching hospitals on digital accessibility. **Bilingual availability** appeared across all facility sizes — from Prevea Health's four-language offering (English, Hmong, Somali, Spanish) reflecting Wisconsin demographics, to small FQHCs in Texas and Georgia.
+
+**Fillable PDFs remain uncommon but transformative.** Only about a quarter of organizations in this batch offer any fillable fields, yet those that do (Flowers at 66 fields, Yale New Haven at 97, Providence at 72, GHC-SCW at 49) deliver dramatically better digital experiences. The gap between a born-digital PDF with zero fillable fields and one with interactive fields represents the single highest-impact improvement most organizations could make.
+
+</file>
+</batch-summaries>

@@ -1,42 +1,40 @@
-# Batch 3: The Wrong Form Problem
+# Batch 3: The Wrong Form Problem — Access Pathway Classification
 
-*Note: Due to a symlink collision in the batch inputs directory (all orgs' files share the same filename), this analysis reads from the synthesis directory directly, covering the full 190-org dataset rather than only the ~8 orgs assigned to this batch.*
+## Tally (70 organizations)
 
-## Classification Tally
-
-| Pathway Type | Count | Pct |
+| Classification | Count | % |
 |---|---|---|
-| **Generic-only** (third-party authorization form, no patient-specific pathway) | 135 | 71% |
-| **Both** (dedicated patient form + separate generic authorization) | 34 | 18% |
-| **Portal-only** (online portal, no downloadable PDF form) | 13 | 7% |
-| **Phone/in-person only** (no form or portal found) | 7 | 4% |
-| **Dedicated-only** (patient access form with no generic counterpart) | 1 | <1% |
-| **Total** | 190 | |
+| **GENERIC only** | 54 | 77% |
+| **BOTH** (dedicated + generic) | 7 | 10% |
+| **DEDICATED** patient access form | 1 | 1% |
+| **GENERIC + portal accommodation** | 8 | 11% |
 
-The central finding: **seven out of ten organizations offer patients only a generic third-party authorization form** when the patient wants to request their own records under HIPAA's Right of Access (§ 164.524). Only 18% maintain a separate, dedicated patient access pathway.
+Only **8 of 70 organizations (11%)** offer a dedicated patient access form — either standalone or alongside a generic authorization. The remaining **62 (89%)** funnel patients through a third-party release authorization, sometimes softened by a portal pathway or conditional form sections, but never through a form designed around individual access rights.
 
-## What Makes the Generic Form a Poor Fit
+## Organizations With Dedicated Patient Access Forms
 
-The mismatch creates concrete problems for patients:
+Seven organizations maintain **separate forms** for patient self-access and third-party release (BOTH): **Phelps Hospital** (Northwell Health), **Providence Sacred Heart**, **Providence St. Vincent**, **Valleywise Health**, **Barnes-Jewish Hospital**, **Philadelphia FIGHT Community Health Centers**, and **AdventHealth Central Texas**. One organization — **Flowers Hospital** — offers a single form explicitly designed around patient self-access ("Patient Request for Health Information" with "Myself" as the first recipient option), earning DEDICATED classification.
 
-**Wrong framing.** Generic forms are titled "Authorization for Release of Health Information" or "Request for Release of Information" — language that frames the patient as authorizing disclosure to someone else, not exercising their own legal right. At **Alabama Medical Group**, the form uses "To Release To" / "To Obtain From" headers designed for inter-provider transfers. At **Desert Regional Medical Center**, "Continuation of Care" is the default/first purpose option, burying "At the request of the patient" further down.
+These forms share recognizable design choices: titles framed as "Request for Access" rather than "Authorization for Release," no requirement to name a third-party recipient, explicit citation of HIPAA § 164.524, and delivery format options (MyChart, email, CD) presented as first-class features. Barnes-Jewish's form is one page with 12 fields; Providence Sacred Heart's has 45 fillable fields across 2 pages. Both prove that a dedicated form can be simpler *and* more functional than the generic alternative.
 
-**Self-as-recipient confusion.** On a generic form, the patient must enter their own name and address in a "Recipient" field designed for a third party. **Riverside Community Hospital**'s HCA template has a checkbox distinguishing "At the request of the individual" from "Other 3rd party recipient," but the form still requires the patient to fill in their own name as recipient — with no guidance for this use case. **Colquitt Regional Medical Center**'s form asks for recipient "Name" and "Address" with no explanation of what a self-requesting patient should enter.
+## The Generic Form Experience: What Patients Actually Encounter
 
-**Irrelevant purpose fields.** Generic forms offer purpose checkboxes like "Legal," "Insurance," "Evaluation & Treatment," and "Other." A patient wanting their own records must often select "Other" and write in an explanation — or select "Personal" if it exists. At **ENT & Allergy Associates**, the 17-year-old Word document lists only third-party scenarios; a patient must navigate to Item 8 and list themselves as the person "to whom this information will be sent."
+When a patient at one of the 54 generic-only organizations wants their own records, the form treats them as a third party requesting someone else's information. The mismatch manifests in several concrete ways:
 
-**Missing rights information.** None of the 135 generic-only forms reference HIPAA § 164.524 or inform patients of their 30-day response right, fee limits for patient access, or the distinction between a Right of Access request (which cannot be denied on most grounds) and a third-party authorization (which can be revoked or conditioned). **Yale New Haven Hospital**'s form cites § 164.508 (authorization requirements) but never mentions § 164.524. **Massachusetts General Hospital** follows the same pattern — "Personal" is a purpose checkbox, but the form never acknowledges the patient's legal right.
+**Self-referential absurdity.** Lane County Hospital's form asks patients to "authorize [the hospital] to disclose... to [name]" — requiring the patient to list themselves as both authorizer and recipient. Millinocket Regional Hospital's form has "Name of Institution or Person" fields designed for inter-facility transfers. A patient must write their own home address in a field designed for a doctor's office.
 
-## Contrast: Organizations That Get It Right
+**Irrelevant fields and legal language.** At Good Samaritan Medical Center, patients encounter raw mail-merge placeholders (`«PatientNumber»`, `«PatientName»`) and a broken internal reference to a Privacy Office address "listed below" that doesn't exist. Troy Regional Medical Center's form includes a broad liability waiver ("discharge the facility from any and all liabilities") — language designed for releasing records to third parties, not for exercising a fundamental right. Hillcrest Hospital Claremore bundles a blanket liability release into the authorization itself.
 
-The 34 "Both" organizations show what good looks like:
+**Purpose fields that shouldn't exist.** HIPAA does not require patients to state *why* they want their own records. Yet Carle BroMenn, DHR Health, Adena Regional, and dozens of others require a "purpose of disclosure" — with options like "Insurance," "Legal," "Continuing Care," and "Personal" listed as coequals. At Community Health Center of Central Missouri, the FROM/TO structure is so provider-transfer-oriented that patients can't easily determine which fields apply to them.
 
-- **Advocate Good Samaritan Hospital** maintains a separate "Patient Request for Health Information" form with "Myself" as the first recipient option and a prominent portal callout. The third-party authorization is a companion document, not the default pathway.
-- **Valleywise Health** offers Form 45643 ("Patient Request for Access to Protected Health Information"), which omits the recipient field, purpose field, and expiration clause entirely — all appropriate for a patient self-access request. Form 43439 handles third-party disclosures separately.
-- **Flowers Hospital** titles its primary form "Patient Request for Health Information," lists "Myself" first among recipient options, and provides 66 fillable fields on a single page with a Spanish equivalent.
+**Wrong fee frameworks.** SSM Health St. Mary's Madison mentions charges for "viewing" records — HIPAA prohibits charging patients to inspect their own records. Lincoln Hospital cites a WAC per-page fee schedule ($26 base + $1.17/page) that likely exceeds HIPAA's cost-based limits for patient access. These fee structures exist because the form was designed for third-party release, where different (higher) fee rules apply.
 
-These organizations score 4–5 on patient-centeredness, compared to a near-universal score of 3 (and occasionally 2) for generic-only organizations.
+## Portal Accommodations
 
-## Systemic Pattern
+Eight organizations offer generic PDF forms but partially compensate through portal pathways or conditional form design. **Ben Taub Hospital** (Harris Health) uses conditional sections marking fields as "not required" for patient self-access — a thoughtful accommodation within a generic form. **UCHealth** includes an explicit "If released to self" section with four delivery options and free pricing. **Labette Health** and **The Valley Hospital** direct patients to online portals (Formstack and identity-verified wizard, respectively) as the primary pathway, with generic PDFs as fallbacks. **Bayshore Medical Center**, **Bon Secours St. Mary's**, **Piedmont Medical Center**, and **Springhill Medical Center** offer Swellbox/Datavant portals alongside generic PDFs.
 
-The wrong-form problem spans every organization type — major academic medical centers (**Duke**, **Yale New Haven**, **Mass General**, **Northwestern Memorial**), large systems (**HCA**, **Tenet**, **Mercy Health**, **SSM Health**), small critical-access hospitals, FQHCs, and physician practices alike. It is not a function of resources or sophistication; it reflects a default assumption that all records requests are third-party disclosures, with patient self-access as an afterthought.
+These portals mitigate the wrong-form problem at the process level, but patients who download the PDF — still linked prominently on most medical records pages — encounter the same generic authorization mismatch.
+
+## The Systemic Pattern
+
+The wrong-form problem is not about bad actors. It reflects an industry default: organizations purchase or template a single all-purpose ROI authorization form and use it for every disclosure scenario. The eight organizations with dedicated forms demonstrate that the solution is straightforward — a one-page form titled "Request for Access," citing § 164.524, with no recipient field, no purpose requirement, and delivery format checkboxes. Philadelphia FIGHT, a small FQHC, manages this. Barnes-Jewish, a major teaching hospital, manages this. The 89% that don't are not facing a resource constraint — they simply haven't recognized patient self-access as a distinct use case worth designing for.

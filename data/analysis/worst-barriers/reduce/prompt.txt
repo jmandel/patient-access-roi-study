@@ -1,0 +1,302 @@
+You are synthesizing findings from multiple analysis batches about barriers
+patients face when requesting their health records.
+
+Read DESIGN.md and ANALYSIS-PLAN.md for context.
+
+Findings from individual map batches are included inline below.
+
+Your task: produce a cohesive analysis of the worst barriers observed across the entire study.
+
+- Organize by barrier type, not by batch or organization
+- For each barrier type, cite the most egregious specific examples
+- Assess whether barriers seem accidental (incompetence/neglect) or structural
+- Discuss the cumulative impact on patients trying to exercise their HIPAA rights
+- End with the most critical issues that need attention
+
+Write your analysis to "output.md". Aim for 1500-2500 words.
+
+<batch-summaries>
+<file name="batch-0.md">
+# Worst Barriers Deep Dive — Batch 0
+
+## Most Significant Barriers to Patient Record Access
+
+### 1. Canton-Potsdam Hospital (NY) — Form Effectively Unfindable Online
+**Overall: D (1.95)**
+
+Canton-Potsdam Hospital, a regional nonprofit in upstate New York affiliated with Rochester Regional Health, has no ROI form on any live website. The only forms recovered were retrieved via the Wayback Machine from the defunct St. Lawrence Health System domain. The parent system's Swellbox/Datavant portal explicitly excludes this facility. A patient's only current option is to call (315) 769-4386 and hope for guidance. This is the most severe findability failure in the batch — a complete absence of any online records request pathway. This appears to be a casualty of a system acquisition that orphaned the facility's patient resources.
+
+### 2. JPS Health Network (TX) — Potentially Illegal Fees and an Obsolete Form
+**Overall: D (2.45)**
+
+JPS Health Network, a major government-owned hospital in Fort Worth, charges a **$75 flat fee for electronic delivery** and a **$30 minimum for the first 10 pages** — fee levels that likely exceed HIPAA's reasonable, cost-based limits for patient access requests. HHS/OCR has taken enforcement actions against similar fee structures. The ROI form itself is a 2018 image-only scan with no text layer, no fillable fields, and no accessibility for screen readers. Most damningly, JPS demonstrated the capability to produce modern fillable PDFs with its 2025 HIE forms — meaning the outdated ROI form reflects neglect, not inability. This looks like a pattern of institutional indifference to patient access rights.
+
+### 3. Troy Regional Medical Center (AL) — A Decade of Neglect
+**Overall: Not scored in batch data (synthesis only)**
+
+Troy Regional's sole ROI form is a February 2015 image-only scan hosted on a defunct legacy website with no link from the current site. The form requires a **witness signature**, includes a **broad liability waiver**, warns that **"all fields MUST be completed"** or the authorization is invalid, and provides **no submission instructions**. The anti-conditioning language contradicts itself in consecutive sentences. A patient navigating the current website would almost certainly fail to find this form. This represents the deepest neglect of patient access in the batch — a small government hospital that apparently hasn't revisited its records process in over a decade.
+
+### 4. Mayers Memorial Hospital District (CA) — Mislabeled and Inaccessible
+**Overall: D (2.35)**
+
+This small critical access hospital in rural California mislabels its ROI form as "Disclosure of Privacy Practices" on its website, hiding it from patients searching for a records release form. The form itself is an image-only scan with no text layer, no fillable fields, and no submission instructions. The Medical Records page has no form link at all. The opening line — "Failure to provide all information requested may invalidate this authorization" — is designed to intimidate rather than assist. For a rural hospital where patients may live far from the facility, this paper-only, instruction-free process is a serious barrier.
+
+### 5. Cone Health (NC) — Bundled Sensitive-Category Consent with No Opt-Out
+**Overall: C (2.9)**
+
+Cone Health, a regional nonprofit teaching hospital in Greensboro, bundles consent for mental health, substance abuse, HIV/AIDS, genetic, and reproductive health records into its authorization — signing the form authorizes release of all sensitive categories regardless of what was actually requested, with **no opt-out mechanism**. This is a meaningful autonomy violation for patients who want general medical records but wish to protect sensitive information. The form also lacks submission instructions (no address, fax, or email) and offers two separate ROI forms for hospital vs. medical group with no guidance on which to use. The medical group form embeds a liability waiver as a condition of authorization.
+
+### 6. AdventHealth Central Texas — Witness Requirement for All Requests
+**Overall: C (2.9)**
+
+AdventHealth Central Texas explicitly **requires a witness signature for all records requests** — a requirement with no basis in HIPAA and a practical barrier for patients completing the form at home. The form also imposes a 90-day maximum authorization expiration that conflates patient access with third-party authorization timelines, and the system-wide form cites Illinois law at a Texas facility. The bundled all-or-nothing sensitive information disclosure offers no granular opt-out for mental health, substance abuse, or HIV/AIDS records.
+
+### 7. Abbeville Area Medical Center (SC) — Two Witnesses Required
+**Overall: C (synthesis only)**
+
+This small critical access hospital in rural South Carolina requires **two witness signatures** marked as mandatory — an unusually burdensome requirement with no HIPAA basis. The form also bundles sensitive-information consent with no opt-out and provides no submission instructions. A patient must print the form, handwrite it, find two witnesses, then figure out independently where to send it.
+
+### 8. Black River Memorial Hospital (WI) — Screen Reader Inaccessible
+**Overall: C (3.1)**
+
+This critical access hospital's PDF renders virtually all text as **970 embedded images**, making it completely inaccessible to screen readers and assistive technology. Combined with zero fillable fields and no submission instructions, a visually impaired patient would face an insurmountable barrier. The form provides no documented way to return the completed authorization — no address, no fax number, no email.
+
+### 9. Decatur County Hospital (IA) — SSN Collection and Blank Fee Amounts
+**Overall: C (synthesis only)**
+
+This rural critical access hospital collects **Social Security Numbers** on its ROI form — unnecessary for patient identification and a significant identity-theft risk on documents that may be faxed or mailed. The fee disclosure states patients "may impose a fee of [blank]," asking patients to agree to unspecified costs before submitting. The form was last reviewed in March 2018, predating the 21st Century Cures Act information blocking rules.
+
+### 10. Grady Memorial Hospital (GA) — Submission Limited to Physical Delivery
+**Overall: C (synthesis only)**
+
+Atlanta's major public safety-net hospital limits form **submission to in-person drop-off and postal mail only** — no fax, no email, no portal. For a safety-net hospital serving vulnerable populations who may lack transportation or mailing supplies, this is a significant access barrier. The form also includes a broad liability waiver and requires a government-issued photo ID, which may burden patients without such documentation.
+
+## Summary of Barrier Patterns
+
+Three systemic patterns emerge across this batch:
+
+**Institutional neglect, not intentional obstruction.** The worst barriers — unfindable forms, decade-old scans, missing submission instructions — stem from organizations that simply haven't invested in their patient access infrastructure. Canton-Potsdam, Troy Regional, and Mayers Memorial all appear to have let their records processes atrophy through system transitions, website redesigns, or simple inattention. This is incompetence and indifference, not active discouragement.
+
+**Paper-era thinking persists in digital distribution.** The vast majority of organizations in this batch (roughly 75%) publish non-fillable PDFs despite being digitally authored documents. They post forms online but haven't adapted them for online completion — creating a hybrid workflow (download digitally, print, handwrite, scan, fax) that is worse than either a pure paper or pure digital process. JPS Health Network epitomizes this: capable of producing modern fillable PDFs but choosing not to for its patient-facing ROI form.
+
+**Sensitive information handling is a compliance minefield.** Organizations split between two problematic extremes: bundling all sensitive categories into a single all-or-nothing consent (Cone Health, AdventHealth Central Texas, Abbeville) or requiring completely separate forms for mental health records (Heartland Community Health Center). Neither approach respects patient autonomy. The best practice — granular per-category opt-in/opt-out checkboxes — is present at some organizations but far from universal.
+
+</file>
+
+<file name="batch-1.md">
+# Worst Barriers to Patient Record Access — Batch 1
+
+## 1. Troy Regional Medical Center (AL) — Effectively Unfindable Form on a Defunct Website
+
+Troy Regional's ROI form exists only on a defunct legacy website (trmc.fasthealth.com) with no link from the current site, which itself returns 502 errors on its Patient Info page. The form is a decade-old image-only scan with zero fillable fields, no submission instructions, and a mandatory liability waiver bundled into the authorization. It also demands that "ALL fields MUST be completed or authorization is invalid" — exceeding HIPAA requirements. A witness signature is required. This is the worst overall experience in the batch (grade D, 1.75/5). A patient trying to request their records online would simply fail. This appears to be institutional neglect rather than a deliberate barrier, compounded by a website migration that abandoned the records process entirely.
+
+## 2. JPS Health Network (TX) — Potentially Excessive Fees and Contradictory Capabilities
+
+JPS charges $30 for the first 10 pages and a $75 flat fee for electronic delivery — amounts that likely exceed HIPAA's cost-based standard for patient access. The fee schedule makes no distinction between patient self-access and third-party requests. Meanwhile, the core ROI form is a seven-year-old image-only scan, even though JPS's 2025 HIE forms prove the organization can produce modern fillable PDFs with encrypted email submission. The refusal to accept electronic submission of the ROI form ("It is not possible to accept electronic transfer of this form at this time") is a deliberate choice, not a capability limitation. This pattern suggests the records access process has been deprioritized while other digital initiatives advanced.
+
+## 3. Cottage Hospital (NH) — Cloudflare-Blocked Website, No Submission Instructions
+
+Cottage Hospital's website is protected by Cloudflare Turnstile, which blocked all automated access including Google's cache. Forms were recoverable only through the Wayback Machine. Neither form includes submission instructions — no address, fax, email, or department name. A witness signature line and confusing remuneration fields (relevant only to sale-of-PHI scenarios) add unnecessary friction. The better of the two forms is buried on page 2 of a 12-page new patient packet with an unintuitive filename. This combination of technical barriers and missing guidance means a patient would need to call the hospital just to learn basic process steps.
+
+## 4. EyeSouth Partners (GA) — Fragmented, Affiliate-Dependent Access
+
+EyeSouth Partners provides no patient-facing records request process at the parent organization level. Patients must identify the correct affiliate practice, find its website, and locate a generic authorization form — a multi-step treasure hunt. One affiliate's form (Georgia Retina) charges a flat $25 fee without distinguishing patient access, asks for a reason for release (not required by HIPAA), and hasn't been updated since 2016. The primary form has no expiration date. This fragmentation appears structural — a PE-backed practice rollup that consolidated billing but not patient services.
+
+## 5. Saratoga Hospital / Albany Med (NY) — $0.75/Page Fee Without Access Distinction
+
+Saratoga Hospital's system-wide form discloses a $0.75/page copying fee applied uniformly, without distinguishing patient access requests (which HIPAA limits to cost-based fees) from third-party release. For a typical hospital record of 50–100+ pages, this could mean $37–$75+ for records a patient has a legal right to receive at cost. The form also lacks any reference to HIPAA's Right of Access or patient rights. This appears to be a systemic pattern across the Albany Med Health System rather than an isolated oversight.
+
+## 6. Colquitt Regional Medical Center (GA) — Image-Only Scan with No Submission Path
+
+The sole ROI form is a scanned image with no text layer, no fillable fields, and complete inaccessibility to screen readers. More critically, the form contains no submission instructions whatsoever — no fax, no address, no email, no department name. A witness signature line may mislead patients into thinking a witness is mandatory. For a government-owned community hospital, the absence of any digital accessibility represents a significant gap for patients with disabilities.
+
+## 7. Nemaha Valley Community Hospital (KS) — SSN Collection on a Decade-Old Scan
+
+This small critical access hospital's form prominently requests a Social Security Number — unnecessary for records release and a significant identity theft risk on faxable documents. The form is over a decade old (January 2014), is an image-only scan with no fillable fields, and provides no submission instructions. The very low per-page fee ($0.03) is a bright spot, but the SSN collection and missing submission guidance are concerning patterns for rural facilities with limited IT resources.
+
+## 8. UF Health Shands (FL) — $1.00/Page Fee Applied Uniformly
+
+UF Health discloses a $1.00/page fee without distinguishing patient access from third-party release. For patient self-access requests, HIPAA limits fees to reasonable cost-based amounts — a flat per-page rate of this magnitude likely exceeds that standard. Combined with zero fillable fields across all four form versions and no dedicated patient access pathway, this creates both financial and procedural barriers at a major academic medical center.
+
+## Summary of Barrier Patterns
+
+Across this batch of 50+ organizations, several barrier patterns recur:
+
+- **Missing submission instructions** (Colquitt, Cottage Hospital, U.S. Dermatology Partners, Valley Medical Group, Rio Grande Hospital, and others): Forms tell patients what to fill out but not where to send them — a basic usability failure.
+- **Image-only scans and non-fillable PDFs**: The majority of forms lack fillable fields, even when digitally authored. Organizations like JPS demonstrate this is a choice, not a limitation.
+- **Undifferentiated fees**: Saratoga ($0.75/page), UF Health Shands ($1.00/page), JPS ($75 electronic), and EyeSouth ($25 flat) apply third-party fee schedules to patient access requests without acknowledging HIPAA's cost-based cap.
+- **SSN collection**: Multiple organizations (Nemaha Valley, Fisher-Titus, Lane County, Rio Grande, Ascension Saint Thomas Rutherford) request Social Security Numbers unnecessarily, creating identity theft risk.
+- **Witness requirements**: Troy Regional, Bath Community, Lane County, Southwell, and Community Health Center of Central Missouri require or imply witness signatures — a barrier HIPAA does not mandate for patient access.
+- **Website/form abandonment**: Troy Regional and Canton-Potsdam Hospital have forms available only on defunct legacy websites, reflecting organizational transitions that left patient access in a gap.
+
+The strongest performers (Providence Sacred Heart, GHC-SCW, Aurora/Advocate Health) distinguish themselves by offering dedicated patient access forms separate from third-party authorization — a structural choice that the majority of organizations in this batch fail to make.
+
+</file>
+
+<file name="batch-2.md">
+# Worst Barriers — Batch 2
+
+## 1. Consensus Health: Functionally Nonexistent Online Access (D grade, 2.05/5)
+
+Consensus Health, a for-profit physician practice network in New Jersey, has no patient forms page, no medical records section, and no ROI form linked from its website. The only form found was an unbranded, generic one-page PDF on a third-party PatientPop CDN — discovered only through extensive searching. That form has **no submission instructions** (no address, fax, email, or portal link), **no organizational branding**, and is **missing required HIPAA authorization elements** (no expiration date, no revocation language, no disclosing entity). A patient who finds this form has no idea it belongs to their provider and no way to return it. This is the most complete failure in the batch — not hostile, but functionally absent.
+
+## 2. Tioga Medical Center: Image-Only Scan, Witness Requirement
+
+This small critical access hospital in North Dakota provides a PDF that is an **image-only fax scan** at 200 DPI — zero text layer, zero fillable fields, completely inaccessible to screen readers. The form includes a **witness signature line** with no indication it's optional, creating a real barrier for rural patients completing forms at home. The Release From/To structure forces patients to awkwardly list themselves as the recipient with no guidance. For a facility serving a remote population, the entirely analog workflow (print, handwrite, fax or mail) compounds the accessibility problem.
+
+## 3. Cottage Hospital: Cloudflare-Blocked Website
+
+This independent critical access hospital in Woodsville, NH has its entire website blocked by **Cloudflare Turnstile bot protection**, preventing direct access. Forms were only retrievable via Wayback Machine archives. The form itself has no submission instructions, a witness signature line, and confusing phantom page numbering ("PAGE 14 OF 28" on a standalone one-page form). A patient visiting cottagehospital.org would hit a wall before even finding the form.
+
+## 4. Grady Memorial Hospital: Paper-Only Submission with Liability Waiver
+
+This major government hospital in Atlanta (700+ beds) offers **no electronic submission pathway** — no fax, no email, no portal for submitting the completed form. Patients must mail or physically deliver forms. The form bundles a **broad liability waiver** ("not to hold Grady responsible for anything that may happen from use or release of PHI") and threatens that incomplete forms "may be considered invalid." Combined with SSN collection and zero fillable fields, this creates a discouraging gauntlet for patients at a safety-net hospital serving a vulnerable population.
+
+## 5. OSU Wexner Medical Center: Mail-Only Submission from a Major Teaching Hospital
+
+Despite being a flagship academic medical center, Ohio State requires patients to **print, handwrite, and physically mail** their authorization form — no fax number, no email submission, no portal. The form mandates a "Purpose of Disclosure" for all requests, which HIPAA does not require for patient self-access. Fee questions are routed to a third-party vendor (CIOX Health) with no schedule provided. For a well-resourced institution, this paper-only workflow is a surprising gap.
+
+## 6. Ironwood Cancer & Research Centers: Form Not Linked from Website
+
+This Arizona oncology practice's ROI form is **not linked from any page on its website** — it was only discoverable via search engine indexing of a WordPress uploads directory. Meanwhile, the provider-facing incoming records form has 22 fillable fields while the patient-facing form has zero. The form also cites **Washington State law (RCW 70.24)** despite being an Arizona practice, suggesting a template was copied without review.
+
+## 7. Adena Regional Medical Center: Witness Required, Psychotherapy Gating
+
+This Ohio community hospital **requires a witness signature** on its ROI form — a requirement HIPAA does not impose for patient access. The form also states that psychotherapy notes require **psychotherapist approval** before release, which would be an impermissible barrier if applied to patient self-access requests. Fee language states charges "WILL" apply per Ohio law, with no acknowledgment of HIPAA's lower cost-based cap for patient access.
+
+## 8. Millinocket Regional Hospital: Decade-Old Form with Opt-Out Record Types
+
+This Maine critical access hospital's sole form hasn't been updated since **2014** and was only findable via a site-scoped search. Its record type section uses an unusual **opt-out model** — all 18 categories are released unless crossed out — creating double-negative logic. The form warns that "refusal or revocation may result in improper diagnosis or treatment, denial of health benefits" — alarming language that could discourage patients from exercising their rights, even though it applies to third-party scenarios.
+
+## 9. UPMC Presbyterian: 90-Day Expiration, Payment-Conditioned Access
+
+UPMC's form defaults to a **90-day authorization expiration** — unusually short and unnecessary for patient access. More concerning, the form states "records will be sent upon receipt of payment," which could be read as **conditioning access on prepayment**, potentially conflicting with HIPAA's requirement for timely access. The form has essentially zero fillable fields despite being born-digital, and there is no online submission portal.
+
+## Summary of Barrier Patterns
+
+Three systemic patterns dominate this batch:
+
+**Missing submission instructions** is the most common critical failure — Consensus Health, Cottage Hospital, Ironwood, Hillcrest Claremore, Advocate Good Samaritan, Black River Memorial, and several others publish forms with no indication of where to send them. This transforms a usable form into a dead end.
+
+**Non-fillable PDFs remain the norm**, even from born-digital documents at well-resourced institutions. Of ~50 organizations in this batch, the majority have zero fillable fields, forcing a print-handwrite-scan workflow. NorthLakes Community Clinic actually *regressed* from fillable to non-fillable in its 2023 revision.
+
+**Witness signature requirements** appear at Tioga, Cottage Hospital, Adena, and ambiguously at several others (Lakeland Regional, Nevada Health Centers, Ben Taub, Cuba Memorial). HIPAA does not require witnesses for patient access requests, and this barrier disproportionately affects isolated and rural patients who may not have someone available to witness.
+
+The pattern is overwhelmingly one of **indifference rather than intentional obstruction** — forms designed for inter-provider information exchange that were never adapted for patient self-access. The organizations causing the most friction tend to be smaller independent facilities (critical access hospitals, physician practices) with limited administrative resources, though notable exceptions like Grady and OSU Wexner show that size does not guarantee a modern process.
+
+</file>
+
+<file name="batch-3.md">
+# Batch 3: Worst Barriers Deep Dive
+
+## 1. Form Impossible to Find Online
+
+**Desert Valley Hospital** (Victorville, CA — for-profit, Prime Healthcare system): The hospital's website describes the records request process but publishes no downloadable form. The only usable authorization form was found on a sister hospital's website (Chino Valley Medical Center). A typical patient visiting dvmc.com would hit a dead end. This is the most severe findability failure in the batch — a fundamental access barrier at a major for-profit hospital that appears to be institutional neglect rather than an oversight.
+
+**University of Mississippi Medical Center** (Jackson, MS — government teaching hospital): The English PDF link on UMMC's own website returns a 404 error. The English form was only recoverable from a third-party caching site (pdf4pro.com). A patient clicking the official "Release Form" link today reaches a broken page. For a major academic medical center, this is a critical lapse in basic web maintenance.
+
+## 2. Witness Signature Requirements
+
+Several organizations require witness signatures — a barrier with no HIPAA basis that particularly burdens patients completing forms at home alone.
+
+**Abbeville Area Medical Center** (SC — independent nonprofit CAH) demands *two* witness signatures, the most onerous requirement in this batch. **Duly Health and Care** (IL — independent for-profit practice) requires witnesses specifically for non-care requests including "Personal Reasons," directly targeting patient self-access. **Springhill Medical Center** (AL — independent for-profit) and **Community Health Center of Central Missouri** (FQHC) also impose witness requirements. This pattern spans facility types and regions, suggesting a widespread misunderstanding of HIPAA requirements rather than deliberate obstruction.
+
+## 3. Social Security Number Collection
+
+**Lane County Hospital** (KS), **UMMC**, **Adena Regional Medical Center** (OH), **Decatur County Hospital** (IA), **Desert Valley Hospital**, and **Springhill Medical Center** all request full or partial SSNs on forms routinely transmitted by fax or mail. This creates identity theft risk with no legal justification — HIPAA does not require SSN for records requests. The pattern is especially concerning at small rural facilities where forms may be handled by fewer staff with less security infrastructure.
+
+## 4. No Submission Instructions on the Form
+
+**GI Alliance** (TX — major for-profit practice network) provides a form with blank provider identity fields and no submission address, fax number, or email. A patient completing the form literally cannot determine where to send it. **Abbeville Area Medical Center** and **El Centro de Corazón** (TX — FQHC) similarly omit all submission details. This forces patients to make additional phone calls — an unnecessary barrier that disproportionately affects patients with limited time or phone access.
+
+## 5. Physician Gatekeeping of Patient Access
+
+**Mercy General Hospital** (Sacramento, CA — Dignity Health/CommonSpirit) requires physician approval before releasing HIV test results and caregiver approval for psychiatric records *to the patient themselves*. The hospital form includes a physician notification/veto mechanism in the standard patient access workflow. Under HIPAA's Right of Access, providers may deny access only in narrow, reviewable circumstances — building physician approval into the default workflow likely exceeds these limits and creates an illegitimate barrier.
+
+## 6. Opaque Portal-Only Access
+
+**Minnie Hamilton Health System** (WV — independent nonprofit CAH) publishes no downloadable form at all, routing patients exclusively to ChartRequest, a third-party portal requiring account creation before patients can even see the authorization terms. For a rural critical access hospital serving a population with potentially limited internet access, this digital-only approach with no paper fallback is particularly problematic.
+
+## 7. Misleading Legal Language
+
+**Boulder Medical Center** (CO) states that "Due to HIPAA regulations regarding security of electronic transmissions, we cannot email records to anyone but your personal email" — mischaracterizing HIPAA, which explicitly allows patients to direct records to third parties. **Desert Valley Hospital's** form warns that "Failure to provide all information requested may invalidate this Authorization," potentially pressuring patients into providing unnecessary data like SSN.
+
+## Summary of Patterns
+
+Three systemic patterns dominate this batch:
+
+**Indifference, not malice**: Most barriers stem from organizations repurposing generic third-party authorization forms without adapting them for patient self-access. Witness requirements, SSN fields, and "authorize release to" framing are inherited from a disclosure-to-others paradigm that was never redesigned for individual access rights. This is institutional inertia across all facility types.
+
+**Small facilities, bigger gaps**: Critical access hospitals (Lane County, Tioga, Abbeville, Cordova, Nemaha Valley) consistently show the most dated forms — image-only scans, decade-old revisions, zero fillable fields. These facilities lack the health IT resources to modernize, but serve populations that may face the greatest barriers to in-person alternatives.
+
+**Findability failures correlate with system fragmentation**: The worst findability problems (Desert Valley, UMMC) occur where organizational transitions or multi-facility systems create confusion about which website hosts the current form. Broken links persist because no single person owns the patient-facing web content.
+
+</file>
+
+<file name="batch-4.md">
+# Batch 4: Worst Barriers Analysis
+
+## 1. Effectively Unfindable Forms
+
+**ENT & Allergy Associates (D, independent for-profit practice, Northeast)** presents the single worst findability failure in this batch. Its ROI form is an orphaned 2009-era Word document at a URL linked from no website page. The practice has no "Patient Forms," "Medical Records," or "Request Records" section. Only a targeted `filetype:doc` search — a technique no typical patient would attempt — surfaces it. For a practice with 80+ offices across four states, this is a striking gap.
+
+**University of Mississippi Medical Center (C, government teaching hospital, South)** compounds a findability problem with a broken link: the English-language form returns a 404 error. The only retrievable copy came from a third-party cache site after five different search strategies. A Spanish version exists on the Wayback Machine, but most English-speaking patients simply cannot obtain the form from UMMC's own website.
+
+These are not oversights at small rural clinics — they are large organizations where patients have essentially no self-service path to begin a records request online.
+
+## 2. Witness Signature Requirements
+
+Three organizations impose witness signatures that HIPAA does not require:
+
+- **DHR Health (C, for-profit regional hospital, South)** requires a witness on its Spanish form, alongside SSN collection, a liability waiver, and a form dated 2015. The cumulative effect is a form that discourages rather than enables access.
+- **MUSC Health (B, nonprofit teaching hospital, South)** includes a witness line with no explanation of when it applies. Combined with a blanket ID requirement and prepayment language in its MyChart guide, the barriers add up.
+- **Millinocket Regional Hospital (D, nonprofit CAH, Northeast)** pairs a witness line with an "ALL spaces MUST be completed" mandate, effectively making the witness mandatory. For a patient at home trying to request records, finding a witness is a real logistical barrier.
+
+This pattern appears more commonly at smaller and Southern facilities, but MUSC shows it crosses into major academic centers too.
+
+## 3. Missing Submission Instructions
+
+A startling number of forms tell patients *what* to fill out but not *where to send it*:
+
+- **ENT & Allergy Associates**: No address, fax, email, or portal on the form.
+- **Arizona Community Physicians**: Primary ROI form contains zero submission instructions.
+- **Colquitt Regional Medical Center (C, government community hospital, South)**: Single form with no fax, address, or email listed.
+- **Advocate Good Samaritan Hospital (B, nonprofit major system, Midwest)**: Dedicated patient access form — one of the better-designed forms in this batch — yet omits all return instructions.
+- **UMC of Southern Nevada (C, government community hospital, West)**: ROI form not even linked from the Medical Records page; the form itself has no submission guidance.
+
+This is the most pervasive pattern in the batch. A patient who downloads, prints, and completes a form is then stranded with no next step. It appears across all organization types and seems driven by institutional indifference rather than intent.
+
+## 4. No Patient Self-Access Form at All
+
+**East Georgia Healthcare Center (C, nonprofit FQHC, South)** is the most extreme case: its only ROI form is designed for *incoming* records from other providers, with EGHC's address hardcoded as the destination. A patient wanting records *from* EGHC has literally no applicable form. The Notice of Privacy Practices acknowledges the right to access but provides no mechanism.
+
+This goes beyond using a generic form — it is the complete absence of a pathway for the most basic patient right under HIPAA.
+
+## 5. Excessive or Opaque Fee Structures
+
+- **Lincoln Hospital (C, government CAH, West)** cites a Washington state fee schedule of $26 base + $1.17/page, likely exceeding HIPAA's cost-based limits for patient access. The schedule references dates from 2017–2019 — expired but still printed on the form.
+- **MUSC Health** mentions "search and duplication" fees for patient requests in its MyChart guide. HIPAA does not permit search fees for patient access. Prepayment is also required.
+- **Lexington Clinic (C, for-profit practice, South)** charges $1.00/page for additional copies and imposes a $5.00 late fee — financial friction that goes beyond HIPAA's reasonable cost-based standard.
+
+Fee barriers are particularly insidious because they discourage patients before they even submit a request.
+
+## 6. SSN Collection and Outdated Forms
+
+Multiple organizations request Social Security Numbers without justification: **DHR Health** (full SSN), **ENT & Allergy Associates** (full SSN on a 2009 form), **Piedmont Medical Center** (SSN on a form dating to pre-2010), and **UMMC** (full SSN). For forms submitted by fax or mail, this creates meaningful identity theft risk.
+
+**Piedmont Medical Center's** forms date to 2013 and earlier, with unprocessed template merge fields visible. **ENT & Allergy Associates'** form predates the HITECH Act entirely. These are not just cosmetic issues — outdated forms may not reflect current regulatory requirements around information blocking and electronic access.
+
+## Summary of Patterns
+
+The most significant barriers in this batch cluster into three categories:
+
+1. **Invisible process**: Forms that patients cannot find (ENT & Allergy, UMMC, UMC Southern Nevada) or that don't exist for the right purpose (East Georgia). This is the highest-severity barrier — it prevents the process from starting at all.
+
+2. **Unnecessary procedural friction**: Witness requirements (DHR, MUSC, Millinocket), SSN collection, and excessive fees impose burdens HIPAA does not authorize. These appear more often at smaller and Southern facilities but are not exclusive to them.
+
+3. **Missing last mile**: Forms that are findable and completable but provide no submission instructions. This is the most widespread pattern, appearing at organizations of every type and size, suggesting a systemic blind spot in form design rather than deliberate obstruction.
+
+Across this batch of ~45 organizations, the dominant theme is **indifference rather than intent**. Most barriers stem from forms that were designed for internal HIM workflows and published online without considering the patient's end-to-end experience. The few organizations with dedicated patient access forms (Barnes-Jewish, Advocate Good Samaritan, UTMB, Flowers Hospital) consistently deliver better experiences — suggesting that the single most impactful improvement would be creating a purpose-built patient self-access pathway rather than repurposing third-party authorization forms.
+
+</file>
+</batch-summaries>

@@ -1,1 +1,0 @@
-/home/jmandel/hobby/request-my-ehi/scripts/roi-form-study/data/synthesis/mayers-memorial-hospital/synthesis.md

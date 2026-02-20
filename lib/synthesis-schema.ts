@@ -52,6 +52,29 @@ export interface AccessPathwayAssessment {
    *  clearly labeled pathways). */
   differentiates_self_vs_third_party: boolean;
 
+  /** Whether any of the org's forms or pathways include a checkbox, field,
+   *  or section specifically for requesting EHI Export — the computable
+   *  electronic health information dataset that providers and EHR systems
+   *  are obligated to offer under the 21st Century Cures Act and ONC
+   *  information blocking rules. This is NOT the same as requesting records
+   *  via email or asking for a "digital copy" — EHI Export is the specific
+   *  obligation to provide a patient's complete electronic health information
+   *  in a computable format (e.g. FHIR, C-CDA, bulk export). Look for
+   *  language like "EHI export", "electronic health information export",
+   *  "Cures Act export", "information blocking", or checkboxes that
+   *  reference this specific regulatory obligation. */
+  has_ehi_specific_option: boolean;
+
+  /** Whether the org has a separate, dedicated form specifically for EHI
+   *  Export requests, rather than just a checkbox or section on a general
+   *  ROI form. */
+  has_dedicated_ehi_form: boolean;
+
+  /** Brief description of how EHI Export is addressed on the form(s), if at
+   *  all. e.g. "Checkbox for 'EHI Export under Cures Act'" or "No mention of
+   *  EHI Export". Null if not addressed. */
+  ehi_export_details: string | null;
+
   /** Whether a patient can submit the request electronically — not just
    *  download a PDF, but actually send it in online (portal, email, or fax).
    *  Note: fax counts as electronic for scoring purposes. */

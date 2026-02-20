@@ -83,9 +83,18 @@ Write your evaluation to "${c.evalId}.md" covering these areas:
 5. PATIENT-CENTEREDNESS: How well does this document serve a patient trying to access
    their own health records?
 
-6. COMPLIANCE: Does this document impose any requirements or barriers worth noting?
+6. EHI EXPORT: Does this document mention or address EHI Export — the computable
+   electronic health information dataset that providers/EHRs must offer under the
+   21st Century Cures Act and ONC information blocking rules? Look for checkboxes,
+   fields, or sections referencing "EHI export", "electronic health information
+   export", "Cures Act", or similar. Note: this is NOT the same as offering email
+   delivery or a "digital copy" — EHI Export is a specific regulatory obligation
+   to provide data in a computable format. Also note if the entire form appears to
+   be dedicated to EHI Export requests specifically.
 
-7. NOTABLE OBSERVATIONS: End with a list of callouts — anything that stands out as
+7. COMPLIANCE: Does this document impose any requirements or barriers worth noting?
+
+8. NOTABLE OBSERVATIONS: End with a list of callouts — anything that stands out as
    particularly surprising, noteworthy, or concerning. Use these categories:
    - 🚩 RED FLAGS: Requirements or language that may violate patient rights or create
      illegitimate barriers (e.g., notarization demands, in-person-only submission,

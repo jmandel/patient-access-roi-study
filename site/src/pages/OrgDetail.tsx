@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import type { OrgData } from "../types";
 import { DIMENSIONS, GRADE_COLORS } from "../types";
 import { GradeBadge, BoolIcon, PathwayBadge } from "../components/Charts";
+import { marked } from "marked";
 
 export function OrgDetail({ orgs, orgId }: { orgs: OrgData[]; orgId: string }) {
   const org = orgs.find((o) => o.org_id === orgId);
@@ -206,19 +207,27 @@ export function OrgDetail({ orgs, orgId }: { orgs: OrgData[]; orgId: string }) {
       {/* Narrative Synthesis */}
       {narrative && (
         <Section title="Synthesis Narrative">
-          <pre style={styles.markdown}>{narrative}</pre>
+          <div style={styles.markdown} dangerouslySetInnerHTML={{ __html: marked.parse(narrative) as string }} />
         </Section>
       )}
 
       {/* Evaluations */}
       {evals.length > 0 && (
         <Section title={`Form Evaluations (${evals.length})`}>
-          {evals.map((ev) => (
-            <details key={ev.name} style={styles.evalDetail}>
-              <summary style={styles.evalSummary}>{ev.name}</summary>
-              <pre style={styles.markdown}>{ev.content}</pre>
-            </details>
-          ))}
+          {evals.map((ev) => {
+            const formFile = ev.name.replace(`${org.org_id}--`, "") + ".pdf";
+            return (
+              <details key={ev.name} style={styles.evalDetail}>
+                <summary style={styles.evalSummary}>
+                  {ev.name}
+                  <a href={`forms/${org.org_id}/${formFile}`} target="_blank" rel="noopener" style={styles.evalPdfLink} onClick={(e) => e.stopPropagation()}>
+                    Open PDF ↗
+                  </a>
+                </summary>
+                <div style={styles.markdown} dangerouslySetInnerHTML={{ __html: marked.parse(ev.content) as string }} />
+              </details>
+            );
+          })}
         </Section>
       )}
 
@@ -230,7 +239,7 @@ export function OrgDetail({ orgs, orgId }: { orgs: OrgData[]; orgId: string }) {
             {org.retrieval?.bot_blocking_encountered && <span style={{ ...styles.tag, background: "#fee2e2" }}>Bot Blocking</span>}
             {org.retrieval?.browser_fallback_needed && <span style={{ ...styles.tag, background: "#fef3c7" }}>Browser Fallback</span>}
           </div>
-          <pre style={styles.markdown}>{notes}</pre>
+          <div style={styles.markdown} dangerouslySetInnerHTML={{ __html: marked.parse(notes) as string }} />
         </Section>
       )}
     </div>
@@ -276,7 +285,8 @@ const styles: Record<string, React.CSSProperties> = {
   flagSection: { marginTop: 12 },
   redFlag: { padding: "6px 10px", background: "#fef2f2", border: "1px solid #fecaca", borderRadius: 6, fontSize: 12, marginBottom: 4, lineHeight: 1.4 },
   brightSpot: { padding: "6px 10px", background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 6, fontSize: 12, marginBottom: 4, lineHeight: 1.4 },
-  markdown: { fontFamily: "inherit", fontSize: 13, lineHeight: 1.7, whiteSpace: "pre-wrap", wordBreak: "break-word", background: "#fff", padding: 16, borderRadius: 8, border: "1px solid #e5e7eb" },
+  markdown: { fontFamily: "inherit", fontSize: 13, lineHeight: 1.7, wordBreak: "break-word", background: "#fff", padding: 16, borderRadius: 8, border: "1px solid #e5e7eb" },
   evalDetail: { marginBottom: 8 },
-  evalSummary: { cursor: "pointer", fontSize: 14, fontWeight: 600, padding: "8px 0" },
+  evalSummary: { cursor: "pointer", fontSize: 14, fontWeight: 600, padding: "8px 0", display: "flex", alignItems: "center", gap: 8 },
+  evalPdfLink: { fontSize: 11, fontWeight: 400, color: "#2563eb", marginLeft: "auto" },
 };

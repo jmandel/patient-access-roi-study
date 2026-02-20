@@ -1,1 +1,0 @@
-/home/jmandel/hobby/request-my-ehi/scripts/roi-form-study/data/synthesis/duly-health-and-care/synthesis.md

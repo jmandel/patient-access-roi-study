@@ -1,1 +1,0 @@
-/home/jmandel/hobby/request-my-ehi/scripts/roi-form-study/data/synthesis/cordova-community-medical-center/synthesis.md

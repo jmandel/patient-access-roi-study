@@ -1,58 +1,52 @@
-# Portal Landscape: Batch Analysis
+# Portal & Online Request Landscape — Batch 2
 
-## Overview
+## Summary Counts
 
-Across 190 organizations with scored synthesis data, **94 (49%)** offer at least one online portal or patient portal pathway for medical records requests. However, portals are the **primary** pathway at only 19 organizations (10%) — at the remaining 75, the portal sits alongside (and usually behind) a traditional PDF form. The portal landscape is dominated by two platforms — Epic MyChart and Swellbox/Datavant — which together account for nearly two-thirds of all portal-equipped organizations.
+Of 38 organizations in this batch, **11 (29%)** include some form of online portal or patient portal as a request pathway. The remaining 27 rely exclusively on PDF forms with fax/mail/email submission.
 
-## Portal Adoption Rates
+Portal presence breaks down into two categories:
 
-| Category | Portal Rate |
-|----------|------------|
-| **Overall** | 94/190 (49%) |
-| For-profit | 25/41 (61%) |
-| FQHC | 14/25 (56%) |
-| Physician practice | 15/26 (58%) |
-| Community hospital | 43/80 (54%) |
-| Teaching hospital | 14/30 (47%) |
-| Critical access hospital | 8/29 (28%) |
-| Government-owned | 6/24 (25%) |
-
-For-profit organizations lead adoption at 61%, likely driven by HCA facilities (MyHealthONE portal) and system-affiliated hospitals using Swellbox. Critical access hospitals and government-owned facilities trail significantly — the smallest and most resource-constrained organizations are least likely to offer a digital pathway. Major-system-affiliated organizations (55%) outpace independents (45%), consistent with systems deploying portals at scale across member facilities.
+- **Dedicated online request portals** (7 orgs): Third-party platforms that serve as the primary or secondary digital submission channel — Swellbox/Datavant (3), ChartRequest (1), DocuSign (1), ScanSTAT (1), Sharecare/HDS (1), Datavant standalone (1).
+- **Patient portals mentioned as secondary options** (6 orgs): Epic MyChart (5) and Athena Health (1), typically listed as a delivery mechanism or alternative rather than a primary request pathway. Two orgs appear in both categories (Minnie Hamilton has both ChartRequest and Athena; Proliance has Datavant alongside other pathways).
 
 ## Vendor Landscape
 
-Two platforms dominate:
+**Swellbox/Datavant** is the dominant third-party records request vendor, appearing at 3 organizations: Ascension Saint Thomas Rutherford (TN), Arizona Community Physicians (AZ), and Penobscot Community Health Care (ME). In all three cases, the Swellbox wizard is the **primary** pathway, with PDF forms relegated to secondary status.
 
-- **Epic MyChart** — 33 orgs (35% of portal orgs). Spans every facility type: teaching hospitals (Duke, Yale New Haven, UCSF), community hospitals (Baptist Health Lexington, Saratoga Hospital), and FQHCs (El Rio Health, La Clínica de La Raza via OCHIN). MyChart functions as a full patient portal with records requests embedded within a broader clinical relationship.
+**Epic MyChart** appears at 5 organizations (Aurora Medical Center–Grafton, Owensboro Health, Guthrie Corning, Myrtue Medical Center, Banner–University Medical Center Phoenix) but always as a **secondary** option — typically for record delivery rather than request initiation. None make MyChart the primary request channel.
 
-- **Swellbox/Datavant** — 29 orgs (31%). A dedicated records-request wizard, not a general patient portal. Heavily used by HCA (MountainView, Riverside Community, TriStar Centennial), Ascension (Sacred Heart, Saint Thomas Rutherford), and Bon Secours Mercy Health. Also adopted by independents like King's Daughters Medical Center and Lakeland Regional Health. Swellbox is the most common *primary* portal pathway — when an org lists Swellbox as its main request channel, it typically replaces the PDF form rather than supplementing it.
+Other vendors appear once each: **ChartRequest** (Minnie Hamilton Health System), **DocuSign** (Esse Health), **ScanSTAT** (West Tennessee Healthcare), **Sharecare/HDS** (Scenic Mountain Medical Center), and **Datavant** (Proliance Surgeons).
 
-The long tail includes **Sharecare/HDS** (4 orgs), **MRO** (3 orgs), **MyHealthONE/HCA** (3), **ChartRequest** (2), **Verisma** (2), and one-offs like DocuSign, JotForm, Zoho, and Formstack — organizations that built custom digital workflows using general-purpose form tools rather than healthcare-specific platforms.
+## Portal vs. PDF Coexistence
 
-## PDF Coexistence
+When a portal exists, a PDF form is almost always still available alongside it. Of the 7 orgs with a dedicated online portal, **6 also offer a downloadable PDF form**. The sole exception is Minnie Hamilton Health System, where no MHHS-branded PDF exists — the ChartRequest portal is the only pathway, and finding a form requires navigating to an affiliate's website. This gated-only approach earned Minnie Hamilton a findability score of 2 and a content design score of 2.
 
-When a portal exists, a PDF form almost always remains available alongside it:
+## Primary vs. Secondary Role
 
-- **Portal + PDF**: 80 orgs (85% of portal orgs)
-- **Portal only (no PDF)**: 14 orgs (15%)
+Among orgs with any portal pathway:
 
-Portal-only organizations include AdventHealth Hendersonville (Swellbox), Anaheim Global Medical Center (ChartRequest), several FQHCs using MyChart via OCHIN (El Rio, Franklin Primary, La Clínica de La Raza), and smaller facilities using custom online forms (Labette Health via Formstack, Riverwood Healthcare via JotForm). The PDF form is not going away — it is a fallback even at organizations that prominently promote their portal.
+| Portal as primary | Portal as secondary | Total |
+|---|---|---|
+| 5 | 6 | 11 |
 
-## Portal as Primary vs. Secondary
+The 5 orgs using a portal as their **primary** pathway are: Ascension Saint Thomas Rutherford (Swellbox), Minnie Hamilton (ChartRequest), Esse Health (DocuSign), Wayne County Hospital (web form), and Arizona Community Physicians (Swellbox). Notably, Wayne County Hospital — a 25-bed critical access hospital in rural Kentucky — built its own HTML web form, a rare approach for a facility of its size.
 
-Among the 94 portal-equipped organizations:
+## Patterns by Organization Type
 
-- **Portal is primary pathway**: 42 orgs (45%)
-- **Portal is secondary/supplementary**: 52 orgs (55%)
+**System-affiliated community hospitals** are the most likely to adopt Swellbox/Datavant portals. Ascension Saint Thomas Rutherford (Ascension system, 286 beds) exemplifies this pattern — the parent system deploys Swellbox across facilities while maintaining a generic PDF fallback.
 
-When the portal is secondary, it typically appears as a "you can also request records through your patient portal" note on a medical records page dominated by a downloadable PDF. When the portal is primary, the organization's records page leads with the portal link and may bury or omit the PDF alternative — Swellbox-powered sites particularly follow this pattern.
+**Independent physician practices** show the most digital innovation: Esse Health uses DocuSign for fully electronic submission, Arizona Community Physicians deploys Swellbox, and Proliance Surgeons references Datavant. Three of 5 practices in this batch (60%) have some portal option.
 
-## Notable Patterns
+**FQHCs** are split: Penobscot Community Health Care uses Swellbox as its primary pathway, while the other 4 FQHCs (Cherokee Health Systems, NorthLakes, Virginia Garcia, Northwest Colorado Health) rely entirely on PDF forms.
 
-**System affiliation drives vendor choice.** Ascension facilities use Swellbox. HCA facilities use both Swellbox and MyHealthONE. Bon Secours Mercy Health uses both Swellbox and MyChart. The choice is made at the system level and deployed uniformly, meaning a patient's portal experience depends more on which health system owns their hospital than on local decisions.
+**Critical access hospitals** largely lack portals (6 of 7 have PDF-only processes), with Wayne County Hospital's web form as the notable exception.
 
-**FQHCs punch above their weight.** Despite limited resources, 56% of FQHCs offer a portal — often MyChart through the OCHIN collaborative (Franklin Primary, La Clínica de La Raza, Sea Mar). OCHIN effectively gives small community health centers the same portal infrastructure as academic medical centers.
+**Teaching hospitals** (Northwestern Memorial, UF Health Shands, Mass General, Banner–UMC Phoenix) are conspicuously absent from the portal adopter list. Banner mentions its MyChart portal on the form header as a redirect, but none offer a structured online request workflow — they rely on high-quality PDF forms with multiple submission channels instead.
 
-**Self-access differentiation remains rare.** Only 20 of 94 portal-equipped orgs (21%) clearly differentiate between a patient requesting their own records and a third party requesting on someone else's behalf. Most portals funnel both use cases through the same workflow, which means patients exercising their HIPAA right of access encounter the same authorization complexity as third-party requestors — an unnecessary burden.
+## Key Takeaways
 
-**Government facilities lag.** Only 25% of government-owned organizations offer any portal pathway, compared to 50%+ for nonprofit and for-profit facilities. This includes VA-adjacent facilities and public hospitals that may rely on in-person or mail-only workflows.
+1. **Portal adoption is modest at ~29%**, with Swellbox/Datavant emerging as the leading vendor for dedicated records request portals.
+2. **Portals almost always coexist with PDFs** — only one org (Minnie Hamilton) has gone portal-only, and that approach created significant transparency and findability problems.
+3. **Portal presence does not guarantee a better patient experience.** Minnie Hamilton's ChartRequest portal scored a 2.95 overall (grade C) due to opaque gating behind account creation. By contrast, GHC–South Central Wisconsin achieved 4.40 (grade B) with a fillable PDF and no portal at all.
+4. **MyChart is ubiquitous but passive** — it serves as a delivery channel, not a request initiation tool, at every organization where it appears.
+5. **The most innovative digital approaches come from independent practices** (DocuSign, Swellbox) and one small rural hospital (Wayne County's web form), not from the largest academic medical centers.

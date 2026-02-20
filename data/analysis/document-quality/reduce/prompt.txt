@@ -1,0 +1,262 @@
+You are synthesizing findings about form document quality across the entire
+ROI form study — focusing on the forms as technical artifacts.
+
+Read DESIGN.md and ANALYSIS-PLAN.md for context.
+
+Document quality analysis from individual map batches is included inline below.
+
+Your task: produce a comprehensive picture of document quality across the study.
+- Aggregate the counts: what fraction are fillable? Image-only scans? Digital-first?
+- What's the typical page count, field count range?
+- How common are instructions, multilingual versions, clear layouts?
+- What does the "typical" ROI form look like as a document?
+- Contrast the best-crafted documents with the worst
+- Are there patterns by org type — do larger orgs produce better documents?
+- What would it take for the industry to reach a baseline standard?
+
+Write your analysis to "output.md". Aim for 1500-2500 words.
+
+<batch-summaries>
+<file name="batch-0.md">
+# Document Quality Deep Dive — Batch 0
+
+## Format Classification: Fillable vs. Flat vs. Scan
+
+Of the 62 organizations in this batch, **24 (39%)** provide fillable/interactive PDFs with functional AcroForm fields, **35 (56%)** distribute flat (print-and-fill) PDFs with a text layer but no interactive fields, and **3 (5%)** serve image-only scans with no text layer at all. The three image-only scans — Troy Regional Medical Center (grayscale JPEG at 200 DPI, dated 2015, served over unencrypted HTTP), JPS Health Network (2018 scan with no text layer), and Bath Community Hospital (scanned image with OCR errors) — represent the floor of document quality and are completely inaccessible to screen readers.
+
+The flat-PDF category is notable because many of these forms were clearly authored digitally in layout software (InDesign, Word, etc.) but never had interactive fields added. MUSC Health, Goleta Valley Cottage Hospital, and University of Iowa Hospitals all distribute born-digital PDFs with clean text layers and zero fillable fields — a gap that is technically trivial to close. Iowa's form even *regressed* from 50 fillable fields (2021 version) to zero (2024 version). NorthLakes Community Clinic similarly regressed from a fillable 2022 form to a non-fillable 2023 version.
+
+## Page and Field Counts
+
+Page counts cluster tightly: **37 forms (60%)** are single-page, **22 (35%)** are two pages, and only **2 (3%)** reach three pages (Texas Oncology and UW Medical Center). One organization (Labette Health) has no PDF at all, using an online Formstack form exclusively.
+
+Field counts range from **11** (Consensus Health's bare-minimum unbranded form) to **103** (NewYork-Presbyterian's Tripartite authorization). The median sits around 18–20 fields. The top tier of fillable forms is dramatically more interactive: NYP (103 fields), Texas Oncology (95), A.O. Fox/Bassett (83), Newton-Wellesley/MGB (78), UMMC (70), SSM Health DePaul (69), Flowers Hospital (66), and Ben Taub/Harris Health (65) all pack substantial interactivity into compact layouts. These high-field-count forms represent genuine digital-first design where every checkbox, text input, and date field is programmatically fillable.
+
+## Digital-First vs. Scanned Paper
+
+**58 of 62 organizations (94%)** distribute digitally authored documents with extractable text. Only 3 are image-only scans, and 1 (Fallon Medical Complex) distributes its form as a Microsoft Word .doc file rather than a PDF — an unusual and fragile format choice. The digital-first majority is encouraging, but "digitally authored" does not mean "digitally usable" — the majority of these born-digital forms still require printing and handwriting because they lack interactive fields.
+
+## Layout, Typography, and Visual Design
+
+Most forms follow a logical top-to-bottom flow with identifiable sections. Numbered sections are the most common organizational pattern (e.g., UW Medical Center's Items #1–7, Fisher-Titus's eight numbered sections, Intermountain's question-based headings). Layout quality is generally adequate but rarely excellent. Several forms cram dense content into single pages, resulting in small type and compressed sections (SSM Health DePaul, Ben Taub). Good Samaritan Medical Center and Piedmont Medical Center expose unprocessed template merge fields (`«PatientNumber»`, `«PatientName»`) — internal CMS artifacts visible to patients. Memorial Healthcare System's English PDF is bloated at 2.45 MB with 23 embedded fonts and garbled hidden content from template layers.
+
+Standout design: Intermountain Medical Center's form uses conversational, question-based section headers ("What information do you want?") that lower cognitive barriers. Flowers Hospital's Adobe InDesign–produced form achieves clean visual hierarchy on a single fillable page. A.O. Fox/Bassett defaults delivery to the MyBassett Portal — a progressive design choice embedded in the form structure itself.
+
+## Instructions and Guidance
+
+Only **21 of 62 forms (34%)** include instructions of any kind. Most forms drop patients into fields with no guidance. Notable exceptions: Owensboro Health provides a separate 2-page plain-language companion instruction document; Fenway Health offers a 3-page FAQ guide explaining every form section; UW Medical Center includes a full instruction page with item-by-item guidance; and Northwell Health (Phelps/Huntington) provides companion documents with annotated visual examples using fictional patient names — the most patient-friendly instructional approach observed.
+
+## Multilingual Support
+
+**23 of 62 organizations (37%)** offer forms in more than one language. Spanish is universal among multilingual providers (23/23). Three organizations go further: Good Samaritan Medical Center and Memorial Healthcare System provide **Haitian Creole** versions alongside English and Spanish — meaningful for their South Florida communities. NewYork-Presbyterian offers English, Spanish, and **Chinese**. Newton-Wellesley/MGB offers English, Spanish, and **Portuguese**. Olmsted Medical Center provides English, Spanish, and **Somali** — a distinctive choice reflecting Rochester, MN's refugee community.
+
+## Notable Exemplars
+
+**Best document craftsmanship**: NewYork-Presbyterian (103 fillable fields, trilingual, 16+ record-type checkboxes across 2 clean pages) and Flowers Hospital (66 fillable fields on a single InDesign-produced page with professional Spanish translation and patient-centered "Myself" framing) represent the high-water mark.
+
+**Worst document quality**: Troy Regional Medical Center's form is a decade-old, image-only grayscale scan hosted on a defunct legacy website over HTTP, with no text layer, no fillable fields, and no submission instructions. Consensus Health's form is an unbranded single page with 11 fields, no organizational identity, no submission instructions, and missing HIPAA-required elements. JPS Health Network's 2018 image-only scan is particularly striking because the same organization produced modern fillable PDFs for its 2025 HIE forms — demonstrating capability it chose not to apply to patient access.
+
+**Notable regression**: University of Iowa Hospitals dropped from 50 fillable fields to zero between form revisions, and NorthLakes Community Clinic similarly regressed — evidence that form modernization is not monotonically improving.
+
+</file>
+
+<file name="batch-1.md">
+# Batch 1: Document Quality Analysis
+
+## Batch Composition
+
+This batch covers **50 organizations** spanning all facility types (community hospitals, teaching hospitals, critical access hospitals, FQHCs, physician practices), ownership models, and census regions. Organizations range from rural single-facility CAHs (Tioga Medical Center, ND; Lane County Hospital, KS) to major academic medical centers (Duke, Penn, Michigan Medicine, MUSC).
+
+## Format Distribution: Fillable vs. Flat vs. Image-Only
+
+Of the 50 organizations' primary forms:
+
+- **Fillable/interactive PDFs: 14 (28%)**. These include A.O. Fox/Bassett (83 fields), Mass General Hospital (78 fields), Hospital of the University of Pennsylvania (70 fields), Duke University Hospital (67 fields), Gritman Medical Center (63 fields), Decatur County Hospital (61 fields), UW Medical Center (61 fields), Virginia Garcia (54 fields), GHC–South Central Wisconsin (49 fields), Desert Valley/Prime Healthcare (47 fields), Lankenau/Main Line Health (41 fields), Montefiore Nyack (39 fields), Community Health Centers of Burlington (36 fields), and Huntington/Northwell (28 fields).
+
+- **Flat digital PDFs (text layer, zero fillable fields): 31 (~62%)**. The dominant category. These are born-digital documents with extractable text but no interactive form fields — patients must print and handwrite. Examples span every facility type: Banner Health, UPMC, Baptist Health, Memorial Healthcare System, CrescentCare, UCHealth, Hartford Hospital, and many others.
+
+- **Image-only scans: 5 (10%)**. The worst technical category. Nemaha Valley Community Hospital's form is a photocopy scanned by a Savin copier in 2016. Tioga Medical Center and Colquitt Regional Medical Center also provide image-only PDFs. Black River Memorial Hospital's Word-generated PDF renders virtually all text as 970 embedded images — technically a digital file but functionally an image scan. Mercy Health–Fairfield's currently linked version regressed from a text-layer PDF to an image-only scan.
+
+## Page Counts and Field Counts
+
+**Page counts** range from 1 to 3 pages. Single-page forms are most common (~20 orgs), followed by 2-page forms (~24 orgs). Only 3 organizations use 3-page forms (Michigan Medicine, Baptist Health Lexington, UW Medical Center, Montefiore Nyack).
+
+**Field counts** range from 10 (EyeSouth Partners, East Georgia Healthcare Center) to 83 (A.O. Fox/Bassett Healthcare). Among fillable forms, the median is ~54 fields. Among all forms, estimated field counts cluster around 15–22, reflecting the typical set of patient demographics, record-type checkboxes, purpose selection, and signature blocks.
+
+## Digital-First vs. Scanned Paper
+
+Approximately **45 of 50 forms (90%) are digitally authored** — created in Word, InDesign, or similar tools and exported to PDF. Only 5 are scans of paper originals. However, "digitally authored" does not mean "digitally usable": 31 of those 45 digital-origin PDFs have zero fillable fields, making them functionally print-and-fill documents despite their digital provenance. One notable case: Boone County Health Center publishes its form as a .docx file rather than PDF — unusual and less accessible.
+
+## Layout, Typography, and Visual Design
+
+Most forms follow a predictable structure: patient demographics → recipient/direction → record types → purpose → legal disclosures → signature. Layout quality is generally adequate — **38 of 50 forms (76%) are rated as having clear layouts** in structured scoring. Common design problems include:
+
+- **Staff-facing elements left on patient documents**: Coast Plaza Hospital includes "PATIENT LABEL" boxes; Cottage Hospital's form shows "PAGE 14 OF 28" from its parent policy document; Columbus Community Hospital exposes internal filing codes.
+- **Dense single-page compression**: Decatur County Hospital fits 61 fields and multiple legal paragraphs onto one page. UCHealth compresses 28 record-type checkboxes, a full fee schedule, and six disclosure statements onto a single page.
+- **Typographical errors persisting across revisions**: Hendrick Health misspells "HIPAA" as "HIPPA" throughout; San Luis Valley Health has "INFORMATION REQUIRIED"; Community Health Center Inc. has "in response to his authorization" (should be "this").
+- **Font encoding corruption**: Mercy General Hospital's form produces garbled text when extracted (e.g., "3DWLHQW ,GHQWL¿FDWLRQ" for "Patient Identification"), rendering it inaccessible to screen readers.
+
+## Instructions
+
+**Only ~15 of 50 organizations (30%) include instructions** with their forms. Notable examples of good instruction design: Huntington/Northwell provides companion instruction documents with annotated visual examples; UPMC publishes a separate plain-language instruction guide; Owensboro Health includes a dedicated 2-page companion explaining each section; and The Valley Hospital offers a full-page instruction sheet with practical examples. Most forms simply present blank fields with no guidance.
+
+## Multilingual Support
+
+**17 of 50 organizations (34%) offer multilingual forms**, almost exclusively English/Spanish. Memorial Healthcare System stands out with trilingual availability (English, Spanish, Haitian Creole) — reflecting South Florida demographics. Several FQHCs appropriately serve their communities: Virginia Garcia, CrescentCare, El Centro de Corazón, East Georgia Healthcare Center, and Anchorage Neighborhood Health Center all provide Spanish versions. Small rural hospitals offering Spanish forms include Nemaha Valley (Kansas), Columbia Memorial (Oregon), San Luis Valley (Colorado), and Myrtue Medical Center (Iowa) — commendable given their resource constraints. However, quality gaps exist: DHR Health's Spanish form is an image-only scan while the English version has fillable fields, and Columbia Memorial's Spanish form is ~8 years older than its English counterpart.
+
+## Notable Exemplars
+
+**Best document craftsmanship**: A.O. Fox/Bassett Healthcare Network's form (83 fillable fields, portal-first default delivery, 10 numbered sections) and Hospital of the University of Pennsylvania (70 fillable fields, ADA-accessible design, detailed instructions) represent the highest technical quality. Lankenau/Main Line Health's form includes embedded PRINT, SAVE AS, EMAIL, and RESET action buttons — genuinely digital-first design.
+
+**Worst document craftsmanship**: Nemaha Valley Community Hospital's decade-old image-only photocopy with typewriter-style fonts, an exposed internal cost worksheet on page 2, and both pages erroneously labeled "Page 2 of 2" represents the low end. Black River Memorial Hospital's 2025-vintage Word file that renders as 970 embedded images is a particularly striking failure — a modern authoring tool producing an inaccessible output. Cottage Hospital's form was only recoverable via the Wayback Machine due to Cloudflare blocking.
+
+## Summary
+
+The typical ROI form in this batch is a **2-page, digitally authored but non-fillable PDF in English only, with 15–22 fields, no instructions, and a clear but dense layout**. The 28% fillable rate means nearly three-quarters of patients face a mandatory print-and-handwrite workflow. The 10% image-only scan rate — concentrated in smaller rural facilities — represents the most severe accessibility failure. Multilingual support at 34% is encouraging but unevenly distributed, and instruction inclusion at 30% leaves most patients navigating complex legal forms without guidance.
+
+</file>
+
+<file name="batch-2.md">
+# Document Quality Deep Dive — Batch 2 (68 Organizations)
+
+## Format Breakdown: Fillable vs. Flat vs. Image-Only
+
+Of 68 organizations, the primary ROI form breaks down as follows:
+
+| Format | Count | % |
+|---|---|---|
+| Fillable/interactive PDF | 14 | 21% |
+| Flat (print-and-fill) PDF with text layer | 51 | 75% |
+| Image-only scan (no usable text layer) | 3 | 4% |
+
+The dominant form type is the **flat, born-digital PDF** — a document created in Word or a layout tool, exported to PDF, but with zero interactive fields. Three-quarters of organizations fall into this category. Only one in five offers a genuinely fillable form. The three image-only scans — **Mayers Memorial Hospital** (a CHA template photocopied to PDF), **Bath Community Hospital** (a scanned paper form with error-ridden OCR), and **Vanderbilt University Medical Center** (surprisingly, a 2023-revised form from a major academic center) — represent the worst tier of document quality. Several additional organizations have image-only scans as *secondary* forms (Proliance Surgeons form-1, Southwell form-2, Community Medical Center Toms River forms 1–2, GI Alliance form-3, Mercy Health–Springfield form-3), though their primary forms have text layers.
+
+## Page Counts and Field Counts
+
+- **Page counts**: 32 forms are 1 page, 35 are 2 pages, 1 is 3 pages (Community Medical Center/RWJBH). Average: 1.5 pages.
+- **Field counts**: Range from 7 (Baton Rouge Clinic's minimalist Right of Access form) to ~100 (Emory University Hospital's comprehensive fillable form). Average: 25 fields. Median is approximately 18.
+
+Among the 14 fillable forms, field counts tend to be substantially higher (median ~54), reflecting the investment required to make a form truly interactive. The standouts: **Emory** (~100 fields), **Northwestern Memorial** (79 fields with a matching 82-field Spanish version), **Newton-Wellesley/MGB** (78 fields), **UMMC** (70 fields on the Spanish version only), and **Flowers Hospital** (66 fields). At the other end, **Labette Health** achieves fillability with just 18 fields via a Formstack web form — a fundamentally different approach.
+
+## Digital-First vs. Scanned Paper
+
+The vast majority of forms (65 of 68, 96%) are born-digital — created in software rather than scanned from paper. However, "born-digital" does not mean "digital-friendly": 51 of those 65 have zero fillable fields, forcing a print-handwrite-scan workflow despite being authored in tools that could easily produce interactive PDFs. This is the batch's most pervasive quality gap. Notable offenders include **Fenway Health**, which created a carefully designed single-page PDF with 7 fonts but no fillable fields, and **CrescentCare**, whose born-digital form is distributed online but contains no interactive elements.
+
+The few image scans include forms with corrupted or absent text layers: **Canton-Potsdam Hospital's** OCA-960 has a garbled text layer from font encoding errors, and **Pocahontas Memorial Hospital** has a systematic text encoding defect (broken "ti" ligature) that impairs screen readers.
+
+## Layout, Typography, and Visual Design
+
+Most forms achieve at least adequate organization: 62 of 68 (91%) were rated as having clear layout. The typical form follows a logical top-to-bottom sequence — patient demographics, release direction, record types, legal disclosures, signature. Section numbering or lettering is common. However, "clear" does not mean "well-designed." Dense legal paragraphs on page 2 are nearly universal, and few forms use visual hierarchy (bold headers, white space, bullet points) to aid comprehension.
+
+**Best document craftsmanship**: **Flowers Hospital** (HIM-1406) — a single-page fillable PDF with 66 fields, bilingual English/Spanish versions, clear section headers, and a logical flow explicitly centering patient self-access. **Group Health Cooperative of SCW** — a fillable single-page form using plain-language question headers ("What records do you want?", "How would you like your records delivered?"). **Lankenau Medical Center/Main Line Health** — a fillable PDF with built-in PRINT, SAVE AS, EMAIL, and RESET action buttons.
+
+**Worst document craftsmanship**: **Mayers Memorial Hospital** — an image-only scan mislabeled on the website as "Disclosure of Privacy Practices," with no text layer and no submission instructions. **GI Alliance** — form-2 (Granite Peaks) has a completely garbled text layer from broken Type 3 fonts; form-3 (University GI) is a truncated scan missing the signature block. **Bath Community Hospital** — a scanned form with OCR errors throughout ("ERNOTE," "LABffEST RESULTS," "IMAGINE REPORTS"). **Boone County Health Center** publishes its form as a `.docx` file rather than PDF, creating accessibility barriers for patients without Microsoft Word.
+
+## Instructions
+
+Only 16 of 68 organizations (24%) include instructions with their forms. These range from dedicated companion documents (**Fenway Health's** 3-page FAQ guide, **CentraCare's** explanatory instruction sheet, **Phelps Hospital/Northwell's** annotated visual examples) to integrated instruction pages (**Blessing Hospital's** page-2 field-by-field guidelines, **The Valley Hospital's** full-page step-by-step walkthrough). The remaining 76% of forms provide no guidance beyond field labels — patients must determine independently how to complete and submit the form.
+
+## Multilingual Support
+
+18 of 68 organizations (26%) offer forms in languages beyond English. Spanish is universal among these; **Newton-Wellesley/MGB** adds Portuguese (trilingual), and **Prevea Health** stands out with four languages: English, Hmong, Somali, and Spanish — a rare accommodation reflecting local Wisconsin demographics. Translation quality varies: **Desert Regional Medical Center's** Spanish form contains at least 9 typographical errors and omits the delivery method section entirely; **Emory's** Spanish form has character encoding issues rendering accented characters as digits.
+
+## Notable Observations
+
+The gap between born-digital authoring and fillable delivery is this batch's defining quality story. Organizations invest in layout tools to create clean, well-structured documents — then export them as flat PDFs that defeat the purpose of digital distribution. The 14 fillable forms demonstrate that the technical barrier is trivial: organizations that choose to make forms fillable typically produce high field counts (median 54) with comprehensive coverage. The remaining 51 flat PDFs represent a deliberate or habitual omission, not a technical limitation. **Sturdy Memorial Hospital** exemplifies the best case: 59 fillable fields, granular record-type selection with date ranges, and active January 2025 maintenance — a genuinely digital-first document from a community hospital.
+
+</file>
+
+<file name="batch-3.md">
+# Batch 3: Document Quality Deep Dive
+
+## Batch Overview
+
+This batch covers 64 organizations spanning all facility types and regions: teaching hospitals (Northwestern Memorial, Vanderbilt, OSU Wexner, Penn Medicine), community hospitals (Broward Health, Grady Memorial, Bayshore), critical access hospitals (Tioga, Cordova, Fallon Medical, Wayne County), FQHCs (Cherokee Health Systems, Philadelphia FIGHT, Sea Mar, NorthLakes), and physician practices (OrthoCarolina, ENT & Allergy, Western Washington Medical Group, Mankato Clinic).
+
+## Fillability Breakdown
+
+Of 64 organizations, **15 (23%)** have fillable/interactive PDF primary forms: Northwestern Memorial (79 fields), Providence St. Vincent (72 fields), Penn Medicine (70 fields), Merit Health Central (66 fields), Saratoga Hospital (65 fields), Ben Taub Hospital (65 fields), Sturdy Memorial (59 fields), MountainView/HCA (52 fields), Intermountain Medical Center (48 fields), Providence Sacred Heart (45 fields), Western Washington Medical Group (39 fields), Montefiore Nyack (39 fields), DHR Health (37 fields, English only), Community Health Centers of Burlington (36 fields), and Addabbo/OCA Form 960 (25 fields).
+
+Approximately **7–8 organizations (11–13%)** have primary forms that are **image-only scans** with no text layer: Troy Regional Medical Center, Tioga Medical Center, Colquitt Regional, JPS Health Network, and Broward Health's English form. Vanderbilt's PDF forms are also image-only scans, and OSU Wexner's form-1 and Lincoln Hospital's clinics form lack text layers.
+
+The remaining **~41 organizations (64%)** have **flat, digitally-authored PDFs** — born-digital with text layers but zero fillable fields. This is the dominant category: forms that *could* easily be interactive but were never configured as such. Two organizations (Fallon Medical Complex, ENT & Allergy Associates) distribute forms as Word .doc files rather than PDFs.
+
+## Page Counts and Field Counts
+
+Page counts range from **1 to 3 pages**. The majority are single-page forms (~35 orgs). Two-page forms are common (~25 orgs). Only three organizations reach 3 pages: Montefiore Nyack, Baptist Health Lexington (including a tips page), and Providence St. Vincent.
+
+Estimated field counts range from **12** (Cottage Hospital, Philadelphia FIGHT, Aurora Medical Center Grafton) to **79** (Northwestern Memorial). Fillable forms average ~53 fields; flat forms average ~18. The median across all organizations is approximately 18–20 fields.
+
+## Digital-First vs. Scanned Paper
+
+Roughly **80–85%** of forms are digitally authored (born-digital with text layers). The image-only scans cluster at smaller or government-owned facilities: Troy Regional (government, South), Tioga (independent CAH, West), Colquitt Regional (government, South), JPS (government, South). The notable exception is **Broward Health**, a regional government system whose English-language primary form is a 200 DPI grayscale scan from 2014 while its Spanish, Haitian Creole, and Portuguese translations are digital — the primary language version is the worst-quality artifact. **Vanderbilt**, a major teaching hospital, also uses image-only scans for its PDF forms despite offering a Swellbox digital portal.
+
+## Layout, Typography, and Visual Design
+
+Most forms follow a logical top-to-bottom flow (demographics → record types → recipient → purpose → legal → signature). Single-page forms often sacrifice readability for compactness, resulting in cramped layouts with small fonts. Good Samaritan Medical Center (West Palm Beach) exposes raw mail-merge placeholders (`«PatientNumber»`, `«PatientName»`) — unprofessional artifacts visible to patients. OrthoCarolina has a known layout defect where authorization expiration text overlaps delivery checkboxes.
+
+**Best visual design**: Merit Health Central (clean single-page fillable with clear seven-section flow), Intermountain Medical Center (question-based headers like "What records do you want?"), and Western Washington Medical Group (143 KB single-page fillable with embedded branding).
+
+**Worst visual design**: Troy Regional (image-only scan on defunct website, grade D), ENT & Allergy Associates (17-year-old Word document with no visual hierarchy), and Springhill Medical Center (references "UB-92" — replaced in 2007).
+
+## Instructions
+
+Roughly **25–30 organizations (~40–47%)** include some form of instructions. These range from inline guidance on the form itself to dedicated companion documents. Standout examples: **Cherokee Health Systems/River Valley Health** provides color-coded annotated instructional guides in both English and Spanish — a genuinely exceptional approach. **OSU Wexner** includes a dedicated instructions page with seven numbered items mapped to form sections. **CentraCare** and **Mankato Clinic** offer separate instruction sheets with section-by-section guidance. Baptist Health Lexington includes a "Tips" page with practical guidance and a 15-day turnaround goal.
+
+## Multilingual Support
+
+**21 organizations (~33%)** offer some multilingual support, almost exclusively English-Spanish. **Broward Health** is the standout with four languages (English, Spanish, Haitian Creole, Portuguese), reflecting South Florida demographics. Several organizations offer Spanish only for secondary forms (Arizona Community Physicians offers Spanish for the minor access form only; Advocate Good Samaritan's Spanish form covers third-party release but not the patient access form). Translation quality varies: DHR Health's Spanish version is an image-only scan; Desert Regional's Spanish form has nine typographical errors and omits the delivery method section; Bon Secours' Spanish form lags three years behind the English version.
+
+## Notable Examples
+
+**Exceptionally good craftsmanship**: Northwestern Memorial's 79-field fillable bilingual form with parenthetical record-type explanations; Providence Sacred Heart's dedicated patient access form with 45 fillable fields and five delivery formats; Merit Health Central's patient-first design with 66 fillable fields in both English and Spanish; Cherokee Health Systems' bilingual instructional companion guides.
+
+**Exceptionally poor craftsmanship**: Troy Regional Medical Center (image-only scan from 2015 on a defunct legacy website, grade D, no bright spots identified); ENT & Allergy Associates (17-year-old orphaned Word document with no submission instructions, grade D); Broward Health's English form being an image-only scan while its translations are digital; NorthLakes Community Clinic regressing from a 54-field fillable form to a non-fillable replacement.
+
+</file>
+
+<file name="batch-4.md">
+# Batch 4 — Document Quality Deep Dive
+
+## Format Distribution: Fillable vs. Flat vs. Image-Only
+
+Across the 62 organizations in this batch with evaluable primary forms, the dominant format is the **flat, non-fillable PDF with a text layer** — digitally authored but lacking interactive fields. Approximately **46 organizations (~74%)** fall into this category: born-digital documents exported from word processors without activating form fields, forcing patients to print and handwrite.
+
+**Fillable/interactive PDFs** account for roughly **13 organizations (~21%)**. These include the HCA Healthcare standardized form used across MountainView Hospital, Medical City Dallas, TriStar Centennial, and Riverside Community Hospital (52 fields each); Yale New Haven Hospital (97 fields — the highest in the batch); Mass General Hospital (78 fields); Providence St. Vincent (72 fields); SSM Health DePaul (69 fields); Duke University Hospital (67 fields); Gritman Medical Center (63 fields); Olmsted Medical Center (62 fields); Decatur County Hospital (61 fields); Desert Valley Hospital (47 fields); Advocare (41 fields); and UCSF Medical Center (39 fields). Providence Sacred Heart's dedicated patient access form adds another 45-field fillable example. System affiliation is a clear predictor: HCA, Duke Health, and Providence all deploy fillable forms system-wide.
+
+**Image-only scans or functionally inaccessible formats** account for roughly **3 primary forms (~5%)**. Natividad Medical Center's primary form is a 200 DPI grayscale scan with no text layer. Nevada Health Centers' forms were created in Adobe Illustrator with text rendered as vector paths — born-digital but with zero extractable text, functionally equivalent to image scans. Mercy Health–Fairfield's currently linked 2024 form replaced a functional text-layer PDF with an image-only scan — an accessibility regression.
+
+Three organizations effectively **have no evaluable standalone form**: HopeHealth and Minnie Hamilton route patients exclusively to vendor portals (HealthMark and ChartRequest respectively) with no downloadable form, while East Georgia Healthcare Center's forms are designed for *incoming* records from other providers, not patient self-access.
+
+## Page Counts and Field Counts
+
+Page counts cluster tightly: **1–2 pages is the norm**. Roughly 30 primary forms are single-page documents; another 25 are two pages. St. Joseph's Hospital Phoenix is the outlier at 5 pages (a dedicated patient access form with structured denial documentation). Michigan Medicine and Providence St. Vincent are 3-page forms.
+
+Field counts range dramatically: from **10 fields** (Advocate Good Samaritan's streamlined patient access form) to **97 fields** (Yale New Haven Hospital's comprehensive fillable authorization). The median sits around 18–22 fields. Among fillable forms, the range is 39–97, reflecting that organizations investing in interactivity tend to include more granular options. Among flat PDFs, most have 12–25 fields.
+
+## Digital-First vs. Scanned Paper
+
+The overwhelming majority of forms — roughly **95%** — are clearly digital-first, created in word processors or design tools rather than scanned from paper. True scanned paper forms are rare as primary documents, with Natividad's grayscale scan being the clearest example. Several organizations retain scanned versions as secondary documents (Duke form-3, Erlanger's behavioral health form, Bayshore/HMH's Pascack Valley form), but these are not the primary pathway. The near-universal digital origin makes the prevalence of non-fillable PDFs especially notable: these organizations created documents digitally but chose not to — or didn't know how to — add interactive fields.
+
+## Layout, Typography, and Visual Design
+
+Most forms follow a standard **top-to-bottom flow**: patient demographics → record source/destination → record type selection → purpose → legal disclosures → signature. This convention is nearly universal and generally produces logical, navigable documents. Single-page forms risk visual cramping (SSM Health DePaul packs 69 fields into one page; UCHealth similarly compresses dense content). Two-page forms generally breathe better.
+
+Typography is functional but rarely polished. Bold section headers appear in well-designed forms (WakeMed, Barnes-Jewish, Advocate Good Samaritan), while weaker forms present undifferentiated walls of legal text (ENT & Allergy Associates, Consensus Health). Notable design defects include Hillcrest Hospital Claremore's checkbox characters extracting as Khmer script (a font-mapping issue breaking assistive technology), Pocahontas Memorial Hospital's systematic "ti" ligature drops throughout the PDF, and Phelps Memorial's incorrect citation of "Health Information Portability and Accountability Act."
+
+## Instructions
+
+Only about **one-third of organizations** include completion instructions. Standout examples include Duke University Hospital's 3-page companion instruction document with plain-language definitions of each record type, Blessing Hospital's field-by-field guidelines on page 2, Mankato Clinic's section-by-section instruction page, and UPMC Presbyterian's companion guide with plain-language record type explanations. Most forms assume patients will understand terms like "Designated Record Set," "Abstract," or "USCDI" without help.
+
+## Multilingual Support
+
+Roughly **23 organizations (~37%)** provide multilingual forms, almost exclusively **English/Spanish**. Olmsted Medical Center is a notable exception, offering English, Spanish, and **Somali** — responsive to Rochester, Minnesota's significant Somali community. Several HCA facilities (MountainView, Medical City Dallas, TriStar Centennial, Riverside Community) share a standardized Spanish translation. Nevada Health Centers and Valleywise Health embed bilingual content on a single form page rather than providing separate documents. Some Spanish translations have quality issues: UCSF's Spanish version contains three spelling errors and omits a radiology request section; Valleywise's references a nonexistent form number; WakeMed's leaves key field labels untranslated.
+
+## Notable Examples
+
+**Exceptionally good craftsmanship**: Yale New Haven Hospital's 97-field fillable PDF represents the technical ceiling — every data-entry point is interactive. Duke University Hospital pairs 67 fillable fields with a standalone instruction guide, a rare combination. UCSF's form carries explicit accessibility remediation notes ("Made accessible 7/23"), signaling institutional commitment to digital access. Olmsted Medical Center's trilingual, 62-field fillable form demonstrates that even independent practices can produce high-quality documents.
+
+**Exceptionally poor craftsmanship**: ENT & Allergy Associates' primary form is an orphaned Word .doc file last modified in January 2009, with no fillable fields, no submission instructions, no organizational branding, and confusing ALL-CAPS legal text — scoring the batch's lowest overall grade (D, 2.05). Natividad Medical Center's primary form is an image-only scan that cannot be read by screen readers, filled electronically, or searched — a regression from its older text-layer form. Nevada Health Centers created visually clean bilingual forms in Adobe Illustrator but inadvertently made them completely inaccessible by rendering text as vector paths rather than character data.
+
+</file>
+</batch-summaries>

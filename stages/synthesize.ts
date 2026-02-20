@@ -103,6 +103,17 @@ A. ACCESS PATHWAY DIFFERENTIATION
    access rights under HIPAA, separate from authorization for release to insurers,
    attorneys, or other third parties. Assess what this org actually provides.
 
+   Also note whether any of the org's forms or pathways specifically
+   address EHI EXPORT — the computable electronic health information
+   dataset that providers and EHR systems are obligated to offer under
+   the 21st Century Cures Act / ONC information blocking rules. This is
+   distinct from simply requesting records via email or a "digital copy"
+   — EHI Export is a specific regulatory obligation to provide data in a
+   computable format. Do any forms have a checkbox or section referencing
+   this? Does the org have a separate dedicated form for EHI Export?
+   Capture this in the has_ehi_specific_option, has_dedicated_ehi_form,
+   and ehi_export_details fields in access_pathway.
+
 B. FORM DOCUMENT QUALITY & HYGIENE
    For the best available patient-facing form, evaluate the nuts and bolts:
    - Is it a fillable/interactive PDF or web form, or a flat scan to print and fill by hand?

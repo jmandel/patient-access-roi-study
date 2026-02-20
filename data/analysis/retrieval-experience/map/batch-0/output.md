@@ -1,46 +1,47 @@
-# Retrieval Experience Analysis — Batch 0
+# ROI Form Retrieval Experience: Batch 0 Analysis
 
-## Overall Picture
+## Overview
 
-Across this batch, finding ROI forms online is surprisingly uneven. The majority of organizations (~75%) make their forms easy to find — typically requiring 1–2 web searches and 2–3 clicks from the homepage. But the remaining quarter ranges from moderately frustrating to effectively impossible, with forms buried behind login walls, blocked by CDN bot protection, hosted on stale URLs, or simply not published online at all.
+Across 80 organizations in this batch, ROI form retrieval difficulty broke down as follows:
+
+- **Easy (1–2 searches, clearly linked):** ~55 organizations (69%)
+- **Moderate (multiple strategies, workarounds needed):** ~13 organizations (16%)
+- **Hard/Impossible (no form online):** ~12 organizations (15%)
 
 ## Typical Search Effort
 
-For the easy cases, a single web search like `"[Hospital Name]" "medical records" "release form" filetype:pdf` was usually sufficient to surface direct PDF links. Site-scoped searches (`site:example.com authorization release medical records`) were the most reliable fallback when generic searches returned noise. On-site navigation typically followed a predictable path: **Home → Patients & Visitors → Medical Records** (2–3 clicks), with forms clearly labeled and directly downloadable.
+Most forms were found within **2–3 search queries**. The dominant successful pattern was a three-step funnel: (1) a broad web search for the organization + "authorization release health information PDF," (2) a site-scoped search (`site:domain.com authorization release medical records`), and (3) navigating the organization's medical records page directly. The site-scoped search was the single most reliable strategy, succeeding even when broad searches returned nothing (e.g., Barrett Hospital, ANHC, Myrtue Medical Center, Millinocket Regional Hospital). For roughly a third of organizations, the very first web search returned a direct PDF link — Northwestern Memorial, Cordova Community Medical Center, and Owensboro Health are examples where no website navigation was needed at all.
 
-Examples of frictionless retrieval: **WellSpan York Hospital** forms appeared in the first web search, directly downloadable without any bot blocking. **Merit Health Central** had a dedicated "Request Medical Records" page with clearly labeled English and Spanish download links. **Abbeville Area Medical Center**, a small WordPress-based site, had its form 2–3 clicks deep under Patients & Visitors → Medical Records — simple and functional.
+## Navigation Patterns That Worked vs. Failed
 
-## Navigation Patterns: What Works and What Fails
+**Worked well:** Organizations with a dedicated "Medical Records" or "Patient Forms" page linked from the main navigation (Patients & Visitors → Medical Records) provided the smoothest experience. Examples include Columbia Memorial Hospital, Fenway Health, and Philadelphia FIGHT, where forms were 2 clicks from the homepage. Large health systems (HCA Healthcare, Advocate Health, Northwell Health, Mass General Brigham) centralized forms at the system level, making a single form cover multiple facilities.
 
-**What works:**
-- Dedicated "Medical Records" or "Request Medical Records" pages under a Patients & Visitors section
-- Direct PDF links on those pages (not buried inside accordions or portals)
-- System-level form publishing (e.g., **AdventHealth**, **WellSpan**, **Bon Secours**) where one URL serves all facilities
-- WordPress sites with straightforward `/wp-content/uploads/` paths — forms are often directly indexable by search engines
-
-**What fails:**
-- Organizations that have migrated to third-party portals but removed the downloadable form entirely. **HopeHealth** (Florence, SC) outsources all records requests to HealthMark Group's portal, which requires email verification before you can even see the authorization workflow. No PDF exists anywhere on their website.
-- Large multi-entity organizations where forms are scattered across subsidiary sites. **Proliance Surgeons** has different versions of the same form on different member practice websites (npsmri.com, proortho.com, proliancesurgeons.com), some as image-only scans.
-- Portal-only approaches without a public fallback. **Anaheim Global Medical Center** (KPC Health) directs patients exclusively to ChartRequest, requiring account creation. No downloadable form exists — and searching for one leads to confusion with the similarly-named AHMC Healthcare system.
+**Failed or frustrated:** Accordion/collapsed sections hid download links at Samaritan Lebanon Community Hospital, where the PDF links were buried inside a "Sending a Request by Mail or Fax" section invisible until expanded. Virginia Garcia embedded PDF URLs inside Divi theme JavaScript config rather than standard `<a href>` links. At UMCSN, the medical records page linked to an amendment form but *not* the actual ROI form — a notable findability gap. The Valley Hospital's medical records page removed form links entirely, directing patients to an online tool, though the PDFs remained on the server.
 
 ## Common Obstacles
 
-**Bot blocking and CDN protection (~53% of organizations showed some form of this):** Cloudflare and Akamai were the most common culprits. **Goleta Valley Cottage Hospital**'s Akamai CDN blocked curl requests even with browser user-agent strings, though the same files were accessible via Azure Blob Storage mirrors. **Desert Regional Medical Center** required using Chrome DevTools and in-page JavaScript `fetch()` to bypass Cloudflare challenges.
+**Stale/broken URLs (7 organizations):** Medical City Dallas, Texas Oncology, WakeMed, Hartford Hospital, UMMC, and Troy Regional Medical Center all had outdated PDF URLs returning 404 errors in search results. UMMC's English form link was broken on their own website while the Spanish version worked fine. Texas Oncology's migration to Sitecore Edge CDN left three old URLs dead.
 
-**Stale or broken URLs (~16%):** **DHR Health** had old URLs (`/app/uploads/2020/10/...`) returning empty files after a CMS migration — the actual forms lived at new `/media/{hash}/` paths. **WakeMed Health** had a search-indexed PDF URL that returned HTML instead of a PDF; the current URLs had moved to `/sites/default/files/pdf/`. These represent real patient friction — a bookmarked or search-cached link simply stops working.
+**Bot/CDN blocking (9 organizations):** Cloudflare challenged downloads at Good Samaritan Medical Center (West Palm Beach), Piedmont Medical Center, Michigan Medicine, and Cottage Hospital (Woodsville, NH — where Turnstile was completely impassable). Akamai blocked Goleta Valley Cottage Hospital's main domain. Incapsula protected Penn Medicine. CentraCare and Cone Health returned "Access Denied." MountainView Hospital's original URL served HTML instead of PDF. In all cases, browser-based fallback (Chrome DevTools with JavaScript `fetch()`) or alternative CDN URLs resolved the issue.
 
-**No form published online (~15+ organizations):** **El Rio Health** (FQHC, Tucson) has no ROI form, no medical records page, and directs patients to MyChart or phone. **Consensus Health** (physician network, NJ) has no patient forms section at all — finding any ROI-related form required navigating to a member practice's separate website. **Desert Valley Hospital** doesn't post its ROI form despite describing the request process; the identical system template was only findable on sister Prime Healthcare hospital sites.
+**No form published online (12 organizations):** Neshoba General Hospital, Holy Cross Hospital (Taos), Neighborhood Health Association, El Rio Health, Betty Jean Kerr People's Health Centers, Franklin Primary Health Center, and Consensus Health published no ROI form whatsoever. Patients at these organizations must call or visit in person. AdventHealth Hendersonville, Anaheim Global Medical Center, HopeHealth, and Southeast Medical Group outsourced entirely to third-party portals (Swellbox, ChartRequest, HealthMark, MediCopy) requiring account creation — no downloadable PDF exists. Desert Valley Hospital had no form on its site; the correct template was only discoverable on a sister Prime Healthcare hospital's website.
+
+**Login walls/portal-only access:** Anaheim Global Medical Center's ChartRequest portal requires account creation before any form is visible. HopeHealth's HealthMark portal requires email verification. These represent real barriers — a patient cannot even *see* the authorization form without registering.
 
 ## Browser Fallback Frequency
 
-About 26% of organizations (50 of 195) required browser-based fallback at some point during retrieval — typically because `curl` or `web_fetch` was blocked by CDN protection or because the site required JavaScript rendering. This is a meaningful proxy for patient experience: if an automated tool with browser-like headers gets blocked, a patient using an older browser, screen reader, or download manager would face similar issues.
+Browser-based download (via Chrome DevTools) was needed for approximately **10–12 organizations** (12–15%), primarily due to bot protection (Cloudflare, Akamai, Incapsula) or SharePoint/DAM hosting that rejected programmatic requests (UTMB's SharePoint, NYP's Widen DAM platform). In most cases, the workaround was straightforward — navigate to the URL in a browser and the PDF loads normally.
 
-**UTMB Health** hosts forms on SharePoint (`liveutmb.sharepoint.com`), which returns login pages to non-authenticated HTTP clients. A patient clicking the link in a normal browser would be fine, but anyone trying to directly download or share the URL would get an authentication wall.
+## Website Designs That Are Systematically Harder
 
-## Website Design Patterns That Are Systematically Harder
+**Small/rural critical access hospitals** were the most inconsistent. Some (Barrett Hospital, Cordova Community Medical Center, Copley Hospital) had clean, simple sites with forms easy to find. Others (Neshoba General, Holy Cross Taos, Troy Regional, Mayers Memorial) had minimal websites with no medical records section at all. Cuba Memorial Hospital's form was only findable by following a footer link to a parent organization's site.
 
-**Portal-only organizations** are the hardest category. When a hospital delegates records requests entirely to ChartRequest, HealthMark, or Datavant (~23% of organizations use one of these), there's often no downloadable form at all. The patient must create an account, verify their email, and navigate a third-party interface — a very different experience from downloading a PDF.
+**Physician practice networks** (Consensus Health, Southeast Medical Group, ENT & Allergy Associates) were notably harder. Decentralized governance means forms may exist only at individual practice locations, not on the parent organization's site. ENT & Allergy Associates hosted their form as a `.doc` file from 2009, not linked from any navigable page.
 
-**Multi-domain systems** create confusion. Organizations with multiple domains (e.g., `scenicmountainmedical.com` vs. `scenicmountainmedicalcenter.org`, or `erlanger.org` vs. `erlangerbh.com`) make it unclear which site is canonical. Patients may land on an outdated domain with broken links.
+**Large for-profit systems** using CDN-hosted forms (HCA's `hcadam.com`, Tenet's `librariesprovider` paths) generally worked well but introduced URL opacity — patients cannot guess or bookmark these URLs, and they break if the CDN restructures.
 
-**WordPress sites** with simple structures were paradoxically the easiest to navigate — small community hospitals and critical access hospitals often had the most straightforward retrieval experience. Large health systems with enterprise CMSes (Sitecore, Kentico) were more likely to have complex URL structures, CDN protection, and multi-level navigation that obscured the medical records page.
+**Sites that have recently migrated platforms** (Texas Oncology to Sitecore, Troy Regional from FastHealth to WordPress, UMMC) leave behind broken URLs that persist in search engine indexes for months, sending patients to 404 pages.
+
+## Key Takeaway
+
+For the majority of organizations, a patient with moderate internet skills could find the ROI form within 5 minutes using a search engine. The 15% of organizations with no online form represent a significant access barrier — these patients must know to call the medical records department, a step that many may not take. Bot-blocking affected automated retrieval more than it would affect a real patient using a browser, but stale URLs and missing medical records pages are obstacles that affect everyone equally.

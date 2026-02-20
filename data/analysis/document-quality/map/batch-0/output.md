@@ -1,61 +1,39 @@
 # Document Quality Deep Dive — Batch 0
 
-## Batch Composition
+## Format Classification: Fillable vs. Flat vs. Scan
 
-This batch contains **2 organizations**, representing contrasting profiles:
+Of the 62 organizations in this batch, **24 (39%)** provide fillable/interactive PDFs with functional AcroForm fields, **35 (56%)** distribute flat (print-and-fill) PDFs with a text layer but no interactive fields, and **3 (5%)** serve image-only scans with no text layer at all. The three image-only scans — Troy Regional Medical Center (grayscale JPEG at 200 DPI, dated 2015, served over unencrypted HTTP), JPS Health Network (2018 scan with no text layer), and Bath Community Hospital (scanned image with OCR errors) — represent the floor of document quality and are completely inaccessible to screen readers.
 
-| Org | Facility Type | Ownership | Affiliation | Region | State |
-|-----|--------------|-----------|-------------|--------|-------|
-| Colquitt Regional Medical Center | Community hospital | Government | Independent | South | GA |
-| Gastro Florida | Physician practice | For-profit | Independent | South | FL |
+The flat-PDF category is notable because many of these forms were clearly authored digitally in layout software (InDesign, Word, etc.) but never had interactive fields added. MUSC Health, Goleta Valley Cottage Hospital, and University of Iowa Hospitals all distribute born-digital PDFs with clean text layers and zero fillable fields — a gap that is technically trivial to close. Iowa's form even *regressed* from 50 fillable fields (2021 version) to zero (2024 version). NorthLakes Community Clinic similarly regressed from a fillable 2022 form to a non-fillable 2023 version.
 
-Both are independent, Southern facilities, but they differ sharply in facility type, ownership model, and digital maturity.
+## Page and Field Counts
 
-## Fillability and Interactivity
+Page counts cluster tightly: **37 forms (60%)** are single-page, **22 (35%)** are two pages, and only **2 (3%)** reach three pages (Texas Oncology and UW Medical Center). One organization (Labette Health) has no PDF at all, using an online Formstack form exclusively.
 
-- **Flat/image-only scans: 1 of 2** — Colquitt Regional's sole form is a single-page scanned image with no meaningful text layer (only 11 characters of OCR noise extracted) and zero fillable fields. It was digitized in 2021 using scanning software ("Transform Foundation Server"), confirming it is a photographed paper form uploaded as a PDF. It cannot be filled electronically, is completely inaccessible to screen readers, and must be printed and completed by hand.
-
-- **Fillable/interactive digital pathway: 1 of 2** — Gastro Florida uses a third-party Sharecare/HDS online portal as its primary records request mechanism, offering a fully digital submission workflow with approximately 30 fillable fields. No downloadable ROI form exists; the portal *is* the form. While fully interactive, the 31-step portal process is unusually lengthy for a records request.
-
-**Tally: 0 fillable PDFs, 1 image-only scan, 1 portal-only (no PDF at all).**
-
-## Page Counts and Field Counts
-
-- **Colquitt Regional**: 1 page, 0 fillable fields (10-item numbered list with 12 checkboxes, but all must be handwritten).
-- **Gastro Florida**: 0 pages of downloadable form (portal-only); ~30 fields in the online portal workflow.
-
-The range is minimal given the small batch, but it illustrates the two extremes: a single-page paper relic vs. a fully digital but overly complex portal.
+Field counts range from **11** (Consensus Health's bare-minimum unbranded form) to **103** (NewYork-Presbyterian's Tripartite authorization). The median sits around 18–20 fields. The top tier of fillable forms is dramatically more interactive: NYP (103 fields), Texas Oncology (95), A.O. Fox/Bassett (83), Newton-Wellesley/MGB (78), UMMC (70), SSM Health DePaul (69), Flowers Hospital (66), and Ben Taub/Harris Health (65) all pack substantial interactivity into compact layouts. These high-field-count forms represent genuine digital-first design where every checkbox, text input, and date field is programmatically fillable.
 
 ## Digital-First vs. Scanned Paper
 
-- **Scanned paper: 1** — Colquitt Regional's form is definitively a scanned paper document, confirmed by its creation tool metadata and the absence of a real text layer.
-- **Digital-first: 1** — Gastro Florida's portal pathway is natively digital, with no paper antecedent.
+**58 of 62 organizations (94%)** distribute digitally authored documents with extractable text. Only 3 are image-only scans, and 1 (Fallon Medical Complex) distributes its form as a Microsoft Word .doc file rather than a PDF — an unusual and fragile format choice. The digital-first majority is encouraging, but "digitally authored" does not mean "digitally usable" — the majority of these born-digital forms still require printing and handwriting because they lack interactive fields.
 
 ## Layout, Typography, and Visual Design
 
-**Colquitt Regional** has no section headers, boxes, or visual groupings. The single-page form is a numbered list with no typographic hierarchy. Despite this, the single-page length keeps complexity manageable — the 10-item flow (patient ID → discloser → record types → recipient → purpose → legal → signatures) is logically ordered, if visually undifferentiated.
+Most forms follow a logical top-to-bottom flow with identifiable sections. Numbered sections are the most common organizational pattern (e.g., UW Medical Center's Items #1–7, Fisher-Titus's eight numbered sections, Intermountain's question-based headings). Layout quality is generally adequate but rarely excellent. Several forms cram dense content into single pages, resulting in small type and compressed sections (SSM Health DePaul, Ben Taub). Good Samaritan Medical Center and Piedmont Medical Center expose unprocessed template merge fields (`«PatientNumber»`, `«PatientName»`) — internal CMS artifacts visible to patients. Memorial Healthcare System's English PDF is bloated at 2.45 MB with 23 embedded fonts and garbled hidden content from template layers.
 
-**Gastro Florida** has a clean, clear layout in its portal interface with plain language, though the 31-step sequence is burdensome. The downloaded documents (3 PDFs retrieved, all Notice of Privacy Practices or intake paperwork — none are actual ROI forms) include a 2026 NPP with an unresolved `ClientName` template placeholder, suggesting poor quality control over published documents.
+Standout design: Intermountain Medical Center's form uses conversational, question-based section headers ("What information do you want?") that lower cognitive barriers. Flowers Hospital's Adobe InDesign–produced form achieves clean visual hierarchy on a single fillable page. A.O. Fox/Bassett defaults delivery to the MyBassett Portal — a progressive design choice embedded in the form structure itself.
 
-## Instructions
+## Instructions and Guidance
 
-- **Colquitt Regional**: No instructions are provided. The form contains no submission guidance — no fax number, mailing address, email, or department name. A patient who downloads and completes the form has no guidance on how to return it.
-- **Gastro Florida**: No pre-portal instructions exist on the website. The dedicated Medical Records page at gastrofl.com/medical-records/ is completely empty. Patients must find the portal link on the Patient Forms page without guidance.
-
-**Tally: 0 of 2 organizations provide adequate instructions.**
+Only **21 of 62 forms (34%)** include instructions of any kind. Most forms drop patients into fields with no guidance. Notable exceptions: Owensboro Health provides a separate 2-page plain-language companion instruction document; Fenway Health offers a 3-page FAQ guide explaining every form section; UW Medical Center includes a full instruction page with item-by-item guidance; and Northwell Health (Phelps/Huntington) provides companion documents with annotated visual examples using fictional patient names — the most patient-friendly instructional approach observed.
 
 ## Multilingual Support
 
-Neither organization offers multilingual forms or portal interfaces.
+**23 of 62 organizations (37%)** offer forms in more than one language. Spanish is universal among multilingual providers (23/23). Three organizations go further: Good Samaritan Medical Center and Memorial Healthcare System provide **Haitian Creole** versions alongside English and Spanish — meaningful for their South Florida communities. NewYork-Presbyterian offers English, Spanish, and **Chinese**. Newton-Wellesley/MGB offers English, Spanish, and **Portuguese**. Olmsted Medical Center provides English, Spanish, and **Somali** — a distinctive choice reflecting Rochester, MN's refugee community.
 
-**Tally: 0 of 2 offer non-English support.**
+## Notable Exemplars
 
-## Notable Examples
+**Best document craftsmanship**: NewYork-Presbyterian (103 fillable fields, trilingual, 16+ record-type checkboxes across 2 clean pages) and Flowers Hospital (66 fillable fields on a single InDesign-produced page with professional Spanish translation and patient-centered "Myself" framing) represent the high-water mark.
 
-**Worst document craftsmanship — Colquitt Regional Medical Center**: This form exemplifies the lowest tier of document quality. A scanned image with no text layer, no fillable fields, no submission instructions, and no accessibility support. It is a generic third-party authorization form (not a patient access form), with a witness signature line that may mislead patients into thinking a witness is required. The single redeeming feature is easy findability — the form is linked prominently from a clearly labeled page, approximately two clicks from the homepage.
+**Worst document quality**: Troy Regional Medical Center's form is a decade-old, image-only grayscale scan hosted on a defunct legacy website over HTTP, with no text layer, no fillable fields, and no submission instructions. Consensus Health's form is an unbranded single page with 11 fields, no organizational identity, no submission instructions, and missing HIPAA-required elements. JPS Health Network's 2018 image-only scan is particularly striking because the same organization produced modern fillable PDFs for its 2025 HIE forms — demonstrating capability it chose not to apply to patient access.
 
-**Best technical pathway — Gastro Florida**: The Sharecare/HDS portal demonstrates a fully digital, portal-based approach that eliminates printing and mailing entirely. The portal correctly differentiates patient self-access from third-party release. However, document craftsmanship issues undercut the technical achievement: the organization's published NPP contains template errors, the Medical Records page is blank, and the 31-step portal process is unusually burdensome.
-
-## Summary
-
-This small batch starkly illustrates the bifurcation in healthcare document quality. One organization relies on a scanned paper form from a pre-digital era; the other has leapfrogged PDFs entirely with a portal-based workflow. Neither achieves a satisfying balance of accessibility, clarity, and patient-centeredness. Both fail at instructions — the fundamental question "how do I submit this?" goes unanswered in one case and unguided in the other. Multilingual support is absent across the board. The "typical" ROI document in this batch is either technically non-functional (image scan) or technically functional but procedurally burdensome (31-step portal), with no middle ground of a well-designed, fillable PDF with clear instructions.
+**Notable regression**: University of Iowa Hospitals dropped from 50 fillable fields to zero between form revisions, and NorthLakes Community Clinic similarly regressed — evidence that form modernization is not monotonically improving.

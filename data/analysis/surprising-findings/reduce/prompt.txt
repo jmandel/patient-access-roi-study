@@ -1,0 +1,224 @@
+You are synthesizing surprising and unexpected findings from across the
+entire ROI form study.
+
+Read DESIGN.md and ANALYSIS-PLAN.md for context.
+
+Notes on surprising findings from individual map batches are included inline below.
+
+Your task: curate the most interesting and unexpected discoveries.
+- Select findings that genuinely surprise or challenge assumptions
+- Look for cross-batch patterns that individual mappers couldn't see
+- Discuss implications — what do these findings suggest about the state of patient access?
+
+Write your analysis to "output.md". Aim for 1500-2500 words.
+
+<batch-summaries>
+<file name="batch-0.md">
+# Surprising Findings — Batch 0
+
+## The Fillability Regression Paradox
+
+Several organizations have demonstrably *regressed* in digital accessibility over time. **University of Iowa Hospitals** dropped from 50 fillable fields in its older form to zero in the current revision — while the form's own consent language claims electronic completion is "as valid as if you signed the consent in writing," creating a paradox where the form endorses digital completion but provides no mechanism for it. **NorthLakes Community Clinic** (FQHC, Ashland, WI) tells a similar story: its older form-2 has 54 fillable fields, but the current form-1 that replaced it has zero. The newer form added better submission instructions and encrypted email delivery but stripped out the interactive fields. These aren't legacy organizations failing to modernize — they are organizations that *had* modern forms and chose to abandon them.
+
+## The "Wrong State Law" Problem
+
+Multiple organizations cite laws from the wrong state on their forms. **AdventHealth Central Texas** (Killeen, TX) cites Illinois law on a form used at a Texas facility. **Proliance Surgeons** (Seattle, WA) has a subsidiary form citing California's Confidentiality of Medical Information Act instead of Washington's RCW 70.02. **Ironwood Cancer & Research Centers** (Arizona) cites Washington State's RCW 70.24 on a form for an Arizona practice. These aren't obscure footnotes — they're the legal basis for sensitive-information consent. This suggests organizations are copying form templates across state lines without legal review, a compliance risk that could invalidate patient authorizations.
+
+## The 25-Bed Hospital That Outperforms Teaching Centers
+
+**Wayne County Hospital** — a 25-bed independent critical access hospital in rural Monticello, Kentucky — offers both a downloadable PDF *and* a web-based HTML submission form, email delivery of records, and prominently discloses that first copies are free under Kentucky law (KRS 422.317). Meanwhile, **OSU Wexner Medical Center** (1,439 beds, government teaching hospital) provides no electronic submission channel, no fax number, no email address, and routes all billing through a third-party vendor (CIOX) without fee transparency. A patient at one of the nation's largest academic medical centers has a materially worse digital experience than one at a tiny rural hospital. Similarly, **Fallon Medical Complex** (25-bed CAH in Baker, MT) offers seven delivery formats including USB drive, patient portal, and email — a breadth that rivals major systems. **Myrtue Medical Center** (25-bed CAH, Harlan, IA) offers MyChart portal delivery and encrypted email, plus a Spanish translation — remarkable for a facility its size.
+
+## The JPS Health Network Capability Gap
+
+**JPS Health Network** (Fort Worth, TX; 573 beds, government) earned the batch's lowest grade (D, 2.45). The most damning detail: JPS published modern, fillable, email-submittable HIE authorization forms in 2025 — proving the organization has the technical capability — while its patient ROI form remains a seven-year-old image-only scan with no text layer and a $75 flat fee for electronic delivery. The organization demonstrably *can* produce digital-first forms but has not applied that capability to patient access. The $75 electronic delivery fee and $30 minimum for first 10 pages are among the most potentially excessive fees in the batch, likely violating HIPAA's cost-based limit for patient access requests.
+
+## Organizational Transitions Leave Patients in Limbo
+
+**Canton-Potsdam Hospital** (NY) presents a cautionary tale about health system acquisitions. After St. Lawrence Health was acquired by Rochester Regional Health, the facility's forms vanished from the web entirely — findable only via the Wayback Machine. The parent system's Swellbox portal *explicitly excludes* St. Lawrence Health facilities, leaving phone as the only pathway. A patient today encounters a gap between two organizations' infrastructures with no bridge. **Ascension St. Vincent's East** (Birmingham, AL) faces a similar branding-transition problem: the Ascension-to-UAB transition means initial searches yield a legacy form on a different domain, and the current form dropped its HIPAA Right of Access citation that was present in the predecessor.
+
+## Samaritan Health Services' Rare EHI Export Form
+
+**Samaritan Lebanon Community Hospital** (OR), through its parent Samaritan Health Services, offers a dedicated "Computer Readable EHI Export Request" form in both English and Spanish — a mechanism specifically for patients to receive their health information in machine-readable format. This is exceptionally rare across the entire study and demonstrates genuine 21st Century Cures Act awareness. However, the standard ROI form explicitly states "No Charge" for patient requests, while the EHI export form omits this commitment — an inconsistency that could inadvertently create a financial barrier to the very interoperability the Cures Act mandates.
+
+## Memorial Healthcare System's Trilingual Achievement — With Hidden Debris
+
+**Memorial Healthcare System** (Hollywood, FL; government-owned, 850 beds) offers forms in English, Spanish, and Haitian Creole — the only trilingual organization in this batch, reflecting South Florida's demographics. Yet the English PDF is bloated to 2.45 MB (vs. ~700 KB for identical Spanish/Creole versions) because it contains garbled hidden content from template layers — including staff business cards, physician rosters, and internal labels like "JDCH Oncology BC (Multiple Doctors & Locations) FRONT." This hidden debris inflates file size and produces garbled output for assistive technologies, undermining the accessibility the multilingual effort was meant to serve.
+
+## Prevea Health's Demographic-Responsive Multilingual Choice
+
+**Prevea Health** (Green Bay, WI), an independent nonprofit physician practice, provides its ROI form in English, Hmong, Somali, and Spanish. Hmong and Somali translations are vanishingly rare in healthcare forms nationally and reflect specific awareness of northeastern Wisconsin's refugee resettlement communities. This is the most demographically responsive language access decision in the batch and stands in sharp contrast to organizations like **Sea Mar Community Health Centers** (Seattle FQHC serving diverse communities) that offer only English despite serving populations where multilingual forms would be expected.
+
+</file>
+
+<file name="batch-1.md">
+# Surprising Findings — Batch 1
+
+## Form Quality Is Regressing at Some Organizations
+
+Several organizations have published newer forms that are demonstrably worse than their predecessors. **University of Iowa Hospitals** replaced a form with 50 fillable fields with a 2024 version that has zero — and simultaneously removed the "Myself at the address above" recipient shortcut that made patient self-access intuitive. **NorthLakes Community Clinic** (FQHC, WI) regressed from a 54-field fillable form to a non-fillable flat PDF in December 2023, with both versions still live under the same form number and no guidance on which to use. Most strikingly, **Mercy Health - Fairfield Hospital** (Bon Secours Mercy Health, OH) replaced a text-based PDF with searchable content with an image-only scan — completely inaccessible to screen readers. These aren't legacy neglect; they are active regressions introduced during form updates.
+
+## Provider-Facing Forms Get More Investment Than Patient-Facing Ones
+
+**Ironwood Cancer & Research Centers** (for-profit practice, AZ) reveals a telling asymmetry: its form for *other providers* to send records *to* Ironwood has 22 fillable fields and was updated in 2023, while its patient-facing release form has zero fillable fields, dates to 2019, and is effectively orphaned — not linked from any active webpage. The organization invested in making it easy for providers to send records in while neglecting the patient's ability to get records out.
+
+## A For-Profit CHS Hospital Leads the Batch
+
+**Flowers Hospital** (Community Health Systems, Dothan, AL) earned the batch's only A grade (4.65/5). This for-profit community hospital offers a dedicated "Patient Request for Health Information" form with "Myself" as the first recipient option, 66 fillable fields, a co-equal Spanish translation with identical interactivity, and a Swellbox online portal. It outperforms every teaching hospital and major academic medical center in this batch — including Mass General (3.75), UCSF (3.65), Northwestern (not scored in structured data but strong), and UPMC Presbyterian (2.9). The assumption that large nonprofit academic centers produce better patient-facing materials is flatly contradicted here.
+
+## Physician Gatekeeping Undermines Patient Access Rights
+
+**Mercy General Hospital** (Dignity Health/CommonSpirit, Sacramento, CA) requires *physician approval* before patients can access their own HIV test results and *caregiver approval* for psychiatric records. A physician notification-and-veto mechanism is built into the standard patient access workflow. This likely violates HIPAA's Right of Access, which permits denial only through a formal review process with appeal rights — neither of which is disclosed on the form.
+
+## Small Rural Hospitals Sometimes Outperform Major Systems
+
+**Fallon Medical Complex** (25-bed CAH, Baker, MT) offers seven delivery format options — paper, USB, CD, fax, in-person review, unencrypted email with informed consent, and patient portal — plus a first-copy-free policy. **GHC of South Central Wisconsin** (independent nonprofit practice, Madison) scores 4.4 with a dedicated fillable patient access form, 49 interactive fields, encrypted email delivery, and a 5-day turnaround commitment. Meanwhile, **UPMC Presbyterian** (900 beds, Pittsburgh) scores 2.9 with no fillable fields, no online portal, and ambiguous fee language that may condition access on prepayment. Resource constraints don't necessarily predict patient experience quality.
+
+## Name Confusion Creates Wrong-Organization Hazards
+
+Web searches for several organizations returned forms belonging to entirely different entities with similar names. **Hillcrest Hospital Claremore** (Ardent Health, OK) yielded a form from Hillcrest Internal Medicine in San Diego. **UCHealth University of Colorado Hospital** retrieved a form from UC Health Cincinnati. **Mercy Health Springfield** (Bon Secours, OH) pulled up a form from Mercy (mercy.net — a completely separate Missouri system). Patients performing the same searches could easily download and submit the wrong organization's form.
+
+## Exposed Internal Artifacts Reach Patients
+
+Two **Tenet Healthcare** facilities — **Good Samaritan Medical Center** (FL) and **Piedmont Medical Center** (SC) — have downloadable PDFs containing visible mail-merge placeholders like `«PatientNumber»` and `«PatientName»`. These unprocessed template fields appear in the documents patients are expected to use, eroding trust and suggesting minimal quality review. Piedmont's forms also date to 2013 and pre-2010 respectively.
+
+## Emerging Interoperability Options Appear on Forms
+
+**Emory University Hospital** and **Bayshore Medical Center** (Hackensack Meridian Health) both offer "EHI Export" as a named delivery option — machine-readable records uploadable to another EHR system. **Riverside Community Hospital** and **Medical City Dallas** (both HCA) include USCDI release request options. These forward-looking interoperability features are extremely rare on ROI forms and signal awareness of health data exchange standards, though the technical jargon ("Requires Direct Address or National Provider Identifier") would be meaningless to most patients.
+
+## Olmsted Medical Center's Somali-Language Form
+
+**Olmsted Medical Center** (independent nonprofit practice, Rochester, MN) offers its ROI form in English, Spanish, and Somali — directly responsive to Rochester's significant Somali refugee community. This is the only organization in the batch offering a form in a language beyond English and Spanish, and it comes not from a major health system but from an independent 61-bed community practice.
+
+## The Baton Rouge Clinic's Self-Defeating Right of Access Form
+
+**The Baton Rouge Clinic** (independent for-profit practice, LA) shows unusual regulatory sophistication with a three-form strategy differentiating outbound release, inbound transfer, and Right of Access — explicitly citing HIPAA § 164.524. But the Right of Access form is framed entirely as a designee authorization ("disclose records to: Name: ___"), with no clear option for a patient to request records for themselves. The form most directly invoking patient access rights can't actually be used for the most common patient access scenario.
+
+</file>
+
+<file name="batch-2.md">
+# Batch 2 — Surprising Findings
+
+## The Capability-Choice Gap
+
+The most striking pattern in this batch is organizations that demonstrably *can* produce modern digital forms but choose not to apply that capability to the document patients actually need. **JPS Health Network** (Fort Worth, TX; government, major system) is the starkest example: their 2025 HIE forms are fillable, text-searchable PDFs that accept encrypted email submission — yet their core ROI form remains a seven-year-old image scan with literally 1 character of extractable text. Similarly, **Mercy General Hospital** (Sacramento, CA; nonprofit, major system) produced a third-party authorization form with 42 fillable fields while both of its patient access forms have zero. The investment disparity reveals that patient self-access is treated as a secondary workflow even when the organization has the technical capacity to do better.
+
+## East Georgia Healthcare Center: No Form Exists
+
+**East Georgia Healthcare Center** (Swainsboro, GA; nonprofit FQHC) presents perhaps the most extreme finding: the only ROI forms on its website are designed for *incoming* records — authorizing other providers to send records *to* EGHC. A patient wanting records *from* EGHC has no applicable form anywhere online. The irony deepens because EGHC has invested in RightSignature (an e-signature platform) for these forms, demonstrating digital sophistication applied to the wrong problem entirely.
+
+## Small Rural Hospitals Punching Above Their Weight
+
+Several critical access hospitals defy the expectation that small, rural, under-resourced facilities would lag behind. **Myrtue Medical Center** (Harlan, IA; nonprofit independent CAH) offers MyChart portal delivery, encrypted email, Spanish translations, and substance-use carve-outs with proper 42 CFR Part 2 citations — features that many major urban systems lack. **Riverwood Healthcare Center** (Aitkin, MN; nonprofit independent CAH) supplements its PDF with a HIPAA-compliant JotForm online submission — a pragmatic digital solution that avoids the cost of enterprise portal vendors. **Columbia Memorial Hospital** (Astoria, OR; nonprofit independent CAH) explicitly states records are *free* for patients requesting their own — a transparency rare even among large systems. **Boone County Health Center** (Albion, NE; government independent CAH) maintains a dedicated ROI email address and offers encrypted email delivery. These small facilities are finding creative, low-cost ways to modernize.
+
+## Physician Gatekeeping of Patient Access
+
+**Mercy General Hospital's** patient access form includes a "NOTIFICATION TO DOCTOR" section that actively solicits physician objections to releasing records, without informing the patient of their right to appeal. Both Mercy General and its medical group form require physician approval before releasing HIV test results or psychiatric records *to the patient themselves* — a requirement that likely conflicts with HIPAA's Right of Access, which generally does not condition patient access on provider approval. This is the only instance in the batch of explicit physician veto mechanisms embedded in patient access forms.
+
+## For-Profit System Surprises
+
+**Merit Health Central** (Jackson, MS; for-profit, CHS subsidiary) defies the expectation that for-profit chains prioritize institutional efficiency over patient experience. Its form is titled "Patient Request for Health Information" with "Myself" as the first recipient option, offers five delivery methods including password-protected removable media, provides a Spanish translation with identical fillable fields, and earns the highest overall score (4.15) in the batch. Meanwhile, **ENT & Allergy Associates** (Tarrytown, NY; for-profit independent, 80+ offices) earns a 2.05 with an unfindable 2009 Word document — demonstrating that practice size does not predict quality.
+
+## Progressive Sensitive-Information Categories
+
+**Brattleboro Memorial Hospital** (VT; nonprofit independent) updated its form in January 2025 to include checkboxes for Reproductive Health Care and Gender Affirming Care — categories that reflect post-*Dobbs* privacy concerns and evolving care paradigms. This is unusually forward-thinking for a community hospital and suggests that even organizations with otherwise middling processes (C grade) may lead on specific dimensions. Separately, **Texas Oncology** includes a dedicated Prohibited Use Attestation page current with 2024 federal reproductive health rules — the only form in the batch with this feature.
+
+## The Opacity Trap: Portal-Only Without Transparency
+
+**Minnie Hamilton Health System** (Grantsville, WV; nonprofit independent CAH) has gone fully digital via ChartRequest but in doing so created an opacity barrier: patients must create a third-party account before they can even *see* the authorization form, fee schedule, or process details. For a rural West Virginia population with limited internet access, this digital-first approach may be more exclusionary than a simple downloadable PDF. The organization publishes no paper alternative on its website.
+
+## Government Hospitals: A Wide Spectrum
+
+Government-owned facilities span the quality range more than any other ownership type in this batch. **Valleywise Health** (Phoenix, AZ; government independent) earns the only 5/5 patient-centeredness score with a dedicated bilingual patient access form. At the other extreme, **Natividad Medical Center** (Salinas, CA; government independent) offers only image-scan PDFs with CD as the sole electronic delivery method, and **UMC of Southern Nevada** (Las Vegas; government independent) doesn't link its ROI form from its own medical records page. Government ownership appears to be neither a predictor of quality nor a barrier — it simply removes the question from the equation.
+
+## Recurring Oddity: Hendrick Health Misspells HIPAA
+
+**Hendrick Health** (Abilene, TX; nonprofit regional) misspells "HIPAA" as "HIPPA" in the opening paragraph of both its hospital and clinic forms — a factual error on the very regulation the form implements. While a small detail, it appears in the first sentence patients read and undermines institutional credibility on the topic of health information privacy.
+
+</file>
+
+<file name="batch-3.md">
+# Batch 3 — Surprising Findings
+
+## The PatientPop Ghost Form Problem
+
+A generic, unbranded "Authorization for Release of Medical Records" template from PatientPop (hosted at `sa1s3.patientpop.com/assets/docs/223399.pdf`) surfaced as a search result for at least three unrelated organizations: **Labette Health** (KS), **Mayers Memorial Hospital** (CA), and **Consensus Health** (NJ). In each case, this one-page template has no organizational branding, no submission instructions, and is missing core HIPAA authorization elements. For Consensus Health, it was the *only* ROI form discoverable online — a for-profit physician practice in New Jersey effectively has no functional records request pathway, earning a D grade (2.05) and the lowest findability score possible (1). The PatientPop artifact appears to be a legacy website-platform byproduct that pollutes search results, creating a false sense that a valid form exists when it doesn't.
+
+## Small Rural Hospitals Outperforming Major Teaching Institutions
+
+Several small critical access hospitals deliver patient experiences that rival or exceed those of major academic medical centers. **Wayne County Hospital** (25 beds, rural Kentucky, government-owned) offers a dedicated patient access form titled "Request to Review/Receive Medical Information," a parallel online web form for electronic submission, and transparent fee disclosure citing Kentucky's free-copy statute (KRS 422.317) — earning a B grade (3.65). Meanwhile, **OSU Wexner Medical Center** (1,439 beds, major teaching hospital) scores only a C (3.05) with a mail-only, non-fillable generic authorization form. Similarly, **Labette Health** (99 beds, independent community hospital in Parsons, KS) built a fully digital Formstack workflow with electronic signatures and photo ID upload — scoring a 5 in technical accessibility — while **Hospital of the University of Pennsylvania** (800 beds) requires patients to physically mail their fillable PDF despite having 70 interactive fields.
+
+## The Typo in the URL
+
+Labette Health's Formstack form lives at `labetteheatlh.formstack.com` — note the transposed "lh" in "health." This typo has been baked into the hospital's digital records infrastructure. If anyone corrects the subdomain upstream, every existing link breaks. This is a fragile single point of failure for the hospital's entire digital-first records strategy.
+
+## Boone County's .docx Experiment
+
+**Boone County Health Center** (Albion, NE) publishes its ROI authorization form as a Microsoft Word `.docx` file rather than a PDF — the only organization in this batch to do so. This creates an accessibility barrier for patients without Word, but it also suggests a small, resource-constrained facility (25 beds, government-owned) trying to make a form editable without knowing how to create fillable PDFs. They offer a dedicated ROI email address (`Roi@boonecohealth.org`) and encrypted email delivery — thoughtful touches that contrast with the format choice.
+
+## For-Profit System Forms Are Not Always Worse
+
+**Flowers Hospital** (Dothan, AL) and **Merit Health Central** (Jackson, MS), both for-profit CHS hospitals, deploy the same HIM-1406 form — a patient-titled "Patient Request for Health Information" with 66 fillable fields, "Myself" as the first recipient option, bilingual English/Spanish versions, and Swellbox online portals. Flowers earned the batch's only A grade. This CHS system-standardized form outperforms the generic authorization forms at many nonprofit institutions, challenging the assumption that for-profit ownership correlates with worse patient access.
+
+## The Witness Signature Trap
+
+Witness signature lines appear on forms from **Duly Health and Care**, **Broward Health**, **Wayne County Hospital**, **Cuba Memorial Hospital**, **Columbus Community Hospital**, and **Cottage Hospital** — with no indication of whether witnessing is actually required. HIPAA does not require witness signatures for patient access requests. At Duly, the witness is explicitly required for personal-use requests but exempted for care-transfer requests — an inversion of what patient-centered design would suggest. These ambiguous witness lines likely deter patients completing forms at home, particularly in rural areas where finding a witness adds logistical burden.
+
+## Four-Language Form in South Florida
+
+**Broward Health** offers its ROI form in English, Spanish, Haitian Creole, and Portuguese — the widest language coverage in this batch and a genuine reflection of South Florida demographics. Yet the English version is an image-only scan (no text layer, no fillable fields) while the translated versions are digitally created PDFs with text layers. The primary-language form is technically the worst artifact.
+
+## Outdated Forms as Institutional Archaeology
+
+Form revision dates reveal remarkable institutional inertia. **Cordova Community Medical Center** (Alaska, 13 beds) uses a form last updated in 2016. **Columbus Community Hospital** (Nebraska) dates to 2014. **Troy Regional Medical Center** (Alabama) has a form from February 2015 that is only findable on a defunct legacy website. **DHR Health** (Edinburg, TX) still carries its former "Doctors Hospital at Renaissance" branding on a 2015 form. These are not edge cases — many forms predate the 21st Century Cures Act's information blocking rules (2021) and the 2024 42 CFR Part 2 revisions, meaning they may not reflect current legal requirements.
+
+## The EHI Export Unicorn
+
+**Owensboro Health** (Owensboro, KY) explicitly offers "EHI Export" as a delivery format option, with a detailed explanation covering all ePHI across the organization and named Community Connect Partners, delivered in TSV format. This is the only organization in the batch to offer anything resembling the USCDI-based electronic health information export contemplated by the Cures Act — and it's a 477-bed regional nonprofit, not one of the major academic systems.
+
+## FQHCs: Mission-Aligned but Technically Behind
+
+FQHCs in this batch consistently demonstrate mission-aligned design choices — bilingual forms (CrescentCare, Nevada Health Centers, El Centro de Corazón), community-responsive language options (Nemaha Valley's Spanish form in rural Kansas), and text-message intake (Anchorage NHC). Yet none produces a fillable PDF. The organizations serving the most vulnerable populations offer the least digitally accessible form artifacts, creating an equity gap between intent and execution.
+
+</file>
+
+<file name="batch-4.md">
+# Batch 4: Surprising Findings
+
+## The Wrong-Direction Form Problem
+
+East Georgia Healthcare Center (EGHC), an independent nonprofit FQHC in Swainsboro, GA, presents perhaps the most striking finding in this batch: the only authorization form available to patients is designed for **incoming** records transfers — authorizing other providers to send records *to* EGHC — not for patients to request their own records *from* EGHC. A patient visiting the forms page encounters a polished RightSignature e-signature workflow, but for a purpose that is the exact inverse of what they need. The organization invested in bilingual forms and a modern e-signature platform, yet the fundamental use case — patient self-access — is entirely unserved. This is not a case of a generic form being repurposed; the form literally points the wrong direction.
+
+## Accessibility Regression at Scale: Image-Only Scans Replacing Text PDFs
+
+Two Bon Secours Mercy Health facilities (Springfield and Fairfield) reveal a troubling pattern: the system replaced functional text-layer PDFs with **image-only scans** as their currently linked authorization forms. Mercy Health–Springfield's system-wide form has only 46 extractable characters, while the older regional text-based version sits at an undiscoverable URL. Mercy Health–Fairfield shows the same regression — a previously functional Cincinnati-region text PDF was supplanted by a 2024 image scan. This isn't a small rural facility cutting corners; it's a major health system actively degrading document accessibility in recent updates.
+
+## Prevea Health's Hmong and Somali Forms: Hyper-Local Language Choices
+
+Prevea Health, an independent nonprofit physician practice in Green Bay, WI, offers its ROI form in four languages: English, Spanish, **Hmong**, and **Somali**. This is the only organization in the batch with Hmong or Somali translations — languages that reflect Green Bay's specific refugee resettlement demographics rather than the generic Spanish-only multilingual approach most organizations take. For a practice with zero fillable fields and no submission instructions on its form, this hyper-local language investment is a striking contrast: deeply attentive to community demographics while neglecting basic digital usability.
+
+## The Vanishing Form: UMMC's Broken English PDF
+
+The University of Mississippi Medical Center, a major government-affiliated teaching hospital, has a **broken link** for its English-language ROI form on its own website. The English PDF returns HTTP 404. The only surviving version was found on a third-party caching site (pdf4pro.com). Meanwhile, the Spanish version — with 70 fillable fields — remains live. A patient visiting UMMC's website today who clicks the Release Form link reaches a dead end. The Spanish form is technically superior to the English version it outlived (70 fillable fields vs. zero), creating an unusual situation where the non-English form is the better document.
+
+## AdventHealth Central Texas: A 2005 Form That's Better Than Its 2022 Successor
+
+AdventHealth Central Texas maintains two forms: a system-wide 2022 authorization and a **facility-specific form from 2005**. The 20-year-old form is actually more patient-centered — its first checkbox explicitly reads "Provide me with access to the protected health information specified below," a dedicated patient self-access option absent from the newer system form. Additionally, the 2022 system form references the **Illinois** Mental Health and Development Disabilities Confidentiality Act despite being served at a Texas facility — a copy-paste error from a system-wide template never localized. The older, locally-authored form got the legal citations right.
+
+## Owensboro Health's EHI Export Option: A Rare Interoperability Signal
+
+Owensboro Health, a regional nonprofit community hospital in Kentucky, is the only organization in this batch that explicitly offers an **EHI Export** as a records format option, with a detailed explanation covering "all electronic Protected Health Information across the organization" and naming Community Connect Partners. This aligns with the 21st Century Cures Act's electronic health information provisions and is virtually unheard of on paper ROI forms. The same organization also offers seven format options (Paper, MyChart, EHI Export, Email, Fax, CD, USB) — the most comprehensive delivery menu in the batch — yet its PDF form has zero fillable fields.
+
+## FQHCs Outperform Teaching Hospitals on Pathway Differentiation
+
+A counterintuitive pattern emerges when comparing patient-centeredness scores: two FQHCs — Philadelphia FIGHT (score: 5) and West Tennessee Healthcare (a government hospital, but scoring well on differentiation) — maintain **dedicated patient access forms** separate from third-party authorization, while prestigious teaching hospitals like UCSF, Rhode Island Hospital, and MUSC funnel patients through generic disclosure forms. Philadelphia FIGHT, a small HIV/AIDS-focused community health center, demonstrates better structural understanding of HIPAA's distinct access provisions than Mass General Brigham's 78-fillable-field form, which still treats patient access as a checkbox on a third-party release document. Barnes-Jewish Hospital (BJC HealthCare) is a notable teaching hospital exception, offering a true dedicated patient access form.
+
+## The Liability Waiver Creep
+
+Multiple organizations bundle **liability waivers** into their authorization forms, requiring patients to release the facility from legal responsibility as a condition of accessing records. Grady Memorial Hospital (Atlanta's public safety-net hospital) requires patients to agree they "will not hold Grady... responsible for anything that may happen from the use or release of my PHI." Good Samaritan Medical Center (Tenet/HCA, West Palm Beach) and Rhode Island Hospital (Brown University Health) embed similar waivers. Asking vulnerable patient populations — particularly at a safety-net hospital — to waive accountability to exercise a fundamental HIPAA right is both legally questionable and ethically concerning.
+
+## Mail-Merge Ghosts and Typos Frozen in Time
+
+Good Samaritan Medical Center's 2020 network form displays raw mail-merge placeholders (`«PatientNumber»`, `«PatientName»`) in its sidebar — internal database fields visible to patients. U.S. Dermatology Partners has maintained an uncorrected typo ("IDS" instead of "AIDS") since its 2017 revision. Bath Community Hospital's scanned form renders "Patient" as "Pa ent" and "authorization" as "authoriza on" throughout due to a broken ligature encoding. These artifacts suggest forms that were never reviewed from a patient's perspective — they were authored for internal workflow and published externally as an afterthought.
+
+</file>
+</batch-summaries>
