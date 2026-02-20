@@ -1,13 +1,11 @@
 import { useState, useEffect } from "react";
 import type { OrgData, SiteStats } from "./types";
 import { Landing } from "./pages/Landing";
-import { Explorer } from "./pages/Explorer";
 import { OrgDetail } from "./pages/OrgDetail";
 import { Methodology } from "./pages/Methodology";
 
 type Route =
   | { page: "landing" }
-  | { page: "explorer" }
   | { page: "detail"; orgId: string }
   | { page: "methodology" };
 
@@ -16,7 +14,7 @@ function parseHash(): Route {
   if (hash.startsWith("/explorer/")) {
     return { page: "detail", orgId: hash.slice("/explorer/".length) };
   }
-  if (hash === "/explorer") return { page: "explorer" };
+  if (hash === "/explorer") return { page: "landing" };
   if (hash === "/methodology") return { page: "methodology" };
   return { page: "landing" };
 }
@@ -46,7 +44,6 @@ export function App() {
       <a href="#/" style={styles.navBrand}>ROI Form Study</a>
       <div style={styles.navLinks}>
         <a href="#/" style={styles.navLink}>Home</a>
-        <a href="#/explorer" style={styles.navLink}>Explorer</a>
         <a href="#/methodology" style={styles.navLink}>Methodology</a>
       </div>
     </nav>
@@ -56,9 +53,6 @@ export function App() {
   switch (route.page) {
     case "landing":
       content = <Landing stats={stats} orgs={orgs} />;
-      break;
-    case "explorer":
-      content = <Explorer orgs={orgs} />;
       break;
     case "detail":
       content = <OrgDetail orgs={orgs} orgId={route.orgId} />;
