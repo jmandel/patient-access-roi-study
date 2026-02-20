@@ -1,5 +1,5 @@
 /**
- * Build the React site using Bun's bundler.
+ * Build the React site using Bun's bundler with HTML entrypoint.
  */
 import { copyFileSync, mkdirSync, cpSync, readdirSync, existsSync } from "fs";
 import { join } from "path";
@@ -9,15 +9,18 @@ const DIST_DIR = join(SITE_DIR, "dist");
 
 mkdirSync(DIST_DIR, { recursive: true });
 
-// Bundle React app
+// Bundle using HTML entrypoint — Bun rewrites script src automatically
 const result = await Bun.build({
-  entrypoints: [join(SITE_DIR, "src", "index.tsx")],
+  entrypoints: [join(SITE_DIR, "index.html")],
   outdir: DIST_DIR,
   minify: true,
   splitting: false,
   target: "browser",
-  format: "esm",
-  naming: "[name].[hash].[ext]",
+  naming: {
+    asset: "[name]-[hash].[ext]",
+    chunk: "[name]-[hash].[ext]",
+    entry: "[name]-[hash].[ext]",
+  },
 });
 
 if (!result.success) {
@@ -26,30 +29,12 @@ if (!result.success) {
   process.exit(1);
 }
 
-// Get the output JS filename
-const jsFile = result.outputs[0].path.split("/").pop()!;
-
-// Copy index.html with injected script tag
-const html = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROI Form Study — How Easy Is It to Request Your Health Records?</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #1a1a2e; background: #fafbfc; line-height: 1.6; }
-    a { color: #2563eb; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
-</head>
-<body>
-  <div id="root"></div>
-  <script type="module" src="${jsFile}"></script>
-</body>
-</html>`;
-
-Bun.write(join(DIST_DIR, "index.html"), html);
+// Rename the hashed index HTML back to index.html for GH Pages
+import { renameSync } from "fs";
+const htmlOutput = result.outputs.find((o) => o.path.endsWith(".html"));
+if (htmlOutput && !htmlOutput.path.endsWith("/index.html")) {
+  renameSync(htmlOutput.path, join(DIST_DIR, "index.html"));
+}
 
 // Copy public data directory to dist
 cpSync(join(SITE_DIR, "public", "data"), join(DIST_DIR, "data"), { recursive: true });
@@ -70,5 +55,6 @@ if (existsSync(formsSource)) {
   console.log(`   PDFs: ${pdfCount} copied to dist/forms/`);
 }
 
+const outputs = result.outputs.map((o) => `${o.path.split("/").pop()} (${(o.size / 1024).toFixed(1)}KB)`);
 console.log(`✅ Site built → ${DIST_DIR}`);
-console.log(`   JS: ${jsFile} (${(result.outputs[0].size / 1024).toFixed(1)}KB)`);
+console.log(`   Outputs: ${outputs.join(", ")}`);
