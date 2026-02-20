@@ -65,6 +65,9 @@ export function App() {
   return (
     <>
       {nav}
+      <div style={styles.disclaimer}>
+        ⚠️ These results are AI-abstracted and may contain errors. Always verify against original sources.
+      </div>
       <main style={styles.main}>{content}</main>
     </>
   );
@@ -87,5 +90,13 @@ const styles: Record<string, React.CSSProperties> = {
   },
   navLinks: { display: "flex", gap: 16 },
   navLink: { color: "#94a3b8", fontSize: 14, textDecoration: "none" },
+  disclaimer: {
+    background: "#fef3c7",
+    color: "#92400e",
+    textAlign: "center" as const,
+    padding: "8px 16px",
+    fontSize: 13,
+    fontWeight: 500,
+  },
   main: { maxWidth: 1200, margin: "0 auto", padding: "24px 16px" },
 };

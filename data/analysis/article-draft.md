@@ -54,7 +54,7 @@ Applying a corporate legal template to a patient's civil right introduced unlawf
 
 To complete this administrative hurdle, we found that [Abbeville Area Medical Center](https://www.abbevilleareamc.com/wp-content/uploads/2023/01/HIM-1022-authorization.pdf) required patients to print the form, handwrite it, locate *two* witnesses, and obtain their signatures. [Nemaha Valley Community Hospital](https://nemvch.com/wp-content/uploads/2019/10/Authorization-for-Release.pdf) and [ENT & Allergy Associates](https://www.entandallergy.com/documents/content/enta_arphi_form.doc) demanded full Social Security Numbers—an unnecessary identity theft risk for documents frequently submitted via unencrypted fax. 
 
-Because they used forms built for lawyers and life insurers, organizations mistakenly applied third-party fee schedules to individuals. [JPS Health Network](https://jpshealthnet.org/sites/default/files/inline-files/roi_english_revised_2018_10.pdf) in Texas listed a $75 flat fee for electronic delivery—a figure that may be legal for a law firm subpoena, but vastly exceeds HIPAA's "reasonable, cost-based" limit for patient self-access. 
+Because they used forms built for lawyers and life insurers, organizations mistakenly applied third-party fee schedules to individuals. [JPS Health Network](https://jpshealthnet.org/patient-tools/patient-records) in Texas listed a $75 flat fee for electronic delivery—a figure that may be legal for a law firm subpoena, but vastly exceeds HIPAA's "reasonable, cost-based" limit for patient self-access. 
 
 ---
 
@@ -74,7 +74,7 @@ The strongest predictor of quality was **system affiliation**. Large health syst
 
 Health systems possess the technology to build seamless digital forms, but our findings show they routinely reserve it for alternative workflows.
 
-In 2025, [JPS Health Network](https://jpshealthnet.org/sites/default/files/inline-files/roi_english_revised_2018_10.pdf) published polished, fillable, text-searchable authorization forms for Health Information Exchange (HIE) with encrypted email submission. However, the form it provided to patients requesting their own records was a degraded, image-only scan from 2018. 
+In 2025, JPS Health Network published a polished, fillable, text-searchable [HIE authorization form](https://jpshealthnet.org/sites/default/files/2025-05/Patient-HIE-Authorization-Form.pdf) with encrypted email submission. However, the [form it provided to patients](https://jpshealthnet.org/sites/default/files/inline-files/roi_english_revised_2018_10.pdf) requesting their own records was a degraded, image-only scan from 2018. 
 
 At [Ironwood Cancer & Research Centers](https://www.ironwoodcrc.com/wp-content/uploads/2019/03/Authorization-to-release-protected-health-information.pdf), the form designed for other doctors to send records to the clinic featured 22 fillable digital fields. The form for patients to get their records out had zero.
 
