@@ -1,0 +1,138 @@
+{
+  "org_id": "mercy-general-hospital",
+  "org_name": "Mercy General Hospital",
+  "category_id": "ch-major-nonprofit-west",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Dignity Health (CommonSpirit Health)",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Hospital patient access request form (form-3)",
+      "url": "https://www.dignityhealth.org/content/dam/dignity-health/sacramento/pdfs/Patients-Request-Access-Protected-Info.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Medical group patient access request form (form-2)",
+      "url": "https://www.dignityhealth.org/content/dam/dignity-health/pdfs/medical-groups/sac-patient-access-request-form.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Mercy Medical Group ROI Department fax",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Mercy Medical Group ROI Department email (GSSA-ROI@Dignityhealth.org)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Health Information Management (Rancho Cordova or Grass Valley)",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Mercy Medical Group ROI Department phone (916-363-4040)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.dignityhealth.org/content/dam/dignity-health/sacramento/pdfs/Use-and-Disclosure-General-Authorization-PHI.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Third-party ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.dignityhealth.org/content/dam/dignity-health/pdfs/medical-groups/sac-patient-access-request-form.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "Patient access request form (medical group)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.dignityhealth.org/content/dam/dignity-health/sacramento/pdfs/Patients-Request-Access-Protected-Info.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Patient access request form (hospital)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patient downloads a non-fillable 2-page PDF patient access form for the hospital (form-3) or medical group (form-2), prints and fills by hand, then mails or faxes it to the HIM department.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Physician approval required for patient access to own HIV test results",
+      "Caregiver approval required for patient access to own psychiatric records",
+      "Physician notification/veto mechanism built into standard patient access workflow (form-3)",
+      "Form-2 demands in-person photo ID presentation while offering remote submission options"
+    ],
+    "bright_spots": [
+      "Clear separation of patient access from third-party release with explicit cross-references between forms",
+      "Multiple electronic delivery format options including USB drive, CD, secure and unsecured email, flash drive",
+      "Inspect-only option available (form-2) allowing record review without copying fees",
+      "Direct department contact information (phone, fax, email) prominently displayed on form-2"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms were easy to find via web search and linked from the Dignity Health Sacramento medical records page; minor friction from dual-track (hospital vs. medical group) structure that requires patients to identify which entity holds their records."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Both patient access forms have zero fillable fields, requiring a print-and-handwrite workflow; the hospital form (form-3) provides only mailing addresses for submission, making this primarily a paper workflow despite form-2 listing fax/email contact info for the medical group department."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Forms are organized with lettered sections and checkboxes at an appropriate 2-page length, but form-3 has severe font encoding corruption impairing screen reader accessibility, the date range is framed as 'hospitalization' rather than general dates, and fee amounts are undisclosed."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: Dedicated patient access forms exist and are clearly separated from third-party authorization, but the dual-track structure requires patients to determine hospital vs. medical group, physician gatekeeping provisions undermine patient autonomy, and no patient rights statement is included on either access form."
+    },
+    "compliance": {
+      "score": 2,
+      "rationale": "Level 2: Physician approval requirements for patient access to own HIV and psychiatric records likely exceed HIPAA Right of Access limits; the physician notification/veto mechanism on form-3 creates an illegitimate barrier; no appeal rights or reviewing professional process disclosed as required by 45 CFR § 164.524(d)(4)."
+    },
+    "overall": {
+      "score": 2.7,
+      "grade": "C",
+      "summary": "Mercy General Hospital provides dedicated patient access forms separate from third-party authorization with flexible delivery options, but non-fillable PDFs, physician gatekeeping provisions, and a confusing dual-track structure substantially undermine the patient experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:02:42.553Z"
+}

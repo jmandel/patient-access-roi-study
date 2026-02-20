@@ -1,0 +1,112 @@
+{
+  "org_id": "wayne-county-hospital",
+  "org_name": "Wayne County Hospital",
+  "category_id": "cah-independent-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Release of Health Form (web form)",
+      "url": "https://waynehospital.org/Release-of-Health-Form",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Request to Review/Receive Medical Information (PDF)",
+      "url": "https://waynehospital.org/files/galleries/Medical_Records_Release.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "HIM Department phone",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person pickup/submission at HIM",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://waynehospital.org/files/galleries/Medical_Records_Release.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient access request form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "A one-page patient access request form titled 'Request to Review/Receive Medical Information' with a parallel online web form for electronic submission.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "compliant",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Witness signature required on the form — HIPAA does not require witness signatures for patient access requests, creating an unnecessary barrier especially for rural patients filling out the form at home.",
+      "Reason for request appears mandatory — the form presents reason checkboxes without indicating they are optional, though HIPAA does not require patients to justify their access request."
+    ],
+    "bright_spots": [
+      "KRS 422.317 free-copy disclosure printed directly on the form — unusually transparent for a critical access hospital.",
+      "Email offered as a delivery option alongside fax, mail, and pick-up — forward-thinking for a 25-bed rural facility.",
+      "Parallel online web form at /Release-of-Health-Form provides electronic submission — rare for a critical access hospital.",
+      "Single-page form with no legal boilerplate — approachable and quick to complete."
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Rubric level 3: requires moderate effort — the PDF is not linked from any navigable page on the website and was found only via targeted web search; the web form may be more discoverable but was not confirmed linked from navigation."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Rubric level 4: mostly digital with one gap — the PDF itself is flat/non-fillable (print-and-handwrite), but the parallel online web form provides a fully digital submission pathway, and email delivery is available."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Rubric level 4: well-organized single page with plain language, logical flow, and clear checkbox options; minor issues include the witness line and reason-for-request field that add slight confusion."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Rubric level 4: patient access is clearly accommodated — the form is titled 'Request to Review/Receive Medical Information' with 'self' listed first, though it serves multiple purposes (self, child, other) without differentiated instructions."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Rubric level 3: some requirements that may go beyond what the law requires — the witness signature requirement has no basis in HIPAA for patient access, and the reason-for-request field appears mandatory despite HIPAA not requiring justification; partially offset by the KRS 422.317 free-copy disclosure."
+    },
+    "overall": {
+      "score": 3.65,
+      "grade": "B",
+      "summary": "Wayne County Hospital provides a patient-centered access form with an unusually strong online web form alternative and transparent fee disclosure, but is held back by a witness signature requirement and moderate findability challenges."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:28:00.000Z"
+}

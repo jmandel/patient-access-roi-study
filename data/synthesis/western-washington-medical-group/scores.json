@@ -1,0 +1,125 @@
+{
+  "org_id": "western-washington-medical-group",
+  "org_name": "Western Washington Medical Group",
+  "category_id": "practice-independent-forprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "WWMG Medical Records Release Form (fillable PDF)",
+      "url": "https://www.wwmedgroup.com/wp-content/uploads/WWMG-Medical-Records-release-form-fillable-PDF-0824.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission (per OFFICE USE ONLY disposition options)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.wwmedgroup.com/wp-content/uploads/WWMG-Medical-Records-release-form-fillable-PDF-0824.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.wwmedgroup.com/wp-content/uploads/Authorization-for-Release-of-Information-Medical-Records-WWMG-GI.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (GI department-specific)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://sa1s3.patientpop.com/assets/docs/223399.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Generic ROI authorization form (unbranded, legacy PatientPop artifact)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a general-purpose fillable authorization PDF and select 'Personal (to patient)' as the purpose, then submit via fax, mail, or email.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 20,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Vague fee language ('*service fee may apply') for patient self-access without specifying amounts or referencing HIPAA cost-based limits",
+      "'ALL healthcare information' option is silently limited to last 3 years — misleading scope label"
+    ],
+    "bright_spots": [
+      "39 fillable interactive PDF fields — genuinely digital-first form design",
+      "Single-page format fitting all necessary authorization elements concisely",
+      "Granular sensitive-information exclusion controls (HIV, STDs, psychiatric, substance abuse) with required patient initials",
+      "Multi-clinic routing field acknowledging organizational complexity"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — WWMG maintains a dedicated Medical Records Request page with direct PDF links, and site-specific search returns the form immediately."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the form has 39 fillable fields for complete digital completion, but submission requires fax, mail, or email rather than an integrated online workflow."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — single-page layout with logical flow, plain language, and strong scope options, but submission instructions are indirect (requires visiting a separate webpage) and the 'ALL' scope label is misleading."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the form is a generic third-party release authorization where patients must select 'Personal (to patient)' as one checkbox among attorney, insurance, and provider purposes, with no dedicated patient access pathway or rights education."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization or in-person requirements, anti-conditioning statement present, but vague '*service fee may apply' language for patient access and no specific right-of-access citation."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "WWMG provides a technically well-crafted, easy-to-find fillable authorization form, but funnels patients through a generic third-party release process rather than offering a dedicated patient access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:32:57.554Z"
+}

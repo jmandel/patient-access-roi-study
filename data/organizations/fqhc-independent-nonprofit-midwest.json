@@ -1,0 +1,98 @@
+[
+  {
+    "org_id": "erie-family-health-centers",
+    "name": "Erie Family Health Centers",
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IL",
+    "city": "Chicago",
+    "website": "https://www.eriefamilyhealth.org",
+    "bed_count": null,
+    "notes": "Large urban FQHC serving 86,000+ patients across 13 locations in Chicagoland; founded 1957"
+  },
+  {
+    "org_id": "neighborhood-health-association",
+    "name": "Neighborhood Health Association",
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Toledo",
+    "website": "https://nhainc.org",
+    "bed_count": null,
+    "notes": "Multi-site FQHC in Toledo; operates clinics including homeless health services since 1984"
+  },
+  {
+    "org_id": "heartland-community-health-center",
+    "name": "Heartland Community Health Center",
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "KS",
+    "city": "Lawrence",
+    "website": "https://heartlandhealth.org",
+    "bed_count": null,
+    "notes": "Community FQHC providing primary care, dental, behavioral health, and pharmacy services in Lawrence area"
+  },
+  {
+    "org_id": "community-health-center-central-missouri",
+    "name": "Community Health Center of Central Missouri",
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MO",
+    "city": "Jefferson City",
+    "website": "https://chccmo.org",
+    "bed_count": null,
+    "notes": "FQHC serving central Missouri with clinics in Jefferson City, Fulton, California, and Linn; established 2005"
+  },
+  {
+    "org_id": "northlakes-community-clinic",
+    "name": "NorthLakes Community Clinic",
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "WI",
+    "city": "Ashland",
+    "website": "https://nlccwi.org",
+    "bed_count": null,
+    "notes": "Rural FQHC operating ~20 clinics across 13 counties in northern Wisconsin"
+  },
+  {
+    "org_id": "peoples-health-centers",
+    "name": "Betty Jean Kerr People's Health Centers",
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MO",
+    "city": "St. Louis",
+    "website": "https://phcenters.org",
+    "bed_count": null,
+    "notes": "Urban FQHC serving St. Louis metro area since 1972; Joint Commission accredited"
+  }
+]

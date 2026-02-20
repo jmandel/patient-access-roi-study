@@ -1,0 +1,120 @@
+{
+  "org_id": "texas-oncology",
+  "org_name": "Texas Oncology",
+  "category_id": "practice-major-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "US Oncology Network (McKesson)",
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Disclose Protected Health Information (English)",
+      "url": "https://edge.sitecorecloud.io/texasoncolo7d12-txo5d45-production6298-d24c/media/Files/Medical-Records/TXO-Protected-Health-Information-Disclosure-Authorization-Form-English.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Autorización Para Divulgar Información de Salud Protegida (Spanish)",
+      "url": "https://edge.sitecorecloud.io/texasoncolo7d12-txo5d45-production6298-d24c/media/Files/Medical-Records/TXO-Protected-Health-Information-Disclosure-Authorization-Form-Spanish.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission of completed authorization form",
+      "is_primary": true
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission of completed authorization form",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://edge.sitecorecloud.io/texasoncolo7d12-txo5d45-production6298-d24c/media/Files/Medical-Records/TXO-Protected-Health-Information-Disclosure-Authorization-Form-English.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://edge.sitecorecloud.io/texasoncolo7d12-txo5d45-production6298-d24c/media/Files/Medical-Records/TXO-Protected-Health-Information-Disclosure-Authorization-Form-Spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a general-purpose HIPAA authorization PDF, selects 'Personal Use' from nine disclosure reasons, fills in both authorizing-party and recipient fields (naming themselves), prints, signs, and faxes or mails the form.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 95,
+    "page_count": 3,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Right of Access acknowledgment (form not required for patient self-access) is buried in supplementary legal text on page 2, not surfaced on the main form",
+      "Fillable PDF fields lack semantic names, impairing screen reader accessibility"
+    ],
+    "bright_spots": [
+      "Professionally translated Spanish version available as parallel download",
+      "Reproductive health protections current with 2024 federal rule (dedicated Prohibited Use Attestation page)",
+      "Treatment-not-conditioned statement prominently placed at top of page 1",
+      "Email offered as a records delivery method",
+      "16 granular record-type checkboxes give patients meaningful control over disclosure scope"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — dedicated Medical Records page reachable from footer in one click, with clear download links and a 3-step process explanation; minor deduction for dead legacy URLs from site migration."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — thoroughly fillable PDF (95 interactive fields) allows digital completion, but patient must print, sign, and fax or mail to submit; no e-signature or online submission option."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor issues — logical flow, clear all-caps section headers, 16 granular record-type checkboxes, and plain-language opening instructions; minor deductions for grammatical error in fee language and unlabeled PDF form fields."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: Patient can use the process but it wasn't designed for them — generic authorization form requires selecting 'Personal Use' from nine options and filling in confusing self-referencing fields; buried page 2 note that the form 'is not required' for patient self-access underscores the mismatch."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but no material impediments — no notarization, no in-person requirement, right to revoke clearly stated, treatment-not-conditioned prominent, current reproductive health protections; vague fee language and no response time commitment are minor gaps."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Texas Oncology provides a well-built, bilingual fillable PDF with strong compliance features, but funnels patients through a generic third-party authorization form rather than offering a dedicated patient access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:35:10.867Z"
+}

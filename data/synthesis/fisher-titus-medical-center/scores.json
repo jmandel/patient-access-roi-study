@@ -1,0 +1,125 @@
+{
+  "org_id": "fisher-titus-medical-center",
+  "org_name": "Fisher-Titus Medical Center",
+  "category_id": "ch-independent-nonprofit-midwest",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Disclose PHI (FTC24-5)",
+      "url": "https://www.fishertitus.org/media/2025/08/FTC24-5_Authorization_to_disclose_PHI_2.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax to treatment location (e.g., 419-660-2709 for hospital HIM)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed form to Fisher-Titus Medical Center",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person drop-off at Fisher-Titus",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.fishertitus.org/media/2025/07/Service-Documents_FTC24-5-Authorization-to-disclose-PHI.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (older revision, FTC24-5 rev 11/20/2024)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.fishertitus.org/media/2025/07/Service-Documents_FTC11-4-Emergency-Medical-Authorization-OPT-11-16.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Emergency medical authorization for minors (not ROI)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.fishertitus.org/media/2025/08/FTC24-5_Authorization_to_disclose_PHI_2.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (current revision, FTC24-5 rev 07/16/2025)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic 'Authorization to Disclose PHI' PDF form, checks the 'Self' box in the recipient section, prints and completes by hand, then faxes or mails to the appropriate treatment location.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 23,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "SSN (Social Security Number) requested on the form — unnecessary for patient access and creates identity theft risk on faxable documents",
+      "Witness signature line present with no explanation of whether it is required, potentially deterring patients"
+    ],
+    "bright_spots": [
+      "Encrypted email offered as a records delivery format — progressive for a community hospital",
+      "Granular record type selection with 17+ specific categories and date fields",
+      "'Self (same info as above)' checkbox explicitly accommodates patient self-access requests",
+      "Form easily findable via two independent website navigation paths"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — reachable within 2 clicks from the homepage via two independent paths (Patient Forms page and Medical Records page), with descriptive URLs and no barriers. Slightly below 5 because form is not prominently featured on the homepage itself."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds; fax submission available — the PDF is digitally authored with extractable text but has zero fillable fields, requiring patients to print and handwrite. Fax numbers are provided for submission. Not level 2 because fax keeps it from being purely paper; not level 4 because there's no way to fill the form digitally."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity or length issues — eight clearly numbered sections follow a logical progression, granular record selection is excellent, but Section 5 is dense with 17+ line items, and legal boilerplate in Section 7 uses complex sentence structures."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the form is a generic 'Authorization to Disclose PHI' oriented toward third-party release, with a 'Self' checkbox and 'Personal' purpose option as accommodations rather than a first-class patient access pathway. No patient rights language or HIPAA § 164.524 reference."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements or language that may go beyond what the law requires — SSN collection is unnecessary for patient access, witness signature line is ambiguous about whether it's mandatory, and fee disclosure is vague ('may charge a fee' with no amounts). Revocation, expiration, and non-conditioning language are properly handled."
+    },
+    "overall": {
+      "score": 3.3,
+      "grade": "C",
+      "summary": "Fisher-Titus provides an easily findable and logically organized ROI form with progressive delivery options, but the print-only design, generic third-party authorization framing, SSN collection, and lack of patient rights language prevent it from reaching a patient-centered standard."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:09:59.604Z"
+}

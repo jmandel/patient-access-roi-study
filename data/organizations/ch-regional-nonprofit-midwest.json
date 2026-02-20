@@ -1,0 +1,66 @@
+[
+  {
+    "org_id": "blessing-hospital",
+    "name": "Blessing Hospital",
+    "category_id": "ch-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IL",
+    "city": "Quincy",
+    "website": "https://www.blessinghealth.org",
+    "bed_count": 348,
+    "notes": "Part of Blessing Health System (2 hospitals: Blessing Hospital and Illini Community Hospital). Largest hospital in the tri-state region of western IL, northeast MO, and southeast IA."
+  },
+  {
+    "org_id": "mosaic-life-care-st-joseph",
+    "name": "Mosaic Life Care at St. Joseph",
+    "category_id": "ch-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MO",
+    "city": "St. Joseph",
+    "website": "https://www.mymlc.com",
+    "bed_count": 352,
+    "notes": "Part of Mosaic Life Care (3 hospitals across northwest MO). Serves 35 counties across northwest MO, northeast KS, southeast NE, and southwest IA."
+  },
+  {
+    "org_id": "carle-bromenn-medical-center",
+    "name": "Carle BroMenn Medical Center",
+    "category_id": "ch-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IL",
+    "city": "Normal",
+    "website": "https://carle.org",
+    "bed_count": 221,
+    "notes": "Part of Carle Health (8 hospitals across central and southeastern IL). Community hospital serving the Bloomington-Normal metropolitan area."
+  },
+  {
+    "org_id": "adena-regional-medical-center",
+    "name": "Adena Regional Medical Center",
+    "category_id": "ch-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Chillicothe",
+    "website": "https://www.adena.org",
+    "bed_count": 266,
+    "notes": "Part of Adena Health System (4 hospitals in south central OH). Independent nonprofit serving a population of over 400,000 in southern Ohio."
+  }
+]

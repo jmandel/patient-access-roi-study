@@ -1,0 +1,157 @@
+{
+  "org_id": "musc-health",
+  "org_name": "MUSC Health University Medical Center",
+  "category_id": "teach-major-government-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 5,
+  "parent_system": "MUSC Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Protected Health Information",
+      "url": "https://muschealth.org/-/sm/health/medical-records/f/authorization-to-disclose-phi.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Online eRequest wizard",
+      "vendor": "Ciox/Swellbox",
+      "url": "https://swellbox.com/medical-university-sc-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "url": "https://mychart.musc.edu",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission of authorization form",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission of authorization form (facility-specific ROI email addresses)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission of authorization form",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://muschealth.org/-/sm/health/medical-records/f/authorization-to-disclose-phi.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://muschealth.org/-/sm/health/insurance/f/authorization-to-disclose-phi.ashx?la=en",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (superseded version)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://muschealth.org/-/sm/health/dental/dental-files/records-release.ashx?la=en",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (dental-specific)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://mychart.musc.edu/mychart/en-us/docs/Med%20Rec%20Request17.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "MyChart records request instructions"
+    },
+    {
+      "filename": "form-5.pdf",
+      "source_url": "https://muschealth.org/-/sm/health/medical-records/f/spanish-auth-to-release-phi.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (Spanish translation)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "MUSC offers three pathways — MyChart portal for patient self-access, Ciox/Swellbox online eRequest wizard, and a downloadable generic HIPAA authorization form for manual submission via fax, email, or mail.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 25,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Witness signature line included with warning that incomplete forms may be invalidated — not required by HIPAA",
+      "Fee language references only South Carolina state law, not HIPAA's more restrictive cost-based fee limits for patient access",
+      "MyChart instructions state blanket fees for all patient requests with prepayment required before records release, no amounts disclosed",
+      "Encrypted/unencrypted email confusion — checkbox says 'Encrypted E-mail' but consent text warns about 'unencrypted e-mail' risks"
+    ],
+    "bright_spots": [
+      "Spanish-language form available as a faithful, current-revision translation co-located with the English version",
+      "Three distinct request pathways (MyChart, Ciox/Swellbox portal, manual form) clearly presented on medical records page",
+      "Comprehensive facility directory with contact information for 9 MUSC Health locations across South Carolina",
+      "Dedicated SUD records section with granular opt-in and proper 42 CFR Part 2 regulatory citation",
+      "Explicit citation of 45 CFR §164.524 (patient right of access)",
+      "Process-level differentiation between patient self-access (MyChart/portal) and third-party release (authorization form)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available — medical records page reachable in 2 clicks from homepage with three clearly labeled pathways; web searches return direct PDF links; no access barriers encountered."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the Ciox/Swellbox portal provides a fully digital request workflow, but the primary PDF form has zero fillable fields requiring print-and-handwrite; fax and email submission available for the paper form."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — logical flow, granular record type options, appropriate 2-page length, but encrypted/unencrypted email language creates confusion and legal consent text is dense."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but the primary downloadable form wasn't designed for them — it's a generic HIPAA authorization with 'Patient Request' as one checkbox among seven purposes; the org differentiates at the process level (MyChart for self-access, auth form for third-party) but not within the form itself."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements beyond what HIPAA requires — witness signature line not required by HIPAA, fee language references only SC state law without acknowledging HIPAA's cost-based fee limits for patient access, prepayment requirement in MyChart instructions; offset by proper revocation language, voluntariness statement, and 45 CFR §164.524 citation."
+    },
+    "overall": {
+      "score": 3.7,
+      "grade": "B",
+      "summary": "MUSC Health offers excellent findability and multiple request pathways including a digital portal, but its core authorization form is a generic third-party release document that doesn't center patient self-access, with compliance concerns around the witness requirement and fee disclosure."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:17:22.580Z"
+}

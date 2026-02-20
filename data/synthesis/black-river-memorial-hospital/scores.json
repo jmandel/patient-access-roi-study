@@ -1,0 +1,101 @@
+{
+  "org_id": "black-river-memorial-hospital",
+  "org_name": "Black River Memorial Hospital",
+  "category_id": "cah-independent-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Release of Information Authorization",
+      "url": "https://blackriverhealth.com/wp-content/uploads/2025/12/Release-of-Information-Authorization.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "phone",
+      "name": "HIPAA Privacy & Security Officer",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://blackriverhealth.com/wp-content/uploads/2025/12/Release-of-Information-Authorization.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "A general-purpose Release of Information Authorization form designed for facility-to-facility transfers, where patients select 'Per Patient Request' as one of eight reason options.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "PDF renders virtually all text as images (970 embedded images), making it inaccessible to screen readers and assistive technology",
+      "No submission instructions provided — patient has no documented way to return the completed form"
+    ],
+    "bright_spots": [
+      "Explicit prohibition of conditions — cannot condition treatment or benefits on signing the authorization",
+      "Photocopy validity clause — a photocopy is as valid as the original",
+      "Patient-friendly expiration — authorization remains in effect until request is processed",
+      "Direct HIPAA Privacy & Security Officer phone number provided"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Rubric level 4: Easy to find with basic navigation or a simple search — the form is linked from the Patient Resources page under a labeled 'Forms' section and also surfaced immediately via site-specific web search."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Rubric level 2: Primarily a paper workflow — the form has zero fillable fields, renders text as 970 embedded images (inaccessible to assistive technology), requires printing and handwriting, and provides no electronic submission path."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Rubric level 3: Adequate but has notable problems — the layout is well-organized with numbered sections and clear headers, but Section 2 confusingly mixes facility and information-type checkboxes, a 2-year default scope is imposed without prominent notice, and no submission instructions are provided."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Rubric level 3: A patient can use the process but it wasn't designed for them — the form is a generic third-party release authorization where 'Per Patient Request' is one of eight reason options, and the form structure assumes facility-to-facility transfer rather than patient self-access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Rubric level 4: Minor ambiguities but nothing materially impeding — the form includes strong patient rights language, explicit prohibition of conditions, and reasonable expiration terms, though the fee disclosure is vague ('reasonable fee may be associated') without specifying amounts or HIPAA limits."
+    },
+    "overall": {
+      "score": 3.1,
+      "grade": "C",
+      "summary": "Black River Memorial Hospital provides an easily findable form with good compliance language and patient rights, but the severe technical accessibility problems (image-rendered PDF, no fillable fields, no submission instructions) and generic third-party authorization pathway significantly undermine the patient self-access experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:19:00.369Z"
+}

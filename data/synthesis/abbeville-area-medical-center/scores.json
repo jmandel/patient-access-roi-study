@@ -1,0 +1,114 @@
+{
+  "org_id": "abbeville-area-medical-center",
+  "org_name": "Abbeville Area Medical Center",
+  "category_id": "cah-independent-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Protected Health Information (HIM 1022)",
+      "url": "https://www.abbevilleareamc.com/wp-content/uploads/2023/01/HIM-1022-authorization.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission (number not listed on form; form states fax copies accepted)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Privacy Officer (P.O. Box 887, Abbeville, SC 29620)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.abbevilleareamc.com/wp-content/uploads/2023/01/HIM-1022-authorization.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "http://www.abbevilleareamc.com/wp-content/uploads/2019/02/HIPAA-Brochure-AAMC-Rev-07-2017-legal.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "HIPAA Notice of Privacy Practices brochure"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must complete a generic 'Authorization to Release Protected Health Information' form designed for third-party release, listing themselves as both patient and recipient.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Bundled sensitive-information consent (psychiatric, substance abuse, HIV, STD) with no opt-out mechanism",
+      "Two witness signatures required — exceeds HIPAA requirements for patient self-access",
+      "No submission instructions on the form (no address, fax number, or email provided)"
+    ],
+    "bright_spots": [
+      "Single-page form reduces patient burden",
+      "Fax acceptance explicitly stated as equivalent to original",
+      "Granular 16-category record type selection gives patients control",
+      "HIPAA brochure includes clear language about right to electronic copies and 30-day timeline"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — reachable in 2–3 clicks from homepage via Patients & Visitors → Medical Records, with direct PDF download and no barriers."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF has zero fillable fields (print and handwrite only), and while fax is stated as accepted, no fax number is provided on the form itself, leaving the patient to find submission details from a separate document."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but has notable problems — the single-page format and numbered structure are good, but the ambiguous item 2 field, bottom-of-page-only required-field legend, mixed plain/legal language, and absence of an 'All Records' option create friction."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic third-party release form requires patients to figure out how to use it for self-access, with no mention of patient rights or individual access under HIPAA § 164.524."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — witness signatures are unnecessary for patient self-access, bundled sensitive-info consent removes patient control, and no fee disclosure leaves cost obligations opaque."
+    },
+    "overall": {
+      "score": 2.9,
+      "grade": "C",
+      "summary": "AAMC provides an easy-to-find but technically dated, paper-only authorization form that funnels patients through a generic third-party release process with unnecessary barriers including witness requirements and bundled sensitive-information consent."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:27:23.249Z"
+}

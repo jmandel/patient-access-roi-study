@@ -1,0 +1,132 @@
+{
+  "org_id": "bon-secours-st-marys-richmond",
+  "org_name": "Bon Secours St. Mary's Hospital",
+  "category_id": "ch-major-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Bon Secours Mercy Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Disclose Health Information (English)",
+      "url": "https://www.bonsecours.com/-/media/bon-secours/files/richmond/roi-form-2017.ashx",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Disclose Health Information (Spanish)",
+      "url": "https://www.bonsecours.com/-/media/bon-secours/files/richmond/roi-spanish-2017.ashx",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/bon-secours-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Medical Records (804-673-9561)",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Medical Records phone (804-281-8135)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.bonsecours.com/-/media/bon-secours/files/richmond/roi-form-2017.ashx",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.bonsecours.com/-/media/bon-secours/files/richmond/roi-spanish-2017.ashx",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic third-party disclosure authorization form, selecting 'Personal' as purpose and naming themselves as recipient, or can use the Ciox/Swellbox online portal.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Fee language states 'copying charges will be applied, according to hospital policy' without distinguishing patient-access fees (HIPAA-limited) from third-party release fees"
+    ],
+    "bright_spots": [
+      "Spanish-language form available alongside English version",
+      "Five delivery format options including Ciox eDelivery marked 'for patients only' and MyChart",
+      "Multiple request channels: PDF form, Swellbox online portal, and MyChart",
+      "Explicit citation of CFR 164.524 (HIPAA Right of Access provision)",
+      "Single-page form design reduces patient burden"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with a simple web search; forms directly linked from a logically located patient resources page with no bot blocking or login required."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The PDF has a text layer but zero fillable fields, requiring print-and-handwrite; fax submission is available and an online Swellbox portal exists as an alternative digital pathway."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page layout with logical flow and granular record-type selection, but legal text in the lower section is dense and the date-of-visit field (singular, not range) limits usability."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic disclosure authorization form by selecting 'Personal' purpose and naming themselves as recipient, but the form was designed for third-party release and does not differentiate individual access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Voluntariness, revocation rights, and CFR 164.524 properly cited; no notarization required; minor ambiguity in fee language that does not distinguish patient-access fee limits from third-party charges."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "Bon Secours St. Mary's provides an easily findable, multilingual records request process with multiple pathways, but relies on a generic third-party disclosure form with no fillable fields and vague fee language."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:59:17.370Z"
+}

@@ -1,0 +1,141 @@
+{
+  "org_id": "cone-health",
+  "org_name": "Cone Health",
+  "category_id": "teach-regional-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 4,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Cone Health HIPAA Authorization form (English)",
+      "url": "https://www.conehealth.com/app/files/public/8f5342f1-147f-431a-9a44-c0eb316422a0/Cone-Health-HIPAA-Authorization-12-12-24-English.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Cone Health HIPAA Authorization form (Spanish)",
+      "url": "https://www.conehealth.com/app/files/public/554f4906-ee00-49be-9713-a39913c78382/Cone-Health-HIPAA-Authorization-12-12-24-Spanish.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "CHMG Release of Information form",
+      "url": "https://www.conehealth.com/app/files/public/5cb84c2e-39ff-4feb-8171-ffcf634002cf/CHMG-Release-of-Information-Form.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to HIM Department",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to HIM Department (Moses H. Cone Memorial Hospital, 1200 N Elm Street, Greensboro, NC 27401)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.conehealth.com/app/files/public/8f5342f1-147f-431a-9a44-c0eb316422a0/Cone-Health-HIPAA-Authorization-12-12-24-English.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.conehealth.com/app/files/public/554f4906-ee00-49be-9713-a39913c78382/Cone-Health-HIPAA-Authorization-12-12-24-Spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.conehealth.com/app/files/public/7af00a9b-d7fd-40dc-ba5a-dff91c8192a7/Request-for-Amendment-of-Health-Information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Amendment request form"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.conehealth.com/app/files/public/5cb84c2e-39ff-4feb-8171-ffcf634002cf/CHMG-Release-of-Information-Form.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization PDF from the Medical Records page, checks 'Patient Request' as purpose, fills the form by hand, and submits via fax or mail to the HIM department.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": true,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No submission instructions on the form — no address, fax number, or email for where to send the completed authorization",
+      "Bundled sensitive-category consent with no opt-out — signing authorizes release of mental health, substance abuse, HIV/AIDS, genetic, and reproductive health records regardless of what is actually requested",
+      "CHMG form (form-4) embeds a liability waiver into the authorization, requiring patients to release Cone Health from legal responsibility as a condition of authorizing disclosure",
+      "Two separate ROI forms for hospital vs. medical group with no guidance on which to use"
+    ],
+    "bright_spots": [
+      "Spanish-language version of the authorization form available and linked from the Medical Records page",
+      "Email delivery option offered with transparent security disclaimer",
+      "Granular record-type selection with 18+ checkboxes including a dedicated behavioral health subsection",
+      "Primary form recently updated (December 2024)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: The primary form is directly linked from a logically-named Medical Records page reachable through standard patient navigation, though the CHMG form is only discoverable via web search and bot protection adds friction."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: The primary form has zero fillable fields requiring a fully paper workflow (print, handwrite); no submission fax number or address is provided on the form itself, though fax submission is presumably available through the HIM department."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: The form has a logical numbered structure and reasonable organization, but uses clinical terminology patients won't understand, dense legal language in the rights section, and lacks submission instructions."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can request their own records by checking 'Patient Request' on the generic authorization form, but the form was designed for third-party disclosures and requires patients to navigate irrelevant fields and figure out which of two forms applies to them."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: The form bundles consent for all sensitive information categories with no opt-out, provides vague fee disclosure without referencing HIPAA limits, and the CHMG form includes a non-standard liability waiver — though the hospital form correctly addresses treatment conditioning and 42 CFR Part 2."
+    },
+    "overall": {
+      "score": 2.9,
+      "grade": "C",
+      "summary": "Cone Health provides a functional but patient-unfriendly records request process centered on a non-fillable generic HIPAA authorization form with no dedicated patient access pathway, no submission instructions, and bundled sensitive-category consent."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:20:02.662Z"
+}

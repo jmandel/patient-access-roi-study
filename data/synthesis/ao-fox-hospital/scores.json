@@ -1,0 +1,103 @@
+{
+  "org_id": "ao-fox-hospital",
+  "org_name": "A.O. Fox Hospital",
+  "category_id": "ch-regional-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": "Bassett Healthcare Network",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Medical Record Release (H-6653)",
+      "url": "https://www.bassett.org/sites/default/files/2025-09/Authorization-for-Medical-Records-Release-eform-2025.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyBassett Portal",
+      "vendor": "Epic MyChart",
+      "url": "https://www.bassett.org/patients-visitors/mybassett",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.bassett.org/sites/default/files/2025-09/Authorization-for-Medical-Records-Release-eform-2025.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a single network-wide Authorization for Medical Record Release form shared across all five Bassett Healthcare Network facilities, with a 'Self' checkbox and 'Patient Request' purpose option to indicate self-access.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 83,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "One-year date range default may inadvertently limit scope for patients seeking older records without clear notice"
+    ],
+    "bright_spots": [
+      "Portal-first default delivery: records default to MyBassett Portal when no format is specified",
+      "83 fillable fields across 2 pages — exceptionally thorough digital-first design",
+      "Seven delivery format options including encrypted email with explicit risk acknowledgment",
+      "Opt-out model for sensitive records defaults toward completeness rather than requiring opt-in",
+      "Explicit no-conditioning statement protects patient rights"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with a simple web search for the parent system (Bassett Healthcare Network), though a Fox-specific search returned no results — one extra step required."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — 83-field fillable PDF can be completed entirely on-screen, but must be submitted via fax or mail rather than online form submission."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with 10 numbered sections, bold headings, and logical flow; minor issues include two typos, dense legalese in the rights section, and exposed internal file paths."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form for self-access via the 'Self' checkbox and 'Patient Request' purpose, but must navigate sections designed for third-party release (verbal communication auth, expiration, redisclosure warnings) that don't apply to individual access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization or witness required, clear revocation rights, explicit no-conditioning statement; minor ambiguity in one-year date range default and no fee disclosure."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "A.O. Fox Hospital benefits from Bassett Healthcare Network's technically excellent fillable PDF with portal-first delivery default, but the generic authorization framework — rather than a dedicated patient access pathway — keeps it from the top tier."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:06:26.801Z"
+}

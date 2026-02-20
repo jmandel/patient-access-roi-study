@@ -1,0 +1,163 @@
+{
+  "org_id": "vanderbilt-university-medical-center",
+  "org_name": "Vanderbilt University Medical Center",
+  "category_id": "teach-major-nonprofit-south",
+  "primary_form": "form-4.pdf",
+  "total_forms_found": 5,
+  "parent_system": "Vanderbilt Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox patient records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/vanderbilt-umc-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for the Use or Disclosure of PHI (English)",
+      "url": "https://files.vanderbilthealth.com/sites/default/files/2024-03/authorization-for-release-of-medical-information-eng.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for the Use or Disclosure of PHI (Spanish)",
+      "url": "https://files.vanderbilthealth.com/sites/default/files/2024-03/authorization-for-release-of-medical-information-spa.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission for authorization form",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission for authorization form",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Swellbox provider records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/vanderbilt-umc-provider-wizard.html",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "ChartSwap third-party records request",
+      "vendor": "ChartSwap",
+      "url": "https://chartswap.com/",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.vumc.org/student-health/sites/default/files/Authorization%20for%20Release%20of%20Medical%20Information%20from%20VUMC-VMR%203017.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (superseded 2022 version)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.vumc.org/information-privacy-security/sites/default/files/public_files/Authorization%20for%20Release%20of%20Medical%20Information%2008_2017.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (superseded 2017 version)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://student-health.vmcweb.org/student-health/sites/default/files/Authorization%20for%20Release%20of%20Medical%20Information%20to%20VUMC%20-VMR%203022.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Incoming records authorization (release TO VUMC)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://files.vanderbilthealth.com/sites/default/files/2024-03/authorization-for-release-of-medical-information-eng.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (current official)"
+    },
+    {
+      "filename": "form-5.pdf",
+      "source_url": "https://files.vanderbilthealth.com/sites/default/files/2024-03/authorization-for-release-of-medical-information-spa.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (current official, Spanish)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Vanderbilt offers a dedicated Swellbox patient request portal alongside a downloadable PDF authorization form, with separate portals for providers and third parties.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "compliant",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Dual-purpose authorization form conflates patient access rights (§164.524) with third-party authorization (§164.508)",
+      "Outdated form versions (2017, 2022) remain publicly accessible on VUMC subdomains with no deprecation notice",
+      "All PDF forms are image-only scans with zero fillable fields, failing WCAG/Section 508 accessibility"
+    ],
+    "bright_spots": [
+      "Dedicated Swellbox patient request portal separate from provider and third-party portals",
+      "Spanish-language form available and linked from main medical records page",
+      "Electronic delivery option via request portal with clear instructions",
+      "Transparent fee schedule with all fees capped at $50 maximum",
+      "Purpose question correctly scoped — only required if not for personal use"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Current form is clearly linked from the official Vanderbilt Health medical records page with English and Spanish versions; easy to find via basic navigation, though outdated versions on VUMC subdomains create confusion risk."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: The Swellbox patient portal provides a mostly digital workflow, but the PDF form itself is an image-only scan with zero fillable fields — a gap that prevents a fully digital experience for patients using the downloadable form."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized 2-page form with 10 numbered sections, clear headers, and a transparent fee table; minor issues include dense legal text in Section 9 and a complex 6-row fee schedule."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access is clearly accommodated through a dedicated Swellbox patient portal and the PDF form's correctly scoped purpose question, even though the PDF itself is a generic authorization form not specifically designed for patient self-access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization required, 30-day response timeline stated, fees disclosed and capped at $50 with $6.50 flat for electronic delivery; minor ambiguity in not distinguishing patient access fees from third-party release rates."
+    },
+    "overall": {
+      "score": 4.0,
+      "grade": "B",
+      "summary": "Vanderbilt Health provides a solid patient records request experience with differentiated online portals, a Spanish translation, and transparent fees, held back by image-only PDF scans and dual-purpose authorization framing."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:13:28.590Z"
+}

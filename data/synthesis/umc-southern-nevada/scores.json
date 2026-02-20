@@ -1,0 +1,131 @@
+{
+  "org_id": "umc-southern-nevada",
+  "org_name": "University Medical Center of Southern Nevada",
+  "category_id": "ch-independent-government-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "PHI Release Authorization form (MRU00695, 2019)",
+      "url": "https://umcsn.com/getmedia/43e12672-40c1-4b7e-a4fc-099306b86efc/MRU00695_PHI_Rel_Auth_Eng_01-29-19.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "HIM Department fax (from amendment form; not stated on ROI form)",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "HIM Department email (HIMManagementAnalysts@umcsn.com; from amendment form)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "HIM Department mail (1800 W. Charleston Blvd., Las Vegas, NV 89102)",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "HIM Department walk-in (Mon-Fri 8:00am-4:30pm; from amendment form)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://umcsn.com/getmedia/43e12672-40c1-4b7e-a4fc-099306b86efc/MRU00695_PHI_Rel_Auth_Eng_01-29-19.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "PHI Release Authorization form (ROI) — current version (2019)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://umcsn.com/getmedia/38304303-0e51-4547-82ea-088afa777004/MRU00695PHI.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "PHI Release Authorization form (ROI) — superseded version (2016)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.umcsn.com/getmedia/1dd2697c-e454-46e3-a217-a800685388a6/RequestforAmendmentPHI_English.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Request for Amendment of Protected Health Information"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients must use a generic PHI Release Authorization form designed for all disclosures, selecting a 'Patient (self)' checkbox to indicate self-access.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 25,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "ROI form not linked from the Medical Records patient-facing page — only the amendment form is linked",
+      "No submission instructions on the ROI form itself — patient must independently determine how to return the completed authorization",
+      "Superseded 2016 version of the same form still publicly accessible with no obsolescence notice"
+    ],
+    "bright_spots": [
+      "Granular five-category sensitive information consent (substance abuse, HIV, mental health, psychotherapy, genetic) with individual Yes/No and initials",
+      "Email listed as a records delivery option alongside mail, fax, CD-ROM, and pick-up",
+      "Social Security Number explicitly marked as optional",
+      "Patient (self) checkbox explicitly acknowledges patient self-access use case"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 2,
+      "rationale": "Level 2: The ROI form is not linked from the Medical Records page and is only discoverable via web search; a superseded version adds confusion — requires persistence or creative search strategies."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Non-fillable PDF requires printing and handwriting; submission method is not stated on the form itself, making this primarily a paper workflow even though fax/email may be available via other sources."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate logical flow and reasonable structure, but notable problems including institutional jargon ('ROIRCD', 'patient label'), incorrect page numbering, and no submission instructions — a patient could complete it but would face confusion."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: The generic authorization form can be used for self-access via the 'Patient (self)' checkbox, but it wasn't designed for patients — they must navigate third-party-oriented language and figure out which parts apply."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Good rights statements (non-conditioning, voluntary, revocation) but vague fee language that doesn't distinguish patient access limits, no submission instructions, and requiring a 'purpose' for patient self-access go beyond what the law requires."
+    },
+    "overall": {
+      "score": 2.6,
+      "grade": "C",
+      "summary": "UMC provides a functional but poorly surfaced generic authorization form with no dedicated patient access pathway, no fillable fields, and missing submission instructions — adequate on paper but undermined by findability and usability gaps."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:14:43.427Z"
+}

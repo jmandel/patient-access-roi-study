@@ -1,0 +1,121 @@
+{
+  "org_id": "slv-health-regional-medical-center",
+  "org_name": "San Luis Valley Health Regional Medical Center",
+  "category_id": "ch-regional-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "San Luis Valley Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Medical Record Information (2024 update)",
+      "url": "https://www.sanluisvalleyhealth.org/documents/resource%20flyers/Authorization-to-Release-Information-Update-2024.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "email",
+      "name": "Email submission of completed form",
+      "url": "mailto:MRChartPullRequest@slvrmc.org",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to SLV Health-RMC (106 Blanca Ave, Alamosa, CO 81101)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.sanluisvalleyhealth.org/documents/resource%20flyers/Authorization-to-Release-Information-Update-2024.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (current version)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.sanluisvalleyhealth.org/documents/Authorization-to-release-medical-record-information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (superseded 2013 version)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.sanluisvalleyhealth.org/documents/resource%20flyers/Authorization-to-Release-Information-Spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (Spanish translation)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic authorization-to-release form, prints and fills it out by hand listing themselves as the recipient, then emails or mails it to the HIM department.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "SSN collection as standard field — unnecessary for ROI and creates identity theft risk",
+      "Vague disclaimer 'San Luis Valley Health is not responsible if lost' with no context",
+      "Persistent spelling error 'INFORMATION REQUIRIED' across multiple form revisions"
+    ],
+    "bright_spots": [
+      "Spanish-language form co-located with English version on Medical Records page — serves San Luis Valley's Latino community",
+      "Email submission accepted at MRChartPullRequest@slvrmc.org — avoids fax-only or in-person-only barriers",
+      "Single-page form with granular record-type scope options"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available — form is directly linked from the Medical Records page and immediately found via web search with no barriers."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds — no fillable fields require printing and handwriting, but email submission (MRChartPullRequest@slvrmc.org) provides an electronic submission path after scanning the completed form."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but has notable problems — single-page layout is well-organized, but form lacks instructions, uses moderately legalistic language, includes a confusing copies clause, and contains a persistent spelling error."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — generic third-party release form with no dedicated patient self-access pathway; patient must list themselves as recipient in the 'RELEASE TO' field."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — collects SSN (not required for patient access), provides no rights information or HIPAA references, no fee transparency, and vague 'not responsible if lost' disclaimer."
+    },
+    "overall": {
+      "score": 3.3,
+      "grade": "C",
+      "summary": "SLV Health-RMC scores well on findability and offers bilingual support with email submission, but is held back by a generic third-party release form with no fillable fields, no patient-specific pathway, SSN collection, and absent rights information."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:05:10.098Z"
+}

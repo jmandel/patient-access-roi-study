@@ -1,0 +1,135 @@
+{
+  "org_id": "riverwood-healthcare-center",
+  "org_name": "Riverwood Healthcare Center",
+  "category_id": "cah-independent-nonprofit-midwest",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release and Disclose Patient Information (Printable Form)",
+      "is_primary": true,
+      "url": "https://riverwoodhealthcare.org/wp-content/uploads/2025/10/Patient-Information-Disclosure-Authorization-1.pdf"
+    },
+    {
+      "type": "online_portal",
+      "name": "Information Release Form (JotForm)",
+      "vendor": "JotForm (HIPAA-compliant)",
+      "url": "https://hipaa.jotform.com/222405586410046",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Consent for Release of Information (JotForm)",
+      "vendor": "JotForm",
+      "url": "https://form.jotform.com/240436611244044",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Health Information Department",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart (OCHIN)",
+      "vendor": "Epic MyChart / OCHIN",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://riverwoodhealthcare.org/wp-content/uploads/2025/01/RIVERWOOD-ROI-2018.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (2018, superseded)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://riverwoodhealthcare.org/wp-content/uploads/2016/03/Release-of-Information-Form-2015.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (2015, superseded)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://riverwoodhealthcare.org/wp-content/uploads/2025/10/Patient-Information-Disclosure-Authorization-1.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (2025, current)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient uses a generic HIPAA authorization form for all record releases, with a 'Personal Use' checkbox to indicate self-access; a HIPAA-compliant JotForm online alternative is also available.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 17,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Sensitive information (chemical dependency, behavioral health) defaults to release unless patient actively opts out by initialing — concerning under 42 CFR Part 2",
+      "Outdated form versions (2015, 2018) remain publicly accessible and could be found via search engines"
+    ],
+    "bright_spots": [
+      "Parenthetical plain-language guidance on section headers (e.g., 'WHO HAS THE INFORMATION YOU WANT RELEASED?')",
+      "HIPAA-compliant JotForm online submission available as alternative to printable PDF",
+      "Current form eliminated SSN collection and witness requirements present in earlier versions",
+      "'Routine Record Sets' checkbox with definition helps patients understand standard records requests"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — Patient Forms page is one click from main nav, and web search returns direct PDF links; minor deduction for outdated versions still accessible via search engines."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the PDF form itself has zero fillable fields (print-and-fill), but the organization offers a HIPAA-compliant JotForm online alternative providing a fully digital submission pathway, plus fax submission for the PDF."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — clean single-page layout with helpful parenthetical plain-language headers, logical section flow, and reasonable field count; minor issues include dense authorization language, 'Guardian' misspelled, and ambiguous opt-out initialing for sensitive records."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — generic HIPAA authorization form with 'Personal Use' checkbox accommodates self-requests, but no dedicated patient access pathway, no mention of HIPAA Right of Access, and patient must navigate a from/to structure designed for third-party transfers."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing that would materially impede a patient — no notarization, no witness, fax available, reasonable expiration; minor concerns include default-release model for 42 CFR Part 2 substance abuse records, ambiguous 'present' revocation language, and no fee disclosure."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Riverwood provides a functional records request experience with easy findability and both printable and online submission options, but relies on a generic authorization form that doesn't differentiate patient self-access from third-party release."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:19:34.282Z"
+}

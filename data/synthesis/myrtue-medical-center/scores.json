@@ -1,0 +1,132 @@
+{
+  "org_id": "myrtue-medical-center",
+  "org_name": "Myrtue Medical Center",
+  "category_id": "cah-independent-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Protected Health Information (Rev. 06/25)",
+      "url": "https://www.myrtuemedical.org/documents/authorization%20&%20release%20forms/ROI-English-06-17-25.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Health Information Management fax (712-755-2640)",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Health Information Management email (medicalrecords@myrtuemedical.org)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Health Information Management mail (1213 Garfield Avenue, Harlan, IA 51537)",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person pickup at Myrtue Medical Center or Community Health",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart Portal (for record delivery)",
+      "vendor": "Epic MyChart",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.myrtuemedical.org/documents/authorization%20&%20release%20forms/ROI-English-06-17-25.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.myrtuemedical.org/documents/authorization%20&%20release%20forms/Consent-for-Disclosure-English-07-28-25[1].pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Consent for verbal disclosure form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a generic ROI authorization form, print and handwrite it, then submit by fax, email, or mail — the form serves both patient self-access and third-party release with no differentiation.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Fee language states charges apply 'in accordance with federal/state regulations' without specifying amounts or distinguishing HIPAA's cost-based fee cap for patient self-access requests",
+      "Form frames patient access as a §164.508 authorization rather than a §164.524 Right of Access request, potentially applying authorization-specific requirements (expiration, revocation) to what should be a simpler access request"
+    ],
+    "bright_spots": [
+      "Spanish translation of ROI form available — unusual for a small rural critical access hospital",
+      "MyChart Portal offered as a first-listed delivery option, enabling electronic record receipt",
+      "Encrypted email offered as an additional electronic delivery method",
+      "Substance use disorder records handled with explicit 42 CFR Part 2 carve-out and re-disclosure prohibition language",
+      "Single-page form design minimizes patient burden",
+      "Recently revised (June 2025) suggesting active form maintenance",
+      "Complete HIM contact information (phone, fax, email) in form header"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — forms are directly linked from a clearly labeled 'Authorization + Release Forms' page under Patients + Visitors, findable via site-scoped search, with descriptive filenames and no access barriers."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds; fax submission available — the form is a text-based PDF but has zero fillable fields, requiring print-and-handwrite workflow; fax and email submission are available as electronic submission pathways."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity or length issues — single-page design with logical top-to-bottom flow, clear section structure, and mostly plain language; minor issues include dense bottom section and parenthetical instructions that are easy to miss."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic bidirectional From/To authorization form requires patients to figure out which parts apply to self-access, with no Right of Access language, no dedicated patient pathway, and authorization framing (expiration, revocation) applied to what should be a simpler access request."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing that would materially impede a patient — no notarization or witness required, includes no-conditioning statement and revocation rights, but fee amounts are undisclosed and the form conflates §164.508 authorization requirements with §164.524 patient access rights."
+    },
+    "overall": {
+      "score": 3.65,
+      "grade": "B",
+      "summary": "Myrtue Medical Center provides a findable, well-organized single-page ROI form with progressive features (bilingual availability, MyChart and encrypted email delivery, careful substance use handling), but the lack of fillable fields, generic authorization framing, and absent patient access differentiation keep it from the top tier."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:18:58.131Z"
+}

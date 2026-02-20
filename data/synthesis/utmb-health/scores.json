@@ -1,0 +1,132 @@
+{
+  "org_id": "utmb-health",
+  "org_name": "University of Texas Medical Branch",
+  "category_id": "teach-major-government-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "University of Texas System",
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Medical Records (Form 7033)",
+      "url": "https://www.utmb.edu/utmbhealth/online-services/medical-records",
+      "is_primary": true
+    },
+    {
+      "type": "online_portal",
+      "name": "Online records request portal",
+      "vendor": "Datavant/Swellbox",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax completed Form 7033 to (409) 772-5101",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email completed Form 7033 to himrio@utmb.edu",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed Form 7033 to 301 University Blvd., Galveston, TX 77555-0782",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://liveutmb.sharepoint.com/:b:/s/collaboration/webfiles/Eco2ejThJIlDjcRxwSOsH14BR3PF8A5GzjVy_LSMcUOyrw?e=ajENiL",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient access request form (Form 7033)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://liveutmb.sharepoint.com/:b:/s/collaboration/webfiles/EdAslXAlEhZDnOwaBpjq6ZcB3jXZPnOZRCFT3kTjcKuGpw?e=fqa7g7",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Third-party HIPAA authorization form (Form 7032, Rev. 5/24)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.championrecordsservice.com/uploads/forms/2024/UTMB-HIPAA-Auth-10-16.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Third-party HIPAA authorization form (Form 7032, Rev. 10/16, outdated third-party copy)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "UTMB provides a dedicated patient self-request form (Form 7033) with email, fax, mail submission and MyChart/email/fax/mail delivery options, plus a Datavant/Swellbox online portal alternative.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 12,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Bundled sensitive-information consent (mental health, substance abuse, HIV/AIDS) with no opt-out for individual categories",
+      "Outdated Form 7032 hosted by third-party vendor (Champion Records Service) with no cross-reference to the correct patient form"
+    ],
+    "bright_spots": [
+      "Dedicated patient self-request form (Form 7033) separate from third-party authorization (Form 7032)",
+      "Four delivery options including MyChart Patient Portal and email",
+      "Email submission of completed form (himrio@utmb.edu) eliminates need for printer or fax",
+      "Transparent plain-language email encryption risk disclosure",
+      "Datavant/Swellbox online portal as digital alternative"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — one search surfaced the medical records page, which lists forms clearly; SharePoint hosting adds minor download friction but does not affect patient browser experience."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds; fax/email submission available — form has a text layer but zero fillable fields, requiring print-and-handwrite or PDF annotation; electronic submission via email or fax is available."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity or length issues — compact one-page form with logical flow and multiple delivery options; missing fee info, turnaround time, and patient rights statement are minor gaps."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access clearly accommodated — UTMB maintains a dedicated patient form (7033) separate from third-party auth (7032) with MyChart/email delivery, though it lacks a patient rights statement and has bundled sensitive-info consent."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no unnecessary barriers (no notarization, no in-person requirement), voluntary and non-conditioning language present; bundled sensitive consent and missing fee disclosure are minor issues."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "UTMB demonstrates above-average patient-centeredness with a dedicated self-request form, multiple submission/delivery options, and a Datavant/Swellbox portal alternative, but is held back by non-fillable PDF fields, missing fee/rights/turnaround information, and no multilingual support."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:17:46.593Z"
+}

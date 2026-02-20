@@ -1,0 +1,147 @@
+{
+  "org_id": "duly-health-and-care",
+  "org_name": "Duly Health and Care",
+  "category_id": "practice-independent-forprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 4,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Duly Authorization for Release of Health Information",
+      "url": "https://dmgwebprodstorage.blob.core.windows.net/dmgprodweb/files/@assetBasePath/files/Release-of-Information-Authorization-Updated-062023.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "ScanSTAT Technologies ROI fax submission",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "ScanSTAT Technologies ROI email submission (mrrequests@dupagemd.com)",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyDMGHealth (MyChart)",
+      "vendor": "Epic MyChart",
+      "url": "https://mychart.dupagemedicalgroup.com",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "MediCopy Authorization for Release of Medical Records",
+      "vendor": "MediCopy/MRO",
+      "url": "https://medicopy.net/sites/default/files/2025-01/Duly%20and%20MediCopy%20Authorization.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "Pick up at HIM office",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://dmgwebprodstorage.blob.core.windows.net/dmgprodweb/files/@assetBasePath/files/Release-of-Information-Authorization-Updated-062023.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://medicopy.net/sites/default/files/2025-01/Duly%20and%20MediCopy%20Authorization.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (multi-facility MediCopy)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://dmgwebprodstorage.blob.core.windows.net/dmgprodweb/files/%40assetBasePath/files/Duly-MediCopy-MRO-Intake-Form-Authorization.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Disability/FMLA intake form and authorization"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://dmgwebprodstorage.blob.core.windows.net/dmgprodweb/files/%40assetBasePath/files/Duly-MRO-MediCopy-Authorization.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (generic MediCopy template)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a generic HIPAA authorization PDF, print and fill it by hand, and submit via fax or email to ScanSTAT Technologies; a 'Personal Reasons' purpose checkbox is the only nod to patient self-access.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Witness signature required for non-care requests (Personal Reasons, Insurance, Legal) — not required by HIPAA",
+      "Categorically rejects 'all records' requests, potentially limiting patient Right of Access under 45 CFR § 164.524",
+      "Fee language ('Charges may apply. Please contact us for details. Cash payments are not accepted.') provides no transparency and no acknowledgment of HIPAA fee limits for patient access"
+    ],
+    "bright_spots": [
+      "Five delivery methods offered: fax, U.S. mail, MyChart, secure e-delivery, and pick-up",
+      "Granular record-type checkboxes with 11 categories including imaging CDs",
+      "Explicit date format examples reduce ambiguity",
+      "Comprehensive patient rights statements covering revocation, inspection, right to refuse, and re-disclosure"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms were easy to find via basic web search, and a dedicated medical records request page exists at dulyhealthandcare.com/services/medical-records-requests; not a 5 because the primary form isn't immediately prominent without searching."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The PDF has a text layer but zero fillable fields, requiring print-and-handwrite workflow; fax and email submission are available, preventing a score of 2, but the lack of any digital form completion keeps it from 4."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Six clearly numbered sections with logical flow, granular record-type checkboxes, and date format examples; minor issues include dense legal text block in Section 6, outdated branding references, and vague fee language."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form by selecting 'Personal Reasons' but the form was not designed for patient self-access — it conflates patient access with third-party release, applies the same witness and fee requirements to all requests, and does not acknowledge the patient's distinct Right of Access."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Witness requirement for non-care requests, categorical rejection of 'all records' requests, and opaque fee language go beyond what HIPAA requires for patient access, though rights statements and revocation language are present."
+    },
+    "overall": {
+      "score": 3.3,
+      "grade": "C",
+      "summary": "Duly Health and Care provides a findable, well-organized ROI form with good delivery flexibility, but funnels all requests through a generic authorization with unnecessary barriers — witness requirements, fee opacity, and no differentiation of patient self-access from third-party release."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:30:51.743Z"
+}

@@ -1,0 +1,124 @@
+{
+  "org_id": "mosaic-life-care-st-joseph",
+  "org_name": "Mosaic Life Care at St. Joseph",
+  "category_id": "ch-regional-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Mosaic Life Care",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of PHI (Form #3014)",
+      "url": "https://www.mymlc.com/contentassets/a22d8e2c70614860b8feea5e488cdd16/authorization-for-release-of-phi.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "Epic MyChart",
+      "vendor": "Epic MyChart",
+      "url": "https://www.mymlc.com",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission to HIM (ROI@myMLC.com)",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM office",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to HIM office (105 Far West Drive, Suite 202, St. Joseph, MO 64506)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.mymlc.com/contentassets/a22d8e2c70614860b8feea5e488cdd16/authorization-for-release-of-phi.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (current version, 03/28/2019)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.mymlc.com/contentassets/4fcfecbcab604b579303760a042cacf5/auth-from-hipaa3014.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (older version, 11/24/2015)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients must use a generic third-party release authorization form (Form #3014) and fill themselves in as the recipient, selecting 'Personal' as the purpose.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 25,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Mandatory purpose selection ('must select one') is not required under HIPAA for patient self-access requests",
+      "Two conflicting versions of the same form (Form #3014) published simultaneously with no indication of which is current"
+    ],
+    "bright_spots": [
+      "15-language assistance notice including uncommon languages (Pennsylvania Dutch, Trukese) reflecting local demographics",
+      "Granular 13-category record type selection gives patients meaningful control over scope",
+      "Multiple electronic submission channels (email, fax) reduce access barriers"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms are easy to find within 2-3 clicks via the HIM page and discoverable through site search, but dual versions on different pages without version clarity prevent a top score."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The PDF has a text layer but zero fillable fields, requiring print-and-handwrite; however, fax and email submission are available, making it usable digitally with workarounds."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with logical flow, granular record type options, and reasonable length (2 pages), but legal density in disclaimers and a confusing title ('Access Request to Another Agency') are minor clarity issues."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form by listing themselves as the recipient and selecting 'Personal' as the purpose, but the form was designed entirely for third-party release with no dedicated self-access pathway, no Right of Access language, and no portal mention."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: No notarization or in-person requirement, proper revocation and non-conditioning language, but the mandatory purpose field exceeds HIPAA requirements for patient access, fees are vaguely disclosed, and Right of Access timelines/fee limits are not communicated."
+    },
+    "overall": {
+      "score": 3.3,
+      "grade": "C",
+      "summary": "Mosaic Life Care provides a findable but paper-oriented generic ROI form that a patient can use for self-access with workarounds, but the lack of a dedicated patient access pathway, non-fillable PDF, and compliance gaps limit the experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:07:34.480Z"
+}

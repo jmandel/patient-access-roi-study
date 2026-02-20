@@ -1,0 +1,102 @@
+{
+  "org_id": "cordova-community-medical-center",
+  "org_name": "Cordova Community Medical Center",
+  "category_id": "cah-independent-government-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Protected Patient Health Information",
+      "url": "https://www.cdvcmc.com/wp-content/uploads/2017/11/Release-of-Information-form.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Medical Records fax submission",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.cdvcmc.com/wp-content/uploads/2017/11/Release-of-Information-form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "A single general-purpose HIPAA authorization form for releasing records to a named recipient, usable for patient self-access only by writing one's own name as the recipient.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Sensitive information (substance abuse, HIV, mental health) bundled into a single all-or-nothing initial with undefined 'qualify above' alternative",
+      "Form last updated 2016 — nearly a decade old",
+      "45 CFR 164.524 citation misapplied in redisclosure context rather than informing patients of access rights"
+    ],
+    "bright_spots": [
+      "Excellent findability — one click from clearly-labeled Medical Records page",
+      "Comprehensive record-type granularity with 12 specific categories plus date-range fields",
+      "Photocopies explicitly accepted as originals",
+      "Compact single-page design covering all necessary elements"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — a single web search or one click from a clearly-labeled Medical Records page yields a direct PDF download with no barriers."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF has zero fillable fields, requiring patients to print, handwrite, and fax; though fax submission is available, the form itself is entirely non-interactive."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but with notable problems — the numbered structure and record-type granularity are good, but later sections shift into dense legalese, the single page is visually cramped, and the sensitive-info clause is confusingly worded."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought — the form is framed entirely around third-party release, requiring patients to awkwardly write their own name as recipient, with no dedicated pathway, no delivery format field, and no statement of patient access rights."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — the all-or-nothing sensitive information bundling is problematic under 42 CFR Part 2, the 164.524 citation is misapplied, and there is no statement of access rights or turnaround time, though no outright violations exist."
+    },
+    "overall": {
+      "score": 2.8,
+      "grade": "C",
+      "summary": "CCMC provides an easily findable but dated, paper-first authorization form that was designed for third-party release rather than patient self-access, resulting in a functional but patient-unfriendly records request experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:23:46.895Z"
+}

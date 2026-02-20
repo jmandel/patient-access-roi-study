@@ -1,0 +1,43 @@
+{
+  "org_id": "ascension-saint-thomas-rutherford",
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request wizard",
+      "vendor": "Swellbox",
+      "url": "https://www.swellbox.com/ascension-stthomas-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of PHI (STHS490)",
+      "url": "https://healthcare.ascension.org/-/media/project/ascension/healthcare/legacy/markets/tennessee/st-thomas/documents/sths409-authorization-for-disclosure-of-phi-1.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed authorization form",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email completed authorization form",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://healthcare.ascension.org/-/media/project/ascension/healthcare/legacy/markets/tennessee/st-thomas/documents/sths409-authorization-for-disclosure-of-phi-1.pdf",
+      "scope": "system",
+      "language": "en",
+      "is_current": true,
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "parent_system": "Ascension",
+  "uses_system_forms": true,
+  "retrieval_difficulty": "easy",
+  "bot_blocking_encountered": false,
+  "browser_fallback_needed": false
+}

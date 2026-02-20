@@ -1,0 +1,82 @@
+[
+  {
+    "org_id": "abbeville-area-medical-center",
+    "name": "Abbeville Area Medical Center",
+    "category_id": "cah-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "Abbeville",
+    "website": "https://www.abbevilleareamc.com/",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH serving rural Abbeville County since 1963; recognized for quality and patient satisfaction."
+  },
+  {
+    "org_id": "bath-community-hospital",
+    "name": "Bath Community Hospital",
+    "category_id": "cah-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "VA",
+    "city": "Hot Springs",
+    "website": "https://bathhospital.org/",
+    "bed_count": 25,
+    "notes": "Independent unaffiliated nonprofit CAH established 1916; only full-service hospital within 25-mile radius in the Virginia Highlands."
+  },
+  {
+    "org_id": "pocahontas-memorial-hospital",
+    "name": "Pocahontas Memorial Hospital",
+    "category_id": "cah-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "WV",
+    "city": "Buckeye",
+    "website": "https://www.pmhwv.org/",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH founded 1926; serves Pocahontas County with 24/7 ED and Rural Health Clinic."
+  },
+  {
+    "org_id": "wayne-county-hospital",
+    "name": "Wayne County Hospital",
+    "category_id": "cah-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "KY",
+    "city": "Monticello",
+    "website": "https://waynehospital.org/",
+    "bed_count": 25,
+    "notes": "Independent voluntary nonprofit CAH serving rural Wayne County; provides emergency, inpatient, and outpatient services."
+  },
+  {
+    "org_id": "minnie-hamilton-health-system",
+    "name": "Minnie Hamilton Health System",
+    "category_id": "cah-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "WV",
+    "city": "Grantsville",
+    "website": "https://www.mhhs.healthcare/",
+    "bed_count": 25,
+    "notes": "Independent 501(c)(3) nonprofit CAH and FQHC; Top 20 CAH award winner 2023; serves central WV since 1983."
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "org_id": "university-of-iowa-hospitals",
+  "org_name": "University of Iowa Hospitals & Clinics",
+  "category_id": "teach-major-government-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "University of Iowa Health Care",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Form 1989: Consent to Release of Information and Right of Access Request",
+      "url": "https://www.healthcare.uiowa.edu/marcom/uihc/legal/consent-to-release.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "email",
+      "name": "Email submission of completed form",
+      "url": "mailto:him-consentform@uiowa.edu",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission (319-356-3079 or 319-353-7944)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to HIM Department, 200 Hawkins Dr., HSSB Ste. 100, Iowa City, IA 52242",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.healthcare.uiowa.edu/marcom/uihc/legal/consent-to-release.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization and patient access request form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://irp.cdn-website.com/fa690e1e/files/uploaded/UI%20Medical%20Release%20Form%20fillin-2023.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Third-party-customized ROI authorization form (older version)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a dual-purpose PDF form (Consent to Release and Right of Access Request), prints and completes it by hand, then submits via email, fax, or mail.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Current form (2024) regressed from 50 fillable fields to zero, making it less digitally accessible than the older version",
+      "Current form removed 'Myself at the address above' recipient option that was present in the older version"
+    ],
+    "bright_spots": [
+      "Form title explicitly names 'Right of Access Request' alongside release authorization",
+      "Email submission accepted (him-consentform@uiowa.edu) — above average for ROI form submission",
+      "Legacy entity lines accommodate patients from merged organizations (Corridor OB GYN, Mercy Clinics, Mercy Hospital)",
+      "Five delivery format options including electronic media (CD, USB, email)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — a single web search returns the direct PDF link, and the institutional medical records page provides clear context and instructions."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds — the form has zero fillable fields requiring print-and-handwrite, but fax and email submission are available; a patient could use third-party PDF annotation tools as a workaround."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with logical flow and comprehensive record type options, but lacks section headers and has moderately dense consent language."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the form title acknowledges right of access but the workflow treats patient self-access identically to third-party release with no 'send to myself' shortcut."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — 30-day response time stated, no notarization required, non-conditioning statement present, but fee language is vague and doesn't distinguish patient access fees from third-party fees."
+    },
+    "overall": {
+      "score": 3.65,
+      "grade": "B",
+      "summary": "UIHC provides an easily findable, concise dual-purpose form with flexible submission options, but the lack of fillable fields and absence of a differentiated patient self-access pathway prevent a higher rating."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:16:54.256Z"
+}

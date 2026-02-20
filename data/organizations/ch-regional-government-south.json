@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "broward-health",
+    "name": "Broward Health",
+    "category_id": "ch-regional-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "Fort Lauderdale",
+    "website": "https://www.browardhealth.org",
+    "bed_count": 1579,
+    "notes": "North Broward Hospital District; 4 hospitals (Medical Center, North, Imperial Point, Coral Springs). Tax-supported public hospital district governed by board appointed by the Governor."
+  },
+  {
+    "org_id": "west-tennessee-healthcare",
+    "name": "West Tennessee Healthcare",
+    "category_id": "ch-regional-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Jackson",
+    "website": "https://www.wth.org",
+    "bed_count": 642,
+    "notes": "Jackson-Madison County General Hospital District; 8 hospitals across West Tennessee. Created by 1949 private act of TN legislature. Self-sustaining public hospital district."
+  },
+  {
+    "org_id": "memorial-healthcare-system",
+    "name": "Memorial Healthcare System",
+    "category_id": "ch-regional-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "Hollywood",
+    "website": "https://www.mhs.net",
+    "bed_count": 850,
+    "notes": "South Broward Hospital District; 6 hospitals including Memorial Regional, Memorial West, Memorial Miramar, and Memorial Pembroke. Statutory special tax district."
+  }
+]

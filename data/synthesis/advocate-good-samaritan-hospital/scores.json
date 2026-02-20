@@ -1,0 +1,153 @@
+{
+  "org_id": "advocate-good-samaritan-hospital",
+  "org_name": "Advocate Good Samaritan Hospital",
+  "category_id": "ch-major-nonprofit-midwest",
+  "primary_form": "form-4.pdf",
+  "total_forms_found": 7,
+  "parent_system": "Advocate Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "patient_portal",
+      "name": "LiveWell Patient Portal",
+      "vendor": "Epic MyChart",
+      "url": "https://livewell.aah.org",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Health Information (form-4)",
+      "url": "https://www.advocatehealth.com/-/media/Project/Health-System-Enterprise/AdvocateHealthCom/advocatehealth/documents/contact-us/medical-records/patient-request-for-health-information-s88411en.PDF",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Protected Health Information (form-5)",
+      "url": "https://www.advocatehealth.com/-/media/Project/Health-System-Enterprise/AdvocateHealthCom/advocatehealth/documents/contact-us/medical-records/authorization-to-release-protected-health-information-wi-il-s300503.PDF",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.advocatehealth.com/-/media/Project/Health-System-Enterprise/AdvocateHealthOrg/advocatehealthorg/documents/employer-solutions/release-of-information-general.PDF",
+      "scope": "system",
+      "language": "en",
+      "document_type": "EAP general release of information"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.advocatehealth.com/-/media/Project/Health-System-Enterprise/AdvocateHealthCom/amg/documents/98-5050-en.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy AMG version)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.advocatehealth.com/-/media/Project/Health-System-Enterprise/AdvocateHealthOrg/advocatehealthorg/documents/employer-solutions/290-release-of-information-for-supervisory-or-administrative-referrals.PDF",
+      "scope": "system",
+      "language": "en",
+      "document_type": "EAP supervisory/administrative referral release"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.advocatehealth.com/-/media/Project/Health-System-Enterprise/AdvocateHealthCom/advocatehealth/documents/contact-us/medical-records/patient-request-for-health-information-s88411en.PDF",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Patient access request form"
+    },
+    {
+      "filename": "form-5.pdf",
+      "source_url": "https://www.advocatehealth.com/-/media/Project/Health-System-Enterprise/AdvocateHealthCom/advocatehealth/documents/contact-us/medical-records/authorization-to-release-protected-health-information-wi-il-s300503.PDF",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-6.pdf",
+      "source_url": "https://www.advocatehealth.com/-/media/Project/Health-System-Enterprise/AdvocateHealthCom/advocatehealth/documents/contact-us/medical-records/authorization-for-disclosure-of-health-information-s23623-sp.PDF",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (Spanish)"
+    },
+    {
+      "filename": "form-7.pdf",
+      "source_url": "https://www.advocatehealth.com/-/media/Project/Health-System-Enterprise/AdvocateHealthCom/advocatehealth/documents/contact-us/medical-records/authorization-for-release-of-information-form-instructions.PDF",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Form instructions"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Advocate Health provides a dedicated 'Patient Request for Health Information' form (form-4) for patient self-access, separate from the third-party authorization, with a prominent callout to the LiveWell patient portal as an online alternative.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 10,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No fillable fields on a born-digital PDF, forcing a print-and-handwrite workflow",
+      "No submission instructions on the patient access form (no address, fax, or email for return)"
+    ],
+    "bright_spots": [
+      "Dedicated patient self-access form clearly separated from third-party authorization",
+      "Portal callout prominently placed at top of form directing patients to LiveWell for online access",
+      "Five delivery methods including encrypted email and patient portal",
+      "Concise single-page design fitting 22+ record-type checkboxes",
+      "Companion instructions document and Spanish-language authorization form available",
+      "Recently revised (November 2025) indicating active form maintenance"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms are easy to find via the centralized medical records page (advocatehealth.com/contact-us/medical-records) with direct PDF download links; web searches also surface the forms, though the system-level organization may require an extra step for patients searching by hospital name."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The PDF form has zero fillable fields despite being born-digital, requiring print-and-handwrite; the patient portal (LiveWell) provides a digital alternative, and fax/mail submission is implied but not stated on the form itself — usable digitally with workarounds."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with logical flow, three-column checkbox layout, plain language, and 22+ granular record-type options; minor issues include dense packing and vague fee language ('Fees may apply')."
+    },
+    "patient_centeredness": {
+      "score": 5,
+      "rationale": "Level 5: Process is designed around patient self-access as a first-class use case — dedicated form titled 'Patient Request for Health Information,' separate from third-party release, with 'Myself' as first recipient option and portal callout prominently at top."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization, witness, or in-person requirements; minor ambiguities include vague fee disclosure ('Fees may apply' without amounts), no explicit patient rights statement on the patient access form, and missing submission instructions."
+    },
+    "overall": {
+      "score": 4.0,
+      "grade": "B",
+      "summary": "Advocate Good Samaritan Hospital demonstrates strong patient-centeredness through a dedicated self-access form and portal-first messaging, with good findability and content design, held back by a non-fillable PDF and missing submission instructions."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:59:29.183Z"
+}

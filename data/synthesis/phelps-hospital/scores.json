@@ -1,0 +1,148 @@
+{
+  "org_id": "phelps-hospital",
+  "org_name": "Phelps Hospital",
+  "category_id": "ch-major-nonprofit-northeast",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 6,
+  "parent_system": "Northwell Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Request for Access to Health Information by Patient or Personal Representative",
+      "url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/request-for-access-to-health-information-form-english-2022.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Health Information (English)",
+      "url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/authorization-for-release-health-information-form-english.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Northwell Health HIM department",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission to facility HIM department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/authorization-for-release-health-information-form-english.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/request-for-access-to-health-information-form-english-2022.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "patient access request form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/release-of-health-information-form-english.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (duplicate, non-fillable)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/release-of-health-information-form-instructions.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "form instructions (authorization form)"
+    },
+    {
+      "filename": "form-5.pdf",
+      "source_url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/request-for-access-to-health-info-form-spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (bilingual Spanish/English)"
+    },
+    {
+      "filename": "form-6.pdf",
+      "source_url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/request-for-access-to-health-form-instructions.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "form instructions (patient access form)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Northwell Health provides a dedicated 'Request for Access to Health Information' form (form-2) citing HIPAA 45 CFR 164.524, separate from the third-party 'Authorization for Release' form, both linked from a well-organized medical records page.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 28,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No submission instructions on form — patient must independently find where to send completed form",
+      "Spanish-language patient access form missing due to website bug (both Spanish links point to third-party authorization form)"
+    ],
+    "bright_spots": [
+      "Dedicated patient access form citing HIPAA § 164.524 separate from third-party authorization",
+      "Companion step-by-step instruction documents with annotated visual examples for both forms",
+      "Rich delivery format options including secure/unsecure email, USB, CD, and fax",
+      "Parenthetical plain-language glosses on field labels (From Who, To Who)",
+      "28 fillable interactive fields for fully digital completion"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms are easy to find via web search and directly linked from a well-organized Northwell Health medical records page with clear section headings, though patients must navigate from the Phelps Hospital sub-site to the parent system's website."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: The patient access form has 28 fillable interactive fields and a clean digital-first design for on-screen completion, but submission requires fax or mail — one gap in an otherwise digital workflow."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Concise 2-page form with logical numbered sections, plain-language glosses, structured delivery options grid, and companion instruction document; minor issues include dense legal text in the substance use section and absence of submission instructions on the form."
+    },
+    "patient_centeredness": {
+      "score": 5,
+      "rationale": "Level 5: Process is designed around patient self-access as a first-class use case — a dedicated form titled 'Request for Access to Health Information' explicitly cites HIPAA § 164.524, includes a 'To me' checkbox, and is clearly distinct from the separate third-party 'Authorization for Release' form on the website."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization, no in-person requirement, no unreasonable expiry for patient access requests, explicit HIPAA Right of Access framing, and proper 42 CFR Part 2 handling; minor ambiguity around the witness signature line and no fee disclosure."
+    },
+    "overall": {
+      "score": 4.25,
+      "grade": "B",
+      "summary": "Northwell Health provides an exemplary dedicated patient access pathway with fillable forms, explicit HIPAA Right of Access framing, and companion instruction documents, with minor gaps in submission guidance and Spanish-language availability preventing an A grade."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:56:55Z"
+}

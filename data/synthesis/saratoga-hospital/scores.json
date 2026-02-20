@@ -1,0 +1,139 @@
+{
+  "org_id": "saratoga-hospital",
+  "org_name": "Saratoga Hospital",
+  "category_id": "ch-regional-nonprofit-northeast",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Albany Med Health System",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "AMHS Authorization to Disclose PHI (2024 V2)",
+      "is_primary": true,
+      "url": "https://www.albanymed.org/wp-content/uploads/sites/2/2024/11/24_AMHS_Authorization-to-Disclose-PHI_V2-1.pdf"
+    },
+    {
+      "type": "pdf_form",
+      "name": "Saratoga Hospital Authorization to Disclose PHI (legacy, 2020)",
+      "is_primary": false,
+      "url": "https://www.albanymed.org/wp-content/uploads/sites/2/2024/05/SH_Auth-to-Disclose-PHI_2020_Electronic-Form.pdf"
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "url": "https://mychart.albanymed.org",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to HIM Department",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to HIM Department",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person pick-up",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.albanymed.org/wp-content/uploads/sites/2/2024/05/SH_Auth-to-Disclose-PHI_2020_Electronic-Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy, Saratoga Hospital–specific)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.albanymed.org/wp-content/uploads/sites/2/2024/11/24_AMHS_Authorization-to-Disclose-PHI_V2-1.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (system-wide, Albany Med Health System)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "System-wide PDF authorization form designed for third-party release, with a sidebar mention of MyChart as an alternative; no dedicated patient self-access pathway.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 65,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "potentially_excessive",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "$0.75/page fee stated without distinguishing patient access from third-party release — flat per-page fees are generally impermissible for patient access under HIPAA Right of Access",
+      "No reference to HIPAA § 164.524 or patient Right of Access on either form",
+      "Purpose field may mislead patients into thinking they must justify their own access request"
+    ],
+    "bright_spots": [
+      "65 fillable fields on the primary form — comprehensive digital completion without printing",
+      "MyChart patient portal mentioned as alternative pathway directly on the form",
+      "Granular record-type selection with 13 categories plus Other and Entire Record option",
+      "Separate initials for sensitive information categories (HIV, mental health, substance abuse, genetic testing) compliant with NY and federal requirements",
+      "Multi-facility coverage on a single form reduces patient confusion across the system",
+      "Witness requirement removed from newer system-wide form (was present on legacy form)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Form found easily via web search and accessible from the AMHS Requesting Medical Records page with no bot blocking or login walls; minor indirection due to domain redirect from saratogahospital.org to albanymed.org."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — 65 fillable fields allow complete on-screen form completion, but submission still requires fax, email, or mail rather than an integrated online submit; MyChart portal offers a fully digital alternative."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Page 1 is well-organized with clear sections and granular options, but page 2 is a dense wall of legal text with no visual hierarchy; college-level language; footer typo ('Dislcose'); no standalone instructions."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is not addressed — both forms are structured entirely as third-party release authorizations with no checkbox, section, or language for individual access rights; patients must list themselves as the disclosure recipient."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: $0.75/page fee applied without distinguishing patient access (which HIPAA limits to cost-based fees) from third-party release; no Right of Access language; purpose field may create perceived barrier; but no notarization, witness, or in-person requirement."
+    },
+    "overall": {
+      "score": 3.15,
+      "grade": "C",
+      "summary": "Saratoga Hospital offers a technically polished, easily findable system-wide form with excellent fillable-field coverage, but the complete absence of a dedicated patient self-access pathway and a potentially excessive per-page fee hold back the overall patient experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:07:03.259Z"
+}

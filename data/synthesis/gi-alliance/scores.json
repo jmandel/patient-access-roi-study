@@ -1,0 +1,111 @@
+{
+  "org_id": "gi-alliance",
+  "org_name": "GI Alliance",
+  "category_id": "practice-major-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use and Disclose Protected Health Information",
+      "url": "https://gialliance.com/wp-content/uploads/2024/08/authorization-health-form.pdf",
+      "is_primary": true
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://gialliance.com/wp-content/uploads/2024/08/authorization-health-form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "HIPAA authorization form (general-purpose use/disclosure)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.granitepeaksgi.com/wp-content/uploads/Release-of-Records-GI-Alliance.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Third-party release of medical records authorization"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.universitygi.com/wp-content/uploads/2024/09/Medical-Release-Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Third-party release of medical records authorization"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization form from the GI Alliance website, prints and handwrites it, then must contact the organization to learn where to submit it.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 12,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No submission instructions on any form — patient has no way to know where to send completed authorization",
+      "Blank provider identity and revocation address create functional barriers for patients",
+      "Affiliate forms (form-2, form-3) collect last 4 digits of SSN, which is unnecessary and may deter patients",
+      "Using §164.508 authorization framework for patient access instead of §164.524 Right of Access"
+    ],
+    "bright_spots": [
+      "Sensitive information categories require separate initials (HIV/AIDS, mental health, substance use, genetic info)",
+      "Explicit non-conditioning statement clearly tells patients treatment won't depend on signing",
+      "Concise single-page format covers all essential authorization elements without excessive density"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: requires moderate effort — the form is publicly hosted and surfaced by web search, but the patient forms page is organized by local brand/location with no dedicated 'Request Your Records' link, requiring non-obvious navigation."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: primarily a paper workflow — the form is text-based (not a scan) but has zero fillable fields, no electronic signature, and no submission pathway specified; patient must print, handwrite, and determine submission method independently."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: adequate but with notable problems — the single-page format is concise and logically ordered, but uses legalistic language ('d/b/a', 'HIPAA Affiliated Covered Entity'), lacks section headers, has no instructional text, and leaves critical fields (provider name, revocation address) blank."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: a patient can use the process but it wasn't designed for them — the 'Patient's Request' checkbox makes the generic authorization usable for self-access, but the form doesn't reference patient rights, offer delivery format choices, or distinguish self-access from third-party release."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: some requirements or language that may go beyond what the law requires — the form includes all required HIPAA authorization elements (expiration, revocation, non-conditioning) but conflates §164.508 authorization with §164.524 patient access, has no fee disclosure, and blank address fields undermine revocation rights."
+    },
+    "overall": {
+      "score": 2.75,
+      "grade": "C",
+      "summary": "GI Alliance provides a minimally functional but patient-unfriendly records request pathway, funneling all requests through a generic non-fillable authorization form with no submission instructions and no acknowledgment of patient self-access as a distinct right."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:34:23.942Z"
+}

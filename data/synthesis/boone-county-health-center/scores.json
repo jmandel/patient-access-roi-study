@@ -1,0 +1,131 @@
+{
+  "org_id": "boone-county-health-center",
+  "org_name": "Boone County Health Center",
+  "category_id": "cah-independent-government-midwest",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Protected Health Information (.docx)",
+      "url": "https://boonecohealth.org/wp-content/uploads/2026/02/Auth-for-Release-of-PHI.docx",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "HIM Department fax (402-395-2180)",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "ROI email (Roi@boonecohealth.org)",
+      "url": "mailto:Roi@boonecohealth.org",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to PO Box 151, Albion, NE 68620",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person delivery at 1173 South 8th Street, Albion, NE",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://boonecohealth.org/wp-content/uploads/2018/04/Release_of_Health_Information_Form_August_2017.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (superseded August 2017 version)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://boonecohealth.org/wp-content/uploads/2026/02/Auth-for-Release-of-PHI.docx",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (current version)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://boonecohealth.org/wp-content/uploads/2023/05/HIPAA-contact-form.docx",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "HIPAA contact designation form (not an ROI form)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization .docx form, prints and handwrites fields, then submits via fax, mail, email, or in person.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Form published only as .docx file, creating accessibility barrier for patients without Microsoft Word",
+      "Superseded 2017 form still accessible at original URL with outdated address, risking patient confusion"
+    ],
+    "bright_spots": [
+      "Dedicated ROI email address (Roi@boonecohealth.org) suggests staffed intake process",
+      "Encrypted email offered as a delivery format option — uncommon for critical access hospitals",
+      "Separate initials required for substance abuse, mental health, and HIV/AIDS per Nebraska law",
+      "Concise, plain-language legal acknowledgments with clear non-coercion statement"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — form listed on Patient Forms page and discoverable via web search, though .docx format and stale indexed older version create minor friction."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds and fax submission available — form can be downloaded and printed but has zero fillable fields; .docx format is unusual; fax and potentially email provide electronic submission paths."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but has notable problems — logical structure and plain language, but release direction framing is confusing for patient self-requests, no submission instructions provided, garbled sensitive-info text, and vague fee disclosure."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — generic HIPAA authorization with 'Patient Request' checkbox but no acknowledgment of patient access rights, confusing FROM/TO directionality for self-requests, and no turnaround time or rights statement."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing that would materially impede a patient — proper non-coercion statement, revocation rights, 12-month expiration; fee language is vague but references state law; photo ID scope is ambiguous but not clearly excessive."
+    },
+    "overall": {
+      "score": 3.35,
+      "grade": "C",
+      "summary": "Boone County Health Center provides a findable, functional generic ROI form with some bright spots (dedicated email, encrypted delivery) but lacks fillable fields, patient access differentiation, and digital-first design."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:18:29.122Z"
+}

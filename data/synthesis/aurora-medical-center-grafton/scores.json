@@ -1,0 +1,136 @@
+{
+  "org_id": "aurora-medical-center-grafton",
+  "org_name": "Aurora Medical Center - Grafton",
+  "category_id": "ch-major-nonprofit-midwest",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Advocate Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Health Information (S88411-EN)",
+      "is_primary": true,
+      "url": "https://www.aurorahealthcare.org/-/media/Project/Health-System-Enterprise/AuroraHealthCareOrg/aurorahealthcare/documents/patients-visitors/medical-records/patient-request-for-health-information-s88411en.PDF"
+    },
+    {
+      "type": "patient_portal",
+      "name": "LiveWell Patient Portal",
+      "vendor": "Epic MyChart",
+      "url": "https://livewell.aah.org",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission of completed form",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission of completed form",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission of completed form",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person form delivery",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.aurorahealthcare.org/-/media/Project/Health-System-Enterprise/AuroraHealthCareOrg/aurorahealthcare/documents/patients-visitors/medical-records/authorization-for-release-of-information-wi-il.PDF",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (third-party release)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.aurorahealthcare.org/-/media/Project/Health-System-Enterprise/AuroraHealthCareOrg/aurorahealthcare/documents/patients-visitors/medical-records/authorization-to-release-protected-health-information-wi-il-s300503.PDF",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (third-party release, duplicate URL)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.aurorahealthcare.org/-/media/Project/Health-System-Enterprise/AuroraHealthCareOrg/aurorahealthcare/documents/patients-visitors/medical-records/patient-request-for-health-information-s88411en.PDF",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Patient access request form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "A dedicated 1-page 'Patient Request for Health Information' form with a 'Myself' checkbox, separate from the third-party authorization form, plus a patient portal alternative (LiveWell).",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 12,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [],
+    "bright_spots": [
+      "Dedicated patient access form separate from third-party authorization",
+      "Patient portal callout at top of form directing to LiveWell for online access",
+      "Granular record-type selection with 22+ checkbox options",
+      "Multiple electronic delivery methods including encrypted email and patient portal",
+      "Spanish versions of both forms available",
+      "No purpose-of-release requirement for patient access requests"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — the medical records page is reachable in 2 clicks from the homepage, forms appear in web search results, and the page is well-organized with clear download links."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds — the PDF has a text layer but zero fillable fields, requiring print-and-handwrite workflow; however, fax and email submission are available as electronic submission options."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor issues — the single-page form has logical flow, clear section headers, granular record selection, and plain language, though the dense single-page layout results in small text and tight spacing."
+    },
+    "patient_centeredness": {
+      "score": 5,
+      "rationale": "Level 5: Process designed around patient self-access as a first-class use case — Aurora provides a dedicated 'Patient Request for Health Information' form clearly distinct from the third-party authorization, with a 'Myself' checkbox, no purpose-of-release requirement, and a prominent patient portal callout."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization required, non-discrimination language present, proper minor authorization; the only gap is the vague '(Fees may apply)' without amounts or fee schedule."
+    },
+    "overall": {
+      "score": 4.15,
+      "grade": "B",
+      "summary": "Aurora Medical Center - Grafton offers a well-differentiated patient access pathway with a dedicated form, patient portal alternative, and easy findability, held back from an A primarily by the non-fillable PDF format that forces a paper workflow."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:59:47.674Z"
+}

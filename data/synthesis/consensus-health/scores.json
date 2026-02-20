@@ -1,0 +1,134 @@
+{
+  "org_id": "consensus-health",
+  "org_name": "Consensus Health",
+  "category_id": "practice-independent-forprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 4,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Generic Authorization for Release of Medical Records",
+      "is_primary": true,
+      "url": "https://sa1s3.patientpop.com/assets/docs/223399.pdf"
+    },
+    {
+      "type": "patient_portal",
+      "name": "athenahealth Patient Portal",
+      "vendor": "athenahealth",
+      "url": "https://18614-1.portal.athenahealth.com/",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Privacy Officer (856-762-2469)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Privacy Officer, 402 Lippincott Dr, Marlton, NJ 08053",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://sa1s3.patientpop.com/assets/docs/223399.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.skylandsmedicalgroup.com/wp-content/uploads/2022/03/CMG-Form-Consent-Disclosure-and-Authorization-2022.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "General consent, disclosure and authorization form (intake)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.skylandsmedicalgroup.com/wp-content/uploads/2022/03/CMG-Form-HIPAA-Acknowledgement-2022.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "HIPAA acknowledgment of receipt of privacy practices"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.skylandsmedicalgroup.com/wp-content/uploads/2024/12/CMG-Form-Notice-of-Privacy-2025.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Notice of Privacy Practices"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must locate a generic, unbranded third-party release authorization form hosted on a third-party server, print and handwrite it, then independently determine where to submit it.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 11,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Form provides no submission instructions — no address, fax, email, or portal link",
+      "Form is unbranded with no organizational identity — patient cannot confirm it belongs to their provider",
+      "Missing HIPAA-required authorization elements: no expiration date, no revocation language, no disclosing entity name",
+      "Record Number field requested without explanation of where patient would find it"
+    ],
+    "bright_spots": [
+      "Notice of Privacy Practices (form-4) is current (2025) and includes reproductive health care protections per 2024 HIPAA Final Rule",
+      "NPP explicitly acknowledges patients' right to electronic access to PHI"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 1,
+      "rationale": "Level 1: Effectively unfindable online — the main Consensus Health website has no forms section, extensive multi-strategy searching produced nothing, and the only ROI form was found on a third-party CDN with no link from any Consensus Health page."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — zero fillable fields across all forms, patient must print and handwrite, and no electronic submission pathway is documented on the form itself."
+    },
+    "content_design": {
+      "score": 2,
+      "rationale": "Level 2: The form is functionally unusable without outside help — it provides no submission instructions, no organizational branding, no contact information, and asks for a 'Record Number' patients won't know."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought — the only form found is structured as a third-party release authorization with no accommodation for patients requesting their own records, and no dedicated patient access pathway exists."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: The form lacks HIPAA-required authorization elements (expiration, revocation, disclosing entity) and the NPP fee language is vague, but no overtly illegitimate barriers like notarization or excessive fees are imposed."
+    },
+    "overall": {
+      "score": 2.05,
+      "grade": "D",
+      "summary": "Consensus Health lacks any functional online pathway for patients to request their own medical records, offering only an unbranded, non-fillable third-party authorization form with no submission instructions, found only through extensive searching of third-party sites."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:32:08.379Z"
+}

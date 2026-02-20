@@ -1,0 +1,118 @@
+{
+  "org_id": "hospital-of-upenn",
+  "org_name": "Hospital of the University of Pennsylvania",
+  "category_id": "teach-major-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Penn Medicine (University of Pennsylvania Health System)",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "patient_portal",
+      "name": "myPennMedicine",
+      "vendor": "Epic MyChart",
+      "url": "https://www.mypennchart.com",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of Health Information",
+      "url": "https://www.med.upenn.edu/ctsa/assets/user-content/Authorization%20for%20Disclosure%20of%20Health%20Information_ADA.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission to Medical Records Department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.med.upenn.edu/ctsa/assets/user-content/Authorization%20for%20Disclosure%20of%20Health%20Information_ADA.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://abingtonneurology.com/forms/PDFs/Penn_Medicine_Records_Request.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (outdated version)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Penn Medicine directs patients wanting their own records to the myPennMedicine patient portal; a generic authorization PDF is available as a secondary pathway for all disclosure requests.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 70,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "30 days on-site, 60 days off-site, with possible 30-day extension",
+    "red_flags": [
+      "Fee structure references state law rather than HIPAA cost-based limits for patient access, risking overcharging",
+      "Fax delivery explicitly restricted to urgent patient care situations only",
+      "PDF form submission requires physical mail — no fax or electronic submission of the form itself"
+    ],
+    "bright_spots": [
+      "70 fillable interactive PDF fields — comprehensive digital completion capability",
+      "ADA-accessible PDF design with proper text encoding",
+      "Explicit patient self-access rights language within the authorization form",
+      "Granular record-type selection with 14 categories plus behavioral health/SUD opt-in",
+      "Radiology images explicitly free of charge",
+      "Denial/appeal rights clearly stated with Chief Privacy Officer contact"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: requires moderate effort — the form is not immediately discoverable from the homepage; patients must navigate to Patient Resources → Patient Access, and the official page was blocked by Incapsula bot protection requiring browser fallback."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: the PDF form has excellent fillable fields (70) but the form must be submitted via physical mail — fax is restricted, no electronic submission of the authorization form is available; the patient portal provides digital access but the PDF pathway itself requires paper mailing."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: well-organized two-page form with clear section structure, 14 granular record-type checkboxes, separate behavioral health/SUD consent sections, and thorough page-2 instructions; minor issues include unexplained 'Label Area' placeholder and ambulatory carve-out buried in instructions."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: the authorization form is a generic HIPAA disclosure form not designed for patient self-access — patients must fill in their own name as recipient; however, the org does direct patients to the portal for self-access and the form includes an explicit patient rights acknowledgment."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: no notarization required, treatment explicitly not conditioned on signing, HIPAA-aligned response timelines (30/60 days), denial/appeal rights stated; minor ambiguity in fee disclosure referencing state law rather than HIPAA patient access fee limits."
+    },
+    "overall": {
+      "score": 3.35,
+      "grade": "C",
+      "summary": "Penn Medicine offers a technically well-crafted fillable PDF and directs patients to a portal for self-access, but the paper authorization form is a generic HIPAA disclosure that requires mail submission and does not distinguish patient access from third-party release."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:12:13.386Z"
+}

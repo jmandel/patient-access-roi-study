@@ -1,0 +1,1 @@
+/home/jmandel/hobby/request-my-ehi/scripts/roi-form-study/data/synthesis/st-josephs-hospital-phoenix/synthesis.md

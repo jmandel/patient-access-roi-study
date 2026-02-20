@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "musc-health",
+    "name": "MUSC Health University Medical Center",
+    "category_id": "teach-major-government-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "Charleston",
+    "website": "https://muschealth.org",
+    "bed_count": 865,
+    "notes": "Flagship hospital of the Medical University of South Carolina, a state government component unit; SC's only comprehensive academic health system"
+  },
+  {
+    "org_id": "ummc",
+    "name": "University of Mississippi Medical Center",
+    "category_id": "teach-major-government-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "MS",
+    "city": "Jackson",
+    "website": "https://www.umc.edu",
+    "bed_count": 722,
+    "notes": "Mississippi's only academic medical center and Level I trauma center; state-owned teaching hospital affiliated with the University of Mississippi"
+  },
+  {
+    "org_id": "utmb-health",
+    "name": "University of Texas Medical Branch",
+    "category_id": "teach-major-government-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Galveston",
+    "website": "https://www.utmb.edu",
+    "bed_count": 600,
+    "notes": "State government-owned academic health science center; oldest medical school in Texas; part of the University of Texas System; Level I trauma center"
+  }
+]

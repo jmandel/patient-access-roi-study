@@ -1,0 +1,127 @@
+{
+  "org_id": "centracare-long-prairie",
+  "org_name": "CentraCare – Long Prairie Hospital",
+  "category_id": "cah-regional-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "CentraCare",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Health Information",
+      "url": "https://www.centracare.com/app/files/public/a8f46347-1e70-4f91-b743-dff034a64a35/release-of-health-info-form.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "email",
+      "name": "Email submission to HIM",
+      "url": "mailto:CCHROI@CentraCare.com",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Northwest locations HIM (Long Prairie)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Sauk Centre HIM office (serves Long Prairie)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.centracare.com/app/files/public/a8f46347-1e70-4f91-b743-dff034a64a35/release-of-health-info-form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.centracare.com/app/files/public/7e758b76-e05b-4eb1-8765-fa9653741e44/release-of-health-info-instruction.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Form instructions"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.centracare.com/app/files/public/3366c37f-eada-4170-b4cd-21525b0d5f72/Authorization-to-Share-Substance-Use-Disorder-Health-Information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Substance use disorder authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a system-wide generic HIPAA authorization form, prints and completes it by hand, then submits via email, fax, or mail to the regional HIM office.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Anti-re-release clause is embedded as non-optional boilerplate — patients cannot choose whether to authorize re-release",
+      "No fee information disclosed on form or instructions despite referencing potential costs"
+    ],
+    "bright_spots": [
+      "Email submission (CCHROI@CentraCare.com) prominently featured and available for all locations",
+      "Multiple delivery options including MyChart portal and encrypted email",
+      "Personal Use explicitly listed as a reason for release, normalizing patient self-requests",
+      "Companion instruction document explains why each field matters, not just what to fill in",
+      "Anti-conditioning statement: CentraCare will not refuse treatment for declining to sign"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms are easy to find via CentraCare's centralized medical records release page and web search, though patients must recognize Long Prairie uses system-wide forms rather than facility-specific ones."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The form has a text layer but zero fillable fields, requiring print-and-handwrite; however, fax and email submission are available, making it usable digitally with workarounds."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized 2-page form with logical flow, clear section headers, and a comprehensive companion instruction document; minor issues include dense revocation language and the unintuitive From/To structure for self-access."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it was designed for third-party release — the From/To structure requires patients to figure out they should list themselves as the recipient, with no dedicated patient access pathway or HIPAA Right of Access reference."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No unnecessary barriers (email/fax/mail submission, no notarization), includes anti-conditioning statement; minor gaps include absent fee disclosure and non-optional anti-re-release clause."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "CentraCare provides a functional records request process with strong electronic submission and delivery options, but the generic third-party authorization form and non-fillable PDF prevent it from being truly patient-centered."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:25:14.456Z"
+}

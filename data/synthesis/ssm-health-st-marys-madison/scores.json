@@ -1,0 +1,125 @@
+{
+  "org_id": "ssm-health-st-marys-madison",
+  "org_name": "SSM Health St. Mary's Hospital - Madison",
+  "category_id": "ch-major-nonprofit-midwest",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": "SSM Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Madison-area Authorization to Release PHI (form-3)",
+      "url": "https://www.ssmhealth.com/SSMHealth/media/Documents/patients-and-visitors/get-medical-records/wisconsin/st-marys-madison-medical-records-request-form.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "SSM Health Hospitals fax (608-270-6815) or Dean Medical Group fax (608-294-6294)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "PO Box 259840, Madison, WI 53725-9840",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Health Information Department (608-294-6244 or 608-270-6806)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.ssmhealth.com/getmedia/4f4b2386-365a-4227-83b2-4ea09365a347/ssm-health-medical-records-release-forms-wisconsin-ministries.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (Wisconsin ministries)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.ssmhealth.com/getmedia/626ff70a-39ec-49a8-8f3f-903d077ae27d/medical-record-release-form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Request for access / ROI authorization form (system-wide)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.ssmhealth.com/SSMHealth/media/Documents/patients-and-visitors/get-medical-records/wisconsin/st-marys-madison-medical-records-request-form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (Madison-area facilities)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic authorization-to-release form, writes 'self' in the recipient field, checks 'Personal Use,' and faxes or mails it to the Health Information Department.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Fee language includes 'viewing' alongside copying — HIPAA does not permit charging patients for inspecting their own records",
+      "Sensitive categories (mental health, substance abuse, HIV/AIDS) default to inclusion unless patient explicitly excludes them"
+    ],
+    "bright_spots": [
+      "MyChart patient portal offered as a records delivery format option",
+      "Email and fax available as electronic delivery formats",
+      "Comprehensive patient rights information on back page with Wisconsin-specific minor consent rules",
+      "Photocopy validity clause removes friction for fax submission"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms were easy to find with basic web searches and the SSM Health website has a 'Get My Medical Records' page; minor deduction for three overlapping forms with no guidance on which to use."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The form has a text layer making digital annotation possible with workarounds, and fax submission is available; however, zero fillable fields means most patients will print and handwrite."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized numbered sections with logical flow and thorough back-page patient rights information; minor issues include dense opening legal paragraph and 'q' checkbox rendering."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form by selecting 'Personal Use' and writing 'self' as recipient, but the form is fundamentally an authorization-to-release designed for third-party disclosure, not a patient access request form."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: No notarization or in-person requirements, but fee language mentioning charges for 'viewing' records may exceed HIPAA limits for patient access, and no 30-day response timeline is stated on the primary form."
+    },
+    "overall": {
+      "score": 3.3,
+      "grade": "C",
+      "summary": "SSM Health St. Mary's Madison provides easily findable forms with good delivery options including MyChart, but the generic authorization-form approach, lack of fillable fields, and questionable fee language prevent it from achieving a patient-centered experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:59:54.964Z"
+}

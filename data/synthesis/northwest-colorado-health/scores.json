@@ -1,0 +1,109 @@
+{
+  "org_id": "northwest-colorado-health",
+  "org_name": "Northwest Colorado Health",
+  "category_id": "fqhc-independent-nonprofit-west",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use or Disclosure of PHI — Medical and/or Dental",
+      "url": "https://northwestcoloradohealth.org/file_download/inline/47f874e3-3d56-4e17-934f-11105ae813ba",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use or Disclosure of PHI — Behavioral Health",
+      "url": "https://northwestcoloradohealth.org/file_download/inline/2f9a888a-2c02-465a-944d-2573dcc8583c",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://northwestcoloradohealth.org/file_download/inline/2f9a888a-2c02-465a-944d-2573dcc8583c",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form — behavioral health"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://northwestcoloradohealth.org/file_download/inline/47f874e3-3d56-4e17-934f-11105ae813ba",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form — medical and dental"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization PDF form from the patient forms page, prints and completes it by hand, with no stated submission method.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": true,
+    "response_time_value": "48 business hours",
+    "red_flags": [
+      "Social Security Number field on ROI form — unnecessary for identity verification and creates data security risk",
+      "No submission instructions — patient has no guidance on where or how to return the completed form"
+    ],
+    "bright_spots": [
+      "Fast processing commitment of 48 business hours (~6 business days), well within HIPAA's 30-day window",
+      "Plain-language, patient-friendly introductory paragraph sets a welcoming tone",
+      "Photocopy validity clause reduces barriers if original form is lost",
+      "Non-retaliation statement clearly tells patients care will not be affected by declining to sign"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms were easy to find via a simple site-scoped web search and are linked from a dedicated patient forms page with a logical URL path."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF is flat/non-fillable requiring print-and-handwrite, and no electronic submission method (fax, email, or portal) is stated on the form."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with logical section flow, checkbox-driven options, and a plain-language introduction, with minor issues including dual unclear signature blocks and a legacy organization name."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form and 'Self / Legal Guardian' is a pre-printed option, but the form was not designed for patient self-access and the patient must navigate a third-party release structure."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: SSN collection goes beyond HIPAA requirements for patient identification, no right-of-access language is included, and no submission instructions are provided, though non-retaliation and revocation disclosures are properly stated."
+    },
+    "overall": {
+      "score": 3.05,
+      "grade": "C",
+      "summary": "Northwest Colorado Health provides easily findable, well-written authorization forms with a notably fast processing commitment, but the generic third-party release structure, flat non-fillable PDFs, SSN collection, and absent submission instructions result in a process that is adequate but not designed around patient self-access."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:30:16.850Z"
+}

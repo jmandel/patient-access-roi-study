@@ -1,0 +1,82 @@
+[
+  {
+    "org_id": "advocare",
+    "name": "Advocare, LLC",
+    "category_id": "practice-independent-forprofit-northeast",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "northeast"
+    },
+    "state": "NJ",
+    "city": "Marlton",
+    "website": "https://www.advocaredoctors.com",
+    "bed_count": null,
+    "notes": "One of the largest independent multi-specialty physician groups in NJ/PA/DE with 900+ providers across 270+ care centers"
+  },
+  {
+    "org_id": "schweiger-dermatology-group",
+    "name": "Schweiger Dermatology Group",
+    "category_id": "practice-independent-forprofit-northeast",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "New York",
+    "website": "https://www.schweigerderm.com",
+    "bed_count": null,
+    "notes": "Largest dermatology practice in the Northeast with 160+ offices across NY, NJ, CT, and PA; 600+ providers"
+  },
+  {
+    "org_id": "ent-allergy-associates",
+    "name": "ENT & Allergy Associates, LLP",
+    "category_id": "practice-independent-forprofit-northeast",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Tarrytown",
+    "website": "https://www.entandallergy.com",
+    "bed_count": null,
+    "notes": "Largest ENT, allergy, and audiology practice in the US with 450+ clinicians across 80+ offices in NY, NJ, and PA"
+  },
+  {
+    "org_id": "consensus-health",
+    "name": "Consensus Health",
+    "category_id": "practice-independent-forprofit-northeast",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "northeast"
+    },
+    "state": "NJ",
+    "city": "Marlton",
+    "website": "https://www.consensushealth.com",
+    "bed_count": null,
+    "notes": "Physician-owned independent multi-specialty group with 170+ providers across nearly 60 practices in 18 NJ counties"
+  },
+  {
+    "org_id": "valley-medical-group",
+    "name": "Valley Medical Group",
+    "category_id": "practice-independent-forprofit-northeast",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "northeast"
+    },
+    "state": "MA",
+    "city": "Amherst",
+    "website": "https://www.vmgma.com",
+    "bed_count": null,
+    "notes": "Independent multi-specialty practice in Western MA offering primary care, pediatrics, surgery, behavioral health, and radiology; independent since 2000"
+  }
+]

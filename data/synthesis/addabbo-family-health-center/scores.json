@@ -1,0 +1,124 @@
+{
+  "org_id": "addabbo-family-health-center",
+  "org_name": "Joseph P. Addabbo Family Health Center",
+  "category_id": "fqhc-independent-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "OCA Form 960 — HIPAA Authorization for Release of Health Information",
+      "url": "https://www.addabbo.org/for-patients/medical-records/",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission of completed authorization form",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission of completed authorization form",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person delivery of completed authorization form",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.pbformsonline.com/pdv-view-merge/pdfviewer/data/fed/1566545098hipaa___fillable_form_07-10-18.pdf",
+      "scope": "state",
+      "language": "en",
+      "document_type": "ROI authorization form (NY State OCA Form 960)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.pbformsonline.com/pdv-view-merge/pdfviewer/data/fed/1745421042listening-postcard-updated-2.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient exit survey / transfer feedback form (bilingual EN/ES)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.pbformsonline.com/pdv-view-merge/pdfviewer/data/fed/1563365959addabbo-hipaa-release-english.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "HIPAA consent and NPP acknowledgment form (intake document)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use the NY State standard HIPAA authorization form (OCA Form 960), a generic third-party release form originally designed for litigation, checking 'At request of individual' as the reason.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 25,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Form collects Social Security Number, which is unnecessary for patient self-access and creates privacy risk",
+      "Exit survey (form-2) co-located on Medical Records page frames all records requests as patient transfers, potentially creating implicit barrier"
+    ],
+    "bright_spots": [
+      "Typed-signature acceptance clause allows fully digital form completion without printing",
+      "Explicit enumeration of what 'entire medical record' includes gives patients clarity on scope",
+      "Granular sensitive-information opt-in via separate initialing for alcohol/drug, mental health, and HIV records"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find via basic navigation — dedicated Medical Records page under 'For Patients' menu with clear link labeled 'HIPAA-compliant request form,' though third-party JavaScript viewer hosting and confusingly labeled companion documents create minor friction."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — 25 fillable PDF fields with typed-signature acceptance enabling digital completion, but submission requires fax or physical delivery rather than a fully online workflow."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but notable problems with language complexity — the form front-loads six dense legal disclosures before any patient-fillable fields, uses litigation-oriented language throughout, and Item 6's all-caps discussion restriction is confusing in non-litigation contexts."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the form is a generic third-party authorization (originally for litigation) with 'At request of individual' as one checkbox option; no Right of Access language, no format/delivery choices, no patient portal mention."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — the form correctly includes voluntariness, revocation rights, and redisclosure warnings; no notarization or excessive fees; however SSN collection is unnecessary and the form lacks fee transparency or patient access rights information."
+    },
+    "overall": {
+      "score": 3.6,
+      "grade": "B",
+      "summary": "Addabbo provides a functional records request pathway using a fillable state-standard form with typed-signature support, but the litigation-oriented generic authorization form, legalistic language, and lack of a patient-specific access pathway place it in the upper-adequate range."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:24:56.775Z"
+}

@@ -1,0 +1,109 @@
+{
+  "org_id": "barrett-hospital",
+  "org_name": "Barrett Hospital & HealthCare",
+  "category_id": "cah-independent-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of Protected Health Information",
+      "url": "https://www.barretthospital.org/_files/ugd/317b8b_409f155b0bef424f92bb8408fa8858de.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "HIM Department fax",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "HIM Department mail",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person pick up at HIM Department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.barretthospital.org/_files/ugd/317b8b_409f155b0bef424f92bb8408fa8858de.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a generic HIPAA authorization form from the Request Medical Records page, print and complete it by hand, and submit via fax, mail, or in-person delivery.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": true,
+    "response_time_value": "10 days",
+    "red_flags": [
+      "Conditioning language ('refusal to sign may affect ability to obtain treatment or payment') applied to patient access requests via dual-purpose form"
+    ],
+    "bright_spots": [
+      "Turnaround time of 10 days stated prominently on the form",
+      "Easy findability with dedicated Request Medical Records page for a small rural hospital",
+      "Concise single-page form design"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — a site-specific search immediately identified a dedicated 'Request Medical Records' page with a clearly labeled download link."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF has zero fillable fields, requiring patients to print, handwrite, and fax or mail the form; no digital form completion is possible."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with logical flow and mostly plain language, with minor issues including ambiguous 'Initial' column and cryptic 'Disc' abbreviation."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought — the form is a generic third-party authorization with no distinction for individual access rights; 'Personal Use' is merely one circled option among several purposes."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: The conditioning language ('refusal may affect treatment or payment') goes beyond what the law allows for patient access requests, and SSN collection is unnecessary, though redisclosure and 42 CFR Part 2 notices are properly included."
+    },
+    "overall": {
+      "score": 2.8,
+      "grade": "C",
+      "summary": "Barrett Hospital provides an easy-to-find but generic, non-fillable authorization form that fails to distinguish patient self-access from third-party release, with problematic conditioning language offsetting its concise design and stated turnaround time."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:21:32.361Z"
+}

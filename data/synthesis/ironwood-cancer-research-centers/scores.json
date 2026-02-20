@@ -1,0 +1,134 @@
+{
+  "org_id": "ironwood-cancer-research-centers",
+  "org_name": "Ironwood Cancer & Research Centers",
+  "category_id": "practice-independent-forprofit-west",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Protected Health Information",
+      "url": "https://www.ironwoodcrc.com/wp-content/uploads/2019/03/Authorization-to-release-protected-health-information.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission of authorization form",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Secure email submission of authorization form",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "Patient portal records delivery",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission of authorization form",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person pickup at office location",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.ironwoodcrc.com/wp-content/uploads/2023/11/Medical-Records-RequestForm-to-request-from-other-facilities_FILLABLE.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Incoming records request form (authorization for other facilities to send records TO Ironwood)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.ironwoodcrc.com/wp-content/uploads/2019/03/Authorization-to-release-protected-health-information.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (outbound release of patient PHI)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.ironwoodwomenscenters.com/wp-content/uploads/2017/11/New-Patient-Forms.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "New patient forms packet with HIPAA contact list"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must download a generic authorization-to-release form (not linked from the website), print and handwrite it, then submit via fax, secure email, mail, or in person.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Patient-facing ROI form has zero fillable fields while the provider-facing incoming records form has 22 fillable fields",
+      "ROI form is not linked from any active webpage — only discoverable via search engines",
+      "Wrong state law citation (Washington RCW 70.24) on form-1 despite being an Arizona practice"
+    ],
+    "bright_spots": [
+      "\"Personal Use\" listed as first purpose option, explicitly acknowledging patient self-access",
+      "Five delivery methods including secure email and patient portal — better than most comparable practices"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 2,
+      "rationale": "Level 2: The form is not linked from the patient forms page and was only discoverable via site-specific search engine queries; the patient forms page at ironwoodcrc.com/patient-forms/ did not expose downloadable links."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The form has a text layer but zero fillable fields requiring print-and-handwrite; however, fax and secure email submission options make it usable digitally with workarounds."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Logically organized with clear record-type checkboxes and delivery options, but lacks any instructions or plain-language guidance, and the To/From field layout is confusing for patient self-access."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form but it wasn't designed for them; the To/From structure assumes third-party release, though 'Personal Use' as a purpose option partially accommodates self-access."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Vague fee disclosure ('A fee may be charged') without distinguishing patient access fees from third-party fees goes beyond what HIPAA requires; no Right of Access reference, though non-conditioning and revocation rights are properly stated."
+    },
+    "overall": {
+      "score": 2.85,
+      "grade": "C",
+      "summary": "Ironwood provides a minimally adequate but deprioritized patient access pathway through a generic, non-fillable authorization form that is not linked from the website, partially redeemed by multiple electronic delivery options."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:34:14.782Z"
+}

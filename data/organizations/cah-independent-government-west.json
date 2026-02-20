@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "mayers-memorial-hospital",
+    "name": "Mayers Memorial Hospital District",
+    "category_id": "cah-independent-government-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Fall River Mills",
+    "website": "https://www.mayersmemorial.com",
+    "bed_count": 16,
+    "notes": "Public hospital district in rural northeastern California; 16 acute care beds plus skilled nursing facility"
+  },
+  {
+    "org_id": "lincoln-hospital-davenport",
+    "name": "Lincoln Hospital",
+    "category_id": "cah-independent-government-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "state": "WA",
+    "city": "Davenport",
+    "website": "https://www.lincolnhospital.org",
+    "bed_count": 25,
+    "notes": "Operated by Lincoln County Hospital District #3; serves rural eastern Washington"
+  },
+  {
+    "org_id": "cordova-community-medical-center",
+    "name": "Cordova Community Medical Center",
+    "category_id": "cah-independent-government-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "state": "AK",
+    "city": "Cordova",
+    "website": "https://www.cdvcmc.com",
+    "bed_count": 13,
+    "notes": "City-owned hospital serving remote coastal Alaska community; 13 acute care beds"
+  }
+]

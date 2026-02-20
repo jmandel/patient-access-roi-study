@@ -1,0 +1,134 @@
+{
+  "org_id": "emory-university-hospital",
+  "org_name": "Emory University Hospital",
+  "category_id": "teach-major-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 4,
+  "parent_system": "Emory Healthcare",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Protected Health Information",
+      "url": "https://www.emoryhealthcare.org/-/media/Project/EH/Emory/ui/pdfs/medical-records/wr/english-authorization-form-fillable-revised-11-2025.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "online_portal",
+      "name": "Swellbox Records Request Wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/emory-provider-wizard.html",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax completed authorization form to facility HIM department",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed authorization form to facility HIM department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.emoryhealthcare.org/-/media/Project/EH/Emory/ui/pdfs/medical-records/wr/english-authorization-form-fillable-revised-11-2025.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.emoryhealthcare.org/-/media/Project/EH/Emory/ui/pdfs/medical-records/roi-medical-records-form-9-28.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Legacy ROI authorization package with fee schedule and e-delivery instructions"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.emoryhealthcare.org/-/media/Project/EH/Emory/ui/pdfs/medical-records/wr/spanish-authorization-form-fillable---revised-11-2025.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (Spanish)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.emoryhealthcare.org/-/media/Project/EH/Emory/ui/pdfs/medical-records/request-for-amendment-my-protected-health-information-5-2021.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Request for amendment of protected health information"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic HIPAA authorization form covering all release scenarios, with 'At my request' as one of several purpose options.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 25,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Blanket waiver for sensitive information (HIV/AIDS, substance abuse, mental health) bundled into authorization with no opt-out for specific categories"
+    ],
+    "bright_spots": [
+      "EHI Export offered as a named delivery option — rare among ROI forms",
+      "Spanish-language authorization form available, revised on same date as English version",
+      "Swellbox online portal provides fully digital request alternative",
+      "Descriptive filename convention includes language, format, and revision date",
+      "Granular record type selection with 17+ checkboxes and individual date fields"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — medical records page is well-organized with clear links, and web search directly surfaced the PDF URL."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — form is fillable with ~100 interactive fields but requires printing for wet signature; fax and Swellbox portal provide electronic submission options."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — clean numbered sections, 2-page length, granular record type selection, but page 2 legal text is moderately dense and the sensitive info waiver lacks granularity."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: Patient can use the process but it wasn't designed for them — generic authorization form serves all release scenarios; patients must figure out to list themselves as recipient, though 'At my request' and EHI Export options show accommodation."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities — no notarization or in-person requirements, reasonable fee structure available separately, right to revoke stated; fees not disclosed on primary form and blanket sensitive info waiver is a minor concern."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Emory Healthcare provides a well-organized, technically competent records request process with standout features like EHI Export and Spanish-language support, held back by a generic authorization form that does not differentiate patient self-access from third-party release."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:13:49.355Z"
+}

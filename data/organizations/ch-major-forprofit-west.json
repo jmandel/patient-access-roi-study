@@ -1,0 +1,66 @@
+[
+  {
+    "org_id": "riverside-community-hospital",
+    "name": "Riverside Community Hospital",
+    "category_id": "ch-major-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Riverside",
+    "website": "https://www.riversidecommunityhospital.com",
+    "bed_count": 517,
+    "notes": "HCA Healthcare; Level I Trauma Center in the Inland Empire"
+  },
+  {
+    "org_id": "mountainview-hospital-las-vegas",
+    "name": "MountainView Hospital",
+    "category_id": "ch-major-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "NV",
+    "city": "Las Vegas",
+    "website": "https://mountainview-hospital.com",
+    "bed_count": 425,
+    "notes": "HCA Healthcare; full-service acute care and teaching hospital"
+  },
+  {
+    "org_id": "desert-regional-medical-center",
+    "name": "Desert Regional Medical Center",
+    "category_id": "ch-major-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Palm Springs",
+    "website": "https://www.desertcarenetwork.com",
+    "bed_count": 385,
+    "notes": "Tenet Healthcare (Desert Care Network); Level I Trauma Center in Coachella Valley"
+  },
+  {
+    "org_id": "desert-valley-hospital",
+    "name": "Desert Valley Hospital",
+    "category_id": "ch-major-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Victorville",
+    "website": "https://dvmc.com",
+    "bed_count": 148,
+    "notes": "Prime Healthcare; acute care hospital serving High Desert communities"
+  }
+]

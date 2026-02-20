@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "garfield-medical-center",
+    "name": "Garfield Medical Center",
+    "category_id": "ch-regional-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Monterey Park",
+    "website": "https://www.ahmchealth.com/gmc/",
+    "bed_count": 210,
+    "notes": "Part of AHMC Healthcare, a for-profit system operating ~7 community hospitals in Southern California"
+  },
+  {
+    "org_id": "anaheim-global-medical-center",
+    "name": "Anaheim Global Medical Center",
+    "category_id": "ch-regional-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Anaheim",
+    "website": "https://www.anaheimglobalmedicalcenter.com/",
+    "bed_count": 189,
+    "notes": "Part of KPC Health, a for-profit system operating ~6 community hospitals in Southern California"
+  },
+  {
+    "org_id": "coast-plaza-hospital",
+    "name": "Coast Plaza Hospital",
+    "category_id": "ch-regional-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Norwalk",
+    "website": "https://www.coastplazahospital.com/",
+    "bed_count": 117,
+    "notes": "Part of Pipeline Health, a for-profit system operating 4 community hospitals in the Los Angeles area"
+  }
+]

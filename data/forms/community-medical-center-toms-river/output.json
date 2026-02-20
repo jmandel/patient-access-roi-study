@@ -1,0 +1,67 @@
+{
+  "org_id": "community-medical-center-toms-river",
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "CMC Authorization to Disclose Health Information",
+      "url": "https://www.rwjbh.org/documents/community-medical-center-/CMC-Authority-to-Disclose-Health-Information.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "RWJBH Universal Release of Information Authorization Form",
+      "url": "https://www.rwjbh.org/documents/medical-group/Revised-Universal-Release-of-Information-Authorization-Form.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Ciox/Swellbox online records request",
+      "vendor": "Ciox/Swellbox",
+      "url": "https://www.swellbox.com/rwjbarnabas-cmc-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "CMC Medical Records fax",
+      "url": null,
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "CMC Medical Records email",
+      "url": "mailto:cmcroimedicalrecords@rwjbh.org",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.rwjbh.org/documents/community-medical-center-/CMC-Authority-to-Disclose-Health-Information.pdf",
+      "scope": "facility",
+      "language": "en",
+      "is_current": false,
+      "document_type": "ROI authorization form (outbound release from CMC to patient/physician/facility)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.rwjbh.org/documents/community-medical-center-/med-records-cmc-to.pdf",
+      "scope": "facility",
+      "language": "en",
+      "is_current": false,
+      "document_type": "Inbound records request form (release of records TO CMC from another provider)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.rwjbh.org/documents/medical-group/Revised-Universal-Release-of-Information-Authorization-Form.pdf",
+      "scope": "system",
+      "language": "en",
+      "is_current": true,
+      "document_type": "ROI authorization form (system-wide RWJBH authorization to use or disclose protected health information)"
+    }
+  ],
+  "parent_system": "RWJBarnabas Health",
+  "uses_system_forms": true,
+  "retrieval_difficulty": "easy",
+  "bot_blocking_encountered": false,
+  "browser_fallback_needed": false
+}

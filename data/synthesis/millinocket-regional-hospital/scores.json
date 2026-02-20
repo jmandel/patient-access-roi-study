@@ -1,0 +1,101 @@
+{
+  "org_id": "millinocket-regional-hospital",
+  "org_name": "Millinocket Regional Hospital",
+  "category_id": "cah-independent-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Health Care Information",
+      "url": "https://www.mrhme.org/wp-content/uploads/2014/06/Release-of-Information-for-Medical-Records.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.mrhme.org/wp-content/uploads/2014/06/Release-of-Information-for-Medical-Records.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must download a generic third-party release authorization form, print and hand-fill it, then fax it to the hospital.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 25,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "\"All spaces on this form MUST be completed for this release to be valid\" — blanket mandate exceeds HIPAA authorization requirements and creates a rejection mechanism",
+      "Witness signature line combined with all-fields-mandatory language effectively requires a witness, which HIPAA does not mandate",
+      "Form URL dates to 2014, suggesting no updates in over a decade"
+    ],
+    "bright_spots": [
+      "18-category record-type checklist provides granular control over what information is released",
+      "Sensitive information consent sections correctly reference 42 CFR Part 2 redisclosure restrictions",
+      "Brief patient rights statement acknowledges right to review records and revoke authorization"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 2,
+      "rationale": "Level 2: Generic web searches failed; only a site-scoped search located the form, requiring persistence and knowledge of the hospital's domain."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF has zero fillable fields and is designed entirely for print-and-handwrite completion, though fax submission is available via the number on the form header."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate two-page length and logical sequence, but the confusing opt-out record selection, lack of visual hierarchy or section headers, and alarming legalese about adverse consequences create notable clarity problems."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is not addressed — the form is structured exclusively for third-party release with no dedicated patient access pathway, no 'personal use' reason option, and no guidance for patients requesting their own records."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: The all-fields-mandatory mandate and witness signature requirement go beyond HIPAA requirements for patient access; however, the form includes appropriate revocation provisions and sensitive information consent sections."
+    },
+    "overall": {
+      "score": 2.35,
+      "grade": "D",
+      "summary": "Millinocket Regional Hospital provides only a generic, non-fillable third-party release form that is hard to find and poorly suited for patient self-access, with unnecessary barriers including a witness requirement and blanket field-completion mandate."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:20:15.516Z"
+}

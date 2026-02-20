@@ -1,0 +1,138 @@
+{
+  "org_id": "valley-hospital",
+  "org_name": "The Valley Hospital",
+  "category_id": "ch-independent-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 4,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Online records request tool with identity verification",
+      "url": "https://www.valleyhealth.com/patients-visitors/medical-records",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "VMG Authorization for Release of Patient Records & Information (July 2023)",
+      "url": "https://www.valleyhealth.com/sites/default/files/Patient%20%26%20Visitors/Medical%20Records/Authorization_VMG_FINAL_July%2031%202023.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Valley Home Care Authorization for Release of Patient Records & Information (April 2023)",
+      "url": "https://www.valleyhealth.com/sites/default/files/Patient%20%26%20Visitors/Medical%20Records/Authorization_Home%20Care%20Release%20of%20Information%20(FINAL%20Rev%20April%202023).pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "MRO Disclosure Management Solutions fax",
+      "vendor": "MRO Corp",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.valleyhealth.com/sites/default/files/Patient%20%26%20Visitors/Medical%20Records/Authorization_VMG_FINAL_July%2031%202023.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (Valley Medical Group)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.valleyhealth.com/sites/default/files/Patient%20%26%20Visitors/Medical%20Records/Authorization_VMG%20(FINAL%20MAY%204%202023%20with%20Instructions%20Update).pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (Valley Medical Group, earlier revision)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://mrocorp.com/wp-content/uploads/2012/05/Autho_VHNJ.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (Valley Hospital, legacy)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.valleyhealth.com/sites/default/files/Patient%20%26%20Visitors/Medical%20Records/Authorization_Home%20Care%20Release%20of%20Information%20(FINAL%20Rev%20April%202023).pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (Valley Home Care)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "The medical records page directs patients to an online records request tool with identity verification via driver's license photo; legacy PDF authorization forms are available but orphaned.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Checking 'Entire medical record' excludes Behavioral Health and Substance Use Specialist records unless those boxes are also separately checked — misleading for patients expecting completeness",
+      "Fee structure is vague ('fees may be based on the number of pages') with no specific amounts disclosed; older hospital form states $1/page which may exceed HIPAA cost-based limits for patient access",
+      "No submission instructions on the primary PDF form — patients are told what to fill out but not where or how to submit",
+      "Four overlapping authorization forms across VMG, hospital, and home care entities with no guidance on which to use"
+    ],
+    "bright_spots": [
+      "Online records request portal with identity verification replaces PDF-only workflow as the primary pathway",
+      "Encrypted email delivery option available alongside fax, paper, CD, and unencrypted email",
+      "Full-page plain-language instruction sheet with practical examples ('just write SELF', 'event example: the end of my outpatient therapy')",
+      "Clear unencrypted email risk disclosure allows informed patient choice",
+      "Non-conditioning statement and voluntary signing clearly stated"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: The medical records page is at a logical URL (/patients-visitors/medical-records) and directs patients to an online records request tool, making the primary pathway easy to find through basic navigation. PDF forms are orphaned but accessible via search engines."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: The organization's primary pathway is an online portal with digital identity verification, providing a mostly digital workflow. However, all four PDF forms have zero fillable fields, meaning the fallback paper pathway requires print-and-handwrite completion."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: The best PDF form (form-1) is well-organized with clear Section A/B structure, a full page of step-by-step instructions with practical examples, and reasonable field count (~22). Minor issues with dense sensitive-information legal language and a duplicate checkbox label."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: The online portal suggests patient-centric direction, but all four PDF forms are generic HIPAA authorization forms requiring patients to write 'SELF' as the recipient — patient self-access is accommodated but not the primary design purpose. Four overlapping entity-specific forms add confusion."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: The 'Entire medical record' checkbox misleadingly excludes behavioral health records; fee disclosure is vague with the older form citing $1/page; blanket ID requirement doesn't distinguish patient access from third-party release. Non-conditioning and revocation rights are properly stated."
+    },
+    "overall": {
+      "score": 3.55,
+      "grade": "B",
+      "summary": "The Valley Hospital earns a B by transitioning its primary pathway to an online records request portal, though its legacy PDF forms remain generic HIPAA authorization documents with no fillable fields, misleading record-completeness language, and opaque fee structures."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:08:54.305Z"
+}

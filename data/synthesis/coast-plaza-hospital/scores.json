@@ -1,0 +1,117 @@
+{
+  "org_id": "coast-plaza-hospital",
+  "org_name": "Coast Plaza Hospital",
+  "category_id": "ch-regional-forprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "KPC Health",
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Protected Health Information (2024)",
+      "url": "https://www.coastplazahospital.com/wp-content/uploads/sites/9/2024/06/CPH-ROI-Form-FINAL.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Medical Records",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Coast Plaza Hospital Medical Records",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "Pickup at the facility",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.coastplazahospital.com/wp-content/uploads/sites/9/2024/06/CPH-ROI-Form-FINAL.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.coastplazahospital.com/wp-content/uploads/sites/9/2022/01/CPH-Medical-Records-Auth-Form-English.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (older version)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic ROI authorization form, selects 'Personal Use' as purpose, prints and hand-fills it, then faxes or mails it to the hospital.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "CD-only electronic delivery option is functionally obsolete",
+      "Outdated 2022 form with different fax number remains publicly downloadable alongside current version"
+    ],
+    "bright_spots": [
+      "Granular record-type selection with 16+ individual categories",
+      "Sensitive record categories (Mental Health, Genetic Testing, Alcohol/Drug, HIV/AIDS) require separate initialing",
+      "Encryption preference option for electronic records delivery"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Form found easily via multiple search strategies with direct PDF links on a logically located Medical Records page; minor concern about outdated version co-existing without versioning."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Digitally-created PDF with text layer but zero fillable fields forces print-and-handwrite workflow; fax submission is available via the hospital's listed fax number, providing an electronic submission path with workarounds."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate organization with clear section headers and logical flow, but notable issues including moderately legalistic language, confusing dual 'Personal Use' options, staff-facing 'PATIENT LABEL' boxes, and no completion instructions."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic ROI form for self-access by selecting 'Personal Use,' but the form is designed for third-party release with a 'Released to' section implying an external recipient; no Right of Access language or patient rights explanation."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Proper conditioning and revocation statements, no notarization required, sensitive categories handled correctly; minor ambiguities in vague fee disclosure and CD-only electronic delivery, but nothing that would materially impede a patient."
+    },
+    "overall": {
+      "score": 3.35,
+      "grade": "C",
+      "summary": "Coast Plaza Hospital offers an easily findable but generic ROI authorization form with no fillable fields and no dedicated patient self-access pathway, resulting in a functional but patient-unfriendly records request process."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:08:49.496Z"
+}

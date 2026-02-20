@@ -1,0 +1,103 @@
+{
+  "org_id": "columbus-community-hospital",
+  "org_name": "Columbus Community Hospital",
+  "category_id": "ch-independent-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Medical Records (MR-1)",
+      "url": "https://www.columbushosp.org/Content/Uploads/ColumbusHosp/files/Release%20Med%20Records%2C%20Authorization.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "email",
+      "name": "Email submission to HIM department",
+      "url": "mailto:release@columbusch.com",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.columbushosp.org/Content/Uploads/ColumbusHosp/files/Release%20Med%20Records%2C%20Authorization.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must use a generic third-party release authorization form, writing their own name as the recipient, with no guidance that this is a valid use case.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 12,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Form structured exclusively for third-party release with no patient self-access pathway or guidance",
+      "Ambiguous witness signature line may deter patients completing the form at home",
+      "Form dated 2014 — over 11 years old and may not reflect current regulatory requirements",
+      "Internal document-management codes visible on patient-facing form"
+    ],
+    "bright_spots": [
+      "Built-in Notice of Revocation section eliminates need for a separate revocation form",
+      "Granular record-type selection with nine categories plus Complete Record option",
+      "Email submission channel available via release@columbusch.com"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Rubric level 3: requires moderate effort — form found via web search but not linked from the main patient-facing website; patient forms page mentions the form without providing a download link."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Rubric level 2: primarily a paper workflow — zero fillable fields require printing and handwriting; email submission is available but the form itself offers no digital interaction."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Rubric level 3: adequate but has notable problems — concise single-page layout with logical flow, but includes unexplained jargon ('H & P'), internal filing codes, no instructions, and dense formatting."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Rubric level 2: patient self-access is an afterthought — form is designed entirely for third-party release with no dedicated patient access pathway, no right-of-access language, and no guidance for patients requesting their own records."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Rubric level 3: some requirements that may go beyond what the law requires — ambiguous witness line could create a barrier, no mention of patient access rights under HIPAA, though revocation rights and non-retaliation language are appropriately included."
+    },
+    "overall": {
+      "score": 2.5,
+      "grade": "C",
+      "summary": "Columbus Community Hospital provides a minimally functional but outdated records request process built around a generic third-party release form with no dedicated patient self-access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:09:16.608Z"
+}

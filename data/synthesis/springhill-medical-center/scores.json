@@ -1,0 +1,124 @@
+{
+  "org_id": "springhill-medical-center",
+  "org_name": "Springhill Medical Center",
+  "category_id": "ch-independent-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Request for Release of Health Information form",
+      "url": "https://springhillmedicalcenter.com/sites/default/files/2020-10/Release-of-information-2011-Version-1.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Zoho-based electronic ROI request portal",
+      "vendor": "MedRecs Management / Zoho Creator",
+      "url": "https://creatorapp.zohopublic.com/medrecsmanagement/medrecs-roi/",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "HIM department fax",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "Patient portal",
+      "url": "https://springhillmedicalcenter.com/patients-visitors/medical-records",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://springhillmedicalcenter.com/sites/default/files/2020-10/Release-of-information-2011-Version-1.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://springhillmedicalcenter.com/sites/default/files/YourHealthInformationYourRights_Infographic-Web.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient rights infographic (ONC educational resource)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to a Zoho-based online portal or a generic ROI authorization form that uses third-party release language for all record requests.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Social Security Number field required on the form — unnecessary for records requests and creates privacy risk",
+      "Witness signature line implies a witness is needed, adding a barrier with no HIPAA basis for patient self-access",
+      "Sensitive information (substance abuse, psychiatric, STD, HIV/AIDS) bundled into general authorization without separate consent, potentially conflicting with 42 CFR Part 2",
+      "Form references outdated organization name ('Springhill Memorial Hospital') and obsolete billing form ('UB-92'), indicating no updates since 2011"
+    ],
+    "bright_spots": [
+      "Five delivery method options including fax, email, and patient portal — forward-looking for a 2011-era form",
+      "Zoho-based online ROI request portal provides a fully digital submission alternative",
+      "ONC patient rights infographic hosted on Medical Records page shows awareness of patient access rights",
+      "Explicit non-conditioning statement: treatment/payment cannot be conditioned on signing the authorization",
+      "Single-page form design minimizes patient burden"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Form found easily via web search and linked directly from the Medical Records page; Zoho portal also prominently available — basic navigation suffices."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The PDF form has no fillable fields (print-and-handwrite required), but fax and email submission are available; the Zoho online portal provides a digital workaround for submission."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate single-page layout with logical flow, but notable problems including SSN field, dense legal block, outdated references, and no instructions for patient self-access."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic ROI form but it was not designed for self-access — the 'authorize release to' structure requires patients to figure out how to request their own records."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements exceed what the law requires — SSN collection, witness signature field, and bundled sensitive-information consent go beyond HIPAA's patient access requirements, though revocability and non-conditioning statements are present."
+    },
+    "overall": {
+      "score": 3.15,
+      "grade": "C",
+      "summary": "Springhill Medical Center offers a findable but dated generic ROI form with unnecessary barriers (SSN, witness) and no patient self-access differentiation; the Zoho online portal provides a meaningful digital alternative."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:17:01.869Z"
+}

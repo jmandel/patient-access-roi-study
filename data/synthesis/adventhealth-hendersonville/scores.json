@@ -1,0 +1,120 @@
+{
+  "org_id": "adventhealth-hendersonville",
+  "org_name": "AdventHealth Hendersonville",
+  "category_id": "ch-major-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "AdventHealth",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox eRequest wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/adventhealth-mid-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "HIM Department fax",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "HIM Department phone (828-681-2135)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.adventhealth.com/sites/default/files/assets/slh_form_medicalrecords_patientrequestforaccess.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "patient access request form (sister facility — St. Luke's Hospital, Columbus, NC)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.adventhealth.com/sites/default/files/assets/slh_form_medicalrecords_releaseofinformation.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (sister facility — St. Luke's Hospital, Columbus, NC)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.adventhealth.com/sites/default/files/assets/WAU_FH-Records-Request-Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "authorization for use/disclosure form (wrong facility — Florida Hospital Heartland Division, Sebring, FL)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patients are directed to a Swellbox/Datavant online eRequest wizard for all medical records requests, with phone and fax as alternatives.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "No facility-specific PDF form exists; all downloaded PDFs belong to other AdventHealth facilities",
+      "Sister-facility forms are 7-10 years old with outdated pre-rebrand branding"
+    ],
+    "bright_spots": [
+      "Online Swellbox/Datavant portal provides fully digital records request workflow",
+      "Multiple contact channels clearly listed: phone, fax, and online portal",
+      "Sister facility form (form-1) demonstrates good design with multiple format/delivery options including CD, flash drive, email, and secure email"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: Requires moderate effort — the medical records page is reachable via footer navigation, but patients must navigate a shared system-wide page with regional tabs to find their facility's Swellbox link; web searches return confusing sister-facility PDFs rather than Hendersonville-specific resources."
+    },
+    "technical_accessibility": {
+      "score": 5,
+      "rationale": "Level 5: Fully functional digital workflow — the primary pathway is a Swellbox/Datavant online wizard that allows form completion and submission entirely online, with no printing or handwriting required."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but with notable gaps — the medical records web page provides clear contact info, but the facility has no downloadable form of its own; the sister-facility form (form-1) is well-organized with plain language but is non-fillable and belongs to a different facility; the Swellbox wizard's internal content could not be assessed."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access is clearly accommodated — the medical records page explicitly addresses patient records requests and provides an online portal, though it does not visibly differentiate patient self-access from third-party release at the page level."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities — no unnecessary barriers exist (online, fax, and phone submission available, no notarization), but fee information is absent from the facility's own pages and sister-facility forms request partial SSN unnecessarily."
+    },
+    "overall": {
+      "score": 3.95,
+      "grade": "B",
+      "summary": "AdventHealth Hendersonville provides a modern portal-based records request pathway through Swellbox/Datavant with good electronic accessibility, but the lack of facility-specific PDF forms and moderate findability through a shared system-wide page prevent a top-tier rating."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:58:35.768Z"
+}

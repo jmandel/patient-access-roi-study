@@ -1,0 +1,105 @@
+{
+  "org_id": "tioga-medical-center",
+  "org_name": "Tioga Medical Center",
+  "category_id": "cah-independent-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Medical/Confidential Information",
+      "url": "https://www.tiogahealth.org/_files/ugd/51e5d7_89494c330746455abd75cb844132f681.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM department",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to P.O. Box 159, Tioga, ND 58852",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.tiogahealth.org/_files/ugd/51e5d7_89494c330746455abd75cb844132f681.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must download a generic third-party release authorization form, print and handwrite it, then fax or mail it to the HIM department.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Witness signature line present as structured field, implying it may be expected — not required by HIPAA for patient access",
+      "Image-only scanned PDF with no text layer — inaccessible to screen readers and non-compliant with Section 508/ADA"
+    ],
+    "bright_spots": [
+      "Granular record type selection with 12 checkbox categories gives patients meaningful control over disclosure scope",
+      "Clear voluntariness statement: patients explicitly told they can refuse to sign without affecting treatment",
+      "Dual format availability (PDF + Word) provides an alternative path for digital completion"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Form is easy to find via basic web search; HIM page is accessible from site navigation and directly links to the form in two formats."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primary PDF is an image-only scan with zero fillable fields requiring print-and-handwrite workflow; Word version exists as a partial workaround but the process remains primarily paper-based."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate single-page form with logical flow and granular record-type checkboxes, but marred by a dense unformatted legal paragraph, unlabeled internal tracking fields, and confusing appointment-date fields."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is not addressed; the Release From/To structure assumes third-party disclosure, with no mention of HIPAA Right of Access or guidance for patients requesting their own records."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Includes good voluntariness and revocation disclosures, but the witness signature line may exceed HIPAA requirements for patient access and the form fails to reference patient access rights under § 164.524."
+    },
+    "overall": {
+      "score": 2.65,
+      "grade": "C",
+      "summary": "Tioga Medical Center's records request process is easy to find but hindered by an image-only scanned form designed for third-party release, not patient self-access."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:18:59.465Z"
+}

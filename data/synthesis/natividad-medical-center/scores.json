@@ -1,0 +1,111 @@
+{
+  "org_id": "natividad-medical-center",
+  "org_name": "Natividad Medical Center",
+  "category_id": "ch-independent-government-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use or Disclose Health Information (2019 scan)",
+      "url": "https://www.natividad.com/wp-content/uploads/2019/08/Auth-to-Release-Health-Info_English.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use or Disclosure of Health Information (2007 text PDF)",
+      "url": "https://www.natividad.com/wp-content/uploads/2018/04/Auth_ROI_e.pdf",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.natividad.com/wp-content/uploads/2019/08/Auth-to-Release-Health-Info_English.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.natividad.com/wp-content/uploads/2018/04/Auth_ROI_e.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization form (image-only scan) from the medical records page and must print, hand-fill, and submit it with no documented electronic submission option.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 12,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "CD as only electronic delivery method — obsolete technology that may limit HIPAA Right of Access",
+      "Form 2 requests Social Security Number, which is unnecessary and creates identity-theft risk",
+      "Form 2 has blank revocation address, effectively nullifying revocation instructions",
+      "Two competing forms on the same page with no guidance on which is current"
+    ],
+    "bright_spots": [
+      "Form 1 explicitly addresses patients requesting their own records with format choices",
+      "Opt-out exclusion model for sensitive record categories (HIV, substance abuse, mental health) is patient-friendly",
+      "Form 1 eliminated SSN requirement present in the older Form 2",
+      "Comprehensive patient rights language in both forms"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: Forms are publicly linked from the medical records page and findable via web search, but two competing forms with no guidance on which is current and a cryptic filename on Form 2 require moderate effort and create confusion."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — neither form has fillable fields, the primary form (Form 1) is an image-only scan inaccessible to screen readers, and no electronic submission pathway (fax, email, or portal) is documented on the forms."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but with notable problems — Form 1 is cramped on a single page with weak visual hierarchy; Form 2 has better organization but contains a garbled legal citation, unnecessary SSN field, and dense footnotes with legal prose."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — both forms are generic third-party authorization forms, though Form 1 includes explicit patient self-access language and format choices that partially accommodate individual access."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may exceed what law requires — CD-only electronic delivery may limit HIPAA Right of Access, Form 2 collects unnecessary SSN, no fee disclosure, and blank revocation address on Form 2 undermines patient rights."
+    },
+    "overall": {
+      "score": 2.75,
+      "grade": "C",
+      "summary": "Natividad Medical Center provides a minimally functional but outdated patient access experience through generic authorization forms that lack fillable fields, digital submission options, and a dedicated patient access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:14:33.960Z"
+}

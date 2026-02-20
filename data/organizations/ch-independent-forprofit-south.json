@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "springhill-medical-center",
+    "name": "Springhill Medical Center",
+    "category_id": "ch-independent-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Mobile",
+    "website": "https://springhillmedicalcenter.com",
+    "bed_count": 270,
+    "notes": "Privately owned, truly independent for-profit hospital; only tax-paying hospital in Mobile area. Operating since 1975."
+  },
+  {
+    "org_id": "crenshaw-community-hospital",
+    "name": "Crenshaw Community Hospital",
+    "category_id": "ch-independent-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Luverne",
+    "website": "https://crenshawcommunityhospital.com",
+    "bed_count": 25,
+    "notes": "Small proprietary community hospital in rural Crenshaw County. Acquired by Frey Medical Management (local operator) in Jan 2026."
+  },
+  {
+    "org_id": "lake-martin-community-hospital",
+    "name": "Lake Martin Community Hospital",
+    "category_id": "ch-independent-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Dadeville",
+    "website": "https://ivycreekhealth.com/locations/lake-martin-community-hospital",
+    "bed_count": 46,
+    "notes": "Proprietary acute care hospital managed by Ivy Creek Healthcare, a locally owned 2-hospital operator in rural central Alabama."
+  }
+]

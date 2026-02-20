@@ -1,0 +1,117 @@
+{
+  "org_id": "ssm-health-depaul-hospital",
+  "org_name": "SSM Health DePaul Hospital - St. Louis",
+  "category_id": "ch-major-nonprofit-midwest",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": "SSM Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "SSM Health St. Louis Metro ROI/Authorization Form",
+      "url": "https://www.ssmhealth.com/SSMHealth/media/Documents/patients-and-visitors/get-medical-records/st-louis-metro/medical-records-request-form-stl.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "online_portal",
+      "name": "MRO Express Portal",
+      "vendor": "MRO/Ciox",
+      "url": "https://mroexpress.mrocorp.com",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "SSM Health System-Wide ROI Form (legacy)",
+      "url": "https://www.ssmhealth.com/getmedia/626ff70a-39ec-49a8-8f3f-903d077ae27d/medical-record-release-form.pdf",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.ssmhealth.com/getmedia/626ff70a-39ec-49a8-8f3f-903d077ae27d/medical-record-release-form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy version)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.ssmhealth.com/SSMHealth/media/Documents/patients-and-visitors/get-medical-records/st-louis-metro/medical-records-request-form-stl.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (St. Louis metro version)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a dual-purpose SSM Health system-wide PDF form that combines patient access requests and third-party disclosure authorizations, selecting 'For personal access' as the purpose of disclosure.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 69,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Email delivery framed as risky exception with liability-shifting language that may discourage patients from choosing electronic delivery",
+      "Expiration date field with research-oriented options is inappropriate and confusing for patient access requests"
+    ],
+    "bright_spots": [
+      "69 fillable form fields enable fully digital completion without printing",
+      "Email delivery address field provided on form (improvement over legacy version)",
+      "Granular record type selection with separate sensitive-category checkboxes for substance abuse, psychotherapy notes, and HIV",
+      "MRO Express portal available as alternative electronic request pathway",
+      "Explicit 30-day response commitment and right to request review of access denials"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Rubric level 3: requires moderate effort — the form is reachable from SSM Health's medical records page but requires location-dependent navigation with a reportedly broken autocomplete selector, and DePaul's own page only redirects to the system-wide page rather than linking the STL metro form directly."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Rubric level 4: mostly digital with one gap — form-2 has 69 fillable fields enabling complete digital form completion, but submission still requires fax, mail, or navigating to the separate MRO Express portal rather than offering integrated online submission from the form itself."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Rubric level 3: adequate but notable problems — the form has a logical top-to-bottom flow and fits on one page, but the language is dense legalese throughout, there are no instructions or plain-language guidance, the single-page compression forces small text, and the dual-purpose structure confuses patients about which fields apply to self-access."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Rubric level 3: a patient can use the process but it wasn't designed for them — the form is oriented toward third-party disclosure, with 'For personal access' buried as a checkbox under Purpose of Disclosure; patients must navigate recipient fields (name, relationship, fax) that don't apply to self-access, with no guidance on what to skip."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Rubric level 4: minor ambiguities but nothing materially impeding — no notarization or in-person requirement, 30-day timeline and denial review rights stated, fee language is hedged but not excessive; the email delivery warning and misplaced expiration date field are minor issues that don't create illegitimate barriers."
+    },
+    "overall": {
+      "score": 3.45,
+      "grade": "C",
+      "summary": "SSM Health DePaul Hospital provides a technically capable fillable PDF form and an online portal option, but the dual-purpose authorization design, legalistic language, and lack of dedicated patient access pathway keep the experience below patient-centered standards."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:00:14.742Z"
+}

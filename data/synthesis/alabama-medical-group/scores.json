@@ -1,0 +1,113 @@
+{
+  "org_id": "alabama-medical-group",
+  "org_name": "Alabama Medical Group",
+  "category_id": "practice-independent-forprofit-south",
+
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+
+  "parent_system": null,
+  "uses_system_forms": false,
+
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Request for Release of Information Form",
+      "url": "https://www.alabamamedicalgroup.com/wp-content/uploads/2018/02/Request-for-Release-of-Information-Form.pdf",
+      "is_primary": true
+    }
+  ],
+
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.alabamamedicalgroup.com/wp-content/uploads/2018/02/Request-for-Release-of-Information-Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.alabamamedicalgroup.com/wp-content/uploads/2018/03/PERMISSION-TO-GIVE-MEDICAL-INFORMATION-2.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Family phone disclosure consent form"
+    }
+  ],
+
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients must use a general-purpose 'Request for Release of Information' authorization form designed for third-party transfers, placing their own name in the 'Release To' field.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 16,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "SSN collection on records request form — unnecessary and creates identity theft risk",
+      "Ambiguous employee/witness signature line may imply in-person submission requirement",
+      "No submission instructions printed on form — patient has no guidance on where or how to return it",
+      "Form has not been updated since February 2018"
+    ],
+    "bright_spots": [
+      "Helpful example text for record type field: '(Example: Office Notes, Labs, In-Office Testing, all records)'",
+      "Clean dual-signature sensitive information consent design giving patients explicit opt-in/opt-out control"
+    ]
+  },
+
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — dedicated 'Request Medical Records' page under Patient Resources with direct PDF link, also linked from 'Other Patient Forms' page."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — flat PDF with zero fillable fields requires printing and handwriting; no electronic submission method (fax, email, or portal) is documented on the form or in retrieval notes."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but with notable problems — logical one-page layout with helpful example text, but missing submission instructions, no date range field, cramped density, and mix of plain language with legal boilerplate."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is not addressed — form is entirely framed as third-party release authorization with no right-of-access language, no 'patient self-request' purpose option, and no acknowledgment that patients have a legal right to their records."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — SSN collection is unnecessary for patient access, ambiguous witness line could constitute an extra-legal barrier; standard revocation/expiration terms and re-disclosure warning are appropriate."
+    },
+    "overall": {
+      "score": 2.65,
+      "grade": "C",
+      "summary": "Alabama Medical Group provides an easily findable but dated generic ROI authorization form with no patient-access differentiation, no fillable fields, no electronic submission pathway, and unnecessary SSN collection."
+    }
+  },
+
+  "synthesized_at": "2026-02-20T01:36:04.886Z"
+}

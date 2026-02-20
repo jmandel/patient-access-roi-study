@@ -1,0 +1,114 @@
+[
+  {
+    "org_id": "boone-county-health-center",
+    "name": "Boone County Health Center",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "NE",
+    "city": "Albion",
+    "website": "https://boonecohealth.org",
+    "bed_count": 25,
+    "notes": "County-owned CAH serving north-central Nebraska; CMS 5-star rated; largest employer in region"
+  },
+  {
+    "org_id": "myrtue-medical-center",
+    "name": "Myrtue Medical Center",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IA",
+    "city": "Harlan",
+    "website": "https://www.myrtuemedical.org",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH serving Shelby County, Iowa; provides emergency, surgical, and specialty services"
+  },
+  {
+    "org_id": "tioga-medical-center",
+    "name": "Tioga Medical Center",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "ND",
+    "city": "Tioga",
+    "website": "https://www.tiogahealth.org",
+    "bed_count": 25,
+    "notes": "501(c)(3) nonprofit CAH since 1999; NRHA Top 20 CAH; includes 30-bed skilled nursing facility"
+  },
+  {
+    "org_id": "black-river-memorial-hospital",
+    "name": "Black River Memorial Hospital",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "WI",
+    "city": "Black River Falls",
+    "website": "https://blackriverhealth.com",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH serving Jackson County, Wisconsin; operates jointly with Krohn Clinic as Black River Health"
+  },
+  {
+    "org_id": "nemaha-valley-community-hospital",
+    "name": "Nemaha Valley Community Hospital",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "KS",
+    "city": "Seneca",
+    "website": "https://nemvch.com",
+    "bed_count": 24,
+    "notes": "Independent nonprofit CAH in northeast Kansas; provides 24/7 emergency care, OB, and specialty clinics"
+  },
+  {
+    "org_id": "phelps-memorial-health-center",
+    "name": "Phelps Memorial Health Center",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "NE",
+    "city": "Holdrege",
+    "website": "https://www.phelpsmemorial.com",
+    "bed_count": 25,
+    "notes": "Volunteer board-governed nonprofit CAH since 1968; over 330 staff; largest employer in Phelps County"
+  },
+  {
+    "org_id": "riverwood-healthcare-center",
+    "name": "Riverwood Healthcare Center",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MN",
+    "city": "Aitkin",
+    "website": "https://riverwoodhealthcare.org",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH since 1955; Level III Trauma Center; Top 100 CAH designation"
+  }
+]

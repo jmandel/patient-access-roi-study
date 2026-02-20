@@ -1,0 +1,130 @@
+{
+  "org_id": "erlanger-health-system",
+  "org_name": "Erlanger Health System",
+  "category_id": "teach-regional-nonprofit-south",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Access to Health Information",
+      "url": "https://www.erlanger.org/-/media/erlanger-media/file/murphy/2021-form---patient-request-for-access.ashx",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Medical Information",
+      "url": "https://www.erlanger.org/-/media/erlanger-media/file/patienttools/19755-authorization-to-release-medical-information.ashx",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Health Information Management department",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Health Information Management department",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person drop-off at facility",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.erlanger.org/-/media/erlanger-media/file/patienttools/19755-authorization-to-release-medical-information.ashx",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.erlangerbh.com/wp-content/uploads/sites/44/2022/05/Medical-Records.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "Behavioral health disclosure authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.erlanger.org/-/media/erlanger-media/file/murphy/2021-form---patient-request-for-access.ashx",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient access request form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patient downloads a dedicated one-page 'Patient Request for Access to Health Information' form from erlanger.org, prints and fills it by hand, and submits via fax or mail to the HIM department.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 12,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Patient access form (form-3) implies in-person submission via ID verification section with no clearly stated remote submission option",
+      "Bundled sensitive-category consent on general ROI form (form-1) with no opt-out for substance abuse or HIV records"
+    ],
+    "bright_spots": [
+      "Dedicated patient access form separate from third-party release authorization",
+      "Granular record type selection with 18 options across hospital and clinic categories",
+      "Plain-language first-person framing throughout the patient access form"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: All three forms were found via a basic web search with no barriers; a Medical Records page exists under patient tools, though the patient access form URL path is not intuitively navigable."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Form has a text layer enabling PDF annotation workarounds but zero fillable fields requiring print-and-handwrite; fax submission is available system-wide for sending in the completed form."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Single-page form with clear logical flow, plain first-person language, and granular record selection; minor issues include SSN request and an opaque email risk disclaimer referencing an external document."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Erlanger offers a dedicated patient access form clearly distinct from third-party release, with patient-friendly framing, but lacks explicit patient rights language and has an unclear submission process."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Patient access form omits fee disclosure entirely, includes no patient rights statement, and collects partial SSN unnecessarily; general ROI form bundles sensitive-category consent without opt-out."
+    },
+    "overall": {
+      "score": 3.55,
+      "grade": "B",
+      "summary": "Erlanger demonstrates above-average patient-centeredness with a dedicated access form and plain language, but non-fillable PDFs, unclear submission instructions, and missing fee disclosure prevent a higher grade."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:20:01.085Z"
+}

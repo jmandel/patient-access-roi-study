@@ -1,0 +1,125 @@
+{
+  "org_id": "yale-new-haven-hospital",
+  "org_name": "Yale New Haven Hospital",
+  "category_id": "teach-major-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Yale New Haven Health System",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Access/Release of Information (F4918Eng)",
+      "url": "https://www.ynhhs.org/-/media/files/ynhhs/pdf/medical-records/f4918eng_fillable_0719.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax to YNHHS Release of Information Services",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email to releaseofinfo-Hosp@ynhh.org",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to PO Box 9565, New Haven, CT 06535",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart (delivery only, not request submission)",
+      "vendor": "Epic MyChart",
+      "url": "https://mychart.ynhhs.com",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.ynhhs.org/-/media/files/ynhhs/pdf/medical-records/f4918eng_fillable_0719.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (dual-purpose: patient access and third-party release)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.ynhhs.org/-/media/Files/YNHHS/PDF/medical-records/LH000013_Release_of_Information_Form_Fillable_031924.ashx",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (Lawrence + Memorial Hospital)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a system-wide fillable PDF authorization form that serves both patient self-access and third-party release, then submit by email, fax, or mail.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 25,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "10 business days",
+    "red_flags": [
+      "Form last revised July 2019 — nearly seven years old and may not reflect current policies or facility configurations"
+    ],
+    "bright_spots": [
+      "MyChart portal delivery option listed as first delivery method",
+      "97 fillable interactive PDF fields — exceptionally high digital-first design",
+      "Three separate email addresses for different YNHHS entities (Hospital, NEMG, Yale Medicine)",
+      "Granular record type selection with 17 specific categories plus complete record option",
+      "Explicit 10-business-day turnaround commitment with customer service phone number"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — a basic web search immediately found the form, which is directly linked from the YNHHS 'Request Medical Records' page with no login or access barriers."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the form has 97 fillable fields enabling full digital completion, but requires printing for a wet signature before submitting electronically via email or fax."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — logical section flow, clear headers, and granular record selection, but dense legal prose in the 'I understand' statements and confusing double-negative framing for sensitive information opt-outs."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — despite 'Personal use' purpose checkbox and 'Access' in the title, patients must navigate a third-party release framework and designate themselves as the 'recipient,' with no HIPAA Right of Access citation."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization, no in-person requirement, clear revocation and voluntariness language, but fee disclosure is ambiguous and does not distinguish patient-access fees from third-party copy charges."
+    },
+    "overall": {
+      "score": 3.9,
+      "grade": "B",
+      "summary": "Yale New Haven Hospital provides a digitally mature, easy-to-find records request experience with an exceptionally fillable PDF and multiple submission options, but falls short of true patient-centeredness by routing all requests through a generic dual-purpose authorization form."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:11:56.216Z"
+}

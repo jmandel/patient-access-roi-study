@@ -1,0 +1,116 @@
+{
+  "org_id": "east-georgia-healthcare-center",
+  "org_name": "East Georgia Healthcare Center",
+  "category_id": "fqhc-independent-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "RightSignature Medical Records Release form",
+      "vendor": "RightSignature",
+      "url": "https://secure.rightsignature.com/templates/280e0c9b-58a0-4965-a8f2-ada6269d8b00/template-signer-link/5be1e11e4a02b05742f2b4c6340bbe24",
+      "is_primary": true
+    },
+    {
+      "type": "phone",
+      "name": "Privacy Officer (Linda Braswell)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://secure.rightsignature.com/templates/280e0c9b-58a0-4965-a8f2-ada6269d8b00/template-signer-link/5be1e11e4a02b05742f2b4c6340bbe24",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Incoming records transfer authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://secure.rightsignature.com/templates/93fb2d59-3fbd-40cf-b250-d54294d83270/template-signer-link/3ce2efc060c8a2c6b15bf53ebdc97574",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "Incoming records transfer authorization form (Spanish)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://eghc.org/wp-content/uploads/2021/05/EGHC-Notice-of-Privacy.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Notice of Privacy Practices"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient encounters a Medical Records Release form on RightSignature designed for transferring records FROM other providers TO EGHC; no form exists for requesting one's own records from EGHC.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 10,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No patient self-access form exists — only form available is for incoming records from other providers",
+      "SSN collection on a faxable document creates unnecessary data exposure risk",
+      "Missing authorization expiration date (required under 45 CFR § 164.508(c)(1)(v))"
+    ],
+    "bright_spots": [
+      "Spanish-language version of the form available — appropriate for FQHC patient population",
+      "RightSignature e-signature platform enables electronic completion and submission",
+      "Granular 17-option record type checklist with 'Other' field"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: Forms page at eghc.org/forms/ is reachable in 2-3 clicks, but old PDF links return 404s, RightSignature URLs are opaque, and the form found does not actually serve patient self-access — requiring moderate effort with a non-obvious path."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The RightSignature platform provides interactive fillable fields and e-signature capability, making the form usable digitally with workarounds (must provide name/email to view); however, the standalone PDF is image-only with no text layer or fillable fields."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Clean single-page layout with clear visual hierarchy and granular record type checklist, but notable problems include SSN collection, no date range field, missing submission instructions, and the form is oriented toward the wrong purpose (incoming records)."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is not addressed — the only authorization form available is designed for incoming records from other providers to EGHC, with no form, pathway, or instructions for a patient requesting their own records."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Form includes standard HIPAA authorization language (revocation rights, non-conditioning), but goes beyond what's appropriate by collecting SSN, lacks a required expiration date, has no fee disclosure, and the NPP is missing an effective date and breach notification language."
+    },
+    "overall": {
+      "score": 2.75,
+      "grade": "C",
+      "summary": "EGHC has invested in bilingual forms and an e-signature platform but fundamentally fails to provide any form or pathway for patients to request their own records, as the only authorization form is for incoming records from other providers."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:27:03.845Z"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "erlanger-health-system",
+    "name": "Erlanger Health System",
+    "category_id": "teach-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Chattanooga",
+    "website": "https://www.erlanger.org",
+    "bed_count": 930,
+    "notes": "6 hospitals; academic affiliate of UT Health Science Center; 10 residency and 15 fellowship programs with 207 trainees; Level I Trauma Center"
+  },
+  {
+    "org_id": "cone-health",
+    "name": "Cone Health",
+    "category_id": "teach-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "NC",
+    "city": "Greensboro",
+    "website": "https://www.conehealth.com",
+    "bed_count": 628,
+    "notes": "5 hospitals; flagship Moses H. Cone Memorial Hospital is a 628-bed teaching hospital; ACGME-accredited residencies in internal medicine, family medicine, and other specialties"
+  },
+  {
+    "org_id": "wakemed-health",
+    "name": "WakeMed Health & Hospitals",
+    "category_id": "teach-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "NC",
+    "city": "Raleigh",
+    "website": "https://www.wakemed.org",
+    "bed_count": 973,
+    "notes": "5 hospitals (3 acute care plus rehab and behavioral health); GME programs in partnership with regional medical schools; 501(c)(3) nonprofit"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "natividad-medical-center",
+    "name": "Natividad Medical Center",
+    "category_id": "ch-independent-government-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Salinas",
+    "website": "https://www.natividad.com",
+    "bed_count": 172,
+    "notes": "County-owned safety-net hospital operated by Monterey County; Level II Trauma Center and UCSF teaching affiliate."
+  },
+  {
+    "org_id": "umc-southern-nevada",
+    "name": "University Medical Center of Southern Nevada",
+    "category_id": "ch-independent-government-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "state": "NV",
+    "city": "Las Vegas",
+    "website": "https://www.umcsn.com",
+    "bed_count": 564,
+    "notes": "Clark County-owned public hospital; Nevada's only Level I Trauma Center and only verified burn center."
+  },
+  {
+    "org_id": "valleywise-health",
+    "name": "Valleywise Health Medical Center",
+    "category_id": "ch-independent-government-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "state": "AZ",
+    "city": "Phoenix",
+    "website": "https://valleywisehealth.org",
+    "bed_count": 233,
+    "notes": "Maricopa County special healthcare district; public teaching hospital with Level I Trauma Center and Arizona Burn Center."
+  }
+]

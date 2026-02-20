@@ -1,0 +1,123 @@
+{
+  "org_id": "pocahontas-memorial-hospital",
+  "org_name": "Pocahontas Memorial Hospital",
+  "category_id": "cah-independent-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Medical Information",
+      "url": "https://www.pmhwv.org/wp-content/uploads/2020/08/Authorization-to-release-PHI.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Medical Records",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "US Mail submission",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person pickup at Medical Records",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.pmhwv.org/wp-content/uploads/2020/08/Authorization-to-release-PHI.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.pmhwv.org/wp-content/uploads/2021/01/COVID-19-Release-for-Employees-Students.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "COVID-19 release authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient uses a generic Authorization for Release of Medical Information form, selecting 'Personal use' as purpose and naming themselves as recipient.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 17,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Blanket photo ID requirement with no exception for remote submissions",
+      "Systematic text encoding defect (ti ligature) breaks screen readers and text search"
+    ],
+    "bright_spots": [
+      "Electronic format options explicitly listed (email, USB, CD, Portal, other)",
+      "Non-conditioning statement included — unusual for a small critical access hospital",
+      "Multiple delivery methods offered (pickup, mail, fax, email)",
+      "30-day response time clearly stated"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: Requires moderate effort — general web search failed, site-scoped search needed; form is logically placed on the website (2-3 clicks) but bot blocking interfered with programmatic access."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Digitally created PDF with text layer but zero fillable fields requires print-and-handwrite workflow; fax and email submission available as electronic submission options."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate 2-page form with logical flow and useful record type checkboxes, but minimal visual hierarchy, dense legal paragraphs, confusing Snowshoe Mountain Clinic entry among record types, and text encoding defects."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: Patient can use the generic authorization form by selecting 'Personal use' and naming themselves as recipient, but the form is structured around third-party release with no dedicated patient access pathway."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Non-conditioning statement and revocation language are strong positives, but blanket photo ID requirement and vague fee disclosure ('as state and federal laws allow' with no amounts) may exceed what the law requires for patient access."
+    },
+    "overall": {
+      "score": 3.0,
+      "grade": "C",
+      "summary": "Pocahontas Memorial Hospital provides a functional generic ROI form with commendable delivery flexibility but lacks a dedicated patient access pathway, fillable fields, and clear fee transparency."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:27:47Z"
+}

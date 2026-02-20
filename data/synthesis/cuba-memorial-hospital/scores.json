@@ -1,0 +1,114 @@
+{
+  "org_id": "cuba-memorial-hospital",
+  "org_name": "Cuba Memorial Hospital",
+  "category_id": "cah-independent-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Upper Allegheny Health System",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "UAHS ROI Authorization Form (OGH version)",
+      "url": "https://www.brmc-ogh.org/visitors/medical-records/",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "UAHS ROI Authorization Form (BRMC version)",
+      "url": "https://www.brmc-ogh.org/visitors/medical-records/",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "YourHEALTH Patient Portal",
+      "url": "https://www.cubamemorialhospital.com",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://drive.tiny.cloud/1/fma0ckgi8l71unwv372o9bkc28qzcn65s72m80cndsw3awok/8e375fa6-67ee-4521-b781-1af0d5819c77",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://drive.tiny.cloud/1/fma0ckgi8l71unwv372o9bkc28qzcn65s72m80cndsw3awok/61c90625-dd5b-4e4e-81c2-70e000fb6a31",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must find a generic HIPAA authorization form on an affiliated organization's website (BRMC-OGH), branded for a different hospital (Olean General), that includes checkboxes for patient self-access alongside third-party release.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": true,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No form exists for Cuba Memorial Hospital itself — patients must use a form branded for a different hospital",
+      "In-person pickup implied as only delivery method with no fax, mail, or electronic alternative mentioned",
+      "Form last revised in 2017 with no updates for Information Blocking rules or 21st Century Cures Act"
+    ],
+    "bright_spots": [
+      "Explicit patient self-access checkboxes for inspection and copies alongside third-party release",
+      "Granular record type selection with 11 specific categories and individual date ranges"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 2,
+      "rationale": "Level 2: Form is not on Cuba Memorial's own website; requires persistence to discover a footer link to an affiliated organization's site and infer which of two forms applies."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF has no fillable fields and must be printed and handwritten, with no electronic submission pathway (no fax, email, or portal submission mentioned)."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate numbered-section structure with record type checklist, but moderately legalistic language, an uncorrected typo, cluttered Section 4, and no completion instructions."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: The form includes patient self-access checkboxes (a positive), but it is a generic HIPAA authorization branded for a different hospital, forcing patients to figure out applicability and submission on their own."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Witness lines without clarity on requirement, 90-day expiration unnecessary for patient access, vague fee language, and no response time commitment — requirements that may go beyond what HIPAA requires for individual access."
+    },
+    "overall": {
+      "score": 2.6,
+      "grade": "C",
+      "summary": "Cuba Memorial Hospital lacks its own ROI form, forcing patients through a non-obvious path to an affiliated hospital's non-fillable, paper-only authorization form that at least acknowledges patient self-access but provides no clear submission or delivery mechanism."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:21:14.808Z"
+}

@@ -1,0 +1,119 @@
+{
+  "org_id": "rhode-island-hospital",
+  "org_name": "Rhode Island Hospital",
+  "category_id": "teach-major-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Brown University Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use or Disclose PHI (Brown University Health)",
+      "url": "https://www.brownhealth.org/sites/default/files/2024-10/Authorization-Release-PHI-Brown-Health-10152024-V2.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "HIM Department fax (RI Hospital)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "HIM Department mail (593 Eddy Street, Providence, RI 02903)",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "HIM Department phone (401.444.4040)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.brownhealth.org/sites/default/files/2024-10/Authorization-Release-PHI-Brown-Health-10152024-V2.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.brownhealth.org/sites/default/files/2023-04/DI-Authorization-to-Release-Protected-Health-Information-FORM-approved-Medical-records-Cmt_11162020.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (medical imaging)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization form, fills it by hand, and submits via fax or mail to the HIM department.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Broad liability waiver bundled with records authorization form",
+      "No electronic delivery option offered (paper or CD only in a 2024 form)",
+      "Vague fee language without amounts or patient-access fee distinction"
+    ],
+    "bright_spots": [
+      "Granular record-type selection with ~10 categories plus behavioral health subsection",
+      "Sensitive information exclusions respecting 42 CFR Part 2 and Rhode Island state law",
+      "Multi-facility coverage with clear selection checkboxes on a single form",
+      "Easy online findability with dedicated medical records request page"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with a simple web search; first query immediately surfaced the form, and a dedicated medical records page exists at a logical URL path — but not prominently linked from the homepage."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Born-digital PDF with text layer is usable with annotation workarounds, and fax submission is available, but the form has zero fillable fields requiring a print-and-handwrite workflow."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate 11-section numbered structure with logical flow, but dense legal language, no plain-language summary or instructions, and cramped single-page layout create notable clarity issues."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form by checking 'Patient Request' as the purpose, but the form is designed for third-party release — requiring the patient to fill in themselves as the recipient with no acknowledgment of individual access rights."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Broad liability waiver bundled into authorization goes beyond legal requirements; vague fee language may not distinguish HIPAA-capped patient-access fees; no Right of Access reference — though revocation rights and right to refuse are properly stated."
+    },
+    "overall": {
+      "score": 3.15,
+      "grade": "C",
+      "summary": "Rhode Island Hospital provides an easily findable but generic authorization form that lacks fillable fields, a patient-access-specific pathway, and electronic delivery options, placing it in the average tier despite good organization and sensitive-information protections."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:12:49.979Z"
+}

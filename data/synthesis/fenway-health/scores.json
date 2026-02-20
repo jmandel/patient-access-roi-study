@@ -1,0 +1,130 @@
+{
+  "org_id": "fenway-health",
+  "org_name": "Fenway Health",
+  "category_id": "fqhc-independent-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of Protected Health Information",
+      "url": "https://fenwayhealth.org/wp-content/uploads/2025/10/FHROIForm10202025.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Medical Records Dept (617-425-5713)",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email to medicalrecords@fenwayhealth.org",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Fenway Health, 1340 Boylston St, Boston, MA 02215",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart patient portal",
+      "vendor": "Epic MyChart",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://fenwayhealth.org/wp-content/uploads/2025/10/FHROIForm10202025.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://fenwayhealth.org/wp-content/uploads/2025/09/ReleaseofInformationFAQSheet.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "form instructions"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://fenwayhealth.org/wp-content/uploads/2025/11/ReleaseofInformationMedicalRecordsFormSpanish10312025.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic authorization-for-disclosure PDF, prints and hand-fills it, then submits via fax, email, mail, or MyChart portal.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": true,
+    "response_time_value": "21 days",
+    "red_flags": [],
+    "bright_spots": [
+      "Companion 3-page FAQ guide explains every form section in plain language",
+      "Spanish-language version of the ROI form available",
+      "Reproductive health and gender-affirming care shield-law protections included",
+      "Granular 10-category sensitive information controls with individual patient initials",
+      "Name used (if different) field accommodates patients whose current name differs from legal name",
+      "Four submission channels: mail, fax, email, and MyChart portal"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — a simple web search immediately returned the PDF URL and a dedicated medical records page; no bot-blocking or access barriers."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds; fax submission available — the born-digital PDF has zero fillable fields, forcing a print-handwrite-scan workflow, but fax, email, and portal submission channels are available."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — single-page form with logical 7-section flow and a companion FAQ guide, though the legal notice paragraph is dense and the sensitive-info initials section has a coercive tone."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the FROM/TO structure assumes facility-to-facility transfer, and a patient requesting their own records must figure out how to repurpose the generic authorization form."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization, no in-person requirement, clear revocation rights, 42 CFR Part 2 cited, but no explicit statement of patient access rights under HIPAA § 164.524 and no fee disclosure."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "Fenway Health provides an easy-to-find, well-designed generic ROI form with strong bright spots (FAQ guide, multilingual, sensitive info controls) but lacks a dedicated patient self-access pathway and fillable form fields."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:24:56.764Z"
+}

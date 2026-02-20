@@ -1,0 +1,120 @@
+{
+  "org_id": "valleywise-health",
+  "org_name": "Valleywise Health Medical Center",
+  "category_id": "ch-independent-government-west",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Access to Protected Health Information (Form 45643)",
+      "url": "https://valleywisehealth.org/wp-content/uploads/2024/06/Form-45643-Patient-Request-For-Access-To-Protected-Health-Information_ENG_SPA.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use or Disclose PHI (Form 43439)",
+      "url": "https://valleywisehealth.org/wp-content/uploads/2024/09/VH_Form-43439-Auth-to-Use-or-Disclose-PHI_2024.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "HIM Release of Information fax",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "ROI@valleywisehealth.org",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://valleywisehealth.org/wp-content/uploads/2024/09/VH_Form-43439-Auth-to-Use-or-Disclose-PHI_2024.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://valleywisehealth.org/wp-content/uploads/2024/06/Form-45643-Patient-Request-For-Access-To-Protected-Health-Information_ENG_SPA.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "patient access request form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Valleywise Health provides a dedicated bilingual (English/Spanish) 'Patient Request for Access to Protected Health Information' form (Form 45643), separate from their general third-party authorization form, with submission via fax or email to the HIM department.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 16,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "SSN field on patient access form creates unnecessary identity theft risk and is not required by HIPAA",
+      "Spanish translation references nonexistent 'documento 43780' instead of correct Form 43439 for sensitive information authorization"
+    ],
+    "bright_spots": [
+      "Dedicated patient access form (Form 45643) distinct from third-party authorization (Form 43439) — a best practice many organizations lack",
+      "Full bilingual English/Spanish form — complete parallel translation, not just a summary — appropriate for Phoenix demographics",
+      "Granular record type selection with 16+ specific categories giving patients meaningful control over request scope",
+      "Email encryption transparency with default-to-encrypted and informed opt-out option",
+      "Multiple delivery format options including MyChart patient portal, CD, USB, email, fax, and paper"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms are easily found via web search and linked from the organization's patient records page; publicly accessible PDFs with descriptive filenames and no access barriers."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Digitally-authored PDF with clean text layer but zero fillable fields requires printing and handwriting; however, fax and email submission are available, providing electronic submission workarounds."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with logical flow, plain language, clear instructions, and 16+ granular record type options; minor issues include SSN field and Spanish cross-reference error."
+    },
+    "patient_centeredness": {
+      "score": 5,
+      "rationale": "Level 5: Dedicated patient self-access form explicitly designed for individual access rights, clearly distinct from the third-party release authorization form, with comprehensive delivery options including MyChart portal."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization or in-person requirements; HIPAA-compliant 30-day response timeline stated; minor ambiguity in fee disclosure ('may charge a fee' without specific amounts) and unnecessary SSN collection."
+    },
+    "overall": {
+      "score": 4.0,
+      "grade": "B",
+      "summary": "Valleywise Health demonstrates strong patient-centeredness with a dedicated bilingual patient access form, granular record selection, and multiple delivery options, held back by the lack of fillable PDF fields and vague fee disclosure."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:15:05.845Z"
+}

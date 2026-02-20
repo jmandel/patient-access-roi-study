@@ -1,0 +1,109 @@
+{
+  "org_id": "labette-health",
+  "org_name": "Labette Health",
+  "category_id": "ch-independent-nonprofit-midwest",
+  "primary_form": "formstack-screenshot.png",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Formstack medical records request form",
+      "vendor": "Formstack",
+      "url": "https://labetteheatlh.formstack.com/forms/medical_records_request",
+      "is_primary": true
+    },
+    {
+      "type": "in_person",
+      "name": "Office visit (main entrance)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://sa1s3.patientpop.com/assets/docs/223399.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Generic PatientPop ROI authorization template (not Labette Health's own form)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.labettehealth.com/media/fc6f03662a5e4b14bfb881ecb89bc2f9/notice-of-privacy-practices-effective-november-17.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Notice of Privacy Practices"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patient submits an online Formstack form with electronic signature, selecting 'Patient/Self' as the release direction and relationship type.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Formstack URL contains a typo in the subdomain ('labetteheatlh' instead of 'labettehealth'), creating link fragility"
+    ],
+    "bright_spots": [
+      "Fully digital workflow with electronic signature — no printing or mailing required",
+      "Email delivery option for receiving requested records",
+      "15+ specific record-type checkboxes guide patients through what's available",
+      "Photo ID upload for built-in identity verification",
+      "Sensitive information exclusion options (mental health, communicable diseases, drug/alcohol)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — linked directly from the 'Patients & visitors' menu and the Contact Us page (2 clicks from homepage), though not discoverable via web search or direct URL due to bot blocking."
+    },
+    "technical_accessibility": {
+      "score": 5,
+      "rationale": "Level 5: Fully functional digital workflow — the Formstack form supports online completion, electronic signature, photo ID upload, and electronic submission with no printing or handwriting required."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with 15+ record-type checkboxes, clear sections, and structured fields; minor issues include the URL typo and lack of a PDF fallback for offline users."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access is clearly accommodated — 'Patient/Self' is an explicit option for both release direction and relationship fields, with email delivery and sensitive-info exclusions, though the form serves multiple purposes rather than being dedicated to patient self-access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Includes standard HIPAA authorization elements (1-year expiration, right to revoke, non-conditioning, re-disclosure warning); minor ambiguity in fee disclosure ('reasonable fee' mentioned in NPP but no specifics)."
+    },
+    "overall": {
+      "score": 4.25,
+      "grade": "B",
+      "summary": "Labette Health offers a genuinely digital-first records request experience via Formstack with electronic signature and patient self-access clearly supported, earning above-average marks across all dimensions with minor gaps in findability and fee transparency."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:09:02.594Z"
+}

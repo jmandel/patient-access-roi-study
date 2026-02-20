@@ -1,0 +1,56 @@
+{
+  "org_id": "huntington-hospital",
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Health Information (third-party)",
+      "url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/release-of-health-information-form-english.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Request for Access to Health Information by Patient or Personal Representative",
+      "url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/request-for-access-to-health-information-form-english-2022.pdf",
+      "is_primary": true
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/release-of-health-information-form-english.pdf",
+      "scope": "system",
+      "language": "en",
+      "is_current": true,
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/release-of-health-information-form-instructions.pdf",
+      "scope": "system",
+      "language": "en",
+      "is_current": true,
+      "document_type": "form instructions"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/request-for-access-to-health-information-form-english-2022.pdf",
+      "scope": "system",
+      "language": "en",
+      "is_current": true,
+      "document_type": "patient access request form"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.northwell.edu/sites/northwell.edu/files/2022-03/request-for-access-to-health-form-instructions.pdf",
+      "scope": "system",
+      "language": "en",
+      "is_current": true,
+      "document_type": "form instructions"
+    }
+  ],
+  "parent_system": "Northwell Health",
+  "uses_system_forms": true,
+  "retrieval_difficulty": "easy",
+  "bot_blocking_encountered": false,
+  "browser_fallback_needed": false
+}

@@ -1,0 +1,118 @@
+{
+  "org_id": "hopehealth",
+  "org_name": "HopeHealth",
+  "category_id": "fqhc-independent-nonprofit-south",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "HealthMark Request Manager",
+      "vendor": "HealthMark Group",
+      "url": "https://requestmanager.healthmark-group.com/register",
+      "is_primary": true
+    },
+    {
+      "type": "email",
+      "name": "HealthMark Requestor Support Team",
+      "vendor": "HealthMark Group",
+      "url": null,
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "HealthMark Support Line",
+      "vendor": "HealthMark Group",
+      "url": null,
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.hope-health.org/wp-content/uploads/2026/02/Notice-of-Privacy-Practices_26.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "privacy notice"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.hmutx.com/wp-content/uploads/2024/06/HealthMark-Medical-Record-Release-Auth.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to HealthMark Group's online Request Manager portal, which requires email verification to initiate a records request.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No HopeHealth-specific ROI form publicly available; patients have no downloadable form option",
+      "NPP misspells HIPAA as 'HIPPA' in the Privacy Officer contact email",
+      "Generic HealthMark form cites §164.508 (authorization) instead of §164.524 (patient right of access)"
+    ],
+    "bright_spots": [
+      "Fully digital records request pathway via HealthMark Group online portal",
+      "NPP includes concrete, patient-friendly examples of permitted uses and disclosures",
+      "Granular record-type selection with 11 categories on the generic form"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: The medical records page with HealthMark portal link is accessible via website navigation (Resources > Medical Records) but requires moderate effort to locate and no downloadable form exists for patients who prefer a traditional approach."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: The primary pathway is a fully digital online portal (HealthMark Request Manager), but the email-verification gate and the lack of fillable fields on the only available PDF form represent a gap in the otherwise digital workflow."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: The generic HealthMark form has a logical top-to-bottom flow but uses dense legal language with inline CFR citations, lacks instructions, and provides no delivery format options — adequate but with notable clarity and usability problems."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the HealthMark portal to request records, but the process was not designed for patient self-access as a first-class use case — the generic form treats 'Patient Request' as one of six purposes alongside Attorney and Insurance, and cites the wrong HIPAA section."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: No illegal barriers exist, but applying §164.508 authorization requirements (including a 180-day fixed expiration) to patient right-of-access requests goes beyond what the law requires, and there is no fee or timeline disclosure."
+    },
+    "overall": {
+      "score": 3.25,
+      "grade": "C",
+      "summary": "HopeHealth provides a digital records request pathway via HealthMark Group's portal, but lacks a patient-specific access route, publishes no downloadable form, and the available documentation uses the wrong HIPAA framework for patient access."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:26:22.058Z"
+}

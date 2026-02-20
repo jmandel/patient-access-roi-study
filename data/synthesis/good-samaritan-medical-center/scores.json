@@ -1,0 +1,133 @@
+{
+  "org_id": "good-samaritan-medical-center",
+  "org_name": "Good Samaritan Medical Center",
+  "category_id": "ch-major-forprofit-south",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Tenet Healthcare (Palm Beach Health Network)",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "PBHN Authorization to Use and Disclose PHI (network-wide form)",
+      "url": "https://www.palmbeachhealthnetwork.com/docs/pbhnbuildlibraries/default-document-library/authorization-to-use-disclose-phi-(eng).pdf?sfvrsn=4ea88cdc_1",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Good Samaritan Medical Center Authorization to Use and Disclose PHI (facility-specific form)",
+      "url": "https://www.goodsamaritanmc.com/docs/librariesprovidergoodsam/default-document-library/authorization-to-use-disclose-phi.pdf?sfvrsn=be460533_0",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Datavant email submission",
+      "vendor": "Datavant",
+      "url": "mailto:SM-Tenetgoodsamaritan@Datavant.com",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "HIM Department fax",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to HIM Department",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person pickup",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.goodsamaritanmc.com/docs/librariesprovidergoodsam/default-document-library/authorization-to-use-disclose-phi.pdf?sfvrsn=be460533_0",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (facility-specific, 2014)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.palmbeachhealthnetwork.com/docs/pbhnbuildlibraries/default-document-library/authorization-to-use-disclose-phi-(eng).pdf?sfvrsn=4ea88cdc_1",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (network-wide, 2020)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients must use a generic third-party authorization form, naming themselves as the recipient and selecting 'Personal Use' as the purpose.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es", "ht"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "SSN field collected on downloadable form — unnecessary for HIPAA identity verification and creates identity theft risk",
+      "Form-2 missing Privacy Office contact information — revocation paragraph references address 'listed below' that does not exist",
+      "Form-2 omits remuneration disclosure despite Datavant (commercial ROI vendor) involvement, potentially violating 45 CFR § 164.508(a)(4)",
+      "Exposed mail-merge placeholders (e.g. «PatientNumber», «PatientName») visible to patients in downloaded PDF"
+    ],
+    "bright_spots": [
+      "Multilingual availability: English, Spanish, and Haitian Creole versions offered via parent system",
+      "Granular record type selection with 20+ checkbox categories giving patients meaningful control",
+      "Flexible authorization term options (specific date, until fulfilled, until event, until withdrawn)",
+      "Proper handling of super-confidential information categories per Florida law and 42 CFR Part 2"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms are easy to find with a basic web search — direct link from hospital website (form-1) and parent system medical records page (form-2) — though bot blocking required browser workaround for programmatic access."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Form has a text layer (not a scan) and fax/email submission is available, but zero fillable fields means the entire completion process requires printing and handwriting — usable digitally only with workarounds."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Logical section flow and good record-type granularity, but notable problems including exposed merge-field placeholders, missing Privacy Office contact info, moderately legalistic language, and small font sizes."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form by naming themselves as recipient and checking 'Personal Use,' but it was designed for third-party disclosure — no Right of Access language, no format options, and SSN collection creates unnecessary friction."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Revocation rights are clearly stated and identity verification is reasonable, but SSN collection exceeds HIPAA requirements, no fee disclosure is provided, and form-2's missing contact info and omitted remuneration disclosure raise concerns."
+    },
+    "overall": {
+      "score": 3.15,
+      "grade": "C",
+      "summary": "Good Samaritan Medical Center provides a functional but patient-unfriendly records request process through generic third-party authorization forms that lack digital fillability and contain confusing internal system artifacts, partially offset by multilingual availability and granular record selection."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:04:04.231Z"
+}

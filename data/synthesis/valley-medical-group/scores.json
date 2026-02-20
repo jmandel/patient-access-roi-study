@@ -1,0 +1,131 @@
+{
+  "org_id": "valley-medical-group",
+  "org_name": "Valley Medical Group",
+  "category_id": "practice-independent-forprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "MediCopy Authorization for the Release of Medical Records (English)",
+      "vendor": "MediCopy",
+      "url": "https://medicopy.net/sites/default/files/2023-12/MediCopy%20MRO%20Authorization%20%28English%29.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "online_portal",
+      "name": "MediCopy HelloSign online authorization",
+      "vendor": "MediCopy/HelloSign",
+      "url": "https://app.hellosign.com/s/01LCH5zj",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "MediCopy Authorization (Spanish)",
+      "vendor": "MediCopy",
+      "url": "https://medicopy.net/sites/default/files/2023-12/MediCopy%20MRO%20Authorization%20%28Spanish%29.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission (fax listed as delivery method on form; submission fax not specified)",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email delivery option on MediCopy form",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://medicopy.net/sites/default/files/2023-12/MediCopy%20MRO%20Authorization%20%28English%29.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://medicopy.net/sites/default/files/2023-12/MediCopy%20MRO%20Authorization%20%28Spanish%29.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient clicks 'REQUEST RECORDS' on vmgma.com, is redirected to MediCopy's third-party portal, and downloads a generic release-of-information authorization form that requires listing themselves as both patient and recipient.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "SSN (last 4 digits) collected unnecessarily on a non-fillable PDF — privacy risk",
+      "No submission instructions on the form (no address, fax number, or email for returning completed authorization)",
+      "Generic unbranded form — patient must guess facility name to write in blank field",
+      "Default release of sensitive records (substance abuse, HIV, psychiatric) unless patient opts out"
+    ],
+    "bright_spots": [
+      "Spanish-language version available — notable for a small independent practice",
+      "Online HelloSign alternative provides fully digital submission pathway",
+      "Email delivery option for receiving records",
+      "Sensitive-information exclusion checkboxes give patients granular control over disclosure",
+      "Conversational plain-language section headers ('Tell us about the patient') improve approachability"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: Requires moderate effort — the 'REQUEST RECORDS' link on vmgma.com is visible but redirects to a third-party domain (medicopy.net), and the PDF is 3 clicks away across domain boundaries with no VMG branding to confirm the patient is in the right place."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds — the PDF itself has zero fillable fields (print-and-fill only), but MediCopy offers a HelloSign online form alternative and fax/email delivery options, providing a workable digital pathway despite the PDF's limitations."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor issues — the single-page form uses conversational headers, logical flow, and granular record-type selection, but lacks submission instructions and the Spanish translation contains notable errors ('lanzado' for 'released')."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic release form requires patients to fill in their own info as both patient and recipient, with 'Personal Use' as just one of several purpose options and no mention of HIPAA Right of Access."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — unnecessary SSN collection, no fee schedule despite fee references, default release of sensitive records via opt-out framing, and no statement of patient access rights or fee limitations under HIPAA."
+    },
+    "overall": {
+      "score": 3.15,
+      "grade": "C",
+      "summary": "Valley Medical Group provides a functional but generic MediCopy-powered records request pathway with a visible website link and online alternative, but the non-fillable PDF, missing submission instructions, lack of patient access differentiation, and unnecessary SSN collection reflect an outsourced process with limited patient-centeredness."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:32:52.828Z"
+}

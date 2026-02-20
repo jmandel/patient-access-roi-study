@@ -1,0 +1,118 @@
+{
+  "org_id": "heartland-community-health-center",
+  "org_name": "Heartland Community Health Center",
+  "category_id": "fqhc-independent-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release and Disclose Patient Information",
+      "url": "https://heartlandhealth.org/wp-content/uploads/2021/10/FINAL-Updated-Release-of-Information-Form-2021.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "email",
+      "name": "Email submission to HIM department",
+      "url": "mailto:medrecords@heartlandhealth.org",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM department (785-856-0375)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Attn: Med Recs, 1312 W. 6th St, Lawrence, KS 66044",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "HIM Department phone line (785-842-4477 Option 5)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://heartlandhealth.org/wp-content/uploads/2021/10/FINAL-Updated-Release-of-Information-Form-2021.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a single general-purpose 'Authorization to Release and Disclose Patient Information' PDF form for all records requests, including patient self-access.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Witness signature line present on form — not explicitly required but its presence may deter patients",
+      "Double liability waiver for email delivery may discourage patients from choosing electronic delivery",
+      "Mental health records require a completely separate form and cannot be combined with other record types"
+    ],
+    "bright_spots": [
+      "Pre-bundled 'Record Set' option reduces decision burden with a curated default records bundle",
+      "Multiple submission channels offered: email, fax, and mail",
+      "Plain-language opening sentence provides patient-friendly context",
+      "Single-page form keeps the process concise"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: requires moderate effort — the form was not found via generic web searches and required a site-scoped search to locate in a WordPress uploads directory, suggesting it is not prominently linked from patient-facing pages."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: primarily a paper workflow — despite being a born-digital PDF with a text layer, it has zero fillable fields, requiring patients to print and handwrite; submission can be done electronically (email/fax) but the form itself demands a paper step."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: well-organized with minor issues — the form has a logical flow, clear section ordering, a helpful pre-bundled record set option, and plain-language opening, but is very dense for a single page and the mental health records restriction adds confusion."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: patient self-access is an afterthought — the form is a generic third-party release authorization with 'Records From/To' fields designed for transfers, not individual access; 'Patient's Request' is merely one checkbox among several purpose options with no dedicated pathway."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: some requirements that may go beyond what the law requires — the ambiguous witness signature line could be interpreted as a barrier, no fees are disclosed or waived, no Right of Access reference is included, but revocation rights and treatment non-conditioning are properly stated."
+    },
+    "overall": {
+      "score": 2.65,
+      "grade": "C",
+      "summary": "Heartland Community Health Center provides a functional but paper-dependent generic release form with multiple submission channels, lacking a dedicated patient access pathway or fillable fields."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:28:34.940Z"
+}

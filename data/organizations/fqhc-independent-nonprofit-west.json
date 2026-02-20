@@ -1,0 +1,114 @@
+[
+  {
+    "org_id": "virginia-garcia-memorial-health-center",
+    "name": "Virginia Garcia Memorial Health Center",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "OR",
+    "city": "Hillsboro",
+    "website": "https://virginiagarcia.org",
+    "bed_count": null,
+    "notes": "Founded to serve migrant farmworker communities; serves over 50,000 patients annually in Washington County"
+  },
+  {
+    "org_id": "el-rio-health",
+    "name": "El Rio Health",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "AZ",
+    "city": "Tucson",
+    "website": "https://elrio.org",
+    "bed_count": null,
+    "notes": "One of the largest FQHCs in the nation; serves roughly 1 in 10 Tucson residents across 14 clinics"
+  },
+  {
+    "org_id": "la-clinica-de-la-raza",
+    "name": "La Clínica de La Raza",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Oakland",
+    "website": "https://laclinica.org",
+    "bed_count": null,
+    "notes": "Serving the Bay Area since 1971; provides primary care, dental, and behavioral health to underserved communities"
+  },
+  {
+    "org_id": "sea-mar-community-health-centers",
+    "name": "Sea Mar Community Health Centers",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "WA",
+    "city": "Seattle",
+    "website": "https://www.seamar.org",
+    "bed_count": null,
+    "notes": "Founded 1978 to serve Latino community; now over 90 clinics across western Washington"
+  },
+  {
+    "org_id": "anchorage-neighborhood-health-center",
+    "name": "Anchorage Neighborhood Health Center",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "AK",
+    "city": "Anchorage",
+    "website": "https://www.anhc.org",
+    "bed_count": null,
+    "notes": "Alaska's largest independent FQHC; provides care in 56 languages; over 51 years of service"
+  },
+  {
+    "org_id": "northwest-colorado-health",
+    "name": "Northwest Colorado Health",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CO",
+    "city": "Steamboat Springs",
+    "website": "https://northwestcoloradohealth.org",
+    "bed_count": null,
+    "notes": "Serving frontier and rural communities in northwest Colorado since 1964"
+  },
+  {
+    "org_id": "nevada-health-centers",
+    "name": "Nevada Health Centers",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "NV",
+    "city": "Carson City",
+    "website": "https://www.nevadahealthcenters.org",
+    "bed_count": null,
+    "notes": "Largest provider of care for uninsured/underinsured in Nevada; 18+ locations statewide since 1977"
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "org_id": "phelps-memorial-health-center",
+  "org_name": "Phelps Memorial Health Center",
+  "category_id": "cah-independent-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Request for Release of Information Form",
+      "url": "https://www.phelpsmemorial.com/sites/default/files/Request%20for%20Release%20of%20Information%20Form_1.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission (Hospital: 308-995-3333, Clinic: 308-995-4868)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.phelpsmemorial.com/sites/default/files/Request%20for%20Release%20of%20Information%20Form_1.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "A single generic ROI form with 'Patient' as one checkbox option under 'Release Records To,' used for all release purposes.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "compliant",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "HIPAA law name cited incorrectly as 'Health Information Portability and Accountability Act' instead of 'Health Insurance Portability and Accountability Act'",
+      "Form dated 8/1/2017 — over 8 years old with no apparent updates"
+    ],
+    "bright_spots": [
+      "First 10 pages free, reducing cost burden for routine patient access",
+      "Single-page form efficiently covers all ROI requirements",
+      "'Complete Health Record' checkbox simplifies full-record requests",
+      "Explicit anti-conditioning language with HIPAA § 164.508 citation"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: Form found via basic web search (easy retrieval) but not linked from the organization's patient forms page — a patient browsing the website would not discover it through normal navigation."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Zero fillable fields requiring print-and-handwrite workflow, but fax submission is available (two fax numbers listed), meeting the threshold for 'fax submission available' at this level."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Logical top-to-bottom flow and efficient single-page design, but dense legal paragraphs in small font, staff-use fields ('Release completed by', 'MR #') on the patient-facing form, and cramped layout create notable clarity issues."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form (with 'Patient' checkbox and inspection option), but it is a generic ROI authorization not designed for patient self-access; patients must figure out which fields apply to them versus third-party recipients."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Reasonable fees with first 10 pages free, explicit anti-conditioning language, patient rights mentioned, no notarization required; minor issues (HIPAA name error, calendar-year expiration, no patient-access fee distinction) are ambiguities that do not materially impede access."
+    },
+    "overall": {
+      "score": 3.2,
+      "grade": "C",
+      "summary": "Phelps Memorial provides a functional single-page ROI form with patient-friendly fees, but the non-fillable design, absence from website navigation, and generic third-party-oriented form place it in the middle tier for patient self-access."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:19:09.491Z"
+}

@@ -1,0 +1,111 @@
+{
+  "org_id": "esse-health",
+  "org_name": "Esse Health",
+  "category_id": "practice-independent-forprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Medical Information PDF",
+      "url": "https://www.essehealth.com/wp-content/uploads/2019/05/Authorization-for-Release-of-Medical-Information-%E2%80%93-For-Records-Transfer-or-Release.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "DocuSign electronic ROI submission",
+      "vendor": "DocuSign",
+      "url": "https://powerforms.docusign.net/2cbc2fa1-7d5c-40ac-a8f7-8e9353199ff2?env=na4&acct=ffadcb60-6f40-43b9-a734-fdd1289bd2ee&accountId=ffadcb60-6f40-43b9-a734-fdd1289bd2ee",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.essehealth.com/wp-content/uploads/2019/05/Authorization-for-Release-of-Medical-Information-%E2%80%93-For-Records-Transfer-or-Release.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.essehealth.com/wp-content/uploads/2019/05/Physician-Office-Medical-Records-and-Message-Authorizations-%E2%80%93-Allows-Us-to-Leave-Messages-and-Speak-with-a-Designated-Person-About-Medical-and-Financial-Information.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Communication/message authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic Authorization for Release of Medical Information form, available as a PDF or via DocuSign electronic submission, with no differentiation between patient self-access and third-party release.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [],
+    "bright_spots": [
+      "DocuSign electronic submission option enables fully digital form completion and submission",
+      "Concise single-page form design",
+      "Explicit voluntariness statement — signing not required for treatment"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — site-scoped search immediately surfaced the PDF, and the patient forms page is well-organized with clear labeling."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the PDF itself has non-functional fillable fields and relies on underline blanks, but the DocuSign alternative provides a complete digital completion and submission pathway."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but with notable clarity issues — the form is well-organized and concise at one page, but the from/to structure is confusing for patient self-access and the disclosure paragraphs use moderate legalese."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic authorization form forces patients to figure out how to cast themselves as the recipient, with no guidance, no delivery format options, and no acknowledgment of patient access rights as distinct from third-party release."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization or treatment conditioning, cites CFR 164.524, and provides revocation rights, but fee disclosure is vague ('there may be a charge') with no specifics on amounts or HIPAA cost-based limits."
+    },
+    "overall": {
+      "score": 3.6,
+      "grade": "B",
+      "summary": "Esse Health provides a findable, functional records request process elevated by a DocuSign electronic submission option, but undermined by a generic authorization form that does not differentiate patient self-access from third-party release."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:31:15.297Z"
+}

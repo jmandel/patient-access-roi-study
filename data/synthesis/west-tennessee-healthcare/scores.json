@@ -1,0 +1,135 @@
+{
+  "org_id": "west-tennessee-healthcare",
+  "org_name": "West Tennessee Healthcare",
+  "category_id": "ch-regional-government-south",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Request for Access to Protected Health Information (form-3)",
+      "url": "https://www.wth.org/wp-content/uploads/2020/05/ACCESS-REQUEST-2020.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "online_portal",
+      "name": "ScanSTAT patient record request portal",
+      "vendor": "ScanSTAT",
+      "url": "https://www.scanstat.com/patient-record-request/",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of PHI (form-2, third-party)",
+      "url": "https://www.wth.org/wp-content/uploads/2020/05/AUTH-2020.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission of completed PDF form",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission of completed PDF form",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.wth.org/wp-content/uploads/2019/03/Medical_Release_Authorization.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "General medical release authorization (West Tennessee Medical Group Clinics)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.wth.org/wp-content/uploads/2020/05/AUTH-2020.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Third-party release of information authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.wth.org/wp-content/uploads/2020/05/ACCESS-REQUEST-2020.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient access request form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "A dedicated 2-page PDF form titled 'Request for Access to Protected Health Information' explicitly for patients requesting their own records, with an alternative ScanSTAT online portal for hospital records.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Liability waiver requires patients to hold facility harmless as a condition of exercising Right of Access",
+      "90-day expiration clause applied to a patient access request (conflates request with authorization)",
+      "Missing non-conditioning statement on the patient access form (present only on the third-party form)"
+    ],
+    "bright_spots": [
+      "Dedicated patient access form clearly distinct from third-party release authorization",
+      "Spanish-language versions of both key forms available",
+      "Portal delivery option with streamlined instructions ('proceed to signature line')",
+      "Email delivery with encrypted/unencrypted choice and risk disclosure",
+      "ScanSTAT online request portal as alternative digital pathway"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms are easy to find with a basic web search, directly linked from a clearly labeled medical records page; minor deduction because three forms require patients to identify the correct one."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The primary PDF form has zero fillable fields and must be printed and handwritten, but fax and email submission are available; the ScanSTAT portal provides an alternative digital pathway but the core form experience remains paper-dependent."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with logical flow from identification to delivery to records selection to legal terms; minor issues include dense legal language in 'I understand' statements, no section headers, and unexplained clinical terms in the 15-category record selection."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access is clearly a first-class use case with a dedicated form and explicit subtitle, but authorization-style language (expiration clause, liability waiver) and missing rights/fee information prevent a score of 5."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: The liability waiver and 90-day expiration clause go beyond what HIPAA requires for patient access requests; SSN and driver's license collection add unnecessary identification burden; the non-conditioning statement is missing from the patient access form."
+    },
+    "overall": {
+      "score": 3.55,
+      "grade": "B",
+      "summary": "West Tennessee Healthcare demonstrates above-average patient-centeredness by maintaining a dedicated access form and online portal, but non-fillable PDFs, legacy authorization language, and a liability waiver prevent a top-tier grade."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:10:06.708Z"
+}

@@ -1,0 +1,123 @@
+{
+  "org_id": "owensboro-health",
+  "org_name": "Owensboro Health",
+  "category_id": "ch-regional-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use and Disclosure of Health Information",
+      "url": "https://www.owensborohealth.org/sites/default/files/inline/b7/health-disclosure-form.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Health Information Management",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email to HIM ROI (himroi@owensborohealth.org)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Health Information Management",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.owensborohealth.org/sites/default/files/inline/b7/health-disclosure-form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.owensborohealth.org/sites/default/files/inline/1a/health-disclosure-form-instructions.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "form instructions"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a general-purpose HIPAA authorization form, checking 'Me' as recipient and 'Patient Request' as purpose, then submit via fax, mail, or email.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 17,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "120-day authorization expiration applied to patient self-access requests, conflating time-limited third-party authorization with the patient's ongoing right of access under HIPAA § 164.524"
+    ],
+    "bright_spots": [
+      "EHI Export explicitly offered as a format option with detailed explanation covering all ePHI across the organization and named Community Connect Partners",
+      "Dedicated 2-page plain-language companion instruction document walks patients through each form section",
+      "Seven format options (Paper, MyChart, EHI Export, Email, Fax, CD, USB) and six delivery methods including encrypted and unencrypted email with risk warning",
+      "Help phone number provided for patients who need assistance completing the form"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — forms were immediately found via simple web search and directly downloadable with no login, bot blocking, or multi-click navigation required."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds and fax/email submission available — the form has a text layer but zero fillable fields, requiring print-and-handwrite then fax or scan-and-email to submit."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — logical section flow, clear headers, reasonable 2-page length, and a companion instruction document in plain language, though some regulatory terminology in the EHI and rights sections."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic HIPAA authorization form serves all purposes, and patients must determine which fields apply to self-access vs. third-party release, though the 'Me' checkbox and instruction document help."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization, multiple submission channels, solid rights statement, but the 120-day expiration unnecessarily applied to patient self-access and no fee transparency."
+    },
+    "overall": {
+      "score": 3.65,
+      "grade": "B",
+      "summary": "Owensboro Health earns a B through excellent findability, comprehensive format/delivery options, and a rare EHI Export offering, limited by a non-fillable form and lack of a dedicated patient access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:05:27.501Z"
+}

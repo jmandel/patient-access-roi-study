@@ -1,0 +1,113 @@
+{
+  "org_id": "prevea-health",
+  "org_name": "Prevea Health",
+  "category_id": "practice-independent-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of Health Information (English)",
+      "url": "https://www.prevea.com/getmedia/b4affd6c-f682-4822-bc36-43414b222448/Medical-Release-Form-English.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of Health Information (Hmong)",
+      "url": "https://www.prevea.com/getmedia/6f02f545-9692-485e-a023-c504c1b75af4/Medical-Release-Form-Hmong.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of Health Information (Somali)",
+      "url": "https://www.prevea.com/getmedia/5cb33e00-286b-4462-9a57-96821b7a2940/Medical-Release-Form-Somali.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of Health Information (Spanish)",
+      "url": "https://www.prevea.com/getmedia/b733b89f-4a4d-4011-9919-fe0ce21bc4d2/Medical-Release-Form-Spanish.pdf",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.prevea.com/getmedia/b4affd6c-f682-4822-bc36-43414b222448/Medical-Release-Form-English.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "A generic HIPAA authorization form with explicit 'Self' checkbox and 'Patient Request' purpose option, allowing patients to request their own records alongside third-party releases.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "hmn", "so", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Date range defaults to past 2 years if left blank, silently limiting access for patients who do not specify a range",
+      "No submission instructions provided — no fax number, mailing address, or email for HIM department on the form"
+    ],
+    "bright_spots": [
+      "Form available in four languages: English, Hmong, Somali, and Spanish — reflecting local demographics",
+      "Five delivery options including electronic format and email with encrypted/unencrypted distinction",
+      "Explicit 'Self' checkbox and 'Patient Request' purpose option accommodate patient self-access"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — form is directly linked from the Patient Forms page and immediately found via site-scoped web search with no bot blocking or login."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF has zero fillable fields (must print and handwrite) and provides no submission instructions (no fax number, address, or email on the form itself)."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with nine numbered sections and clear labels, but the patient rights section (Section 8) is a dense paragraph of complex legalese that undermines overall clarity."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form via the 'Self' checkbox and 'Patient Request' purpose, but it is fundamentally a generic authorization form not designed specifically for patient self-access, and the missing submission instructions leave patients without a clear next step."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities — fees mentioned without specific amounts, restrictive 2-year date range default — but no notarization requirement, patient rights are disclosed, and nothing materially impedes access or misrepresents rights."
+    },
+    "overall": {
+      "score": 3.4,
+      "grade": "C",
+      "summary": "Prevea Health offers an easily findable, multilingual authorization form with good delivery options, but the non-fillable PDF format, absent submission instructions, and generic third-party release design significantly limit the patient self-access experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:38:00.000Z"
+}

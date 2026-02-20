@@ -1,0 +1,119 @@
+{
+  "org_id": "rio-grande-hospital",
+  "org_name": "Rio Grande Hospital",
+  "category_id": "cah-independent-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Information PDF",
+      "url": "https://riograndehospital.org/wp-content/uploads/2018/12/AuthorizationForReleaseOfInformation.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Hospital JotForm records request",
+      "vendor": "JotForm",
+      "url": "https://riograndehospital.org",
+      "is_primary": true
+    },
+    {
+      "type": "online_portal",
+      "name": "Clinic JotForm records request",
+      "vendor": "JotForm",
+      "url": "https://riograndehospital.org",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission (referenced in office-use section)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission (referenced in office-use section)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://riograndehospital.org/wp-content/uploads/2018/12/AuthorizationForReleaseOfInformation.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic Authorization for Release of Information form or an embedded JotForm on the hospital/clinic website; neither is specifically designed for patient self-access.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 14,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "SSN collection: form requests Social Security Number as a standard identifier, creating unnecessary identity theft risk",
+      "No submission instructions on the PDF form — no address, fax number, email, or reference to the online JotForm"
+    ],
+    "bright_spots": [
+      "Online JotForm submission available on both hospital and clinic pages, providing a digital-first alternative",
+      "Non-conditioning language explicitly states healthcare will not be affected by declining to sign",
+      "Concise single-page format"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — web search quickly surfaced the hospital's patient records pages with the PDF in the sidebar and JotForms prominently displayed."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds; the PDF itself has zero fillable fields requiring print-and-handwrite, but the organization offers JotForm online submission as an alternative electronic pathway with fax also available."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but has notable problems — the single-page format is concise and logically organized, but the dense opening paragraph, limited record-type checkboxes, stern 'MUST BE FILLED OUT COMPLETELY' header, and lack of submission instructions create clarity issues."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought — the form is a generic third-party authorization with 'I authorize ___ to disclose' framing, no reference to HIPAA Right of Access, no dedicated patient access pathway, and the 'Personal Use' checkbox is the only nod to self-access."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — SSN collection is unnecessary for patient access requests and creates risk; no fee disclosure or response time commitment; but revocation language and non-conditioning statement are properly included."
+    },
+    "overall": {
+      "score": 2.9,
+      "grade": "C",
+      "summary": "Rio Grande Hospital provides a functional but dated records request experience with a generic third-party authorization form; the online JotForm option is a meaningful digital pathway, but the PDF form lacks fillable fields, collects SSN unnecessarily, and does not differentiate patient self-access from third-party release."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:21:44.061Z"
+}

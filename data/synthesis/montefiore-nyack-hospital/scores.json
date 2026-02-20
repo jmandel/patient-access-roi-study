@@ -1,0 +1,125 @@
+{
+  "org_id": "montefiore-nyack-hospital",
+  "org_name": "Montefiore Nyack Hospital",
+  "category_id": "ch-major-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Montefiore Health System",
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Health Information (Rev. 01/2022)",
+      "url": "https://www.montefiorenyack.org/sites/default/files/MNH_HIPAA_AuthorizationForm%20Rev%2001.2022FN.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Health Information Services fax",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "ROI email submission/electronic delivery",
+      "url": "mailto:ROI@montefiorenyack.org",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Health Information Services office",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Health Information Services (160 North Midland Avenue, Nyack, NY 10960)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.montefiorenyack.org/sites/default/files/MNH_HIPAA_AuthorizationForm%20Rev%2001.2022FN.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.montefiorenyack.org/sites/default/files/New%20Release%20of%20Information%20Authorization%20Form%2010.20.21.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (superseded)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization form that serves patients, attorneys, and third parties equally, selects 'PATIENT' as recipient, and submits via fax, email, or mail.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 39,
+    "page_count": 3,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "All 39 fillable fields lack accessible names, creating a screen-reader accessibility barrier",
+      "Form instructs patient to specify dates of service but provides no field for entering them",
+      "No mechanism to request full medical record vs. default 'abstract'"
+    ],
+    "bright_spots": [
+      "Electronic delivery of records via email is explicitly offered",
+      "Multiple submission channels: fax, email, phone, and mail",
+      "Fillable PDF allows digital completion without printing",
+      "Granular record-type checkboxes (ER, inpatient, outpatient, images, billing)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — a single web search surfaces the PDF directly, and the form is one click from the Medical Records page; minor bot-blocking on download prevents a 5."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — 39 fillable fields enable digital completion, and fax/email submission is available, but the form must be submitted via fax or email rather than a fully online workflow, and fillable fields lack accessible names."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but has notable problems — logical section flow and clear headers, but grammatical errors in legal text, person-switching, missing date-of-service fields despite instructions to provide them, and unclear abstract-vs-full-record default."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic HIPAA authorization form serves patients, attorneys, and third parties equally with no differentiation, and makes no reference to the patient's Right of Access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization, no in-person requirement, revocation rights clearly stated, NY-specific sensitive information protections included; fees are simply not mentioned rather than disclosed or waived."
+    },
+    "overall": {
+      "score": 3.6,
+      "grade": "B",
+      "summary": "Montefiore Nyack Hospital provides a findable, fillable authorization form with multiple submission channels and electronic delivery, but funnels patient self-access through a generic third-party release form with content design issues."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:56:55.050Z"
+}

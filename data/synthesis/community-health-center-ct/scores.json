@@ -1,0 +1,139 @@
+{
+  "org_id": "community-health-center-ct",
+  "org_name": "Community Health Center, Inc.",
+  "category_id": "fqhc-independent-nonprofit-northeast",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release or Obtain Health Information (English)",
+      "url": "https://www.chc1.com/wp-content/uploads/2019/08/ROI-English.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Autorización para Divulgar u Obtener Información Médica (Spanish)",
+      "url": "https://www.chc1.com/wp-content/uploads/2019/08/ROI-Spanish.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Luma Health ROI portal",
+      "vendor": "Luma Health",
+      "url": "https://www.chc1.com/for-patients/resources/patient-forms/",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Medical Records Department",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Medical Records Department (575 Main Street, Middletown, CT 06457)",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "myCHC patient portal",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.chc1.com/wp-content/uploads/2024/07/Release-of-Information-for-B23.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (Birth to Three program variant)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.chc1.com/wp-content/uploads/2019/08/ROI-English.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.chc1.com/wp-content/uploads/2019/08/ROI-Spanish.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic HIPAA authorization form that serves dual purposes (release to third party and obtain from third party), with an embedded self-request delivery section; the website now directs to Luma Health online portals.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Default 3-year scope limitation may restrict patients who don't explicitly request their full record",
+      "Reason for request field included, which is not required for patient self-access under HIPAA"
+    ],
+    "bright_spots": [
+      "Spanish-language version of the ROI form available",
+      "Email delivery option offered for patient self-requests",
+      "Granular exclusion controls for drug/alcohol information",
+      "Single-page form design keeps process concise",
+      "Transition to Luma Health online portal for modernized workflow"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: Requires moderate effort — the patient forms page exists and is navigable, but the PDF forms are legacy documents no longer linked from it; the current page directs to Luma Health portals, while PDFs are only discoverable via web search."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds; fax submission available — the PDF has a text layer but zero fillable fields, requiring print-and-handwrite completion, with fax as the electronic submission method."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with clear section headers and logical flow; minor issues include dense legal text at the bottom and unexplained telephone encounter distinction in record type options."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic authorization form accommodates self-requests via a delivery sub-section, but does not distinguish patient access rights from third-party release authorization."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities — no notarization or in-person requirements, 30-day timeline stated, revocation rights disclosed; however, the reason-for-request field and default 3-year scope limitation go slightly beyond what HIPAA requires for patient access."
+    },
+    "overall": {
+      "score": 3.35,
+      "grade": "C",
+      "summary": "CHC provides a functional but undifferentiated patient access pathway through a generic authorization form with a self-request section, multilingual support, and email delivery — but non-fillable fields, lack of dedicated patient access form, and minor compliance gaps limit the overall experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:25:13.808Z"
+}

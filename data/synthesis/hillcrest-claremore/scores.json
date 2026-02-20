@@ -1,0 +1,118 @@
+{
+  "org_id": "hillcrest-claremore",
+  "org_name": "Hillcrest Hospital Claremore",
+  "category_id": "ch-regional-forprofit-south",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Hillcrest HealthCare System (Ardent Health Services)",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/ardenthealth-hillcrest-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "url": null,
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use or Disclosure of PHI (HMC1072)",
+      "vendor": null,
+      "url": "https://hillcrest.com/wp-content/uploads/sites/14/2025/12/ROI.Current.English.HMC1072.pdf",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://hillcrestinternal.com/forms/Record%20Authorization%20Form_Final.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (unrelated organization — Hillcrest Internal Medicine, San Diego, CA)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://hillcrest.com/wp-content/uploads/sites/14/2025/12/ROI.Current.English.HMC1072.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "System-wide generic HIPAA authorization form with 'at the request of the patient' as one purpose option among several, supplemented by Swellbox online portal and MyChart.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Blanket liability waiver bundled into authorization — patients must release facility from liability as condition of authorizing disclosure",
+      "No submission instructions on form — no mailing address, fax number, or delivery method specified",
+      "Sensitive information consent (mental health, HIV, substance abuse) bundled with no opt-out"
+    ],
+    "bright_spots": [
+      "Multiple request pathways available: MyChart portal, Swellbox online wizard, and paper form",
+      "System-wide form clearly identifies all covered facilities via checkboxes",
+      "Centralized Medical Records Request page is easy to find and well-organized"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — the system-wide Medical Records Request page is reachable in 2-3 clicks from hillcrest.com, though direct Claremore-specific searches don't surface it."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the org offers Swellbox online portal and MyChart for electronic submission, but the downloadable paper form has zero fillable fields despite being digitally created."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but has notable problems — logical layout and clear facility selection, but dense legalistic 'I understand' section, no 'all records' option, run-on sentences in sensitive-information paragraph, and vestigial carbon-copy duplicate pages."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — generic third-party authorization form lists patient access as one purpose among many, with no reference to Right of Access or § 164.524, though portal alternatives exist."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements beyond what the law requires — blanket liability waiver bundled into authorization, vague fee disclosure with no schedule, bundled sensitive-information consent with no opt-out, though anti-conditioning and revocation language are present."
+    },
+    "overall": {
+      "score": 3.4,
+      "grade": "C",
+      "summary": "Hillcrest Hospital Claremore benefits from its parent system's multi-channel infrastructure (portal, MyChart, paper form) and easy findability, but the paper form is a non-fillable generic authorization with legalistic language, a liability waiver, and no patient access differentiation."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:22:37.513Z"
+}

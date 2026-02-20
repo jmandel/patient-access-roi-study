@@ -1,0 +1,117 @@
+{
+  "org_id": "wellspan-york-hospital",
+  "org_name": "WellSpan York Hospital",
+  "category_id": "teach-regional-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "WellSpan Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use or Disclose Health Information",
+      "url": "https://www.wellspan.org/-/media/Project/Wellspan-Site-Tenant/wellspan-site/data/media/files/Notices-and-Forms/Disclose-Health-Info.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax to HIM Release of Information Office",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email to PatientRequests@wellspan.org",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to WellSpan Health HIM, 50 Wyntre Brooke Drive, York, PA 17403",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.wellspan.org/-/media/Project/Wellspan-Site-Tenant/wellspan-site/data/media/files/Notices-and-Forms/Disclose-Health-Info.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.wellspan.org/-/media/Project/Wellspan-Site-Tenant/wellspan-site/data/media/files/Patient-Resources/Neighborhood-Hospitals/Authorization-for-Release-of-PHI---English.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (neighborhood hospitals only)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a generic system-wide HIPAA authorization form, select 'Personal' as the purpose, and submit via fax, email, or mail to the HIM office.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Requests last 4 digits of SSN, which is unnecessary for patient identification and introduces privacy risk on a faxed/mailed form"
+    ],
+    "bright_spots": [
+      "Secure portal email delivery option with 30-day PDF availability",
+      "Explicit right-to-self language: patient's right to have records released directly to them for review",
+      "Copies accepted in lieu of original form",
+      "Immediately discoverable via web search with no access barriers"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — form was immediately discoverable via straightforward web search with direct PDF link, no login walls or bot blocking."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds — born-digital PDF has a text layer but zero fillable fields, requiring print-and-handwrite completion; fax and email submission are available."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — logical 2-page layout with clear sections and good record-type granularity, but the sensitive-records paragraph is dense and the witness requirement is ambiguous."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the form is a generic third-party authorization with 'Obtain from'/'Disclose to' structure; patients must adapt it for self-access, though the 'Personal' checkbox and explicit right-to-self language help."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — SSN collection is unnecessary but limited to last 4 digits; fee amounts are unspecified but referenced as regulated; treatment non-conditioning and revocation rights are clearly stated."
+    },
+    "overall": {
+      "score": 3.65,
+      "grade": "B",
+      "summary": "WellSpan York Hospital provides an easily findable, reasonably well-designed authorization form with modern delivery options and explicit right-to-self language, but the lack of fillable fields and generic third-party form structure limit the digital and patient-centered experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:17:59.963Z"
+}

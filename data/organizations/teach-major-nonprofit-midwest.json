@@ -1,0 +1,82 @@
+[
+  {
+    "org_id": "michigan-medicine",
+    "name": "Michigan Medicine (University of Michigan Health)",
+    "category_id": "teach-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MI",
+    "city": "Ann Arbor",
+    "website": "https://www.uofmhealth.org",
+    "bed_count": 1043,
+    "notes": "Flagship academic medical center of the University of Michigan; affiliated with U-M Medical School"
+  },
+  {
+    "org_id": "barnes-jewish-hospital",
+    "name": "Barnes-Jewish Hospital",
+    "category_id": "teach-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MO",
+    "city": "St. Louis",
+    "website": "https://www.barnesjewish.org",
+    "bed_count": 1278,
+    "notes": "Largest hospital in Missouri; part of BJC HealthCare; affiliated with Washington University School of Medicine"
+  },
+  {
+    "org_id": "northwestern-memorial-hospital",
+    "name": "Northwestern Memorial Hospital",
+    "category_id": "teach-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IL",
+    "city": "Chicago",
+    "website": "https://www.nm.org",
+    "bed_count": 943,
+    "notes": "Flagship of Northwestern Medicine; affiliated with Northwestern University Feinberg School of Medicine"
+  },
+  {
+    "org_id": "osu-wexner-medical-center",
+    "name": "The Ohio State University Wexner Medical Center",
+    "category_id": "teach-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Columbus",
+    "website": "https://wexnermedical.osu.edu",
+    "bed_count": 1439,
+    "notes": "Seven-hospital academic system; affiliated with OSU College of Medicine"
+  },
+  {
+    "org_id": "university-of-iowa-hospitals",
+    "name": "University of Iowa Hospitals & Clinics",
+    "category_id": "teach-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IA",
+    "city": "Iowa City",
+    "website": "https://uihc.org",
+    "bed_count": 811,
+    "notes": "Iowa's only comprehensive academic medical center; affiliated with UI Carver College of Medicine"
+  }
+]

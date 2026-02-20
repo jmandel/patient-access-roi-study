@@ -1,0 +1,102 @@
+{
+  "org_id": "lane-county-hospital",
+  "org_name": "Lane County Hospital",
+  "category_id": "cah-independent-government-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Health Information",
+      "url": "https://www.lanecountyhospital.com/docs/Authorization_for_release_of_health_information.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Lane County Hospital or Lane County Medical Clinic",
+      "is_primary": true
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.lanecountyhospital.com/docs/Authorization_for_release_of_health_information.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must use a generic third-party authorization form, filling in themselves as both authorizer and recipient, then fax it to the hospital.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 12,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Social Security Number requested — not required for HIPAA processing and creates identity theft risk on a faxed form",
+      "Witness signature line creates implicit requirement not mandated by HIPAA",
+      "Cryptic 'RESOURCE: MARKETING AUTHORIZATION FORM' reference at bottom may confuse patients about the form's purpose"
+    ],
+    "bright_spots": [
+      "Exceptionally easy to find — one click from a clearly labeled Records Request page",
+      "Granular record-type selection with 16 distinct categories giving patients meaningful control",
+      "Kansas SB 119 citation for one-year authorization expiration — a useful compliance detail",
+      "Clear revocation instructions with named Privacy Officer and full contact information"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — form is one click from a clearly labeled Records Request page found immediately via basic web search."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds; fax submission available — the PDF has a text layer enabling annotation but zero fillable fields require print-and-handwrite, with fax as the electronic submission option."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — single-page form with logical flow and 16 granular record-type checkboxes, but marred by title typo, duplicate checkbox, and cryptic footer reference."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the third-party release structure forces patients to figure out how to repurpose the form for self-access with no guidance."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that go beyond what the law requires — SSN collection and witness signature line are not required by HIPAA for patient access and create unnecessary barriers, though revocation and expiration language are solid."
+    },
+    "overall": {
+      "score": 3.45,
+      "grade": "C",
+      "summary": "Lane County Hospital makes its form exceptionally easy to find and keeps it concise with good record-type granularity, but the generic third-party authorization design, non-fillable format, SSN request, and witness line prevent it from achieving a patient-centered standard."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:21:21.341Z"
+}

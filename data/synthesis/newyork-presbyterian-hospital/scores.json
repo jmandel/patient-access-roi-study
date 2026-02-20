@@ -1,0 +1,142 @@
+{
+  "org_id": "newyork-presbyterian-hospital",
+  "org_name": "NewYork-Presbyterian Hospital",
+  "category_id": "teach-major-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "NewYork-Presbyterian",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Verisma records request portal",
+      "vendor": "Verisma",
+      "url": "https://vra.verisma.com",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "url": "https://www.mynyp.org",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Tripartite ROI/HIPAA Authorization (paper form)",
+      "url": "https://nyp.widen.net/content/tfeix7vzfw/original/Tripartite-ROI-HIPAA-Authorization_English.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to campus Medical Correspondence Unit",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person at campus Medical Correspondence Unit",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "646-NYP-4ROI (646-697-4764)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://nyp.widen.net/content/tfeix7vzfw/original/Tripartite-ROI-HIPAA-Authorization_English.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.nyp.org/sites/default/files/acquiadam/2020-08/faq-for-obtaining-medical-records.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "FAQ / patient instructions"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.nyp.org/documents/lawrence/patients-visitors/auth-to-disclose-phi-lawrence.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (Lawrence campus variant)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patients submit records requests via a Verisma online portal with a dedicated 'Patient' link, or alternatively via MyChart or a paper Tripartite HIPAA authorization form selecting 'Patient Request' as the reason.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 103,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es", "zh"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "compliant",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Verisma portal requires two forms of photo ID for electronic submission",
+      "Date-of-service range mandatory — records will not be released without specific dates",
+      "Form states 'if you refuse to sign NYP will not release your records,' conflating third-party authorization requirements with patient access rights"
+    ],
+    "bright_spots": [
+      "103 fillable PDF fields — fully interactive form designed for digital completion",
+      "Available in English, Spanish, and Chinese",
+      "Dedicated patient phone line 646-NYP-4ROI with stated business hours (M-F 8am-6pm)",
+      "Six delivery method options including patient portal at no cost",
+      "Comprehensive FAQ document with transparent MyChart record-type listings",
+      "Granular record selection with 16+ specific record-type checkboxes"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — medical records page reachable in 2 clicks from homepage, web searches surface it readily; minor friction from DAM-hosted PDF requiring URL extraction."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital — form-1 has 103 fillable fields for complete on-screen completion, and Verisma portal offers full online submission; one gap is that PDF submission still requires fax/mail, and portal demands two photo IDs."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — logical section flow with bold headers, granular record-type options, but dense 2-page layout with some compound legalese in the authorization section."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: Patient can use the process but it wasn't designed for them — 'Patient Request' is one checkbox among seven on a generic HIPAA authorization form; no Right of Access language; portal offers separate patient link but underlying framework is third-party release."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities — fee language tracks HIPAA statutory standard, revocation rights stated, no notarization required; but mandatory date-of-service range, two-photo-ID portal requirement, and 'won't release if you don't sign' language create some unnecessary friction."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "NYP delivers a technically strong, well-organized records request experience with excellent findability and multiple channels, but relies on a generic HIPAA authorization rather than a patient-access-specific pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:12:26.588Z"
+}

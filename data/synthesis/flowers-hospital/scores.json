@@ -1,0 +1,123 @@
+{
+  "org_id": "flowers-hospital",
+  "org_name": "Flowers Hospital",
+  "category_id": "ch-major-forprofit-south",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Community Health Systems",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request portal",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.flowershospital.com/request-medical-records",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Health Information (HIM-1406)",
+      "url": "https://www.flowershospital.com/Uploads/Public/Documents/all-new-documents/HIM-1406.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Health Information — Spanish (HIM-1406S)",
+      "url": "https://www.flowershospital.com/Uploads/Public/Documents/all-new-documents/HIM-1406S.pdf",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://wiregrasssurgical.com/wp-content/uploads/2017/05/2017-Medical-Records-Release.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (affiliated practice — Wiregrass Surgical Associates)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.flowershospital.com/Uploads/Public/Documents/all-new-documents/HIM-1406.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Patient access request form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.flowershospital.com/Uploads/Public/Documents/all-new-documents/HIM-1406S.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "Patient access request form (Spanish)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Hospital offers a dedicated 'Patient Request for Health Information' fillable PDF form with 'Myself' as the first recipient option, plus an online Swellbox portal as an alternative digital submission pathway.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 66,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Witness signature field present with unclear required/optional status may deter patients completing the form at home"
+    ],
+    "bright_spots": [
+      "Removable media delivery option (USB/DVD/CD) with patient choice of password protection",
+      "Co-equal Spanish-language form (HIM-1406S) with identical structure and 66 fillable fields",
+      "Swellbox online portal as fully digital alternative to PDF form",
+      "Form titled 'Patient Request for Health Information' with 'Myself' as first recipient option",
+      "Sensitive information opt-in design requires affirmative consent per category"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available — form is linked directly from the main 'Patients & Visitors' navigation on the hospital website with no searching or creative navigation required."
+    },
+    "technical_accessibility": {
+      "score": 5,
+      "rationale": "Level 5: Fully functional digital workflow — the Swellbox portal provides complete online submission without printing, and the PDF form has 66 fillable fields for fully digital completion before fax submission."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with clear logical flow and 13 record-type checkboxes, but has minor clarity issues including unexplained 'ROI' header, ambiguous witness field, and vague fee disclosure."
+    },
+    "patient_centeredness": {
+      "score": 5,
+      "rationale": "Level 5: Process designed around patient self-access as a first-class use case — form is titled 'Patient Request for Health Information,' lists 'Myself' first, acknowledges HIPAA right of access, offers five delivery methods, and provides a co-equal Spanish translation."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities — no notarization or in-person requirements, HIPAA right acknowledged, but fee language is vague ('there may be charges') without specifying amounts or referencing cost-based limits."
+    },
+    "overall": {
+      "score": 4.65,
+      "grade": "A",
+      "summary": "Flowers Hospital provides an exemplary patient-centered records request experience with a dedicated fillable PDF form, co-equal Spanish translation, Swellbox portal, and easy findability, earning a strong A despite minor transparency gaps in fee disclosure."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:03:49.710Z"
+}

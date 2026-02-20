@@ -1,0 +1,119 @@
+{
+  "org_id": "anchorage-neighborhood-health-center",
+  "org_name": "Anchorage Neighborhood Health Center",
+  "category_id": "fqhc-independent-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Advanced Authorization for Release of Information",
+      "url": "https://www.anhc.org/s/Advanced-Authorization-for-Release-of-Information-Rev-8-2025.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to ANHC HIM",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Text-based ROI request (TEXT ME to 907-743-7200)",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.anhc.org/s/Advanced-Authorization-for-Release-of-Information-Rev-8-2025.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.anhc.org/s/PHIDisclosureAgreementENGLISH9-22-23.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "PHI disclosure agreement (standing proxy authorization)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must use a generic dual-purpose ROI authorization form, checking 'Release Information to' and listing themselves as the recipient to request their own records.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Zero fillable PDF fields despite August 2025 revision date",
+      "Requests last four SSN digits unnecessarily"
+    ],
+    "bright_spots": [
+      "Explicit HIPAA Right of Access citation (45 CFR § 164.524) telling patients they need not give a reason",
+      "Spanish-language version of ROI form available",
+      "Text-message alternative channel for ROI requests",
+      "Adolescent privacy protections for MyChart proxy access (ages 12-17)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with a site-scoped search; well-organized forms page with clear section headings and direct PDF links, though generic web searches did not surface ANHC-specific results."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Digitally composed PDF with text layer but zero fillable fields; a patient could use PDF annotation tools as a workaround and submit via fax (907-743-7255), fitting 'usable digitally with workarounds; fax submission available.'"
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with clear introductory instructions, logical flow, and granular record-type checkboxes; minor issues include unnecessary SSN collection, a typo, and dense layout from compressing all content onto one page."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form but it wasn't designed for self-access — they must figure out to check 'Release Information to' and list themselves; partially offset by explicit HIPAA Right of Access citation."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities — fee language doesn't clarify patient self-access cost limits and SSN collection is unnecessary — but the form includes explicit Right of Access citation, no-conditioning statement, clear revocation rights, and appropriate 42 CFR Part 2 handling."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "ANHC's forms are easy to find and include strong patient-rights language and multilingual support, but the generic authorization pathway and non-fillable PDF limit the patient experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:30:11.181Z"
+}

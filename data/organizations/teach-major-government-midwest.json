@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "university-of-iowa-hospitals",
+    "name": "University of Iowa Hospitals & Clinics",
+    "category_id": "teach-major-government-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "state": "IA",
+    "city": "Iowa City",
+    "website": "https://www.uihealthcare.org",
+    "bed_count": 860,
+    "notes": "Iowa's only comprehensive academic medical center, operated by State Board of Regents; affiliated with Carver College of Medicine"
+  },
+  {
+    "org_id": "osu-wexner-medical-center",
+    "name": "The Ohio State University Wexner Medical Center",
+    "category_id": "teach-major-government-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Columbus",
+    "website": "https://wexnermedical.osu.edu",
+    "bed_count": 1439,
+    "notes": "State-operated academic medical center with seven hospitals; affiliated with Ohio State College of Medicine"
+  },
+  {
+    "org_id": "michigan-medicine",
+    "name": "Michigan Medicine - University of Michigan Health",
+    "category_id": "teach-major-government-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "state": "MI",
+    "city": "Ann Arbor",
+    "website": "https://www.uofmhealth.org",
+    "bed_count": 1043,
+    "notes": "Public university academic medical center operated by University of Michigan; includes University Hospital, C.S. Mott Children's Hospital"
+  }
+]

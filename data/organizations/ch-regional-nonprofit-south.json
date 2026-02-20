@@ -1,0 +1,82 @@
+[
+  {
+    "org_id": "maury-regional-health",
+    "name": "Maury Regional Health",
+    "category_id": "ch-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Columbia",
+    "website": "https://www.mauryregional.com",
+    "bed_count": 255,
+    "notes": "3-hospital nonprofit system in southern Middle Tennessee; includes Maury Regional Medical Center, Marshall Medical Center, and Wayne Medical Center"
+  },
+  {
+    "org_id": "owensboro-health",
+    "name": "Owensboro Health",
+    "category_id": "ch-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "KY",
+    "city": "Owensboro",
+    "website": "https://www.owensborohealth.org",
+    "bed_count": 477,
+    "notes": "3-hospital nonprofit system serving an 18-county region in western Kentucky and southern Indiana"
+  },
+  {
+    "org_id": "hendrick-health",
+    "name": "Hendrick Health",
+    "category_id": "ch-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Abilene",
+    "website": "https://www.hendrickhealth.org",
+    "bed_count": 522,
+    "notes": "3-hospital nonprofit system in West Texas; includes Hendrick Medical Center, Hendrick Medical Center South, and Hendrick Medical Center Brownwood"
+  },
+  {
+    "org_id": "southwell-tift-regional",
+    "name": "Southwell (Tift Regional Health System)",
+    "category_id": "ch-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Tifton",
+    "website": "https://mysouthwell.com",
+    "bed_count": 181,
+    "notes": "2-hospital nonprofit system serving 12 counties in South Central Georgia; includes Tift Regional Medical Center and Southwell Medical in Adel"
+  },
+  {
+    "org_id": "shannon-health",
+    "name": "Shannon Health",
+    "category_id": "ch-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "San Angelo",
+    "website": "https://www.shannonhealth.com",
+    "bed_count": 400,
+    "notes": "3-campus nonprofit system in the Concho Valley region of West Texas; largest locally-based healthcare provider in the area"
+  }
+]

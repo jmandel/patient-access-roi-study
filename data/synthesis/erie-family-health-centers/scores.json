@@ -1,0 +1,126 @@
+{
+  "org_id": "erie-family-health-centers",
+  "org_name": "Erie Family Health Centers",
+  "category_id": "fqhc-independent-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Protected Health Information (English)",
+      "url": "https://www.eriefamilyhealth.org/wp-content/uploads/2023/02/ROI-English.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Autorización para Liberar Información de Salud Protegida (Spanish)",
+      "url": "https://www.eriefamilyhealth.org/wp-content/uploads/2023/02/ROI-Spanish.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart (myeriehealth.com)",
+      "vendor": "Epic MyChart",
+      "url": "https://myeriehealth.com",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Health Information Department",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Encrypted email to ROI@eriefamilyhealth.org",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.eriefamilyhealth.org/wp-content/uploads/2023/02/ROI-English.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.eriefamilyhealth.org/wp-content/uploads/2023/02/ROI-Spanish.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to MyChart as the primary access route; the downloadable PDF is a generic HIPAA authorization form with a 'Personal Use' checkbox but no dedicated patient-access pathway.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 54,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Copy of ID required as blanket requirement with no alternative verification methods — potentially burdensome for FQHC population lacking government-issued ID",
+      "Fee schedule referenced ('Please refer to Pay Scale for rates') but not provided or linked — patients cannot learn costs before submitting"
+    ],
+    "bright_spots": [
+      "Bilingual forms (English and Spanish) linked side-by-side from dedicated records request page",
+      "Encrypted email offered as a delivery method — a modern patient-friendly option",
+      "Granular record-type selection with 9 specific categories plus 'Other'",
+      "Dedicated /recordsrequest/ page that also promotes MyChart patient portal as primary access route"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — forms are directly linked from a dedicated /recordsrequest/ page and immediately surface via basic web search with no barriers."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — fillable PDF with 54 interactive fields can be completed digitally, then submitted via fax or encrypted email; the one gap is no direct online form submission."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with clear section headers and logical flow, but minor issues include the cryptic 'Pay Scale' reference, dense legal disclaimers directed at receiving parties, and outdated CD-ROM format option."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form via the 'Personal Use' checkbox, but the generic bidirectional authorization design was not built for patient self-access — patients must figure out which direction checkbox and recipient fields apply to them."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements exceed what HIPAA mandates for patient access — blanket copy-of-ID requirement with no alternatives, undisclosed fee schedule, and ambiguous witness signature line that may impose unnecessary procedural steps."
+    },
+    "overall": {
+      "score": 3.7,
+      "grade": "B",
+      "summary": "Erie Family Health Centers earns a B with strong findability and a functional fillable bilingual form, but is held back by the lack of a dedicated patient-access pathway, undisclosed fees, and a blanket ID requirement."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:28:33.270Z"
+}

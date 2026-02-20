@@ -1,0 +1,149 @@
+{
+  "org_id": "essentia-health-fosston",
+  "org_name": "Essentia Health-Fosston",
+  "category_id": "cah-regional-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 4,
+  "parent_system": "Essentia Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/essentia-health-wizard.html",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "url": "https://essentiamychart.org",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use and Disclosure of PHI",
+      "url": "https://www.essentiahealth.org/-/media/Project/Essentia/Essentia/pages/documents/Medical-Records-Authorization.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission to HIM",
+      "url": "mailto:ReleaseOfInformation@EssentiaHealth.org",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM (920-593-3114)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Essentia Health HIM, 502 East Second Street, Duluth MN 55805",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.essentiahealth.org/-/media/Project/Essentia/Essentia/pages/documents/Medical-Records-Authorization.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://essentiamychart.org/MyChart/myhealthselfauthorization.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "MyChart self-authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.essentiamychart.org/MyChart/MyChart%20Adult%20Proxy.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "MyChart adult proxy authorization form"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.essentiahealth.org/-/media/Project/Essentia/Essentia/pages/documents/Verbal-Authorization.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Verbal authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to MyChart for record access, with a Swellbox online portal and a generic PDF authorization form as alternatives.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Partial SSN collected for MyChart enrollment forms (form-2, form-3) without legal necessity",
+      "Fee language vaguely references state statutes without specifying amounts or HIPAA cost-based limits"
+    ],
+    "bright_spots": [
+      "Swellbox/Datavant online request portal provides a fully digital alternative pathway",
+      "Single-page form is remarkably compact for comprehensive ROI coverage",
+      "Electronic delivery options include email and MyChart — not just fax/mail",
+      "Recently revised (December 2025) indicating active maintenance",
+      "Well-organized medical records page with clear navigation and multiple pathway options",
+      "Multi-state legal compliance across MN, WI, and ND in a single unified form"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — a simple web search immediately surfaced the PDF, and the medical records page is well-organized with direct download links."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the Swellbox portal provides a fully digital workflow, and the PDF can be submitted via email or fax, but the PDF itself has zero fillable fields requiring print-and-handwrite completion."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor issues — the single-page form has logical flow, clear section headers, and good record-type granularity, but the dense layout and vague fee language are minor weaknesses."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the form is a generic third-party authorization with From/To fields; patients must figure out to put themselves as the recipient and check 'Personal use,' with no reference to HIPAA Right of Access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — includes anti-conditioning, revocation rights, psychotherapy and SUD protections, but fee language is vague and partial SSN collection on MyChart forms is unnecessary."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Essentia Health-Fosston benefits from its parent system's organized web presence and a digital portal alternative, but relies on a generic third-party authorization form with no fillable fields for PDF-based requests."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:26:08.387Z"
+}

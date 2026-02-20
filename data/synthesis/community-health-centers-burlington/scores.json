@@ -1,0 +1,108 @@
+{
+  "org_id": "community-health-centers-burlington",
+  "org_name": "Community Health Centers of Burlington",
+  "category_id": "fqhc-independent-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Send Health Information (2024 fillable)",
+      "url": "https://www.chcb.org/wp-content/uploads/2024/03/Consent-to-Disclose-Health-Information-2024-FILLABLE.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Medical Records fax (number on form header)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.chcb.org/wp-content/uploads/2024/03/Consent-to-Disclose-Health-Information-2024-FILLABLE.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.chcb.org/wp-content/uploads/2024/03/Verbal-Consent-to-Disclose-Health-Information-FILLABLE.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Verbal communication consent form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient uses a generic ROI authorization form with a 'Patient copy' checkbox to request their own records.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 36,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No submission instructions — patient has no guidance on where to send completed form",
+      "Verbal communication line copied from companion form creates confusion about what this form authorizes"
+    ],
+    "bright_spots": [
+      "'Patient copy' as explicit reason-for-release checkbox normalizes patient self-access",
+      "One-page design efficiently covers three record categories with date ranges",
+      "Photocopy/facsimile explicitly accepted as valid",
+      "36 fillable interactive fields enable complete digital form-filling"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Rubric level 3: requires moderate effort — the org's own forms page doesn't render (JavaScript-dependent), forcing reliance on a site-scoped search engine query to locate the PDF in a WordPress uploads directory."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Rubric level 4: mostly digital with one gap — the form has 36 fillable fields for on-screen completion, but submission requires faxing to a number listed on the form header (no online submission portal)."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Rubric level 4: well-organized with minor clarity issues — the one-page layout is logical with clear section headers, but sender/recipient fields confuse patient self-access use and a verbal communication line was erroneously copied from the companion form."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Rubric level 3: a patient can use the process but it wasn't designed for them — the form is a generic third-party release authorization that accommodates patient access only via a 'Patient copy' checkbox, with no dedicated pathway or patient rights language."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Rubric level 4: minor ambiguities but nothing materially impeding — no notarization required, photocopy/facsimile accepted, revocation section included, but no fee disclosure, incomplete HIPAA citation, and conditioning-of-treatment language uses imprecise 'might' phrasing."
+    },
+    "overall": {
+      "score": 3.6,
+      "grade": "B",
+      "summary": "CHCB provides a technically competent fillable PDF authorization form that accommodates patient self-access via a 'Patient copy' checkbox, but the generic third-party release framing, absent submission instructions, and lack of dedicated patient access pathway limit the overall patient experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:23:48.624Z"
+}

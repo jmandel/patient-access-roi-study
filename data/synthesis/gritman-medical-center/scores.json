@@ -1,0 +1,101 @@
+{
+  "org_id": "gritman-medical-center",
+  "org_name": "Gritman Medical Center",
+  "category_id": "cah-independent-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Protected Health Information",
+      "url": "https://www.gritman.org/wp-content/uploads/Authorization-to-Release-Protected-Health-Information_clinics.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.gritman.org/wp-content/uploads/Authorization-to-Release-Protected-Health-Information_clinics.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a single general-purpose Authorization to Release Protected Health Information form for all records requests, whether for self-access or third-party release.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 63,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Fee language implies charges for personal-use requests but provides no fee schedule or cost estimate"
+    ],
+    "bright_spots": [
+      "Email delivery option — uncommon for a critical access hospital",
+      "17-category granular record type selection gives patients fine-grained control",
+      "\"Major Documents for the Last 3 Years\" shortcut for patients who don't know exact dates",
+      "63 fillable PDF fields enable fully digital form completion",
+      "Recently revised (4/1/2024) indicating active maintenance"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — linked from the My Health Records page in 2 clicks from homepage, and surfaced by a simple web search."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the form has 63 fillable fields for digital completion, but patients must print and fax/mail to submit since there is no online submission portal."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with clear section headers and logical flow; minor issues include absent submission instructions, vague fee language, and missing fillable field names for accessibility."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form but it wasn't designed for them — no distinction between patient self-access and third-party release, no reference to HIPAA Right of Access, and 'Personal' is just one of several purpose checkboxes."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — includes revocation rights, non-conditioning language, re-disclosure warning, and right to inspect; fee transparency is the main gap."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Gritman provides a well-constructed, easy-to-find fillable PDF with good compliance language and delivery options, but lacks a dedicated patient access pathway and clear fee disclosure."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:22:18.616Z"
+}

@@ -1,0 +1,131 @@
+{
+  "org_id": "orthocarolina",
+  "org_name": "OrthoCarolina",
+  "category_id": "practice-independent-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Access/Use/Disclosure of PHI (form-1, revised 04/2023)",
+      "url": "https://www.orthocarolina.com/storage/wysiwyg/authorization_for_access_use_disclosure_of_protected_health_information.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "email",
+      "name": "Email submission to ROI department",
+      "url": "mailto:OrthoCarolinaMedRec@orthocarolina.com",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to ROI department (704-323-3806)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to 4601 Park Road, Suite 250, Charlotte, NC 28209",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Phone ROI department (704-323-2049)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.orthocarolina.com/storage/wysiwyg/authorization_for_access_use_disclosure_of_protected_health_information.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (current version, revised 04/2023)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.orthocarolina.com/storage/components/authorization_for_use_disclosure_of_phi_6-20171_1.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy version, approved 04/2017)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.orthocarolina.com/storage/wysiwyg/authorization_for_access_use_disclosure_of_phi_3.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (superseded version, revised 12/2020)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient uses a generic HIPAA authorization form that serves both self-access and third-party release, selecting 'Personal Use' as the purpose and listing themselves as the recipient.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 25,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Broad liability waiver releasing OrthoCarolina from 'any legal responsibility or liability for disclosure' embedded in the records request form",
+      "Fee language does not distinguish patient access fees (HIPAA cost-based limit) from third-party release fees, creating risk of overcharging",
+      "Form-1 dropped the 'YOU MAY REFUSE TO SIGN THIS AUTHORIZATION' notice present in older versions"
+    ],
+    "bright_spots": [
+      "Seven delivery method options including patient portal upload and email for both records and radiology images",
+      "Email submission accepted (OrthoCarolinaMedRec@orthocarolina.com) in addition to fax and mail",
+      "Granular record type and radiology modality checkboxes with separate date ranges for medical records and images"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Form is easy to find with a basic web search and is directly linked from the medical records resource page; minor concern about three co-existing versions at different URLs causing potential confusion."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Born-digital PDF with text layer but zero fillable fields requires print-and-handwrite or annotation workarounds; however, electronic submission via email, fax, and portal upload is available."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Single-page form with logical flow and reasonable record-type granularity, but dense cramped layout, garbled text in delivery section due to overlapping text boxes, and run-on legal paragraphs create notable clarity problems."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: Generic HIPAA authorization form with a 'Personal Use' checkbox acknowledges patient self-access but was not designed for it — patients must list themselves as the disclosure recipient and navigate fields intended for third-party releases."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Revocation rights and non-conditioning language are properly stated, but vague purpose-dependent fee structure with no cost-based fee distinction for patient access, broad liability waiver, and dropped refusal notice go beyond what the law requires."
+    },
+    "overall": {
+      "score": 3.15,
+      "grade": "C",
+      "summary": "OrthoCarolina provides an easily findable generic authorization form with strong delivery options but lacks a dedicated patient access pathway, fillable fields, and transparent fee disclosure, resulting in a serviceable but patient-unaware experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:35:23Z"
+}

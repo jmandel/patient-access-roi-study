@@ -1,0 +1,118 @@
+{
+  "org_id": "desert-regional-medical-center",
+  "org_name": "Desert Regional Medical Center",
+  "category_id": "ch-major-forprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Tenet Healthcare",
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for the Release of Health Information (English)",
+      "url": "https://www.desertcarenetwork.com/patients/request-medical-records",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Autorización para la Divulgación de Información Médica (Spanish)",
+      "url": "https://www.desertcarenetwork.com/patients/request-medical-records",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "HIM Department fax",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "HIM Department email (DES-DRMC-MedRecords@tenethealth.com)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.desertcarenetwork.com/docs/desertcarenetworklibraries/default-document-library/desert-regional-medical-center-roi-form-2025f689a0d6-a5bc-4d09-8b16-dfa7c3c87cbd.pdf?sfvrsn=6159096f_1",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.desertcarenetwork.com/docs/desertcarenetworklibraries/default-document-library/desert-regional-medical-center-roi-spanish-2form-(22)38a84035-2943-4b31-87b6-5796b63f0c58.pdf?sfvrsn=eee2c044_1",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must complete a generic third-party release authorization form, listing themselves as the recipient, then submit via fax, email, or mail.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 16,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No dedicated patient access form — only a third-party release authorization is available",
+      "Spanish translation contains at least 9 typographical errors and omits the delivery method section"
+    ],
+    "bright_spots": [
+      "Bilingual (English/Spanish) forms available from a well-organized medical records page",
+      "Email listed as a delivery option alongside fax and mail",
+      "Direct HIM department contact info (phone, fax, email) prominently displayed on the form"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — a site-specific search immediately located the dedicated medical records page, which is 2–3 clicks from the homepage with clear per-hospital download links."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — despite being digitally created, the PDF has zero fillable fields, requiring print and handwrite; patient can then fax or email the completed form, but the form itself is not digitally completable."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but with notable problems — logical structure and reasonable length, but language tilts toward legalese, the rights section uses complex conditional clauses, and the Spanish translation has pervasive typos and a missing delivery method section."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought — the form is entirely structured as a third-party release authorization with no differentiation for individual access; patients must list themselves as the recipient and navigate a disclosure framework not designed for them."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization, no in-person requirement, clear revocation rights; however, no fee disclosure and no mention of Right of Access or patient's right to choose format."
+    },
+    "overall": {
+      "score": 2.85,
+      "grade": "C",
+      "summary": "Desert Regional Medical Center provides a findable but generic third-party release form with no patient access differentiation, no fillable fields, and a poorly translated Spanish version — a functional but patient-unfriendly records request process."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:01:19.151Z"
+}

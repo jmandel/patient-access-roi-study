@@ -1,0 +1,116 @@
+{
+  "org_id": "mayers-memorial-hospital",
+  "org_name": "Mayers Memorial Hospital District",
+  "category_id": "cah-independent-government-west",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use or Disclosure of Health Information (CHA 16-1)",
+      "url": "https://www.mayersmemorial.com/docs/Disclosure_of_Health_Info.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Generic Authorization for Release of Medical Records (PatientPop)",
+      "vendor": "PatientPop/Tebra",
+      "url": "https://sa1s3.patientpop.com/assets/docs/223399.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Medical Records Department phone",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://sa1s3.patientpop.com/assets/docs/223399.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (generic, unbranded)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.mayersmemorial.com/docs/Disclosure_of_Health_Info.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (branded, CHA 16-1 template)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must locate a mislabeled scanned authorization form on the website, print and hand-fill it, then call the hospital to determine how to submit it.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No submission instructions on either form — patient has no documented way to return the completed form",
+      "Primary form is an image-only scan with no text layer, inaccessible to screen readers",
+      "Form mislabeled as 'Disclosure of Privacy Practices' on hospital website, hiding it from patients seeking records release",
+      "Intimidating opening: 'Failure to provide all information requested may invalidate this authorization'"
+    ],
+    "bright_spots": [
+      "'My Rights' section written in plain first-person language clearly stating right to refuse, inspect, and revoke",
+      "Sensitive information properly separated with individual checkboxes for mental health, HIV, and substance abuse records",
+      "Based on CHA 16-1 template ensuring California-specific legal compliance"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 2,
+      "rationale": "Level 2: Difficult; requires persistence or creative search strategies. The branded form is mislabeled on the website as 'Disclosure of Privacy Practices,' the Medical Records page has no form link, and the generic form is only findable via external web search on a third-party CDN."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow. The primary form (form-2) is an image-only scan with no text layer and no fillable fields; form-1 has a text layer but also zero fillable fields. Neither form provides submission instructions — no fax, email, or portal option is documented."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but has notable problems. Form-2 has logical organization with clear section headers, scope checkboxes, and a well-written rights section, but the intimidating invalidation warning, dangling footnote references, and image-only format undermine usability."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought. While form-2 includes a 'Patient request' checkbox under Purpose, the form is fundamentally structured as a third-party release authorization requiring a recipient's name and address. No HIPAA Right of Access reference, no format/delivery options, no differentiation of the patient self-access workflow."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements or language that may go beyond what the law requires. Form-2 includes proper expiration, revocation, and sensitive info handling. However, the 'failure to provide all information may invalidate' warning could chill patient access, no fees are disclosed, and no submission pathway is provided."
+    },
+    "overall": {
+      "score": 2.35,
+      "grade": "D",
+      "summary": "Mayers Memorial provides a below-average records access experience with a mislabeled, scanned authorization form that lacks fillable fields, submission instructions, and any differentiation of patient self-access from third-party release."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:23:21.384Z"
+}

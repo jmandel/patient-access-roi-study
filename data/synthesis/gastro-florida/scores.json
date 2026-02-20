@@ -1,0 +1,117 @@
+{
+  "org_id": "gastro-florida",
+  "org_name": "Gastro Florida",
+  "category_id": "practice-independent-forprofit-south",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Sharecare/HDS medical records request portal",
+      "vendor": "Sharecare/HDS",
+      "url": "https://myplatform.hds.sharecare.com/submission-tools/ui/patient?clientId=FL2000",
+      "is_primary": true
+    },
+    {
+      "type": "phone",
+      "name": "Privacy Officer (Josh Frazier)",
+      "url": null,
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "http://gastrofl.com/wp-content/uploads/2023/02/NEW-PT-PAPERWORK-UPDATED-2.2.23.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "New patient registration packet (includes embedded third-party release clause)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://gastrofl.com/wp-content/uploads/2021/10/Privacy-Practices-Notice-Gastro-Florida.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "HIPAA Notice of Privacy Practices (2020 summary, superseded)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://gastrofl.com/wp-content/uploads/2026/02/Notice-of-Privacy-Practices-Updated-for-2026.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "HIPAA Notice of Privacy Practices (2026 full version)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patient records requests are handled through a third-party Sharecare/HDS online portal linked from the Patient Forms page; no downloadable ROI form exists.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 30,
+    "page_count": 0,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Medical Records page at gastrofl.com/medical-records/ is completely empty with no content or instructions",
+      "2026 NPP contains unresolved 'ClientName' template placeholder instead of 'Gastro Florida'",
+      "Intake form bundles treatment consent with promotional use of patient comments under a single non-refusable signature"
+    ],
+    "bright_spots": [
+      "Dedicated online portal separates patient self-access from third-party release",
+      "Fully digital submission workflow with no printing or mailing required",
+      "Named Privacy Officer (Josh Frazier) with direct phone number for questions"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: The portal link exists on the Patient Forms page but the dedicated Medical Records page is empty, requiring moderate effort and a non-obvious path to locate the records request mechanism."
+    },
+    "technical_accessibility": {
+      "score": 5,
+      "rationale": "Level 5: The Sharecare/HDS portal provides a fully functional digital workflow from form completion through submission with no printing or handwriting required."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: The portal's 31-step process is unusually lengthy for a records request, no pre-portal instructions exist on the website, and the downloaded NPP contains template errors and duplicated content."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: The organization provides a dedicated patient access portal clearly distinct from the third-party release clause in intake forms, though the website fails to guide patients to it with instructions or a functioning Medical Records page."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No unnecessary barriers in the records request pathway; fees described as 'reasonable, cost-based' and 30-day timeline stated, though the intake form's consent bundling and the NPP's 'copy or summary' language introduce minor ambiguities."
+    },
+    "overall": {
+      "score": 3.95,
+      "grade": "B",
+      "summary": "Gastro Florida earns a B by offering a dedicated, fully digital patient records portal through Sharecare/HDS, but is held back by an empty Medical Records page, absent instructions, and a burdensome 31-step submission process."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:35:57.644Z"
+}

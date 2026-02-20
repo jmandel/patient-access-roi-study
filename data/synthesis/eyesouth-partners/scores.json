@@ -1,0 +1,122 @@
+{
+  "org_id": "eyesouth-partners",
+  "org_name": "EyeSouth Partners",
+  "category_id": "practice-major-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Center for Sight Medical Information Release Form",
+      "url": "https://centerforsight.net/wp-content/uploads/2024/09/103-0820-Medical-Info-Release-CFS_AMARA.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Georgia Retina Authorization Form",
+      "url": "https://garetina.com/wp-content/uploads/medical-records-release-and-request-6.30.16.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Sharecare online portal (select affiliates only)",
+      "vendor": "Sharecare",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Write to EyeSouth Partners Privacy Officer",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://centerforsight.net/wp-content/uploads/2024/09/103-0820-Medical-Info-Release-CFS_AMARA.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://garetina.com/wp-content/uploads/medical-records-release-and-request-6.30.16.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients must locate an affiliate practice's website and download a generic authorization form; the parent organization provides no patient-facing records request process.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 10,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": true,
+    "response_time_value": "10 business days",
+    "red_flags": [
+      "Indefinite authorization with no expiration date on primary form",
+      "Georgia Retina form charges flat $25 fee without distinguishing patient access from third-party release",
+      "Georgia Retina form asks for reason for release, which HIPAA does not require for patient access",
+      "Georgia Retina form last updated 2016, predating Right of Access Initiative and Cures Act"
+    ],
+    "bright_spots": [
+      "10-business-day processing commitment on primary form",
+      "Patient-friendly closing language on primary form",
+      "Both forms are concise single-page documents",
+      "No notarization or witness requirements"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 2,
+      "rationale": "Level 2: Forms required persistence and creative search strategies — parent org has no patient-facing content; forms found only by identifying and searching individual affiliate practice websites."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Form has a text layer but zero fillable fields requiring print-and-handwrite completion; fax submission is available via listed fax numbers, providing an electronic submission pathway."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Primary form is adequately organized with plain language and logical flow, but lacks instructions, offers no record-type checkboxes, and has no scope or format options — a patient can complete it but would benefit from more guidance."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is not addressed — the parent org provides no patient pathway, and both affiliate forms are generic authorization forms with no distinction between patient access rights and third-party release."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Primary form has an indefinite authorization with no expiration; Georgia Retina form imposes a flat $25 fee and asks for a reason for release — requirements that may go beyond what HIPAA permits for patient access requests."
+    },
+    "overall": {
+      "score": 2.6,
+      "grade": "C",
+      "summary": "EyeSouth Partners provides a fragmented, affiliate-dependent records access experience with generic authorization forms that don't recognize patient self-access as a distinct use case."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:34:24.114Z"
+}

@@ -1,0 +1,120 @@
+{
+  "org_id": "mass-general-hospital",
+  "org_name": "Massachusetts General Hospital",
+  "category_id": "teach-major-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Mass General Brigham",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Protected or Privileged Health Information",
+      "url": "https://www.massgeneralbrigham.org/content/dam/mgb-global/en/patient-care/patient-and-visitor-information/medical-records/documents/mgh/medical-records-release-mgh-english.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Release of Information office",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission to Release of Information office",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.massgeneralbrigham.org/content/dam/mgb-global/en/patient-care/patient-and-visitor-information/medical-records/documents/mgh/medical-records-release-mgh-english.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.massgeneral.org/assets/mgh/pdf/imaging/forms/medical-records-release-mgh-english.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (older version)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.massgeneral.org/assets/mgh/pdf/notices/roiauthorizationform-1-17.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy version)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a general-purpose HIPAA authorization form (selecting 'Personal' as purpose) to request their own records, which must be submitted via mail or fax.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 78,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Mandatory date specification for every record type with no 'all records' option may burden patients seeking comprehensive access",
+      "Two outdated non-fillable versions remain publicly accessible at legacy URLs"
+    ],
+    "bright_spots": [
+      "78 fillable interactive fields in current form version — comprehensive digital completion",
+      "Four delivery methods including patient portal and secure email",
+      "Granular opt-in consent for seven categories of sensitive information",
+      "Clear voluntary authorization and non-coercion statement"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic web search returning direct PDF links; minor concern that older versions persist at legacy URLs, but current form is prominently available."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — 78 fillable fields enable complete digital form completion, but submission requires fax (which counts as electronic), creating one gap in the end-to-end digital workflow."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized A–E section structure across 2 pages with clear headers and logical flow; minor issues include mandatory date specification and some dense regulatory language in Section D."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process by selecting 'Personal' and checking the self-mail box, but the form was designed for third-party release — no Right of Access language, no dedicated patient pathway, and patients must navigate which parts apply to them."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization required, clear voluntary authorization and non-conditioning language, 6-month expiration with override option; minor ambiguity around fee applicability for patient self-access requests."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "MGH offers a technically well-executed fillable authorization form that is easy to find and free of major barriers, but the lack of a dedicated patient access pathway and reliance on a generic third-party release form limit patient-centeredness."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:11:46.862Z"
+}

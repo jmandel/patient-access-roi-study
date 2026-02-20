@@ -1,0 +1,66 @@
+[
+  {
+    "org_id": "us-dermatology-partners",
+    "name": "U.S. Dermatology Partners",
+    "category_id": "practice-major-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Dallas",
+    "website": "https://www.usdermatologypartners.com",
+    "bed_count": null,
+    "notes": "PE-backed (Abry Partners) dermatology network; HQ in Dallas with 50+ TX locations across 8 states"
+  },
+  {
+    "org_id": "gi-alliance",
+    "name": "GI Alliance",
+    "category_id": "practice-major-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Southlake",
+    "website": "https://gialliance.com",
+    "bed_count": null,
+    "notes": "PE-backed (Apollo Global) gastroenterology network; one of the largest independent GI groups in the U.S."
+  },
+  {
+    "org_id": "eyesouth-partners",
+    "name": "EyeSouth Partners",
+    "category_id": "practice-major-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Atlanta",
+    "website": "https://www.eyesouthpartners.com",
+    "bed_count": null,
+    "notes": "PE-backed (Olympus Partners) ophthalmology network; 60+ practices, 400+ doctors, 276+ locations across the South"
+  },
+  {
+    "org_id": "texas-oncology",
+    "name": "Texas Oncology",
+    "category_id": "practice-major-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Dallas",
+    "website": "https://www.texasoncology.com",
+    "bed_count": null,
+    "notes": "Part of US Oncology Network (McKesson); largest community oncology practice in TX"
+  }
+]

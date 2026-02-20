@@ -1,0 +1,106 @@
+{
+  "org_id": "avera-hand-county-memorial",
+  "org_name": "Avera Hand County Memorial Hospital",
+  "category_id": "cah-regional-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": "Avera Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "HIPAA Authorization for Disclosure of Health Information (Form 8691-04)",
+      "url": "https://www.avera.org/app/files/public/16c5ca97-99f7-4e3a-ab27-cf98bb199144/medical-records-release-8691-04.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Avera Medical Records fax",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Avera Medical Records phone (833-821-9944)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.avera.org/app/files/public/16c5ca97-99f7-4e3a-ab27-cf98bb199144/medical-records-release-8691-04.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a system-wide Avera Health HIPAA authorization form designed for third-party release of records, filling in themselves as the recipient.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 17,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Requests last 4 digits of SSN, which is not required by HIPAA for patient access",
+      "Witness signature line present without clarification of whether it is required or optional",
+      "No submission instructions printed on the form itself"
+    ],
+    "bright_spots": [
+      "Multiple electronic delivery format options: paper, fax, flash drive, CD-ROM, email with encryption by default",
+      "Explicit citation of 45 CFR 164.524 (HIPAA Right of Access)",
+      "Single-page form covering all required authorization elements"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: requires moderate effort — form is not linked from the facility profile page; patients must navigate to the parent system's medical records page or perform a web search."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: primarily a paper workflow — the PDF has zero fillable fields, requiring patients to print and handwrite; fax submission is available but not clearly indicated on the form itself."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: adequate but has notable issues — the single-page layout with labeled sections is functional, but the form is visually dense, mixes plain language with regulatory references, and lacks patient-facing instructions."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: patient self-access is an afterthought — the form is a generic third-party authorization that does not differentiate individual access from release to insurers or attorneys; patients must adapt the form to their self-access use case."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: some requirements beyond what the law requires — SSN collection (even last 4 digits) is unnecessary for patient access, ambiguous witness signature line may create barriers, and fee disclosure is vague ('charges may apply' with no amounts)."
+    },
+    "overall": {
+      "score": 2.5,
+      "grade": "C",
+      "summary": "Avera Hand County Memorial provides a functional but generic third-party authorization form with no patient-specific access pathway, non-fillable fields, and several unnecessary friction points partially offset by strong delivery format options."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:25:56.950Z"
+}

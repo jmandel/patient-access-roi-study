@@ -1,0 +1,135 @@
+{
+  "org_id": "community-medical-center-toms-river",
+  "org_name": "Community Medical Center",
+  "category_id": "ch-major-nonprofit-northeast",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": "RWJBarnabas Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Ciox/Swellbox online records request",
+      "vendor": "Ciox/Swellbox",
+      "url": "https://www.swellbox.com/rwjbarnabas-cmc-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "RWJBH Universal Release of Information Authorization Form",
+      "url": "https://www.rwjbh.org/documents/medical-group/Revised-Universal-Release-of-Information-Authorization-Form.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "CMC Authorization to Disclose Health Information",
+      "url": "https://www.rwjbh.org/documents/community-medical-center-/CMC-Authority-to-Disclose-Health-Information.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "CMC Medical Records fax (732-557-2209)",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "CMC Medical Records email",
+      "url": "mailto:cmcroimedicalrecords@rwjbh.org",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.rwjbh.org/documents/community-medical-center-/CMC-Authority-to-Disclose-Health-Information.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (outbound release from CMC)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.rwjbh.org/documents/community-medical-center-/med-records-cmc-to.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Inbound records request form (records sent to CMC)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.rwjbh.org/documents/medical-group/Revised-Universal-Release-of-Information-Authorization-Form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (system-wide RWJBH)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to a Ciox/Swellbox online portal for electronic record requests, with a system-wide RWJBH PDF authorization form available as an alternative.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 3,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Fee disclosure is vague — states 'there may be a fee' without amounts or reference to HIPAA cost-based limits for patient access",
+      "Legacy CMC form (form-1) contains re-disclosure restriction language that could inappropriately limit what a patient does with their own records"
+    ],
+    "bright_spots": [
+      "Five delivery methods including encrypted email, MyChart, and 'other electronic format'",
+      "Ciox/Swellbox online portal provides a fully digital request pathway",
+      "Comprehensive HIM contact directory for all RWJBH facilities on page 3 of form-3",
+      "Multiple submission channels: online portal, fax, email, and mail",
+      "Anti-conditioning language explicitly included"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — a direct web search immediately returned the CMC medical records page with form links and online portal reference; the system-wide form required a separate search but was still readily found."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the Swellbox online portal provides a fully digital pathway, but the PDF forms (including the best one, form-3) lack fillable fields, requiring print and handwrite for the PDF route; fax and email submission are available."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — form-3 follows a logical flow with clear section headers and granular record type selection (15+ options), but legal text on page 2 is dense and the facility checkbox grid is visually crowded."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the PDF forms are generic HIPAA authorization forms where a patient must name themselves as recipient and select 'Personal' as purpose; no dedicated patient self-access form exists, though the Swellbox portal may offer a more tailored experience."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — form-3 includes anti-conditioning language and clear revocation rights, but fee disclosure is vague ('there may be a fee' with no schedule) and HIPAA Right of Access (§ 164.524) is not referenced."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Community Medical Center provides adequate patient access through a Swellbox online portal and multiple submission channels, with a well-organized system-wide PDF form, but is held back by non-fillable PDF forms, generic HIPAA authorization framing, and vague fee disclosure."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:56:55.097Z"
+}

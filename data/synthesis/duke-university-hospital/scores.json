@@ -1,0 +1,148 @@
+{
+  "org_id": "duke-university-hospital",
+  "org_name": "Duke University Hospital",
+  "category_id": "teach-major-nonprofit-south",
+  "primary_form": "form-4.pdf",
+  "total_forms_found": 4,
+  "parent_system": "Duke Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Duke Health Enterprise Authorization for Release of Information (M3132)",
+      "url": "https://www.dukehealth.org/sites/default/files/clinical_trials_information/M3132_English_Duke%20Health%20Authorization%20to%20Release%20Information.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "email",
+      "name": "Email submission to HIM Department",
+      "url": "mailto:ROI-requestor3@dm.duke.edu",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM Department (919-620-5165)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Duke University Hospital HIM, DUMC Box 3016, Durham, NC 27710",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "My Duke Health (MyChart)",
+      "vendor": "Epic MyChart",
+      "url": "https://www.dukehealth.org/mychart",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "HIM Department phone line (919-684-1700)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.dukehealth.org/sites/default/files/general_page/M3132AuthorizationforReleaseofInformation_Rev%20202312_V2.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (superseded revision, Rev. 4/2024)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.dukehealth.org/sites/default/files/2019-04-01_duke_health_authorization_instructions.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Form instructions"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://sites.duke.edu/dukeoutpatientclinic_howto/files/2024/06/Release-from-Duke.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (image-only scan, superseded revision)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.dukehealth.org/sites/default/files/clinical_trials_information/M3132_English_Duke%20Health%20Authorization%20to%20Release%20Information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (current revision, Rev. 3/2025)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a single generic Authorization for Release of Information form (M3132) that serves both patient self-requests and third-party releases, with a 'Self' checkbox in the recipient section.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 67,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Collects last 4 digits of SSN, which is not required by HIPAA for patient identification",
+      "Requires affirmative opt-in checkboxes for Mental/Behavioral Health and Genetic Testing records even for patient self-access, potentially restricting access to the complete designated record set",
+      "HIV/AIDS mentioned in disclosure text but no corresponding opt-in checkbox, creating ambiguity about release of those records"
+    ],
+    "bright_spots": [
+      "67 fillable interactive fields enabling full on-screen completion without printing",
+      "Companion 3-page instruction document with plain-language definitions of each medical record type",
+      "Multiple electronic delivery options: MyChart patient portal, encrypted email, fax",
+      "Sensible defaults transparently stated on the form (2-year treatment window, abstract/summary for provider requests)",
+      "Email submission accepted alongside fax and mail — three non-in-person submission channels",
+      "Spanish-language version available on the official forms page"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — forms are 2 clicks from the homepage on a well-organized medical records page with clearly labeled downloads."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — form-4 has 67 fillable fields for full on-screen completion, but submission requires emailing or faxing the completed PDF rather than a fully integrated online submission."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized six-part structure with clear section headers, inline guidance, and sensible defaults; minor issues include single-page density and unnamed fillable fields for accessibility."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form via the 'Self' checkbox and 'Personal' purpose, but the form wasn't designed for patient self-access — patients must navigate sections intended for third-party releases and the form does not reference Right of Access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities — vague fee disclosure ('may charge a fee' without amounts), SSN collection not required by HIPAA, and sensitive-information opt-in may exceed what's needed for patient access — but nothing that would materially impede a patient."
+    },
+    "overall": {
+      "score": 3.9,
+      "grade": "B",
+      "summary": "Duke University Hospital provides a well-organized, technically competent records request experience with a strong fillable PDF and excellent companion documentation, held back from a top grade by its reliance on a generic authorization form rather than a dedicated patient access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:13:07.434Z"
+}

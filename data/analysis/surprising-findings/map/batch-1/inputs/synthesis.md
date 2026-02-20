@@ -1,0 +1,1 @@
+/home/jmandel/hobby/request-my-ehi/scripts/roi-form-study/data/synthesis/coast-plaza-hospital/synthesis.md

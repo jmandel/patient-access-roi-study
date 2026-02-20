@@ -1,0 +1,66 @@
+[
+  {
+    "org_id": "millinocket-regional-hospital",
+    "name": "Millinocket Regional Hospital",
+    "category_id": "cah-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "ME",
+    "city": "Millinocket",
+    "website": "https://www.mrhme.org",
+    "bed_count": 25,
+    "notes": "Independent 501(c)(3) CAH serving the Katahdin region; founded 1952, CAH designation since 2002."
+  },
+  {
+    "org_id": "copley-hospital",
+    "name": "Copley Hospital",
+    "category_id": "cah-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "VT",
+    "city": "Morrisville",
+    "website": "https://www.copleyvt.org",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH serving Lamoille County since 1932; recognized as Top 100 CAH."
+  },
+  {
+    "org_id": "cottage-hospital",
+    "name": "Cottage Hospital",
+    "category_id": "cah-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NH",
+    "city": "Woodsville",
+    "website": "https://www.cottagehospital.org",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH serving the Upper Connecticut Valley for over 120 years."
+  },
+  {
+    "org_id": "cuba-memorial-hospital",
+    "name": "Cuba Memorial Hospital",
+    "category_id": "cah-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Cuba",
+    "website": "https://www.cubamemorialhospital.com",
+    "bed_count": 20,
+    "notes": "Independent nonprofit CAH in rural Allegany County; also operates a 61-bed skilled nursing facility."
+  }
+]

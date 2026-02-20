@@ -1,0 +1,135 @@
+{
+  "org_id": "uchealth-university-of-colorado-hospital",
+  "org_name": "UCHealth University of Colorado Hospital",
+  "category_id": "teach-major-nonprofit-west",
+  "primary_form": "form-4.pdf",
+  "total_forms_found": 4,
+  "parent_system": "UCHealth",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Disclose Protected Health Information",
+      "url": "https://uchealth-wp-uploads.s3.amazonaws.com/wp-content/uploads/2025/11/21090243/HIM19000.1025-Authorization-to-Disclose-PHI.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "online_portal",
+      "name": "MRO Express online request portal",
+      "vendor": "MRO/Ciox",
+      "url": "https://www.uchealth.org/access-my-health-connection/medical-records-uchealth/",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM department",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission to HIM department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.uchealth.org/wp-content/uploads/2017/03/PATVIS-Authorization-to-Disclose-Protected-Health-Information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (outdated 2017 version)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.uchealth.org/wp-content/uploads/2018/02/RSO-Patient-Info-Release.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Inter-facility release/obtain authorization form (legacy)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.uchealth.com/wp-content/uploads/2021/04/UCH-ROI-01-Release-of-Information-040621-Final1.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (wrong organization — UC Health Cincinnati)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://uchealth-wp-uploads.s3.amazonaws.com/wp-content/uploads/2025/11/21090243/HIM19000.1025-Authorization-to-Disclose-PHI.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (current official, Oct 2025)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "A system-wide authorization form with an explicit 'If released to self' section offering email, patient portal, mail, and PowerShare delivery, plus a separate MRO Express online portal.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "free_for_patient_access",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No submission instructions on the form itself — no address, fax number, or email for where to send the completed authorization",
+      "Outdated forms (2017, 2018) remain publicly hosted with no indication they are superseded"
+    ],
+    "bright_spots": [
+      "Explicit patient vs. third-party fee separation: free via portal, free paper up to 100 pages for patients",
+      "Post-Dobbs reproductive healthcare warning alerting patients to litigation risks",
+      "Granular sensitive-category consent (HIV/AIDS, mental health, substance abuse, genetic, reproductive health, sickle cell) with separate signature line",
+      "Visit record vs. Visit summary definitions help patients understand what they are requesting",
+      "MRN moved to office-use-only section, removing a barrier for patients who don't know their medical record number"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — the current form is linked directly from a well-organized medical records page reachable in 1–2 clicks, though orphaned older versions and domain confusion with UC Health Cincinnati create minor hazards."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the org offers an MRO Express online portal for fully digital submission and fax is available, but the primary PDF form has zero fillable fields, requiring print-and-handwrite."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor issues — logical top-to-bottom flow, plain language, helpful record-type definitions, but extremely dense single-page layout and no submission instructions on the form itself."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access is clearly accommodated within a multi-purpose form — explicit 'If released to self' section with four delivery options, separate patient fee schedule (free), and MRO Express portal, though no dedicated patient-only access form exists."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing material — free patient access, clear rights statements, no unnecessary barriers, reproductive healthcare warning; however, no processing time commitment is stated and the '100+ pages sent electronically' policy is ambiguous."
+    },
+    "overall": {
+      "score": 4.0,
+      "grade": "B",
+      "summary": "UCHealth provides a well-organized, easy-to-find authorization form that clearly accommodates patient self-access with free delivery options and strong compliance, but the non-fillable PDF format and missing submission instructions prevent a top-tier rating."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:15:34.348Z"
+}

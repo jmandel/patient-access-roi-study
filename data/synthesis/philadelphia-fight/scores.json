@@ -1,0 +1,126 @@
+{
+  "org_id": "philadelphia-fight",
+  "org_name": "Philadelphia FIGHT Community Health Centers",
+  "category_id": "fqhc-independent-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Access to Information form",
+      "url": "https://fight.org/wp-content/uploads/2024/08/PRFATI.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "email",
+      "name": "Email to Privacy Officer",
+      "url": "mailto:privacy@fight.org",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Privacy Officer (215-732-1145)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Philadelphia FIGHT Privacy Officer, 1233 Locust St. 5th Floor, Philadelphia PA 19107",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In person at any Philadelphia FIGHT Health Center",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://fight.org/wp-content/uploads/2024/08/PRFATI.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "patient access request form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://fight.org/wp-content/uploads/2024/08/Authorization-for-Release-of-Information-8.2024.pdf-CORRECT.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "third-party authorization for use and disclosure form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Dedicated single-page PDF form titled 'Patient Request for Access to Information' for patients to request their own records, separate from a third-party authorization form.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 12,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "30 days (60 days with extension)",
+    "red_flags": [
+      "No mention of patient's right to appeal a denial of access, as required by HIPAA § 164.524(d)(4)",
+      "Fee language describes four cost categories without providing amounts or estimates; costs billed after fulfillment with no advance estimate mechanism"
+    ],
+    "bright_spots": [
+      "Dedicated patient access form separate from third-party authorization — a structural best practice",
+      "Email submission option (privacy@fight.org) in addition to fax, mail, and in-person",
+      "Electronic format option with open 'Specify' field respecting patient's right to choose format",
+      "Bilingual availability (English and Spanish) on Forms and Consents page",
+      "Adolescent self-access at age 13+ reflecting Pennsylvania minor consent law",
+      "Sensitive information opt-out on third-party form with granular categories relevant to patient population"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find via basic navigation (About → Forms and Consents) or site-specific web search; descriptive link text and direct PDF download links, though not prominently featured on the homepage."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Digitally-created PDF with text layer but zero fillable fields, requiring print-and-handwrite or PDF annotation workarounds; fax and email submission channels available."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with logical flow and checkbox-based options; minor issues include dense introductory paragraph with inline legal language and lack of explicit section headers."
+    },
+    "patient_centeredness": {
+      "score": 5,
+      "rationale": "Level 5: Process designed around patient self-access as a first-class use case with a dedicated form clearly distinct from third-party release, offering format and delivery choices and multiple submission channels."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization or in-person requirements; response timeline stated correctly; minor ambiguities in fee language (no specific amounts) and omission of denial appeal rights, but nothing that materially impedes patient access."
+    },
+    "overall": {
+      "score": 4.0,
+      "grade": "B",
+      "summary": "Philadelphia FIGHT demonstrates best-practice pathway differentiation with a dedicated patient access form and multiple submission channels including email, but the lack of fillable PDF fields and vague fee disclosures prevent a top-tier rating."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:25:04.851Z"
+}

@@ -1,0 +1,120 @@
+{
+  "org_id": "dhr-health",
+  "org_name": "DHR Health",
+  "category_id": "ch-regional-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "DHR Health System",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Protected Health Information (English)",
+      "url": "https://dhrhealth.com/media/q2dm5tx5/medical-records-form-english.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Autorización para la Divulgación de Información de Salud Protegida (Spanish)",
+      "url": "https://dhrhealth.com/media/2ldbyqpn/medical-records-form-spanish.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Health Information Management",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission to DHR Health HIM Department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://dhrhealth.com/media/q2dm5tx5/medical-records-form-english.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://dhrhealth.com/media/2ldbyqpn/medical-records-form-spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic bidirectional HIPAA authorization form, fills it out, and submits by fax or mail to the Health Information Management department.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 37,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": true,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Social Security Number requested with no indication it is optional",
+      "Purpose field required without noting HIPAA Right of Access exemption",
+      "Liability waiver bundled into authorization on Spanish form",
+      "Form dated August 2015 — over a decade old, predating 21st Century Cures Act"
+    ],
+    "bright_spots": [
+      "Bilingual (English and Spanish) forms available for Rio Grande Valley population",
+      "Granular record type selection with ~20 checkbox categories",
+      "Medical Records page easy to find — 2 clicks from homepage"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — Medical Records page is 2 clicks from homepage with clearly labeled download links, though legacy URLs from CMS migration return empty files."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds; fax submission available — English form has fillable fields (unnamed) and text layer but is not digital-first; Spanish version is an image-only scan with no text layer."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but notable problems — bidirectional OR structure is confusing, psychiatric consent section is dense and ambiguous, but form is 2 pages with reasonable record type checklist."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is not addressed — form is a generic third-party release authorization with no Right of Access language, no patient rights statement, and requires purpose justification HIPAA does not mandate."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Requirements that go beyond what the law requires — SSN collection, purpose field without exemption, liability waiver in Spanish version, witness requirement, no fee disclosure, and no patient rights information."
+    },
+    "overall": {
+      "score": 2.9,
+      "grade": "C",
+      "summary": "DHR Health provides an easily findable but outdated generic release form that makes no accommodation for patient self-access, requires unnecessary personal information, and has significant quality gaps between its English and Spanish versions."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:22:20.149Z"
+}

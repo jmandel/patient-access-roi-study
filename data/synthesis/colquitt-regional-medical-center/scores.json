@@ -1,0 +1,95 @@
+{
+  "org_id": "colquitt-regional-medical-center",
+  "org_name": "Colquitt Regional Medical Center",
+  "category_id": "ch-independent-government-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use or Disclose Health Information",
+      "url": "https://colquittregional.com/wp-content/uploads/2025/08/Authorization-to-Use-or-Disclose-Health-Information-Form-04-23-2021.pdf",
+      "is_primary": true
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://colquittregional.com/wp-content/uploads/2025/08/Authorization-to-Use-or-Disclose-Health-Information-Form-04-23-2021.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "A single generic HIPAA authorization form for disclosure to third parties, with a 'my personal records' purpose checkbox but no dedicated patient self-access pathway.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Witness signature line present which may deter patients who lack an available witness",
+      "No submission instructions on the form — no fax number, address, email, or department listed"
+    ],
+    "bright_spots": [
+      "Explicit voluntariness statement: signing is voluntary and will not affect treatment",
+      "Patient-controlled authorization expiration date",
+      "Easy findability: clearly labeled download button 2 clicks from homepage"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — form was clearly linked on the Health Records page with a descriptive button label, reachable in 2 clicks from the homepage via a site-scoped search."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the form is an image-only scan with zero fillable fields, requiring printing and handwriting; no electronic submission method is documented on the form itself."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but with notable problems — single-page 10-item numbered list has logical flow, but lacks section headers or visual grouping, mixes plain language with legal phrasing, and provides no instructions for patient self-access use."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought — the form is a generic third-party authorization that asks for a recipient name/address; the 'my personal records' purpose checkbox is the only nod to self-access, with no guidance on how to use the form for that purpose."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond legal necessity — witness signature line (not required by HIPAA), no fee disclosure, no mention of response timeframes or patient access rights, though nothing clearly violates patient rights."
+    },
+    "overall": {
+      "score": 2.65,
+      "grade": "C",
+      "summary": "Colquitt Regional Medical Center offers an easily findable but technically poor records request form — a scanned image with no fillable fields, no submission instructions, and no differentiation between patient self-access and third-party release."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:10:45.927Z"
+}

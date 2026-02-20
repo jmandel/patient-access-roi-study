@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "lane-county-hospital",
+    "name": "Lane County Hospital",
+    "category_id": "cah-independent-government-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "state": "KS",
+    "city": "Dighton",
+    "website": "https://www.lanecountyhospital.com",
+    "bed_count": 25,
+    "notes": "County-owned CAH serving Lane County; NRHA Top 20 CAH for Quality"
+  },
+  {
+    "org_id": "decatur-county-hospital",
+    "name": "Decatur County Hospital",
+    "category_id": "cah-independent-government-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "state": "IA",
+    "city": "Leon",
+    "website": "https://www.decaturcountyhospital.org",
+    "bed_count": 25,
+    "notes": "County-owned CAH; sole hospital provider in Decatur County"
+  },
+  {
+    "org_id": "boone-county-health-center",
+    "name": "Boone County Health Center",
+    "category_id": "cah-independent-government-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "state": "NE",
+    "city": "Albion",
+    "website": "https://boonecohealth.org",
+    "bed_count": 25,
+    "notes": "County-owned CAH serving since 1907; NRHA Top 20 CAH recognition"
+  }
+]

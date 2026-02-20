@@ -1,0 +1,66 @@
+[
+  {
+    "org_id": "samaritan-lebanon-community-hospital",
+    "name": "Samaritan Lebanon Community Hospital",
+    "category_id": "ch-regional-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "OR",
+    "city": "Lebanon",
+    "website": "https://samhealth.org/find-a-location/samaritan-lebanon-community-hospital/",
+    "bed_count": 25,
+    "notes": "Part of Samaritan Health Services (5 hospitals). Critical access hospital serving East Linn County."
+  },
+  {
+    "org_id": "goleta-valley-cottage-hospital",
+    "name": "Goleta Valley Cottage Hospital",
+    "category_id": "ch-regional-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Goleta",
+    "website": "https://www.cottagehealth.org/locations/goleta-valley-cottage-hospital/",
+    "bed_count": 48,
+    "notes": "Part of Cottage Health (3 hospitals). Nonprofit community hospital in the Santa Barbara area."
+  },
+  {
+    "org_id": "slv-health-regional-medical-center",
+    "name": "San Luis Valley Health Regional Medical Center",
+    "category_id": "ch-regional-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CO",
+    "city": "Alamosa",
+    "website": "https://www.sanluisvalleyhealth.org/",
+    "bed_count": 49,
+    "notes": "Part of San Luis Valley Health (2 hospitals). Nonprofit Level III trauma center serving southern Colorado."
+  },
+  {
+    "org_id": "st-charles-redmond",
+    "name": "St. Charles Redmond",
+    "category_id": "ch-regional-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "OR",
+    "city": "Redmond",
+    "website": "https://stcharleshealthcare.org/locations/st-charles-redmond",
+    "bed_count": 48,
+    "notes": "Part of St. Charles Health System (4 hospitals). Nonprofit community hospital in Central Oregon."
+  }
+]

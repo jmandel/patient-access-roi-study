@@ -1,0 +1,127 @@
+{
+  "org_id": "desert-valley-hospital",
+  "org_name": "Desert Valley Hospital",
+  "category_id": "ch-major-forprofit-west",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Prime Healthcare",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Prime Healthcare Authorization for Use or Disclosure of Health Information (PHSI-280-014)",
+      "is_primary": true,
+      "url": "https://www.cvmc.com/wp-content/uploads/2022/12/CVMC-Authorization-for-Use-or-Disclosure-of-Health-Information.pdf"
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM department",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission to Desert Valley Hospital HIM",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person submission at Medical Records department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://ehp.primehealthcare.com/wp-content/uploads/2022/09/Authorization-for-Use-or-Disclosure-of-Health-Information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Employee health plan authorization form (not for general patients)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.cvmc.com/wp-content/uploads/2022/12/CVMC-Authorization-for-Use-or-Disclosure-of-Health-Information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (system-wide patient template from sister hospital)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://desertvalleymedicalgroup.com/wp-content/uploads/2023/06/Authorization-for-Employment-services-8.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Employment services authorization (not an ROI form)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients must obtain a generic HIPAA authorization form (not available on DVH's website) and submit via fax, mail, or in person.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 47,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "SSN requested on authorization form — unnecessary for records release and creates identity theft risk",
+      "Form not available from Desert Valley Hospital's website — patients cannot download any ROI form from dvmc.com",
+      "Coercive completeness warning: 'Failure to provide all information requested may invalidate this Authorization'",
+      "Ambiguous witness line on signature page with no guidance on whether witness is required"
+    ],
+    "bright_spots": [
+      "47 fillable interactive PDF fields — designed for on-screen completion",
+      "HITECH electronic format citation with email delivery option",
+      "Granular sensitive-information consent requiring individual initials for seven categories",
+      "Clear patient rights section with California-specific re-disclosure language"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 2,
+      "rationale": "Level 2: DVH's Medical Records page describes the process but provides no downloadable form; finding the actual template required identifying the parent system and searching sister hospital websites — persistent, creative search strategies."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The form is fillable (47 fields) and fax submission is available, but the form is not hosted on DVH's site (requiring workarounds to obtain it) and field names are empty in metadata, suggesting accessibility gaps."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Logical structure with clear sections and patient rights, but notable problems including SSN collection, coercive invalidation warning, header typo, and ambiguous witness requirement."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form but it was not designed for self-access — the 'authorize X to release to Y' framing requires the patient to figure out how to request their own records, with no dedicated pathway or portal."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: SSN collection and completeness-invalidation warning go beyond what HIPAA requires for patient access; fee information is only on website (not form); however patient rights are stated and no notarization is required."
+    },
+    "overall": {
+      "score": 2.85,
+      "grade": "C",
+      "summary": "Desert Valley Hospital provides no downloadable patient form on its own website; the best available Prime Healthcare system template is reasonably well-designed with fillable fields but uses a generic authorization format with unnecessary SSN collection and no dedicated patient self-access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:01:21.199Z"
+}

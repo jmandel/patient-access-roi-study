@@ -1,0 +1,116 @@
+{
+  "org_id": "osu-wexner-medical-center",
+  "org_name": "The Ohio State University Wexner Medical Center",
+  "category_id": "teach-major-government-midwest",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": "The Ohio State University Health System",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Medical Information (with instructions)",
+      "url": "https://wexnermedical.osu.edu/-/media/files/wexnermedical/patient-care/patient-and-visitor-guide/medical-records/roi-form-and-instructions.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Medical Information Management offices (3 locations)",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Medical Information Management phone line",
+      "url": "tel:+16142938657",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://wexnermedical.osu.edu/-/media/files/wexnermedical/patient-care/patient-and-visitor-guide/medical-records/authorization-to-release-medical-information-112619.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (image-only scan)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://wexnermedical.osu.edu/-/media/files/wexnermedical/patient-care/patient-and-visitor-guide/medical-records/roi-form-and-instructions.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form with instructions"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a generic Authorization to Release Medical Information PDF, print and complete it by hand, and mail it to one of three Medical Information Management offices.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "10 business days",
+    "red_flags": [
+      "Mandatory 'Purpose of Disclosure' for all requests including patient self-access, which HIPAA does not require",
+      "Fee questions directed to CIOX Health with no fee schedule or distinction between patient-access and third-party fees",
+      "Form last revised November 2019, predating 2021 information blocking rules and 2024 42 CFR Part 2 revisions"
+    ],
+    "bright_spots": [
+      "Dedicated instructions page with 7 numbered items mapped to form sections",
+      "Granular record-type selection with 11 checkbox categories",
+      "Multi-facility selection across 8 OSU locations with guidance to 'select all' if uncertain",
+      "Accepts eSignatures (e.g., Adobe) with date/time stamp",
+      "Correct substance use disorder (42 CFR Part 2) and psychotherapy notes disclosures"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms found on the first web search attempt with direct download links from the Medical Records page; minor confusion from two versions with no guidance on which to use."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF has a text layer but zero fillable fields, no electronic submission channel (no fax, email, or portal for submission), requiring patients to print, handwrite, and mail the form."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with a dedicated instructions page, logical flow, and granular record-type options; minor issues with dense layout on the form page, small font in legal sections, and some HIPAA jargon."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form but it was not designed for self-access — no differentiation from third-party release, no mention of Right of Access, and mandatory purpose disclosure."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Requires purpose of disclosure for all requests (not required by HIPAA for patient access), fee opacity through CIOX Health with no schedule provided; offset by no notarization requirement, appropriate anti-conditioning language, and correct sensitive-records disclosures."
+    },
+    "overall": {
+      "score": 3.05,
+      "grade": "C",
+      "summary": "OSU Wexner Medical Center offers a findable and reasonably well-designed ROI form with useful instructions, but the lack of fillable fields, mail-only submission, no patient self-access differentiation, and opaque fee structure result in a fundamentally paper-based, third-party-oriented process."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:16:44.812Z"
+}

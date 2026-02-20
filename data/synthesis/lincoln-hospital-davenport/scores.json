@@ -1,0 +1,126 @@
+{
+  "org_id": "lincoln-hospital-davenport",
+  "org_name": "Lincoln Hospital",
+  "category_id": "cah-independent-government-west",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Health Care Information and Records (hospital)",
+      "url": "https://www.lincolnhospital.org/patients-and-visitors/health-records/",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Medical Records (clinics)",
+      "url": "https://www.lincolnhospital.org/patients-and-visitors/health-records/",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission of completed form",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission of completed form",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person delivery of completed form",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://res.cloudinary.com/dpmykpsih/image/upload/lincoln-hospital-site-343/media/1179/medical-records-release-form-_clinic.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (clinics)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://res.cloudinary.com/dpmykpsih/image/upload/lincoln-hospital-site-343/media/1180/release-of-info-form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (hospital)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization form from the Health Records page, fills it out by hand, and returns it via fax, mail, or in person; page 2 acknowledges patient access rights but the form is structured for third-party release.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "potentially_excessive",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Clinics form cites WAC 246-08-400 per-page fee schedule ($26 base + $1.17/page) that likely exceeds HIPAA cost-based limits for patient access requests",
+      "Fee schedule references expired date range (September 2017 – June 2019)",
+      "Hospital form leaves fee amount blank ($______ per page), providing no cost transparency",
+      "Clinics form requires patients to attach a copy of photo identification"
+    ],
+    "bright_spots": [
+      "Clinics form offers electronic delivery options (MyChart portal, CD, USB flash drive) — progressive for a rural CAH",
+      "Explicit no-conditions statement on both forms",
+      "Convenient 'Most recent 2 years' date shortcut with specific clinical examples on clinics form",
+      "Detailed minor consent provisions aligned with Washington State law"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms are easy to find via 2 clicks from the homepage (Patients and Visitors → Health Records) and appear in web search results, though bot blocking required browser fallback."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The hospital form (form-2) has a text layer enabling PDF annotation as a workaround for the lack of fillable fields, and fax submission is available; the clinics form is an image-only scan with no digital utility."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate organization with labeled sections and reasonable 2-page length, but notable problems include dual-purpose confusion between pages, dense legal preamble, confusing OFFICE USE placement, and a blank fee field."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but the form wasn't designed for them — the third-party release structure dominates page 1 and patients must figure out which parts apply to self-access, despite page 2's access request language."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Strong compliance fundamentals (no-conditions statement, revocation rights, response time, psychotherapy notes exclusion) are undermined by a fee schedule that likely exceeds HIPAA cost-based limits for patient access and a photo ID attachment requirement."
+    },
+    "overall": {
+      "score": 3.15,
+      "grade": "C",
+      "summary": "Lincoln Hospital provides easily findable but fundamentally paper-based ROI forms that function as generic third-party authorizations rather than patient-centric access pathways, with potentially excessive fees and no fillable fields — partially offset by progressive electronic delivery options and clear rights statements."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:23:22.083Z"
+}

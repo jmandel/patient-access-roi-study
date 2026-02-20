@@ -1,0 +1,142 @@
+{
+  "org_id": "musc-health-medical-center",
+  "org_name": "MUSC Health University Medical Center",
+  "category_id": "teach-major-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "MUSC Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Protected Health Information",
+      "url": "https://muschealth.org/-/sm/health/medical-records/f/authorization-to-disclose-phi.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart Medical Records Request",
+      "vendor": "Epic MyChart",
+      "url": "https://mychart.muschealth.com",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Ciox eRequest",
+      "vendor": "Ciox/HealthMark",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Health Information Services",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Health Information Services",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email to ROIAuthrequest@MUSC.edu",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://muschealth.org/-/sm/health/medical-records/f/authorization-to-disclose-phi.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://mychart.muschealth.com/mychart/en-us/docs/Med%20Rec%20Request.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "MyChart records request instructions"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://muschealth.org/-/sm/health/medical-records/f/spanish-auth-to-release-phi.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic Authorization to Release Protected Health Information form that serves both patient self-access and third-party release, with 'Patient/Guardian/Legal Rep' as one of eight purpose checkboxes.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "potentially_excessive",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Witness signature line present with no explanation of when required",
+      "Blanket ID attachment requirement for all requestors, not just representatives",
+      "MyChart guide states fees for 'search and duplication' for patient requests — search fees not permitted under HIPAA for patient access",
+      "Prepayment required before records release per MyChart guide"
+    ],
+    "bright_spots": [
+      "Spanish-language form available as full professional translation with bilingual headers",
+      "Five delivery methods offered: mail, MyChart, fax, encrypted email, other",
+      "Three distinct request pathways: PDF form, MyChart portal, Ciox eRequest",
+      "Explicit reference to HIPAA Right of Access (45 CFR §164.524)",
+      "Multi-facility contact directory covering 9 MUSC locations with complete phone, fax, and email info",
+      "Abstract record type clearly defined to help patients understand scope options"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with a basic web search or simple site navigation; the medical records page links directly to the form at a clean, descriptive URL with no access barriers."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital — MyChart provides a fully electronic request pathway, and the PDF form can be submitted via fax or email, but the PDF itself has zero fillable fields requiring print-and-handwrite completion."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with logical flow and helpfully defined record type options, but marred by dense legal disclosure text, an intimidating opening warning, and mixed plain/legal language."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic third-party release form requires patients to fill in their own name as both patient and recipient, with patient access as one of eight purpose checkboxes."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Several requirements beyond what HIPAA mandates for patient access — witness signature line, blanket ID requirement, SSN request, and the MyChart guide's mention of search fees and prepayment that may exceed permitted fee limits."
+    },
+    "overall": {
+      "score": 3.55,
+      "grade": "B",
+      "summary": "MUSC Health makes forms easy to find and offers multiple pathways including MyChart and a Spanish-language version, but the generic third-party authorization form, non-fillable PDF, and concerning fee/prepayment practices keep it from a higher grade."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:14:11.724Z"
+}

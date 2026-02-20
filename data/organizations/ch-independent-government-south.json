@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "neshoba-general-hospital",
+    "name": "Neshoba General Hospital",
+    "category_id": "ch-independent-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "MS",
+    "city": "Philadelphia",
+    "website": "https://www.neshobageneral.com",
+    "bed_count": 48,
+    "notes": "County-owned (Neshoba County Board of Supervisors), Top 100 Rural & Community Hospital by Chartis"
+  },
+  {
+    "org_id": "colquitt-regional-medical-center",
+    "name": "Colquitt Regional Medical Center",
+    "category_id": "ch-independent-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Moultrie",
+    "website": "https://colquittregional.com",
+    "bed_count": 155,
+    "notes": "Operated by Colquitt County Hospital Authority, community-based teaching hospital in southwest Georgia"
+  },
+  {
+    "org_id": "troy-regional-medical-center",
+    "name": "Troy Regional Medical Center",
+    "category_id": "ch-independent-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Troy",
+    "website": "https://troymedicalcenter.com",
+    "bed_count": 97,
+    "notes": "City-owned municipal hospital, Joint Commission accredited, Top 100 Rural & Community Hospital 2025"
+  }
+]

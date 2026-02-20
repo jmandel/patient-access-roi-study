@@ -1,0 +1,116 @@
+{
+  "org_id": "sturdy-memorial-hospital",
+  "org_name": "Sturdy Memorial Hospital",
+  "category_id": "ch-independent-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Health Information (fillable PDF)",
+      "url": "https://www.sturdyhealth.org/app/files/public/496be82f-b2a1-482b-ae18-dea3b5bdba8a/Authorization%20to%20Release%20Medical%20Records%20FILLABLE%20Jan%2025.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed form to Health Information Management Department",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax completed form (fax number not specified on form)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.sturdyhealth.org/app/files/public/496be82f-b2a1-482b-ae18-dea3b5bdba8a/Authorization%20to%20Release%20Medical%20Records%20FILLABLE%20Jan%2025.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.sturdyhealth.org/app/files/public/96f2cd1b-4b3f-4460-9ec1-a8eeacdc61a6/Medical-Records-Auth-Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy/superseded)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients must use a general-purpose Authorization to Release Health Information form, listing themselves as the recipient, to request their own records.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 59,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "90-day hard expiration with no option for custom date may expire before request is fulfilled",
+      "Ambiguous witness line — unclear whether witness signature is required or optional",
+      "Outdated legacy form (form-2) still publicly accessible, risking patient confusion",
+      "No submission method specified on the form"
+    ],
+    "bright_spots": [
+      "59 fillable interactive fields — exceptional digital-first form design",
+      "Granular record-type selection with ~14 categories and individual date ranges",
+      "Individual sensitive-information consent via initials for six categories",
+      "Actively maintained form (January 2025 update, form code SM00081 10/24)",
+      "Clear right-to-refuse language with no consent bundling"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms found on first web search attempt with direct PDF links — easy with basic search — but old form still accessible without redirect creates minor confusion."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — 59 fillable fields allow full electronic completion, but submission requires printing/faxing/mailing (one gap in the digital chain)."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized 2-page form with logical flow and clear section structure, but some legalistic language in sensitive information sections and no introductory guidance for patients."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form but it wasn't designed for them — they must figure out to list themselves as recipient, select 'Personal' purpose, and navigate a third-party release structure with no Right of Access reference."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities (witness line unclear, no fee disclosure, 90-day hard expiration) but nothing that would materially impede a patient or misrepresent their rights; right to refuse and revoke clearly stated."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Sturdy Memorial delivers a technically excellent fillable form with granular record selection, but funnels patient self-access through a generic third-party release authorization without a dedicated pathway or Right of Access acknowledgment."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:08:58.309Z"
+}

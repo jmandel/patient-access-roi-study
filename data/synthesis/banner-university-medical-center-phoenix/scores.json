@@ -1,0 +1,125 @@
+{
+  "org_id": "banner-university-medical-center-phoenix",
+  "org_name": "Banner - University Medical Center Phoenix",
+  "category_id": "teach-major-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Banner Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Medical Information",
+      "url": "https://www.bannerhealth.com/-/media/files/project/bh/patients-visitors/medical-records/12000004-bh-authorization-to-use-or-disclose-protected-health-information-625.ashx",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "Banner Health Patient Portal",
+      "vendor": "Epic MyChart",
+      "url": "https://account.bannerhealth.com/",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission of authorization form",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission of authorization form",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person pick-up/drop-off",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.bannerhealth.com/-/media/files/project/bh/patients-visitors/medical-records/12000004-bh-authorization-to-use-or-disclose-protected-health-information-625.ashx",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.bannerhealth.com/-/media/files/project/bh/locations/banner-university-medicine-family-medicine-clinic/1200-authorization-for-release-of-medical-information-roi.ashx",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy hospital-specific)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic system-wide authorization form, prints and completes it by hand, and submits via fax, mail, or in-person; a portal redirect is noted at the top of the form.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Vague fee warning without amounts or distinction between patient-access and third-party release fees",
+      "Broad liability waiver releasing Banner Health from any legal responsibility for disclosure"
+    ],
+    "bright_spots": [
+      "Prominent patient portal redirect at the top of the form directs patients to self-service access before the paper process",
+      "Recent revision date (06/2025) demonstrates active form maintenance",
+      "Granular per-category opt-out checkboxes for sensitive information (HIV, behavioral health, substance abuse, genetic testing)",
+      "Explicit statement that treatment will not be conditioned on signing the authorization"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — the form was returned immediately by web search and is published under the patients/medical-records section of bannerhealth.com with no bot blocking or login walls."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF has zero fillable fields, requiring patients to print, handwrite all fields, and sign by hand; fax submission is available but the form itself offers no digital completion capability."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — the form has clear section headers, logical flow, and granular record-type selection, but the opening paragraph about third-party directives is dense regulatory jargon and there is a grammatical error in the exclusion instructions."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the form is a generic authorization for all releases with a 'Self' checkbox option, but does not distinguish patient access rights from third-party release; the portal callout is helpful but the form itself is not patient-access-specific."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing that would materially impede a patient — the form correctly states non-conditioning of treatment, right to revoke, and right to a copy, but the fee disclosure is vague and the broad liability waiver goes beyond HIPAA requirements."
+    },
+    "overall": {
+      "score": 3.25,
+      "grade": "C",
+      "summary": "Banner Health provides easily findable and well-maintained forms with good content design, but the non-fillable PDF, generic authorization pathway, and vague fee disclosure keep it in the average range for patient experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:15:51.222Z"
+}

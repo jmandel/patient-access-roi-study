@@ -1,0 +1,106 @@
+{
+  "org_id": "el-rio-health",
+  "org_name": "El Rio Health",
+  "category_id": "fqhc-independent-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "patient_portal",
+      "name": "El Rio MyChart",
+      "vendor": "Epic MyChart",
+      "is_primary": true
+    },
+    {
+      "type": "phone",
+      "name": "Medical Records phone request",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person at clinic location",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://elrio.org/wp-content/uploads/2025/04/compliance-booklet-eng.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "HIPAA Notice of Privacy Practices / compliance booklet (not an ROI form)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "impossible",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "No downloadable records request form exists; patients must call or visit in person, or use MyChart for limited online access.",
+    "primary_pathway_type": "phone_or_in_person_only",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 0,
+    "page_count": 16,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": true,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "No ROI form available online — patients must call or visit in person just to obtain the form, creating an unnecessary barrier to exercising HIPAA Right of Access",
+      "Internal ROI forms exist (referenced in chronic pain policy) but are not made publicly available to patients"
+    ],
+    "bright_spots": [
+      "Plain-language HIPAA notice following HHS model format — genuinely readable and well-structured",
+      "Comprehensive patient rights section covering dignity, comfort, and education",
+      "Filename convention suggests bilingual (English/Spanish) materials may be available",
+      "MyChart portal provides some digital access for established patients"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 1,
+      "rationale": "Level 1: Effectively unfindable online — despite exhaustive searching (web search, site crawl, sitemap, upload directory probing, Wayback Machine), no ROI or patient access request form exists on the website."
+    },
+    "technical_accessibility": {
+      "score": 1,
+      "rationale": "Level 1: No usable digital form exists — the only document found is a compliance booklet with zero fillable fields and no records request functionality."
+    },
+    "content_design": {
+      "score": 1,
+      "rationale": "Level 1: No records request form exists to evaluate; the compliance booklet's records access section says only 'Ask us how to do this,' which is unusable without outside help."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought — the HIPAA notice acknowledges the right but provides no actionable process; MyChart offers partial accommodation for established patients."
+    },
+    "compliance": {
+      "score": 2,
+      "rationale": "Level 2: The absence of any publicly available records request form creates an illegitimate barrier to HIPAA Right of Access; fee information is vague ('reasonable, cost-based fee' with no specifics)."
+    },
+    "overall": {
+      "score": 1.45,
+      "grade": "F",
+      "summary": "El Rio Health does not publish any records request form online, forcing patients into an opaque phone/in-person process that fails to meet basic patient access expectations."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:29:32.579Z"
+}

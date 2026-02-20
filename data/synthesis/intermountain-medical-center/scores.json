@@ -1,0 +1,141 @@
+{
+  "org_id": "intermountain-medical-center",
+  "org_name": "Intermountain Medical Center",
+  "category_id": "ch-major-nonprofit-west",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Intermountain Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Health Information (self-access)",
+      "url": "https://prod.intermountainhealth.org/-/media/files/intermountain-health/for-patients/medical-records/request-records-for-yourself.ashx",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of PHI (third-party)",
+      "url": "https://intermountainhealthcare.org/-/media/files/intermountain-health/for-patients/medical-records/auth-to-use-and-disclose-phi-request-records-be-sent-to-someone-else.ashx",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission (UT/ID)",
+      "url": "mailto:MedRecReq@r1rcm.com",
+      "vendor": "R1 RCM",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission (CO/NV/MT/WY)",
+      "url": "mailto:peaks_croi@imail.org",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission (UT/ID: 385-215-7047; CO/NV/MT/WY: 303-467-8966)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission (PO Box 571069, Murray, UT 84157 or 500 Eldorado Blvd, Broomfield, CO 80021)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://intermountainhealthcare.org/-/media/files/patient-tools/authorization-for-release-of-health-info-form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy, third-party release)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://intermountainhealthcare.org/-/media/files/intermountain-health/for-patients/medical-records/auth-to-use-and-disclose-phi-request-records-be-sent-to-someone-else.ashx",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Authorization for disclosure of PHI (third-party release)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://prod.intermountainhealth.org/-/media/files/intermountain-health/for-patients/medical-records/request-records-for-yourself.ashx",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Patient access request form (self-access)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Intermountain Health provides a dedicated fillable PDF form ('Patient Request for Health Information') specifically for patients requesting their own records, separate from the third-party disclosure authorization.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 48,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Legacy 2017 form still accessible online without indication it has been superseded",
+      "UT/ID email routes to third-party vendor R1 RCM without disclosure on the form"
+    ],
+    "bright_spots": [
+      "Dedicated patient self-access form separate from third-party authorization",
+      "Question-based section headings make the form conversational and approachable",
+      "Email submission accepted — fully digital pathway from completion to submission",
+      "Electronic delivery explicitly offered with email, USB, CD, portal, and free-text 'other' option",
+      "48 fillable fields with Print/Clear buttons on a single concise page",
+      "Legacy form includes multilingual interpretation notices in Chinese Traditional and Spanish"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms were easy to find with basic web searches and directly downloadable; required navigating to the parent system site but no complex path or creative strategies."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — fully fillable 48-field PDF with Print/Clear buttons, but must submit via email/fax/mail rather than an integrated online submission portal."
+    },
+    "content_design": {
+      "score": 5,
+      "rationale": "Level 5: Clear, concise single-page form with numbered sections, question-based headings, plain language, and logical flow — a patient could complete it without assistance."
+    },
+    "patient_centeredness": {
+      "score": 5,
+      "rationale": "Level 5: Process designed around patient self-access as a first-class use case with a dedicated form clearly distinct from third-party release, defaulting to 'Self' as recipient and acknowledging HIPAA right of access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization, no in-person requirement, non-conditioning language; minor ambiguities in fee disclosure ('there may be charges' without amounts) and undisclosed vendor routing, but nothing that would materially impede a patient."
+    },
+    "overall": {
+      "score": 4.4,
+      "grade": "B",
+      "summary": "Intermountain Health provides a strong patient access experience with a dedicated self-access form, excellent document design, and multiple electronic submission channels, falling just short of an A due to minor gaps in fee transparency and submission workflow integration."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:02:34.190Z"
+}

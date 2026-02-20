@@ -1,0 +1,117 @@
+{
+  "org_id": "medical-city-dallas",
+  "org_name": "Medical City Dallas Hospital",
+  "category_id": "ch-major-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "HCA Healthcare",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "HCA Authorization for Release of PHI",
+      "url": "https://www.medicalcityhealthcare.com/locations/medical-city-dallas-hospital/for-patients/medical-records",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax completed form to HCA ROI processing",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed form to HCA PO Box 290789, Nashville, TN",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "HCA ROI phone line (844-481-0278)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.hcadam.com/api/public/content/46695a9ba25e4b9aa6376f53cef033ac?v=b53c28b5",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.hcadam.com/api/public/content/e109b112b80f42fc8291acbe0b1435fa?v=829b113e",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HCA system-wide authorization form from the medical records page, completes it digitally, prints and signs, then faxes or mails to HCA headquarters in Nashville.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 52,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Optional SSN collection on ROI form creates unnecessary data exposure risk",
+      "Fax delivery restricted to physician office/medical facility only"
+    ],
+    "bright_spots": [
+      "Spanish-language version with identical fillable structure",
+      "USCDI release option acknowledges modern interoperability standards",
+      "Four delivery format options including encrypted and unencrypted email"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: Website navigation to the medical records page is straightforward, but web search results return stale 404 URLs with no redirects, requiring patients to navigate the site directly rather than finding the form via search engines."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Fillable PDF with 52 interactive fields allows full digital completion, but requires printing for wet signature followed by fax or mail submission — one gap in an otherwise digital workflow."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Clear three-section organization with labeled headers and granular record-type selection, but the single-page format creates extreme density with likely small fonts, and legal terminology may challenge low-literacy readers."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form by selecting 'At the request of the individual' as the purpose, but the form was not designed for patient self-access — it is a generic authorization serving all release scenarios with no HIPAA Right of Access reference."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Properly covers voluntary authorization, revocation rights, and non-conditioning of treatment; minor issues include optional SSN collection, ambiguous fee disclosure ('reasonable copy fee'), and fax restriction to medical facilities only."
+    },
+    "overall": {
+      "score": 3.45,
+      "grade": "C",
+      "summary": "Medical City Dallas provides a technically competent, fillable, bilingual authorization form through its parent HCA Healthcare, but lacks a dedicated patient access pathway and suffers from broken search URLs and dense form design."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:03:28.171Z"
+}

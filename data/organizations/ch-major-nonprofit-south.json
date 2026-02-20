@@ -1,0 +1,114 @@
+[
+  {
+    "org_id": "ascension-sacred-heart-pensacola",
+    "name": "Ascension Sacred Heart Pensacola",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "Pensacola",
+    "website": "https://healthcare.ascension.org/locations/florida/flpen/pensacola-ascension-sacred-heart-pensacola",
+    "bed_count": 566,
+    "notes": "Level II trauma center in Northwest Florida; part of Ascension, one of the largest nonprofit health systems in the U.S."
+  },
+  {
+    "org_id": "ascension-saint-thomas-rutherford",
+    "name": "Ascension Saint Thomas Rutherford Hospital",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Murfreesboro",
+    "website": "https://healthcare.ascension.org/locations/tennessee/tnnas/murfreesboro-ascension-saint-thomas-rutherford-hospital",
+    "bed_count": 418,
+    "notes": "Community hospital serving fast-growing Rutherford County; part of Ascension Saint Thomas network in Tennessee."
+  },
+  {
+    "org_id": "ascension-st-vincents-east",
+    "name": "Ascension St. Vincent's East",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Birmingham",
+    "website": "https://healthcare.ascension.org/locations/alabama/albhm/birmingham-ascension-st-vincents-east",
+    "bed_count": 362,
+    "notes": "Level III adult trauma center in eastern Birmingham; part of Ascension St. Vincent's Alabama network."
+  },
+  {
+    "org_id": "adventhealth-hendersonville",
+    "name": "AdventHealth Hendersonville",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "NC",
+    "city": "Hendersonville",
+    "website": "https://www.adventhealth.com/hospital/adventhealth-hendersonville",
+    "bed_count": 103,
+    "notes": "Community hospital serving Western North Carolina; part of AdventHealth system with 50+ hospitals across 9 states."
+  },
+  {
+    "org_id": "adventhealth-central-texas",
+    "name": "AdventHealth Central Texas",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Killeen",
+    "website": "https://www.adventhealth.com/hospital/adventhealth-central-texas",
+    "bed_count": 230,
+    "notes": "Community acute care hospital serving West Bell, Coryell, and Lampasas counties; part of AdventHealth system."
+  },
+  {
+    "org_id": "baptist-health-lexington",
+    "name": "Baptist Health Lexington",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "KY",
+    "city": "Lexington",
+    "website": "https://www.baptisthealth.com/locations/baptist-health-lexington",
+    "bed_count": 434,
+    "notes": "Major acute care facility; part of Baptist Health, the largest nonprofit health system in Kentucky."
+  },
+  {
+    "org_id": "bon-secours-st-marys-richmond",
+    "name": "Bon Secours St. Mary's Hospital",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "VA",
+    "city": "Richmond",
+    "website": "https://www.bonsecours.com/locations/st-marys-hospital",
+    "bed_count": 391,
+    "notes": "Community hospital in Central Virginia; part of Bon Secours Mercy Health, a major Catholic nonprofit system."
+  }
+]

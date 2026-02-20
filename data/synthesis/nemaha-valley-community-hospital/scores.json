@@ -1,0 +1,109 @@
+{
+  "org_id": "nemaha-valley-community-hospital",
+  "org_name": "Nemaha Valley Community Hospital",
+  "category_id": "cah-independent-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Health Information",
+      "url": "https://nemvch.com/wp-content/uploads/2019/10/Authorization-for-Release.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "phone",
+      "name": "Hospital main line or Privacy Officer direct line",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://nemvch.com/wp-content/uploads/2019/10/Authorization-for-Release.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://nemvch.com/wp-content/uploads/2026/02/Notice-of-Privacy-Practices-021626.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "privacy notice"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must download a generic Authorization for Release of Health Information form (image-only scan), print it, fill it out by hand listing themselves as the recipient, and contact the hospital to learn how to submit it.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "compliant",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Social Security Number field prominently included alongside patient identifiers — unnecessary for records release and creates identity theft risk",
+      "No submission instructions on the form — no mailing address, fax number, or email for submitting the completed authorization",
+      "Form revision date is January 2014 (over a decade old); scanned in 2016, uploaded in 2019"
+    ],
+    "bright_spots": [
+      "Spanish-language version of the authorization form available on the same Resources page — notable for a small rural critical access hospital",
+      "Granular 14-item record-type checklist gives patients control over which specific records are released",
+      "Very low per-page copy fee ($0.03/page) well within HIPAA limits",
+      "NPP names a specific Privacy Officer (Courtney Schmelzle) with direct phone and email contact"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Form was easy to find via site navigation (2 clicks from homepage) and site-scoped search; Resources page labels the link clearly, though general filetype:pdf searches did not surface it directly."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Image-only scan with zero fillable fields and no text layer; patient must print, handwrite all fields, and contact the hospital to determine submission method — a primarily paper workflow."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Logical field sequence and reasonably clear legal language, but undermined by dense paragraph text without visual breaks, staff-facing cost worksheet included as page 2, pagination errors, and dated typewriter-style formatting."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form by listing themselves as recipient, but the form was not designed for patient self-access — it lacks right-of-access language, requires naming a recipient and purpose as if for third-party disclosure, and provides no guidance for patients requesting their own records."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Fees are reasonable and no notarization required, but SSN collection goes beyond what is legally necessary, no right-of-access language is included, and the lack of submission instructions creates an implicit barrier that may delay patient requests."
+    },
+    "overall": {
+      "score": 2.9,
+      "grade": "C",
+      "summary": "Nemaha Valley Community Hospital's records request process is easy to find but hampered by a decade-old image-only scan form, a generic third-party authorization design with no patient access differentiation, an unnecessary SSN field, and missing submission instructions."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:19:06.478Z"
+}

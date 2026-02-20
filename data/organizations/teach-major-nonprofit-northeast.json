@@ -1,0 +1,98 @@
+[
+  {
+    "org_id": "mass-general-hospital",
+    "name": "Massachusetts General Hospital",
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "MA",
+    "city": "Boston",
+    "website": "https://www.massgeneral.org",
+    "bed_count": 997,
+    "notes": "Primary teaching hospital of Harvard Medical School; part of Mass General Brigham system"
+  },
+  {
+    "org_id": "yale-new-haven-hospital",
+    "name": "Yale New Haven Hospital",
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "CT",
+    "city": "New Haven",
+    "website": "https://www.ynhh.org",
+    "bed_count": 1541,
+    "notes": "Primary teaching hospital of Yale School of Medicine; part of Yale New Haven Health System"
+  },
+  {
+    "org_id": "hospital-of-upenn",
+    "name": "Hospital of the University of Pennsylvania",
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "PA",
+    "city": "Philadelphia",
+    "website": "https://www.pennmedicine.org",
+    "bed_count": 800,
+    "notes": "Teaching hospital of Perelman School of Medicine; part of Penn Medicine system"
+  },
+  {
+    "org_id": "newyork-presbyterian-hospital",
+    "name": "NewYork-Presbyterian Hospital",
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "New York",
+    "website": "https://www.nyp.org",
+    "bed_count": 2600,
+    "notes": "Affiliated with Weill Cornell Medicine and Columbia University; largest nonprofit hospital in the U.S."
+  },
+  {
+    "org_id": "upmc-presbyterian",
+    "name": "UPMC Presbyterian",
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "PA",
+    "city": "Pittsburgh",
+    "website": "https://www.upmc.com",
+    "bed_count": 900,
+    "notes": "Flagship hospital of UPMC system; teaching hospital of University of Pittsburgh School of Medicine"
+  },
+  {
+    "org_id": "rhode-island-hospital",
+    "name": "Rhode Island Hospital",
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "RI",
+    "city": "Providence",
+    "website": "https://www.brownhealth.org",
+    "bed_count": 719,
+    "notes": "Principal teaching hospital of Brown University Warren Alpert Medical School; part of Brown University Health (formerly Lifespan)"
+  }
+]

@@ -1,0 +1,102 @@
+{
+  "org_id": "sea-mar-community-health-centers",
+  "org_name": "Sea Mar Community Health Centers",
+  "category_id": "fqhc-independent-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use or Disclose Protected Health Information",
+      "url": "https://www.seamar.org/dl/ROI%20COPY%202022%20PDF.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart Patient Portal",
+      "vendor": "Epic MyChart",
+      "url": "https://www.seamar.org/ohr/index.php",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.seamar.org/dl/ROI%20COPY%202022%20PDF.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients must use a general-purpose HIPAA authorization form that covers both third-party release and patient self-access, selecting 'At my request' as the purpose.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": true,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Form provides no submission instructions — no mailing address, fax number, or email — and Staff Use Only section implies in-person completion is expected",
+      "Form conflates patient self-access with third-party authorization, failing to inform patients of their distinct Right of Access protections"
+    ],
+    "bright_spots": [
+      "Granular record type options with itemized summary-of-care components",
+      "Well-structured minor consent section aligned with Washington State mature minor doctrine",
+      "Form easily discoverable online with no access barriers"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with a basic web search on the first attempt; no bot blocking or login walls, though the URL uses the 'ROI' acronym unfamiliar to patients."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF has zero fillable fields, requiring print and handwrite, and the form implies in-person delivery with no electronic submission pathway indicated."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate single-page layout with logical flow but has notable problems — confusing 'initial one section' instruction, imprecise Title 42 reference, and dense formatting with minimal whitespace."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process via the 'At my request' purpose option, but the form was not designed for patient self-access and does not reference Right of Access protections, fee limits, or response timelines."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — apparent in-person submission expectation, no fee transparency, no response timeline, and conflation of patient access with third-party authorization obscures applicable legal protections."
+    },
+    "overall": {
+      "score": 2.9,
+      "grade": "C",
+      "summary": "Sea Mar provides an easily discoverable but paper-centric, undifferentiated authorization form that does not distinguish patient self-access from third-party release and appears to require in-person submission."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:29:59.081Z"
+}

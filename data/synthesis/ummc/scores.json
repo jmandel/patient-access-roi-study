@@ -1,0 +1,111 @@
+{
+  "org_id": "ummc",
+  "org_name": "University of Mississippi Medical Center",
+  "category_id": "teach-major-government-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Health Information (Spanish)",
+      "url": "https://www.umc.edu/common/files/ummch/Health/Forms/release-of-medical-information-ES.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Health Information (English)",
+      "url": "https://www.umc.edu/common/files/ummch/Health/Forms/release-of-medical-information.pdf",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://web.archive.org/web/20260210195649if_/https://www.umc.edu/common/files/ummch/Health/Forms/release-of-medical-information-ES.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://pdf4pro.com/cdn/release-of-medical-information-the-university-of-75f5a3.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients must use a generic HIPAA authorization form designed for third-party release, selecting 'Personal' as the purpose and entering their own address in the 'Release to' field.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 70,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Witness signature required — HIPAA does not mandate a witness for patient authorizations",
+      "Full Social Security Number collected — unnecessary for records requests and creates identity theft risk",
+      "English-language form link returns 404 — most patients cannot obtain the form from UMMC's website"
+    ],
+    "bright_spots": [
+      "Bilingual form availability (English and Spanish)",
+      "70 fillable/interactive PDF fields in Spanish version allow digital completion",
+      "Electronic delivery format explicitly offered",
+      "14 granular record-type checkboxes with clarification that 'Entire Medical Record' excludes images",
+      "'Personal' listed as a pre-printed purpose option, legitimizing patient self-access"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 2,
+      "rationale": "Level 2: Difficult; requires persistence or creative search strategies. The English PDF link returns 404, the Wayback Machine never archived it, and retrieval required five different strategies including a third-party cache site."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds. The Spanish form has 70 fillable fields enabling digital completion, but no submission method (fax number, email, portal) is listed on the form — a patient must separately determine how to submit."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but has notable problems. Logical top-to-bottom organization and 14 record-type options, but the Patient Rights section is a dense unbroken paragraph, no submission instructions are provided, and 'View Access as scheduled' is undefined."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them. The form is a generic third-party release with 'Personal' as one purpose option; no HIPAA Right of Access reference, no dedicated patient access pathway, and the 'Release to' field creates a confusing self-referential workflow."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires. Witness signature is not mandated by HIPAA; SSN collection is unnecessary; blanket rejection of 'incomplete' forms without defining which fields are required; no fee transparency."
+    },
+    "overall": {
+      "score": 2.85,
+      "grade": "C",
+      "summary": "UMMC provides a generic, moderately organized authorization form with bilingual availability and fillable fields, but critical findability failures, a witness requirement, SSN collection, and lack of patient access differentiation place it in the C range."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:17:26.659Z"
+}

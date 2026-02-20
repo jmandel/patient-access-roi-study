@@ -1,0 +1,122 @@
+{
+  "org_id": "olmsted-medical-center",
+  "org_name": "Olmsted Medical Center",
+  "category_id": "practice-independent-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Health Information",
+      "url": "https://www.olmmed.org/app/files/public/4c1a4ac3-ee2d-4c4e-9475-80528a070c34/Patients%20and%20Visitors/Consent%20-%20Authorization%20for%20Release%20of%20Health%20Information.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Release of Information",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Olmsted Medical Center ROI",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "Submit at any OMC location",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Questions line (507.287.2752)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.olmmed.org/app/files/public/4c1a4ac3-ee2d-4c4e-9475-80528a070c34/Patients%20and%20Visitors/Consent%20-%20Authorization%20for%20Release%20of%20Health%20Information.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.olmmed.org/app/files/public/6ac63789-b7eb-489d-b147-e62879400dd0/Patients%20and%20Visitors/Consent---Authorization-for-Allowing-Verbal-Communication-of-PHI.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Verbal communication authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient uses a generic HIPAA authorization form for all release-of-information requests, entering their own address in the 'Release Information To' field and selecting 'Personal' as the reason.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 62,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es", "so"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Unexplained 'limitations may apply' qualifier on patient portal and fax delivery options"
+    ],
+    "bright_spots": [
+      "Multilingual forms in English, Spanish, and Somali — responsive to Rochester's diverse community",
+      "62 fillable interactive fields — genuinely digital-first form design",
+      "Explicit CFR 164.524 reference and non-conditioning statement affirming patient rights",
+      "Patient portal listed as a delivery option alongside mail, fax, and pick-up"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Form is easy to find via a dedicated 'Manage Your Health Information' page with clear navigation (Patients & Visitors > Your Care & Visit > Manage), and multiple search strategies surface it quickly; not a 5 because it requires navigating to a specific subpage rather than being prominently featured on the homepage."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Fillable PDF with 62 interactive fields allows complete digital form-filling; loses one point because submission still requires fax, mail, or in-person delivery — no fully online submission workflow (rubric level 4: mostly digital with one gap in the workflow)."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Single-page form with clear section headers, logical flow, granular record-type checkboxes, and reasonable field count; minor issues include the intimidating 'this is a legal document' opener, two typos, and unexplained 'limitations may apply' qualifiers (rubric level 4: well-organized with minor clarity issues)."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Generic authorization form not designed for patient self-access — patients must figure out to put their own name in the 'To' field and select 'Personal' as reason; however, the form is usable for this purpose and includes a CFR 164.524 reference and non-conditioning statement (rubric level 3: patient can use the process but it wasn't designed for them)."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "No notarization, no mandatory in-person submission, clear revocation rights, explicit right-of-access citation, and non-conditioning statement; minor ambiguities about delivery 'limitations' and no fee disclosure prevent a 5 (rubric level 4: minor ambiguities but nothing materially impeding)."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Olmsted Medical Center offers a technically strong, fillable, multilingual ROI form that is easy to find and free of significant barriers, but relies on a generic third-party authorization form rather than a dedicated patient self-access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:39:04.923Z"
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "org_id": "dhr-health",
+    "name": "DHR Health",
+    "category_id": "ch-regional-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Edinburg",
+    "website": "https://dhrhealth.com",
+    "bed_count": 500,
+    "notes": "Physician-owned for-profit system operating 5 hospitals in the Rio Grande Valley (main hospital, women's, behavioral, rehabilitation, children's). Serves over 280,000 patients annually."
+  },
+  {
+    "org_id": "hillcrest-claremore",
+    "name": "Hillcrest Hospital Claremore",
+    "category_id": "ch-regional-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "OK",
+    "city": "Claremore",
+    "website": "https://hillcrest.com/locations/hillcrest-hospital-claremore",
+    "bed_count": 49,
+    "notes": "Part of Hillcrest HealthCare System, a regional for-profit network of 7 hospitals in northeastern Oklahoma, owned by Ardent Health Services."
+  },
+  {
+    "org_id": "scenic-mountain-medical-center",
+    "name": "Scenic Mountain Medical Center",
+    "category_id": "ch-regional-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Big Spring",
+    "website": "https://www.scenicmountainmedical.org",
+    "bed_count": 146,
+    "notes": "Operated by Quorum Health, a for-profit system managing 12 community hospitals across 9 states focused on rural and community markets."
+  },
+  {
+    "org_id": "carolina-pines-rmc",
+    "name": "Carolina Pines Regional Medical Center",
+    "category_id": "ch-regional-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "Hartsville",
+    "website": "https://www.cprmc.com",
+    "bed_count": 116,
+    "notes": "Part of ScionHealth, a for-profit system operating approximately 15 community hospitals, created in 2021 as a spinoff from LifePoint Health."
+  }
+]

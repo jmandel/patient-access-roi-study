@@ -1,0 +1,133 @@
+{
+  "org_id": "memorial-healthcare-system",
+  "org_name": "Memorial Healthcare System",
+  "category_id": "ch-regional-government-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 4,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Confidential Medical Records",
+      "url": "https://www.mhs.net/-/media/mhs/files/patients-and-visitors/medical-record-request.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed form to Privacy Office",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "Pick-up / in-person delivery at facility",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.mhs.net/-/media/mhs/files/patients-and-visitors/medical-record-request.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.mhs.net/-/media/mhs/files/patients-and-visitors/2310-10174-authorization-for-release-of-confidential-medical-records-spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.mhs.net/-/media/mhs/files/patients-and-visitors/2310-10175--authorization-for-release-of-confidential-medical-records--creole.pdf",
+      "scope": "system",
+      "language": "ht",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.mhs.net/-/media/mhs/files/patients-and-visitors/request-for-amendment-form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Request for amendment of protected health information"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a generic HIPAA authorization form from the Medical Records page, print and handwrite all fields, and mail or deliver it; MyChart is listed as a delivery option and may also support requests.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 25,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es", "ht"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "2 business days",
+    "red_flags": [
+      "Electronic delivery risk-shifting language requires patients to assume 'all consequences, losses and damages' for receiving records electronically, potentially discouraging digital access",
+      "Purpose field (Section 5h) may create impression that patients must justify their access, which is not required under HIPAA § 164.524 for patient self-access"
+    ],
+    "bright_spots": [
+      "Trilingual form availability (English, Spanish, Haitian Creole) — uncommon and reflects South Florida community needs",
+      "Five delivery methods including e-Delivery and MyChart alongside traditional options",
+      "Two-business-day processing commitment, far faster than the HIPAA-allowed 30-day window",
+      "Granular record type selection with ~15 specific categories and an Abstract shortcut option"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available on the main website navigation (Patients & Visitors > Medical Records) with direct PDF download, no login/CAPTCHA/bot blocking, and all language versions grouped on one page."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The PDF has a text layer and is digitally authored but has zero fillable fields, requiring print-and-handwrite completion; MyChart is listed as a delivery option providing a potential digital alternative, but the primary form workflow requires paper; no explicit fax or email submission pathway for the form itself."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: The form has a logical 5-section numbered structure with granular record type options, but the acknowledgment statements (5a-5h) are dense legal text, the English PDF is bloated at 2.45 MB with garbled hidden template content, and a typo appears in the Creole version."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form but must navigate a generic third-party authorization design — the recipient field, purpose statement, and marketing compensation section are irrelevant for self-access, and the form does not reference HIPAA Right of Access, despite offering patient-friendly delivery options."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Includes revocation rights, non-conditioning statement, and proper sensitive-information disclosure; minor ambiguities include the purpose field and electronic delivery risk-shifting language, but no requirements that would materially impede patient access."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "Memorial Healthcare System excels at findability and offers notable patient-friendly features (trilingual forms, fast processing, multiple delivery methods) but is held back by a non-fillable, generic authorization form that doesn't distinguish patient self-access from third-party release."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:10:11.684Z"
+}

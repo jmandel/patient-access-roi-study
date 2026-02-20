@@ -1,0 +1,153 @@
+{
+  "org_id": "arizona-community-physicians",
+  "org_name": "Arizona Community Physicians",
+  "category_id": "practice-independent-forprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 7,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Medical Records Electronic Self Request (Swellbox wizard)",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/arizona-cp-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Medical Information (Form 100)",
+      "url": "https://www.azacp.com/wp-content/uploads/docs/forms/Medical_Records_Release_Form.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Imaging-specific release (Form 100-Imaging)",
+      "url": "https://www.azacp.com/wp-content/uploads/docs/forms/Records-Release-Imaging.pdf",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.azacp.com/wp-content/uploads/docs/forms/Medical_Records_Release_Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.azacp.com/wp-content/uploads/docs/forms/AFP-Records-Release.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (practice-specific variant for Associates in Family Practice)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.azacp.com/wp-content/uploads/docs/forms/Adult-Release-of-Information-Form-116.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Standing access designation form (adult)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.azacp.com/wp-content/uploads/docs/forms/Records-Release-Imaging.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (imaging-specific)"
+    },
+    {
+      "filename": "form-5.pdf",
+      "source_url": "https://www.azacp.com/wp-content/uploads/docs/forms/Minor-Release-of-Information-Form-116.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Standing access designation form (minor)"
+    },
+    {
+      "filename": "form-6.pdf",
+      "source_url": "https://www.azacp.com/wp-content/uploads/docs/forms/Minor-Release-of-Information-Form-116-Spanish.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "Standing access designation form (minor, Spanish)"
+    },
+    {
+      "filename": "form-7.pdf",
+      "source_url": "https://www.azacp.com/wp-content/uploads/docs/forms/HIPAA-Amendment-Request.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "HIPAA amendment request form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "ACP links to a Swellbox-powered 'Medical Records Electronic Self Request' wizard alongside downloadable PDF authorization forms on its Patient Forms page.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "compliant",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Primary ROI form (form-1) contains no submission instructions — no address, fax, email, or portal URL",
+      "Fee disclosure is confusingly placed under the 'Other' purpose checkbox rather than in a dedicated section",
+      "No Spanish version of the primary ROI form despite Tucson's ~42% Hispanic population"
+    ],
+    "bright_spots": [
+      "Swellbox online electronic self-request wizard provides a fully digital records request pathway",
+      "No Social Security Number requested on primary ROI form",
+      "Comprehensive form ecosystem: 7 documents covering general release, imaging, access designation, amendment, and Spanish minor form",
+      "HIPAA amendment request form published online — uncommon for physician practices",
+      "Protected records (HIV, behavioral health, substance abuse) clearly separated with distinct consent checkboxes"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Rubric level 4 (easy to find with basic navigation or simple search): forms page is linked from main navigation as 'Patient Forms,' multiple web search strategies returned direct PDF URLs, and the Swellbox wizard link is on the same page — all accessible within 2-3 clicks from the homepage."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Rubric level 3 (usable digitally with workarounds): all seven PDF forms have zero fillable fields requiring print-and-handwrite completion, but the Swellbox online wizard provides an electronic self-request alternative; the PDF forms themselves have native text layers enabling assistive technology use."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Rubric level 3 (adequate but has notable problems): form-1 has clear section headers and logical organization on a single page, but fee disclosure is confusingly placed under the 'Other' checkbox, submission instructions are entirely absent, and the 1-year default records limitation is buried in parenthetical text."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Rubric level 3 (patient can use the process but it wasn't designed for them): the PDF form is a generic third-party authorization with 'Name of Physician/Organization' labels implying provider recipients, though the Swellbox 'Electronic Self Request' wizard suggests a patient-oriented pathway exists alongside the generic form."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Rubric level 4 (minor ambiguities but nothing materially impeding): fees are within HIPAA limits ($0.07/page, $6.50/disc), no notarization or witness required, expiration and revocation properly stated, but the undefined 'shipping and handling' surcharge and missing re-disclosure warning are minor gaps."
+    },
+    "overall": {
+      "score": 3.35,
+      "grade": "C",
+      "summary": "ACP provides easy-to-find forms and a Swellbox electronic self-request option that elevates the digital experience, but the primary PDF form is a generic non-fillable third-party authorization lacking submission instructions and patient-access-specific design."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:33:04.880Z"
+}

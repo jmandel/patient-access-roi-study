@@ -1,0 +1,149 @@
+{
+  "org_id": "bayshore-medical-center",
+  "org_name": "Bayshore Medical Center",
+  "category_id": "ch-major-nonprofit-northeast",
+  "primary_form": "form-6.pdf",
+  "total_forms_found": 6,
+  "parent_system": "Hackensack Meridian Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox/Datavant records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.hackensackmeridianhealth.org/en/patients-and-visitors/medical-records",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "HMH Authorization to Use or Disclose PHI (CMR-003, English)",
+      "url": "https://www.hackensackmeridianhealth.org/-/media/project/hmh/hmh/public/medical-group/patient-forms/general-english/roi-request-form-2024-english.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "HMH Authorization to Use or Disclose PHI (CMR-003S, Spanish)",
+      "url": "https://www.hackensackmeridianhealth.org/-/media/project/hmh/hmh/public/files/patients-visitors/roi-request-form-2024-spanish.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Bayshore Medical Center HIM (732-888-7332)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.hackensackmeridianhealth.org/-/media/Project/HMH/HMH/Public/Medical-Group/Patient-Forms/General-English/HMHMG-Authorization-for-Release-of-Information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (Medical Group / outpatient, dated 2018)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://pascackmedicalcenter.com/wp-content/uploads/sites/7/2024/09/PVC-Release-of-Information-Authorization-Form-All-Reqestors.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (Pascack Valley sister facility, image-only scan)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.hackensackmeridianhealth.org/-/media/project/hmh/hmh/public/files/patients-visitors/roi-request-form-2024-spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (CMR-003S, Spanish version)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.hackensackmeridianhealth.org/-/media/project/hmh/hmh/public/files/patients-visitors/request-amendment-of-information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Request for amendment of protected health information"
+    },
+    {
+      "filename": "form-5.pdf",
+      "source_url": "https://pascackmedicalcenter.com/wp-content/uploads/sites/7/2024/09/PVC-Patient-Request-Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient access request form (Pascack Valley sister facility)"
+    },
+    {
+      "filename": "form-6.pdf",
+      "source_url": "https://www.hackensackmeridianhealth.org/-/media/project/hmh/hmh/public/medical-group/patient-forms/general-english/roi-request-form-2024-english.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (CMR-003, primary English hospital-level form)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patients are directed to a Swellbox/Datavant online wizard from the HMH Medical Records page; the PDF fallback is a generic authorization form requiring patients to name themselves as the recipient.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 25,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No submission instructions on the ROI form itself",
+      "English PDF form not linked from Medical Records page"
+    ],
+    "bright_spots": [
+      "EHI Export option for machine-readable records uploadable to another EHR",
+      "Spanish companion form (CMR-003S) with identical structure and EHI Export",
+      "Comprehensive HIM contact directory for all 11 campuses",
+      "Granular sensitive-record consent categories (reproductive health, STDs, HIV/AIDS, mental health, substance abuse)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: The Swellbox portal is reachable from Bayshore's sub-page via the HMH Medical Records page with moderate navigation, but the English PDF is not linked and required web search to locate."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: The Swellbox/Datavant portal provides a fully digital primary pathway; the PDF fallback has zero fillable fields requiring print-and-handwrite, but fax submission is available."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: The CMR-003 form is logically organized with good record-type granularity (11 categories) and delivery options, but uses third-party-release framing confusing for patient self-access, lacks submission instructions, and includes dense legal language in sensitive-record and minor-consent sections."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: The online portal serves as a patient-focused primary pathway, and the PDF includes 'Personal use' as a purpose option plus the rare EHI Export feature; however, the PDF form is designed around third-party disclosure with no dedicated patient-access pathway."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No unreasonable barriers exist; appropriate voluntary and revocation language, granular sensitive-record consent under 42 CFR Part 2, and no notarization or in-person requirements; minor issues include vague fee disclosure and absent submission instructions."
+    },
+    "overall": {
+      "score": 3.7,
+      "grade": "B",
+      "summary": "Bayshore Medical Center offers a moderately patient-friendly experience anchored by a Swellbox/Datavant digital portal and a PDF form with progressive features like EHI Export and Spanish availability, held back by poor English PDF discoverability, non-fillable fields, and generic third-party authorization framing."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:56:55.025Z"
+}

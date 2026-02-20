@@ -1,0 +1,66 @@
+[
+  {
+    "org_id": "duly-health-and-care",
+    "name": "Duly Health and Care",
+    "category_id": "practice-independent-forprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "midwest"
+    },
+    "state": "IL",
+    "city": "Downers Grove",
+    "website": "https://www.dulyhealthandcare.com",
+    "bed_count": null,
+    "notes": "Largest independent multi-specialty physician group in the Midwest; 1,000+ providers across 150+ locations in IL and IN; formerly DuPage Medical Group"
+  },
+  {
+    "org_id": "the-iowa-clinic",
+    "name": "The Iowa Clinic",
+    "category_id": "practice-independent-forprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "midwest"
+    },
+    "state": "IA",
+    "city": "West Des Moines",
+    "website": "https://www.iowaclinic.com",
+    "bed_count": null,
+    "notes": "Largest physician-owned multi-specialty group in Central Iowa; 250+ providers across 40+ specialties and 15 locations"
+  },
+  {
+    "org_id": "esse-health",
+    "name": "Esse Health",
+    "category_id": "practice-independent-forprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "midwest"
+    },
+    "state": "MO",
+    "city": "St. Louis",
+    "website": "https://www.essehealth.com",
+    "bed_count": null,
+    "notes": "Independent physician-owned multi-specialty group; 100+ physicians across 45+ offices in the St. Louis metro area"
+  },
+  {
+    "org_id": "mankato-clinic",
+    "name": "Mankato Clinic",
+    "category_id": "practice-independent-forprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "midwest"
+    },
+    "state": "MN",
+    "city": "Mankato",
+    "website": "https://www.mankatoclinic.com",
+    "bed_count": null,
+    "notes": "Independent physician-owned multi-specialty practice since 1916; 180+ providers across 13 locations in southern Minnesota"
+  }
+]

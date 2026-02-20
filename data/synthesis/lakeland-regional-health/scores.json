@@ -1,0 +1,130 @@
+{
+  "org_id": "lakeland-regional-health",
+  "org_name": "Lakeland Regional Health Medical Center",
+  "category_id": "ch-independent-nonprofit-south",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use or Disclose PHI (PDF)",
+      "url": "https://www.mylrh.org/wp-content/uploads/2022/05/Authorization-to-Use-or-Disclose-PHI.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "http://www.swellbox.com/lakeland-wizard.html",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart Patient Portal",
+      "vendor": "Epic MyChart",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.mylrh.org/wp-content/uploads/2018/08/Authorization-to-Use-or-Disclose-PHI-1.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (superseded 2016 version)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.mylrh.org/wp-content/uploads/2021/04/Release-Authorization-Form.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "Physician group intake/consent/insurance assignment form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.mylrh.org/wp-content/uploads/2022/05/Authorization-to-Use-or-Disclose-PHI.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (current version)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient uses a generic HIPAA authorization form designed for all disclosures, filling in their own name as the recipient, with Swellbox as an alternative digital pathway.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Fee clause references Florida statutes without disclosing amounts or distinguishing patient access from third-party release fees",
+      "Witness signature line with unclear mandatory/optional status",
+      "Collects last 4 of SSN unnecessarily when MRN, name, DOB, and address are already collected"
+    ],
+    "bright_spots": [
+      "Swellbox digital intake wizard provides fully electronic alternative pathway",
+      "MyChart Patient Portal offered as a delivery option",
+      "Granular record-type selection with 13 categories plus Other field",
+      "Explicit sensitive information redaction option for mental health, substance abuse, and HIV/AIDS",
+      "Single-page conciseness keeps patient burden low"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — form was immediately discoverable via web search and linked from a clear Medical Records page, with only minor concern about the outdated version remaining accessible."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds; fax submission available — the PDF has a text layer but zero fillable fields requiring print-and-handwrite, though the Swellbox digital portal and fax provide electronic submission options."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity or length issues — single-page form with logical flow, granular record selection, and reasonable language, but fee clause references statutes without disclosing amounts and bidirectional authorization language is unintuitive for patients."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — generic HIPAA authorization form with no differentiation between patient self-access and third-party release, requiring patients to figure out which checkboxes apply and enter their own name as recipient."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements or language that may go beyond what the law requires for patient access — witness signature line may create an unnecessary barrier, fee clause cites state statutes that may exceed HIPAA cost-based limits for patient access, and partial SSN collection is unnecessary."
+    },
+    "overall": {
+      "score": 3.3,
+      "grade": "C",
+      "summary": "Lakeland Regional Health provides an easily findable, concise ROI form with some patient-friendly features (granular record selection, MyChart delivery, Swellbox alternative), but the generic authorization approach, non-fillable PDF, undisclosed fees, and ambiguous witness requirement hold it back from a higher rating."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:11:24.245Z"
+}

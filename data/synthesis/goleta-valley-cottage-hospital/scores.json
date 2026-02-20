@@ -1,0 +1,139 @@
+{
+  "org_id": "goleta-valley-cottage-hospital",
+  "org_name": "Goleta Valley Cottage Hospital",
+  "category_id": "ch-regional-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Cottage Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of Health Information (English)",
+      "is_primary": true,
+      "url": "https://stmlcottagehealthncus001.blob.core.windows.net/public/NS1405_Authorization_for_Disclosure_of_Health_Information_082025.pdf"
+    },
+    {
+      "type": "pdf_form",
+      "name": "Autorización Para la Revelación de Información Médica (Spanish)",
+      "is_primary": false,
+      "url": "https://stmlcottagehealthncus001.blob.core.windows.net/public/NS1405_Authorization_for_Disclosure_of_Health_Information_082025_spanish.pdf"
+    },
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/cottage-health-wizard.html",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission to HIM",
+      "is_primary": false,
+      "url": "mailto:medicalrecords@sbch.org"
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission to HIM (P.O. Box 689, Santa Barbara, CA 93102)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://stmlcottagehealthncus001.blob.core.windows.net/public/NS1405_Authorization_for_Disclosure_of_Health_Information_082025.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://stmlcottagehealthncus001.blob.core.windows.net/public/NS1405_Authorization_for_Disclosure_of_Health_Information_082025_spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://stmlcottagehealthncus001.blob.core.windows.net/public/NS1405_Authorization_for_Disclosure_of_Health_Information_062025.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (superseded)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Cottage Health uses a single generic HIPAA authorization form for all disclosures, with a 'Patient (self)' checkbox in Section C to accommodate self-access requests.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 17,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "15 days",
+    "red_flags": [
+      "Opening warning that 'Failure to provide all information requested may invalidate this authorization' could be used to reject incomplete but actionable patient requests"
+    ],
+    "bright_spots": [
+      "Complete Spanish-language translation maintained as a separate form (NS1406)",
+      "MyChart patient portal offered as a delivery method for requested records",
+      "Swellbox online request wizard provides a fully digital alternative to the PDF form",
+      "Electronic signatures explicitly accepted in all-caps statement",
+      "Multiple submission channels (email, fax, mail) with no in-person requirement"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Medical records page is at a clear, logical navigation path (Home > Patients & Visitors > Accessing Your Medical Records) and forms are discoverable via standard web searches; minor friction from Akamai CDN blocking and coexistence of old/new form versions."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: The PDF itself has zero fillable fields (a gap), but the org offers a Swellbox online portal as a fully digital alternative, plus email and fax submission — providing a mostly digital workflow with one gap in the primary PDF form."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized into 9 lettered sections with clear headings and logical flow; language is mostly plain and accessible; 2 pages is appropriate length; minor issues with the stern 'invalidation' warning and some legalese in the restrictions section."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: The form is a generic HIPAA authorization designed for all disclosures, not specifically for patient self-access; a patient can use it via the 'Patient (self)' checkbox but must navigate irrelevant sections (recipient relationship, redisclosure restrictions) designed for third-party release."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization, electronic signatures accepted, multiple submission channels, 15-day turnaround faster than HIPAA's 30-day requirement; minor ambiguities in fee disclosure ('there may be a fee' with no amounts) and the 'invalidation' warning, but nothing that would materially impede a patient."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Cottage Health provides a competent patient access experience with multiple pathways (PDF, Swellbox portal, email/fax), a Spanish translation, and MyChart delivery, but relies on a generic third-party authorization form rather than a dedicated patient access pathway, and the primary PDF lacks fillable fields."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:04:47.961Z"
+}

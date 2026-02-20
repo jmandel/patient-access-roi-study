@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "brattleboro-memorial-hospital",
+    "name": "Brattleboro Memorial Hospital",
+    "category_id": "ch-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "VT",
+    "city": "Brattleboro",
+    "website": "https://www.bmhvt.org",
+    "bed_count": 61,
+    "notes": "Independent nonprofit community hospital serving southeastern Vermont; founded 1904; serves ~55,000 people across 22 towns in VT, NH, and MA."
+  },
+  {
+    "org_id": "valley-hospital",
+    "name": "The Valley Hospital",
+    "category_id": "ch-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NJ",
+    "city": "Paramus",
+    "website": "https://www.valleyhealth.com",
+    "bed_count": 370,
+    "notes": "Independent nonprofit community hospital operated by Valley Health System; moved to new $868M facility in Paramus in 2024; named among America's 100 Best Hospitals by Healthgrades."
+  },
+  {
+    "org_id": "sturdy-memorial-hospital",
+    "name": "Sturdy Memorial Hospital",
+    "category_id": "ch-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "MA",
+    "city": "Attleboro",
+    "website": "https://www.sturdyhealth.org",
+    "bed_count": 142,
+    "notes": "Independent nonprofit community hospital in southeastern Massachusetts; rebranded as Sturdy Health; operates 26 primary and specialty care offices; founded 1913."
+  }
+]

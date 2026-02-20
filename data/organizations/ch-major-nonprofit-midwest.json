@@ -1,0 +1,98 @@
+[
+  {
+    "org_id": "advocate-good-samaritan-hospital",
+    "name": "Advocate Good Samaritan Hospital",
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IL",
+    "city": "Downers Grove",
+    "website": "https://www.advocatehealth.com/gsam",
+    "bed_count": 313,
+    "notes": "Part of Advocate Health (formerly Advocate Aurora Health), one of the largest nonprofit systems in the Midwest"
+  },
+  {
+    "org_id": "aurora-medical-center-grafton",
+    "name": "Aurora Medical Center - Grafton",
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "WI",
+    "city": "Grafton",
+    "website": "https://www.aurorahealthcare.org/locations/hospital/aurora-medical-center-grafton",
+    "bed_count": 132,
+    "notes": "Part of Advocate Health (Aurora Health Care division) serving Ozaukee County, WI"
+  },
+  {
+    "org_id": "ssm-health-st-marys-madison",
+    "name": "SSM Health St. Mary's Hospital - Madison",
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "WI",
+    "city": "Madison",
+    "website": "https://www.ssmhealth.com/locations/wisconsin/st-marys-hospital-madison",
+    "bed_count": 440,
+    "notes": "Part of SSM Health, a Catholic nonprofit system operating 23 hospitals across the Midwest"
+  },
+  {
+    "org_id": "ssm-health-depaul-hospital",
+    "name": "SSM Health DePaul Hospital - St. Louis",
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MO",
+    "city": "Bridgeton",
+    "website": "https://www.ssmhealth.com/locations/st-louis/depaul-hospital-st-louis",
+    "bed_count": 476,
+    "notes": "Part of SSM Health, serving the greater St. Louis metro area"
+  },
+  {
+    "org_id": "mercy-health-fairfield-hospital",
+    "name": "Mercy Health - Fairfield Hospital",
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Fairfield",
+    "website": "https://www.mercy.com/locations/hospitals/cincinnati/mercy-health-fairfield-hospital",
+    "bed_count": 219,
+    "notes": "Part of Bon Secours Mercy Health, serving the Cincinnati metro area"
+  },
+  {
+    "org_id": "mercy-health-springfield-regional",
+    "name": "Mercy Health - Springfield Regional Medical Center",
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Springfield",
+    "website": "https://www.mercy.com/locations/hospitals/springfield/mercy-health-springfield-regional-medical-center",
+    "bed_count": 234,
+    "notes": "Part of Bon Secours Mercy Health, serving Clark County and surrounding communities"
+  }
+]

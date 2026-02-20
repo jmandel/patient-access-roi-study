@@ -1,0 +1,128 @@
+{
+  "org_id": "mercy-health-fairfield-hospital",
+  "org_name": "Mercy Health - Fairfield Hospital",
+  "category_id": "ch-major-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Bon Secours Mercy Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/mercy-health-wizard.html",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Protected Health Information",
+      "url": "https://www.mercy.com/-/media/mercy/patient-resources/medical-records-requests/mh-authorization-22024.ashx",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission (Fairfield Hospital)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.mercy.com/-/media/mercy/patient-resources/medical-records-requests/cincinnati.ashx",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (Cincinnati region, Rev 1/19, text-layer version)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.mercy.com/-/media/mercy/patient-resources/medical-records-requests/mh-authorization-22024.ashx",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (system-wide, 2024 image scan)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic HIPAA authorization form that lists 'Self' as the first recipient option, with MyChart and Swellbox online portal as alternative digital pathways.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Photo ID required at time of request — may exclude patients without government-issued identification",
+      "Currently linked form (form-2) is an image-only scan replacing a previously functional text-layer PDF — accessibility regression"
+    ],
+    "bright_spots": [
+      "Self is the first recipient checkbox option, with personal use as the default purpose",
+      "Electronic format (PDF/CD) is the default if patient does not specify",
+      "MyChart delivery listed as a form option alongside mail, fax, and email",
+      "Swellbox/Datavant online portal available as a fully digital alternative",
+      "Spanish-language version of the form available",
+      "Explicit citation of HIPAA § 164.524 (individual right of access)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — the centralized medical records page was quickly located via web search, though the better text-layer form (form-1) is no longer directly linked."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds — the primary linked PDF is an image-only scan requiring print-and-handwrite, but fax submission is available and the Swellbox online portal provides an alternative digital pathway; neither PDF form has fillable fields."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — single-page form with logical flow, granular record-type checkboxes, and clear instructions, though the legal disclosure section is densely packed and the 'standard two years' default could confuse patients."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic HIPAA authorization form serves both patient self-access and third-party release without differentiation, though 'Self' as the first recipient option and personal-use default partially mitigate this."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing that would materially impede a patient — includes clear revocation rights and voluntary authorization language, but the photo ID requirement and vague fee disclosure ('there may be a charge') are minor concerns."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "Mercy Health - Fairfield Hospital offers a functional but unexceptional records request experience: easy to find with multiple pathways including an online portal, but reliant on a generic authorization form with no fillable fields and a troubling regression to an image-scan PDF as the primary linked document."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:00:28.559Z"
+}

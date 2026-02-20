@@ -1,0 +1,120 @@
+{
+  "org_id": "brattleboro-memorial-hospital",
+  "org_name": "Brattleboro Memorial Hospital",
+  "category_id": "ch-independent-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Disclose Protected Health Information (Jan 2025)",
+      "url": "https://www.bmhvt.org/wp-content/uploads/ROI-Form-1.2025.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "HIM Department fax (802-257-8881)",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "HIM Department phone (802-257-8258)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.bmhvt.org/wp-content/uploads/ROI-Form-1.2025.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.bmhvt.org/wp-content/uploads/Consent-Release-of-Medical-Information.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (older version)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.bmhvt.org/wp-content/uploads/Authorization-to-share-Protected-Health-Information-Outgoing-Records.docx",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (DOCX variant, older revision)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA disclosure authorization form, selects 'Personal Records' as the purpose, enters themselves as the 'TO' party, and submits via fax or in-person delivery.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No electronic delivery options for records (only physical Pick Up or Send Out)",
+      "Multiple overlapping form versions published online with no guidance on which to use",
+      "Instruction 4 conditions processing on internal record completeness, which patients cannot control"
+    ],
+    "bright_spots": [
+      "Includes Reproductive Health Care and Gender Affirming Care record categories (Jan 2025 update)",
+      "Clear voluntariness statement: patients do not need to sign to receive health services",
+      "Verbal communication designee section for authorizing up to three contacts"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms are easy to find with basic web searches returning direct PDF links; no login or bot blocking, though multiple unversioned forms and no dedicated landing page prevent a 5."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Form is a flat PDF (0 fillable fields) requiring print-and-handwrite, but fax submission is available as an electronic pathway; PDF annotation tools provide a workaround for digital completion."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Logical two-page structure with instructions and clear required-field marking, but dense page 2 layout, misaligned checkbox columns, ALL CAPS directives, and bureaucratic Instruction 4 create notable clarity problems."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: Generic disclosure form with a 'Personal Records' checkbox lets patients use the process, but the FROM/TO third-party paradigm and lack of dedicated patient access pathway mean patients must figure out which parts apply to self-access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization, clear voluntariness and revocation statements, reasonable 12-month expiration; minor ambiguities in fee disclosure and the Instruction 4 processing condition, but nothing materially impeding patient rights."
+    },
+    "overall": {
+      "score": 3.35,
+      "grade": "C",
+      "summary": "Brattleboro Memorial Hospital provides easily findable forms with no egregious barriers, but the generic third-party disclosure workflow, non-fillable PDF format, and absence of electronic delivery options result in a functional but not patient-centered experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:08:52.144Z"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "lexington-medical-center",
+    "name": "Lexington Medical Center",
+    "category_id": "ch-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "West Columbia",
+    "website": "https://www.lexhealth.com",
+    "bed_count": 607,
+    "notes": "Locally governed by Lexington County Health Service District; single hospital with outpatient network; largest hospital in the SC Midlands"
+  },
+  {
+    "org_id": "lakeland-regional-health",
+    "name": "Lakeland Regional Health Medical Center",
+    "category_id": "ch-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "Lakeland",
+    "website": "https://www.mylrh.org",
+    "bed_count": 892,
+    "notes": "Founded 1916; single-site community hospital; one of the busiest emergency departments in the US"
+  },
+  {
+    "org_id": "kings-daughters-medical-center-brookhaven",
+    "name": "King's Daughters Medical Center",
+    "category_id": "ch-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "MS",
+    "city": "Brookhaven",
+    "website": "https://www.kdmc.org",
+    "bed_count": 122,
+    "notes": "Standalone nonprofit acute care hospital serving southwest Mississippi since 1922"
+  }
+]

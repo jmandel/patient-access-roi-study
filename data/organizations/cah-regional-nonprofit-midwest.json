@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "centracare-long-prairie",
+    "name": "CentraCare – Long Prairie Hospital",
+    "category_id": "cah-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MN",
+    "city": "Long Prairie",
+    "website": "https://www.centracare.com/locations/profile/long-prairie-hospital/",
+    "bed_count": 25,
+    "notes": "CAH and Level IV trauma center within CentraCare, a regional nonprofit system serving central Minnesota with 9 hospitals."
+  },
+  {
+    "org_id": "avera-hand-county-memorial",
+    "name": "Avera Hand County Memorial Hospital",
+    "category_id": "cah-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "SD",
+    "city": "Miller",
+    "website": "https://www.avera.org/locations/profile/avera-hand-county-memorial-hospital/",
+    "bed_count": 25,
+    "notes": "25-bed CAH affiliated with Avera Health, a regional nonprofit system headquartered in Sioux Falls, SD serving five Upper Midwest states."
+  },
+  {
+    "org_id": "essentia-health-fosston",
+    "name": "Essentia Health-Fosston",
+    "category_id": "cah-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MN",
+    "city": "Fosston",
+    "website": "https://www.essentiahealth.org/find-facility/essentia-health-fosston",
+    "bed_count": 25,
+    "notes": "25-bed CAH within Essentia Health, a regional nonprofit integrated health system based in Duluth, MN serving communities across MN, WI, and ND."
+  }
+]

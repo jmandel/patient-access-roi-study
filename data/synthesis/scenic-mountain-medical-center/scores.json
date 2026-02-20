@@ -1,0 +1,126 @@
+{
+  "org_id": "scenic-mountain-medical-center",
+  "org_name": "Scenic Mountain Medical Center",
+  "category_id": "ch-regional-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request / Authorization to Use and/or Disclose Protected Health Information (English)",
+      "url": "https://scenicmountainmedicalcenter.org/wp-content/uploads/2024/10/SMM.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Solicitud del Paciente / Autorización para usar o revelar información médica protegida (Spanish)",
+      "url": "https://scenicmountainmedicalcenter.org/wp-content/uploads/2024/10/SMM-S.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Electronic request via Sharecare/HDS platform",
+      "vendor": "Sharecare/HDS",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM department",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Phone contact for medical records",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://scenicmountainmedicalcenter.org/wp-content/uploads/2024/10/SMM.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://scenicmountainmedicalcenter.org/wp-content/uploads/2024/10/SMM-S.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization form (English or Spanish), prints and hand-fills it, and submits via fax, mail, or in person; an electronic request option via Sharecare/HDS is also available.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No differentiation between patient access and third-party release — patients requesting their own records are funneled through a generic authorization form designed for third-party disclosures",
+      "Vague fee notice ('*fees may apply') with no schedule, amounts, or reference to HIPAA cost-based limits for patient access"
+    ],
+    "bright_spots": [
+      "Fully translated Spanish-language form available alongside English version",
+      "Email offered as a delivery method for records — uncommon among facilities",
+      "Granular record type selection with 11 checkboxes plus write-in options",
+      "Visit exclusion option (Section 7) allows patients to omit specific dates of service",
+      "Practical 'until fulfilled' expiration option suited to one-time access requests"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Medical records page with direct PDF download links was discoverable via a simple web search; no bot blocking, login, or portal required."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Digitally-authored PDF (not a scan) is usable with annotation workarounds, and fax submission is available, but zero fillable fields means patients must print and handwrite."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized 15-section form with logical flow, clear numbered headers, and practical record-type checkboxes; minor issues with dense legal text on page 2 and cramped layout."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form for self-access via the 'Personal' purpose checkbox, but the form was designed for third-party disclosures — patients must figure out how to list themselves as recipient and which sections apply."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Vague '*fees may apply' notice without amounts or HIPAA cost-based limits, ambiguous witness signature line, and 'ALL APPLICABLE ENTRIES' language may go beyond what the law requires for patient access requests."
+    },
+    "overall": {
+      "score": 3.3,
+      "grade": "C",
+      "summary": "Scenic Mountain Medical Center provides an easy-to-find, well-organized authorization form in two languages with good scope controls, but the lack of a dedicated patient access pathway, non-fillable PDF format, and vague fee disclosure prevent it from reaching a patient-centered standard."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:22:53.664Z"
+}

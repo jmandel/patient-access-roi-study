@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "lankenau-medical-center",
+    "name": "Lankenau Medical Center",
+    "category_id": "teach-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "PA",
+    "city": "Wynnewood",
+    "website": "https://www.mainlinehealth.org/locations/lankenau-medical-center",
+    "bed_count": 370,
+    "notes": "Part of Main Line Health (4 hospitals). Teaching hospital with GME programs via Annenberg Center for Medical Education."
+  },
+  {
+    "org_id": "wellspan-york-hospital",
+    "name": "WellSpan York Hospital",
+    "category_id": "teach-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "PA",
+    "city": "York",
+    "website": "https://www.wellspan.org",
+    "bed_count": 596,
+    "notes": "Flagship teaching hospital of WellSpan Health (9 hospitals). Level I trauma center with multiple residency and fellowship programs."
+  },
+  {
+    "org_id": "hartford-hospital",
+    "name": "Hartford Hospital",
+    "category_id": "teach-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "CT",
+    "city": "Hartford",
+    "website": "https://hartfordhospital.org",
+    "bed_count": 867,
+    "notes": "Part of Hartford HealthCare (7 hospitals). Major teaching affiliate of UConn Medical School with Level I trauma center."
+  }
+]

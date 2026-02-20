@@ -1,0 +1,109 @@
+{
+  "org_id": "ascension-st-vincents-east",
+  "org_name": "Ascension St. Vincent's East",
+  "category_id": "ch-major-nonprofit-south",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Ascension",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "UAB St. Vincent's Authorization for Use or Disclosure of Patient Information",
+      "url": "https://uabstvincents.org/wp-content/uploads/sites/10/2026/01/UAB-Hospital-STV-Authorization-for-Use-or-Disclosure-of-Patient-Info-Jan-2026.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed form to address listed on UAB St. Vincent's website",
+      "url": "https://uabstvincents.org/billing/medical-records-request/",
+      "is_primary": true
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://healthcare.ascension.org/-/media/project/ascension/healthcare/legacy/markets/alabama/documents/stvincents-documents/authorization_to_disclose_protected_health_information_feb-2022.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy Ascension-branded, Feb 2022)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://uabstvincents.org/wp-content/uploads/sites/10/2026/01/UAB-Hospital-STV-Authorization-for-Use-or-Disclosure-of-Patient-Info-Jan-2026.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (current UAB-branded, Feb 2026)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patient downloads a UAB St. Vincent's authorization form with a 'personal use' checkbox, prints and fills it by hand, and mails it to the address found on the hospital website.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No fee disclosure — patients cannot anticipate costs before submitting",
+      "Contradictory sensitive-records language: opening paragraph includes psychiatric/substance use records by default but later checkbox asks whether to include them"
+    ],
+    "bright_spots": [
+      "Explicit 'personal use' checkbox distinguishes patient self-access from third-party release",
+      "Tiered record selection with pre-defined 'Key Clinical Notes' bundle for patients who don't know medical terminology",
+      "Clear encryption notice for electronic record delivery with promise of access instructions",
+      "Facility location selector covering six UAB St. Vincent's sites reduces misdirected requests"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: current form requires moderate effort to find due to Ascension-to-UAB branding transition; initial searches yield the legacy form on a different domain, and only a UAB-specific search locates the current form."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: primarily a paper workflow — the form has zero fillable fields requiring print-and-handwrite, and the only stated submission method is physical mail (no fax or electronic submission option documented on the form)."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: adequate with notable problems — well-organized layout and useful tiered record selection, but dense legalese opening paragraph, contradictory sensitive-records language, initialing friction, and indirect submission instructions create genuine clarity issues."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: patient access is clearly accommodated with an explicit 'personal use' checkbox and multiple delivery options, though the form remains a generic authorization rather than a dedicated patient access form."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: no notarization or witness required, appropriate non-conditioning and revocation language, but no fee disclosure whatsoever and the HIPAA Right of Access citation (CFR 164.524) present in the predecessor form was dropped."
+    },
+    "overall": {
+      "score": 3.2,
+      "grade": "C",
+      "summary": "Ascension St. Vincent's East offers a reasonably patient-centered authorization form with a personal-use checkbox and tiered record selection, but the lack of fillable fields, apparent mail-only submission, branding-transition findability challenges, and absent fee disclosure result in a primarily paper workflow that falls short of modern digital accessibility standards."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:58:31.403Z"
+}

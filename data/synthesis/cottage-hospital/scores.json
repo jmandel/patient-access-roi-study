@@ -1,0 +1,111 @@
+{
+  "org_id": "cottage-hospital",
+  "org_name": "Cottage Hospital",
+  "category_id": "cah-independent-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of Medical Information",
+      "url": "https://cottagehospital.org/uploads/files/AUTHORIZATIONFORDISCLOSURE.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "phone",
+      "name": "Hospital main line (603-747-9000)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://cottagehospital.org/uploads/files/AUTHORIZATIONFORDISCLOSURE.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://cottagehospital.org/uploads/files/RHC%20New%20Patient%20Packet%2011.6.2019.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "New patient intake packet containing ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must download a generic HIPAA authorization form designed for third-party release, print and complete it by hand, then figure out how to submit it with no stated submission instructions.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 12,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No submission instructions on either form — no address, fax, email, or portal indicated",
+      "Witness signature line present with no indication it is optional",
+      "Confusing remuneration fill-in fields on a general-purpose authorization form",
+      "Phantom page numbering ('PAGE 14 OF 28') on standalone one-page form",
+      "Form-2 General Consent Section 11 contains blanket authorization to disclose sensitive records at hospital's discretion"
+    ],
+    "bright_spots": [
+      "Form-2 distinguishes 'Self or Representative' from 'Other Provider or Facility' with different scope rules",
+      "Non-conditioning statement prominently displayed in capitalized text",
+      "Psychotherapy notes properly segregated per 45 CFR § 164.508(b)(3)(ii)",
+      "42 CFR Part 2 re-disclosure warning correctly included for substance abuse records"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 2,
+      "rationale": "Level 2: Cloudflare Turnstile blocked all direct website access and Google cache; forms retrieved only via Wayback Machine archives, requiring creative search strategies and persistence."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Digitally-created PDF with text layer but zero fillable fields; patient must print, handwrite all entries, and has no documented submission method — a primarily paper workflow."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Logical one-page flow from identification through signature, but dense legal language with 50+ word sentences, no section headers, confusing remuneration fields, and phantom page numbering create notable clarity problems."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: Form-2's authorization distinguishes self-access from third-party release, but both forms are generic HIPAA authorizations not designed for patient self-access; no delivery format options, no date range field, and the better version is buried in a 12-page intake packet."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Proper non-conditioning statement, revocation rights, and 42 CFR Part 2 references, but witness signature line may exceed HIPAA requirements for patient access, no fee disclosure, and no submission pathway stated."
+    },
+    "overall": {
+      "score": 2.6,
+      "grade": "C",
+      "summary": "Cottage Hospital provides a minimally functional generic authorization form with proper HIPAA compliance language but significant practical barriers including Cloudflare-blocked website, non-fillable fields, no submission instructions, and no dedicated patient access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:20:41.968Z"
+}

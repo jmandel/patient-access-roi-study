@@ -1,0 +1,1207 @@
+{
+  "sample": {
+    "total_orgs": 181,
+    "axis_counts": {
+      "facility_type": {
+        "community_hospital": 77,
+        "teaching_hospital": 30,
+        "critical_access_hospital": 29,
+        "fqhc": 20,
+        "physician_practice": 25
+      },
+      "system_affiliation": {
+        "major_system": 65,
+        "regional_system": 35,
+        "independent": 81
+      },
+      "ownership": {
+        "nonprofit": 119,
+        "for_profit": 39,
+        "government": 23
+      },
+      "census_region": {
+        "northeast": 36,
+        "south": 64,
+        "midwest": 41,
+        "west": 40
+      }
+    },
+    "states_represented": 43,
+    "state_counts": {
+      "NY": 11,
+      "NJ": 5,
+      "MA": 5,
+      "FL": 6,
+      "TN": 7,
+      "AL": 6,
+      "NC": 5,
+      "TX": 13,
+      "KY": 4,
+      "VA": 2,
+      "IL": 6,
+      "WI": 6,
+      "MO": 5,
+      "OH": 5,
+      "CA": 10,
+      "NV": 3,
+      "GA": 7,
+      "OR": 5,
+      "AZ": 5,
+      "UT": 1,
+      "WA": 6,
+      "MS": 2,
+      "SC": 7,
+      "CO": 5,
+      "VT": 3,
+      "KS": 4,
+      "NE": 3,
+      "CT": 3,
+      "PA": 5,
+      "RI": 1,
+      "MI": 1,
+      "IA": 4,
+      "ND": 1,
+      "MN": 5,
+      "ME": 2,
+      "NH": 1,
+      "MT": 2,
+      "ID": 1,
+      "OK": 1,
+      "AK": 2,
+      "SD": 1,
+      "LA": 2,
+      "WV": 2
+    }
+  },
+  "distributions": {
+    "dimensions": {
+      "findability": {
+        "n": 181,
+        "mean": 3.85,
+        "median": 4,
+        "std": 0.85,
+        "min": 1,
+        "max": 5,
+        "q25": 4,
+        "q75": 4
+      },
+      "technical_accessibility": {
+        "n": 181,
+        "mean": 3.11,
+        "median": 3,
+        "std": 0.82,
+        "min": 1,
+        "max": 5,
+        "q25": 3,
+        "q75": 4
+      },
+      "content_design": {
+        "n": 181,
+        "mean": 3.53,
+        "median": 4,
+        "std": 0.54,
+        "min": 2,
+        "max": 5,
+        "q25": 3,
+        "q75": 4
+      },
+      "patient_centeredness": {
+        "n": 181,
+        "mean": 3.11,
+        "median": 3,
+        "std": 0.69,
+        "min": 2,
+        "max": 5,
+        "q25": 3,
+        "q75": 3
+      },
+      "compliance": {
+        "n": 181,
+        "mean": 3.49,
+        "median": 4,
+        "std": 0.53,
+        "min": 2,
+        "max": 4,
+        "q25": 3,
+        "q75": 4
+      },
+      "overall": {
+        "n": 181,
+        "mean": 3.36,
+        "median": 3.4,
+        "std": 0.5,
+        "min": 1.75,
+        "max": 4.65,
+        "q25": 3.05,
+        "q75": 3.75
+      }
+    },
+    "grades": {
+      "B": 79,
+      "C": 94,
+      "D": 7,
+      "A": 1
+    },
+    "correlations": {
+      "findability": {
+        "findability": 1,
+        "technical_accessibility": 0.218,
+        "content_design": 0.435,
+        "patient_centeredness": 0.235,
+        "compliance": 0.28,
+        "overall": 0.515
+      },
+      "technical_accessibility": {
+        "findability": 0.218,
+        "technical_accessibility": 1,
+        "content_design": 0.328,
+        "patient_centeredness": 0.455,
+        "compliance": 0.456,
+        "overall": 0.784
+      },
+      "content_design": {
+        "findability": 0.435,
+        "technical_accessibility": 0.328,
+        "content_design": 1,
+        "patient_centeredness": 0.41,
+        "compliance": 0.419,
+        "overall": 0.655
+      },
+      "patient_centeredness": {
+        "findability": 0.235,
+        "technical_accessibility": 0.455,
+        "content_design": 0.41,
+        "patient_centeredness": 1,
+        "compliance": 0.446,
+        "overall": 0.721
+      },
+      "compliance": {
+        "findability": 0.28,
+        "technical_accessibility": 0.456,
+        "content_design": 0.419,
+        "patient_centeredness": 0.446,
+        "compliance": 1,
+        "overall": 0.736
+      },
+      "overall": {
+        "findability": 0.515,
+        "technical_accessibility": 0.784,
+        "content_design": 0.655,
+        "patient_centeredness": 0.721,
+        "compliance": 0.736,
+        "overall": 1
+      }
+    },
+    "binary_outcomes": {
+      "has_fillable_fields": 48,
+      "has_individual_access_pathway": 38,
+      "online_submission_available": 149,
+      "requires_physical_delivery": 17,
+      "multilingual": 62,
+      "has_instructions": 81,
+      "plain_language": 88
+    },
+    "pathway_types": {
+      "dedicated_patient_form": 22,
+      "online_portal": 16,
+      "generic_hipaa_auth": 142,
+      "phone_or_in_person_only": 1
+    },
+    "retrieval_difficulty": {
+      "easy": 131,
+      "hard": 14,
+      "moderate": 36
+    },
+    "total": 181
+  },
+  "univariate": [
+    {
+      "axis": "facility_type",
+      "outcome": "findability",
+      "type": "continuous",
+      "test": {
+        "H": 6.72,
+        "df": 4,
+        "p": 0.1512,
+        "eta_squared": 0.015,
+        "group_medians": {
+          "community_hospital": 4,
+          "teaching_hospital": 4,
+          "critical_access_hospital": 4,
+          "fqhc": 4,
+          "physician_practice": 4
+        },
+        "group_ns": {
+          "community_hospital": 77,
+          "teaching_hospital": 30,
+          "critical_access_hospital": 29,
+          "fqhc": 20,
+          "physician_practice": 25
+        }
+      }
+    },
+    {
+      "axis": "facility_type",
+      "outcome": "technical_accessibility",
+      "type": "continuous",
+      "test": {
+        "H": 7.19,
+        "df": 4,
+        "p": 0.1261,
+        "eta_squared": 0.018,
+        "group_medians": {
+          "community_hospital": 3,
+          "teaching_hospital": 3,
+          "critical_access_hospital": 3,
+          "fqhc": 3,
+          "physician_practice": 3
+        },
+        "group_ns": {
+          "community_hospital": 77,
+          "teaching_hospital": 30,
+          "critical_access_hospital": 29,
+          "fqhc": 20,
+          "physician_practice": 25
+        }
+      }
+    },
+    {
+      "axis": "facility_type",
+      "outcome": "content_design",
+      "type": "continuous",
+      "test": {
+        "H": 11.42,
+        "df": 4,
+        "p": 0.0222,
+        "eta_squared": 0.042,
+        "group_medians": {
+          "community_hospital": 3,
+          "teaching_hospital": 4,
+          "critical_access_hospital": 3,
+          "fqhc": 4,
+          "physician_practice": 4
+        },
+        "group_ns": {
+          "community_hospital": 77,
+          "teaching_hospital": 30,
+          "critical_access_hospital": 29,
+          "fqhc": 20,
+          "physician_practice": 25
+        }
+      }
+    },
+    {
+      "axis": "facility_type",
+      "outcome": "patient_centeredness",
+      "type": "continuous",
+      "test": {
+        "H": 11.03,
+        "df": 4,
+        "p": 0.0262,
+        "eta_squared": 0.04,
+        "group_medians": {
+          "community_hospital": 3,
+          "teaching_hospital": 3,
+          "critical_access_hospital": 3,
+          "fqhc": 3,
+          "physician_practice": 3
+        },
+        "group_ns": {
+          "community_hospital": 77,
+          "teaching_hospital": 30,
+          "critical_access_hospital": 29,
+          "fqhc": 20,
+          "physician_practice": 25
+        }
+      }
+    },
+    {
+      "axis": "facility_type",
+      "outcome": "compliance",
+      "type": "continuous",
+      "test": {
+        "H": 5.8,
+        "df": 4,
+        "p": 0.2146,
+        "eta_squared": 0.01,
+        "group_medians": {
+          "community_hospital": 3,
+          "teaching_hospital": 4,
+          "critical_access_hospital": 3,
+          "fqhc": 4,
+          "physician_practice": 3
+        },
+        "group_ns": {
+          "community_hospital": 77,
+          "teaching_hospital": 30,
+          "critical_access_hospital": 29,
+          "fqhc": 20,
+          "physician_practice": 25
+        }
+      }
+    },
+    {
+      "axis": "facility_type",
+      "outcome": "overall",
+      "type": "continuous",
+      "test": {
+        "H": 17.86,
+        "df": 4,
+        "p": 0.0013,
+        "eta_squared": 0.079,
+        "group_medians": {
+          "community_hospital": 3.4,
+          "teaching_hospital": 3.68,
+          "critical_access_hospital": 3.1,
+          "fqhc": 3.4,
+          "physician_practice": 3.25
+        },
+        "group_ns": {
+          "community_hospital": 77,
+          "teaching_hospital": 30,
+          "critical_access_hospital": 29,
+          "fqhc": 20,
+          "physician_practice": 25
+        }
+      }
+    },
+    {
+      "axis": "system_affiliation",
+      "outcome": "findability",
+      "type": "continuous",
+      "test": {
+        "H": 3.95,
+        "df": 2,
+        "p": 0.1388,
+        "eta_squared": 0.011,
+        "group_medians": {
+          "major_system": 4,
+          "regional_system": 4,
+          "independent": 4
+        },
+        "group_ns": {
+          "major_system": 65,
+          "regional_system": 35,
+          "independent": 81
+        }
+      }
+    },
+    {
+      "axis": "system_affiliation",
+      "outcome": "technical_accessibility",
+      "type": "continuous",
+      "test": {
+        "H": 10.83,
+        "df": 2,
+        "p": 0.0044,
+        "eta_squared": 0.05,
+        "group_medians": {
+          "major_system": 4,
+          "regional_system": 3,
+          "independent": 3
+        },
+        "group_ns": {
+          "major_system": 65,
+          "regional_system": 35,
+          "independent": 81
+        }
+      }
+    },
+    {
+      "axis": "system_affiliation",
+      "outcome": "content_design",
+      "type": "continuous",
+      "test": {
+        "H": 3.62,
+        "df": 2,
+        "p": 0.1634,
+        "eta_squared": 0.009,
+        "group_medians": {
+          "major_system": 4,
+          "regional_system": 4,
+          "independent": 3
+        },
+        "group_ns": {
+          "major_system": 65,
+          "regional_system": 35,
+          "independent": 81
+        }
+      }
+    },
+    {
+      "axis": "system_affiliation",
+      "outcome": "patient_centeredness",
+      "type": "continuous",
+      "test": {
+        "H": 13.48,
+        "df": 2,
+        "p": 0.0012,
+        "eta_squared": 0.065,
+        "group_medians": {
+          "major_system": 3,
+          "regional_system": 3,
+          "independent": 3
+        },
+        "group_ns": {
+          "major_system": 65,
+          "regional_system": 35,
+          "independent": 81
+        }
+      }
+    },
+    {
+      "axis": "system_affiliation",
+      "outcome": "compliance",
+      "type": "continuous",
+      "test": {
+        "H": 5.14,
+        "df": 2,
+        "p": 0.0766,
+        "eta_squared": 0.018,
+        "group_medians": {
+          "major_system": 4,
+          "regional_system": 3,
+          "independent": 3
+        },
+        "group_ns": {
+          "major_system": 65,
+          "regional_system": 35,
+          "independent": 81
+        }
+      }
+    },
+    {
+      "axis": "system_affiliation",
+      "outcome": "overall",
+      "type": "continuous",
+      "test": {
+        "H": 18.88,
+        "df": 2,
+        "p": 0.0001,
+        "eta_squared": 0.095,
+        "group_medians": {
+          "major_system": 3.65,
+          "regional_system": 3.35,
+          "independent": 3.3
+        },
+        "group_ns": {
+          "major_system": 65,
+          "regional_system": 35,
+          "independent": 81
+        }
+      }
+    },
+    {
+      "axis": "ownership",
+      "outcome": "findability",
+      "type": "continuous",
+      "test": {
+        "H": 0.42,
+        "df": 2,
+        "p": 0.8099,
+        "eta_squared": 0,
+        "group_medians": {
+          "nonprofit": 4,
+          "for_profit": 4,
+          "government": 4
+        },
+        "group_ns": {
+          "nonprofit": 119,
+          "for_profit": 39,
+          "government": 23
+        }
+      }
+    },
+    {
+      "axis": "ownership",
+      "outcome": "technical_accessibility",
+      "type": "continuous",
+      "test": {
+        "H": 4.47,
+        "df": 2,
+        "p": 0.1068,
+        "eta_squared": 0.014,
+        "group_medians": {
+          "nonprofit": 3,
+          "for_profit": 3,
+          "government": 3
+        },
+        "group_ns": {
+          "nonprofit": 119,
+          "for_profit": 39,
+          "government": 23
+        }
+      }
+    },
+    {
+      "axis": "ownership",
+      "outcome": "content_design",
+      "type": "continuous",
+      "test": {
+        "H": 5.06,
+        "df": 2,
+        "p": 0.0799,
+        "eta_squared": 0.017,
+        "group_medians": {
+          "nonprofit": 4,
+          "for_profit": 3,
+          "government": 3
+        },
+        "group_ns": {
+          "nonprofit": 119,
+          "for_profit": 39,
+          "government": 23
+        }
+      }
+    },
+    {
+      "axis": "ownership",
+      "outcome": "patient_centeredness",
+      "type": "continuous",
+      "test": {
+        "H": 2.23,
+        "df": 2,
+        "p": 0.3282,
+        "eta_squared": 0.001,
+        "group_medians": {
+          "nonprofit": 3,
+          "for_profit": 3,
+          "government": 3
+        },
+        "group_ns": {
+          "nonprofit": 119,
+          "for_profit": 39,
+          "government": 23
+        }
+      }
+    },
+    {
+      "axis": "ownership",
+      "outcome": "compliance",
+      "type": "continuous",
+      "test": {
+        "H": 5.81,
+        "df": 2,
+        "p": 0.0548,
+        "eta_squared": 0.021,
+        "group_medians": {
+          "nonprofit": 4,
+          "for_profit": 3,
+          "government": 3
+        },
+        "group_ns": {
+          "nonprofit": 119,
+          "for_profit": 39,
+          "government": 23
+        }
+      }
+    },
+    {
+      "axis": "ownership",
+      "outcome": "overall",
+      "type": "continuous",
+      "test": {
+        "H": 5.92,
+        "df": 2,
+        "p": 0.0517,
+        "eta_squared": 0.022,
+        "group_medians": {
+          "nonprofit": 3.5,
+          "for_profit": 3.3,
+          "government": 3.35
+        },
+        "group_ns": {
+          "nonprofit": 119,
+          "for_profit": 39,
+          "government": 23
+        }
+      }
+    },
+    {
+      "axis": "census_region",
+      "outcome": "findability",
+      "type": "continuous",
+      "test": {
+        "H": 4.58,
+        "df": 3,
+        "p": 0.205,
+        "eta_squared": 0.009,
+        "group_medians": {
+          "northeast": 4,
+          "south": 4,
+          "midwest": 4,
+          "west": 4
+        },
+        "group_ns": {
+          "northeast": 36,
+          "south": 64,
+          "midwest": 41,
+          "west": 40
+        }
+      }
+    },
+    {
+      "axis": "census_region",
+      "outcome": "technical_accessibility",
+      "type": "continuous",
+      "test": {
+        "H": 3.02,
+        "df": 3,
+        "p": 0.3879,
+        "eta_squared": 0,
+        "group_medians": {
+          "northeast": 3.5,
+          "south": 3,
+          "midwest": 3,
+          "west": 3
+        },
+        "group_ns": {
+          "northeast": 36,
+          "south": 64,
+          "midwest": 41,
+          "west": 40
+        }
+      }
+    },
+    {
+      "axis": "census_region",
+      "outcome": "content_design",
+      "type": "continuous",
+      "test": {
+        "H": 1.79,
+        "df": 3,
+        "p": 0.6178,
+        "eta_squared": 0,
+        "group_medians": {
+          "northeast": 4,
+          "south": 3,
+          "midwest": 4,
+          "west": 4
+        },
+        "group_ns": {
+          "northeast": 36,
+          "south": 64,
+          "midwest": 41,
+          "west": 40
+        }
+      }
+    },
+    {
+      "axis": "census_region",
+      "outcome": "patient_centeredness",
+      "type": "continuous",
+      "test": {
+        "H": 0.5,
+        "df": 3,
+        "p": 0.9182,
+        "eta_squared": 0,
+        "group_medians": {
+          "northeast": 3,
+          "south": 3,
+          "midwest": 3,
+          "west": 3
+        },
+        "group_ns": {
+          "northeast": 36,
+          "south": 64,
+          "midwest": 41,
+          "west": 40
+        }
+      }
+    },
+    {
+      "axis": "census_region",
+      "outcome": "compliance",
+      "type": "continuous",
+      "test": {
+        "H": 7.42,
+        "df": 3,
+        "p": 0.0597,
+        "eta_squared": 0.025,
+        "group_medians": {
+          "northeast": 4,
+          "south": 3,
+          "midwest": 4,
+          "west": 3.5
+        },
+        "group_ns": {
+          "northeast": 36,
+          "south": 64,
+          "midwest": 41,
+          "west": 40
+        }
+      }
+    },
+    {
+      "axis": "census_region",
+      "outcome": "overall",
+      "type": "continuous",
+      "test": {
+        "H": 2.78,
+        "df": 3,
+        "p": 0.4261,
+        "eta_squared": 0,
+        "group_medians": {
+          "northeast": 3.58,
+          "south": 3.33,
+          "midwest": 3.45,
+          "west": 3.33
+        },
+        "group_ns": {
+          "northeast": 36,
+          "south": 64,
+          "midwest": 41,
+          "west": 40
+        }
+      }
+    },
+    {
+      "axis": "facility_type",
+      "outcome": "has_fillable_fields",
+      "type": "binary",
+      "test": {
+        "chi2": 7.53,
+        "df": 4,
+        "p": 0.1105,
+        "cramers_v": 0.204,
+        "contingency": {
+          "community_hospital": {
+            "yes": 22,
+            "no": 55
+          },
+          "teaching_hospital": {
+            "yes": 12,
+            "no": 18
+          },
+          "critical_access_hospital": {
+            "yes": 3,
+            "no": 26
+          },
+          "fqhc": {
+            "yes": 6,
+            "no": 14
+          },
+          "physician_practice": {
+            "yes": 5,
+            "no": 20
+          }
+        }
+      }
+    },
+    {
+      "axis": "facility_type",
+      "outcome": "has_individual_access_pathway",
+      "type": "binary",
+      "test": {
+        "chi2": 11.8,
+        "df": 4,
+        "p": 0.0189,
+        "cramers_v": 0.255,
+        "contingency": {
+          "community_hospital": {
+            "yes": 21,
+            "no": 56
+          },
+          "teaching_hospital": {
+            "yes": 10,
+            "no": 20
+          },
+          "critical_access_hospital": {
+            "yes": 1,
+            "no": 28
+          },
+          "fqhc": {
+            "yes": 2,
+            "no": 18
+          },
+          "physician_practice": {
+            "yes": 4,
+            "no": 21
+          }
+        }
+      }
+    },
+    {
+      "axis": "facility_type",
+      "outcome": "online_submission",
+      "type": "binary",
+      "test": {
+        "chi2": 6.28,
+        "df": 4,
+        "p": 0.1794,
+        "cramers_v": 0.186,
+        "contingency": {
+          "community_hospital": {
+            "no": 11,
+            "yes": 66
+          },
+          "teaching_hospital": {
+            "no": 3,
+            "yes": 27
+          },
+          "critical_access_hospital": {
+            "no": 7,
+            "yes": 22
+          },
+          "fqhc": {
+            "no": 3,
+            "yes": 17
+          },
+          "physician_practice": {
+            "no": 8,
+            "yes": 17
+          }
+        }
+      }
+    },
+    {
+      "axis": "facility_type",
+      "outcome": "uses_system_forms",
+      "type": "binary",
+      "test": {
+        "chi2": 66.65,
+        "df": 4,
+        "p": 0,
+        "cramers_v": 0.607,
+        "contingency": {
+          "community_hospital": {
+            "yes": 48,
+            "no": 29
+          },
+          "teaching_hospital": {
+            "yes": 23,
+            "no": 7
+          },
+          "critical_access_hospital": {
+            "yes": 4,
+            "no": 25
+          },
+          "fqhc": {
+            "yes": 0,
+            "no": 20
+          },
+          "physician_practice": {
+            "yes": 1,
+            "no": 24
+          }
+        }
+      }
+    },
+    {
+      "axis": "system_affiliation",
+      "outcome": "has_fillable_fields",
+      "type": "binary",
+      "test": {
+        "chi2": 14.49,
+        "df": 2,
+        "p": 0.0007,
+        "cramers_v": 0.283,
+        "contingency": {
+          "major_system": {
+            "yes": 28,
+            "no": 37
+          },
+          "regional_system": {
+            "yes": 5,
+            "no": 30
+          },
+          "independent": {
+            "yes": 15,
+            "no": 66
+          }
+        }
+      }
+    },
+    {
+      "axis": "system_affiliation",
+      "outcome": "has_individual_access_pathway",
+      "type": "binary",
+      "test": {
+        "chi2": 22.73,
+        "df": 2,
+        "p": 0,
+        "cramers_v": 0.354,
+        "contingency": {
+          "major_system": {
+            "yes": 26,
+            "no": 39
+          },
+          "regional_system": {
+            "yes": 2,
+            "no": 33
+          },
+          "independent": {
+            "yes": 10,
+            "no": 71
+          }
+        }
+      }
+    },
+    {
+      "axis": "system_affiliation",
+      "outcome": "online_submission",
+      "type": "binary",
+      "test": {
+        "chi2": 2.32,
+        "df": 2,
+        "p": 0.313,
+        "cramers_v": 0.113,
+        "contingency": {
+          "major_system": {
+            "no": 10,
+            "yes": 55
+          },
+          "regional_system": {
+            "no": 4,
+            "yes": 31
+          },
+          "independent": {
+            "no": 18,
+            "yes": 63
+          }
+        }
+      }
+    },
+    {
+      "axis": "system_affiliation",
+      "outcome": "uses_system_forms",
+      "type": "binary",
+      "test": {
+        "chi2": 103.23,
+        "df": 2,
+        "p": 0,
+        "cramers_v": 0.755,
+        "contingency": {
+          "major_system": {
+            "yes": 53,
+            "no": 12
+          },
+          "regional_system": {
+            "yes": 22,
+            "no": 13
+          },
+          "independent": {
+            "yes": 1,
+            "no": 80
+          }
+        }
+      }
+    },
+    {
+      "axis": "ownership",
+      "outcome": "has_fillable_fields",
+      "type": "binary",
+      "test": {
+        "chi2": 2.46,
+        "df": 2,
+        "p": 0.2927,
+        "cramers_v": 0.117,
+        "contingency": {
+          "nonprofit": {
+            "yes": 34,
+            "no": 85
+          },
+          "for_profit": {
+            "yes": 11,
+            "no": 28
+          },
+          "government": {
+            "yes": 3,
+            "no": 20
+          }
+        }
+      }
+    },
+    {
+      "axis": "ownership",
+      "outcome": "has_individual_access_pathway",
+      "type": "binary",
+      "test": {
+        "chi2": 2.04,
+        "df": 2,
+        "p": 0.3607,
+        "cramers_v": 0.106,
+        "contingency": {
+          "nonprofit": {
+            "yes": 28,
+            "no": 91
+          },
+          "for_profit": {
+            "yes": 5,
+            "no": 34
+          },
+          "government": {
+            "yes": 5,
+            "no": 18
+          }
+        }
+      }
+    },
+    {
+      "axis": "ownership",
+      "outcome": "online_submission",
+      "type": "binary",
+      "test": {
+        "chi2": 12.63,
+        "df": 2,
+        "p": 0.0018,
+        "cramers_v": 0.264,
+        "contingency": {
+          "nonprofit": {
+            "no": 15,
+            "yes": 104
+          },
+          "for_profit": {
+            "no": 7,
+            "yes": 32
+          },
+          "government": {
+            "no": 10,
+            "yes": 13
+          }
+        }
+      }
+    },
+    {
+      "axis": "ownership",
+      "outcome": "uses_system_forms",
+      "type": "binary",
+      "test": {
+        "chi2": 8.7,
+        "df": 2,
+        "p": 0.0129,
+        "cramers_v": 0.219,
+        "contingency": {
+          "nonprofit": {
+            "yes": 59,
+            "no": 60
+          },
+          "for_profit": {
+            "yes": 12,
+            "no": 27
+          },
+          "government": {
+            "yes": 5,
+            "no": 18
+          }
+        }
+      }
+    },
+    {
+      "axis": "census_region",
+      "outcome": "has_fillable_fields",
+      "type": "binary",
+      "test": {
+        "chi2": 6.79,
+        "df": 3,
+        "p": 0.079,
+        "cramers_v": 0.194,
+        "contingency": {
+          "northeast": {
+            "yes": 15,
+            "no": 21
+          },
+          "south": {
+            "yes": 13,
+            "no": 51
+          },
+          "midwest": {
+            "yes": 8,
+            "no": 33
+          },
+          "west": {
+            "yes": 12,
+            "no": 28
+          }
+        }
+      }
+    },
+    {
+      "axis": "census_region",
+      "outcome": "has_individual_access_pathway",
+      "type": "binary",
+      "test": {
+        "chi2": 1.08,
+        "df": 3,
+        "p": 0.7831,
+        "cramers_v": 0.077,
+        "contingency": {
+          "northeast": {
+            "yes": 7,
+            "no": 29
+          },
+          "south": {
+            "yes": 16,
+            "no": 48
+          },
+          "midwest": {
+            "yes": 7,
+            "no": 34
+          },
+          "west": {
+            "yes": 8,
+            "no": 32
+          }
+        }
+      }
+    },
+    {
+      "axis": "census_region",
+      "outcome": "online_submission",
+      "type": "binary",
+      "test": {
+        "chi2": 1.31,
+        "df": 3,
+        "p": 0.7271,
+        "cramers_v": 0.085,
+        "contingency": {
+          "northeast": {
+            "no": 8,
+            "yes": 28
+          },
+          "south": {
+            "no": 12,
+            "yes": 52
+          },
+          "midwest": {
+            "no": 7,
+            "yes": 34
+          },
+          "west": {
+            "no": 5,
+            "yes": 35
+          }
+        }
+      }
+    },
+    {
+      "axis": "census_region",
+      "outcome": "uses_system_forms",
+      "type": "binary",
+      "test": {
+        "chi2": 1.21,
+        "df": 3,
+        "p": 0.7505,
+        "cramers_v": 0.082,
+        "contingency": {
+          "northeast": {
+            "yes": 18,
+            "no": 18
+          },
+          "south": {
+            "yes": 26,
+            "no": 38
+          },
+          "midwest": {
+            "yes": 16,
+            "no": 25
+          },
+          "west": {
+            "yes": 16,
+            "no": 24
+          }
+        }
+      }
+    }
+  ]
+}

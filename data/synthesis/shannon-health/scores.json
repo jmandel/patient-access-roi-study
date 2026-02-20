@@ -1,0 +1,125 @@
+{
+  "org_id": "shannon-health",
+  "org_name": "Shannon Health",
+  "category_id": "ch-regional-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Information (English)",
+      "url": "https://www.shannonhealth.com/documents/ROI-Form-2025-English.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Autorización para la Divulgación de Información (Spanish)",
+      "url": "https://www.shannonhealth.com/documents/ROI-Form-2025-Spanish.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission (preferred method)",
+      "url": "mailto:ROIRequests@shannonhealth.org",
+      "is_primary": true
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Shannon Health HIM/Release of Information",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person delivery to Shannon Health HIM office",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.shannonhealth.com/documents/ROI-Form-2025-English.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.shannonhealth.com/documents/ROI-Form-2025-Spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a generic Authorization for Release of Information PDF, check 'Self' as recipient and 'Personal Use' as purpose, print and hand-fill, then email the completed form to ROIRequests@shannonhealth.org.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 25,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Blanket fee acceptance: patient must agree to pay unknown fees before learning the cost — form says 'there may be a fee charged' and 'I agree to pay accordingly' without disclosing amounts or referencing HIPAA cost-based limits"
+    ],
+    "bright_spots": [
+      "Bilingual forms (English and Spanish) linked side-by-side on the medical records page",
+      "Email listed as 'Preferred Method' for form submission — unusually patient-friendly",
+      "Encrypted email delivery via ShareFile and MyChart portal access as record delivery options",
+      "Explicit non-conditioning statement: Shannon cannot condition treatment, payment, enrollment, or benefits on signing the authorization",
+      "Three-option substance use disorder records handling (include all, exclude all, select specific) per 42 CFR Part 2"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — 2 clicks from homepage via Patients & Visitors → Request Medical Records, with clearly labeled download links; minor friction from outdated search-engine-cached URLs returning 404."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds — the form is a digitally-authored PDF with a text layer but zero fillable fields, requiring patients to print, hand-fill, scan, and email; email submission (preferred method) provides an electronic endpoint but the completion workflow is paper-based."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — logical flow across 2 pages, clear section headers, granular record type selection (~15 checkboxes), good SUD handling, and proportionate length; minor issues include dense legal language on page 2 and ambiguous handling of recipient fields when 'Self' is selected."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the form includes 'Self' and 'Personal Use' options but is fundamentally a generic third-party release authorization; patients must navigate irrelevant recipient fields, and no dedicated patient access pathway or HIPAA Right of Access citation exists."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing that would materially impede a patient — includes non-conditioning statement (uncommon positive), no notarization or witness required, email submission available; the one ambiguity is vague fee disclosure without amounts or reference to HIPAA cost-based limits."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "Shannon Health provides an accessible, bilingual records request process with email submission as the preferred method and multiple electronic delivery options, but relies on a generic third-party authorization form without fillable fields rather than offering a dedicated patient access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:06:22.340Z"
+}

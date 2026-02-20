@@ -1,0 +1,136 @@
+{
+  "org_id": "tristar-centennial-medical-center",
+  "org_name": "TriStar Centennial Medical Center",
+  "category_id": "ch-major-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "HCA Healthcare",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "HCA Authorization for Release of PHI (English)",
+      "url": "https://www.hcadam.com/api/public/content/46695a9ba25e4b9aa6376f53cef033ac?v=b53c28b5",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "HCA Authorization for Release of PHI (Spanish)",
+      "url": "https://www.hcadam.com/api/public/content/e109b112b80f42fc8291acbe0b1435fa?v=829b113e",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request portal",
+      "vendor": "Swellbox/Datavant",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyHealthONE patient portal",
+      "vendor": "HCA MyHealthONE",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.hcadam.com/api/public/content/46695a9ba25e4b9aa6376f53cef033ac?v=b53c28b5",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://centennialmedical.com/wp-content/uploads/2020/04/Med-Record-request-FROM-CMG.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (affiliated physician group)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.hcadam.com/api/public/content/e109b112b80f42fc8291acbe0b1435fa?v=829b113e",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (Spanish translation)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads and fills the standard HCA authorization form, which serves both self-access and third-party release, then submits via fax, mail, or the Swellbox online portal.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 52,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [],
+    "bright_spots": [
+      "Bilingual fillable PDFs (English and Spanish) with 52 interactive fields each",
+      "USCDI Release Request option for structured health data interoperability",
+      "Four delivery format options including encrypted email",
+      "Swellbox online portal and MyHealthONE patient portal as alternative digital pathways",
+      "SSN field explicitly marked optional"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — web search immediately surfaced the well-organized medical records page with direct PDF download links for both languages."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital — the PDF has 52 fillable fields for complete digital form completion, but the PDF pathway requires fax or mail for submission; the Swellbox portal offers a fully digital alternative."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with three labeled sections, 16+ record-type checkboxes, and four delivery options, but the single-page density and some legal language (e.g., unencrypted email disclaimer) prevent a top score."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic authorization form serves both self-access and third-party release with no differentiation, and Section B (marketing/sale of PHI) adds irrelevant complexity for patients requesting their own records."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing material — no notarization, SSN optional, psychotherapy notes properly handled, appropriate patient rights statements, but fee language is vague ('reasonable copy fee' with no specifics) and fax is restricted to physician offices/medical facilities."
+    },
+    "overall": {
+      "score": 3.9,
+      "grade": "B",
+      "summary": "Strong technical form quality with fillable bilingual PDFs and multiple pathways, but the generic authorization design fails to differentiate patient self-access from third-party release."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:02:59Z"
+}

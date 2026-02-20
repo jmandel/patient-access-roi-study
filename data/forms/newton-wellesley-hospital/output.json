@@ -1,0 +1,44 @@
+{
+  "org_id": "newton-wellesley-hospital",
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Protected or Privileged Health Information",
+      "url": "https://www.massgeneralbrigham.org/content/dam/mgb-global/en/patient-care/patient-and-visitor-information/medical-records/documents/nwh/medical-records-release-nwh-english.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax completed form to Release of Information",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed form to Release of Information, 121 Inner Belt Road, Room 240, Somerville, MA 02143-4453",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.massgeneralbrigham.org/content/dam/mgb-global/en/patient-care/patient-and-visitor-information/medical-records/documents/nwh/medical-records-release-nwh-english.pdf",
+      "scope": "system",
+      "language": "en",
+      "is_current": true,
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.nwh.org/media/file/PHS_HIM_RELEASE-ENG.pdf",
+      "scope": "system",
+      "language": "en",
+      "is_current": false,
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "parent_system": "Mass General Brigham",
+  "uses_system_forms": true,
+  "retrieval_difficulty": "easy",
+  "bot_blocking_encountered": false,
+  "browser_fallback_needed": false
+}

@@ -1,0 +1,114 @@
+{
+  "org_id": "northlakes-community-clinic",
+  "org_name": "NorthLakes Community Clinic",
+  "category_id": "fqhc-independent-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Release of Information form (current, 12/2023)",
+      "url": "https://nlccwi.org/wp-content/uploads/2024/01/ExternalROI-122023.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Health Information Release form (fillable, 4/2022)",
+      "url": "https://nlccwi.org/wp-content/uploads/2022/04/Health-Information-Release-Form-Fillable-422.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Medical Records (715-318-5644)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://nlccwi.org/wp-content/uploads/2024/01/ExternalROI-122023.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://nlccwi.org/wp-content/uploads/2022/04/Health-Information-Release-Form-Fillable-422.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic Release of Information PDF form, fills it out designating themselves as the recipient, and faxes it to the clinic.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 20,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Newer form (12/2023) regressed from fillable to non-fillable format",
+      "Two active forms with same REG number and no guidance on which to use"
+    ],
+    "bright_spots": [
+      "Encrypted email delivery option for records",
+      "'Self/Personal' purpose checkbox explicitly supports patient-directed requests",
+      "Granular behavioral health record type selection (Mental Health, Substance Use, Psychiatry separately)",
+      "Verbal revocation acknowledged alongside written"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Both forms are easily discoverable via basic web search with direct PDF links on a clearly labeled medical records page; minor deduction for two active forms with no guidance on which is current."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: A fillable PDF exists (form-2, 54 fields) and fax submission is available (form-1), but the current primary form is not fillable and the fillable form lacks submission instructions — requiring workarounds across two documents."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Numbered sections provide reasonable structure and record-type granularity is strong, but dense single-page layout, legalese consent paragraphs, and visually interleaved sections on form-2 create notable clarity problems."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic ROI form with the 'Self/Personal' checkbox, but the FROM/TO framing is designed for inter-organizational transfers and there is no dedicated patient access pathway or Right of Access language."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization, no in-person requirement, clear treatment non-conditioning and revocation statements, appropriate expiration; minor ambiguities include no fee disclosure and a confusing 42 CFR Part 2/HIPAA conflation."
+    },
+    "overall": {
+      "score": 3.35,
+      "grade": "C",
+      "summary": "NorthLakes Community Clinic provides easily findable, barrier-free generic ROI forms with good record-type granularity, but lacks a dedicated patient access pathway and regressed from fillable to non-fillable on its current form."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:28:51.387Z"
+}

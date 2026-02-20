@@ -1,0 +1,118 @@
+{
+  "org_id": "wakemed-health",
+  "org_name": "WakeMed Health & Hospitals",
+  "category_id": "teach-regional-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Medical Information (N-935)",
+      "is_primary": true,
+      "url": "https://www.wakemed.org/sites/default/files/pdf/N-935%20Authorization%20to%20Release%20Medical%20Information%20(1).pdf"
+    },
+    {
+      "type": "email",
+      "name": "HIM ROI email submission",
+      "is_primary": false,
+      "url": "mailto:HIMROI@Wakemed.org"
+    },
+    {
+      "type": "fax",
+      "name": "HIM fax submission (919-350-1720)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "HIM Department mail (3000 New Bern Avenue, Raleigh, NC 27610)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.wakemed.org/sites/default/files/pdf/N-935%20Authorization%20to%20Release%20Medical%20Information%20(1).pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.wakemed.org/sites/default/files/pdf/N-935S%20Authorization%20to%20Release%20Medical%20Information.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a general-purpose HIPAA authorization PDF, select 'Personal' as the purpose, print and complete by hand, then submit via email, fax, or mail.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Fee disclosure is vague — states 'a fee will be charged' for large-volume requests with no schedule, estimate, or reference to HIPAA fee limits"
+    ],
+    "bright_spots": [
+      "Spanish-language version (N-935S) available alongside English form",
+      "Email submission accepted (HIMROI@Wakemed.org) — removes need for fax or mail",
+      "Six delivery methods including encrypted email (default) and MyChart",
+      "Recently revised form (REV. 11/25) suggests active maintenance"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Form found via simple web search and linked from a well-organized HIM page, though one stale URL required browser navigation to locate the current link."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Non-fillable PDF (0 interactive fields) requiring print and handwrite, but fax and email submission are available as electronic submission channels."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized 2-page form with clear section headers, logical flow, and granular record selection; minor clarity issue with 'Personal' purpose label and Recipient field for self-access."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: Generic HIPAA authorization usable for patient access by selecting 'Personal' purpose, but the form was not designed for self-access — Recipient field and third-party framing require patients to adapt."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization, multiple submission channels, non-conditioning language present, and proper revocation/re-disclosure disclosures; minor ambiguity in fee disclosure with no specific amounts or HIPAA fee reference."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "WakeMed provides a well-organized, accessible ROI form with multiple submission channels and a Spanish translation, but the generic authorization pathway and non-fillable PDF format limit both patient-centeredness and digital accessibility."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:20:08.278Z"
+}

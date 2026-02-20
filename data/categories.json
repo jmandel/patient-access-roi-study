@@ -1,0 +1,497 @@
+[
+  {
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "target_count": 6,
+    "description": "Community hospitals in the Northeast belonging to large nonprofit health systems with 10+ hospitals (e.g., members of systems like Northwell, Yale New Haven Health, Mass General Brigham)."
+  },
+  {
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "target_count": 7,
+    "description": "Community hospitals in the South belonging to large nonprofit health systems such as Ascension, AdventHealth, or Baptist Health."
+  },
+  {
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "target_count": 6,
+    "description": "Community hospitals in the Midwest belonging to large nonprofit health systems such as Advocate Aurora, Mercy Health, or SSM Health."
+  },
+  {
+    "category_id": "ch-major-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "target_count": 5,
+    "description": "Community hospitals in the West belonging to large nonprofit health systems such as Providence, CommonSpirit, or Intermountain Health."
+  },
+  {
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "target_count": 6,
+    "description": "Community hospitals in the South belonging to large for-profit chains such as HCA Healthcare, Tenet Healthcare, or Community Health Systems."
+  },
+  {
+    "category_id": "ch-major-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "target_count": 4,
+    "description": "Community hospitals in the West operated by large for-profit chains such as HCA, Tenet, or Prime Healthcare."
+  },
+  {
+    "category_id": "ch-major-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "target_count": 3,
+    "description": "Government-operated community hospitals in the South belonging to large public hospital systems such as county hospital districts or state systems."
+  },
+  {
+    "category_id": "ch-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "target_count": 4,
+    "description": "Community hospitals in the Northeast belonging to regional nonprofit health systems with 2-9 hospitals serving a multi-county area."
+  },
+  {
+    "category_id": "ch-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "target_count": 5,
+    "description": "Community hospitals in the South belonging to regional nonprofit health systems with 2-9 hospitals serving a metropolitan area or multi-county region."
+  },
+  {
+    "category_id": "ch-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "target_count": 4,
+    "description": "Community hospitals in the Midwest belonging to regional nonprofit health systems with 2-9 hospitals."
+  },
+  {
+    "category_id": "ch-regional-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "target_count": 4,
+    "description": "Community hospitals in the West belonging to regional nonprofit health systems with 2-9 hospitals."
+  },
+  {
+    "category_id": "ch-regional-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "target_count": 4,
+    "description": "Community hospitals in the South belonging to regional for-profit hospital groups operating 2-9 facilities."
+  },
+  {
+    "category_id": "ch-regional-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "target_count": 3,
+    "description": "Community hospitals in the West belonging to regional for-profit hospital groups operating 2-9 facilities."
+  },
+  {
+    "category_id": "ch-regional-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "target_count": 3,
+    "description": "Government-operated community hospitals in the South belonging to county or municipal hospital districts with 2-9 facilities."
+  },
+  {
+    "category_id": "ch-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "target_count": 3,
+    "description": "Standalone nonprofit community hospitals in the Northeast not affiliated with a multi-hospital system."
+  },
+  {
+    "category_id": "ch-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "target_count": 3,
+    "description": "Standalone nonprofit community hospitals in the South not affiliated with a multi-hospital system."
+  },
+  {
+    "category_id": "ch-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "target_count": 3,
+    "description": "Standalone nonprofit community hospitals in the Midwest not affiliated with a multi-hospital system."
+  },
+  {
+    "category_id": "ch-independent-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "target_count": 3,
+    "description": "Standalone for-profit community hospitals in the South, typically investor-owned single-facility operations."
+  },
+  {
+    "category_id": "ch-independent-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "target_count": 3,
+    "description": "Standalone county or municipal hospitals in the South operated by local government entities."
+  },
+  {
+    "category_id": "ch-independent-government-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "target_count": 3,
+    "description": "Standalone county or district hospitals in the West operated by local government entities."
+  },
+  {
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "target_count": 6,
+    "description": "Major teaching hospitals and academic medical centers in the Northeast affiliated with medical schools and operating within large nonprofit health systems."
+  },
+  {
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "target_count": 6,
+    "description": "Major teaching hospitals and academic medical centers in the South affiliated with medical schools and operating within large nonprofit health systems."
+  },
+  {
+    "category_id": "teach-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "target_count": 5,
+    "description": "Major teaching hospitals and academic medical centers in the Midwest affiliated with medical schools and operating within large nonprofit health systems."
+  },
+  {
+    "category_id": "teach-major-nonprofit-west",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "target_count": 4,
+    "description": "Major teaching hospitals and academic medical centers in the West affiliated with medical schools and operating within large nonprofit health systems."
+  },
+  {
+    "category_id": "teach-major-government-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "target_count": 3,
+    "description": "Public university teaching hospitals in the South operated by state government, serving as academic medical centers for state medical schools."
+  },
+  {
+    "category_id": "teach-major-government-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "target_count": 3,
+    "description": "Public university teaching hospitals in the Midwest operated by state government, serving as academic medical centers for state medical schools."
+  },
+  {
+    "category_id": "teach-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "target_count": 3,
+    "description": "Teaching hospitals in the Northeast that are part of regional nonprofit health systems with 2-9 hospitals and maintain graduate medical education programs."
+  },
+  {
+    "category_id": "teach-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "target_count": 3,
+    "description": "Teaching hospitals in the South that are part of regional nonprofit health systems with 2-9 hospitals and maintain graduate medical education programs."
+  },
+  {
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "target_count": 7,
+    "description": "Independent nonprofit Critical Access Hospitals in the Midwest — the region with the highest CAH concentration (46% of all U.S. CAHs), serving rural communities with 25 or fewer beds."
+  },
+  {
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "target_count": 6,
+    "description": "Independent nonprofit Critical Access Hospitals in the West, serving isolated rural communities across large geographic areas with 25 or fewer beds."
+  },
+  {
+    "category_id": "cah-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "target_count": 5,
+    "description": "Independent nonprofit Critical Access Hospitals in the South, serving rural communities with limited healthcare infrastructure and 25 or fewer beds."
+  },
+  {
+    "category_id": "cah-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "target_count": 4,
+    "description": "Independent nonprofit Critical Access Hospitals in the Northeast, found primarily in rural areas of Maine, Vermont, New Hampshire, and upstate New York."
+  },
+  {
+    "category_id": "cah-independent-government-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "target_count": 3,
+    "description": "Government-operated Critical Access Hospitals in the Midwest, typically county-owned facilities serving as the sole healthcare provider in rural counties."
+  },
+  {
+    "category_id": "cah-independent-government-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "target_count": 3,
+    "description": "Government-operated Critical Access Hospitals in the West, typically county or district-owned facilities serving remote rural communities."
+  },
+  {
+    "category_id": "cah-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "target_count": 3,
+    "description": "Critical Access Hospitals in the Midwest affiliated with regional nonprofit health systems that provide management support while the facility retains CAH designation."
+  },
+  {
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "target_count": 6,
+    "description": "Federally Qualified Health Centers in the Northeast providing primary care to underserved populations in both urban and rural settings."
+  },
+  {
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "target_count": 7,
+    "description": "Federally Qualified Health Centers in the South providing primary care to underserved populations, particularly in states with high uninsured rates."
+  },
+  {
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "target_count": 6,
+    "description": "Federally Qualified Health Centers in the Midwest providing primary care to underserved populations in both urban centers and rural agricultural communities."
+  },
+  {
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "target_count": 7,
+    "description": "Federally Qualified Health Centers in the West providing primary care to underserved populations, including migrant farmworker communities and frontier areas."
+  },
+  {
+    "category_id": "practice-independent-forprofit-northeast",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "northeast"
+    },
+    "target_count": 5,
+    "description": "Independent for-profit multi-provider physician practices in the Northeast, including multi-specialty groups and large single-specialty practices."
+  },
+  {
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "target_count": 6,
+    "description": "Independent for-profit multi-provider physician practices in the South, including multi-specialty groups and large single-specialty practices."
+  },
+  {
+    "category_id": "practice-independent-forprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "midwest"
+    },
+    "target_count": 4,
+    "description": "Independent for-profit multi-provider physician practices in the Midwest, including multi-specialty clinics and large single-specialty groups."
+  },
+  {
+    "category_id": "practice-independent-forprofit-west",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "target_count": 5,
+    "description": "Independent for-profit multi-provider physician practices in the West, including multi-specialty groups and large single-specialty practices."
+  },
+  {
+    "category_id": "practice-major-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "target_count": 4,
+    "description": "Physician practices in the South owned by or affiliated with large for-profit healthcare companies, including private-equity-backed physician groups."
+  },
+  {
+    "category_id": "practice-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "target_count": 3,
+    "description": "Independent nonprofit physician practices in the Midwest, including physician-owned cooperative clinics and multispecialty group practices."
+  }
+]

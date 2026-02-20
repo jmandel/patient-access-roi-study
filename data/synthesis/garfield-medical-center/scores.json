@@ -1,0 +1,122 @@
+{
+  "org_id": "garfield-medical-center",
+  "org_name": "Garfield Medical Center",
+  "category_id": "ch-regional-forprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "AHMC Healthcare Inc.",
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use or Disclosure of Health Information",
+      "url": "https://www.ahmchealth.com/gmc/documents/GMC-AUTHORIZATION-FOR-USE-OR-DISCLOSURE-OF-PHI.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM department",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email delivery option on form",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Garfield Medical Center HIM",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "Hand-carry or pick-up at facility",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.ahmchealth.com/gmc/documents/GMC-AUTHORIZATION-FOR-USE-OR-DISCLOSURE-OF-PHI.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.ahmchealth.com/gmc/docs/Patient_Authorization_Form_for_Medical_Records.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (duplicate version)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must use a generic HIPAA authorization form designed for all releases, selecting 'Personal Use' as the purpose and filling in their own name as the recipient.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "CD liability waiver bundled into general authorization — patients must waive liability for CD release even when not requesting imaging",
+      "Revocation of authorization limited to postal mail only"
+    ],
+    "bright_spots": [
+      "Email delivery option with dedicated email address field",
+      "Inspect or Review Medical Record option alongside copies",
+      "Granular record type selection with 12+ specific categories"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic web search; direct PDF links returned without login or bot blocking. Minor deduction for duplicate forms at different URLs creating potential confusion."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Digitally-created PDF with text layer is usable but has zero fillable fields, requiring print-and-handwrite workflow; fax and email submission are available, providing electronic submission options."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized 2-page form with clear section headers, logical flow, and granular record type options; minor issues include intimidating opening warning and unexplained legal code references."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form by selecting 'Personal Use' purpose, but it was not designed for patient self-access; the framing is third-party release and patients must figure out which parts apply to them."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Correctly states treatment non-conditionality and includes notice of rights, but bundles a CD liability waiver into the general authorization and discloses fees without amounts, going somewhat beyond what the law requires for patient access."
+    },
+    "overall": {
+      "score": 3.3,
+      "grade": "C",
+      "summary": "Garfield Medical Center provides an easy-to-find, well-organized authorization form with useful features like email delivery and record type granularity, but the generic third-party release framing, non-fillable PDF, bundled liability waiver, and lack of a dedicated patient access pathway keep it at average quality."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:08:02.478Z"
+}

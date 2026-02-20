@@ -1,0 +1,111 @@
+{
+  "org_id": "copley-hospital",
+  "org_name": "Copley Hospital",
+  "category_id": "cah-independent-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Health Information Authorization Form (Form 1085)",
+      "url": "https://www.copleyvt.org/wp-content/uploads/2021/08/Authorization-to-Release-Medical-Record-Form-07-21.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "HIM Department fax submission",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Copley Hospital HIM, 528 Washington Hwy, Morrisville VT 05661",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person pickup/drop-off at HIM Department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.copleyvt.org/wp-content/uploads/2021/08/Authorization-to-Release-Medical-Record-Form-07-21.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (dual-purpose: patient self-access and third-party release)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "A single dual-purpose authorization form with a checkbox for 'Provide a copy of my records to: Me' alongside third-party release fields.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No fillable fields despite digitally authored PDF — forces print-and-handwrite workflow",
+      "Purpose of Release field present without clarification that it is optional for patient self-requests"
+    ],
+    "bright_spots": [
+      "Comprehensive electronic delivery options including email, USB, CD, and patient portal",
+      "Clear plain-language voluntariness statement: 'My treatment will not be impacted, no matter if I sign this Authorization or not'",
+      "Single-page form covering all necessary content efficiently",
+      "Patient portal nudge: 'Many documents that you may be requesting are available to you in your patient portal'"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — form is directly linked from the Medical Records page under main navigation and immediately surfaced by web search."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds; fax submission available — the PDF has a text layer but zero fillable fields, requiring print-and-handwrite, though fax submission provides an electronic return path."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — logical single-page layout with clear sections and plain language, but the dense formatting and ambiguous 'Purpose of Release' field for self-requests are minor drawbacks."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the form includes a 'Me' checkbox but patients must navigate third-party release fields, a purpose-of-release field, and authorization framing rather than access-right framing."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — no fee disclosure despite HIPAA requirements, purpose-of-release field without opt-out clarification for self-requests, and no explicit Right of Access framing, though voluntariness and revocation language are solid."
+    },
+    "overall": {
+      "score": 3.45,
+      "grade": "C",
+      "summary": "Copley Hospital offers easy findability and a compact, plain-language form with strong delivery options, but the lack of fillable fields, absence of fee disclosure, and generic authorization framing rather than dedicated patient access pathway hold it back from a higher grade."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:20:38.605Z"
+}

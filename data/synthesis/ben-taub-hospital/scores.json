@@ -1,0 +1,127 @@
+{
+  "org_id": "ben-taub-hospital",
+  "org_name": "Ben Taub Hospital",
+  "category_id": "ch-major-government-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Harris Health System",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Harris Health Authorization for Use, Request and Disclosure of PHI",
+      "url": "https://www.harrishealth.org/SiteCollectionDocuments/280342-authorization-for-use-request-and-disclosure-of-phi.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Harris Health HIM",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission to Releaseofinformation@harrishealth.org",
+      "url": "mailto:Releaseofinformation@harrishealth.org",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Harris Health HIM, 4800 Fournace Place, Bellaire, TX 77401",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person drop-off at Harris Health facility",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.harrishealth.org/SiteCollectionDocuments/280342-authorization-for-use-request-and-disclosure-of-phi.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.harrishealth.org/SiteCollectionDocuments/282758-authorization-for-marketing-and-educational-use-english.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Marketing/media authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a system-wide dual-purpose HIPAA authorization form that conditionally marks sections as not required for patient self-access, with submission via fax, email, mail, or in-person drop-off.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 65,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Witness signature line present with no guidance on whether it is required or who qualifies as a witness",
+      "Internal intranet URL (apps.hchd.local) printed on patient-facing form",
+      "65 fillable fields lack programmatic names, undermining screen reader accessibility"
+    ],
+    "bright_spots": [
+      "Email delivery option explicitly labeled 'Patients Only'",
+      "Conditional sections clearly mark third-party-only fields so patients can skip them",
+      "Granular record type selection with 14+ categories and proper psychotherapy notes separation",
+      "Multiple submission channels (fax, email, mail, in-person) with contact details printed on form",
+      "Dedicated authorization withdrawal email address",
+      "Recently revised (December 2024) indicating active document management"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — a site-scoped search immediately surfaced the PDF, and it is directly linked from the medical records page with a descriptive URL."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the form has 65 fillable fields for digital completion, but submission requires fax or email (not a fully integrated online workflow), and fields lack programmatic names."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but with notable problems — the single-page layout is logically organized but cramped and dense, language leans legal/administrative, section headers are minimal, and a grammatical error ('maybe' vs 'may be') creates ambiguity."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access is clearly accommodated even though the form serves multiple purposes — conditional sections reduce patient burden, email delivery is patient-specific, and the non-conditioning statement is well-worded."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization required, no fees mentioned, multiple submission channels available; the witness signature ambiguity is the only notable concern."
+    },
+    "overall": {
+      "score": 3.85,
+      "grade": "B",
+      "summary": "Harris Health System provides a findable, fillable, electronically submittable authorization form that thoughtfully accommodates patient self-access through conditional sections, earning a solid B despite using a generic authorization form rather than a dedicated patient access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:01:59.983Z"
+}

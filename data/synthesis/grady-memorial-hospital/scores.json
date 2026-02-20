@@ -1,0 +1,121 @@
+{
+  "org_id": "grady-memorial-hospital",
+  "org_name": "Grady Memorial Hospital",
+  "category_id": "ch-major-government-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Grady Health System",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Authorization for Disclosure of PHI",
+      "url": "https://www.gradyhealth.org/wp-content/uploads/medicalrecords.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed form to Medical Records Department",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "Drop off completed form at hospital main lobby",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.gradyhealth.org/wp-content/uploads/medicalrecords.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (current, rev 2/22)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.gradyhealth.org/wp-content/uploads/2017/08/Grady-PHI-form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (older version, rev 5/15)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.gradyhealth.org/wp-content/uploads/Medical-Records-Requests-combined.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Combined instructions + ROI authorization form (COVID-era cover page with older form)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization form, prints and handwrites all fields, then mails or drops off the completed form at the hospital.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "3-5 business days processing; 2 business days for electronic delivery, 7-10 for mail",
+    "red_flags": [
+      "Broad liability waiver: patient must agree not to hold Grady responsible for anything that may happen from use or release of PHI",
+      "Completeness threat: form states it may be considered invalid if any selection is incomplete",
+      "Collects last four digits of SSN in addition to requiring government-issued photo ID"
+    ],
+    "bright_spots": [
+      "Encrypted email delivery option available on current form",
+      "Fee disclosure on form-3 cover page: charges generally do not exceed $6.50; continuing care requests are free",
+      "Processing time estimates provided (3-5 business days, 2 days electronic, 7-10 days mail)",
+      "Multiple record delivery formats: paper, CD, encrypted email"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms directly linked from gradyhealth.org/medical-records/ and found on first web search with no login, bot blocking, or broken links."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF has zero fillable fields (print and handwrite required), and submission is limited to mail or in-person drop-off with no fax, email, or portal submission available."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate organization with clear section flow and granular record type options, but notable problems including dense legal language, a broad liability waiver, ambiguous sensitive information handling, and a threatening completeness warning."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form for self-access (it includes 'Personal' as a purpose and addresses patient requests in documentation requirements), but the form was designed for third-party release and the patient must navigate the from/to disclosure structure."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — broad liability waiver bundled with authorization, SSN collection alongside photo ID, and threatening completeness language — offset by proper revocation rights, no-conditioning statement, and reasonable expiration."
+    },
+    "overall": {
+      "score": 2.9,
+      "grade": "C",
+      "summary": "Grady Memorial Hospital makes forms easy to find and offers some progressive delivery options like encrypted email, but the entirely paper-based submission workflow, non-fillable forms, generic third-party authorization design, and broad liability waiver significantly limit patient-centeredness and accessibility."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:01:59.057Z"
+}

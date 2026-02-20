@@ -1,0 +1,134 @@
+{
+  "org_id": "baptist-health-lexington",
+  "org_name": "Baptist Health Lexington",
+  "category_id": "ch-major-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Baptist Health (Kentucky)",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use and/or Disclosure of PHI (2026)",
+      "url": "https://www.baptisthealth.com/-/media/documents/patients-and-visitors/patient-packet/medicalrecordsreleaseform2026.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Release of Information fax submission",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Release of Information mail submission (PO Box 436147, Louisville, KY 40253)",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "Baptist Health MyChart",
+      "vendor": "Epic MyChart",
+      "url": "https://mychart.baptist-health.org",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Release of Information phone line (833-998-1257 toll-free)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.baptisthealth.com/-/media/documents/patients-and-visitors/patient-packet/medicalrecordsreleaseform2026.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (current 2026 version, dual-purpose patient/third-party)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://mychart.baptist-health.org/MyChart/en-US/docs/New%20Patient%20Medical%20Request%20Form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Patient access request form (dedicated patient self-access, dated 7/2019)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.baptisthealth.com/-/media/documents/patients-and-visitors/patient-packet/medicalrecordsreleaseform.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (older undated version, superseded by form-1)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patient downloads a system-wide authorization PDF, checks the 'Myself' box, prints and fills by hand, then faxes or mails to a centralized Release of Information office in Louisville.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 3,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": true,
+    "response_time_value": "15 calendar days (goal)",
+    "red_flags": [
+      "Sensitive information (mental health, HIV/AIDS, substance use disorder) bundled into single all-or-nothing authorization with no opt-out",
+      "Last 4 digits of SSN requested without being marked optional",
+      "Outdated form (form-3.pdf) still publicly accessible at a similar URL, risking patient confusion and incorrect mailing address"
+    ],
+    "bright_spots": [
+      "MyChart is the default delivery method if no preference specified — electronic-first approach",
+      "Package-based record selection (Key Documentation vs All Documentation) with detailed descriptions simplifies complex choices",
+      "Tips page provides practical guidance on turnaround time (15-day goal), personal representatives, and MyChart support",
+      "Toll-free phone number and dedicated MyChart support line (844-764-7820) provided",
+      "Multiple delivery options: paper, fax, email, CD, and MyChart"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms easily found via basic web search and medical records page; directly downloadable without obstacles. Not a 5 because no Lexington-specific form exists — patient must recognize the system-wide form applies."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Form has a text layer (not a scan) and could be annotated with PDF editor workarounds, and fax submission is available. However, zero fillable fields means the workflow is fundamentally print-and-handwrite before faxing."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with clear section headers, logical flow, helpful package descriptions, and a practical tips page. Minor issues with dense legal text on page 2 and bundled sensitive information consent prevent a 5."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access is clearly accommodated via a prominent 'Myself' checkbox, purpose field waived for patient self-requests, MyChart default delivery, and a dedicated (if outdated) patient access form exists. Not a 5 because the primary form is still a generic authorization, not purpose-built for patient self-access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization required, voluntary authorization statement present, revocation rights clearly explained, 15-day turnaround goal stated. Minor ambiguities: SSN collection not marked optional, sensitive info bundled without granular opt-out, no fee disclosure."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Baptist Health Lexington provides a competent, well-organized records request process through its parent system with clear patient self-access accommodation, but the non-fillable PDF and paper-based workflow prevent it from reaching the highest tiers."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:59:10.513Z"
+}

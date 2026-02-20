@@ -1,0 +1,137 @@
+{
+  "org_id": "uf-health-shands",
+  "org_name": "UF Health Shands Hospital",
+  "category_id": "teach-major-nonprofit-south",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 4,
+  "parent_system": "UF Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "UF Health ROI Authorization Form",
+      "url": "https://ufhealth.org/assets/media/forms/46283_F.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax to UF Health HIM Dept – ROI (352.265.1098)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to UF Health HIM Dept – ROI, P.O. Box 100348, Gainesville, FL 32610-0348",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person records pick-up",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Phone inquiry (352.594.0909)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://ufhealth.org/sites/default/files/media/Locations/forms/Medical-Record-Release-Form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (detailed variant, rev. 3/11/15)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://ufhealth.org/assets/media/forms/46283_F.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (primary, rev. 5/30/19)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://ufhealth.org/sites/default/files/media/PDF/ROI.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy, rev. 6/20/14)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://ufhealth.org/sites/default/files/media/BASIC%20Providers%20RELEASE.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (clinic-specific variant for UF C.A.R.D.)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a generic HIPAA authorization form from the medical records page, print and handwrite it, then fax or mail it to the HIM department.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "potentially_excessive",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Per-page fee ($1.00/page) applied uniformly without distinguishing patient access from third-party release, potentially exceeding HIPAA cost-based fee limits for individual access requests"
+    ],
+    "bright_spots": [
+      "MyUFHealth patient portal offered as an electronic delivery format",
+      "16 granular record-type checkboxes with separated sensitive-information categories (behavioral health, substance use disorder, STD/HIV/AIDS, genetic testing)",
+      "'Personal Use' listed as an explicit purpose option, validating patient self-access",
+      "Identity verification fields marked 'Internal use only' to reduce patient burden",
+      "Compact single-page form design with logical section flow"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — the medical records page (ufhealth.org/medical-records) links directly to the primary form, and web searches return relevant results; minor deduction for multiple undifferentiated form versions at different URLs that could confuse patients."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — despite being born-digital, the PDF has zero fillable fields across all four form versions, requiring patients to print and handwrite; fax submission is available but the form completion itself is entirely paper-based."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — logical single-page layout with clear section flow, 16 granular record-type checkboxes, and reasonably plain language; minor issues include dense corporate entity definition paragraph and visual density from fitting all content on one page."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic authorization framework treats patient self-access identically to third-party release, with only a 'Check here if same as patient' checkbox as accommodation; no Right of Access language, though 'Personal Use' purpose option and internal-only verification fields show some awareness."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires for patient access — the $1.00/page fee disclosure does not distinguish patient access (subject to HIPAA cost-based limits) from third-party release (subject to state fee schedules); no notarization or in-person barriers, and clear revocation rights partially offset this concern."
+    },
+    "overall": {
+      "score": 3.05,
+      "grade": "C",
+      "summary": "UF Health Shands provides an easily findable and well-organized authorization form but is held back by a fully paper-based workflow (no fillable fields), a generic authorization framework that does not differentiate patient self-access, and per-page fee language that may exceed HIPAA limits for individual access requests."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:14:06.387Z"
+}

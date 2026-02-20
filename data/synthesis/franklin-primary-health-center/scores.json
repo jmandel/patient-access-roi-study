@@ -1,0 +1,121 @@
+{
+  "org_id": "franklin-primary-health-center",
+  "org_name": "Franklin Primary Health Center",
+  "category_id": "fqhc-independent-nonprofit-south",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "phone",
+      "name": "Call medical records department",
+      "is_primary": true
+    },
+    {
+      "type": "in_person",
+      "name": "Visit facility in person",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "EPIC MyChart via OCHIN",
+      "vendor": "Epic MyChart",
+      "url": "https://mychart.ochin.org/MyChartFPHC/Authentication/Login",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://franklinprimary.org/wp-content/uploads/2025/08/New-Patient-Packet.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "New patient registration packet with billing-only release clause"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://franklinprimary.org/wp-content/uploads/2025/09/Notice-of-Privacy-Practices.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Notice of Privacy Practices"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://franklinprimary.org/wp-content/uploads/2025/09/FPHC-Patient-Bill-of-Rights-and-Responsibilities.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient Bill of Rights and Responsibilities"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "impossible",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "No online records request form or process exists; patients must call or visit in person to initiate a request.",
+    "primary_pathway_type": "phone_or_in_person_only",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 0,
+    "page_count": 0,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": true,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "No ROI or records request form published online — patients cannot initiate access from the website",
+      "Patient rights documents state the right to access records but provide no mechanism to exercise it",
+      "No submission pathway (fax, email, mail address) documented for records requests"
+    ],
+    "bright_spots": [
+      "Notice of Privacy Practices is written in clear, plain language following the HHS model template",
+      "NPP includes explicit substance abuse treatment records protection statement",
+      "EPIC/MyChart patient portal (via OCHIN) exists as a potential alternative access pathway"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 1,
+      "rationale": "Level 1: Effectively unfindable online — exhaustive search including five Google queries, full sitemap analysis, URL guessing, and Wayback Machine review found no ROI form; none has ever been published on this domain."
+    },
+    "technical_accessibility": {
+      "score": 1,
+      "rationale": "Level 1: No usable digital form exists for records requests; the organization publishes no ROI form in any format, so there is no digital workflow to evaluate."
+    },
+    "content_design": {
+      "score": 2,
+      "rationale": "Level 2: No actual ROI form exists to evaluate; the NPP describes rights clearly but the 'Ask us how to do this' guidance is confusing and unhelpful for a patient trying to request records, with no actionable next steps provided."
+    },
+    "patient_centeredness": {
+      "score": 1,
+      "rationale": "Level 1: No process for patient self-access exists online; rights are stated in informational documents but no form, instructions, or pathway is provided, effectively obstructing patient access from the website."
+    },
+    "compliance": {
+      "score": 2,
+      "rationale": "Level 2: The NPP correctly states 30-day response time and cost-based fees, but the complete absence of any accessible request mechanism creates a practical barrier that likely exceeds what is permissible under HIPAA's Right of Access provisions."
+    },
+    "overall": {
+      "score": 1.35,
+      "grade": "F",
+      "summary": "Franklin Primary Health Center publishes no records request form online and provides no digital pathway for patients to exercise their HIPAA Right of Access, earning a failing grade despite competent informational documents."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:26:33.147Z"
+}

@@ -1,0 +1,127 @@
+{
+  "org_id": "penobscot-community-health-care",
+  "org_name": "Penobscot Community Health Care",
+  "category_id": "fqhc-independent-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Datavant/Swellbox records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/pchc-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Disclose Health Information (MRC001)",
+      "url": "https://pchc.com/wp-content/uploads/2024/03/Release-of-Information-2023.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Medical Records",
+      "url": null,
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to PCHC Medical Records, P.O. Box 439, Bangor, ME 04402-0439",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email to PCHCMR@pchc.com",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://pchc.com/wp-content/uploads/2024/03/Release-of-Information-2023.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://pchc.com/wp-content/uploads/2021/11/release-of-information-2023.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (duplicate of form-1)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "The organization directs patients to a Datavant/Swellbox online portal for records requests; a generic HIPAA authorization PDF exists on the server but is not linked from any patient-facing page.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "PDF form not linked from website — HIM page directs exclusively to third-party Datavant portal",
+      "Opt-out-by-striking defaults to broadest possible authorization for continuing communications and third-party-received records",
+      "Default mail delivery on CD — outdated medium many patients cannot use"
+    ],
+    "bright_spots": [
+      "Secure email delivery via PCHC's messaging portal with PDF format",
+      "Oral revocation of authorization permitted",
+      "Internal accountability checkbox requiring staff to flag partial or incomplete disclosures",
+      "Datavant/Swellbox online portal provides alternative digital pathway"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: The Datavant portal is accessible from the HIM page with moderate navigation effort, but the PDF form itself is effectively hidden — not linked from any patient-facing page and discoverable only via search engine."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: The Datavant/Swellbox portal provides a digital submission pathway, but the org's own PDF form has zero fillable fields — creating one gap where a patient using the PDF must print, handwrite, and fax or mail it."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: The form is logically organized with clear section headers and good record-type granularity, but has notable clarity problems including dense legal prose and confusing opt-out-by-striking mechanisms that default to broadest authorization."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form for self-access by checking 'At my request,' but the form was designed for third-party release — patients must figure out which parts apply and navigate redisclosure warnings irrelevant to self-access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Strong compliance elements including oral revocation, non-conditioning statement, and proper 42 CFR Part 2 notices, with minor ambiguities around fee silence and no explicit citation of patient right of access under § 164.524."
+    },
+    "overall": {
+      "score": 3.45,
+      "grade": "C",
+      "summary": "PCHC provides an adequate records request experience through its Datavant portal but lacks a dedicated patient access pathway and offers only a non-fillable, generic authorization PDF that is not linked from its website."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:25:01.474Z"
+}

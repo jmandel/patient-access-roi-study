@@ -1,0 +1,121 @@
+{
+  "org_id": "upmc-presbyterian",
+  "org_name": "UPMC Presbyterian",
+  "category_id": "teach-major-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "UPMC",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "UPMC Authorization for Release of PHI",
+      "url": "https://dam.upmc.com/-/media/upmc/patients-visitors/medical-records/documents/medical-release-form.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed form to UPMC facility",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person pickup submission at facility",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://dam.upmc.com/-/media/upmc/patients-visitors/medical-records/documents/medical-release-form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://dam.upmc.com/-/media/upmc/patients-visitors/medical-records/documents/authorization-for-roi-of-phi-pa-modified-10-5-2022-in-home-version.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (In-Home variant)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://dam.upmc.com/-/media/upmc/patients-visitors/medical-records/documents/release-form-instructions.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "form instructions"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use the system-wide UPMC generic ROI authorization form, selecting 'Personal Use' as the purpose and listing themselves as the recipient.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Fee language does not distinguish patient access from third-party requests and implies conditioning records release on upfront payment",
+      "90-day default authorization expiration is unusually short"
+    ],
+    "bright_spots": [
+      "Inline note 'Purpose is not required for patient access' clearly acknowledges HIPAA individual access rights",
+      "Companion instruction guide (form-3.pdf) with plain-language explanations and examples is a rare patient-friendly resource",
+      "Email and Direct Address electronic delivery options for records",
+      "Explicit anti-conditioning statement on treatment, payment, and enrollment",
+      "Oral authorization provision for patients physically unable to sign"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — web searches immediately returned direct PDF links, and the form is linked from both the system-wide and facility-specific medical records pages with no difficulties."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — despite being born-digital, the form has essentially no fillable fields (1 unnamed field detected), requiring patients to print, handwrite all ~20 data points, and submit physically; no online submission portal exists."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but has notable problems — the logical section structure (A-B-C) and companion instruction guide are positives, but page 1 is extremely dense with 20+ record-type checkboxes, tight spacing, and mixed plain/legal language that could overwhelm patients."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the form is a generic third-party release authorization with no dedicated patient access pathway, though the 'Purpose is not required for patient access' note and 'Personal Use' option partially accommodate self-access."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements or language that may go beyond what the law requires — fee language citing PA state law doesn't distinguish patient access fees from third-party fees, 'records will be sent upon receipt of payment' may conflict with HIPAA's timely access requirement, and the 90-day default expiration is unnecessarily restrictive."
+    },
+    "overall": {
+      "score": 2.9,
+      "grade": "C",
+      "summary": "UPMC Presbyterian provides an easy-to-find generic ROI form with some patient-friendly features (companion guide, purpose-not-required note) but is held back by a non-fillable paper workflow, no dedicated patient access pathway, and ambiguous fee language."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:12:44.159Z"
+}

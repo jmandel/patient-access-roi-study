@@ -1,0 +1,124 @@
+{
+  "org_id": "lankenau-medical-center",
+  "org_name": "Lankenau Medical Center",
+  "category_id": "teach-regional-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Main Line Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Main Line Health Authorization for Disclosure of Health Information",
+      "url": "https://www.mainlinehealth.org/-/media/files/pdf/basic-content/patient-services/authorizationdisclosurehealthinfo.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "HIM Department fax submission",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "HIM Department email (HIMROI@mlhs.org)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "US Mail to HIM Department, Newtown Square, PA",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "Walk-in to HIM Department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.mainlinehealth.org/-/media/files/pdf/basic-content/patient-services/authorizationdisclosurehealthinfo.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.mainlinehealth.org/-/media/files/pdf/basic-content/patient-services/authorization-for-disclosure-of-health-information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic system-wide 'Authorization for Disclosure of Health Information' form with a 'Patient personal use' purpose checkbox, but the form is designed primarily for third-party release.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 41,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "30 days (on-site) / 60 days (off-site), with possible 30-day extension",
+    "red_flags": [
+      "Prepayment language: 'payment will be expected prior to the records being delivered' could condition access on upfront payment",
+      "Witness signature line present without clarification of whether it is required"
+    ],
+    "bright_spots": [
+      "Six delivery options including encrypted USB, MyChart, encrypted email, and third-party portal with clear availability matrix by recipient type",
+      "Fillable PDF (form-1) with PRINT, SAVE AS, EMAIL, and RESET action buttons for digital-first workflow",
+      "'Patient personal use' as an explicit purpose checkbox normalizes patient self-access requests",
+      "Detailed signing authority guidance covering minors, incapacitated patients, and deceased patients under PA law",
+      "Separate opt-in checkboxes for sensitive information (HIV, psychiatric, substance abuse) with clear explanatory language"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — form appeared as first web search result, direct PDF link, no authentication or bot blocking required."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — form-1 has 41 fillable fields and an EMAIL button for digital completion, but submission requires fax or email rather than an integrated online portal."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with clear logical flow and helpful instructions page including delivery matrix, but some legal language density in the rights acknowledgment paragraphs prevents a 5."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic disclosure authorization form requires patients to fill in their own name as the 'person or institution' receiving records, and the framing is oriented toward third-party release despite the 'Patient personal use' checkbox."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing that would materially impede a patient — prepayment language is concerning but not a clear violation, response timelines and appeal rights are correctly stated, no notarization required, fee amounts not specified."
+    },
+    "overall": {
+      "score": 3.9,
+      "grade": "B",
+      "summary": "Main Line Health provides an easily findable, technically competent fillable form with excellent delivery options, but the generic third-party disclosure framing and prepayment language prevent it from reaching an A."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:17:49.546Z"
+}

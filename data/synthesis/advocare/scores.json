@@ -1,0 +1,135 @@
+{
+  "org_id": "advocare",
+  "org_name": "Advocare, LLC",
+  "category_id": "practice-independent-forprofit-northeast",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use/Disclosure of PHI (English)",
+      "url": "https://irp.cdn-website.com/ddaae316/files/uploaded/Advocare+Authorization+for+Use+Disclosure+of+Protected+Health+Information.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use/Disclosure of PHI (Spanish)",
+      "url": "https://irp.cdn-website.com/ddaae316/files/uploaded/AUTHORIZATION+FOR+USE+and+DISCLOSURE_January+2024_Spanish-3ad42c14.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "ShareCare online records request",
+      "vendor": "ShareCare",
+      "url": "https://www.advocaredoctors.com/medical-records",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission of completed form",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission of completed form",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://irp.cdn-website.com/b4ec96c9/files/uploaded/ADVOCARE-Authorization-for-Use-and-Disclosure-of-Protected-Health-Information%28v2_4-21%29.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy version, April 2021)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://irp.cdn-website.com/ddaae316/files/uploaded/Advocare+Authorization+for+Use+Disclosure+of+Protected+Health+Information.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (current version, Rev. 1/2026)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://irp.cdn-website.com/ddaae316/files/uploaded/AUTHORIZATION+FOR+USE+and+DISCLOSURE_January+2024_Spanish-3ad42c14.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form (Spanish translation, January 2024)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a general-purpose HIPAA authorization form that includes a 'Patient Request' purpose checkbox but is structurally designed for third-party disclosure.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 41,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Legacy form (form-1.pdf) with SSN field remains publicly discoverable via web search",
+      "90-day default authorization expiration is shorter than typical, risking re-authorization needs"
+    ],
+    "bright_spots": [
+      "Spanish-language form available alongside English, linked from the medical records page",
+      "Abstract Record option provides a practical shortcut for patients wanting a summary",
+      "Reference Guide on page 2 explains sensitive information categories in plain language with NJ law citations",
+      "Email delivery explicitly offered as an option on the English form",
+      "Online submission available via ShareCare portal as an alternative to PDF workflow",
+      "SSN field removed from current form (was present in legacy version)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — the medical records page is clearly organized and immediately surfaced via site-scoped search, with direct download links."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the PDF is fully fillable (41 fields) but submission requires fax, email, or using a separate online portal rather than integrated submit-from-form."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor issues — logical flow, clear record-type checkboxes, and a helpful reference guide, but marred by a duplicated text artifact and standard HIPAA legalese rather than plain language."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the 'Patient Request' checkbox acknowledges self-access, but the sender/recipient structure and lack of a dedicated patient access form force patients to navigate a third-party release workflow."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — 30-day timeline stated, no notarization, no SSN on current form, but fees not disclosed and 90-day default expiration is shorter than typical."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Advocare provides an accessible, bilingual records request process with fillable forms and multiple submission options, but lacks a dedicated patient self-access pathway distinct from third-party release."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:31:38.020Z"
+}

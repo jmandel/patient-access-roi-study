@@ -1,0 +1,113 @@
+{
+  "org_id": "kings-daughters-medical-center-brookhaven",
+  "org_name": "King's Daughters Medical Center",
+  "category_id": "ch-independent-nonprofit-south",
+  "primary_form": "none",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Datavant/Swellbox medical records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/kings-daughters-mc-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "My Patient Access portal",
+      "url": "https://myportal.kdmc.org",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Health Information Records department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.kdmc.org/documents/KDMC-Joint-Notice-of-Privacy-Practices.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Notice of Privacy Practices"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.kdmc.org/documents/KDMC-Occ-Health-Authorization-Form-Revised.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Employer occupational health authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to a Datavant/Swellbox online wizard for all medical records requests; no downloadable ROI form exists on the website.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 10,
+    "page_count": 0,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "potentially_excessive",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Per-page fee model ($6.50 flat + $0.12/page via Datavant) may exceed HIPAA cost-based limits for patient access requests",
+      "No downloadable ROI form available — patients without internet access have no visible self-service path"
+    ],
+    "bright_spots": [
+      "Fully online records request process through professional third-party platform — uncommon for a small independent community hospital",
+      "Notice of Privacy Practices is notably concise and plain-language (single page with clear examples)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: The website has an 'Online Medical Record Request' page under Patients & Visitors that redirects to the Datavant wizard, but finding it requires moderate navigation effort and no downloadable form exists; search is further complicated by name confusion with the unrelated Kentucky hospital."
+    },
+    "technical_accessibility": {
+      "score": 5,
+      "rationale": "Level 5: The Datavant/Swellbox online wizard provides a fully functional digital workflow from request completion through submission — no printing, handwriting, faxing, or mailing required."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: No downloadable ROI form exists to directly evaluate; the Datavant wizard is a professional SaaS platform likely adequate in design, but content quality could not be independently verified. The NPP is well-designed but is not the records request form."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the Datavant wizard to request records, but the process does not differentiate patient self-access from third-party release; the fee structure and generic approach indicate the pathway was not designed specifically for individual access rights under HIPAA."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: The per-page fee model ($6.50 + $0.12/page) may go beyond HIPAA's reasonable cost-based fee standard for patient access, as OCR has specifically criticized per-page charges in Right of Access enforcement actions; no notarization or in-person barriers identified."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "KDMC's fully digital Datavant portal is a strong technical advantage for a small community hospital, but the lack of differentiation between patient self-access and third-party release, combined with a potentially excessive per-page fee structure, prevents a higher score."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:11:46.718Z"
+}

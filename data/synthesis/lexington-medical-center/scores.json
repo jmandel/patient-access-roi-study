@@ -1,0 +1,127 @@
+{
+  "org_id": "lexington-medical-center",
+  "org_name": "Lexington Medical Center",
+  "category_id": "ch-independent-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Protected Health Information",
+      "url": "https://www.lexhealth.com/docs/default-source/privacy---legal/medical-records-release-authorization-form.pdf?sfvrsn=1377b0b6_6",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "url": "https://www.lexhealth.com/medical-records",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed form to Medical Records department",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Medical Records department phone",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.lexhealth.com/docs/default-source/privacy---legal/medical-records-release-authorization-form.pdf?sfvrsn=1377b0b6_6",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.lexhealth.com/docs/default-source/privacy---legal/(en-español)-medical-records-release-authorization-form.pdf?sfvrsn=3d913f91_10",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form (Spanish translation)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.lexhealth.com/docs/default-source/privacy---legal/reproductive-health-attestation-form.pdf?sfvrsn=a247f8f2_5",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Reproductive health attestation form (supplemental)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic 'Authorization for Release of Protected Health Information' form designed for third-party release, listing themselves as recipient to request their own records.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Full SSN collection on a form designed to be mailed, creating identity theft risk",
+      "Blanket disclosure of substance abuse, psychiatric, and communicable disease records without separate consent, potentially conflicting with 42 CFR Part 2"
+    ],
+    "bright_spots": [
+      "Full Spanish-language translation with interpreter services phone number",
+      "Granular record-type checklist with ~25 categories giving patients meaningful control",
+      "Copies and faxes explicitly accepted as valid as originals",
+      "Proactive adoption of 2024 HIPAA reproductive health attestation form"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — a basic web search immediately surfaces the Medical Records page, which links directly to all forms with no barriers."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The PDF has a text layer but zero fillable fields (print-and-handwrite required); fax submission is acknowledged as valid per Condition 6 though no fax number is provided; MyChart offers a digital alternative but the primary form is paper-first."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized two-page layout with clear three-section structure, granular record-type checklist, and appropriate length; minor issues with moderately formal language in authorization conditions."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form but it was not designed for self-access — the sender/recipient framing requires patients to figure out they should list themselves as recipient, with no mention of HIPAA Right of Access."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: SSN collection goes beyond legal requirements for patient access; blanket substance abuse/psychiatric disclosure may conflict with 42 CFR Part 2; fee amounts undisclosed; offset by no notarization requirement and clear revocation rights."
+    },
+    "overall": {
+      "score": 3.45,
+      "grade": "C",
+      "summary": "Lexington Medical Center offers easy-to-find, bilingual forms with clear layout, but the generic third-party authorization framework, non-fillable PDF, and compliance concerns with SSN collection and blanket sensitive-records disclosure hold it back from a higher grade."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:11:23.678Z"
+}

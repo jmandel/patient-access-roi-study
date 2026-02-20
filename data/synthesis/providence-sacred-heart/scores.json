@@ -1,0 +1,132 @@
+{
+  "org_id": "providence-sacred-heart",
+  "org_name": "Providence Sacred Heart Medical Center",
+  "category_id": "ch-major-nonprofit-west",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Providence Health & Services",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Access to Designated Record Set",
+      "url": "https://www.providence.org/-/media/project/psjh/shared/files/roi/wa-sacred-heart-access-designated-record-set.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use, Disclose & Release Protected Health Information",
+      "url": "https://www.providence.org/-/media/project/psjh/shared/files/roi/wa-sacred-heart-auth-release.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Health Information Department",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission to PSHMC.HIMRecords@Providence.org",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Health Information Department, 105 W. Eighth Ave Suite 332-C, Spokane, WA 99204",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.providence.org/-/media/project/psjh/shared/files/roi/wa-sacred-heart-auth-release.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (third-party release)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.providence.org/-/media/project/psjh/shared/files/roi/wa-sacred-heart-access-designated-record-set.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient access request form (HIPAA Right of Access)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "A dedicated 2-page fillable PDF form titled 'Patient Request for Access to Designated Record Set' is available for direct download from a facility-specific medical records page, submittable via fax, email, or mail.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 45,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Liability release clause on patient access form is inappropriate for a Right of Access request",
+      "Wet signature required despite 45 fillable fields — no electronic signature option"
+    ],
+    "bright_spots": [
+      "Dedicated patient access form separate from third-party authorization",
+      "Five delivery formats including MyChart, Email, Paper, Disc, and Fax",
+      "Multi-facility awareness with offer to fax form to other Providence facilities",
+      "Centralized medical records portal with per-facility pages and Spanish translations",
+      "Proactive SSN disclosure warning on records that may contain social security numbers",
+      "Language assistance notices in English, Spanish, and Chinese with TTY access"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5 — prominently available; a single web search returned direct links to a well-organized facility-specific medical records page with clearly labeled PDF downloads and no barriers."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4 — mostly digital with one gap; the form has 45 fillable fields and can be submitted via fax or email, but requires printing for a wet signature, preventing a fully digital workflow."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4 — well-organized with minor issues; clean 2-page layout with clear instructions and granular record-type selection, but fee language is vague and the liability release clause is confusing on a patient access form."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4 — patient access is clearly accommodated with a dedicated form distinct from third-party release, five delivery formats including MyChart, and multi-facility coordination, though it lacks explicit patient rights statements."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4 — minor ambiguities but nothing materially impeding; no notarization, no in-person requirement, multiple submission channels, but vague fee disclosure and an unnecessary liability release clause on the patient access form."
+    },
+    "overall": {
+      "score": 4.15,
+      "grade": "B",
+      "summary": "Providence Sacred Heart offers a strong patient access experience with a dedicated Right of Access form, five delivery formats, and an exemplary web portal, held back from an A only by the wet signature requirement and vague fee language."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:02:57.423Z"
+}

@@ -1,0 +1,45 @@
+{
+  "org_id": "montefiore-nyack-hospital",
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Health Information",
+      "url": "https://www.montefiorenyack.org/sites/default/files/MNH_HIPAA_AuthorizationForm%20Rev%2001.2022FN.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "email",
+      "name": "Email for electronic records delivery",
+      "url": "mailto:ROI@montefiorenyack.org",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Health Information Services",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.montefiorenyack.org/sites/default/files/MNH_HIPAA_AuthorizationForm%20Rev%2001.2022FN.pdf",
+      "scope": "facility",
+      "language": "en",
+      "is_current": true,
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.montefiorenyack.org/sites/default/files/New%20Release%20of%20Information%20Authorization%20Form%2010.20.21.pdf",
+      "scope": "facility",
+      "language": "en",
+      "is_current": false,
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "parent_system": "Montefiore Health System",
+  "uses_system_forms": false,
+  "retrieval_difficulty": "easy",
+  "bot_blocking_encountered": true,
+  "browser_fallback_needed": true
+}

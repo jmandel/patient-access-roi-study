@@ -1,0 +1,124 @@
+{
+  "org_id": "carolina-pines-rmc",
+  "org_name": "Carolina Pines Regional Medical Center",
+  "category_id": "ch-regional-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "ScionHealth",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Release of Information Authorization / Requisition Form (English)",
+      "url": "https://www.cprmc.com/content/dam/Home/ScionHealth/web-assets/community-hospitals/carolinapines-com/file/Authorization_Update_(English).pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Release of Information Authorization / Requisition Form (Spanish)",
+      "url": "https://www.cprmc.com/content/dam/Home/ScionHealth/web-assets/community-hospitals/carolinapines-com/file/Authorization_Update_(Spanish).pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Health Information Management",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission to MRO Corp",
+      "vendor": "MRO Corp",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person submission to Health Information Management",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.cprmc.com/content/dam/Home/ScionHealth/web-assets/community-hospitals/carolinapines-com/file/Authorization_Update_(English).pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.cprmc.com/content/dam/Home/ScionHealth/web-assets/community-hospitals/carolinapines-com/file/Authorization_Update_(Spanish).pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic ROI authorization PDF, prints and handwrites it, then submits via fax, email, or in person to MRO Corp for processing.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Physician gating for sensitive information: Statement 6 states patients 'may need to have my physician authorize' disclosure of sensitive records, potentially creating an illegitimate barrier to patient self-access.",
+      "Social Security number field in office-use section creates unnecessary data exposure risk if patients mistakenly complete it."
+    ],
+    "bright_spots": [
+      "Spanish-language translation of the full ROI form available alongside the English version, directly linked from the medical records page.",
+      "Granular record type selection with 15 checkbox categories plus an 'All Records' option and write-in field.",
+      "Easy online findability with direct PDF links from a dedicated medical records page and descriptive file names."
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms are easy to find via site-specific search and directly linked from the medical records page, with no bot blocking or access barriers — straightforward basic navigation."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The PDF has a text layer but zero fillable fields, requiring print-and-handwrite workflow; however, fax and email submission channels provide electronic submission workarounds."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: The form is logically organized into two sections with good record type granularity, but dense single-page layout, moderately complex legal language, and a confusing 'purpose/reason' field create notable clarity problems."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form but it was designed for third-party release — the 'disclosing provider → recipient' structure requires patients to list themselves as recipients, with no Right of Access language or delivery format options."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Physician gating language for sensitive records and purpose-of-request field go beyond HIPAA requirements for patient access; no fee disclosure and no response timeline add ambiguity, though revocation rights and non-conditioning are properly stated."
+    },
+    "overall": {
+      "score": 3.15,
+      "grade": "C",
+      "summary": "Carolina Pines provides an easily findable, multilingual ROI form with adequate electronic submission options, but the generic third-party authorization design, non-fillable PDF, physician-gating language, and absent fee/timeline disclosures place it in the middle tier for patient self-access."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:23:13.456Z"
+}

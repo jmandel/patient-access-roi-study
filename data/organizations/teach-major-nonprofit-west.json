@@ -1,0 +1,66 @@
+[
+  {
+    "org_id": "ucsf-medical-center",
+    "name": "UCSF Medical Center",
+    "category_id": "teach-major-nonprofit-west",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "San Francisco",
+    "website": "https://www.ucsfhealth.org",
+    "bed_count": 796,
+    "notes": "Primary teaching hospital of UCSF School of Medicine; part of the UC Health system spanning multiple campuses (Parnassus, Mission Bay, Mount Zion)"
+  },
+  {
+    "org_id": "uchealth-university-of-colorado-hospital",
+    "name": "UCHealth University of Colorado Hospital",
+    "category_id": "teach-major-nonprofit-west",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CO",
+    "city": "Aurora",
+    "website": "https://www.uchealth.org",
+    "bed_count": 678,
+    "notes": "Principal teaching hospital of the University of Colorado School of Medicine on the Anschutz Medical Campus; part of the UCHealth nonprofit system"
+  },
+  {
+    "org_id": "uw-medical-center",
+    "name": "UW Medical Center",
+    "category_id": "teach-major-nonprofit-west",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "WA",
+    "city": "Seattle",
+    "website": "https://www.uwmedicine.org",
+    "bed_count": 529,
+    "notes": "Flagship academic medical center of UW Medicine and the University of Washington School of Medicine; Montlake campus bed count"
+  },
+  {
+    "org_id": "banner-university-medical-center-phoenix",
+    "name": "Banner - University Medical Center Phoenix",
+    "category_id": "teach-major-nonprofit-west",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "AZ",
+    "city": "Phoenix",
+    "website": "https://www.bannerhealth.com",
+    "bed_count": 746,
+    "notes": "Largest hospital in Arizona; affiliated with University of Arizona College of Medicine - Phoenix; part of Banner Health, a 33-hospital nonprofit system"
+  }
+]

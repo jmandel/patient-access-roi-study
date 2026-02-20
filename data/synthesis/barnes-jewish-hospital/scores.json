@@ -1,0 +1,117 @@
+{
+  "org_id": "barnes-jewish-hospital",
+  "org_name": "Barnes-Jewish Hospital",
+  "category_id": "teach-major-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "BJC HealthCare",
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Individual Patient Access Form (form-1)",
+      "url": "https://www.barnesjewish.org/Portals/0/PDF-Files/BJH_Individual_Authorization_Form.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Health Information Management",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Barnes-Jewish Hospital HIM department",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Electronic delivery of records (if possible)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.barnesjewish.org/Portals/0/PDF-Files/BJH_Individual_Authorization_Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient access request form (individual self-access under HIPAA § 164.524)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.barnesjewish.org/Portals/0/PDF-Files/Authorization_for_Release_of_Info.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Authorization for release of information (third-party disclosure)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patient downloads a dedicated one-page access request form from the Medical Records Requests page, fills it by hand, and submits via fax or mail.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 12,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "compliant",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Requests full Social Security Number (with last-4-digits alternative offered)"
+    ],
+    "bright_spots": [
+      "Dedicated patient access form separate from third-party release authorization",
+      "Electronic delivery option via email explicitly offered on the form",
+      "Abstract checkbox bundles all starred record types into one selection",
+      "Single-page concise design minimizes patient burden"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — the Medical Records Requests page is clearly organized under Patients & Visitors, with direct PDF links and no login required."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds; fax submission available — the form has a text layer but zero fillable fields, requiring print-and-handwrite; fax provides an electronic submission path."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — single-page layout with logical flow and plain language, but the electronic delivery caveat ('if possible') and lack of a fee schedule are minor gaps."
+    },
+    "patient_centeredness": {
+      "score": 5,
+      "rationale": "Level 5: Process designed around patient self-access as a first-class use case — the org provides a dedicated patient access form with right-of-access framing, clearly distinct from the third-party authorization form."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization or witness required, cost-based fee language aligns with HIPAA, 30-day timeline stated; the full SSN request is the only notable concern."
+    },
+    "overall": {
+      "score": 4.15,
+      "grade": "B",
+      "summary": "Barnes-Jewish Hospital exemplifies patient-centered access pathway design with a dedicated self-access form and clear website organization, but the lack of fillable PDF fields prevents a fully digital workflow."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:16:18.454Z"
+}

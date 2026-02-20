@@ -1,0 +1,121 @@
+{
+  "org_id": "hartford-hospital",
+  "org_name": "Hartford Hospital",
+  "category_id": "teach-regional-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Hartford HealthCare",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Disclose/Obtain Health Information (system-wide)",
+      "url": "https://hartfordhealthcare.org/file%20library/forms/571559.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax to HH/IOL Health Information Management",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to HH/IOL Health Information Management, 80 Seymour St, Bliss 104, Hartford, CT 06102",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://hartfordhealthcare.org/file%20library/forms/571559.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://hartfordhospital.org/File%20Library/Hartford%20Hospital%20Forms/Consent%20Forms/Release%20of%20Medical%20Records/573008.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (Institute of Living variant)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://hartfordhealthcaremedicalgroup.org/file%20library/forms/medical-records-release-form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (duplicate of form-1)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a system-wide generic HIPAA authorization form, prints and fills it by hand, and faxes or mails it to the appropriate HHC facility's HIM department.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Stale URL for form returns 404; older search results lead to dead link",
+      "Confusing dual-purpose 'disclose/obtain' structure not explained for patient self-access",
+      "Outdated 2012 Institute of Living form (form-2) still publicly accessible with missing legal notices"
+    ],
+    "bright_spots": [
+      "Comprehensive facility directory with fax numbers for all 11 HHC facilities on the form itself",
+      "Connecticut-specific legal notices for HIV, psychiatric, substance abuse, and reproductive health records",
+      "Purpose of disclosure marked '(Optional)' — correctly implements HIPAA patient rights",
+      "Sensitive information categories broken out as separate opt-in checkboxes"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: Requires moderate effort — form is on the parent system's medical records page (not hartfordhospital.org), a previously indexed URL returns 404, and the current URL uses an opaque numeric filename."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds — form has a text layer (annotation tools work) but zero fillable fields; fax submission is available via listed fax numbers for all facilities."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but has notable problems — the form is logically organized and concise at 2 pages, but opens with staff-facing fields, uses dense legalistic language, and the disclose/obtain structure is confusing for patients."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic authorization form serves third-party release equally, with no dedicated pathway or simplified section for patient self-access under HIPAA Right of Access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing that would materially impede a patient — includes non-conditioning statement, revocation rights, right to inspect, and optional purpose field; no notarization or fee barriers; minor gap in not citing HIPAA § 164.524 or specifying response timeframes."
+    },
+    "overall": {
+      "score": 3.2,
+      "grade": "C",
+      "summary": "Hartford Hospital provides a functional but generic records request process through its parent system's non-fillable authorization form; patients can submit by fax but must navigate a form designed for third-party release with no dedicated patient access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:18:01.160Z"
+}

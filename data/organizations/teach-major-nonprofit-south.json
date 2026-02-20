@@ -1,0 +1,98 @@
+[
+  {
+    "org_id": "duke-university-hospital",
+    "name": "Duke University Hospital",
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "NC",
+    "city": "Durham",
+    "website": "https://www.dukehealth.org",
+    "bed_count": 1062,
+    "notes": "Flagship of Duke Health system; affiliated with Duke University School of Medicine"
+  },
+  {
+    "org_id": "vanderbilt-university-medical-center",
+    "name": "Vanderbilt University Medical Center",
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Nashville",
+    "website": "https://www.vanderbilthealth.com",
+    "bed_count": 1051,
+    "notes": "Largest hospital in Tennessee; affiliated with Vanderbilt University School of Medicine"
+  },
+  {
+    "org_id": "uab-hospital",
+    "name": "UAB Hospital",
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Birmingham",
+    "website": "https://www.uabmedicine.org",
+    "bed_count": 1207,
+    "notes": "Largest hospital in Alabama; affiliated with UAB School of Medicine; Level I trauma center"
+  },
+  {
+    "org_id": "emory-university-hospital",
+    "name": "Emory University Hospital",
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Atlanta",
+    "website": "https://www.emoryhealthcare.org",
+    "bed_count": 751,
+    "notes": "Flagship of Emory Healthcare system; affiliated with Emory University School of Medicine"
+  },
+  {
+    "org_id": "uf-health-shands",
+    "name": "UF Health Shands Hospital",
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "Gainesville",
+    "website": "https://ufhealth.org",
+    "bed_count": 1030,
+    "notes": "Primary teaching hospital for University of Florida College of Medicine; Level I trauma center"
+  },
+  {
+    "org_id": "musc-health-medical-center",
+    "name": "MUSC Health University Medical Center",
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "Charleston",
+    "website": "https://muschealth.org",
+    "bed_count": 865,
+    "notes": "South Carolina's only comprehensive academic medical center; affiliated with Medical University of South Carolina"
+  }
+]

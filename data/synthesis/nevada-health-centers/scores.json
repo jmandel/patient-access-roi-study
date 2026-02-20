@@ -1,0 +1,120 @@
+{
+  "org_id": "nevada-health-centers",
+  "org_name": "Nevada Health Centers",
+  "category_id": "fqhc-independent-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Release of Medical Information form (print, fill, fax/mail)",
+      "url": "https://www.nevadahealthcenters.org/forms/",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Support Services Department",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Support Services Department (4045 Spencer St, Suite 105, Las Vegas, NV 89119)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.nevadahealthcenters.org/wp-content/uploads/2025/08/FD-ALL.012es-Release-of-Medical-Info-7-25-2023.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (bilingual EN/ES)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.nevadahealthcenters.org/wp-content/uploads/2025/08/FD-ALL.011es-Authorization-to-Share-Information-2-4-22-2.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Third-party proxy access designation form (bilingual EN/ES)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.nevadahealthcenters.org/wp-content/uploads/2025/08/FD-ALL.012es-WIC-Release-of-Medical-Info-3-14-2022.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "WIC program ROI authorization form (bilingual EN/ES)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic Release of Medical Information form with a 'To/From' checkbox, printing and hand-filling it, then faxing or mailing it to the Support Services Department.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 25,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No 'All Records' checkbox — patient must individually check each category to request complete records",
+      "Ambiguous witness line in signature block may deter patients who assume it is required",
+      "All PDFs lack text layer and fillable fields despite being born-digital (Illustrator), making them completely inaccessible to screen readers"
+    ],
+    "bright_spots": [
+      "All three forms are bilingual English/Spanish, serving FQHC patient population",
+      "Granular confidential information opt-in/opt-out for AIDS/HIV, behavioral health, alcohol/drug, and social services",
+      "Concise single-page design fits all content without excessive compression"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Rubric level 4 (easy to find with basic navigation or a simple search): the forms page was reachable via a site-scoped search in 2-3 steps, with clearly labeled PDF links organized by category, though generic web searches did not surface NHC-specific forms."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Rubric level 2 (primarily a paper workflow): the PDF has zero fillable fields, zero extractable text, and zero embedded fonts — every field must be hand-filled after printing, with fax or mail as the only submission options."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Rubric level 3 (adequate but has notable problems): the layout is logically organized and concise at one page, but the missing 'All Records' option, ambiguous 'To/From' direction, and compressed bilingual format create clarity issues a patient would struggle with."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Rubric level 3 (a patient can use the process but it wasn't designed for them): the generic release form can accommodate patient self-access via the 'Personal' reason and 'To' direction, but it lacks any dedicated patient access language, rights information, or acknowledgment of HIPAA § 164.524."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Rubric level 3 (some requirements that may go beyond what the law requires): the form asks for a reason for request (not required by HIPAA for patient access), has no patient rights disclosure, no fee transparency, and the ambiguous witness field may create a perceived barrier."
+    },
+    "overall": {
+      "score": 2.9,
+      "grade": "C",
+      "summary": "Nevada Health Centers provides a findable, bilingual release form that a patient can use for self-access, but the generic authorization design, completely non-digital workflow, and inaccessible PDF format result in a below-average experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:30:22.726Z"
+}

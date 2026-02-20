@@ -1,0 +1,82 @@
+[
+  {
+    "org_id": "western-washington-medical-group",
+    "name": "Western Washington Medical Group",
+    "category_id": "practice-independent-forprofit-west",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "WA",
+    "city": "Everett",
+    "website": "https://www.wwmedgroup.com",
+    "bed_count": null,
+    "notes": "Provider-owned independent multi-specialty group, 100+ providers in 20+ specialties across Snohomish, Skagit, Island, and Whatcom counties"
+  },
+  {
+    "org_id": "arizona-community-physicians",
+    "name": "Arizona Community Physicians",
+    "category_id": "practice-independent-forprofit-west",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "AZ",
+    "city": "Tucson",
+    "website": "https://www.azacp.com",
+    "bed_count": null,
+    "notes": "Largest independent physician-owned multi-specialty group in Tucson, founded 1994, primary and specialty care across Southern Arizona"
+  },
+  {
+    "org_id": "boulder-medical-center",
+    "name": "Boulder Medical Center",
+    "category_id": "practice-independent-forprofit-west",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CO",
+    "city": "Boulder",
+    "website": "https://www.bouldermedicalcenter.com",
+    "bed_count": null,
+    "notes": "Independent physician-owned for-profit multi-specialty group since 1949, 80+ providers across five locations in Boulder County"
+  },
+  {
+    "org_id": "proliance-surgeons",
+    "name": "Proliance Surgeons",
+    "category_id": "practice-independent-forprofit-west",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "WA",
+    "city": "Seattle",
+    "website": "https://proliancesurgeons.com",
+    "bed_count": null,
+    "notes": "Large independent physician-owned for-profit surgical specialty group, 250+ physicians, 100+ care centers across Washington state"
+  },
+  {
+    "org_id": "ironwood-cancer-research-centers",
+    "name": "Ironwood Cancer & Research Centers",
+    "category_id": "practice-independent-forprofit-west",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "AZ",
+    "city": "Chandler",
+    "website": "https://www.ironwoodcrc.com",
+    "bed_count": null,
+    "notes": "Independent physician-owned for-profit oncology practice, 100+ providers across 14+ locations in metropolitan Phoenix"
+  }
+]

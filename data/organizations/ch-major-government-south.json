@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "jps-health-network",
+    "name": "JPS Health Network (John Peter Smith Hospital)",
+    "category_id": "ch-major-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Fort Worth",
+    "website": "https://jpshealthnet.org",
+    "bed_count": 573,
+    "notes": "Operated by Tarrant County Hospital District; Level I Trauma Center"
+  },
+  {
+    "org_id": "grady-memorial-hospital",
+    "name": "Grady Memorial Hospital",
+    "category_id": "ch-major-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Atlanta",
+    "website": "https://www.gradyhealth.org",
+    "bed_count": 953,
+    "notes": "Operated by Fulton-DeKalb Hospital Authority; largest safety-net hospital in Georgia"
+  },
+  {
+    "org_id": "ben-taub-hospital",
+    "name": "Ben Taub Hospital",
+    "category_id": "ch-major-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Houston",
+    "website": "https://www.harrishealth.org",
+    "bed_count": 402,
+    "notes": "Part of Harris Health System (Harris County Hospital District); Level I Trauma Center"
+  }
+]

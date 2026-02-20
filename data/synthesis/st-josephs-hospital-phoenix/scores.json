@@ -1,0 +1,129 @@
+{
+  "org_id": "st-josephs-hospital-phoenix",
+  "org_name": "St. Joseph's Hospital and Medical Center",
+  "category_id": "ch-major-nonprofit-west",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Dignity Health / CommonSpirit Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient's Request for Access to Protected Health Information",
+      "url": "https://www.dignityhealth.org/content/dam/dignity-health/arizona/pdfs/ROI-SJHMC-PATIENTREQUEST(ENGLISH)%20(1).pdf",
+      "is_primary": true
+    },
+    {
+      "type": "email",
+      "name": "Email submission of completed form",
+      "url": "mailto:DignityHealth-AZ-ROI@DignityHealth.org",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission of completed form",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "Online Patient Center / Patient Portal",
+      "vendor": "Unknown",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.dignityhealth.org/content/dam/dignity-health/pdfs/arizona/medical-records-release3213448.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "General Arizona Dignity Health third-party authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.dignityhealth.org/content/dam/dignity-health/arizona/pdfs/ROI-SJHMC-PATIENTREQUEST(ENGLISH)%20(1).pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient access request form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.dignityhealth.org/content/dam/dignity-health/pdfs/arizona/third-party-english3213448.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Third-party authorization for release of information"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "A dedicated 5-page patient access request form (form-2.pdf) is linked from the St. Joseph's medical records page under 'request for yourself,' with email and fax submission options.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 5,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Form states hospital will 'contact you with either denial or acceptance of the request,' framing patient access as discretionary rather than a right to be fulfilled within 30 days",
+      "Employee verification block on signature page implies in-person ID presentation may be expected despite email/fax submission being offered"
+    ],
+    "bright_spots": [
+      "Dedicated patient access form clearly separated from third-party release authorization",
+      "Multiple electronic delivery options including USB, CD, secure email, and unsecured email",
+      "Email and fax submission explicitly offered — no in-person visit required",
+      "Spanish version of the form available",
+      "Structured denial process with documented HIPAA-aligned grounds (page 5)",
+      "Granular record type selection with 14+ categories"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Form is linked from the St. Joseph's medical records page via a logical navigation path (4–5 clicks); the page clearly separates patient self-request from third-party authorization."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The form has a clean text layer but zero fillable fields, requiring print-and-handwrite completion; however, fax and email submission are available, making remote filing possible with workarounds."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Well-organized lettered sections (A–E) with logical flow, but notable clarity problems including complex routing (6 email addresses, 3 fax numbers) and confusing multi-state sensitive records sections on a facility-specific form."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: The org provides a dedicated patient access form distinct from third-party release, with comprehensive delivery options and record type granularity; however, 'acceptance or denial' processing language and employee verification fields undercut the patient-first framing."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: No notarization or in-person requirements, but the 'acceptance or denial' language goes beyond what HIPAA requires for patient access, the fee schedule is referenced but not included, and no response timeframe is stated."
+    },
+    "overall": {
+      "score": 3.4,
+      "grade": "C",
+      "summary": "St. Joseph's earns credit for maintaining a dedicated patient access form with electronic delivery and submission options, but non-fillable fields, complex routing, discretionary processing language, and missing fee information hold it back from a higher grade."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:02:20.416Z"
+}

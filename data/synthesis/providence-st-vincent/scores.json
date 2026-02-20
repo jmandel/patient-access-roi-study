@@ -1,0 +1,132 @@
+{
+  "org_id": "providence-st-vincent",
+  "org_name": "Providence St. Vincent Medical Center",
+  "category_id": "ch-major-nonprofit-west",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Providence St. Joseph Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request to Access/Disclose a Designated Record Set",
+      "url": "https://www.providence.org/-/media/project/psjh/shared/files/roi/english-psjh-patient-request-for-access.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use, Disclose & Release Protected Health Information (general ROI)",
+      "url": "https://www.providence.org/-/media/Project/psjh/shared/Files/roi/or-mt-auth-release.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to central ROI",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission to R1RCM",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to PO Box 4950, Portland, OR 97208",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.providence.org/-/media/Project/psjh/shared/Files/roi/or-mt-auth-release.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (general, third-party and patient access)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.providence.org/-/media/project/psjh/shared/files/roi/english-psjh-patient-request-for-access.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Patient access request form (dedicated)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.providence.org/-/media/project/psjh/shared/files/roi/or-mt-access-designated-record-set.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Patient access request form (older OR/MT version, superseded)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Providence offers a dedicated patient access form (form-2) specifically for patients requesting their own records, with 'Myself' as the default disclosure option, separate from a general ROI authorization form.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 72,
+    "page_count": 3,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Physician approval/denial gate in form-2's internal workflow may create unreasonable barrier to patient access under HIPAA § 164.524",
+      "Outdated form-3 remains published alongside current form-2 with stale contact information"
+    ],
+    "bright_spots": [
+      "Dedicated patient access form separate from general third-party authorization",
+      "72 fillable interactive fields — genuinely digital-first PDF design",
+      "Five delivery format options including MyChart portal and email",
+      "Multilingual language assistance notices in English, Spanish, and Chinese",
+      "Multiple submission channels (mail, email, fax) with no in-person requirement"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: Requires moderate effort — facility-specific search fails; patient must navigate to parent system HIM page and choose among three overlapping forms without clear guidance."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — 72 fillable fields allow complete digital form completion, but wet signature may be required (form-2 is ambiguous); submission available via email and fax."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with clear section headers and tiered record type options, but minor issues — HIPAA jargon in title ('Designated Record Set'), intimidating invalidation warning, and vague fee language."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access is clearly accommodated with a dedicated form defaulting to 'Myself' as first disclosure option, though the general authorization form is more search-visible and multiple overlapping forms create confusion."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond legal limits — physician approval gate on patient access, vague fee disclosure without HIPAA cost-based limits, and no response time commitment."
+    },
+    "overall": {
+      "score": 3.65,
+      "grade": "B",
+      "summary": "Providence St. Vincent, via its parent system, provides an above-average patient access experience with a dedicated fillable form and multiple submission/delivery options, held back by moderate findability challenges, form proliferation, and a potentially problematic physician approval gate."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:02:02.855Z"
+}

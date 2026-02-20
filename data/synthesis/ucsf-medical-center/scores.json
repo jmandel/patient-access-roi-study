@@ -1,0 +1,132 @@
+{
+  "org_id": "ucsf-medical-center",
+  "org_name": "UCSF Medical Center",
+  "category_id": "teach-major-nonprofit-west",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 3,
+  "parent_system": "UCSF Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Health Information",
+      "url": "https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/pdf/roi-authorization.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "url": "https://www.ucsfhealth.org/medical-records",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed authorization to Health Information Management Services",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax for radiology requests only (415-353-8583)",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email for radiology requests only (RadiologyFilmLibrary@ucsfmedctr.org)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/pdf/health-information-release-01_756-020zirev0421_en.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy URL)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/pdf/roi-authorization.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (current canonical)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.ucsfhealth.org/-/media/project/ucsf/ucsf-health/pdf/roi-authorization-sp.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (Spanish translation)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a generic Authorization for Release of Health Information PDF, fill it out, and mail it to Health Information Management Services; MyChart is mentioned as an alternative.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 39,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No electronic submission path for general (non-radiology) authorization requests — mail or in-person delivery only"
+    ],
+    "bright_spots": [
+      "Spanish-language version linked directly from Medical Records page",
+      "Fillable PDF with 39 interactive fields and documented accessibility remediation",
+      "Clear patient rights section stating authorization is voluntary with revocation instructions",
+      "Separate opt-in for sensitive record categories (substance abuse, mental health, HIV/AIDS, genetic testing) with California statute citations",
+      "Helpful parenthetical examples for each record type to aid patient understanding"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — first web search surfaced the PDF directly, and the Medical Records page clearly links both English and Spanish versions with no barriers."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Fillable PDF allows digital completion, but general (non-radiology) requests require printing and mailing to a physical address; fax/email available only for radiology requests."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized 2-page form with logical flow, clear instructions, and helpful record-type examples; minor issues include a typo ('specifcally') and spelling errors in the Spanish version."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic ROI authorization form but it was not designed for patient self-access — the patient must fill in both source and recipient fields to authorize release to themselves, with no mention of HIPAA Right of Access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization or in-person requirements; fees disclosed on website at compliant levels ($0.25/page, $25 electronic); voluntary authorization and revocation rights clearly stated; minor gap is no response-time commitment or fee disclosure on the form itself."
+    },
+    "overall": {
+      "score": 3.65,
+      "grade": "B",
+      "summary": "UCSF Medical Center provides an easily findable, well-designed fillable authorization form in two languages, but lacks a dedicated patient access pathway and requires mail submission for general requests."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:15:21.007Z"
+}

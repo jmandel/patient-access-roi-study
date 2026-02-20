@@ -1,0 +1,98 @@
+[
+  {
+    "org_id": "huntington-hospital",
+    "name": "Huntington Hospital",
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Huntington",
+    "website": "https://huntington.northwell.edu/",
+    "bed_count": 371,
+    "notes": "Community hospital in Northwell Health system (28 hospitals), serving Huntington Township since 1916"
+  },
+  {
+    "org_id": "phelps-hospital",
+    "name": "Phelps Hospital",
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Sleepy Hollow",
+    "website": "https://phelps.northwell.edu/",
+    "bed_count": 238,
+    "notes": "Community hospital in Northwell Health system, serving Westchester County"
+  },
+  {
+    "org_id": "bayshore-medical-center",
+    "name": "Bayshore Medical Center",
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NJ",
+    "city": "Holmdel",
+    "website": "https://www.hackensackmeridianhealth.org/en/locations/bayshore-medical-center",
+    "bed_count": 204,
+    "notes": "Community hospital in Hackensack Meridian Health system (17+ hospitals)"
+  },
+  {
+    "org_id": "community-medical-center-toms-river",
+    "name": "Community Medical Center",
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NJ",
+    "city": "Toms River",
+    "website": "https://www.rwjbh.org/community-medical-center/",
+    "bed_count": 592,
+    "notes": "Community hospital in RWJBarnabas Health system (12+ hospitals), largest hospital in Ocean County"
+  },
+  {
+    "org_id": "newton-wellesley-hospital",
+    "name": "Newton-Wellesley Hospital",
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "MA",
+    "city": "Newton",
+    "website": "https://www.nwh.org/",
+    "bed_count": 273,
+    "notes": "Community hospital in Mass General Brigham system (10+ hospitals)"
+  },
+  {
+    "org_id": "montefiore-nyack-hospital",
+    "name": "Montefiore Nyack Hospital",
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Nyack",
+    "website": "https://www.montefiorenyack.org/",
+    "bed_count": 391,
+    "notes": "Community hospital in Montefiore Health System (11 hospitals), serving Rockland County"
+  }
+]

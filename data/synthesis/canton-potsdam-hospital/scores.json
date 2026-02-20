@@ -1,0 +1,116 @@
+{
+  "org_id": "canton-potsdam-hospital",
+  "org_name": "Canton-Potsdam Hospital",
+  "category_id": "ch-regional-nonprofit-northeast",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Rochester Regional Health",
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "phone",
+      "name": "Medical Records phone line",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "OCA-960 Authorization for Release of Health Information",
+      "url": "https://web.archive.org/web/2022/https://www.stlawrencehealthsystem.org/-/media/slh/patients-and-visitors/oca-960-form.pdf",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://web.archive.org/web/2022/https://www.stlawrencehealthsystem.org/-/media/slh/files/covid-toolkit/authorization-for-release-of-health-information--covid19-as-of-81820.pdf",
+      "scope": "state",
+      "language": "en",
+      "document_type": "COVID-specific ROI authorization form (OCA-960, pre-filled)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://web.archive.org/web/2022/https://www.stlawrencehealthsystem.org/-/media/slh/patients-and-visitors/oca-960-form.pdf",
+      "scope": "state",
+      "language": "en",
+      "document_type": "ROI authorization form (NY State OCA-960)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://web.archive.org/web/2024/https://www.stlawrencehealthsystem.org/-/media/slh/patients-and-visitors/slhs-notice-of-privacy-practices-11921.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Notice of Privacy Practices"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients must call (315) 769-4386; no downloadable form or online request tool is currently available. The parent system's Swellbox/Datavant portal explicitly excludes St. Lawrence Health facilities.",
+    "primary_pathway_type": "phone_or_in_person_only",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No ROI form available on any live website; patients must call to initiate records request",
+      "Parent system's online records tool (Swellbox/Datavant) explicitly excludes this facility",
+      "SSN field present on authorization form creates unnecessary identity theft risk"
+    ],
+    "bright_spots": [
+      "Uses standardized NY State OCA-960 form ensuring baseline legal compliance",
+      "NPP clearly states electronic access rights and HIPAA-compliant fee limits for electronic copies",
+      "Patient-controlled authorization expiration by date or event",
+      "Appropriate sensitive-information opt-in with separate initialing for HIV, substance abuse, and mental health"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 1,
+      "rationale": "Level 1: Effectively unfindable online — no form exists on any live website; all documents were recovered only via the Wayback Machine from a defunct domain."
+    },
+    "technical_accessibility": {
+      "score": 1,
+      "rationale": "Level 1: No usable digital form exists — the archived OCA-960 has zero fillable fields, a garbled text layer inaccessible to screen readers, and no electronic submission pathway."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but with notable problems — the OCA-960 is logically organized with numbered items and includes instructions, but uses formal legal language, lacks pre-populated provider information, and has a garbled text layer."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought — the OCA-960 is a generic third-party authorization form that does not distinguish patient self-access from release to attorneys or insurers; no dedicated patient access pathway exists."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — the form includes good baseline compliance (voluntariness, revocation, non-conditioning) but collects SSN unnecessarily, provides no fee transparency on the form, and offers no differentiated patient access rights process."
+    },
+    "overall": {
+      "score": 1.95,
+      "grade": "D",
+      "summary": "Canton-Potsdam Hospital's patient record access experience is poor: no forms are available online, the only current pathway is phone, and the archived authorization form is a generic third-party release document with no fillable fields."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:06:29.569Z"
+}

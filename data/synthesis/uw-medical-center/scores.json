@@ -1,0 +1,116 @@
+{
+  "org_id": "uw-medical-center",
+  "org_name": "UW Medical Center",
+  "category_id": "teach-major-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": "UW Medicine",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Authorization to Disclose, Release, and/or Obtain Protected Health Information",
+      "url": "https://depts.washington.edu/comply/docs/103f7_AuthRq.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "url": "https://www.uwmedicine.org/mychart",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Enterprise Records",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission to uwmedroi@uw.edu",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Postal mail to Enterprise Records and Health Information",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://depts.washington.edu/comply/docs/103f7_AuthRq.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a single generic HIPAA authorization form for all release purposes, with a 'Personal' checkbox indicating self-access; MyChart is promoted for recent records.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 61,
+    "page_count": 3,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [],
+    "bright_spots": [
+      "MyChart fast-track prominently promoted at top of form for immediate record download",
+      "Five delivery format options (CD/DVD, Paper, MyChart, USB, Email)",
+      "Three submission channels (mail, fax, email) with complete contact information",
+      "Full page of item-by-item completion instructions",
+      "Multi-facility coverage with single form across all UW Medicine entities"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find via web search and website navigation; the patient forms page links directly to the working URL, though the uwmedicine.org CDN blocks some alternate URLs."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Fully fillable 61-field interactive PDF that can be submitted electronically via email or fax; one gap is that the workflow requires saving the filled PDF and attaching it to an email rather than integrated online submission."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized numbered sections with logical flow and a dedicated instruction page; minor clarity issues in the dense legal paragraph about conditioning treatment on authorization."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access is clearly accommodated via the 'Personal' purpose checkbox, MyChart fast-track promotion, and five delivery formats, even though the form serves multiple purposes and doesn't distinguish patient rights from third-party authorization."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No unnecessary barriers, clear patient rights statement, no notarization requirement, and generous 3-year expiration; minor ambiguity around blanket sensitive information release language and no fee disclosure."
+    },
+    "overall": {
+      "score": 4.0,
+      "grade": "B",
+      "summary": "UW Medical Center provides a well-designed, fillable generic authorization form with strong digital capabilities, multiple submission channels, and an exemplary MyChart fast-track, but lacks a dedicated patient access pathway distinct from third-party release."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:15:39.557Z"
+}

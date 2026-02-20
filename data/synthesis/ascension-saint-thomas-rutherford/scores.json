@@ -1,0 +1,112 @@
+{
+  "org_id": "ascension-saint-thomas-rutherford",
+  "org_name": "Ascension Saint Thomas Rutherford Hospital",
+  "category_id": "ch-major-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": "Ascension",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/ascension-stthomas-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of PHI (STHS490)",
+      "url": "https://healthcare.ascension.org/-/media/project/ascension/healthcare/legacy/markets/tennessee/st-thomas/documents/sths409-authorization-for-disclosure-of-phi-1.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email completed authorization form",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed authorization form",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://healthcare.ascension.org/-/media/project/ascension/healthcare/legacy/markets/tennessee/st-thomas/documents/sths409-authorization-for-disclosure-of-phi-1.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to a Swellbox online wizard from the patient portal page; a generic Authorization for Disclosure of PHI PDF is available as a secondary option.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 14,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "SSN field combined with 'ALL BLANKS MUST BE COMPLETED' implies mandatory Social Security Number collection, which HIPAA does not require and creates a privacy barrier"
+    ],
+    "bright_spots": [
+      "Swellbox online wizard as primary request pathway provides a digital-first option",
+      "Email delivery option on the PDF form alongside mail",
+      "Granular ten-item record type checklist gives patients meaningful scope control",
+      "HIM contact phone numbers for all eight Saint Thomas facilities listed on form"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: PDF found via a simple search on the second query; Swellbox wizard linked from patient portal page — easy to find with basic navigation or a simple search."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: The primary pathway is a Swellbox online wizard (fully digital), but the fallback PDF form has zero fillable fields requiring print-and-handwrite — one gap in the mostly digital workflow."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate one-page form with logical numbered structure and good record type checklist, but dense layout with small fonts, moderate legalese in revocation clause, and no separate instructions."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but the PDF form was not designed for patient self-access — it conflates Right of Access with third-party authorization and lacks any patient rights language under HIPAA § 164.524."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Good revocation and voluntariness language, but the implied mandatory SSN requirement and absence of Right of Access acknowledgment go beyond what the law requires for patient access requests."
+    },
+    "overall": {
+      "score": 3.4,
+      "grade": "C",
+      "summary": "Ascension Saint Thomas Rutherford offers a viable digital pathway via Swellbox but relies on a generic, non-fillable authorization form that conflates patient access with third-party release and implies mandatory SSN collection."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:58:03.784Z"
+}

@@ -1,0 +1,117 @@
+{
+  "org_id": "boulder-medical-center",
+  "org_name": "Boulder Medical Center",
+  "category_id": "practice-independent-forprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release and/or Obtain Patient Information",
+      "url": "https://www.bouldermedicalcenter.com/wp-content/uploads/2020/11/BMC-Record-Release-Form.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request (pre-Sept 2024 records)",
+      "vendor": "Swellbox/Datavant",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart Sharing Hub (post-Sept 2024 records)",
+      "vendor": "Epic MyChart",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission of PDF form",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission of PDF form",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.bouldermedicalcenter.com/wp-content/uploads/2020/11/BMC-Record-Release-Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic ROI authorization form for all record requests, with online portals (Swellbox and MyChart) available as alternatives for different date ranges.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "10 business days",
+    "red_flags": [
+      "Email restriction mischaracterizes HIPAA — states records cannot be emailed to anyone but the patient's personal email, contradicting 45 CFR § 164.524(c)(3)(ii) which allows patients to direct records to third parties",
+      "Stale form revision (Jan 2019) may not reflect current workflows after Sept 2024 system transition"
+    ],
+    "bright_spots": [
+      "Multiple access pathways clearly presented on Medical Records page (Swellbox, MyChart, PDF)",
+      "Single-page conciseness reduces patient burden",
+      "Unusually clear plain-language disclosures about limits of protection after release"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — the form is directly linked from the Medical Records department page, found on the second search attempt with no bot-blocking or deep navigation required."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds and fax submission available — the PDF has zero fillable fields requiring print-and-handwrite, but fax submission (303-449-9380) provides an electronic submission pathway; online portals exist but were not evaluated."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but has notable problems — single-page layout is logically organized, but the confusing dual-direction request design, dense authorization block, and limited record type options create clarity issues."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic ROI form treats all requests identically with no differentiation between patient self-access and third-party release, and the dual-direction entity routing confuses patients requesting their own records."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — the email restriction mischaracterizes HIPAA by framing a policy choice as a legal mandate, and fee disclosure is vague with no schedule, though the no-conditioning clause and reasonable expiration are properly included."
+    },
+    "overall": {
+      "score": 3.15,
+      "grade": "C",
+      "summary": "Boulder Medical Center provides an easily findable but generic, non-fillable ROI authorization form that does not differentiate patient self-access from third-party release, with a misleading HIPAA email restriction partially offset by multiple access pathways and clear plain-language disclosures."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:33:09.456Z"
+}

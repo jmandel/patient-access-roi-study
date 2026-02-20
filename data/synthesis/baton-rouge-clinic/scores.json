@@ -1,0 +1,133 @@
+{
+  "org_id": "baton-rouge-clinic",
+  "org_name": "The Baton Rouge Clinic",
+  "category_id": "practice-independent-forprofit-south",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Right of Access Form (form-3)",
+      "url": "https://batonrougeclinic.com/wp-content/uploads/2022/01/RightOfAccess01.22.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release FROM (form-1)",
+      "url": "https://batonrougeclinic.com/wp-content/uploads/2022/01/AuthFrom-01.31.22.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Medical Records at 7373 Perkins Rd, Baton Rouge, LA 70808",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Medical Records email (medrecords@brclinic.com) — listed for questions, potentially usable for submission",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Medical Records phone (225-246-9770) — for urgent requests and questions",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://batonrougeclinic.com/wp-content/uploads/2022/01/AuthFrom-01.31.22.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (outbound third-party release)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://batonrougeclinic.com/wp-content/uploads/2023/03/AuthTo-02.28.2023.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (inbound records transfer)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://batonrougeclinic.com/wp-content/uploads/2022/01/RightOfAccess01.22.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient Right of Access form (designee-framed)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patient downloads a 1-page Right of Access PDF citing HIPAA § 164.524, but the form is framed as designee authorization rather than self-request, and must be printed and filled by hand.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 7,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Right of Access form is framed as designee-only authorization with no clear self-request option",
+      "No submission instructions on the Right of Access form — patient has no guidance on where to send it",
+      "Form-1 (third-party release) requires Social Security Number as a mandatory field"
+    ],
+    "bright_spots": [
+      "Three-form strategy differentiates outbound release, inbound transfer, and Right of Access",
+      "Right of Access form explicitly cites HIPAA 45 C.F.R. § 164.524",
+      "Electronic delivery option offered on Right of Access form",
+      "Right of Access form is admirably concise at 1 page",
+      "No SSN or hold-harmless clause on the Right of Access form"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms are easy to find on a well-organized downloadable forms page with no barriers; the Right of Access form was not surfaced by web search but was readily found on the page itself."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: All forms are flat PDFs with zero fillable fields requiring print-and-handwrite workflow; no fax number provided, no explicit electronic submission pathway, and submission instructions are absent from the primary form."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: The Right of Access form is well-organized, concise (1 page), uses plain language, and follows a logical flow; minor issues include lack of date-range scoping and no explicit instructions."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: The clinic maintains a dedicated Right of Access form separate from third-party release, but its designee-only framing means a patient requesting their own records must figure out how to adapt the form for self-access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: The Right of Access form correctly cites HIPAA authority, avoids SSN collection and hold-harmless clauses, and imposes no notarization or in-person requirements; minor gap is the absence of fee disclosure and response time commitment."
+    },
+    "overall": {
+      "score": 3.25,
+      "grade": "C",
+      "summary": "The Baton Rouge Clinic shows above-average awareness with a dedicated Right of Access form and three-form differentiation, but flat non-fillable PDFs, unclear submission methods, and designee-only framing on the access form hold back the overall patient experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:37:51.815Z"
+}

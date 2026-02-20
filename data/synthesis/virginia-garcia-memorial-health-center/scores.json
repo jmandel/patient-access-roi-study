@@ -1,0 +1,127 @@
+{
+  "org_id": "virginia-garcia-memorial-health-center",
+  "org_name": "Virginia Garcia Memorial Health Center",
+  "category_id": "fqhc-independent-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 4,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "HIPAA Release of Information (ROI) Form",
+      "url": "https://virginiagarcia.org/wp-content/uploads/HIPAA-Release-of-Information-ROI-Form-English-2.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Medical Records",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to PO Box 6149, Aloha, OR 97007",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://virginiagarcia.org/wp-content/uploads/HIPAA-Release-of-Information-ROI-Form-English-2.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://virginiagarcia.org/wp-content/uploads/HIPAA-Release-of-Information-ROI-Form-Spanish-1.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://virginiagarcia.org/wp-content/uploads/Release-of-Verbal-Health-Information-English.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Verbal health information release form"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://virginiagarcia.org/wp-content/uploads/Release-of-Verbal-Health-Information-Spanish-1.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "Verbal health information release form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must use a general-purpose HIPAA ROI authorization form designed for all releases, selecting 'For my own use' as the purpose.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 54,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "Authorization defaults to remaining in effect until care relationship ends — unusually open-ended duration",
+      "All 54 fillable fields lack accessible names, creating screen reader accessibility barriers"
+    ],
+    "bright_spots": [
+      "Full Spanish-language ROI form available as a standalone translation, not just a bilingual addendum",
+      "'For my own use' purpose checkbox explicitly acknowledges patient self-access requests",
+      "Granular record type selection with 9+ categories and separate sensitive-information opt-ins",
+      "Active document governance with version numbering (v6), effective/revision dates, and Compliance department ownership"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms found easily via web search with direct links; dedicated Patient Forms page with clear 'Release of Information Forms' section, though Divi JS click handlers and a broken Spanish URL are minor friction points."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Fillable interactive PDF with 54 form fields allows digital completion, but submission requires fax or mail — one gap in an otherwise digital workflow."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized 2-page form with logical flow, clear section headers, granular record selection, and mostly plain language; minor issues include a grammatical error and unnamed fillable fields."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic ROI form for self-access via the 'For my own use' checkbox, but the form is designed around inter-provider exchange and the patient must navigate fields (recipient provider, direction of release) that don't apply to simple record retrieval."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No illegitimate barriers, clear revocation process, 30-day processing commitment, and right-to-refuse statement; minor ambiguities include no explicit Right of Access citation and an unusually open-ended default authorization duration."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Virginia Garcia provides easy-to-find, well-designed fillable forms in English and Spanish with no illegitimate barriers, but lacks a dedicated patient access pathway, funneling patients through a generic HIPAA authorization form."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:29:25.802Z"
+}

@@ -1,0 +1,140 @@
+{
+  "org_id": "broward-health",
+  "org_name": "Broward Health",
+  "category_id": "ch-regional-government-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 4,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request wizard",
+      "vendor": "Swellbox",
+      "url": "https://www.swellbox.com/broward-health-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "ROI authorization form (4 languages)",
+      "url": "https://www.browardhealth.org/patients-and-visitors/information-request/medical-records-request",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to facility-specific HIM department",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "US Postal Service to facility",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "Pick up copies at facility",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.browardhealth.org/-/media/Broward-Health/Files/Patients-and-Visitors/ROI-English-032620.ashx",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.browardhealth.org/-/media/broward-health/files/patients-and-visitors/roi_spanish.ashx",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.browardhealth.org/-/media/broward-health/files/patients-and-visitors/roi_creole.ashx",
+      "scope": "system",
+      "language": "ht",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.browardhealth.org/-/media/broward-health/files/patients-and-visitors/roi_portugese.ashx",
+      "scope": "system",
+      "language": "pt",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic ROI authorization form with a 'MYSELF' checkbox for self-access, or can use an online Swellbox wizard; completed PDF forms are faxed to facility-specific HIM departments.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 25,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es", "ht", "pt"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "3 business days",
+    "red_flags": [
+      "Purpose field required without patient access exception (HIPAA § 164.524 does not require patients to state a reason)",
+      "Minimum necessary standard applied to patient self-access requests (contrary to 45 CFR § 164.502(b)(2)(v))",
+      "English form is an image-only scan with no text layer while translated versions are digital"
+    ],
+    "bright_spots": [
+      "Forms available in 4 languages (English, Spanish, Haitian Creole, Portuguese) reflecting South Florida demographics",
+      "Swellbox online portal provides a fully digital alternative pathway",
+      "Explicit CFR 164.524 Right of Access reference in patient rights disclosures",
+      "Granular record type selection with date-range filtering for lab and radiology reports"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Medical Records Request page is reachable in 3 clicks from homepage with clear navigation and all 4 language versions linked; moderate friction from Cloudflare bot blocking and a case-sensitive broken URL for the English form."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Swellbox online portal provides a mostly digital pathway for submission; however the PDF forms have zero fillable fields and the English version is an image-only scan, so the PDF path itself is a paper workflow offset by the portal alternative."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Single-page form with logical section flow and comprehensive record type checklist, but dense layout, legalistic language, garbled text in translated versions, and no explicit instructions for patients."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: The 'MYSELF' checkbox allows patient self-access but the form is fundamentally a third-party authorization; patients must navigate irrelevant fields, an unnecessary purpose requirement, and minimum necessary language that shouldn't apply to their requests."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Witness signature line creates a barrier not required by HIPAA for patient access; minimum necessary language inappropriately applied to individual access; purpose field required without exception; voluntary authorization and revocation rights properly stated."
+    },
+    "overall": {
+      "score": 3.4,
+      "grade": "C",
+      "summary": "Broward Health offers exceptional multilingual support and a Swellbox online alternative, but the core PDF pathway relies on an outdated, non-fillable generic ROI form with compliance concerns around witness requirements and minimum necessary language applied to patient self-access."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:10:04.754Z"
+}

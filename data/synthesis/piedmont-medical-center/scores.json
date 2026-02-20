@@ -1,0 +1,118 @@
+{
+  "org_id": "piedmont-medical-center",
+  "org_name": "Piedmont Medical Center",
+  "category_id": "ch-major-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Tenet Healthcare",
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox patient records request portal",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.piedmontmedicalcenter.com/patients/request-medical-records",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use and Disclose PHI (hospital form)",
+      "url": "https://www.piedmontmedicalcenter.com/docs/librariesproviderpiedmont/pdfs/authorization-to-use-and-disclose-protected-health-information-form.pdf?sfvrsn=8ea4433c_0",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use and Disclose Health Information (physician network form)",
+      "url": "https://www.piedmontphysiciannetwork.com/docs/pmcphysiciannetworklibraries/default-document-library/auth-disclose-medical-record.pdf?sfvrsn=df6c4f7b_2",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.piedmontmedicalcenter.com/docs/librariesproviderpiedmont/pdfs/authorization-to-use-and-disclose-protected-health-information-form.pdf?sfvrsn=8ea4433c_0",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.piedmontphysiciannetwork.com/docs/pmcphysiciannetworklibraries/default-document-library/auth-disclose-medical-record.pdf?sfvrsn=df6c4f7b_2",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to a Swellbox/Datavant online portal for record requests, with a downloadable generic HIPAA authorization PDF available as an alternative.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 12,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Liability release clause on form-1 releasing hospital from legal responsibility for disclosures",
+      "Social Security Number requested on form-2",
+      "Forms severely outdated (2013 and pre-2010 respectively)",
+      "Template merge fields visible on public PDF (unprocessed internal template)"
+    ],
+    "bright_spots": [
+      "Swellbox/Datavant online portal available for patient record requests",
+      "Dedicated medical records page with clear navigation and multiple access options",
+      "Granular record-type checkboxes (14+ options) for patient control over disclosure scope",
+      "Form-2 offers granular opt-in for seven categories of highly confidential information"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — the medical records page is clearly linked and a web search immediately returns results, though the form is not prominently featured on the homepage."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital — the Swellbox/Datavant online portal provides a digital submission pathway, but the downloadable PDF forms have zero fillable fields and are entirely print-and-fill."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but has notable problems — the form has logical section headers and good record-type granularity, but uses moderately legalistic language, displays confusing template merge fields, and contains a typo in legal attestation text."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the PDF form is a generic third-party authorization with a 'Self' checkbox rather than a dedicated patient access form, though the Swellbox portal offers a somewhat more patient-oriented alternative."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing that would materially impede a patient — proper revocation rights and non-conditioning disclosures are present, though the liability release clause and SSN request on form-2 are unnecessary requirements."
+    },
+    "overall": {
+      "score": 3.6,
+      "grade": "B",
+      "summary": "Piedmont Medical Center provides a functional records request experience with a Swellbox portal and easy-to-find medical records page, but is held back by outdated, non-fillable PDF forms and a generic authorization approach that doesn't center patient self-access."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:03:57.564Z"
+}

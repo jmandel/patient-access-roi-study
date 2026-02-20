@@ -1,0 +1,98 @@
+[
+  {
+    "org_id": "tristar-centennial-medical-center",
+    "name": "TriStar Centennial Medical Center",
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Nashville",
+    "website": "https://www.tristarhealth.com/locations/tristar-centennial-medical-center",
+    "bed_count": 741,
+    "notes": "HCA Healthcare; 5-star CMS rated; Level I trauma center"
+  },
+  {
+    "org_id": "medical-city-dallas",
+    "name": "Medical City Dallas Hospital",
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Dallas",
+    "website": "https://www.medicalcityhealthcare.com/locations/medical-city-dallas-hospital",
+    "bed_count": 899,
+    "notes": "HCA Healthcare; includes children's and women's hospital on campus"
+  },
+  {
+    "org_id": "flowers-hospital",
+    "name": "Flowers Hospital",
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Dothan",
+    "website": "https://www.flowershospital.com",
+    "bed_count": 235,
+    "notes": "Community Health Systems; serves southeastern Alabama Wiregrass region"
+  },
+  {
+    "org_id": "merit-health-central",
+    "name": "Merit Health Central",
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "MS",
+    "city": "Jackson",
+    "website": "https://www.merithealthcentral.com",
+    "bed_count": 319,
+    "notes": "Community Health Systems; licensed for 329 beds including psychiatric unit"
+  },
+  {
+    "org_id": "piedmont-medical-center",
+    "name": "Piedmont Medical Center",
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "Rock Hill",
+    "website": "https://www.piedmontmedicalcenter.com",
+    "bed_count": 288,
+    "notes": "Tenet Healthcare; Level III Trauma Center serving York County"
+  },
+  {
+    "org_id": "good-samaritan-medical-center",
+    "name": "Good Samaritan Medical Center",
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "West Palm Beach",
+    "website": "https://www.goodsamaritanmc.com",
+    "bed_count": 333,
+    "notes": "Tenet Healthcare; part of Palm Beach Health Network; includes NICU"
+  }
+]

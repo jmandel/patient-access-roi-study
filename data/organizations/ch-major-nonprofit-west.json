@@ -1,0 +1,82 @@
+[
+  {
+    "org_id": "providence-st-vincent",
+    "name": "Providence St. Vincent Medical Center",
+    "category_id": "ch-major-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "OR",
+    "city": "Portland",
+    "website": "https://www.providence.org/locations/or/st-vincent-medical-center",
+    "bed_count": 523,
+    "notes": "Tertiary care hospital and major teaching facility in the Providence Health system"
+  },
+  {
+    "org_id": "st-josephs-hospital-phoenix",
+    "name": "St. Joseph's Hospital and Medical Center",
+    "category_id": "ch-major-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "AZ",
+    "city": "Phoenix",
+    "website": "https://www.dignityhealth.org/arizona/locations/stjosephs",
+    "bed_count": 595,
+    "notes": "Part of CommonSpirit Health (Dignity Health); major regional hospital"
+  },
+  {
+    "org_id": "intermountain-medical-center",
+    "name": "Intermountain Medical Center",
+    "category_id": "ch-major-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "UT",
+    "city": "Murray",
+    "website": "https://intermountainhealthcare.org/locations/intermountain-medical-center",
+    "bed_count": 504,
+    "notes": "Flagship hospital of Intermountain Health; Level I trauma center"
+  },
+  {
+    "org_id": "mercy-general-hospital",
+    "name": "Mercy General Hospital",
+    "category_id": "ch-major-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Sacramento",
+    "website": "https://www.dignityhealth.org/sacramento/locations/mercy-general-hospital",
+    "bed_count": 310,
+    "notes": "Part of CommonSpirit Health (Dignity Health); known cardiac care center"
+  },
+  {
+    "org_id": "providence-sacred-heart",
+    "name": "Providence Sacred Heart Medical Center",
+    "category_id": "ch-major-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "WA",
+    "city": "Spokane",
+    "website": "https://www.providence.org/locations/wa/sacred-heart-medical-center",
+    "bed_count": 644,
+    "notes": "Largest hospital between Seattle and Minneapolis; part of Providence Health system"
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "org_id": "fallon-medical-complex",
+  "org_name": "Fallon Medical Complex",
+  "category_id": "cah-independent-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Access, Use and Disclosure of PHI",
+      "url": "https://www.fallonmedical.org/information-management",
+      "is_primary": true
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://storage.googleapis.com/cardsetter-tmp-user-assets/fallon-medical/FMCCAH-ReleaseofInformation%2009062023%20dmh%20(002).doc",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://storage.googleapis.com/cardsetter-tmp-user-assets/fallon-medical/health-information-management/FMCCAH-ReleaseofInformationVerbal%2001012021%20sls.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Verbal release of information form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://storage.googleapis.com/cardsetter-tmp-user-assets/fallon-medical/FMCCAH%20%20NoticeOfPrivacyPractices%2002.16.2026%20sls.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Notice of Privacy Practices"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization form (.doc format) from the Information Management page, prints and handwrites it, then submits via fax, mail, or email.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 28,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "free_for_patient_access",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Supervised record review required: 'A HIM professional will supervise the review of my medical record' adds friction to in-person access"
+    ],
+    "bright_spots": [
+      "First copy free: explicitly states patients may receive the first copy without charge",
+      "Seven disclosure format options including USB, patient portal, and email with informed consent — exceptional breadth for a rural CAH",
+      "Patient portal signup integrated directly into the ROI form as a delivery option"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms were found within two web searches and directly linked from a clearly labeled Information Management page — easy to find with basic navigation."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Form has zero fillable fields and is published as .doc (requiring print and handwrite), but fax and email submission are available, avoiding the need for physical delivery."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Logical layout and good record-type granularity, but confusing dual sensitive-information sections, mixed legalistic language, spelling errors, and a misdirected interstitial note create notable clarity problems."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use this generic HIPAA authorization form by selecting 'Personal' as purpose, but the Release From/To framing and lack of self-access guidance mean the form wasn't designed for them."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: First copy free, treatment non-conditioning stated, revocation rights clear, §164.524 referenced; minor issues include supervised review language and 'Privacy Act' misnomer, but nothing materially impedes patient rights."
+    },
+    "overall": {
+      "score": 3.35,
+      "grade": "C",
+      "summary": "Fallon Medical Complex offers an easily findable, compliance-aware ROI form with unusually broad delivery options, but the generic authorization format, non-fillable .doc distribution, and lack of patient-specific guidance hold it to an average experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:22:16.728Z"
+}

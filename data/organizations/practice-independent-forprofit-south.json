@@ -1,0 +1,98 @@
+[
+  {
+    "org_id": "orthocarolina",
+    "name": "OrthoCarolina",
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "NC",
+    "city": "Charlotte",
+    "website": "https://www.orthocarolina.com",
+    "bed_count": null,
+    "notes": "Physician-owned independent orthopedic group, 133 physicians, 1600 employees, 30+ clinics across the Carolinas, over 1M patient visits/year"
+  },
+  {
+    "org_id": "gastro-florida",
+    "name": "Gastro Florida",
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "Clearwater",
+    "website": "https://gastrofl.com",
+    "bed_count": null,
+    "notes": "Physician-owned independent gastroenterology practice, 50+ providers, 25+ locations across Tampa Bay, founded 2010"
+  },
+  {
+    "org_id": "alabama-medical-group",
+    "name": "Alabama Medical Group",
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Mobile",
+    "website": "https://www.alabamamedicalgroup.com",
+    "bed_count": null,
+    "notes": "Largest independently owned multi-specialty practice in Mobile, founded 1946, 200+ employees, specialties include family medicine, internal medicine, neurology, rheumatology"
+  },
+  {
+    "org_id": "southeast-medical-group",
+    "name": "Southeast Medical Group",
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Alpharetta",
+    "website": "https://mysemg.com",
+    "bed_count": null,
+    "notes": "Largest independent medical group in the Southeast, physician-owned, 160+ providers, 50+ primary care locations across Georgia, Alabama, and Tennessee"
+  },
+  {
+    "org_id": "baton-rouge-clinic",
+    "name": "The Baton Rouge Clinic",
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "LA",
+    "city": "Baton Rouge",
+    "website": "https://batonrougeclinic.com",
+    "bed_count": null,
+    "notes": "Physician-owned multi-specialty clinic since 1946, 20+ specialties, serves 250,000+ patients in the Baton Rouge area"
+  },
+  {
+    "org_id": "lexington-clinic",
+    "name": "Lexington Clinic",
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "KY",
+    "city": "Lexington",
+    "website": "https://lexingtonclinic.com",
+    "bed_count": null,
+    "notes": "Central Kentucky's largest and oldest private physician-owned multi-specialty group, founded 1920, ~200 providers, 30+ specialties, 25+ locations"
+  }
+]

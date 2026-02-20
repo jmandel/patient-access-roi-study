@@ -1,0 +1,123 @@
+{
+  "org_id": "hendrick-health",
+  "org_name": "Hendrick Health",
+  "category_id": "ch-regional-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Hendrick Health System",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Health Information (Hospital)",
+      "url": "https://www.hendrickhealth.org/documents/ROI-Form-Hendrick-Health-2024.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Obtain or Release PHI (Clinic)",
+      "url": "https://www.hendrickhealth.org/documents/hendrick%20clinic/Hendrick-Clinic-Authorization-to-Obtain-or-Release-PHI.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Hendrick Service Center",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Hendrick Service Center",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "Personal pickup at Hendrick Service Center",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.hendrickhealth.org/documents/ROI-Form-Hendrick-Health-2024.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (hospital)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.hendrickhealth.org/documents/hendrick%20clinic/Hendrick-Clinic-Authorization-to-Obtain-or-Release-PHI.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (clinic)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a flat PDF authorization form, prints and fills it by hand, and submits via fax, mail, email, or in-person to the Hendrick Service Center.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "HIPAA misspelled as 'HIPPA' throughout both forms",
+      "Two separate forms required for hospital vs. clinic records with no cross-reference guidance"
+    ],
+    "bright_spots": [
+      "Email delivery option available on hospital form",
+      "Pre-populated Hendrick Service Center contact info on hospital form",
+      "Granular record type selection with 16+ specific checkboxes"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Both forms are easily found via basic web search; the Medical Records page links directly to both PDFs with clear descriptions and stable URLs."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The PDF has a text layer but zero fillable fields, requiring print-and-handwrite; fax and email submission are available as electronic submission options."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate single-page layout with logical flow and good record granularity, but dense legal paragraphs with small font, HIPAA misspelling, and no plain-language guidance."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form by selecting 'Personal Use' and filling in their own name, but the form was designed for third-party release and provides no Right of Access language or patient-specific guidance."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization, witness, or in-person requirements; right to revoke clearly stated; minor issues include requesting last 4 SSN (unnecessary) and no fee disclosure or response timeline."
+    },
+    "overall": {
+      "score": 3.35,
+      "grade": "C",
+      "summary": "Hendrick Health provides easily findable but generic authorization forms that serve patient self-access as an afterthought; flat PDFs and lack of patient-specific design keep the experience functional but unexceptional."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:05:55.980Z"
+}

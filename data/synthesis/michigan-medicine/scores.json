@@ -1,0 +1,127 @@
+{
+  "org_id": "michigan-medicine",
+  "org_name": "Michigan Medicine - University of Michigan Health",
+  "category_id": "teach-major-government-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "University of Michigan",
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Copies of a Medical Record",
+      "url": "https://www.uofmhealth.org/sites/default/files/2025-03/ROI_.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyUofMHealth Patient Portal",
+      "vendor": "Epic MyChart",
+      "url": "https://www.myuofmhealth.org",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Release of Information Unit",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Revenue Cycle Mid Service (HIM)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.uofmhealth.org/sites/default/files/2025-03/ROI_.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://medicine.umich.edu/sites/default/files/content/downloads/AuthorizationToReleaseCopiesOfMedicalRecord_2011-Sept-08_FINAL_FILLABLE.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (outdated 2011 version)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.uofmhealth.org/sites/default/files/2025-08/release-from-other-organizations.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Request for outside records form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patient downloads a generic ROI authorization PDF that includes a dedicated 'Myself' section for self-requests, with free delivery available via the MyUofMHealth Patient Portal.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 3,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "compliant",
+    "response_time_stated": true,
+    "response_time_value": "5-7 business days (up to 30 days)",
+    "red_flags": [
+      "Prepayment language ('personal use may require a prepayment') could be read to include patient self-requests, potentially conflicting with HIPAA's prohibition on conditioning access on payment",
+      "Outdated 2011 version of the form remains publicly accessible and search-indexed with no deprecation notice"
+    ],
+    "bright_spots": [
+      "Free patient portal delivery prominently promoted with 'No Cost Services' callout",
+      "Package-based record selection system simplifies choosing which records to request",
+      "Vendor transparency: names Vital Chart (VRC) as records fulfillment vendor so patients expect communications from them",
+      "Transparent fee schedule with separate patient vs. third-party rate structures"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Form was easily found via basic web search with direct download links; no site navigation required, though the uninformative filename (ROI_.pdf) is a minor issue."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Form has a text layer but zero fillable fields despite digital design; patient must print and handwrite, then submit via fax — usable digitally with workarounds but not a seamless digital workflow."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized numbered sections with logical flow and a helpful package-based record selection system; minor issues with cross-section referencing complexity and dense legal language in some passages."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient self-access is clearly accommodated via the dedicated 'Myself' option (item 2) with tailored delivery methods, and the free portal pathway is prominently promoted, even though the form serves multiple purposes."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Voluntariness, revocation rights, and fees are transparently disclosed; minor ambiguity in prepayment language that could be read to apply to patient self-requests, and patient electronic delivery fee ($6.89) is close to but not clearly justified under HIPAA cost-based limits."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Michigan Medicine provides a well-organized, findable ROI form that clearly accommodates patient self-access and promotes a free portal pathway, but the lack of fillable PDF fields and ambiguous prepayment language prevent it from reaching the top tier."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:16:07.617Z"
+}

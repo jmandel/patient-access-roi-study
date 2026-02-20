@@ -1,0 +1,118 @@
+{
+  "org_id": "newton-wellesley-hospital",
+  "org_name": "Newton-Wellesley Hospital",
+  "category_id": "ch-major-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Mass General Brigham",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Protected or Privileged Health Information",
+      "url": "https://www.massgeneralbrigham.org/content/dam/mgb-global/en/patient-care/patient-and-visitor-information/medical-records/documents/nwh/medical-records-release-nwh-english.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax completed form to Release of Information (617-726-3661)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed form to Release of Information, 121 Inner Belt Road, Room 240, Somerville, MA 02143-4453",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Questions line (617-726-2361)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.massgeneralbrigham.org/content/dam/mgb-global/en/patient-care/patient-and-visitor-information/medical-records/documents/nwh/medical-records-release-nwh-english.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.nwh.org/media/file/PHS_HIM_RELEASE-ENG.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy, superseded)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a general-purpose MGB authorization form, select 'Personal' as purpose, and check a box to receive records at their own address; form is submitted via fax or mail.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 78,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es", "pt"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "compliant",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Form requires patients to 'MUST specify dates' for each record type, which may exceed HIPAA requirements for patient access requests",
+      "Records from outside providers held by MGB are excluded unless patient specifically requests them, placing a knowledge burden on the patient"
+    ],
+    "bright_spots": [
+      "78 fillable/interactive form fields enabling genuine on-screen completion",
+      "Four delivery methods including Patient Gateway (portal) and Secure Email",
+      "Trilingual availability: English, Spanish, and Portuguese",
+      "Implicit fee exemption for patient access — copying fees asterisked only for Insurance, Legal, and Other purposes, not Personal or Medical Care"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — a single web search returned the direct PDF URL, and the NWH website provides a clear navigable path, though with one extra redirect through the MGB parent system page."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the form has 78 fillable fields enabling full on-screen completion, but submission requires fax or mail (no online form submission), though records can be delivered electronically."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — five clearly lettered sections (A-E) with logical flow and clean layout, but Section D contains dense regulatory language and the 'MUST specify dates' instruction adds complexity."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the form is a generic third-party authorization that accommodates patient self-access via 'Personal' purpose checkbox and self-mailing option, but doesn't distinguish patient access rights or reference Right of Access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization required, implicit fee exemption for patient access, standard expiration and revocation provisions, though the 'MUST specify dates' requirement and outside records carve-out go slightly beyond what HIPAA requires."
+    },
+    "overall": {
+      "score": 3.75,
+      "grade": "B",
+      "summary": "Newton-Wellesley Hospital provides a technically well-executed, fillable authorization form through its MGB parent system that is easy to find and digitally usable, but lacks a dedicated patient self-access pathway, funneling all requestors through a generic third-party release form."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:56:55.041Z"
+}

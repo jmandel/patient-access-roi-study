@@ -1,0 +1,149 @@
+{
+  "org_id": "mercy-health-springfield-regional",
+  "org_name": "Mercy Health - Springfield Regional Medical Center",
+  "category_id": "ch-major-nonprofit-midwest",
+  "primary_form": "form-4.pdf",
+  "total_forms_found": 4,
+  "parent_system": "Bon Secours Mercy Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "eRequest via Swellbox/Datavant",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/mercy-health-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart",
+      "vendor": "Epic MyChart",
+      "url": "https://www.mercy.com/patient-resources/medical-record-requests",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of PHI (Springfield-specific)",
+      "url": "https://www.mercy.com/-/media/mercy/patient-resources/medical-records-requests/springfield.ashx",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Springfield ROI fax",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "MercyROI@datavant.com",
+      "vendor": "Datavant",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Springfield ROI phone (844-835-1238)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.mercy.net/content/dam/mercy/en/pdf/Mercy-Patients-Request-to-Access-Protected-Health-Information-Form_920.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Patient access request form (wrong organization — mercy.net / Missouri Mercy, not Bon Secours Mercy Health)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.mercy.com/-/media/mercy/patient-resources/medical-records-requests/youngstown.ashx",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (Youngstown region — wrong facility)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.mercy.com/-/media/mercy/patient-resources/medical-records-requests/mh-authorization-22024.ashx",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (system-wide, 2024 image-only scan)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.mercy.com/-/media/mercy/patient-resources/medical-records-requests/springfield.ashx",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (Springfield-specific, text-based)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to an eRequest portal (Swellbox/Datavant) or MyChart, with a downloadable generic HIPAA authorization form as fallback; no dedicated patient access form exists.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Photo ID required at time of request — ambiguous for remote submissions and not required by HIPAA for patient access",
+      "Entire record defaults to only two years of information unless patient specifies otherwise, potentially limiting HIPAA Right of Access",
+      "Primary linked form on website is an image-only scan; superior text-based Springfield version is hidden and undiscoverable through normal navigation"
+    ],
+    "bright_spots": [
+      "Electronic format (PDF/CD) is the default when not specified — progressive stance favoring digital delivery",
+      "Personal use is the default purpose — patients need not justify why they want their own records",
+      "Explicit citation of 45 CFR § 164.524 (HIPAA Right of Access) in form legal text",
+      "MyChart listed as a delivery method alongside traditional options",
+      "eRequest portal via Swellbox/Datavant provides a fully digital request pathway"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: The medical records page is findable via standard navigation, but the best PDF form for Springfield is hidden behind URL guessing, and the linked system-wide form is an unusable image-only scan; the eRequest portal partially compensates."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: The eRequest/Swellbox portal provides a mostly digital workflow, and fax/email submission is available; however the PDF forms have zero fillable fields, creating a gap when patients choose the paper pathway."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Form-4 is logically organized on one page with clear record-type checkboxes, but the legal section is dense legalese and the 'entire record' two-year default is a content design failure that could mislead patients."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: The PDF form is a generic 'Authorization for Release' where patients must locate the 'Self' checkbox and navigate third-party-oriented framing; patient access is possible but not the form's primary design intent."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Photo ID requirement and two-year default for 'entire record' go beyond what HIPAA requires for patient access; fee disclosure is vague with no cost-based fee distinction; however, no notarization or in-person-only barriers exist."
+    },
+    "overall": {
+      "score": 3.25,
+      "grade": "C",
+      "summary": "Mercy Health Springfield provides multiple request channels including a digital portal, but its PDF forms are generic authorizations with no fillable fields, the linked version is an image-only scan, and the Springfield-specific text form is hidden — resulting in a fragmented experience that works for portal-savvy patients but creates unnecessary friction for those seeking a traditional form."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:00:29.940Z"
+}

@@ -1,0 +1,132 @@
+{
+  "org_id": "cherokee-health-systems",
+  "org_name": "Cherokee Health Systems",
+  "category_id": "fqhc-independent-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 4,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release and/or Obtain Health Records (English)",
+      "url": "https://www.rvh.org/app/files/public/81c83db3-d365-4d1d-9d48-180da88de191/12.22.25%20Release%20of%20Information%20-%20English.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Autorización para solicitar / enviar historial médico (Spanish)",
+      "url": "https://www.rvh.org/app/files/public/2cc0de8d-85ae-4cab-93c4-9214c9a2b402/12.18.25%20Release%20of%20Information%20-%20Spanish.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission to registration@rvh.org",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person submission at facility",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.rvh.org/app/files/public/81c83db3-d365-4d1d-9d48-180da88de191/12.22.25%20Release%20of%20Information%20-%20English.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.rvh.org/app/files/public/2cc0de8d-85ae-4cab-93c4-9214c9a2b402/12.18.25%20Release%20of%20Information%20-%20Spanish.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.rvh.org/app/files/public/71d25e7f-af20-4431-a7a5-4cbacf80a9bf/12.19.25%20Color%20Coated%20Release%20of%20Information%20.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "form instructions"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.rvh.org/app/files/public/5f94e10f-3f73-4bf2-8a95-6ca3636d9ce5/12.23.25%20Color%20Copy%20Release%20of%20Information%20-%20Spanish.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "form instructions"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a general-purpose ROI authorization PDF, prints and completes it by hand, and emails the completed form to registration@rvh.org.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No fillable fields in born-digital 2025 PDF forces print-handwrite-scan workflow"
+    ],
+    "bright_spots": [
+      "Bilingual form suite (English and Spanish) with color-coded instructional companion guides",
+      "Email submission available (registration@rvh.org) — no in-person visit required",
+      "Recently updated forms (December 2025) indicating active maintenance",
+      "Instructional guides translate bureaucratic section headers into plain-language explanations"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms were easy to find with basic web search and standard site navigation (Patients & Visitors → Medical Records); prominently linked with clear labels and descriptive filenames."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Born-digital PDF with text layer but zero fillable fields requires print-handwrite-scan workflow; email submission is available as an electronic pathway, making the form usable digitally with workarounds."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with clear section headers and logical flow; minor issues with dense legal text in the certification block, offset by the availability of color-coded instructional companion guides."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: The form is a generic ROI authorization designed for inter-facility record routing; a patient can use it for self-access by selecting 'Personal Use' but the form wasn't designed for this use case and requires navigating irrelevant facility sections."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization, witness, or in-person requirements; 12-month expiration and revocation rights are clearly stated; minor ambiguities include no fee disclosure, no response time commitment, and no explicit HIPAA Right of Access reference."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "Cherokee Health Systems provides an easy-to-find, well-organized form suite with standout bilingual instructional guides, but the generic ROI authorization design and lack of fillable fields prevent it from reaching the top tier for patient self-access."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:27:23.219Z"
+}

@@ -1,0 +1,115 @@
+{
+  "org_id": "merit-health-central",
+  "org_name": "Merit Health Central",
+  "category_id": "ch-major-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Community Health Systems (CHS)",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Health Information (English)",
+      "url": "https://www.merithealthcentral.com/Uploads/Public/Documents/all-new-documents/HIM-1406.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Health Information (Spanish)",
+      "url": "https://www.merithealthcentral.com/Uploads/Public/Documents/all-new-documents/HIM-1406S.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/merit-health-jackson-wizard.html",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.merithealthcentral.com/Uploads/Public/Documents/all-new-documents/HIM-1406.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Patient access / ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.merithealthcentral.com/Uploads/Public/Documents/all-new-documents/HIM-1406S.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "Patient access / ROI authorization form (Spanish)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patient downloads a fillable PDF titled 'Patient Request for Health Information' from the website, or uses the Swellbox online portal as an alternative.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 66,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Completed form lacks submission instructions — no fax number, email, or mailing address printed on the form itself"
+    ],
+    "bright_spots": [
+      "Spanish translation with identical 66 fillable fields provided alongside English version",
+      "Five delivery methods including removable media (DVD/USB/CD-ROM) with password protection option",
+      "Swellbox online portal available as fully digital alternative to PDF workflow",
+      "Patient-first title and 'Myself' as first recipient option signal patient-access orientation"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available — dedicated '/request-medical-records' page found immediately via web search, with clearly labeled English/Spanish download links and FAQ section."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — the PDF has 66 fillable fields for full on-screen completion, but requires printing for wet signature; Swellbox portal offers online submission as an alternative pathway."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with logical seven-section flow and plain language; minor issues include vague fee disclosure and unexplained witness signature field."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access clearly accommodated — form titled 'Patient Request for Health Information' with 'Myself' first, Spanish version, and five delivery options, though a single form still serves both self-access and third-party release."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No illegitimate barriers — no notarization, no in-person requirement, proper sensitive-info handling; minor ambiguity in vague fee language and unclear witness signature requirement."
+    },
+    "overall": {
+      "score": 4.15,
+      "grade": "B",
+      "summary": "Merit Health Central provides a well-designed, patient-oriented records request experience with a fillable bilingual PDF and online portal alternative, earning a solid B with minor gaps in fee transparency and submission instructions."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:03:56.880Z"
+}

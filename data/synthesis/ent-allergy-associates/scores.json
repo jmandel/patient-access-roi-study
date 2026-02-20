@@ -1,0 +1,103 @@
+{
+  "org_id": "ent-allergy-associates",
+  "org_name": "ENT & Allergy Associates, LLP",
+  "category_id": "practice-independent-forprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "HIPAA Authorization for Release of Health Information (.doc)",
+      "url": "https://www.entandallergy.com/documents/content/enta_arphi_form.doc",
+      "is_primary": true
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.entandallergy.com/documents/content/enta_arphi_form.doc",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.entandallergy.com/documents/Patient-Acknowledgment-Form_6.5.25_F.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Allergy form completion fee acknowledgment"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must download an orphaned Word document found only via web search, complete a generic third-party release authorization, and figure out submission independently with no instructions provided.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 14,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Social Security Number requested — unnecessary for records release and creates data security risk",
+      "No submission instructions provided — no address, fax, email, or portal link on the form",
+      "Form last modified January 2009 — predates HITECH Act, 21st Century Cures Act, and Information Blocking Rule",
+      "Confusing ALL-CAPS Item 6 restriction on discussing health information, with typo"
+    ],
+    "bright_spots": [
+      "Proper handling of sensitive categories (HIV, substance abuse, mental health) with separate initialing and anti-redisclosure language per NY/NJ state law",
+      "Anti-conditioning statement clearly states treatment will not be conditioned on authorization"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 1,
+      "rationale": "Level 1 — Effectively unfindable online: the form is an orphaned .doc file not linked from any website page, with no patient forms or medical records section; only discoverable through a targeted filetype:doc web search that a typical patient would not perform."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2 — Primarily a paper workflow: Word .doc format with zero fillable fields requires print-and-handwrite completion; no electronic submission method is documented (no fax number, email, or portal provided on the form)."
+    },
+    "content_design": {
+      "score": 2,
+      "rationale": "Level 2 — Confusing and poorly organized: dense legal language without visual hierarchy or section headers, confusing ALL-CAPS Item 6 restriction with typo, and high ratio of boilerplate disclosure to actionable content."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2 — Patient self-access is not addressed: generic third-party release form requires patient to list themselves as recipient with no guidance; no Right of Access language; SSN unnecessarily collected."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3 — Some requirements beyond what law requires: SSN requested unnecessarily; no fee disclosure; no submission instructions; but no notarization required and anti-conditioning statement is present."
+    },
+    "overall": {
+      "score": 2.05,
+      "grade": "D",
+      "summary": "ENT & Allergy Associates provides a deeply patient-unfriendly records request experience with an effectively unfindable, outdated Word document that lacks fillable fields, submission instructions, and any patient-access-specific pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:31:48.059Z"
+}

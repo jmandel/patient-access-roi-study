@@ -1,0 +1,113 @@
+{
+  "org_id": "columbia-memorial-hospital",
+  "org_name": "Columbia Memorial Hospital",
+  "category_id": "cah-independent-nonprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Release of Information authorization form (HIPAA Form 3B)",
+      "url": "https://www.columbiamemorial.org/media/5dfb75bd662541719adfbfcdda872dc1/hipaa-form-3b.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Medical Records fax submission",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "myCMH patient portal",
+      "url": "https://www.columbiamemorial.org",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.columbiamemorial.org/media/5dfb75bd662541719adfbfcdda872dc1/hipaa-form-3b.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.columbiamemorial.org/media/992a1d2dc8534ef398ba284ae4615157/hipaa-form-3bsp.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic ROI authorization form from the Medical Records page, prints and completes it by hand, and submits via fax or in person.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "free_for_patient_access",
+    "response_time_stated": true,
+    "response_time_value": "72-96 business hours",
+    "red_flags": [
+      "Missing expiration date/event and revocation instructions — required HIPAA authorization elements",
+      "Spanish form is ~8 years older than English version (2017 vs. 2025), risking outdated content for Spanish-speaking patients"
+    ],
+    "bright_spots": [
+      "Bilingual form availability (English and Spanish) — uncommon for a small rural critical access hospital",
+      "Website explicitly states records are free to patients requesting their own records",
+      "Well-organized 5-section structure (A–E) with granular 11-category record type selection"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Form is easy to find via basic website navigation (Patients & Visitors → Medical Records), with direct PDF download links and clear contextual information about free patient access."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: No fillable fields despite being a digitally-authored PDF, requiring print-and-handwrite workflow, but fax submission is available via the number listed on the form header."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized 5-section layout with clear headers, plain language, and granular record-type selection; minor issues include no 'all records' option, no date range selector, and no explicit submission instructions."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: Generic ROI form usable by patients but not designed for them — no 'patient access' purpose option, no delivery format choices, no patient rights language; patient must select 'Other' and figure out which fields apply."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No unnecessary barriers, free records for patients, appropriate special-category protections; minor gaps include missing expiration/revocation language on the form and fee information only on the website rather than the form itself."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "Columbia Memorial Hospital provides an accessible, well-organized ROI process with commendable bilingual availability and fee transparency, but the generic authorization form, lack of fillable fields, and absence of a dedicated patient access pathway limit the patient experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:22:04.251Z"
+}

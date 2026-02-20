@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "labette-health",
+    "name": "Labette Health",
+    "category_id": "ch-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "KS",
+    "city": "Parsons",
+    "website": "https://www.labettehealth.com",
+    "bed_count": 99,
+    "notes": "99-bed acute care hospital serving six-county area in southeast Kansas; named Top 100 Hospital"
+  },
+  {
+    "org_id": "columbus-community-hospital",
+    "name": "Columbus Community Hospital",
+    "category_id": "ch-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "NE",
+    "city": "Columbus",
+    "website": "https://www.columbushosp.org",
+    "bed_count": 47,
+    "notes": "Community-owned 47-bed acute care hospital; locally governed board of directors; primary provider for Platte County"
+  },
+  {
+    "org_id": "fisher-titus-medical-center",
+    "name": "Fisher-Titus Medical Center",
+    "category_id": "ch-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Norwalk",
+    "website": "https://www.fishertitus.org",
+    "bed_count": 99,
+    "notes": "Independent nonprofit community hospital; also operates skilled nursing and assisted living facilities"
+  }
+]

@@ -1,0 +1,137 @@
+{
+  "org_id": "southwell-tift-regional",
+  "org_name": "Southwell (Tift Regional Health System)",
+  "category_id": "ch-regional-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 4,
+  "parent_system": "Southwell",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "TRHS Authorization to Release/Obtain PHI",
+      "url": "https://mysouthwell.com/wp-content/uploads/2020/10/TRHS-Authorization-to-Release-Obtain-PHI.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "SWA Authorization to Release Protected Health Information",
+      "url": "https://mysouthwell.com/wp-content/uploads/2020/10/SWA-Authorization-for-Release-of-Records-Clean.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Verisma online medical record request",
+      "vendor": "Verisma",
+      "url": "https://www.verisma.com",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "HIM Department phone request",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://mysouthwell.com/wp-content/uploads/2020/10/TRHS-Authorization-to-Release-Obtain-PHI.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (TRHS hospital facilities)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://mysouthwell.com/wp-content/uploads/2025/07/Release-of-Information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (image-only scan, revised Sept 2021)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://mysouthwell.com/wp-content/uploads/2020/10/SWA-Authorization-for-Release-of-Records-Clean.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (Southwell Ambulatory facilities)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://mysouthwell.com/wp-content/uploads/2020/09/List-of-TRHS-Entities.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Entity reference list (not an ROI form)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization form from the medical release page, prints and hand-fills it, and submits via unspecified method; 'Personal Use' is one of several purpose checkboxes but the form is structured for third-party release.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Witness signature required on all forms — HIPAA does not require witnesses for authorization or access requests",
+      "Last 4 digits of SSN collected unnecessarily — MRN and DOB suffice for identity verification",
+      "Form-2 is an image-only scan (no text layer, no fillable fields) uploaded in 2025 — a regression from the digital-native form-1",
+      "Fragmented form landscape: separate forms for hospital vs. ambulatory entities with no guidance on which to use"
+    ],
+    "bright_spots": [
+      "Granular record type selection with 10+ categories and individual date range fields",
+      "Electronic delivery explicitly offered alongside Paper and CD",
+      "'Personal Use' listed as an explicit purpose option, acknowledging patient self-access",
+      "Verisma online portal offered as an alternative digital pathway"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: The medical release page is reachable via site navigation (Patient & Visitors → Medical Release) and web search, but multiple overlapping forms without clear labeling require moderate effort to identify the correct one."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: The primary downloadable forms have zero fillable fields, requiring print-and-handwrite completion; no submission instructions appear on the forms themselves, creating a primarily paper workflow despite a Verisma portal existing as a separate alternative."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Logical numbered structure with good record-type granularity, but moderately legalistic language, dense sensitive-information notice, and fragmented multi-form landscape create notable clarity problems."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form by checking 'Personal Use' and writing their own name as recipient, but the form was not designed for self-access — no Right of Access language, no simplified flow, and the third-party release structure requires patients to figure out which parts apply."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Witness signature requirement and partial SSN collection go beyond what HIPAA requires for patient access; non-conditioning statement is present but no fee disclosure, no response timeline, and no patient rights statement."
+    },
+    "overall": {
+      "score": 2.75,
+      "grade": "C",
+      "summary": "Southwell provides findable but paper-oriented authorization forms with a generic third-party release structure, witness requirement, and fragmented multi-form landscape that create moderate barriers for patients seeking their own records."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:06:02.243Z"
+}

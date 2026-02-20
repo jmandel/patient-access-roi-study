@@ -1,0 +1,141 @@
+{
+  "org_id": "st-charles-redmond",
+  "org_name": "St. Charles Redmond",
+  "category_id": "ch-regional-nonprofit-west",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 4,
+  "parent_system": "St. Charles Health System",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use and Disclosure of PHI (English)",
+      "url": "https://stcharleshealthcare.org/sites/default/files/Documents/ROI/AuthorizationUseDisclosurePHI(ROI)-English%203740_2025-fillable.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Use and Disclosure of PHI (Spanish)",
+      "url": "https://stcharleshealthcare.org/sites/default/files/Documents/ROI/AuthorizationUseDisclosurePHI%20(ROI)%20-%20Spanish2025-fillable.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyChart (records from April 7, 2018 onward)",
+      "vendor": "Epic MyChart",
+      "url": "https://stcharleshealthcare.org/patients/release-information",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax completed authorization form to HIM",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed authorization form to HIM (2500 NE Neff Road, Bend, OR 97701)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://stcharleshealthcare.org/sites/default/files/2020-01/ROIAuthorizationForm_42816_ENGLISH.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (legacy 2016 version, non-fillable)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://stcharleshealthcare.org/sites/default/files/Documents/ROI/3740AuthorizedRecordReleaseFILLABLE-102022.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (superseded 2022 fillable version)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://stcharleshealthcare.org/sites/default/files/Documents/ROI/AuthorizationUseDisclosurePHI(ROI)-English%203740_2025-fillable.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (current 2025 fillable version)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://stcharleshealthcare.org/sites/default/files/Documents/ROI/AuthorizationUseDisclosurePHI%20(ROI)%20-%20Spanish2025-fillable.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (current 2025 Spanish fillable version)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a generic system-wide HIPAA authorization form, select 'Personal' as the purpose, fill the fillable PDF, print and wet-ink sign it, then fax or mail it to HIM.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 18,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Wet-ink signature mandate prevents fully electronic submission",
+      "No distinction between patient access fees and third-party release fees",
+      "No reference to HIPAA Right of Access (§ 164.524)"
+    ],
+    "bright_spots": [
+      "Bilingual fillable PDF (English and Spanish) with 65 interactive fields",
+      "MyChart patient portal available as a fully digital alternative for post-2018 records",
+      "Numbered section-instruction pairing reduces form completion confusion",
+      "Active form maintenance visible across three revision generations (2016, 2022, 2025)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — the ROI page is clearly linked under the Patients section and the first web search immediately surfaced direct PDF links."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds — the form has 65 fillable fields for on-screen completion, but the wet-ink signature requirement forces printing, and submission is via fax or mail."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — numbered sections map to instructions, plain-language parentheticals aid understanding, but the dual From/To sections have identical confusing instructions."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic authorization form serves all release purposes and patients must select 'Personal' and navigate the From/To structure without Right of Access guidance."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — the wet-ink signature mandate is not legally required for patient access requests, and fee language is vague without distinguishing patient access from third-party release fee limits."
+    },
+    "overall": {
+      "score": 3.3,
+      "grade": "C",
+      "summary": "St. Charles Redmond provides a findable, well-constructed fillable form in two languages, but funnels patients through a generic authorization process with a wet-ink signature barrier and no dedicated patient access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:05:11.023Z"
+}

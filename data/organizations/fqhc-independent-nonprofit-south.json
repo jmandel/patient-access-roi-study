@@ -1,0 +1,114 @@
+[
+  {
+    "org_id": "el-centro-de-corazon",
+    "name": "El Centro de Corazón",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Houston",
+    "website": "https://www.elcentrodecorazon.org/",
+    "bed_count": null,
+    "notes": "Founded 1994, serves Houston's East End with primary care, dental, behavioral health; English/Spanish services"
+  },
+  {
+    "org_id": "hopehealth",
+    "name": "HopeHealth",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "Florence",
+    "website": "https://www.hope-health.org/",
+    "bed_count": null,
+    "notes": "Founded 1991, FQHC since 2007; serves Florence and surrounding counties with integrated medical, dental, and behavioral health"
+  },
+  {
+    "org_id": "aaron-e-henry-chc",
+    "name": "Aaron E. Henry Community Health Services Center",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "MS",
+    "city": "Clarksdale",
+    "website": "https://www.aehchc.org/",
+    "bed_count": null,
+    "notes": "Founded 1979, serves Mississippi Delta across 12 sites in 6 rural counties; over 90% of patients below 200% FPL"
+  },
+  {
+    "org_id": "franklin-primary-health-center",
+    "name": "Franklin Primary Health Center",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Mobile",
+    "website": "https://franklinprimary.org/",
+    "bed_count": null,
+    "notes": "Founded 1975, Patient-Centered Medical Home serving Mobile community with primary care, dental, and behavioral health"
+  },
+  {
+    "org_id": "crescentcare",
+    "name": "CrescentCare",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "LA",
+    "city": "New Orleans",
+    "website": "https://www.crescentcare.org/",
+    "bed_count": null,
+    "notes": "Formerly NO/AIDS Task Force; provides whole-person care with focus on LGBTQ+ community, HIV services, and underserved populations"
+  },
+  {
+    "org_id": "east-georgia-healthcare-center",
+    "name": "East Georgia Healthcare Center",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Swainsboro",
+    "website": "https://eghc.org/",
+    "bed_count": null,
+    "notes": "Serves 13 counties across rural Southeast Georgia with primary care, dental, pharmacy, optometry, and behavioral health"
+  },
+  {
+    "org_id": "cherokee-health-systems",
+    "name": "Cherokee Health Systems",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Knoxville",
+    "website": "https://www.rvh.org/",
+    "bed_count": null,
+    "notes": "Founded 1960, rebranded to River Valley Health in 2025; nationally recognized integrated primary care and behavioral health model serving East Tennessee"
+  }
+]

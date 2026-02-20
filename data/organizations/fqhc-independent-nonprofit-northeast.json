@@ -1,0 +1,98 @@
+[
+  {
+    "org_id": "community-health-centers-burlington",
+    "name": "Community Health Centers of Burlington",
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "VT",
+    "city": "Burlington",
+    "website": "https://www.chcb.org",
+    "bed_count": null,
+    "notes": "Largest FQHC in the Burlington area; provides primary care, dental, behavioral health, and substance abuse services across multiple sites in Chittenden County."
+  },
+  {
+    "org_id": "fenway-health",
+    "name": "Fenway Health",
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "MA",
+    "city": "Boston",
+    "website": "https://fenwayhealth.org",
+    "bed_count": null,
+    "notes": "FQHC known for LGBTQIA+ health focus; provides primary care, behavioral health, dental, pharmacy, and HIV/AIDS services. Founded 1971."
+  },
+  {
+    "org_id": "addabbo-family-health-center",
+    "name": "Joseph P. Addabbo Family Health Center",
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Far Rockaway",
+    "website": "https://www.addabbo.org",
+    "bed_count": null,
+    "notes": "Multi-site FQHC serving Queens and Brooklyn communities; provides adult/family medicine, dental, behavioral health, pediatrics, and women's health."
+  },
+  {
+    "org_id": "penobscot-community-health-care",
+    "name": "Penobscot Community Health Care",
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "ME",
+    "city": "Bangor",
+    "website": "https://pchc.com",
+    "bed_count": null,
+    "notes": "Largest FQHC in Maine; provides primary care, dental, behavioral health, and pharmacy services across multiple sites in the Greater Bangor area."
+  },
+  {
+    "org_id": "philadelphia-fight",
+    "name": "Philadelphia FIGHT Community Health Centers",
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "PA",
+    "city": "Philadelphia",
+    "website": "https://fight.org",
+    "bed_count": null,
+    "notes": "FQHC providing primary care, dental, behavioral health, and HIV/Hepatitis C specialty care; serves diverse urban populations with sliding fee scale."
+  },
+  {
+    "org_id": "community-health-center-ct",
+    "name": "Community Health Center, Inc.",
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "CT",
+    "city": "Middletown",
+    "website": "https://www.chc1.com",
+    "bed_count": null,
+    "notes": "One of the largest FQHCs in Connecticut, serving over 145,000 patients; provides primary care, dental, and behavioral health across multiple locations statewide. Founded 1972."
+  }
+]

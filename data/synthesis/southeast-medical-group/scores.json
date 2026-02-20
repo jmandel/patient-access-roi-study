@@ -1,0 +1,132 @@
+{
+  "org_id": "southeast-medical-group",
+  "org_name": "Southeast Medical Group",
+  "category_id": "practice-independent-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 4,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "MediCopy online authorization (HelloSign)",
+      "vendor": "MediCopy",
+      "url": "https://www.medicopy.net/patients",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "MediCopy ROI authorization form (PDF download)",
+      "vendor": "MediCopy",
+      "url": "https://www.medicopy.net/roi",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "SEMG medical records email",
+      "url": "mailto:medicalrecords@southeastmedicalgroup.com",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.medicopy.net/sites/default/files/2023-12/MediCopy%20MRO%20Authorization%20%28English%29.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://medicopy.net/sites/default/files/2020-05/MediCopy%20Authorization%202020.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (older version)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://cdn.sanity.io/files/4pare3i8/production/bd23ef224680293eaafa04ca5303569d6d4952d2.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "patient portal proxy authorization form"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://cdn.sanity.io/files/4pare3i8/production/3f40d79aa87a96396ffad4b157f7dcfbea285511.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "patient registration form with HIPAA acknowledgement"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "moderate",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient is directed from SEMG website to MediCopy, a third-party ROI vendor, to complete a generic authorization form that does not distinguish patient self-access from third-party release.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "SSN (last 4 digits) collected without HIPAA justification",
+      "No submission instructions on the PDF form itself",
+      "Registration packet includes $10-$150 per-form ASF fee schedule that could be applied to records requests"
+    ],
+    "bright_spots": [
+      "Plain-language, question-based section headers lower cognitive barrier",
+      "Opt-out exclusion model for sensitive record categories (substance abuse, HIV/STDs, psychiatric)",
+      "Email listed as first delivery method, positioning electronic delivery as default",
+      "MediCopy offers fully digital HelloSign online authorization as alternative to PDF"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: requires moderate effort — FAQ answers the question helpfully with a MediCopy link, but the forms page omits ROI, and direct searches fail; patient must follow a redirect chain to a third-party site."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: usable digitally with workarounds — primary PDF has zero fillable fields requiring print-and-handwrite, but MediCopy offers a HelloSign online alternative and fax/email delivery methods are available."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: well-organized with minor issues — single-page form with clear logical flow, plain-language question headers, and good record-type granularity; minor issues include missing submission instructions and SSN collection."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: a patient can use the process but it wasn't designed for them — 'Personal Use' is one of five purpose options on a generic third-party authorization form with no mention of HIPAA Right of Access or patient-specific rights."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: some requirements that may go beyond what the law requires — SSN collection is unnecessary for patient access, fee disclosure is vague, and the registration packet's $10-$150 ASF schedule could encompass records requests exceeding HIPAA cost-based limits."
+    },
+    "overall": {
+      "score": 3.15,
+      "grade": "C",
+      "summary": "SEMG provides a functional records request pathway via MediCopy but does not differentiate patient self-access from third-party release; the generic form has good content design but lacks fillable fields, submission instructions, and transparent fee disclosure."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:37:50.995Z"
+}

@@ -1,0 +1,82 @@
+{
+  "org_id": "bayshore-medical-center",
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox/Datavant records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.hackensackmeridianhealth.org/en/patients-and-visitors/medical-records",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "HMH Authorization to Use or Disclose PHI (CMR-003, English)",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "HMH Authorization to Use or Disclose PHI (CMR-003S, Spanish)",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Bayshore Medical Center HIM",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.hackensackmeridianhealth.org/-/media/Project/HMH/HMH/Public/Medical-Group/Patient-Forms/General-English/HMHMG-Authorization-for-Release-of-Information.pdf",
+      "scope": "system",
+      "language": "en",
+      "is_current": false,
+      "document_type": "ROI authorization form (Medical Group / outpatient)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://pascackmedicalcenter.com/wp-content/uploads/sites/7/2024/09/PVC-Release-of-Information-Authorization-Form-All-Reqestors.pdf",
+      "scope": "facility",
+      "language": "en",
+      "is_current": true,
+      "document_type": "ROI authorization form (Pascack Valley Medical Center, HMH sister facility)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.hackensackmeridianhealth.org/-/media/project/hmh/hmh/public/files/patients-visitors/roi-request-form-2024-spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "is_current": true,
+      "document_type": "ROI authorization form (Spanish version, CMR-003S)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.hackensackmeridianhealth.org/-/media/project/hmh/hmh/public/files/patients-visitors/request-amendment-of-information.pdf",
+      "scope": "system",
+      "language": "en",
+      "is_current": true,
+      "document_type": "Request for amendment of protected health information"
+    },
+    {
+      "filename": "form-5.pdf",
+      "source_url": "https://pascackmedicalcenter.com/wp-content/uploads/sites/7/2024/09/PVC-Patient-Request-Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "is_current": true,
+      "document_type": "Patient access request form (Pascack Valley Medical Center, HMH sister facility)"
+    },
+    {
+      "filename": "form-6.pdf",
+      "source_url": "https://www.hackensackmeridianhealth.org/-/media/project/hmh/hmh/public/medical-group/patient-forms/general-english/roi-request-form-2024-english.pdf",
+      "scope": "system",
+      "language": "en",
+      "is_current": true,
+      "document_type": "ROI authorization form (CMR-003, primary English hospital-level form)"
+    }
+  ],
+  "parent_system": "Hackensack Meridian Health",
+  "uses_system_forms": true,
+  "retrieval_difficulty": "hard",
+  "bot_blocking_encountered": false,
+  "browser_fallback_needed": false
+}

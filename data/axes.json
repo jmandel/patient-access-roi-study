@@ -1,0 +1,46 @@
+{
+  "axes": {
+    "facility_type": {
+      "description": "The primary classification of the healthcare facility. Different facility types face different regulatory requirements, serve different patient populations, and have vastly different HIM department resources — all of which directly affect ROI form design and accessibility.",
+      "values": [
+        "community_hospital",
+        "teaching_hospital",
+        "critical_access_hospital",
+        "fqhc",
+        "physician_practice"
+      ]
+    },
+    "system_affiliation": {
+      "description": "Whether the organization operates independently or as part of a larger health system, and the scale of that system. System affiliation affects IT investment, standardization of patient-facing processes, and whether ROI forms are centrally designed or locally managed.",
+      "values": [
+        "major_system",
+        "regional_system",
+        "independent"
+      ]
+    },
+    "ownership": {
+      "description": "The governance and financial model of the organization. Ownership type influences resource allocation toward patient experience, compliance culture, and whether ROI processes prioritize operational efficiency over patient accessibility.",
+      "values": [
+        "nonprofit",
+        "for_profit",
+        "government"
+      ]
+    },
+    "census_region": {
+      "description": "The U.S. Census Bureau region where the organization is located. State-level health information privacy laws vary significantly by region, and regional healthcare market dynamics affect organizational resources and patient expectations.",
+      "values": [
+        "northeast",
+        "south",
+        "midwest",
+        "west"
+      ]
+    }
+  },
+  "unrealistic_combinations": [
+    "FQHC with for-profit ownership — federal statute requires FQHCs to be nonprofit or public entities",
+    "FQHC affiliated with a major or regional hospital system — FQHCs are independently governed community organizations by federal requirement",
+    "Critical access hospital with for-profit ownership — CAH economics and rural safety-net mission make investor-owned operation essentially nonviable (fewer than 1% nationally)",
+    "Physician practice with government ownership — government-operated physician practices are limited to VA/military systems excluded from this study",
+    "Teaching hospital that is both for-profit and independently operated — major teaching programs require system-level infrastructure and academic affiliation"
+  ]
+}

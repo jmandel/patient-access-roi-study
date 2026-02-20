@@ -1,0 +1,105 @@
+{
+  "org_id": "aaron-e-henry-chc",
+  "org_name": "Aaron E. Henry Community Health Services Center",
+  "category_id": "fqhc-independent-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "patient_portal",
+      "name": "eClinicalWorks patient portal",
+      "vendor": "eClinicalWorks",
+      "url": "https://mycw147.ecwcloud.com",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Phone request (inferred)",
+      "is_primary": true
+    },
+    {
+      "type": "in_person",
+      "name": "In-person request (inferred)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "http://images.pcmac.org/Uploads/NorthPanolaSD/NorthPanolaSD/Divisions/Forms/AEH-CONSENT%20FORM-%20rev%20June%202019%20re-revised%20(002)_Fillable_%7BSISE7D801F6F09B%7D.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "School-based consent-to-treat form (not an ROI form)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "impossible",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "No online pathway exists; patients must call or visit the facility to learn how to request records.",
+    "primary_pathway_type": "phone_or_in_person_only",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 0,
+    "page_count": 0,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": [],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": true,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No ROI form or medical records request information available online",
+      "No HIPAA Notice of Privacy Practices published on website",
+      "Complete opacity about records request process, fees, and patient rights"
+    ],
+    "bright_spots": [
+      "eClinicalWorks patient portal exists and may provide records access for enrolled patients"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 1,
+      "rationale": "Rubric level 1 (effectively unfindable online): despite 10+ targeted searches, full site navigation, sitemap inspection, URL guessing, and Wayback Machine checks, no ROI form or records request information was found anywhere on the organization's web presence."
+    },
+    "technical_accessibility": {
+      "score": 1,
+      "rationale": "Rubric level 1 (no usable digital form exists): no records request form of any kind was found online; the only retrieved document is a school consent form unrelated to patient records access."
+    },
+    "content_design": {
+      "score": 1,
+      "rationale": "Rubric level 1 (unusable without significant effort or outside help): no records request form exists to evaluate; a patient cannot even determine what information or steps are needed without contacting the facility."
+    },
+    "patient_centeredness": {
+      "score": 1,
+      "rationale": "Rubric level 1 (process actively discourages or obstructs patient access): the organization provides zero online information about patient records access, no forms, no instructions, and no acknowledgment that patients have a right to their records."
+    },
+    "compliance": {
+      "score": 2,
+      "rationale": "Rubric level 2 (requirements that create illegitimate barriers): while HIPAA does not mandate online forms, the complete absence of any published information about the records request process, fees, rights, or privacy practices creates an opaque barrier that likely exceeds what is reasonable for a covered entity."
+    },
+    "overall": {
+      "score": 1.2,
+      "grade": "F",
+      "summary": "AEH provides no online pathway, form, or guidance for patients seeking their own health records, earning the lowest possible scores across nearly all dimensions."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:26:27.275Z"
+}

@@ -1,0 +1,138 @@
+{
+  "org_id": "northwestern-memorial-hospital",
+  "org_name": "Northwestern Memorial Hospital",
+  "category_id": "teach-major-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Northwestern Medicine (Northwestern Memorial HealthCare)",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of Medical Information (English)",
+      "url": "https://www.nm.org/-/media/northwestern/resources/patients-and-visitors/northwestern-medicine-authorization-of-release-of-information-english.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Autorización para Divulgar Información (Spanish)",
+      "url": "https://www.nm.org/-/media/northwestern/resources/patients-and-visitors/northwestern-medicine-authorization-of-release-of-information-spanish.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission to HIM",
+      "url": "mailto:releaseofinformation@nm.org",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM (312.926.3093)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to HIM – Release of Information Department, 25 North Winfield Road, Winfield, IL 60190",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "877.9RECORD (877.973.2673) / TTY: 711",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.nm.org/-/media/northwestern/resources/patients-and-visitors/northwestern-medicine-authorization-of-release-of-information-english.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.nm.org/-/media/northwestern/resources/patients-and-visitors/northwestern-medicine-authorization-to-obtain-information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Inbound records request form (authorization to disclose TO NMHC)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.nm.org/-/media/northwestern/resources/patients-and-visitors/northwestern-medicine-authorization-of-release-of-information-spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (Spanish translation)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic system-wide authorization form with a 'Personal Use' purpose checkbox, listing themselves as the recipient.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 79,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "No reference to HIPAA Right of Access (§ 164.524) — patient self-access is not distinguished from third-party authorization",
+      "Fee language cites Illinois copying statute (735 ILCS 5/8-2006) without clarifying HIPAA's lower cost-based fee limit for patient access requests"
+    ],
+    "bright_spots": [
+      "MyNM patient portal offered as a delivery method for requested records",
+      "Spanish-language form with equivalent fillable-field functionality (82 fields)",
+      "Email submission accepted (releaseofinformation@nm.org) — uncommon among healthcare organizations",
+      "Record-type categories include parenthetical explanations of what each includes",
+      "Memorable toll-free number (877.9RECORD) with TTY: 711 accessibility"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Forms are prominently available — a basic web search immediately returns direct download links to the PDFs on nm.org's CDN with no navigation, login, or CAPTCHA required."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: The form has 79 fillable fields enabling full digital completion, and email/fax submission is available; however, the workflow requires filling the PDF separately and then emailing or faxing it rather than a single integrated submission."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized 2-page form with logical flow, clear section headers, and helpful parenthetical explanations of record types; minor issues include dense legal language in the disclosure section."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process by selecting 'Personal Use' and listing themselves as recipient, but the form was designed for third-party release — the patient must navigate sections intended for attorneys/insurers and figure out which parts apply to self-access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: The form states a 30-day response time, includes right to revoke and no-care-denial clauses, and references 42 CFR Part 2; minor ambiguity in fee language citing Illinois statute without distinguishing HIPAA's lower patient-access fee limit."
+    },
+    "overall": {
+      "score": 3.9,
+      "grade": "B",
+      "summary": "Northwestern Medicine provides technically excellent, easy-to-find forms with strong digital features and Spanish-language support, but channels patient self-access through a generic third-party authorization form without acknowledging distinct patient access rights under HIPAA."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:16:42.653Z"
+}

@@ -1,0 +1,113 @@
+{
+  "org_id": "crescentcare",
+  "org_name": "CrescentCare",
+  "category_id": "fqhc-independent-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of CrescentCare Medical Information (English)",
+      "is_primary": false,
+      "url": "https://www.crescentcare.org/wp-content/uploads/2025/11/Release-of-CrescentCare-Medical-Information._en.pdf"
+    },
+    {
+      "type": "pdf_form",
+      "name": "Autorización Para la Divulgación de Información Médica (Spanish)",
+      "is_primary": false,
+      "url": "https://www.crescentcare.org/wp-content/uploads/2025/11/Release-of-CrescentCare-Medical-Information_es.pdf"
+    },
+    {
+      "type": "online_portal",
+      "name": "Request your medical records (online form)",
+      "is_primary": true,
+      "url": "https://www.crescentcare.org/records-request-form/"
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.crescentcare.org/wp-content/uploads/2025/11/Release-of-CrescentCare-Medical-Information._en.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.crescentcare.org/wp-content/uploads/2025/11/Release-of-CrescentCare-Medical-Information_es.pdf",
+      "scope": "facility",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Patient can use a dedicated online records request page or download a generic authorization form that prominently features a self-access option with electronic delivery choices.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [],
+    "bright_spots": [
+      "Bilingual forms (English and Spanish) with identical structure",
+      "Electronic delivery options for self-requests: Patient Portal and Encrypted Email",
+      "Dedicated online records request page as a digital-first alternative",
+      "Self-access option placed first on the form, before third-party release",
+      "Single-page design covers all necessary elements efficiently"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available on the Patient Resources page, discoverable via basic web search, and a dedicated 'Request your medical records' page exists — minimal effort required."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital — the org offers an online records request page for fully digital submission, but the downloadable PDF has zero fillable fields, requiring print and handwrite for that pathway."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with clear section headers, plain language, and logical flow; minor issues include missing submission instructions and slightly confusing expiration language."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access is clearly accommodated with the 'Myself via' option placed first and electronic delivery choices, even though the form also serves third-party release purposes."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Includes no-conditioning statement, revocation rights, and re-disclosure warning with no unnecessary barriers; minor ambiguities include requiring a 'signed letter' for revocation and no fee or timeline disclosure."
+    },
+    "overall": {
+      "score": 4.15,
+      "grade": "B",
+      "summary": "CrescentCare provides a well-designed bilingual authorization form with clear patient self-access options and an online records request alternative, earning a strong B despite non-fillable PDFs and missing submission instructions."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:26:45.693Z"
+}

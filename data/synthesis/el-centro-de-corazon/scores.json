@@ -1,0 +1,99 @@
+{
+  "org_id": "el-centro-de-corazon",
+  "org_name": "El Centro de Corazón",
+  "category_id": "fqhc-independent-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Disclosure of Health Information",
+      "url": "https://www.elcentrodecorazon.org/wp-content/uploads/2020/08/AUTHORIZATION-FOR-DISCLOSURE-OF-HEALTH-INFORMATION-2.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission (number on form)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.elcentrodecorazon.org/wp-content/uploads/2020/08/AUTHORIZATION-FOR-DISCLOSURE-OF-HEALTH-INFORMATION-2.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (bilingual English/Spanish)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient must use a generic third-party authorization for disclosure form, writing themselves in as the recipient and using the 'Other' checkbox to specify a personal request.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 14,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": true,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No patient self-access pathway — form is entirely oriented toward third-party disclosure with no 'personal request' option",
+      "Witness signature line present without clarification of whether it is required or optional"
+    ],
+    "bright_spots": [
+      "Bilingual form (English/Spanish) on a single document — meaningful accessibility for a Houston FQHC",
+      "Compact one-page-per-language design avoids discouraging patients"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with a basic web search returning a direct link, though the form is not linked from a clearly labeled patient resources page on the website."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF has zero fillable fields and must be printed and handwritten; fax number is printed on the form providing an electronic submission path, but no digital form completion is possible."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but with notable problems — compact and logically ordered, but checkbox mismatch between English and Spanish versions, grammatical errors, no instructions, and no delivery format options."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought — no 'personal request' checkbox, no 'send to me' option, no patient rights language, and no delivery preferences; the form is designed entirely for third-party disclosure."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that may go beyond what the law requires — ambiguous witness signature line, vague fee disclosure without HIPAA cost-based limits, and blanket sensitive-information consent that may not satisfy 42 CFR Part 2."
+    },
+    "overall": {
+      "score": 2.65,
+      "grade": "C",
+      "summary": "El Centro de Corazón provides an easily findable, compact bilingual form, but its generic third-party authorization design, non-fillable format, and lack of patient self-access pathway result in a below-average experience for patients requesting their own records."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:26:08.649Z"
+}

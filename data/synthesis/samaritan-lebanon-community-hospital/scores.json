@@ -1,0 +1,157 @@
+{
+  "org_id": "samaritan-lebanon-community-hospital",
+  "org_name": "Samaritan Lebanon Community Hospital",
+  "category_id": "ch-regional-nonprofit-west",
+  "primary_form": "form-4.pdf",
+  "total_forms_found": 5,
+  "parent_system": "Samaritan Health Services",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "MRO Express online records request",
+      "vendor": "MRO Corp.",
+      "url": "https://samhealth.org/patients-visitors/request-medical-records/",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Disclose Health Information",
+      "url": "https://samhealth.org/authorization-to-disclose-health-information?type=pdf",
+      "is_primary": false
+    },
+    {
+      "type": "pdf_form",
+      "name": "Computer Readable EHI Export Request",
+      "url": "https://samhealth.org/computer-readable-ehi-export-request-english?type=pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission to HIM (SHSHIMROI@samhealth.org)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to SHS HIM PO Box 2728, Corvallis, OR 97339",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "SHS HIM Lebanon (525 N. Santiam Hwy., Lebanon)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://samhealth.org/computer-readable-ehi-export-request-english?type=pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "EHI computer-readable export request form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://samhealth.org/wp-content/uploads/2023/12/Computer-Readable-EHI-Export-Request-Spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "EHI computer-readable export request form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://samhealth.org/shs-notice-of-privacy-practices?type=pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Notice of Privacy Practices"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://samhealth.org/authorization-to-disclose-health-information?type=pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-5.pdf",
+      "source_url": "https://samhealth.org/wp-content/uploads/2023/09/Authorization-to-Disclose-Health-Information-Spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to an MRO Express online portal as the primary request method; a downloadable PDF authorization form (hidden in a collapsed section) can also be submitted by mail, fax, or email.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "free_for_patient_access",
+    "response_time_stated": true,
+    "response_time_value": "30 days",
+    "red_flags": [
+      "EHI export form lacks the 'no charge' commitment stated on the standard ROI form for patient requests"
+    ],
+    "bright_spots": [
+      "All forms available in both English and Spanish",
+      "Dedicated EHI computer-readable export request form — exceptionally rare",
+      "Explicit 'No Charge' for initial patient requests and continuing care on standard form",
+      "Six delivery format options including MyChart and email",
+      "Email submission accepted (SHSHIMROI@samhealth.org)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 3,
+      "rationale": "Level 3: The MRO portal is reachable from the medical records page, but downloadable PDF forms required browser DevTools to discover inside collapsed accordion sections; a patient who prefers a traditional form faces a non-obvious path."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Digitally-authored PDF with text layer but zero fillable fields; fax and email submission available, so a patient can complete the workflow digitally with workarounds (print, fill, scan, email/fax)."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized 2-page form with numbered sections, matching instruction page, 11 record-type checkboxes, and clear headers; minor issues with legal density in the rights section and Section 7's dual-purpose structure."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access is clearly accommodated with a 'Personal' purpose checkbox, self-delivery options, explicit no-charge policy, and MyChart/email delivery — though the form serves multiple purposes and lacks a dedicated patient-only pathway."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization, no charge for patient requests, 30-day processing commitment, clear revocation rights, appropriate 42 CFR Part 2 handling; minor ambiguity in EHI export form fee language."
+    },
+    "overall": {
+      "score": 3.6,
+      "grade": "B",
+      "summary": "Samaritan Health Services provides an above-average patient records request experience with an online portal, bilingual forms, transparent fee policies, and a rare dedicated EHI export option, held back by non-fillable PDFs and poor discoverability of downloadable forms."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:04:27.209Z"
+}

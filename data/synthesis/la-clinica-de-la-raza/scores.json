@@ -1,0 +1,120 @@
+{
+  "org_id": "la-clinica-de-la-raza",
+  "org_name": "La Clínica de La Raza",
+  "category_id": "fqhc-independent-nonprofit-west",
+  "primary_form": "form-3.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "mail",
+      "name": "Written request to Privacy Officer P.O. Box",
+      "is_primary": true
+    },
+    {
+      "type": "phone",
+      "name": "Call clinic at 510-535-4000",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "OCHIN MyChart",
+      "vendor": "OCHIN/Epic MyChart",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://laclinicahealth.org/wp-content/uploads/Authorization-to-Release-Information-english.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (WRONG ORGANIZATION — La Clinica del Valle, Oregon)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://laclinicahealth.org/wp-content/uploads/Release-of-Information-0822-English.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (WRONG ORGANIZATION — La Clinica Health Centers, Oregon)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://laclinica.org/wp-content/uploads/2019/09/LC_8092-Notice-of-Privacy-Practices-English.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Notice of Privacy Practices"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients must write a letter to the Privacy Officer at a P.O. Box; no form, portal, or electronic submission option is provided for record requests.",
+    "primary_pathway_type": "phone_or_in_person_only",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 0,
+    "page_count": 8,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es", "zh"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No ROI form published online — patients of this FQHC must write a letter with no form to guide them",
+      "Only documented submission method is postal mail to a P.O. Box",
+      "Notice of Privacy Practices is from 2012 and has not been updated in over 13 years"
+    ],
+    "bright_spots": [
+      "NPP available in English, Spanish, and Chinese — reflecting community language needs",
+      "NPP explicitly acknowledges right to receive PHI in electronic format",
+      "Approachable 'we/you' tone in privacy notice"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 1,
+      "rationale": "Level 1: Effectively unfindable online — no ROI form exists on the website, and the only records-request guidance is buried in an 8-page NPP with no dedicated 'Medical Records' page."
+    },
+    "technical_accessibility": {
+      "score": 1,
+      "rationale": "Level 1: No usable digital form exists — the only documented process is composing a letter and mailing it to a P.O. Box, with no fillable form, no fax option, and no electronic submission."
+    },
+    "content_design": {
+      "score": 1,
+      "rationale": "Level 1: Unusable without significant effort — no records-request form exists, so a patient must read an 8-page NPP to discover they should write a letter, with no guidance on what to include."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought — the NPP acknowledges the right of access but provides no practical mechanism; there is no form, no online pathway, and no differentiation from third-party release."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: The NPP does not impose illegal barriers (no notarization, no excessive fees), but vague fee language, a 13-year-old document, and a mail-only process with no structured form go beyond what patients should have to navigate for access."
+    },
+    "overall": {
+      "score": 1.65,
+      "grade": "D",
+      "summary": "La Clínica de La Raza publishes no records-request form online; the only documented pathway is writing a letter to a P.O. Box, creating a significant barrier for patients of this FQHC."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:29:56.115Z"
+}

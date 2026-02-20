@@ -1,0 +1,118 @@
+{
+  "org_id": "peoples-health-centers",
+  "org_name": "Betty Jean Kerr People's Health Centers",
+  "category_id": "fqhc-independent-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "patient_portal",
+      "name": "Medfusion/NextGen patient portal",
+      "vendor": "Medfusion/NextGen",
+      "url": "https://phcenters.org/release-of-health-information/",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Medical Records (Main)",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Behavioral Health Records",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Privacy Officer at 5701 Delmar Blvd",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person with photo ID",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://peoplesfamilystl.org/wp-content/uploads/2023/08/NPP-2.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "HIPAA Notice of Privacy Practices"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Organization lists fax, mail, in-person, and patient portal as submission channels on a dedicated webpage, but provides no downloadable form; patients must visit in person or log into the portal to obtain the actual request form.",
+    "primary_pathway_type": "phone_or_in_person_only",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 0,
+    "page_count": 10,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": true,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No ROI/authorization form available online despite dedicated records request page",
+      "Fee disclosure is vague — mentions costs of copying, mailing, labor, and supplies but provides no amounts or reference to HIPAA fee limits",
+      "NPP missing effective date (required by 45 CFR 164.520) and breach notification language (required post-HITECH), suggesting document has not been updated in over a decade",
+      "Patient Rights and Responsibilities PDF returns 500 Internal Server Error — broken link on parent organization site"
+    ],
+    "bright_spots": [
+      "Dedicated 'Requests for Release of Health Information' webpage with clear contact information",
+      "Named Privacy Officer with direct phone number provided",
+      "Multiple submission channels listed (fax, mail, portal, in-person)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 2,
+      "rationale": "Level 2: The records request page is findable via site navigation, but no actual ROI form exists online despite persistent and creative search strategies — the patient finds instructions but not the form itself."
+    },
+    "technical_accessibility": {
+      "score": 1,
+      "rationale": "Level 1: No usable digital ROI form exists; the only retrieved document is an NPP (not an ROI form), and the actual authorization form is available only in-person or behind a login-required portal."
+    },
+    "content_design": {
+      "score": 1,
+      "rationale": "Level 1: No ROI form was available to assess; the NPP document is dense, legalistic, contains numbering errors and encoding artifacts, and lacks a plain-language summary — but it is not itself the relevant form for patient access."
+    },
+    "patient_centeredness": {
+      "score": 1,
+      "rationale": "Level 1: The process effectively requires in-person visit or existing portal credentials to even obtain the request form; no publicly accessible pathway for patient self-access exists, and there is no differentiation between patient access and third-party release."
+    },
+    "compliance": {
+      "score": 2,
+      "rationale": "Level 2: While fax and mail channels theoretically exist, the absence of a form to submit through them creates a de facto in-person requirement; the NPP omits required elements (effective date, breach notification) and fee disclosures are vague with no amounts stated."
+    },
+    "overall": {
+      "score": 1.35,
+      "grade": "F",
+      "summary": "BJKPHC publishes no downloadable ROI form, effectively requiring patients to visit in person or already have portal credentials to request their own records — a fundamental failure of online accessibility for an FQHC."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:29:18.749Z"
+}

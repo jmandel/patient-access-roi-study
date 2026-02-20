@@ -1,0 +1,129 @@
+{
+  "org_id": "jps-health-network",
+  "org_name": "JPS Health Network (John Peter Smith Hospital)",
+  "category_id": "ch-major-government-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization & Request for Release of Information (English)",
+      "is_primary": true,
+      "url": "https://jpshealthnet.org/sites/default/files/inline-files/roi_english_revised_2018_10.pdf"
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization & Request for Release of Information (Spanish)",
+      "is_primary": false,
+      "url": "https://jpshealthnet.org/sites/default/files/inline-files/roi_spanish_revised_2018_10.pdf"
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Health Information Management",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Health Information Management, 1500 S. Main Street, Fort Worth, TX 76104",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://jpshealthnet.org/sites/default/files/inline-files/roi_english_revised_2018_10.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://jpshealthnet.org/sites/default/files/2025-05/Patient-HIE-Authorization-Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "HIE opt-in authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://jpshealthnet.org/sites/default/files/2025-05/Patient-HIE-Revocation-Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "HIE revocation form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients download a generic ROI authorization form (image-only scan from 2018), print and handwrite it, then mail or fax it to Health Information Management.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "potentially_excessive",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "$75 flat fee for electronic delivery likely exceeds HIPAA's reasonable, cost-based fee limit for patient access requests",
+      "$30 minimum for first 10 pages may exceed permissible patient access fees under federal rules",
+      "Fee schedule does not distinguish patient access requests from third-party releases",
+      "Electronic form submission explicitly refused despite organization demonstrating capability with 2025 HIE forms",
+      "ROI form is a 2018 image-only scan with no text layer or fillable fields — inaccessible to screen readers"
+    ],
+    "bright_spots": [
+      "Spanish language version of ROI form available",
+      "Fee schedule disclosed transparently on web page before form download",
+      "Patient Records page is well-organized and easy to find (2 clicks from homepage)",
+      "2025 HIE forms demonstrate organizational capability for modern, fillable, email-submittable PDFs"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation (Patient Tools → Patient Records, 2 clicks) and via web search; page is well-organized with accordion sections and contextual information."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the ROI form is an image-only scan with zero fillable fields, requiring printing and handwriting; fax submission is available but the form itself cannot be completed digitally."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: The form is an appropriate 1-page length, but being an image-only scan prevents assessment of language clarity; the surrounding web page provides adequate context but no instructions appear on the form itself."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is not specifically addressed — the generic ROI form does not differentiate patient access from third-party release, fees are not distinguished by request type, and no patient rights are referenced."
+    },
+    "compliance": {
+      "score": 2,
+      "rationale": "Level 2: The $75 electronic delivery fee and $30 minimum for first 10 pages likely exceed HIPAA's cost-based limits for patient access requests; HHS has taken enforcement actions against similar fee structures."
+    },
+    "overall": {
+      "score": 2.45,
+      "grade": "D",
+      "summary": "JPS Health Network's ROI process is easy to find but hampered by a seven-year-old image-only scan form, potentially excessive fees, no electronic submission, and no differentiation of patient self-access from third-party release — despite demonstrating the capability for modern digital forms in its 2025 HIE documents."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:01:28.966Z"
+}

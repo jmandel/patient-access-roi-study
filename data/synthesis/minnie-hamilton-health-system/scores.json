@@ -1,0 +1,114 @@
+{
+  "org_id": "minnie-hamilton-health-system",
+  "org_name": "Minnie Hamilton Health System",
+  "category_id": "cah-independent-nonprofit-south",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": "Mon Health",
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "ChartRequest medical records portal",
+      "vendor": "ChartRequest",
+      "url": "https://app.chartrequest.com/p/l/minniehamiltonhealthsystem-grantsville",
+      "is_primary": true
+    },
+    {
+      "type": "phone",
+      "name": "Medical Records department phone",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "Athena Health patient portal (messaging only)",
+      "vendor": "Athena Health",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.mhhs.healthcare/wp-content/uploads/2024/11/how-to-send-medical-documents-via-the-mhhs-patient-portal.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient portal instructions (not an ROI form)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.monhealth.com/Uploads/Public/Documents/Billing%20Financial%20Assistance/MHMC%20Authorization%20for%20Release%20of%20Protected%20Health%20Information_12.31.20.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (Mon Health Medical Center — affiliate, not MHHS-branded)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to ChartRequest, a third-party online portal requiring account creation before the authorization form or process details are visible.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Mandatory third-party account creation (ChartRequest) required before authorization form or process details are visible",
+      "No publicly available ROI form, fee schedule, timeline, or patient rights information",
+      "No MHHS-branded authorization form exists — the only ROI form found belongs to affiliate Mon Health Medical Center in Morgantown, WV"
+    ],
+    "bright_spots": [
+      "Fully electronic submission pathway via ChartRequest portal eliminates need for printing, faxing, or mailing",
+      "Digital-first approach with modern third-party platforms (ChartRequest, Athena Health)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 2,
+      "rationale": "Level 2: Difficult — extensive searching (multiple query variations, site-specific searches, Wayback Machine) found no downloadable ROI form; the ChartRequest link is on the patients page but provides no form preview or process details."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital — ChartRequest provides an online portal workflow for form completion and submission, but mandatory account creation on a third-party platform is a gap that prevents patients from previewing the process."
+    },
+    "content_design": {
+      "score": 2,
+      "rationale": "Level 2: Confusing and opaque — no publicly visible form content, instructions, or guidance exists; patients cannot preview the authorization form, understand required information, or prepare their request before creating a ChartRequest account."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use ChartRequest but the process wasn't designed specifically for them — no differentiation between patient self-access and third-party release, and no publicly visible patient rights information or access-specific guidance."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: The mandatory account creation before accessing authorization terms goes beyond what the law requires; no public fee disclosure, no stated response time, and no patient rights information available outside the gated portal."
+    },
+    "overall": {
+      "score": 2.95,
+      "grade": "C",
+      "summary": "Minnie Hamilton Health System offers a modern electronic records request pathway through ChartRequest but undermines its utility by providing no publicly visible form, fee information, or patient rights guidance — leaving patients unable to understand the process before committing to third-party account creation."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:28:31.952Z"
+}

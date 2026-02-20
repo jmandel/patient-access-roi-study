@@ -1,0 +1,3122 @@
+{
+  "huntington-hospital": {
+    "org_id": "huntington-hospital",
+    "name": "Huntington Hospital",
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Huntington",
+    "website": "https://huntington.northwell.edu/",
+    "bed_count": 371,
+    "notes": "Community hospital in Northwell Health system (28 hospitals), serving Huntington Township since 1916"
+  },
+  "phelps-hospital": {
+    "org_id": "phelps-hospital",
+    "name": "Phelps Hospital",
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Sleepy Hollow",
+    "website": "https://phelps.northwell.edu/",
+    "bed_count": 238,
+    "notes": "Community hospital in Northwell Health system, serving Westchester County"
+  },
+  "bayshore-medical-center": {
+    "org_id": "bayshore-medical-center",
+    "name": "Bayshore Medical Center",
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NJ",
+    "city": "Holmdel",
+    "website": "https://www.hackensackmeridianhealth.org/en/locations/bayshore-medical-center",
+    "bed_count": 204,
+    "notes": "Community hospital in Hackensack Meridian Health system (17+ hospitals)"
+  },
+  "community-medical-center-toms-river": {
+    "org_id": "community-medical-center-toms-river",
+    "name": "Community Medical Center",
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NJ",
+    "city": "Toms River",
+    "website": "https://www.rwjbh.org/community-medical-center/",
+    "bed_count": 592,
+    "notes": "Community hospital in RWJBarnabas Health system (12+ hospitals), largest hospital in Ocean County"
+  },
+  "newton-wellesley-hospital": {
+    "org_id": "newton-wellesley-hospital",
+    "name": "Newton-Wellesley Hospital",
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "MA",
+    "city": "Newton",
+    "website": "https://www.nwh.org/",
+    "bed_count": 273,
+    "notes": "Community hospital in Mass General Brigham system (10+ hospitals)"
+  },
+  "montefiore-nyack-hospital": {
+    "org_id": "montefiore-nyack-hospital",
+    "name": "Montefiore Nyack Hospital",
+    "category_id": "ch-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Nyack",
+    "website": "https://www.montefiorenyack.org/",
+    "bed_count": 391,
+    "notes": "Community hospital in Montefiore Health System (11 hospitals), serving Rockland County"
+  },
+  "ascension-sacred-heart-pensacola": {
+    "org_id": "ascension-sacred-heart-pensacola",
+    "name": "Ascension Sacred Heart Pensacola",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "Pensacola",
+    "website": "https://healthcare.ascension.org/locations/florida/flpen/pensacola-ascension-sacred-heart-pensacola",
+    "bed_count": 566,
+    "notes": "Level II trauma center in Northwest Florida; part of Ascension, one of the largest nonprofit health systems in the U.S."
+  },
+  "ascension-saint-thomas-rutherford": {
+    "org_id": "ascension-saint-thomas-rutherford",
+    "name": "Ascension Saint Thomas Rutherford Hospital",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Murfreesboro",
+    "website": "https://healthcare.ascension.org/locations/tennessee/tnnas/murfreesboro-ascension-saint-thomas-rutherford-hospital",
+    "bed_count": 418,
+    "notes": "Community hospital serving fast-growing Rutherford County; part of Ascension Saint Thomas network in Tennessee."
+  },
+  "ascension-st-vincents-east": {
+    "org_id": "ascension-st-vincents-east",
+    "name": "Ascension St. Vincent's East",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Birmingham",
+    "website": "https://healthcare.ascension.org/locations/alabama/albhm/birmingham-ascension-st-vincents-east",
+    "bed_count": 362,
+    "notes": "Level III adult trauma center in eastern Birmingham; part of Ascension St. Vincent's Alabama network."
+  },
+  "adventhealth-hendersonville": {
+    "org_id": "adventhealth-hendersonville",
+    "name": "AdventHealth Hendersonville",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "NC",
+    "city": "Hendersonville",
+    "website": "https://www.adventhealth.com/hospital/adventhealth-hendersonville",
+    "bed_count": 103,
+    "notes": "Community hospital serving Western North Carolina; part of AdventHealth system with 50+ hospitals across 9 states."
+  },
+  "adventhealth-central-texas": {
+    "org_id": "adventhealth-central-texas",
+    "name": "AdventHealth Central Texas",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Killeen",
+    "website": "https://www.adventhealth.com/hospital/adventhealth-central-texas",
+    "bed_count": 230,
+    "notes": "Community acute care hospital serving West Bell, Coryell, and Lampasas counties; part of AdventHealth system."
+  },
+  "baptist-health-lexington": {
+    "org_id": "baptist-health-lexington",
+    "name": "Baptist Health Lexington",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "KY",
+    "city": "Lexington",
+    "website": "https://www.baptisthealth.com/locations/baptist-health-lexington",
+    "bed_count": 434,
+    "notes": "Major acute care facility; part of Baptist Health, the largest nonprofit health system in Kentucky."
+  },
+  "bon-secours-st-marys-richmond": {
+    "org_id": "bon-secours-st-marys-richmond",
+    "name": "Bon Secours St. Mary's Hospital",
+    "category_id": "ch-major-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "VA",
+    "city": "Richmond",
+    "website": "https://www.bonsecours.com/locations/st-marys-hospital",
+    "bed_count": 391,
+    "notes": "Community hospital in Central Virginia; part of Bon Secours Mercy Health, a major Catholic nonprofit system."
+  },
+  "advocate-good-samaritan-hospital": {
+    "org_id": "advocate-good-samaritan-hospital",
+    "name": "Advocate Good Samaritan Hospital",
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IL",
+    "city": "Downers Grove",
+    "website": "https://www.advocatehealth.com/gsam",
+    "bed_count": 313,
+    "notes": "Part of Advocate Health (formerly Advocate Aurora Health), one of the largest nonprofit systems in the Midwest"
+  },
+  "aurora-medical-center-grafton": {
+    "org_id": "aurora-medical-center-grafton",
+    "name": "Aurora Medical Center - Grafton",
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "WI",
+    "city": "Grafton",
+    "website": "https://www.aurorahealthcare.org/locations/hospital/aurora-medical-center-grafton",
+    "bed_count": 132,
+    "notes": "Part of Advocate Health (Aurora Health Care division) serving Ozaukee County, WI"
+  },
+  "ssm-health-st-marys-madison": {
+    "org_id": "ssm-health-st-marys-madison",
+    "name": "SSM Health St. Mary's Hospital - Madison",
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "WI",
+    "city": "Madison",
+    "website": "https://www.ssmhealth.com/locations/wisconsin/st-marys-hospital-madison",
+    "bed_count": 440,
+    "notes": "Part of SSM Health, a Catholic nonprofit system operating 23 hospitals across the Midwest"
+  },
+  "ssm-health-depaul-hospital": {
+    "org_id": "ssm-health-depaul-hospital",
+    "name": "SSM Health DePaul Hospital - St. Louis",
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MO",
+    "city": "Bridgeton",
+    "website": "https://www.ssmhealth.com/locations/st-louis/depaul-hospital-st-louis",
+    "bed_count": 476,
+    "notes": "Part of SSM Health, serving the greater St. Louis metro area"
+  },
+  "mercy-health-fairfield-hospital": {
+    "org_id": "mercy-health-fairfield-hospital",
+    "name": "Mercy Health - Fairfield Hospital",
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Fairfield",
+    "website": "https://www.mercy.com/locations/hospitals/cincinnati/mercy-health-fairfield-hospital",
+    "bed_count": 219,
+    "notes": "Part of Bon Secours Mercy Health, serving the Cincinnati metro area"
+  },
+  "mercy-health-springfield-regional": {
+    "org_id": "mercy-health-springfield-regional",
+    "name": "Mercy Health - Springfield Regional Medical Center",
+    "category_id": "ch-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Springfield",
+    "website": "https://www.mercy.com/locations/hospitals/springfield/mercy-health-springfield-regional-medical-center",
+    "bed_count": 234,
+    "notes": "Part of Bon Secours Mercy Health, serving Clark County and surrounding communities"
+  },
+  "riverside-community-hospital": {
+    "org_id": "riverside-community-hospital",
+    "name": "Riverside Community Hospital",
+    "category_id": "ch-major-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Riverside",
+    "website": "https://www.riversidecommunityhospital.com",
+    "bed_count": 517,
+    "notes": "HCA Healthcare; Level I Trauma Center in the Inland Empire"
+  },
+  "mountainview-hospital-las-vegas": {
+    "org_id": "mountainview-hospital-las-vegas",
+    "name": "MountainView Hospital",
+    "category_id": "ch-major-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "NV",
+    "city": "Las Vegas",
+    "website": "https://mountainview-hospital.com",
+    "bed_count": 425,
+    "notes": "HCA Healthcare; full-service acute care and teaching hospital"
+  },
+  "desert-regional-medical-center": {
+    "org_id": "desert-regional-medical-center",
+    "name": "Desert Regional Medical Center",
+    "category_id": "ch-major-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Palm Springs",
+    "website": "https://www.desertcarenetwork.com",
+    "bed_count": 385,
+    "notes": "Tenet Healthcare (Desert Care Network); Level I Trauma Center in Coachella Valley"
+  },
+  "desert-valley-hospital": {
+    "org_id": "desert-valley-hospital",
+    "name": "Desert Valley Hospital",
+    "category_id": "ch-major-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Victorville",
+    "website": "https://dvmc.com",
+    "bed_count": 148,
+    "notes": "Prime Healthcare; acute care hospital serving High Desert communities"
+  },
+  "jps-health-network": {
+    "org_id": "jps-health-network",
+    "name": "JPS Health Network (John Peter Smith Hospital)",
+    "category_id": "ch-major-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Fort Worth",
+    "website": "https://jpshealthnet.org",
+    "bed_count": 573,
+    "notes": "Operated by Tarrant County Hospital District; Level I Trauma Center"
+  },
+  "grady-memorial-hospital": {
+    "org_id": "grady-memorial-hospital",
+    "name": "Grady Memorial Hospital",
+    "category_id": "ch-major-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Atlanta",
+    "website": "https://www.gradyhealth.org",
+    "bed_count": 953,
+    "notes": "Operated by Fulton-DeKalb Hospital Authority; largest safety-net hospital in Georgia"
+  },
+  "ben-taub-hospital": {
+    "org_id": "ben-taub-hospital",
+    "name": "Ben Taub Hospital",
+    "category_id": "ch-major-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Houston",
+    "website": "https://www.harrishealth.org",
+    "bed_count": 402,
+    "notes": "Part of Harris Health System (Harris County Hospital District); Level I Trauma Center"
+  },
+  "providence-st-vincent": {
+    "org_id": "providence-st-vincent",
+    "name": "Providence St. Vincent Medical Center",
+    "category_id": "ch-major-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "OR",
+    "city": "Portland",
+    "website": "https://www.providence.org/locations/or/st-vincent-medical-center",
+    "bed_count": 523,
+    "notes": "Tertiary care hospital and major teaching facility in the Providence Health system"
+  },
+  "st-josephs-hospital-phoenix": {
+    "org_id": "st-josephs-hospital-phoenix",
+    "name": "St. Joseph's Hospital and Medical Center",
+    "category_id": "ch-major-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "AZ",
+    "city": "Phoenix",
+    "website": "https://www.dignityhealth.org/arizona/locations/stjosephs",
+    "bed_count": 595,
+    "notes": "Part of CommonSpirit Health (Dignity Health); major regional hospital"
+  },
+  "intermountain-medical-center": {
+    "org_id": "intermountain-medical-center",
+    "name": "Intermountain Medical Center",
+    "category_id": "ch-major-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "UT",
+    "city": "Murray",
+    "website": "https://intermountainhealthcare.org/locations/intermountain-medical-center",
+    "bed_count": 504,
+    "notes": "Flagship hospital of Intermountain Health; Level I trauma center"
+  },
+  "mercy-general-hospital": {
+    "org_id": "mercy-general-hospital",
+    "name": "Mercy General Hospital",
+    "category_id": "ch-major-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Sacramento",
+    "website": "https://www.dignityhealth.org/sacramento/locations/mercy-general-hospital",
+    "bed_count": 310,
+    "notes": "Part of CommonSpirit Health (Dignity Health); known cardiac care center"
+  },
+  "providence-sacred-heart": {
+    "org_id": "providence-sacred-heart",
+    "name": "Providence Sacred Heart Medical Center",
+    "category_id": "ch-major-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "WA",
+    "city": "Spokane",
+    "website": "https://www.providence.org/locations/wa/sacred-heart-medical-center",
+    "bed_count": 644,
+    "notes": "Largest hospital between Seattle and Minneapolis; part of Providence Health system"
+  },
+  "tristar-centennial-medical-center": {
+    "org_id": "tristar-centennial-medical-center",
+    "name": "TriStar Centennial Medical Center",
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Nashville",
+    "website": "https://www.tristarhealth.com/locations/tristar-centennial-medical-center",
+    "bed_count": 741,
+    "notes": "HCA Healthcare; 5-star CMS rated; Level I trauma center"
+  },
+  "medical-city-dallas": {
+    "org_id": "medical-city-dallas",
+    "name": "Medical City Dallas Hospital",
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Dallas",
+    "website": "https://www.medicalcityhealthcare.com/locations/medical-city-dallas-hospital",
+    "bed_count": 899,
+    "notes": "HCA Healthcare; includes children's and women's hospital on campus"
+  },
+  "flowers-hospital": {
+    "org_id": "flowers-hospital",
+    "name": "Flowers Hospital",
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Dothan",
+    "website": "https://www.flowershospital.com",
+    "bed_count": 235,
+    "notes": "Community Health Systems; serves southeastern Alabama Wiregrass region"
+  },
+  "merit-health-central": {
+    "org_id": "merit-health-central",
+    "name": "Merit Health Central",
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "MS",
+    "city": "Jackson",
+    "website": "https://www.merithealthcentral.com",
+    "bed_count": 319,
+    "notes": "Community Health Systems; licensed for 329 beds including psychiatric unit"
+  },
+  "piedmont-medical-center": {
+    "org_id": "piedmont-medical-center",
+    "name": "Piedmont Medical Center",
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "Rock Hill",
+    "website": "https://www.piedmontmedicalcenter.com",
+    "bed_count": 288,
+    "notes": "Tenet Healthcare; Level III Trauma Center serving York County"
+  },
+  "good-samaritan-medical-center": {
+    "org_id": "good-samaritan-medical-center",
+    "name": "Good Samaritan Medical Center",
+    "category_id": "ch-major-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "West Palm Beach",
+    "website": "https://www.goodsamaritanmc.com",
+    "bed_count": 333,
+    "notes": "Tenet Healthcare; part of Palm Beach Health Network; includes NICU"
+  },
+  "samaritan-lebanon-community-hospital": {
+    "org_id": "samaritan-lebanon-community-hospital",
+    "name": "Samaritan Lebanon Community Hospital",
+    "category_id": "ch-regional-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "OR",
+    "city": "Lebanon",
+    "website": "https://samhealth.org/find-a-location/samaritan-lebanon-community-hospital/",
+    "bed_count": 25,
+    "notes": "Part of Samaritan Health Services (5 hospitals). Critical access hospital serving East Linn County."
+  },
+  "goleta-valley-cottage-hospital": {
+    "org_id": "goleta-valley-cottage-hospital",
+    "name": "Goleta Valley Cottage Hospital",
+    "category_id": "ch-regional-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Goleta",
+    "website": "https://www.cottagehealth.org/locations/goleta-valley-cottage-hospital/",
+    "bed_count": 48,
+    "notes": "Part of Cottage Health (3 hospitals). Nonprofit community hospital in the Santa Barbara area."
+  },
+  "slv-health-regional-medical-center": {
+    "org_id": "slv-health-regional-medical-center",
+    "name": "San Luis Valley Health Regional Medical Center",
+    "category_id": "ch-regional-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CO",
+    "city": "Alamosa",
+    "website": "https://www.sanluisvalleyhealth.org/",
+    "bed_count": 49,
+    "notes": "Part of San Luis Valley Health (2 hospitals). Nonprofit Level III trauma center serving southern Colorado."
+  },
+  "st-charles-redmond": {
+    "org_id": "st-charles-redmond",
+    "name": "St. Charles Redmond",
+    "category_id": "ch-regional-nonprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "OR",
+    "city": "Redmond",
+    "website": "https://stcharleshealthcare.org/locations/st-charles-redmond",
+    "bed_count": 48,
+    "notes": "Part of St. Charles Health System (4 hospitals). Nonprofit community hospital in Central Oregon."
+  },
+  "maury-regional-health": {
+    "org_id": "maury-regional-health",
+    "name": "Maury Regional Health",
+    "category_id": "ch-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Columbia",
+    "website": "https://www.mauryregional.com",
+    "bed_count": 255,
+    "notes": "3-hospital nonprofit system in southern Middle Tennessee; includes Maury Regional Medical Center, Marshall Medical Center, and Wayne Medical Center"
+  },
+  "owensboro-health": {
+    "org_id": "owensboro-health",
+    "name": "Owensboro Health",
+    "category_id": "ch-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "KY",
+    "city": "Owensboro",
+    "website": "https://www.owensborohealth.org",
+    "bed_count": 477,
+    "notes": "3-hospital nonprofit system serving an 18-county region in western Kentucky and southern Indiana"
+  },
+  "hendrick-health": {
+    "org_id": "hendrick-health",
+    "name": "Hendrick Health",
+    "category_id": "ch-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Abilene",
+    "website": "https://www.hendrickhealth.org",
+    "bed_count": 522,
+    "notes": "3-hospital nonprofit system in West Texas; includes Hendrick Medical Center, Hendrick Medical Center South, and Hendrick Medical Center Brownwood"
+  },
+  "southwell-tift-regional": {
+    "org_id": "southwell-tift-regional",
+    "name": "Southwell (Tift Regional Health System)",
+    "category_id": "ch-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Tifton",
+    "website": "https://mysouthwell.com",
+    "bed_count": 181,
+    "notes": "2-hospital nonprofit system serving 12 counties in South Central Georgia; includes Tift Regional Medical Center and Southwell Medical in Adel"
+  },
+  "shannon-health": {
+    "org_id": "shannon-health",
+    "name": "Shannon Health",
+    "category_id": "ch-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "San Angelo",
+    "website": "https://www.shannonhealth.com",
+    "bed_count": 400,
+    "notes": "3-campus nonprofit system in the Concho Valley region of West Texas; largest locally-based healthcare provider in the area"
+  },
+  "ao-fox-hospital": {
+    "org_id": "ao-fox-hospital",
+    "name": "A.O. Fox Hospital",
+    "category_id": "ch-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Oneonta",
+    "website": "https://www.bassett.org",
+    "bed_count": 67,
+    "notes": "Part of Bassett Healthcare Network (5 hospitals) serving multi-county central New York"
+  },
+  "canton-potsdam-hospital": {
+    "org_id": "canton-potsdam-hospital",
+    "name": "Canton-Potsdam Hospital",
+    "category_id": "ch-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Potsdam",
+    "website": "https://www.rochesterregional.org",
+    "bed_count": 94,
+    "notes": "Part of St. Lawrence Health (3 hospitals), affiliate of Rochester Regional Health, serving northern New York"
+  },
+  "guthrie-corning-hospital": {
+    "org_id": "guthrie-corning-hospital",
+    "name": "Guthrie Corning Hospital",
+    "category_id": "ch-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Corning",
+    "website": "https://www.guthrie.org",
+    "bed_count": 65,
+    "notes": "Part of Guthrie (6 hospitals) serving 13 counties across PA and NY"
+  },
+  "saratoga-hospital": {
+    "org_id": "saratoga-hospital",
+    "name": "Saratoga Hospital",
+    "category_id": "ch-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Saratoga Springs",
+    "website": "https://www.saratogahospital.org",
+    "bed_count": 171,
+    "notes": "Part of Albany Med Health System (4 hospitals) serving northeastern New York and western New England"
+  },
+  "blessing-hospital": {
+    "org_id": "blessing-hospital",
+    "name": "Blessing Hospital",
+    "category_id": "ch-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IL",
+    "city": "Quincy",
+    "website": "https://www.blessinghealth.org",
+    "bed_count": 348,
+    "notes": "Part of Blessing Health System (2 hospitals: Blessing Hospital and Illini Community Hospital). Largest hospital in the tri-state region of western IL, northeast MO, and southeast IA."
+  },
+  "mosaic-life-care-st-joseph": {
+    "org_id": "mosaic-life-care-st-joseph",
+    "name": "Mosaic Life Care at St. Joseph",
+    "category_id": "ch-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MO",
+    "city": "St. Joseph",
+    "website": "https://www.mymlc.com",
+    "bed_count": 352,
+    "notes": "Part of Mosaic Life Care (3 hospitals across northwest MO). Serves 35 counties across northwest MO, northeast KS, southeast NE, and southwest IA."
+  },
+  "carle-bromenn-medical-center": {
+    "org_id": "carle-bromenn-medical-center",
+    "name": "Carle BroMenn Medical Center",
+    "category_id": "ch-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IL",
+    "city": "Normal",
+    "website": "https://carle.org",
+    "bed_count": 221,
+    "notes": "Part of Carle Health (8 hospitals across central and southeastern IL). Community hospital serving the Bloomington-Normal metropolitan area."
+  },
+  "adena-regional-medical-center": {
+    "org_id": "adena-regional-medical-center",
+    "name": "Adena Regional Medical Center",
+    "category_id": "ch-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Chillicothe",
+    "website": "https://www.adena.org",
+    "bed_count": 266,
+    "notes": "Part of Adena Health System (4 hospitals in south central OH). Independent nonprofit serving a population of over 400,000 in southern Ohio."
+  },
+  "garfield-medical-center": {
+    "org_id": "garfield-medical-center",
+    "name": "Garfield Medical Center",
+    "category_id": "ch-regional-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Monterey Park",
+    "website": "https://www.ahmchealth.com/gmc/",
+    "bed_count": 210,
+    "notes": "Part of AHMC Healthcare, a for-profit system operating ~7 community hospitals in Southern California"
+  },
+  "anaheim-global-medical-center": {
+    "org_id": "anaheim-global-medical-center",
+    "name": "Anaheim Global Medical Center",
+    "category_id": "ch-regional-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Anaheim",
+    "website": "https://www.anaheimglobalmedicalcenter.com/",
+    "bed_count": 189,
+    "notes": "Part of KPC Health, a for-profit system operating ~6 community hospitals in Southern California"
+  },
+  "coast-plaza-hospital": {
+    "org_id": "coast-plaza-hospital",
+    "name": "Coast Plaza Hospital",
+    "category_id": "ch-regional-forprofit-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Norwalk",
+    "website": "https://www.coastplazahospital.com/",
+    "bed_count": 117,
+    "notes": "Part of Pipeline Health, a for-profit system operating 4 community hospitals in the Los Angeles area"
+  },
+  "brattleboro-memorial-hospital": {
+    "org_id": "brattleboro-memorial-hospital",
+    "name": "Brattleboro Memorial Hospital",
+    "category_id": "ch-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "VT",
+    "city": "Brattleboro",
+    "website": "https://www.bmhvt.org",
+    "bed_count": 61,
+    "notes": "Independent nonprofit community hospital serving southeastern Vermont; founded 1904; serves ~55,000 people across 22 towns in VT, NH, and MA."
+  },
+  "valley-hospital": {
+    "org_id": "valley-hospital",
+    "name": "The Valley Hospital",
+    "category_id": "ch-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NJ",
+    "city": "Paramus",
+    "website": "https://www.valleyhealth.com",
+    "bed_count": 370,
+    "notes": "Independent nonprofit community hospital operated by Valley Health System; moved to new $868M facility in Paramus in 2024; named among America's 100 Best Hospitals by Healthgrades."
+  },
+  "sturdy-memorial-hospital": {
+    "org_id": "sturdy-memorial-hospital",
+    "name": "Sturdy Memorial Hospital",
+    "category_id": "ch-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "MA",
+    "city": "Attleboro",
+    "website": "https://www.sturdyhealth.org",
+    "bed_count": 142,
+    "notes": "Independent nonprofit community hospital in southeastern Massachusetts; rebranded as Sturdy Health; operates 26 primary and specialty care offices; founded 1913."
+  },
+  "labette-health": {
+    "org_id": "labette-health",
+    "name": "Labette Health",
+    "category_id": "ch-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "KS",
+    "city": "Parsons",
+    "website": "https://www.labettehealth.com",
+    "bed_count": 99,
+    "notes": "99-bed acute care hospital serving six-county area in southeast Kansas; named Top 100 Hospital"
+  },
+  "columbus-community-hospital": {
+    "org_id": "columbus-community-hospital",
+    "name": "Columbus Community Hospital",
+    "category_id": "ch-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "NE",
+    "city": "Columbus",
+    "website": "https://www.columbushosp.org",
+    "bed_count": 47,
+    "notes": "Community-owned 47-bed acute care hospital; locally governed board of directors; primary provider for Platte County"
+  },
+  "fisher-titus-medical-center": {
+    "org_id": "fisher-titus-medical-center",
+    "name": "Fisher-Titus Medical Center",
+    "category_id": "ch-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Norwalk",
+    "website": "https://www.fishertitus.org",
+    "bed_count": 99,
+    "notes": "Independent nonprofit community hospital; also operates skilled nursing and assisted living facilities"
+  },
+  "broward-health": {
+    "org_id": "broward-health",
+    "name": "Broward Health",
+    "category_id": "ch-regional-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "Fort Lauderdale",
+    "website": "https://www.browardhealth.org",
+    "bed_count": 1579,
+    "notes": "North Broward Hospital District; 4 hospitals (Medical Center, North, Imperial Point, Coral Springs). Tax-supported public hospital district governed by board appointed by the Governor."
+  },
+  "west-tennessee-healthcare": {
+    "org_id": "west-tennessee-healthcare",
+    "name": "West Tennessee Healthcare",
+    "category_id": "ch-regional-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Jackson",
+    "website": "https://www.wth.org",
+    "bed_count": 642,
+    "notes": "Jackson-Madison County General Hospital District; 8 hospitals across West Tennessee. Created by 1949 private act of TN legislature. Self-sustaining public hospital district."
+  },
+  "memorial-healthcare-system": {
+    "org_id": "memorial-healthcare-system",
+    "name": "Memorial Healthcare System",
+    "category_id": "ch-regional-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "Hollywood",
+    "website": "https://www.mhs.net",
+    "bed_count": 850,
+    "notes": "South Broward Hospital District; 6 hospitals including Memorial Regional, Memorial West, Memorial Miramar, and Memorial Pembroke. Statutory special tax district."
+  },
+  "neshoba-general-hospital": {
+    "org_id": "neshoba-general-hospital",
+    "name": "Neshoba General Hospital",
+    "category_id": "ch-independent-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "MS",
+    "city": "Philadelphia",
+    "website": "https://www.neshobageneral.com",
+    "bed_count": 48,
+    "notes": "County-owned (Neshoba County Board of Supervisors), Top 100 Rural & Community Hospital by Chartis"
+  },
+  "colquitt-regional-medical-center": {
+    "org_id": "colquitt-regional-medical-center",
+    "name": "Colquitt Regional Medical Center",
+    "category_id": "ch-independent-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Moultrie",
+    "website": "https://colquittregional.com",
+    "bed_count": 155,
+    "notes": "Operated by Colquitt County Hospital Authority, community-based teaching hospital in southwest Georgia"
+  },
+  "troy-regional-medical-center": {
+    "org_id": "troy-regional-medical-center",
+    "name": "Troy Regional Medical Center",
+    "category_id": "ch-independent-government-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Troy",
+    "website": "https://troymedicalcenter.com",
+    "bed_count": 97,
+    "notes": "City-owned municipal hospital, Joint Commission accredited, Top 100 Rural & Community Hospital 2025"
+  },
+  "lexington-medical-center": {
+    "org_id": "lexington-medical-center",
+    "name": "Lexington Medical Center",
+    "category_id": "ch-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "West Columbia",
+    "website": "https://www.lexhealth.com",
+    "bed_count": 607,
+    "notes": "Locally governed by Lexington County Health Service District; single hospital with outpatient network; largest hospital in the SC Midlands"
+  },
+  "lakeland-regional-health": {
+    "org_id": "lakeland-regional-health",
+    "name": "Lakeland Regional Health Medical Center",
+    "category_id": "ch-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "Lakeland",
+    "website": "https://www.mylrh.org",
+    "bed_count": 892,
+    "notes": "Founded 1916; single-site community hospital; one of the busiest emergency departments in the US"
+  },
+  "kings-daughters-medical-center-brookhaven": {
+    "org_id": "kings-daughters-medical-center-brookhaven",
+    "name": "King's Daughters Medical Center",
+    "category_id": "ch-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "MS",
+    "city": "Brookhaven",
+    "website": "https://www.kdmc.org",
+    "bed_count": 122,
+    "notes": "Standalone nonprofit acute care hospital serving southwest Mississippi since 1922"
+  },
+  "mass-general-hospital": {
+    "org_id": "mass-general-hospital",
+    "name": "Massachusetts General Hospital",
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "MA",
+    "city": "Boston",
+    "website": "https://www.massgeneral.org",
+    "bed_count": 997,
+    "notes": "Primary teaching hospital of Harvard Medical School; part of Mass General Brigham system"
+  },
+  "yale-new-haven-hospital": {
+    "org_id": "yale-new-haven-hospital",
+    "name": "Yale New Haven Hospital",
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "CT",
+    "city": "New Haven",
+    "website": "https://www.ynhh.org",
+    "bed_count": 1541,
+    "notes": "Primary teaching hospital of Yale School of Medicine; part of Yale New Haven Health System"
+  },
+  "hospital-of-upenn": {
+    "org_id": "hospital-of-upenn",
+    "name": "Hospital of the University of Pennsylvania",
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "PA",
+    "city": "Philadelphia",
+    "website": "https://www.pennmedicine.org",
+    "bed_count": 800,
+    "notes": "Teaching hospital of Perelman School of Medicine; part of Penn Medicine system"
+  },
+  "newyork-presbyterian-hospital": {
+    "org_id": "newyork-presbyterian-hospital",
+    "name": "NewYork-Presbyterian Hospital",
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "New York",
+    "website": "https://www.nyp.org",
+    "bed_count": 2600,
+    "notes": "Affiliated with Weill Cornell Medicine and Columbia University; largest nonprofit hospital in the U.S."
+  },
+  "upmc-presbyterian": {
+    "org_id": "upmc-presbyterian",
+    "name": "UPMC Presbyterian",
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "PA",
+    "city": "Pittsburgh",
+    "website": "https://www.upmc.com",
+    "bed_count": 900,
+    "notes": "Flagship hospital of UPMC system; teaching hospital of University of Pittsburgh School of Medicine"
+  },
+  "rhode-island-hospital": {
+    "org_id": "rhode-island-hospital",
+    "name": "Rhode Island Hospital",
+    "category_id": "teach-major-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "RI",
+    "city": "Providence",
+    "website": "https://www.brownhealth.org",
+    "bed_count": 719,
+    "notes": "Principal teaching hospital of Brown University Warren Alpert Medical School; part of Brown University Health (formerly Lifespan)"
+  },
+  "duke-university-hospital": {
+    "org_id": "duke-university-hospital",
+    "name": "Duke University Hospital",
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "NC",
+    "city": "Durham",
+    "website": "https://www.dukehealth.org",
+    "bed_count": 1062,
+    "notes": "Flagship of Duke Health system; affiliated with Duke University School of Medicine"
+  },
+  "vanderbilt-university-medical-center": {
+    "org_id": "vanderbilt-university-medical-center",
+    "name": "Vanderbilt University Medical Center",
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Nashville",
+    "website": "https://www.vanderbilthealth.com",
+    "bed_count": 1051,
+    "notes": "Largest hospital in Tennessee; affiliated with Vanderbilt University School of Medicine"
+  },
+  "uab-hospital": {
+    "org_id": "uab-hospital",
+    "name": "UAB Hospital",
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Birmingham",
+    "website": "https://www.uabmedicine.org",
+    "bed_count": 1207,
+    "notes": "Largest hospital in Alabama; affiliated with UAB School of Medicine; Level I trauma center"
+  },
+  "emory-university-hospital": {
+    "org_id": "emory-university-hospital",
+    "name": "Emory University Hospital",
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Atlanta",
+    "website": "https://www.emoryhealthcare.org",
+    "bed_count": 751,
+    "notes": "Flagship of Emory Healthcare system; affiliated with Emory University School of Medicine"
+  },
+  "uf-health-shands": {
+    "org_id": "uf-health-shands",
+    "name": "UF Health Shands Hospital",
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "Gainesville",
+    "website": "https://ufhealth.org",
+    "bed_count": 1030,
+    "notes": "Primary teaching hospital for University of Florida College of Medicine; Level I trauma center"
+  },
+  "musc-health-medical-center": {
+    "org_id": "musc-health-medical-center",
+    "name": "MUSC Health University Medical Center",
+    "category_id": "teach-major-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "Charleston",
+    "website": "https://muschealth.org",
+    "bed_count": 865,
+    "notes": "South Carolina's only comprehensive academic medical center; affiliated with Medical University of South Carolina"
+  },
+  "natividad-medical-center": {
+    "org_id": "natividad-medical-center",
+    "name": "Natividad Medical Center",
+    "category_id": "ch-independent-government-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Salinas",
+    "website": "https://www.natividad.com",
+    "bed_count": 172,
+    "notes": "County-owned safety-net hospital operated by Monterey County; Level II Trauma Center and UCSF teaching affiliate."
+  },
+  "umc-southern-nevada": {
+    "org_id": "umc-southern-nevada",
+    "name": "University Medical Center of Southern Nevada",
+    "category_id": "ch-independent-government-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "state": "NV",
+    "city": "Las Vegas",
+    "website": "https://www.umcsn.com",
+    "bed_count": 564,
+    "notes": "Clark County-owned public hospital; Nevada's only Level I Trauma Center and only verified burn center."
+  },
+  "valleywise-health": {
+    "org_id": "valleywise-health",
+    "name": "Valleywise Health Medical Center",
+    "category_id": "ch-independent-government-west",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "state": "AZ",
+    "city": "Phoenix",
+    "website": "https://valleywisehealth.org",
+    "bed_count": 233,
+    "notes": "Maricopa County special healthcare district; public teaching hospital with Level I Trauma Center and Arizona Burn Center."
+  },
+  "ucsf-medical-center": {
+    "org_id": "ucsf-medical-center",
+    "name": "UCSF Medical Center",
+    "category_id": "teach-major-nonprofit-west",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "San Francisco",
+    "website": "https://www.ucsfhealth.org",
+    "bed_count": 796,
+    "notes": "Primary teaching hospital of UCSF School of Medicine; part of the UC Health system spanning multiple campuses (Parnassus, Mission Bay, Mount Zion)"
+  },
+  "uchealth-university-of-colorado-hospital": {
+    "org_id": "uchealth-university-of-colorado-hospital",
+    "name": "UCHealth University of Colorado Hospital",
+    "category_id": "teach-major-nonprofit-west",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CO",
+    "city": "Aurora",
+    "website": "https://www.uchealth.org",
+    "bed_count": 678,
+    "notes": "Principal teaching hospital of the University of Colorado School of Medicine on the Anschutz Medical Campus; part of the UCHealth nonprofit system"
+  },
+  "uw-medical-center": {
+    "org_id": "uw-medical-center",
+    "name": "UW Medical Center",
+    "category_id": "teach-major-nonprofit-west",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "WA",
+    "city": "Seattle",
+    "website": "https://www.uwmedicine.org",
+    "bed_count": 529,
+    "notes": "Flagship academic medical center of UW Medicine and the University of Washington School of Medicine; Montlake campus bed count"
+  },
+  "banner-university-medical-center-phoenix": {
+    "org_id": "banner-university-medical-center-phoenix",
+    "name": "Banner - University Medical Center Phoenix",
+    "category_id": "teach-major-nonprofit-west",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "AZ",
+    "city": "Phoenix",
+    "website": "https://www.bannerhealth.com",
+    "bed_count": 746,
+    "notes": "Largest hospital in Arizona; affiliated with University of Arizona College of Medicine - Phoenix; part of Banner Health, a 33-hospital nonprofit system"
+  },
+  "michigan-medicine": {
+    "org_id": "michigan-medicine",
+    "name": "Michigan Medicine - University of Michigan Health",
+    "category_id": "teach-major-government-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "state": "MI",
+    "city": "Ann Arbor",
+    "website": "https://www.uofmhealth.org",
+    "bed_count": 1043,
+    "notes": "Public university academic medical center operated by University of Michigan; includes University Hospital, C.S. Mott Children's Hospital"
+  },
+  "barnes-jewish-hospital": {
+    "org_id": "barnes-jewish-hospital",
+    "name": "Barnes-Jewish Hospital",
+    "category_id": "teach-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MO",
+    "city": "St. Louis",
+    "website": "https://www.barnesjewish.org",
+    "bed_count": 1278,
+    "notes": "Largest hospital in Missouri; part of BJC HealthCare; affiliated with Washington University School of Medicine"
+  },
+  "northwestern-memorial-hospital": {
+    "org_id": "northwestern-memorial-hospital",
+    "name": "Northwestern Memorial Hospital",
+    "category_id": "teach-major-nonprofit-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IL",
+    "city": "Chicago",
+    "website": "https://www.nm.org",
+    "bed_count": 943,
+    "notes": "Flagship of Northwestern Medicine; affiliated with Northwestern University Feinberg School of Medicine"
+  },
+  "osu-wexner-medical-center": {
+    "org_id": "osu-wexner-medical-center",
+    "name": "The Ohio State University Wexner Medical Center",
+    "category_id": "teach-major-government-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Columbus",
+    "website": "https://wexnermedical.osu.edu",
+    "bed_count": 1439,
+    "notes": "State-operated academic medical center with seven hospitals; affiliated with Ohio State College of Medicine"
+  },
+  "university-of-iowa-hospitals": {
+    "org_id": "university-of-iowa-hospitals",
+    "name": "University of Iowa Hospitals & Clinics",
+    "category_id": "teach-major-government-midwest",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "state": "IA",
+    "city": "Iowa City",
+    "website": "https://www.uihealthcare.org",
+    "bed_count": 860,
+    "notes": "Iowa's only comprehensive academic medical center, operated by State Board of Regents; affiliated with Carver College of Medicine"
+  },
+  "springhill-medical-center": {
+    "org_id": "springhill-medical-center",
+    "name": "Springhill Medical Center",
+    "category_id": "ch-independent-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Mobile",
+    "website": "https://springhillmedicalcenter.com",
+    "bed_count": 270,
+    "notes": "Privately owned, truly independent for-profit hospital; only tax-paying hospital in Mobile area. Operating since 1975."
+  },
+  "crenshaw-community-hospital": {
+    "org_id": "crenshaw-community-hospital",
+    "name": "Crenshaw Community Hospital",
+    "category_id": "ch-independent-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Luverne",
+    "website": "https://crenshawcommunityhospital.com",
+    "bed_count": 25,
+    "notes": "Small proprietary community hospital in rural Crenshaw County. Acquired by Frey Medical Management (local operator) in Jan 2026."
+  },
+  "lake-martin-community-hospital": {
+    "org_id": "lake-martin-community-hospital",
+    "name": "Lake Martin Community Hospital",
+    "category_id": "ch-independent-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Dadeville",
+    "website": "https://ivycreekhealth.com/locations/lake-martin-community-hospital",
+    "bed_count": 46,
+    "notes": "Proprietary acute care hospital managed by Ivy Creek Healthcare, a locally owned 2-hospital operator in rural central Alabama."
+  },
+  "musc-health": {
+    "org_id": "musc-health",
+    "name": "MUSC Health University Medical Center",
+    "category_id": "teach-major-government-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "Charleston",
+    "website": "https://muschealth.org",
+    "bed_count": 865,
+    "notes": "Flagship hospital of the Medical University of South Carolina, a state government component unit; SC's only comprehensive academic health system"
+  },
+  "ummc": {
+    "org_id": "ummc",
+    "name": "University of Mississippi Medical Center",
+    "category_id": "teach-major-government-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "MS",
+    "city": "Jackson",
+    "website": "https://www.umc.edu",
+    "bed_count": 722,
+    "notes": "Mississippi's only academic medical center and Level I trauma center; state-owned teaching hospital affiliated with the University of Mississippi"
+  },
+  "utmb-health": {
+    "org_id": "utmb-health",
+    "name": "University of Texas Medical Branch",
+    "category_id": "teach-major-government-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "major_system",
+      "ownership": "government",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Galveston",
+    "website": "https://www.utmb.edu",
+    "bed_count": 600,
+    "notes": "State government-owned academic health science center; oldest medical school in Texas; part of the University of Texas System; Level I trauma center"
+  },
+  "lankenau-medical-center": {
+    "org_id": "lankenau-medical-center",
+    "name": "Lankenau Medical Center",
+    "category_id": "teach-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "PA",
+    "city": "Wynnewood",
+    "website": "https://www.mainlinehealth.org/locations/lankenau-medical-center",
+    "bed_count": 370,
+    "notes": "Part of Main Line Health (4 hospitals). Teaching hospital with GME programs via Annenberg Center for Medical Education."
+  },
+  "wellspan-york-hospital": {
+    "org_id": "wellspan-york-hospital",
+    "name": "WellSpan York Hospital",
+    "category_id": "teach-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "PA",
+    "city": "York",
+    "website": "https://www.wellspan.org",
+    "bed_count": 596,
+    "notes": "Flagship teaching hospital of WellSpan Health (9 hospitals). Level I trauma center with multiple residency and fellowship programs."
+  },
+  "hartford-hospital": {
+    "org_id": "hartford-hospital",
+    "name": "Hartford Hospital",
+    "category_id": "teach-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "CT",
+    "city": "Hartford",
+    "website": "https://hartfordhospital.org",
+    "bed_count": 867,
+    "notes": "Part of Hartford HealthCare (7 hospitals). Major teaching affiliate of UConn Medical School with Level I trauma center."
+  },
+  "boone-county-health-center": {
+    "org_id": "boone-county-health-center",
+    "name": "Boone County Health Center",
+    "category_id": "cah-independent-government-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "state": "NE",
+    "city": "Albion",
+    "website": "https://boonecohealth.org",
+    "bed_count": 25,
+    "notes": "County-owned CAH serving since 1907; NRHA Top 20 CAH recognition"
+  },
+  "myrtue-medical-center": {
+    "org_id": "myrtue-medical-center",
+    "name": "Myrtue Medical Center",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IA",
+    "city": "Harlan",
+    "website": "https://www.myrtuemedical.org",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH serving Shelby County, Iowa; provides emergency, surgical, and specialty services"
+  },
+  "tioga-medical-center": {
+    "org_id": "tioga-medical-center",
+    "name": "Tioga Medical Center",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "ND",
+    "city": "Tioga",
+    "website": "https://www.tiogahealth.org",
+    "bed_count": 25,
+    "notes": "501(c)(3) nonprofit CAH since 1999; NRHA Top 20 CAH; includes 30-bed skilled nursing facility"
+  },
+  "black-river-memorial-hospital": {
+    "org_id": "black-river-memorial-hospital",
+    "name": "Black River Memorial Hospital",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "WI",
+    "city": "Black River Falls",
+    "website": "https://blackriverhealth.com",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH serving Jackson County, Wisconsin; operates jointly with Krohn Clinic as Black River Health"
+  },
+  "nemaha-valley-community-hospital": {
+    "org_id": "nemaha-valley-community-hospital",
+    "name": "Nemaha Valley Community Hospital",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "KS",
+    "city": "Seneca",
+    "website": "https://nemvch.com",
+    "bed_count": 24,
+    "notes": "Independent nonprofit CAH in northeast Kansas; provides 24/7 emergency care, OB, and specialty clinics"
+  },
+  "phelps-memorial-health-center": {
+    "org_id": "phelps-memorial-health-center",
+    "name": "Phelps Memorial Health Center",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "NE",
+    "city": "Holdrege",
+    "website": "https://www.phelpsmemorial.com",
+    "bed_count": 25,
+    "notes": "Volunteer board-governed nonprofit CAH since 1968; over 330 staff; largest employer in Phelps County"
+  },
+  "riverwood-healthcare-center": {
+    "org_id": "riverwood-healthcare-center",
+    "name": "Riverwood Healthcare Center",
+    "category_id": "cah-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MN",
+    "city": "Aitkin",
+    "website": "https://riverwoodhealthcare.org",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH since 1955; Level III Trauma Center; Top 100 CAH designation"
+  },
+  "erlanger-health-system": {
+    "org_id": "erlanger-health-system",
+    "name": "Erlanger Health System",
+    "category_id": "teach-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Chattanooga",
+    "website": "https://www.erlanger.org",
+    "bed_count": 930,
+    "notes": "6 hospitals; academic affiliate of UT Health Science Center; 10 residency and 15 fellowship programs with 207 trainees; Level I Trauma Center"
+  },
+  "cone-health": {
+    "org_id": "cone-health",
+    "name": "Cone Health",
+    "category_id": "teach-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "NC",
+    "city": "Greensboro",
+    "website": "https://www.conehealth.com",
+    "bed_count": 628,
+    "notes": "5 hospitals; flagship Moses H. Cone Memorial Hospital is a 628-bed teaching hospital; ACGME-accredited residencies in internal medicine, family medicine, and other specialties"
+  },
+  "wakemed-health": {
+    "org_id": "wakemed-health",
+    "name": "WakeMed Health & Hospitals",
+    "category_id": "teach-regional-nonprofit-south",
+    "axes": {
+      "facility_type": "teaching_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "NC",
+    "city": "Raleigh",
+    "website": "https://www.wakemed.org",
+    "bed_count": 973,
+    "notes": "5 hospitals (3 acute care plus rehab and behavioral health); GME programs in partnership with regional medical schools; 501(c)(3) nonprofit"
+  },
+  "millinocket-regional-hospital": {
+    "org_id": "millinocket-regional-hospital",
+    "name": "Millinocket Regional Hospital",
+    "category_id": "cah-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "ME",
+    "city": "Millinocket",
+    "website": "https://www.mrhme.org",
+    "bed_count": 25,
+    "notes": "Independent 501(c)(3) CAH serving the Katahdin region; founded 1952, CAH designation since 2002."
+  },
+  "copley-hospital": {
+    "org_id": "copley-hospital",
+    "name": "Copley Hospital",
+    "category_id": "cah-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "VT",
+    "city": "Morrisville",
+    "website": "https://www.copleyvt.org",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH serving Lamoille County since 1932; recognized as Top 100 CAH."
+  },
+  "cottage-hospital": {
+    "org_id": "cottage-hospital",
+    "name": "Cottage Hospital",
+    "category_id": "cah-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NH",
+    "city": "Woodsville",
+    "website": "https://www.cottagehospital.org",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH serving the Upper Connecticut Valley for over 120 years."
+  },
+  "cuba-memorial-hospital": {
+    "org_id": "cuba-memorial-hospital",
+    "name": "Cuba Memorial Hospital",
+    "category_id": "cah-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Cuba",
+    "website": "https://www.cubamemorialhospital.com",
+    "bed_count": 20,
+    "notes": "Independent nonprofit CAH in rural Allegany County; also operates a 61-bed skilled nursing facility."
+  },
+  "lane-county-hospital": {
+    "org_id": "lane-county-hospital",
+    "name": "Lane County Hospital",
+    "category_id": "cah-independent-government-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "state": "KS",
+    "city": "Dighton",
+    "website": "https://www.lanecountyhospital.com",
+    "bed_count": 25,
+    "notes": "County-owned CAH serving Lane County; NRHA Top 20 CAH for Quality"
+  },
+  "decatur-county-hospital": {
+    "org_id": "decatur-county-hospital",
+    "name": "Decatur County Hospital",
+    "category_id": "cah-independent-government-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "midwest"
+    },
+    "state": "IA",
+    "city": "Leon",
+    "website": "https://www.decaturcountyhospital.org",
+    "bed_count": 25,
+    "notes": "County-owned CAH; sole hospital provider in Decatur County"
+  },
+  "barrett-hospital": {
+    "org_id": "barrett-hospital",
+    "name": "Barrett Hospital & HealthCare",
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "MT",
+    "city": "Dillon",
+    "website": "https://www.barretthospital.org",
+    "bed_count": 18,
+    "notes": "Top 100 CAH awardee, serves Southwest Montana's Beaverhead County"
+  },
+  "rio-grande-hospital": {
+    "org_id": "rio-grande-hospital",
+    "name": "Rio Grande Hospital",
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CO",
+    "city": "Del Norte",
+    "website": "https://riograndehospital.org",
+    "bed_count": 17,
+    "notes": "Operated by Valley Citizens' Foundation for Healthcare; clinics in Creede, South Fork, and Monte Vista"
+  },
+  "columbia-memorial-hospital": {
+    "org_id": "columbia-memorial-hospital",
+    "name": "Columbia Memorial Hospital",
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "OR",
+    "city": "Astoria",
+    "website": "https://www.columbiamemorial.org",
+    "bed_count": 25,
+    "notes": "One of five remaining independent hospitals in Oregon; Planetree Gold certified; partnership with OHSU for specialty services"
+  },
+  "fallon-medical-complex": {
+    "org_id": "fallon-medical-complex",
+    "name": "Fallon Medical Complex",
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "MT",
+    "city": "Baker",
+    "website": "https://www.fallonmedical.org",
+    "bed_count": 25,
+    "notes": "Serves frontier region of seven counties across Montana and North Dakota; largest employer in Fallon County"
+  },
+  "holy-cross-hospital-taos": {
+    "org_id": "holy-cross-hospital-taos",
+    "name": "Holy Cross Hospital",
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "NM",
+    "city": "Taos",
+    "website": "https://holycrossmedicalcenter.org",
+    "bed_count": 25,
+    "notes": "Member of New Mexico Rural Hospital Network; first in NM to offer HeartFlow Plaque Analysis"
+  },
+  "gritman-medical-center": {
+    "org_id": "gritman-medical-center",
+    "name": "Gritman Medical Center",
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "ID",
+    "city": "Moscow",
+    "website": "https://www.gritman.org",
+    "bed_count": 25,
+    "notes": "Largest private employer in Latah County; multiple quality and patient experience awards"
+  },
+  "dhr-health": {
+    "org_id": "dhr-health",
+    "name": "DHR Health",
+    "category_id": "ch-regional-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Edinburg",
+    "website": "https://dhrhealth.com",
+    "bed_count": 500,
+    "notes": "Physician-owned for-profit system operating 5 hospitals in the Rio Grande Valley (main hospital, women's, behavioral, rehabilitation, children's). Serves over 280,000 patients annually."
+  },
+  "hillcrest-claremore": {
+    "org_id": "hillcrest-claremore",
+    "name": "Hillcrest Hospital Claremore",
+    "category_id": "ch-regional-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "OK",
+    "city": "Claremore",
+    "website": "https://hillcrest.com/locations/hillcrest-hospital-claremore",
+    "bed_count": 49,
+    "notes": "Part of Hillcrest HealthCare System, a regional for-profit network of 7 hospitals in northeastern Oklahoma, owned by Ardent Health Services."
+  },
+  "scenic-mountain-medical-center": {
+    "org_id": "scenic-mountain-medical-center",
+    "name": "Scenic Mountain Medical Center",
+    "category_id": "ch-regional-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Big Spring",
+    "website": "https://www.scenicmountainmedical.org",
+    "bed_count": 146,
+    "notes": "Operated by Quorum Health, a for-profit system managing 12 community hospitals across 9 states focused on rural and community markets."
+  },
+  "carolina-pines-rmc": {
+    "org_id": "carolina-pines-rmc",
+    "name": "Carolina Pines Regional Medical Center",
+    "category_id": "ch-regional-forprofit-south",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "Hartsville",
+    "website": "https://www.cprmc.com",
+    "bed_count": 116,
+    "notes": "Part of ScionHealth, a for-profit system operating approximately 15 community hospitals, created in 2021 as a spinoff from LifePoint Health."
+  },
+  "mayers-memorial-hospital": {
+    "org_id": "mayers-memorial-hospital",
+    "name": "Mayers Memorial Hospital District",
+    "category_id": "cah-independent-government-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Fall River Mills",
+    "website": "https://www.mayersmemorial.com",
+    "bed_count": 16,
+    "notes": "Public hospital district in rural northeastern California; 16 acute care beds plus skilled nursing facility"
+  },
+  "lincoln-hospital-davenport": {
+    "org_id": "lincoln-hospital-davenport",
+    "name": "Lincoln Hospital",
+    "category_id": "cah-independent-government-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "state": "WA",
+    "city": "Davenport",
+    "website": "https://www.lincolnhospital.org",
+    "bed_count": 25,
+    "notes": "Operated by Lincoln County Hospital District #3; serves rural eastern Washington"
+  },
+  "cordova-community-medical-center": {
+    "org_id": "cordova-community-medical-center",
+    "name": "Cordova Community Medical Center",
+    "category_id": "cah-independent-government-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "government",
+      "census_region": "west"
+    },
+    "state": "AK",
+    "city": "Cordova",
+    "website": "https://www.cdvcmc.com",
+    "bed_count": 13,
+    "notes": "City-owned hospital serving remote coastal Alaska community; 13 acute care beds"
+  },
+  "community-health-centers-burlington": {
+    "org_id": "community-health-centers-burlington",
+    "name": "Community Health Centers of Burlington",
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "VT",
+    "city": "Burlington",
+    "website": "https://www.chcb.org",
+    "bed_count": null,
+    "notes": "Largest FQHC in the Burlington area; provides primary care, dental, behavioral health, and substance abuse services across multiple sites in Chittenden County."
+  },
+  "fenway-health": {
+    "org_id": "fenway-health",
+    "name": "Fenway Health",
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "MA",
+    "city": "Boston",
+    "website": "https://fenwayhealth.org",
+    "bed_count": null,
+    "notes": "FQHC known for LGBTQIA+ health focus; provides primary care, behavioral health, dental, pharmacy, and HIV/AIDS services. Founded 1971."
+  },
+  "addabbo-family-health-center": {
+    "org_id": "addabbo-family-health-center",
+    "name": "Joseph P. Addabbo Family Health Center",
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Far Rockaway",
+    "website": "https://www.addabbo.org",
+    "bed_count": null,
+    "notes": "Multi-site FQHC serving Queens and Brooklyn communities; provides adult/family medicine, dental, behavioral health, pediatrics, and women's health."
+  },
+  "penobscot-community-health-care": {
+    "org_id": "penobscot-community-health-care",
+    "name": "Penobscot Community Health Care",
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "ME",
+    "city": "Bangor",
+    "website": "https://pchc.com",
+    "bed_count": null,
+    "notes": "Largest FQHC in Maine; provides primary care, dental, behavioral health, and pharmacy services across multiple sites in the Greater Bangor area."
+  },
+  "philadelphia-fight": {
+    "org_id": "philadelphia-fight",
+    "name": "Philadelphia FIGHT Community Health Centers",
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "PA",
+    "city": "Philadelphia",
+    "website": "https://fight.org",
+    "bed_count": null,
+    "notes": "FQHC providing primary care, dental, behavioral health, and HIV/Hepatitis C specialty care; serves diverse urban populations with sliding fee scale."
+  },
+  "community-health-center-ct": {
+    "org_id": "community-health-center-ct",
+    "name": "Community Health Center, Inc.",
+    "category_id": "fqhc-independent-nonprofit-northeast",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "CT",
+    "city": "Middletown",
+    "website": "https://www.chc1.com",
+    "bed_count": null,
+    "notes": "One of the largest FQHCs in Connecticut, serving over 145,000 patients; provides primary care, dental, and behavioral health across multiple locations statewide. Founded 1972."
+  },
+  "centracare-long-prairie": {
+    "org_id": "centracare-long-prairie",
+    "name": "CentraCare – Long Prairie Hospital",
+    "category_id": "cah-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MN",
+    "city": "Long Prairie",
+    "website": "https://www.centracare.com/locations/profile/long-prairie-hospital/",
+    "bed_count": 25,
+    "notes": "CAH and Level IV trauma center within CentraCare, a regional nonprofit system serving central Minnesota with 9 hospitals."
+  },
+  "avera-hand-county-memorial": {
+    "org_id": "avera-hand-county-memorial",
+    "name": "Avera Hand County Memorial Hospital",
+    "category_id": "cah-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "SD",
+    "city": "Miller",
+    "website": "https://www.avera.org/locations/profile/avera-hand-county-memorial-hospital/",
+    "bed_count": 25,
+    "notes": "25-bed CAH affiliated with Avera Health, a regional nonprofit system headquartered in Sioux Falls, SD serving five Upper Midwest states."
+  },
+  "essentia-health-fosston": {
+    "org_id": "essentia-health-fosston",
+    "name": "Essentia Health-Fosston",
+    "category_id": "cah-regional-nonprofit-midwest",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MN",
+    "city": "Fosston",
+    "website": "https://www.essentiahealth.org/find-facility/essentia-health-fosston",
+    "bed_count": 25,
+    "notes": "25-bed CAH within Essentia Health, a regional nonprofit integrated health system based in Duluth, MN serving communities across MN, WI, and ND."
+  },
+  "el-centro-de-corazon": {
+    "org_id": "el-centro-de-corazon",
+    "name": "El Centro de Corazón",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Houston",
+    "website": "https://www.elcentrodecorazon.org/",
+    "bed_count": null,
+    "notes": "Founded 1994, serves Houston's East End with primary care, dental, behavioral health; English/Spanish services"
+  },
+  "hopehealth": {
+    "org_id": "hopehealth",
+    "name": "HopeHealth",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "Florence",
+    "website": "https://www.hope-health.org/",
+    "bed_count": null,
+    "notes": "Founded 1991, FQHC since 2007; serves Florence and surrounding counties with integrated medical, dental, and behavioral health"
+  },
+  "aaron-e-henry-chc": {
+    "org_id": "aaron-e-henry-chc",
+    "name": "Aaron E. Henry Community Health Services Center",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "MS",
+    "city": "Clarksdale",
+    "website": "https://www.aehchc.org/",
+    "bed_count": null,
+    "notes": "Founded 1979, serves Mississippi Delta across 12 sites in 6 rural counties; over 90% of patients below 200% FPL"
+  },
+  "franklin-primary-health-center": {
+    "org_id": "franklin-primary-health-center",
+    "name": "Franklin Primary Health Center",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Mobile",
+    "website": "https://franklinprimary.org/",
+    "bed_count": null,
+    "notes": "Founded 1975, Patient-Centered Medical Home serving Mobile community with primary care, dental, and behavioral health"
+  },
+  "crescentcare": {
+    "org_id": "crescentcare",
+    "name": "CrescentCare",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "LA",
+    "city": "New Orleans",
+    "website": "https://www.crescentcare.org/",
+    "bed_count": null,
+    "notes": "Formerly NO/AIDS Task Force; provides whole-person care with focus on LGBTQ+ community, HIV services, and underserved populations"
+  },
+  "east-georgia-healthcare-center": {
+    "org_id": "east-georgia-healthcare-center",
+    "name": "East Georgia Healthcare Center",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Swainsboro",
+    "website": "https://eghc.org/",
+    "bed_count": null,
+    "notes": "Serves 13 counties across rural Southeast Georgia with primary care, dental, pharmacy, optometry, and behavioral health"
+  },
+  "cherokee-health-systems": {
+    "org_id": "cherokee-health-systems",
+    "name": "Cherokee Health Systems",
+    "category_id": "fqhc-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "TN",
+    "city": "Knoxville",
+    "website": "https://www.rvh.org/",
+    "bed_count": null,
+    "notes": "Founded 1960, rebranded to River Valley Health in 2025; nationally recognized integrated primary care and behavioral health model serving East Tennessee"
+  },
+  "abbeville-area-medical-center": {
+    "org_id": "abbeville-area-medical-center",
+    "name": "Abbeville Area Medical Center",
+    "category_id": "cah-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "SC",
+    "city": "Abbeville",
+    "website": "https://www.abbevilleareamc.com/",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH serving rural Abbeville County since 1963; recognized for quality and patient satisfaction."
+  },
+  "bath-community-hospital": {
+    "org_id": "bath-community-hospital",
+    "name": "Bath Community Hospital",
+    "category_id": "cah-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "VA",
+    "city": "Hot Springs",
+    "website": "https://bathhospital.org/",
+    "bed_count": 25,
+    "notes": "Independent unaffiliated nonprofit CAH established 1916; only full-service hospital within 25-mile radius in the Virginia Highlands."
+  },
+  "pocahontas-memorial-hospital": {
+    "org_id": "pocahontas-memorial-hospital",
+    "name": "Pocahontas Memorial Hospital",
+    "category_id": "cah-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "WV",
+    "city": "Buckeye",
+    "website": "https://www.pmhwv.org/",
+    "bed_count": 25,
+    "notes": "Independent nonprofit CAH founded 1926; serves Pocahontas County with 24/7 ED and Rural Health Clinic."
+  },
+  "wayne-county-hospital": {
+    "org_id": "wayne-county-hospital",
+    "name": "Wayne County Hospital",
+    "category_id": "cah-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "KY",
+    "city": "Monticello",
+    "website": "https://waynehospital.org/",
+    "bed_count": 25,
+    "notes": "Independent voluntary nonprofit CAH serving rural Wayne County; provides emergency, inpatient, and outpatient services."
+  },
+  "minnie-hamilton-health-system": {
+    "org_id": "minnie-hamilton-health-system",
+    "name": "Minnie Hamilton Health System",
+    "category_id": "cah-independent-nonprofit-south",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "south"
+    },
+    "state": "WV",
+    "city": "Grantsville",
+    "website": "https://www.mhhs.healthcare/",
+    "bed_count": 25,
+    "notes": "Independent 501(c)(3) nonprofit CAH and FQHC; Top 20 CAH award winner 2023; serves central WV since 1983."
+  },
+  "erie-family-health-centers": {
+    "org_id": "erie-family-health-centers",
+    "name": "Erie Family Health Centers",
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "IL",
+    "city": "Chicago",
+    "website": "https://www.eriefamilyhealth.org",
+    "bed_count": null,
+    "notes": "Large urban FQHC serving 86,000+ patients across 13 locations in Chicagoland; founded 1957"
+  },
+  "neighborhood-health-association": {
+    "org_id": "neighborhood-health-association",
+    "name": "Neighborhood Health Association",
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "OH",
+    "city": "Toledo",
+    "website": "https://nhainc.org",
+    "bed_count": null,
+    "notes": "Multi-site FQHC in Toledo; operates clinics including homeless health services since 1984"
+  },
+  "heartland-community-health-center": {
+    "org_id": "heartland-community-health-center",
+    "name": "Heartland Community Health Center",
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "KS",
+    "city": "Lawrence",
+    "website": "https://heartlandhealth.org",
+    "bed_count": null,
+    "notes": "Community FQHC providing primary care, dental, behavioral health, and pharmacy services in Lawrence area"
+  },
+  "community-health-center-central-missouri": {
+    "org_id": "community-health-center-central-missouri",
+    "name": "Community Health Center of Central Missouri",
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MO",
+    "city": "Jefferson City",
+    "website": "https://chccmo.org",
+    "bed_count": null,
+    "notes": "FQHC serving central Missouri with clinics in Jefferson City, Fulton, California, and Linn; established 2005"
+  },
+  "northlakes-community-clinic": {
+    "org_id": "northlakes-community-clinic",
+    "name": "NorthLakes Community Clinic",
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "WI",
+    "city": "Ashland",
+    "website": "https://nlccwi.org",
+    "bed_count": null,
+    "notes": "Rural FQHC operating ~20 clinics across 13 counties in northern Wisconsin"
+  },
+  "peoples-health-centers": {
+    "org_id": "peoples-health-centers",
+    "name": "Betty Jean Kerr People's Health Centers",
+    "category_id": "fqhc-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MO",
+    "city": "St. Louis",
+    "website": "https://phcenters.org",
+    "bed_count": null,
+    "notes": "Urban FQHC serving St. Louis metro area since 1972; Joint Commission accredited"
+  },
+  "virginia-garcia-memorial-health-center": {
+    "org_id": "virginia-garcia-memorial-health-center",
+    "name": "Virginia Garcia Memorial Health Center",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "OR",
+    "city": "Hillsboro",
+    "website": "https://virginiagarcia.org",
+    "bed_count": null,
+    "notes": "Founded to serve migrant farmworker communities; serves over 50,000 patients annually in Washington County"
+  },
+  "el-rio-health": {
+    "org_id": "el-rio-health",
+    "name": "El Rio Health",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "AZ",
+    "city": "Tucson",
+    "website": "https://elrio.org",
+    "bed_count": null,
+    "notes": "One of the largest FQHCs in the nation; serves roughly 1 in 10 Tucson residents across 14 clinics"
+  },
+  "la-clinica-de-la-raza": {
+    "org_id": "la-clinica-de-la-raza",
+    "name": "La Clínica de La Raza",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CA",
+    "city": "Oakland",
+    "website": "https://laclinica.org",
+    "bed_count": null,
+    "notes": "Serving the Bay Area since 1971; provides primary care, dental, and behavioral health to underserved communities"
+  },
+  "sea-mar-community-health-centers": {
+    "org_id": "sea-mar-community-health-centers",
+    "name": "Sea Mar Community Health Centers",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "WA",
+    "city": "Seattle",
+    "website": "https://www.seamar.org",
+    "bed_count": null,
+    "notes": "Founded 1978 to serve Latino community; now over 90 clinics across western Washington"
+  },
+  "anchorage-neighborhood-health-center": {
+    "org_id": "anchorage-neighborhood-health-center",
+    "name": "Anchorage Neighborhood Health Center",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "AK",
+    "city": "Anchorage",
+    "website": "https://www.anhc.org",
+    "bed_count": null,
+    "notes": "Alaska's largest independent FQHC; provides care in 56 languages; over 51 years of service"
+  },
+  "northwest-colorado-health": {
+    "org_id": "northwest-colorado-health",
+    "name": "Northwest Colorado Health",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CO",
+    "city": "Steamboat Springs",
+    "website": "https://northwestcoloradohealth.org",
+    "bed_count": null,
+    "notes": "Serving frontier and rural communities in northwest Colorado since 1964"
+  },
+  "nevada-health-centers": {
+    "org_id": "nevada-health-centers",
+    "name": "Nevada Health Centers",
+    "category_id": "fqhc-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "fqhc",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "NV",
+    "city": "Carson City",
+    "website": "https://www.nevadahealthcenters.org",
+    "bed_count": null,
+    "notes": "Largest provider of care for uninsured/underinsured in Nevada; 18+ locations statewide since 1977"
+  },
+  "duly-health-and-care": {
+    "org_id": "duly-health-and-care",
+    "name": "Duly Health and Care",
+    "category_id": "practice-independent-forprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "midwest"
+    },
+    "state": "IL",
+    "city": "Downers Grove",
+    "website": "https://www.dulyhealthandcare.com",
+    "bed_count": null,
+    "notes": "Largest independent multi-specialty physician group in the Midwest; 1,000+ providers across 150+ locations in IL and IN; formerly DuPage Medical Group"
+  },
+  "the-iowa-clinic": {
+    "org_id": "the-iowa-clinic",
+    "name": "The Iowa Clinic",
+    "category_id": "practice-independent-forprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "midwest"
+    },
+    "state": "IA",
+    "city": "West Des Moines",
+    "website": "https://www.iowaclinic.com",
+    "bed_count": null,
+    "notes": "Largest physician-owned multi-specialty group in Central Iowa; 250+ providers across 40+ specialties and 15 locations"
+  },
+  "esse-health": {
+    "org_id": "esse-health",
+    "name": "Esse Health",
+    "category_id": "practice-independent-forprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "midwest"
+    },
+    "state": "MO",
+    "city": "St. Louis",
+    "website": "https://www.essehealth.com",
+    "bed_count": null,
+    "notes": "Independent physician-owned multi-specialty group; 100+ physicians across 45+ offices in the St. Louis metro area"
+  },
+  "mankato-clinic": {
+    "org_id": "mankato-clinic",
+    "name": "Mankato Clinic",
+    "category_id": "practice-independent-forprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "midwest"
+    },
+    "state": "MN",
+    "city": "Mankato",
+    "website": "https://www.mankatoclinic.com",
+    "bed_count": null,
+    "notes": "Independent physician-owned multi-specialty practice since 1916; 180+ providers across 13 locations in southern Minnesota"
+  },
+  "advocare": {
+    "org_id": "advocare",
+    "name": "Advocare, LLC",
+    "category_id": "practice-independent-forprofit-northeast",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "northeast"
+    },
+    "state": "NJ",
+    "city": "Marlton",
+    "website": "https://www.advocaredoctors.com",
+    "bed_count": null,
+    "notes": "One of the largest independent multi-specialty physician groups in NJ/PA/DE with 900+ providers across 270+ care centers"
+  },
+  "schweiger-dermatology-group": {
+    "org_id": "schweiger-dermatology-group",
+    "name": "Schweiger Dermatology Group",
+    "category_id": "practice-independent-forprofit-northeast",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "New York",
+    "website": "https://www.schweigerderm.com",
+    "bed_count": null,
+    "notes": "Largest dermatology practice in the Northeast with 160+ offices across NY, NJ, CT, and PA; 600+ providers"
+  },
+  "ent-allergy-associates": {
+    "org_id": "ent-allergy-associates",
+    "name": "ENT & Allergy Associates, LLP",
+    "category_id": "practice-independent-forprofit-northeast",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Tarrytown",
+    "website": "https://www.entandallergy.com",
+    "bed_count": null,
+    "notes": "Largest ENT, allergy, and audiology practice in the US with 450+ clinicians across 80+ offices in NY, NJ, and PA"
+  },
+  "consensus-health": {
+    "org_id": "consensus-health",
+    "name": "Consensus Health",
+    "category_id": "practice-independent-forprofit-northeast",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "northeast"
+    },
+    "state": "NJ",
+    "city": "Marlton",
+    "website": "https://www.consensushealth.com",
+    "bed_count": null,
+    "notes": "Physician-owned independent multi-specialty group with 170+ providers across nearly 60 practices in 18 NJ counties"
+  },
+  "valley-medical-group": {
+    "org_id": "valley-medical-group",
+    "name": "Valley Medical Group",
+    "category_id": "practice-independent-forprofit-northeast",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "northeast"
+    },
+    "state": "MA",
+    "city": "Amherst",
+    "website": "https://www.vmgma.com",
+    "bed_count": null,
+    "notes": "Independent multi-specialty practice in Western MA offering primary care, pediatrics, surgery, behavioral health, and radiology; independent since 2000"
+  },
+  "western-washington-medical-group": {
+    "org_id": "western-washington-medical-group",
+    "name": "Western Washington Medical Group",
+    "category_id": "practice-independent-forprofit-west",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "WA",
+    "city": "Everett",
+    "website": "https://www.wwmedgroup.com",
+    "bed_count": null,
+    "notes": "Provider-owned independent multi-specialty group, 100+ providers in 20+ specialties across Snohomish, Skagit, Island, and Whatcom counties"
+  },
+  "arizona-community-physicians": {
+    "org_id": "arizona-community-physicians",
+    "name": "Arizona Community Physicians",
+    "category_id": "practice-independent-forprofit-west",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "AZ",
+    "city": "Tucson",
+    "website": "https://www.azacp.com",
+    "bed_count": null,
+    "notes": "Largest independent physician-owned multi-specialty group in Tucson, founded 1994, primary and specialty care across Southern Arizona"
+  },
+  "boulder-medical-center": {
+    "org_id": "boulder-medical-center",
+    "name": "Boulder Medical Center",
+    "category_id": "practice-independent-forprofit-west",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "CO",
+    "city": "Boulder",
+    "website": "https://www.bouldermedicalcenter.com",
+    "bed_count": null,
+    "notes": "Independent physician-owned for-profit multi-specialty group since 1949, 80+ providers across five locations in Boulder County"
+  },
+  "proliance-surgeons": {
+    "org_id": "proliance-surgeons",
+    "name": "Proliance Surgeons",
+    "category_id": "practice-independent-forprofit-west",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "WA",
+    "city": "Seattle",
+    "website": "https://proliancesurgeons.com",
+    "bed_count": null,
+    "notes": "Large independent physician-owned for-profit surgical specialty group, 250+ physicians, 100+ care centers across Washington state"
+  },
+  "ironwood-cancer-research-centers": {
+    "org_id": "ironwood-cancer-research-centers",
+    "name": "Ironwood Cancer & Research Centers",
+    "category_id": "practice-independent-forprofit-west",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "west"
+    },
+    "state": "AZ",
+    "city": "Chandler",
+    "website": "https://www.ironwoodcrc.com",
+    "bed_count": null,
+    "notes": "Independent physician-owned for-profit oncology practice, 100+ providers across 14+ locations in metropolitan Phoenix"
+  },
+  "us-dermatology-partners": {
+    "org_id": "us-dermatology-partners",
+    "name": "U.S. Dermatology Partners",
+    "category_id": "practice-major-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Dallas",
+    "website": "https://www.usdermatologypartners.com",
+    "bed_count": null,
+    "notes": "PE-backed (Abry Partners) dermatology network; HQ in Dallas with 50+ TX locations across 8 states"
+  },
+  "gi-alliance": {
+    "org_id": "gi-alliance",
+    "name": "GI Alliance",
+    "category_id": "practice-major-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Southlake",
+    "website": "https://gialliance.com",
+    "bed_count": null,
+    "notes": "PE-backed (Apollo Global) gastroenterology network; one of the largest independent GI groups in the U.S."
+  },
+  "eyesouth-partners": {
+    "org_id": "eyesouth-partners",
+    "name": "EyeSouth Partners",
+    "category_id": "practice-major-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Atlanta",
+    "website": "https://www.eyesouthpartners.com",
+    "bed_count": null,
+    "notes": "PE-backed (Olympus Partners) ophthalmology network; 60+ practices, 400+ doctors, 276+ locations across the South"
+  },
+  "texas-oncology": {
+    "org_id": "texas-oncology",
+    "name": "Texas Oncology",
+    "category_id": "practice-major-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "major_system",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "TX",
+    "city": "Dallas",
+    "website": "https://www.texasoncology.com",
+    "bed_count": null,
+    "notes": "Part of US Oncology Network (McKesson); largest community oncology practice in TX"
+  },
+  "orthocarolina": {
+    "org_id": "orthocarolina",
+    "name": "OrthoCarolina",
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "NC",
+    "city": "Charlotte",
+    "website": "https://www.orthocarolina.com",
+    "bed_count": null,
+    "notes": "Physician-owned independent orthopedic group, 133 physicians, 1600 employees, 30+ clinics across the Carolinas, over 1M patient visits/year"
+  },
+  "gastro-florida": {
+    "org_id": "gastro-florida",
+    "name": "Gastro Florida",
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "FL",
+    "city": "Clearwater",
+    "website": "https://gastrofl.com",
+    "bed_count": null,
+    "notes": "Physician-owned independent gastroenterology practice, 50+ providers, 25+ locations across Tampa Bay, founded 2010"
+  },
+  "alabama-medical-group": {
+    "org_id": "alabama-medical-group",
+    "name": "Alabama Medical Group",
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "AL",
+    "city": "Mobile",
+    "website": "https://www.alabamamedicalgroup.com",
+    "bed_count": null,
+    "notes": "Largest independently owned multi-specialty practice in Mobile, founded 1946, 200+ employees, specialties include family medicine, internal medicine, neurology, rheumatology"
+  },
+  "southeast-medical-group": {
+    "org_id": "southeast-medical-group",
+    "name": "Southeast Medical Group",
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "GA",
+    "city": "Alpharetta",
+    "website": "https://mysemg.com",
+    "bed_count": null,
+    "notes": "Largest independent medical group in the Southeast, physician-owned, 160+ providers, 50+ primary care locations across Georgia, Alabama, and Tennessee"
+  },
+  "baton-rouge-clinic": {
+    "org_id": "baton-rouge-clinic",
+    "name": "The Baton Rouge Clinic",
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "LA",
+    "city": "Baton Rouge",
+    "website": "https://batonrougeclinic.com",
+    "bed_count": null,
+    "notes": "Physician-owned multi-specialty clinic since 1946, 20+ specialties, serves 250,000+ patients in the Baton Rouge area"
+  },
+  "lexington-clinic": {
+    "org_id": "lexington-clinic",
+    "name": "Lexington Clinic",
+    "category_id": "practice-independent-forprofit-south",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "for_profit",
+      "census_region": "south"
+    },
+    "state": "KY",
+    "city": "Lexington",
+    "website": "https://lexingtonclinic.com",
+    "bed_count": null,
+    "notes": "Central Kentucky's largest and oldest private physician-owned multi-specialty group, founded 1920, ~200 providers, 30+ specialties, 25+ locations"
+  },
+  "prevea-health": {
+    "org_id": "prevea-health",
+    "name": "Prevea Health",
+    "category_id": "practice-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "WI",
+    "city": "Green Bay",
+    "website": "https://www.prevea.com",
+    "bed_count": null,
+    "notes": "Physician-owned, 501(c)(3) nonprofit multispecialty group practice with 200+ physicians across 60+ specialties and 50+ locations. Partners with HSHS hospitals but is independently owned and governed."
+  },
+  "ghc-south-central-wisconsin": {
+    "org_id": "ghc-south-central-wisconsin",
+    "name": "Group Health Cooperative of South Central Wisconsin",
+    "category_id": "practice-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "WI",
+    "city": "Madison",
+    "website": "https://ghcscw.com",
+    "bed_count": null,
+    "notes": "Member-owned nonprofit cooperative (501(c)(3)) operating multiple clinics in the Madison area with employed physicians. Staff-model HMO founded in 1972 serving 70,000+ members."
+  },
+  "olmsted-medical-center": {
+    "org_id": "olmsted-medical-center",
+    "name": "Olmsted Medical Center",
+    "category_id": "practice-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MN",
+    "city": "Rochester",
+    "website": "https://www.olmmed.org",
+    "bed_count": 61,
+    "notes": "Independent, physician-led 501(c)(3) nonprofit multispecialty group practice with 290+ clinicians across 35+ specialties and 25+ locations in southeastern Minnesota. Also operates a 61-bed community hospital."
+  }
+}

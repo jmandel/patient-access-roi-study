@@ -1,0 +1,19 @@
+{
+  "name": "roi-form-study-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:data": "bun run build-site-data.ts",
+    "build:site": "bun run build-site.ts",
+    "build": "bun run build:data && bun run build:site",
+    "dev": "bun run build && bunx serve site/dist"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6"
+  }
+}

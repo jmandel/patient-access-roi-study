@@ -1,0 +1,139 @@
+{
+  "org_id": "riverside-community-hospital",
+  "org_name": "Riverside Community Hospital",
+  "category_id": "ch-major-forprofit-west",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 3,
+  "parent_system": "HCA Healthcare",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of PHI (English)",
+      "url": "https://www.hcadam.com/api/public/content/46695a9ba25e4b9aa6376f53cef033ac?v=b53c28b5",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Release of PHI (Spanish)",
+      "url": "https://www.hcadam.com/api/public/content/e109b112b80f42fc8291acbe0b1435fa?v=829b113e",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Swellbox online request wizard",
+      "vendor": "Swellbox/Datavant",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyHealthONE patient portal",
+      "vendor": "MyHealthONE",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to HCA ROI processing center",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to HCA ROI processing center (Nashville, TN)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "http://legalimage.net/images/Forms/Riverside_Community_Hospital-medical_records_authorization.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (older/alternative version with instructions)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.hcadam.com/api/public/content/46695a9ba25e4b9aa6376f53cef033ac?v=b53c28b5",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (current official)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.hcadam.com/api/public/content/e109b112b80f42fc8291acbe0b1435fa?v=829b113e",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (Spanish-language version)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HCA-wide Authorization for Release of PHI form, checks 'At the request of the individual,' fills in their own name as recipient, and submits by fax or mail to HCA's Nashville processing center.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 52,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No dedicated patient access pathway — patients use the same generic authorization form as third-party requestors",
+      "No reference to HIPAA right of access (§ 164.524) or associated patient protections",
+      "Centralized Nashville processing with no local submission address on the current form"
+    ],
+    "bright_spots": [
+      "Spanish-language form with full parity (identical 52 fillable fields and structure)",
+      "USCDI release request option — rare and forward-looking",
+      "52 fillable PDF fields enabling fully digital form completion",
+      "Four delivery format options including encrypted and unencrypted email"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available — forms found within 1-2 clicks from the main Patient Resources page with both English and Spanish versions directly linked."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital — 52 fillable fields allow on-screen completion, but submission requires fax or mail (one gap in the digital workflow)."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page layout with clear section headers and granular record-type options, with minor issues around density and clinical/formal language that may challenge lower-literacy patients."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form but it was not designed for them — they must figure out that they are both the requestor and recipient, with no guidance for self-access and no mention of right-of-access protections."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization, no in-person requirement, fax submission available; minor ambiguities around fee language ('reasonable copy fee' without amounts) and optional SSN request, but nothing that would materially impede a patient."
+    },
+    "overall": {
+      "score": 3.9,
+      "grade": "B",
+      "summary": "Technically competent fillable form with strong multilingual support, but funnels patients through a generic third-party release authorization without differentiating the individual access pathway or informing patients of their rights."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:00:47.622Z"
+}

@@ -1,0 +1,104 @@
+{
+  "org_id": "decatur-county-hospital",
+  "org_name": "Decatur County Hospital",
+  "category_id": "cah-independent-government-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization for Access, Use or Disclosure of PHI (fillable PDF)",
+      "url": "https://www.decaturcountyhospital.org/wp-content/uploads/2026/02/0001-Auth-for-Access-Use-or-Disclosure-of-PHI.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Medical Records Department, 1405 NW Church Street, Leon, IA 50144",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.decaturcountyhospital.org/wp-content/uploads/2026/02/0001-Auth-for-Access-Use-or-Disclosure-of-PHI.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (combined patient access and third-party release)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Single generic HIPAA authorization form covering both patient self-access and third-party release, downloadable as a fillable PDF from the hospital website.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 61,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Social Security Number requested — unnecessary for patient identification and creates identity-theft risk",
+      "Fee amount left blank — patients asked to agree to unknown fees",
+      "Form last reviewed March 2018 — nearly 8 years outdated, predating Cures Act information blocking rules",
+      "No delivery format options — patients cannot specify how to receive records (violates HIPAA § 164.524(c)(2)(i) intent)",
+      "Authorization stated to take precedence over Notice of Privacy Practices — potentially misleading"
+    ],
+    "bright_spots": [
+      "Comprehensive record-type granularity with 13 specific categories plus Other and Review-only options",
+      "Explicit conditioning prohibition included with appropriate exceptions",
+      "Clear revocation instructions with specific mailing address and mention of dedicated revocation form",
+      "Born-digital fillable PDF with 61 interactive AcroForm fields — nearly every blank is electronically completable"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — linked from the Patient Portal page and locatable via a site-scoped search on the third attempt, with no bot blocking or login required."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — fillable PDF with 61 AcroForm fields allows complete electronic form completion, but submission requires mail or fax (no portal or email submission documented), leaving one gap in the digital workflow."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but with notable problems — logically organized single-page form with good record-type granularity, but 61 fields crammed into one page creates visual density, and the second half contains dense regulatory prose (42 CFR Part 2, Iowa Code citations) that would challenge most patients."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the form conflates patient self-access with third-party release, requiring patients to navigate irrelevant recipient fields, with no explicit Right of Access language and no delivery format options."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that go beyond what the law requires — SSN collection is unnecessary and risky, fee amount is left blank forcing agreement to unknown costs, no delivery format options despite HIPAA requirements, and the 'binding/precedence' language is potentially misleading; offset by appropriate conditioning prohibition, revocation instructions, and sensitive-records protections."
+    },
+    "overall": {
+      "score": 3.4,
+      "grade": "C",
+      "summary": "Decatur County Hospital provides a technically sound fillable PDF that is easy to find, but the generic authorization approach, SSN collection, blank fee disclosure, and lack of patient-access differentiation place it at the low end of adequate."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:21:30.579Z"
+}

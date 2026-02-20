@@ -1,0 +1,125 @@
+{
+  "org_id": "mankato-clinic",
+  "org_name": "Mankato Clinic",
+  "category_id": "practice-independent-forprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release and Disclose Patient Information (MC032)",
+      "url": "https://www.mankatoclinic.com/wp-content/uploads/Release-of-Information-Authorization-MC032.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Online Medical Record Request",
+      "url": "https://www.mankatoclinic.com/online-medical-record-request/",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax signed authorization to ROI department",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email to ROI@mankatoclinic.com",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "Drop off or pick up at any ROI office (Main, Wick/CHC, North)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.mankatoclinic.com/wp-content/uploads/Release-of-Information-Authorization-MC032.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.mankatoclinic.com/wp-content/uploads/2021/08/release_of_information_authorization_mc032-3.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (superseded version)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients use a generic HIPAA authorization form designed for all releases, listing themselves as both source and destination; an online request tool is also available as an alternative.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "7-10 business days",
+    "red_flags": [
+      "No fillable fields on a natively digital PDF despite being created in a PDF editor",
+      "Vague fee disclosure with no specific amounts or schedule provided"
+    ],
+    "bright_spots": [
+      "Dedicated full-page instruction sheet with section-by-section guidance",
+      "Multiple ROI contact points across three offices with phone, fax, and email",
+      "Explicitly accepts any HIPAA-compliant authorization form including the Minnesota Standard Consent Form",
+      "Online medical record request tool available as an alternative to the PDF form",
+      "Modernized plain-language labels in the current form revision"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with a single web search surfacing direct PDF links and a dedicated ROI page; minor concern that two form versions are live without deprecation notice."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The PDF form has zero fillable fields requiring print-and-handwrite, but fax and email submission are available; the separate online request tool provides a digital alternative but the downloaded form itself is paper-first."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with clear section headers, plain-language labels, logical flow, and an unusually helpful instruction page; minor issue with the two-party structure being confusing for self-requests."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form for self-access but must figure out the source/destination fields; no mention of HIPAA Right of Access or patient rights, and the form was not designed for patient self-requests."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Proper authorization expiration, treatment conditioning language, and re-disclosure warning; minor ambiguity in fee disclosure ('there may be a charge') without specifying amounts, and no patient rights statement."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "Mankato Clinic makes forms easy to find and offers multiple submission channels including an online tool, but the generic authorization framing, non-fillable PDF, and vague fee disclosure limit the patient experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:31:31.441Z"
+}

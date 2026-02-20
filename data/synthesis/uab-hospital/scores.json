@@ -1,0 +1,126 @@
+{
+  "org_id": "uab-hospital",
+  "org_name": "UAB Hospital",
+  "category_id": "teach-major-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "UAB Medicine / UAB Health System",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Own Medical Records (form-1)",
+      "url": "https://www.uabmedicine.org/wp-content/uploads/sites/3/2023/05/Patient-Request-own-medical-records.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Callahan Eye Hospital Patient Access form (form-2)",
+      "url": "https://www.uabmedicine.org/wp-content/uploads/sites/3/2024/12/Callahan-Hospital-Patient-Medical-Records-Request_12.18.2024.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM Release of Information Office",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to UAB Health Information Management, 1201 11th Ave. South, Birmingham, AL 35205",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.uabmedicine.org/wp-content/uploads/sites/3/2023/05/Patient-Request-own-medical-records.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Patient access request form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.uabmedicine.org/wp-content/uploads/sites/3/2024/12/Callahan-Hospital-Patient-Medical-Records-Request_12.18.2024.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "Patient access / authorization form (Callahan Eye Hospital)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.uabmedicine.org/wp-content/uploads/sites/3/2023/05/Authorization.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Third-party authorization for release of information"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Dedicated fillable PDF form for patient self-access, downloaded from a medical records page that clearly separates patient access from third-party release, submitted by fax or mail.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 25,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Contradictory sensitive records language: page 1 opt-in checkbox conflicts with page 2 blanket authorization inclusion"
+    ],
+    "bright_spots": [
+      "Dedicated patient self-access form with explicit rights-affirming opening statement",
+      "Five-tier graduated record package system giving patients granular control over scope",
+      "Descriptive URL and filename make the form immediately identifiable in search results",
+      "Clear website separation of patient access vs. third-party release pathways",
+      "Multiple electronic delivery options (email, CD, fax) with encryption notice"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available with minimal effort — web search immediately returned direct PDF links, descriptive URL/filename, and the medical records page clearly routes patients to the correct form."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital with one gap — form-1 has 51 fillable interactive fields for digital completion, but submission requires fax or mail rather than online portal submission."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — clear section headers, logical flow, plain language, and tiered record packages, but contradictory sensitive records language and no fee/turnaround information create minor gaps."
+    },
+    "patient_centeredness": {
+      "score": 5,
+      "rationale": "Level 5: Process designed around patient self-access as a first-class use case — dedicated form with rights-affirming language clearly distinct from third-party release, granular record selection, and multiple delivery options."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization, no in-person requirement, proper personal representative accommodation, but fee disclosure is absent and sensitive records language is contradictory."
+    },
+    "overall": {
+      "score": 4.4,
+      "grade": "B",
+      "summary": "UAB Hospital provides an above-average patient record request experience with a dedicated self-access form, fillable fields, granular record selection, and clear website organization, held back from top marks by absent fee disclosure and fax-only submission."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:13:34.913Z"
+}

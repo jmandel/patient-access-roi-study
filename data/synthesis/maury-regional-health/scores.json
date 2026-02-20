@@ -1,0 +1,125 @@
+{
+  "org_id": "maury-regional-health",
+  "org_name": "Maury Regional Health",
+  "category_id": "ch-regional-nonprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Protected Health Information (Form 131)",
+      "url": "https://res.cloudinary.com/dpmykpsih/image/upload/maury-site-494/media/8debb61ae50b44d79e3afc4994e423fd/131-2017-authorization-to-release-phi-maury-regional-health-1.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.mauryregional.com/patients-and-visitors/medical-records/",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "My Maury Health Patient Portal",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "HIM Department fax",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "HIM Department phone (931.380.4089)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://res.cloudinary.com/dpmykpsih/image/upload/maury-site-494/media/8debb61ae50b44d79e3afc4994e423fd/131-2017-authorization-to-release-phi-maury-regional-health-1.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://res.cloudinary.com/dpmykpsih/image/upload/maury-site-494/media/49f7978a676c40898ce7fe52f3bd001a/131s-2017-authorization-to-release-phi_spanish.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": true
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to a generic Authorization to Release PHI form (Form 131) that serves both patient self-access and third-party release, with 'Myself' listed as the first recipient option and 'Personal Use' as a purpose; an online Swellbox portal and patient portal are also available.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Hold harmless / liability waiver clause — HIPAA does not permit conditioning patient access on signing a liability release",
+      "Spanish form (05/2017) is outdated relative to English form (08/2018) with missing content: no Social Security/Disability purpose option, no Photo ID section"
+    ],
+    "bright_spots": [
+      "Spanish-language form available alongside English — uncommon for community hospitals",
+      "Four delivery format options: paper, CD, USB flash drive, and encrypted email with proactive security disclosure",
+      "Multiple request channels: PDF form, Swellbox online portal, patient portal, fax, and phone",
+      "'Myself' listed first in the recipient field, subtly prioritizing patient self-access"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms are directly linked from a clearly labeled Medical Records page reachable in two clicks from the homepage, and a site-scoped search surfaces the page immediately."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: The PDF has a text layer but zero fillable fields, requiring print-and-handwrite; fax submission and a Swellbox online portal are available as electronic submission options."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Single-page form with logical top-to-bottom flow, clear checkbox structure, and mostly plain language; minor issues include dense sensitive-information disclosure and 12 fonts creating busy typography."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form by selecting 'Myself' and 'Personal Use,' but the form was not designed for patient self-access and includes fields and options irrelevant to individual access requests."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: The hold harmless clause goes beyond what HIPAA permits for patient access, no fees are disclosed, and the sensitive information limitation right is stated without any mechanism to exercise it on the form."
+    },
+    "overall": {
+      "score": 3.3,
+      "grade": "C",
+      "summary": "Maury Regional Health provides findable, multilingual forms with multiple submission channels and delivery formats, but relies on a generic non-fillable authorization form with a problematic liability waiver rather than a dedicated patient access pathway."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:05:13.724Z"
+}

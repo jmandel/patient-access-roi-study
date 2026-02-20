@@ -1,0 +1,132 @@
+{
+  "org_id": "ghc-south-central-wisconsin",
+  "org_name": "Group Health Cooperative of South Central Wisconsin",
+  "category_id": "practice-independent-nonprofit-midwest",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Patient Request for Health Information Form",
+      "url": "https://ghcscw.com/wp-content/uploads/2023/06/Patient_Request_Health_Information_Form.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Release Protected Health Information From GHC-SCW",
+      "url": "https://ghcscw.com/wp-content/uploads/2024/10/Release_Of_Medical_Record_Information_Form.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to ROI Department",
+      "is_primary": false
+    },
+    {
+      "type": "email",
+      "name": "Email submission to ghcroi@ghcscw.com",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to ROI Department",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person drop-off at clinic or ROI office",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://ghcscw.com/wp-content/uploads/2024/10/Release_Of_Medical_Record_Information_Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://ghcscw.com/wp-content/uploads/2023/06/Patient_Request_Health_Information_Form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "patient access request form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Dedicated one-page fillable PDF form ('Patient Request for Health Information Form') specifically designed for patients requesting their own records, separate from the general third-party authorization form.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 49,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": true,
+    "response_time_value": "5 business days",
+    "red_flags": [
+      "Form 2 lacks submission instructions — no mailing address, fax number, or email on the form itself",
+      "Fee disclosure is vague ('there may be charges') with no amounts specified; CIOX Health involvement may introduce fees beyond HIPAA cost-based limits"
+    ],
+    "bright_spots": [
+      "Dedicated patient self-access form separate from third-party authorization — a genuine best practice",
+      "Fully fillable PDF with 49 interactive fields on a single concise page",
+      "Encrypted email delivery as default with opt-in for unencrypted — privacy by design",
+      "Multiple delivery formats including MyChart portal, email, CD, USB, and paper",
+      "Spanish-language version of Form 1 available",
+      "Plain-English question-based section headers make the form approachable",
+      "Explicit HIPAA right of access statement"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Forms were prominently available with minimal effort — first web search returned the direct PDF URL, and the forms page is well-organized with a dedicated ROI section. No barriers encountered."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — Form 2 is fully fillable (49 interactive fields) allowing on-screen completion, but submission requires fax, email, or mail rather than an integrated online portal."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with plain-language question headers and logical flow, but lacks submission instructions on the form itself — a notable gap that prevents a patient from completing the process without consulting other sources."
+    },
+    "patient_centeredness": {
+      "score": 5,
+      "rationale": "Level 5: Process is designed around patient self-access as a first-class use case — a dedicated patient access form clearly distinct from third-party release, with multiple delivery options including MyChart, encrypted email, and explicit HIPAA right-of-access language."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization, no in-person requirement, explicit rights statement, and transparent 5-day timeline; minor ambiguity around fee disclosure ('there may be charges' without specifying amounts) and CIOX involvement, but nothing that would materially impede a patient."
+    },
+    "overall": {
+      "score": 4.4,
+      "grade": "B",
+      "summary": "GHC-SCW demonstrates strong patient-centeredness with a dedicated, fillable patient access form and multiple delivery options, earning a high B; the main gaps are vague fee disclosure and missing submission instructions on the patient form."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:38:54.147Z"
+}

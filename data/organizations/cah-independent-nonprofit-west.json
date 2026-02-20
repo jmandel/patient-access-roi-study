@@ -1,0 +1,98 @@
+[
+  {
+    "org_id": "barrett-hospital",
+    "name": "Barrett Hospital & HealthCare",
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "MT",
+    "city": "Dillon",
+    "website": "https://www.barretthospital.org",
+    "bed_count": 18,
+    "notes": "Top 100 CAH awardee, serves Southwest Montana's Beaverhead County"
+  },
+  {
+    "org_id": "rio-grande-hospital",
+    "name": "Rio Grande Hospital",
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "CO",
+    "city": "Del Norte",
+    "website": "https://riograndehospital.org",
+    "bed_count": 17,
+    "notes": "Operated by Valley Citizens' Foundation for Healthcare; clinics in Creede, South Fork, and Monte Vista"
+  },
+  {
+    "org_id": "columbia-memorial-hospital",
+    "name": "Columbia Memorial Hospital",
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "OR",
+    "city": "Astoria",
+    "website": "https://www.columbiamemorial.org",
+    "bed_count": 25,
+    "notes": "One of five remaining independent hospitals in Oregon; Planetree Gold certified; partnership with OHSU for specialty services"
+  },
+  {
+    "org_id": "fallon-medical-complex",
+    "name": "Fallon Medical Complex",
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "MT",
+    "city": "Baker",
+    "website": "https://www.fallonmedical.org",
+    "bed_count": 25,
+    "notes": "Serves frontier region of seven counties across Montana and North Dakota; largest employer in Fallon County"
+  },
+  {
+    "org_id": "holy-cross-hospital-taos",
+    "name": "Holy Cross Hospital",
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "NM",
+    "city": "Taos",
+    "website": "https://holycrossmedicalcenter.org",
+    "bed_count": 25,
+    "notes": "Member of New Mexico Rural Hospital Network; first in NM to offer HeartFlow Plaque Analysis"
+  },
+  {
+    "org_id": "gritman-medical-center",
+    "name": "Gritman Medical Center",
+    "category_id": "cah-independent-nonprofit-west",
+    "axes": {
+      "facility_type": "critical_access_hospital",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "west"
+    },
+    "state": "ID",
+    "city": "Moscow",
+    "website": "https://www.gritman.org",
+    "bed_count": 25,
+    "notes": "Largest private employer in Latah County; multiple quality and patient experience awards"
+  }
+]

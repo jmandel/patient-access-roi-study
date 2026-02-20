@@ -1,0 +1,136 @@
+{
+  "org_id": "proliance-surgeons",
+  "org_name": "Proliance Surgeons",
+  "category_id": "practice-independent-forprofit-west",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 4,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Proliance Surgeons ROI authorization form (PHWE version)",
+      "url": "https://proliancesurgeons.com/wp-content/uploads/2021/02/PHWE-Record-Release-Form.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "pdf_form",
+      "name": "Proliance Surgeons ROI authorization form (ProOrtho version)",
+      "url": "https://www.proortho.com/wp-content/uploads/authorization-to-disclose.pdf",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "Datavant online records request",
+      "vendor": "Datavant",
+      "url": "https://proliancesurgeons.com/resource/medical-records/",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission (practice-specific numbers)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://npsmri.com/wp-content/uploads/2019/05/Proliance-Release-of-Information.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form (image-only scan)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://proliancesurgeons.com/wp-content/uploads/2021/02/PHWE-Record-Release-Form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://proliancesurgeons.com/wp-content/uploads/2024/12/PACO-PROS-Medical-Records-Release-Authorization-INCOMING-Records.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "Incoming records transfer authorization"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.proortho.com/wp-content/uploads/authorization-to-disclose.pdf",
+      "scope": "department",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic HIPAA authorization form designed for third-party disclosure, fills in their own name as the recipient, and faxes it to the practice.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 14,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Generic third-party authorization form used for patient self-access with no dedicated Right of Access pathway",
+      "Image-only scan version (form-1) hosted on subsidiary site is completely inaccessible to assistive technology",
+      "Subsidiary form (form-3) cites California CMIA instead of Washington State law"
+    ],
+    "bright_spots": [
+      "Concise single-page format covering all essential authorization elements",
+      "Sensitive information categories (HIV, mental health, STDs, substance use) properly separated with individual opt-in per Washington State law",
+      "Patient rights section written in accessible first-person language",
+      "Datavant online portal mentioned as alternative request pathway on medical records page"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation or a simple search — web search immediately surfaced multiple forms, and the main medical records page links directly to the primary form with no bot blocking or creative searching required."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the best available form (form-2/form-4) has a text layer but zero fillable fields, requiring print, handwrite, and fax/mail submission; form-1 is an image-only scan with no text layer at all."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — clean two-section structure (My Authorization / My Rights), plain first-person language, logical flow, and good scope granularity, with only minor issues like dense expiration language and a marketing checkbox that could confuse patients."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic authorization form requires patients to designate themselves as 'recipient' with full address, offers no format/delivery preferences, and makes no reference to HIPAA Right of Access or individual access timelines."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — no notarization, no excessive fees, proper sensitive-information opt-in for Washington State law, clear revocation instructions, though the form conflates § 164.508 authorization with § 164.524 access and subsidiary form-3 cites wrong state law."
+    },
+    "overall": {
+      "score": 3.25,
+      "grade": "C",
+      "summary": "Proliance Surgeons provides easily findable, concise authorization forms with clean content design, but the lack of fillable fields and reliance on a generic third-party authorization form for patient self-access significantly limit the patient experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:33:13.299Z"
+}

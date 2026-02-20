@@ -1,0 +1,133 @@
+{
+  "org_id": "mountainview-hospital-las-vegas",
+  "org_name": "MountainView Hospital",
+  "category_id": "ch-major-forprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "HCA Healthcare",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "HCA Authorization for Release of PHI",
+      "url": "https://www.hcadam.com/api/public/content/46695a9ba25e4b9aa6376f53cef033ac?v=b53c28b5",
+      "is_primary": true
+    },
+    {
+      "type": "online_portal",
+      "name": "Swellbox records request wizard",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/hca-healthcare-wizard.html",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "MyHealthONE patient portal",
+      "vendor": "MyHealthONE",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HCA processing center",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to HCA PO Box 290789, Nashville, TN 37229-0789",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Phone request (844-481-0278)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.hcadam.com/api/public/content/46695a9ba25e4b9aa6376f53cef033ac?v=b53c28b5",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.hcadam.com/api/public/content/e109b112b80f42fc8291acbe0b1435fa?v=829b113e",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": true,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient uses a generic HCA Healthcare system-wide HIPAA authorization form that serves both patient self-access and third-party release, with a radio-button option to indicate 'At the request of the individual.'",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": true,
+    "field_count_estimate": 52,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Requests last 4 digits of SSN (marked optional but unnecessary for records authorization)",
+      "No distinction between Right of Access fee limits/timelines and general third-party authorization practices",
+      "Fax delivery restricted to physician offices/medical facilities only"
+    ],
+    "bright_spots": [
+      "USCDI (United States Core Data for Interoperability) release option — rare and forward-looking",
+      "Four electronic delivery format options (paper, electronic media, encrypted email, unencrypted email) with risk disclosures",
+      "Full Spanish-language translation available alongside English version",
+      "52 fillable fields enabling fully digital form completion",
+      "Alternative digital pathways available (Swellbox portal, MyHealthONE patient portal)"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — form is directly linked from the 'For Patients → Medical Records' page on the Sunrise Health website, though the hospital domain redirects to the system site."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — the form is fully fillable with 52 interactive fields (digital completion without printing), but submission requires fax, mail, or using a separate portal rather than integrated digital submission from the PDF itself."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized with minor clarity issues — three clear sections with logical flow and 16 granular record-type checkboxes, but the single-page density is high and terms like USCDI/NPI are unexplained jargon."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the process but it wasn't designed for them — the generic authorization form accommodates patient self-access via a radio button but is framed around third-party release, with no Right of Access distinction, recipient-focused fields, and fee language that doesn't acknowledge HIPAA access fee limits."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements beyond what the law requires — SSN collection (even optional) is unnecessary, 'reasonable copy fee' language may mislead patients about Right of Access fee limits, and no response time commitment is stated despite HIPAA's 30-day requirement."
+    },
+    "overall": {
+      "score": 3.55,
+      "grade": "B",
+      "summary": "MountainView Hospital offers a technically well-built, fillable authorization form with multilingual support and modern features like USCDI, but its generic third-party release framing and lack of a dedicated patient access pathway limit patient-centeredness."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:00:53.376Z"
+}

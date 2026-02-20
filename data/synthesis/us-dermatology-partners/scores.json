@@ -1,0 +1,108 @@
+{
+  "org_id": "us-dermatology-partners",
+  "org_name": "U.S. Dermatology Partners",
+  "category_id": "practice-major-forprofit-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": "U.S. Dermatology Partners",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use or Disclose PHI (Records Request Form 2020)",
+      "url": "https://www.usdermatologypartners.com/wp-content/uploads/2020/03/U.S.-Dermatology-Partners-Records-Request-Form-2020.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "patient_portal",
+      "name": "Patient portal (electronic delivery option referenced on form)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.usdermatologypartners.com/wp-content/uploads/2020/03/U.S.-Dermatology-Partners-Records-Request-Form-2020.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.usdermatologypartners.com/wp-content/uploads/2019/06/Authorization-to-Use-or-Disclose-PHI.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (older version)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "A single generic HIPAA authorization form with a 'Patient Access' checkbox among other third-party release purposes.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Blanket liability waiver bundled into authorization with no opt-out",
+      "No submission instructions — form lacks any address, fax number, or email for where to send the completed form",
+      "Typo 'IDS' instead of 'AIDS' uncorrected since 2017 revision"
+    ],
+    "bright_spots": [
+      "Concise single-page form fitting all necessary content without being cramped",
+      "Clear voluntariness statement: patient told signing is not required for treatment",
+      "Easy online findability with clearly labeled Patient Forms page"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Prominently available on a well-organized Patient Forms page with clear 'Medical Records Release' label; also found immediately via web search."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — the PDF has zero fillable fields requiring print-and-handwrite, and the form provides no submission instructions (no fax number, address, or email), making electronic submission unclear."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page layout with logical flow and clear section structure; minor issues include somewhat legalistic language and the absence of submission instructions."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the form by selecting the 'Patient Access' checkbox, but the form was designed for third-party release — patients must navigate confusing recipient fields and a structure not built for self-access."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Bundled liability waiver goes beyond what is required for patient access; fee language is vague and doesn't distinguish patient-access requests; no expiration date field for one-time disclosures; no response time commitment."
+    },
+    "overall": {
+      "score": 3.2,
+      "grade": "C",
+      "summary": "An easily findable but paper-era generic authorization form that accommodates patient self-access as an afterthought rather than designing around it, with notable gaps in submission guidance and compliance language."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:34:20.206Z"
+}

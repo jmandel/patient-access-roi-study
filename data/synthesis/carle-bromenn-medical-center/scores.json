@@ -1,0 +1,126 @@
+{
+  "org_id": "carle-bromenn-medical-center",
+  "org_name": "Carle BroMenn Medical Center",
+  "category_id": "ch-regional-nonprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Carle Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "CBMC Authorization to Release Protected Health Information",
+      "url": "https://carle.org/getmedia/b9d8f8e2-9787-4730-a801-c82ca5d8f1df/cbmc-release-of-information.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "mail",
+      "name": "Mail completed form to HIM at 1304 Franklin Ave., Normal, IL 61761",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "Drop off at HIM Department, (309) 268-5274",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "HIM Department phone (309) 268-5274",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://carle.org/getmedia/b9d8f8e2-9787-4730-a801-c82ca5d8f1df/cbmc-release-of-information.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (general, BroMenn campus)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://carle.org/getmedia/89408b8e-d7b3-475a-805e-cbc67197b137/carle-patient-release-form.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (general, Carle Health system-level)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://carle.org/getmedia/4bcb3033-c07d-4a38-9903-7e2c176c49ca/CBMC-Release-of-BH-Information.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (behavioral health, BroMenn campus)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic ROI authorization PDF, prints and fills it by hand, then mails or delivers it to the HIM department; records can be delivered via mail, in-person pickup, or MyCarle Account.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Purpose of disclosure required — potentially non-compliant with HIPAA Right of Access for patient self-requests",
+      "SSN (last 4 digits) field not marked as optional",
+      "Behavioral health form (form-3) requires witness signature for authorization and revocation, exceeding HIPAA requirements"
+    ],
+    "bright_spots": [
+      "MyCarle Account electronic delivery option for received records (30-day availability)",
+      "Explicit HIPAA Right of Access citation (CFR 164.524) on general forms",
+      "Granular record-type selection with 30+ categories across hospitalization and clinic columns",
+      "Easy direct PDF download with no login wall or bot blocking"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Forms were easy to find via basic web search with direct PDF download links; carle.org medical records page links to them — no login or complex navigation required."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — digitally-authored PDFs have zero fillable fields, requiring print-and-handwrite; submission is limited to physical mail or in-person delivery with no fax, email, or portal submission option."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Well-organized logical flow with granular record-type options, but cramped single-page layout with small font (~8-9pt legal text), limited write-in space, and dense legalese without a plain-language summary."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic ROI form but it was not designed for patient self-access; the 'To Send to / To Request from' framing, required purpose-of-disclosure field, and lack of a dedicated patient access pathway mean patients must figure out which parts apply to them."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Purpose-of-disclosure requirement may exceed HIPAA limits for patient access; SSN field not marked optional; vague fee disclosure; behavioral health form adds witness requirements beyond what HIPAA mandates — offset by explicit CFR 164.524 citation and proper treatment-conditioning disclaimer."
+    },
+    "overall": {
+      "score": 2.9,
+      "grade": "C",
+      "summary": "Carle BroMenn provides easily findable but functionally paper-based ROI forms that use a generic authorization design without differentiating patient self-access from third-party release, resulting in a middling patient experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:07:34.569Z"
+}

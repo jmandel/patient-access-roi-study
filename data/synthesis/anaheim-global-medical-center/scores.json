@@ -1,0 +1,108 @@
+{
+  "org_id": "anaheim-global-medical-center",
+  "org_name": "Anaheim Global Medical Center",
+  "category_id": "ch-regional-forprofit-west",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": "KPC Health",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "ChartRequest medical records portal",
+      "vendor": "ChartRequest",
+      "url": "https://app.chartrequest.com/m/KPC-locations",
+      "is_primary": true
+    },
+    {
+      "type": "in_person",
+      "name": "Hospital Privacy Office (in-person form pickup)",
+      "is_primary": false
+    },
+    {
+      "type": "phone",
+      "name": "Privacy Office phone request",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.anaheimglobalmedicalcenter.com/wp-content/uploads/2019/06/AGMC-NPP-2016-English.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Notice of Privacy Practices"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patients are directed to a third-party ChartRequest portal requiring account creation; no downloadable ROI form is published on the website.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 0,
+    "page_count": 9,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No downloadable ROI or authorization form available anywhere on the website",
+      "ChartRequest portal requires account creation before a patient can view or submit a records request",
+      "Notice of Privacy Practices is severely outdated (2016), predating the 21st Century Cures Act and recent HIPAA enforcement guidance",
+      "NPP references five internal forms obtainable only from the Privacy Office, none available online"
+    ],
+    "bright_spots": [
+      "ChartRequest portal provides an electronic submission pathway, avoiding physical-delivery-only requirements",
+      "NPP correctly cites 45 C.F.R. § 164.524 and § 164.528 for patient access rights",
+      "Breach notification commitment of 5 business days is faster than HIPAA's 60-day requirement"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 2,
+      "rationale": "Level 2: Difficult — requires persistence. No downloadable form exists; a patient must navigate to Patient & Family Resources, find the 'Access Medical Records' link, and be redirected to ChartRequest with no explanation. Web searches return results for the wrong hospital (AHMC vs. AGMC)."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Usable digitally with workarounds. The ChartRequest portal provides an electronic submission pathway, but requires account creation with a third-party vendor. No downloadable fillable form exists — the only PDF retrieved (NPP) has zero fillable fields."
+    },
+    "content_design": {
+      "score": 2,
+      "rationale": "Level 2: Confusing and poorly organized for a patient seeking records. No actual request form exists to evaluate; the NPP is dense legal prose with 100+ word sentences and a page numbering defect, and provides no actionable guidance on how to request records beyond 'contact the Privacy Office.'"
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought. No dedicated patient access form or pathway exists; the generic ChartRequest portal does not differentiate self-access from third-party release, and the NPP directs patients to obtain forms from the Privacy Office without making them available online."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Some requirements that go beyond what law requires. Mandatory account creation with a third-party vendor adds unnecessary friction to exercising the right of access. The NPP is outdated (2016) and makes no mention of electronic format rights or information blocking rules, though fee disclosure references 'reasonable cost' per law."
+    },
+    "overall": {
+      "score": 2.45,
+      "grade": "D",
+      "summary": "AGMC publishes no downloadable records request form and funnels patients through a third-party portal requiring account creation, resulting in a poor patient experience for exercising the right of access."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:08:07.280Z"
+}

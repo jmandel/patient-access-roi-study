@@ -1,0 +1,66 @@
+[
+  {
+    "org_id": "ao-fox-hospital",
+    "name": "A.O. Fox Hospital",
+    "category_id": "ch-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Oneonta",
+    "website": "https://www.bassett.org",
+    "bed_count": 67,
+    "notes": "Part of Bassett Healthcare Network (5 hospitals) serving multi-county central New York"
+  },
+  {
+    "org_id": "canton-potsdam-hospital",
+    "name": "Canton-Potsdam Hospital",
+    "category_id": "ch-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Potsdam",
+    "website": "https://www.rochesterregional.org",
+    "bed_count": 94,
+    "notes": "Part of St. Lawrence Health (3 hospitals), affiliate of Rochester Regional Health, serving northern New York"
+  },
+  {
+    "org_id": "guthrie-corning-hospital",
+    "name": "Guthrie Corning Hospital",
+    "category_id": "ch-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Corning",
+    "website": "https://www.guthrie.org",
+    "bed_count": 65,
+    "notes": "Part of Guthrie (6 hospitals) serving 13 counties across PA and NY"
+  },
+  {
+    "org_id": "saratoga-hospital",
+    "name": "Saratoga Hospital",
+    "category_id": "ch-regional-nonprofit-northeast",
+    "axes": {
+      "facility_type": "community_hospital",
+      "system_affiliation": "regional_system",
+      "ownership": "nonprofit",
+      "census_region": "northeast"
+    },
+    "state": "NY",
+    "city": "Saratoga Springs",
+    "website": "https://www.saratogahospital.org",
+    "bed_count": 171,
+    "notes": "Part of Albany Med Health System (4 hospitals) serving northeastern New York and western New England"
+  }
+]

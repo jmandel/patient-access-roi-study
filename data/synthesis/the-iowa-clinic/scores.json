@@ -1,0 +1,128 @@
+{
+  "org_id": "the-iowa-clinic",
+  "org_name": "The Iowa Clinic",
+  "category_id": "practice-independent-forprofit-midwest",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 2,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "online_portal",
+      "name": "Swellbox Health Record Wizard (patient self-request)",
+      "vendor": "Swellbox/Datavant",
+      "url": "https://www.swellbox.com/iowa-clinic-wizard.html",
+      "is_primary": true
+    },
+    {
+      "type": "online_portal",
+      "name": "Formstack imaging records request form",
+      "vendor": "Formstack",
+      "url": "https://www.iowaclinic.com/for-patients/payment-billing/medical-records/",
+      "is_primary": false
+    },
+    {
+      "type": "online_portal",
+      "name": "SmartRequest portal (third-party organizations)",
+      "vendor": "SmartRequest",
+      "url": "https://smartrequest.com",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax to Iowa Clinic Support Services (515-875-9600)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to The Iowa Clinic Support Services, 6800 Lake Dr., Ste 270, West Des Moines, IA 50266",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://web.archive.org/web/2015/http://www.iowaclinic.com/static/docs/Authorization_For_Release_From.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (general-purpose release, archived ~2015)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://web.archive.org/web/2016/http://www.iowaclinic.com/static/docs/medical-records-release-form.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (older version dated October 2012, with dedicated sensitive-information page)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "The Iowa Clinic routes patient self-requests through a Swellbox/Datavant online wizard, with a separate SmartRequest portal for third-party organizations; no downloadable PDF form is currently offered.",
+    "primary_pathway_type": "online_portal",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 15,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "compliant",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Historical PDF forms request Social Security Number, which is unnecessary for records release",
+      "Blanket liability waiver for electronic transmission shifts all risk of misdirected fax/email to the patient"
+    ],
+    "bright_spots": [
+      "Fully transitioned to online portal-based workflow via Swellbox/Datavant, eliminating print-and-fax cycle",
+      "Website clearly differentiates patient self-requests from third-party release with separate platforms",
+      "Historical form includes 'Request by patient' as an explicit purpose option acknowledging patient-initiated access",
+      "Concise single-page form design (form-1) minimizes patient burden"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Easy to find with basic navigation — the medical records page is accessible under For Patients > Payment & Billing and clearly directs patients to the Swellbox request wizard, though no downloadable PDF forms exist on the current site."
+    },
+    "technical_accessibility": {
+      "score": 4,
+      "rationale": "Level 4: Mostly digital workflow — the current Swellbox online portal provides a fully digital submission path, but the only downloadable form documents (historical PDFs) have zero fillable fields and would require print-and-handwrite; fax was available as electronic submission."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate but with notable problems — the historical form-1 has a logical single-page layout with reasonable record-type options, but language is semi-legal, there are no explicit instructions, and SSN is unnecessarily collected."
+    },
+    "patient_centeredness": {
+      "score": 4,
+      "rationale": "Level 4: Patient access is clearly accommodated — the current website routes patient self-requests to a dedicated Swellbox wizard separate from third-party channels, though the historical PDF forms were generic ROI authorization forms not designed specifically for patient access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Minor ambiguities but nothing materially impeding — cost-based fee language is compliant, no notarization required, revocation rights stated; the SSN collection and blanket liability waiver are the only notable concerns."
+    },
+    "overall": {
+      "score": 3.85,
+      "grade": "B",
+      "summary": "The Iowa Clinic earns a B by fully transitioning to online portal-based records requests with clear patient/third-party pathway differentiation, though the historical PDF forms lacked fillable fields, collected SSN unnecessarily, and used semi-legal language."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:31:11.494Z"
+}

@@ -1,0 +1,110 @@
+{
+  "org_id": "troy-regional-medical-center",
+  "org_name": "Troy Regional Medical Center",
+  "category_id": "ch-independent-government-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Release of Information/PHI form (legacy site)",
+      "url": "http://trmc.fasthealth.com/docs/Release_of_Information_-_Feb._2015.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission (number not provided on form)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail submission (address not provided on form)",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person pickup (listed as delivery method on form)",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "http://trmc.fasthealth.com/docs/Release_of_Information_-_Feb._2015.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "ROI authorization form (generic third-party release)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "A single generic third-party authorization form with a 'Self' checkbox, found only on a defunct legacy website and requiring print-and-handwrite completion.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 18,
+    "page_count": 1,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "All fields MUST be completed or authorization is invalid — exceeds HIPAA requirements for valid authorization",
+      "Broad liability waiver bundled into authorization — patients must discharge facility from all liabilities as condition of signing",
+      "No submission instructions on the form — no address, fax number, or guidance on where to send the completed form",
+      "Form only available on defunct legacy website — current site has no medical records page",
+      "Form dated February 2015 — over 10 years old with no updates",
+      "Anti-conditioning language contradicts itself — states conditioning is prohibited then notes it may result in denial of care"
+    ],
+    "bright_spots": []
+  },
+  "scores": {
+    "findability": {
+      "score": 1,
+      "rationale": "Level 1: Effectively unfindable online — the form exists only on a defunct legacy website (trmc.fasthealth.com) with no link from the current site, which itself has no medical records page and returns 502 errors on its Patient Info page."
+    },
+    "technical_accessibility": {
+      "score": 1,
+      "rationale": "Level 1: No usable digital form exists — the PDF is an image-only scan with zero fillable fields, no text layer, and no embedded fonts; it must be printed and handwritten with no digital workflow whatsoever."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate single-page layout with logical field flow and reasonable record type granularity, but notable problems with dense legal paragraphs in small type, no section headers in the legal portion, no instructions, and no submission guidance."
+    },
+    "patient_centeredness": {
+      "score": 2,
+      "rationale": "Level 2: Patient self-access is an afterthought — the form is a generic third-party authorization with a 'Self' checkbox alongside Attorney and Physician; the liability waiver, re-disclosure warnings, and legal framing are oriented toward third-party release and are conceptually mismatched for patient access."
+    },
+    "compliance": {
+      "score": 2,
+      "rationale": "Level 2: Requirements that likely exceed legal limits — blanket 'all fields must be completed or authorization is invalid' overreach, mandatory liability waiver bundled into authorization, witness signature line, and self-contradicting anti-conditioning language create illegitimate barriers."
+    },
+    "overall": {
+      "score": 1.75,
+      "grade": "D",
+      "summary": "Troy Regional Medical Center provides one of the weakest patient access experiences: an effectively unfindable, decade-old, image-only scanned generic authorization form on a defunct legacy website, with multiple compliance red flags and no digital workflow."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:11:01.227Z"
+}

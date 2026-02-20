@@ -1,0 +1,142 @@
+{
+  "org_id": "blessing-hospital",
+  "org_name": "Blessing Hospital",
+  "category_id": "ch-regional-nonprofit-midwest",
+  "primary_form": "form-4.pdf",
+  "total_forms_found": 5,
+  "parent_system": "Blessing Health System",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "BHS Authorization for Release of Medical Information",
+      "url": "https://www.blessinghealth.org/sites/default/files/users/user15/BH_Authorize_Release_Of_Medical_Records_9-2025.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "online_portal",
+      "name": "Online records request tool (driver's license identity verification)",
+      "url": "https://www.blessinghealth.org/medicalrecords",
+      "is_primary": false
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to HIM (217-214-5890)",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to Blessing Health System c/o HIM, P.O. Box 7005, Quincy, IL 62301",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.blessinghealth.org/sites/default/files/users/user15/BH_Authorize_Release_Of_Medical_Records_4-2023.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (April 2023, superseded)"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.blessinghealth.org/sites/default/files/users/user15/BH_Authorize_Release_Of_Medical_Records_4-23.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (April 2023 variant, superseded)"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://blessinghealth.org/sites/default/files/BH_Authorize_Release_Of_Medical_Records.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (revised 8/2015, superseded)"
+    },
+    {
+      "filename": "form-4.pdf",
+      "source_url": "https://www.blessinghealth.org/sites/default/files/users/user15/BH_Authorize_Release_Of_Medical_Records_9-2025.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form (September 2025, current)"
+    },
+    {
+      "filename": "form-5.pdf",
+      "source_url": "https://www.blessinghealth.org/sites/default/files/users/user15/BH_Authorize_Release_Of_Medical_Records_Spanish_9-2025.pdf",
+      "scope": "system",
+      "language": "es",
+      "document_type": "ROI authorization form (September 2025, current, Spanish)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "A generic HIPAA authorization form for all releases of information, with 'Personal reasons' as one of several purpose options; no dedicated patient self-access pathway.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 20,
+    "page_count": 2,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": true,
+    "languages_available": ["en", "es"],
+    "consent_bundling": false,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Fee not disclosed on the form despite $6.50 fee referenced on the website",
+      "Mandatory date range requirement ('MUST specify date range') may prevent comprehensive record requests",
+      "Multiple outdated form versions remain accessible at old URLs without deprecation notices"
+    ],
+    "bright_spots": [
+      "Spanish language version linked alongside English on the Medical Records page",
+      "Dedicated page 2 with field-by-field completion guidelines and plain-language examples",
+      "Witness signature requirement removed in September 2025 revision",
+      "Email offered as a record delivery option alongside pickup, mail, and fax",
+      "Online records request tool available as alternative to PDF form"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Form is directly linked from a well-organized Medical Records page and found immediately via web search, but multiple outdated versions remain accessible at old URLs creating version confusion risk."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Non-fillable PDF requires printing and handwriting, but fax submission is available and the org also offers an online records request tool as an alternative digital pathway."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized 2-page form with logical flow, 15 record-type checkboxes, and a dedicated completion guidelines page with plain-language examples; minor issues include dense legal prose in the authorization text and an ambiguous authorization sentence."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: Generic HIPAA authorization form with bidirectional FROM/TO fields designed for third-party release; a patient can use it by selecting 'Personal reasons' but must navigate fields not designed for self-access and the form does not reference HIPAA Right of Access."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: Witness requirement removed in current version, voluntariness and revocation rights clearly stated, no notarization required; minor gaps include no fee disclosure on the form and a mandatory date range that could limit comprehensive requests."
+    },
+    "overall": {
+      "score": 3.5,
+      "grade": "B",
+      "summary": "Blessing Hospital provides an easily findable, well-organized ROI form in English and Spanish with helpful completion guidelines, but its generic authorization design and non-fillable PDF format limit patient-centeredness and digital accessibility."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:07:17.315Z"
+}

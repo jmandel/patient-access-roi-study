@@ -1,0 +1,117 @@
+{
+  "org_id": "adventhealth-central-texas",
+  "org_name": "AdventHealth Central Texas",
+  "category_id": "ch-major-nonprofit-south",
+  "primary_form": "form-2.pdf",
+  "total_forms_found": 2,
+  "parent_system": "AdventHealth",
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Facility-specific Request For Access And Authorization (AHCT 616)",
+      "is_primary": true,
+      "url": "https://www.adventhealth.com/sites/default/files/assets/AH_CT_Release_of_Information__To_Send_or_Release_-1.pdf"
+    },
+    {
+      "type": "pdf_form",
+      "name": "System-wide Authorization for Release of Patient Health Information (ADV-800003A)",
+      "is_primary": false,
+      "url": "https://www.adventhealth.com/sites/default/files/assets/ADV-8000003A_Authorization_for_Release_of_Patient_Health_Information.pdf"
+    },
+    {
+      "type": "fax",
+      "name": "Fax to HIM Department",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.adventhealth.com/sites/default/files/assets/ADV-8000003A_Authorization_for_Release_of_Patient_Health_Information.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.adventhealth.com/sites/default/files/assets/AH_CT_Release_of_Information__To_Send_or_Release_-1.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Patient access and ROI authorization form"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": true,
+    "primary_pathway_description": "Facility-specific PDF form with an explicit patient access checkbox, submitted via fax or mail to the local HIM department.",
+    "primary_pathway_type": "dedicated_patient_form",
+    "differentiates_self_vs_third_party": true,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 22,
+    "page_count": 2,
+    "has_instructions": false,
+    "clear_layout": true,
+    "plain_language": true,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": true,
+    "includes_patient_rights": true
+  },
+  "barriers": {
+    "requires_notarization_or_witness": true,
+    "requires_in_person": false,
+    "fee_disclosure": "unclear",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Witness signature required for all requests — HIPAA does not require this for patient access",
+      "90-day maximum authorization expiration conflates patient access with third-party authorization",
+      "System-wide form cites Illinois law at a Texas facility",
+      "All-or-nothing sensitive information disclosure on facility form — no granular opt-out for mental health, substance abuse, or HIV/AIDS"
+    ],
+    "bright_spots": [
+      "Explicit patient access checkbox as the first option on the facility form",
+      "Broad catch-all category for 'any other personally identifiable information used to make medical decisions'",
+      "Local facility phone and fax numbers on facility form",
+      "Secure email delivery option on system-wide form",
+      "Non-conditioning statement present on both forms"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 4,
+      "rationale": "Level 4: Both forms found on first web search with no barriers; direct CDN links without login walls or bot blocking, though no contextual landing page guides patients to the correct form."
+    },
+    "technical_accessibility": {
+      "score": 2,
+      "rationale": "Level 2: Primarily a paper workflow — both forms have zero fillable fields requiring print-and-handwrite completion, though fax submission is available, preventing a score of 1."
+    },
+    "content_design": {
+      "score": 3,
+      "rationale": "Level 3: Adequate 2-page form with logical first-page organization, but page 2 is a dense legal text block without visual separation; no standalone instructions; two overlapping forms create confusion."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: The facility form includes an explicit patient access checkbox and differentiates self-access from third-party release, but conflates patient access with authorization, requires a witness, and the two-form landscape means patients must figure out which applies."
+    },
+    "compliance": {
+      "score": 3,
+      "rationale": "Level 3: Witness requirement and 90-day authorization cap go beyond HIPAA requirements for patient access; system form cites wrong state law; non-conditioning statement and revocation rights are properly included."
+    },
+    "overall": {
+      "score": 2.9,
+      "grade": "C",
+      "summary": "AdventHealth Central Texas offers a findable facility-specific form with genuine patient access language, but zero fillable fields, a witness requirement, and a confusing two-form landscape undermine the experience."
+    }
+  },
+  "synthesized_at": "2026-02-20T00:58:54.672Z"
+}

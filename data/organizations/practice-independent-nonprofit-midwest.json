@@ -1,0 +1,50 @@
+[
+  {
+    "org_id": "prevea-health",
+    "name": "Prevea Health",
+    "category_id": "practice-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "WI",
+    "city": "Green Bay",
+    "website": "https://www.prevea.com",
+    "bed_count": null,
+    "notes": "Physician-owned, 501(c)(3) nonprofit multispecialty group practice with 200+ physicians across 60+ specialties and 50+ locations. Partners with HSHS hospitals but is independently owned and governed."
+  },
+  {
+    "org_id": "ghc-south-central-wisconsin",
+    "name": "Group Health Cooperative of South Central Wisconsin",
+    "category_id": "practice-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "WI",
+    "city": "Madison",
+    "website": "https://ghcscw.com",
+    "bed_count": null,
+    "notes": "Member-owned nonprofit cooperative (501(c)(3)) operating multiple clinics in the Madison area with employed physicians. Staff-model HMO founded in 1972 serving 70,000+ members."
+  },
+  {
+    "org_id": "olmsted-medical-center",
+    "name": "Olmsted Medical Center",
+    "category_id": "practice-independent-nonprofit-midwest",
+    "axes": {
+      "facility_type": "physician_practice",
+      "system_affiliation": "independent",
+      "ownership": "nonprofit",
+      "census_region": "midwest"
+    },
+    "state": "MN",
+    "city": "Rochester",
+    "website": "https://www.olmmed.org",
+    "bed_count": 61,
+    "notes": "Independent, physician-led 501(c)(3) nonprofit multispecialty group practice with 290+ clinicians across 35+ specialties and 25+ locations in southeastern Minnesota. Also operates a 61-bed community hospital."
+  }
+]

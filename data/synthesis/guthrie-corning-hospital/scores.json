@@ -1,0 +1,133 @@
+{
+  "org_id": "guthrie-corning-hospital",
+  "org_name": "Guthrie Corning Hospital",
+  "category_id": "ch-regional-nonprofit-northeast",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 3,
+  "parent_system": "Guthrie Clinic",
+  "uses_system_forms": true,
+  "request_pathways": [
+    {
+      "type": "pdf_form",
+      "name": "Authorization to Use or Disclose Health Information",
+      "url": "https://www.guthrie.org/sites/default/files/Medical-Record-Release-Form-March21.pdf",
+      "is_primary": true
+    },
+    {
+      "type": "fax",
+      "name": "Fax submission to Robert Packer Hospital HIM",
+      "is_primary": false
+    },
+    {
+      "type": "mail",
+      "name": "Mail to One Guthrie Square, Sayre PA 18840",
+      "is_primary": false
+    },
+    {
+      "type": "in_person",
+      "name": "In-person delivery (no onsite support at Corning; Robert Packer Hospital office)",
+      "is_primary": false
+    },
+    {
+      "type": "patient_portal",
+      "name": "eGuthrie/MyChart (continuation of care requests only)",
+      "vendor": "Epic MyChart",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.guthrie.org/sites/default/files/Medical-Record-Release-Form-March21.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "ROI authorization form"
+    },
+    {
+      "filename": "form-2.pdf",
+      "source_url": "https://www.guthrie.org/sites/default/files/Medical%20Record%20Release%20Form%20for%20Family%20Access%20-%20March%202021.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Family/friends access authorization form"
+    },
+    {
+      "filename": "form-3.pdf",
+      "source_url": "https://www.guthrie.org/sites/default/files/Medical%20Records%20Authorization%20Instructions%20-%20March2022.pdf",
+      "scope": "system",
+      "language": "en",
+      "document_type": "Form instructions and fee schedule"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "easy",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "Patient downloads a generic system-wide HIPAA authorization PDF, prints and handwrites it, then faxes or mails it to Robert Packer Hospital HIM department.",
+    "primary_pathway_type": "generic_hipaa_auth",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": true,
+    "requires_physical_delivery": false
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 25,
+    "page_count": 1,
+    "has_instructions": true,
+    "clear_layout": true,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": ["en"],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": false,
+    "fee_disclosure": "compliant",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "Sensitive information (drug/alcohol, HIV, mental health) defaults to release via opt-out rather than opt-in",
+      "Requests last 4 digits of SSN, which is unnecessary for patient access",
+      "No onsite medical records support at Corning Hospital; patients directed to Robert Packer Hospital in Sayre, PA"
+    ],
+    "bright_spots": [
+      "Transparent HIPAA-compliant fee: $6.50 flat rate for personal-use electronic records",
+      "No charge for records sent to another healthcare provider",
+      "Three format options including electronic on-line delivery",
+      "Granular record type selection with radiology modality breakdown",
+      "Single-page form keeps patient burden low"
+    ]
+  },
+  "scores": {
+    "findability": {
+      "score": 5,
+      "rationale": "Level 5: Forms were prominently available via basic web search and directly downloadable from a well-organized central medical records page with no barriers."
+    },
+    "technical_accessibility": {
+      "score": 3,
+      "rationale": "Level 3: Form is a flat PDF with zero fillable fields requiring print-and-handwrite workflow, but fax submission is available as an electronic channel; usable digitally only with third-party annotation workarounds."
+    },
+    "content_design": {
+      "score": 4,
+      "rationale": "Level 4: Well-organized single-page form with numbered sections and logical flow; minor issues with dense layout, legalistic language, and critical submission info relegated to a separate document."
+    },
+    "patient_centeredness": {
+      "score": 3,
+      "rationale": "Level 3: A patient can use the generic authorization form by selecting 'Personal Use' as purpose, but the form was not designed for patient self-access and does not reference individual access rights under HIPAA."
+    },
+    "compliance": {
+      "score": 4,
+      "rationale": "Level 4: No notarization required, HIPAA-compliant fee structure, standard 12-month expiration, clear voluntary-nature language; minor issues include unnecessary SSN collection and opt-out default for sensitive information."
+    },
+    "overall": {
+      "score": 3.65,
+      "grade": "B",
+      "summary": "Guthrie Corning Hospital offers an easily findable, compliant records request process with transparent fees, but the non-fillable generic authorization form and lack of a dedicated patient access pathway place it in the mid-range of organizations studied."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:06:33.008Z"
+}

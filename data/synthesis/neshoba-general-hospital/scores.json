@@ -1,0 +1,97 @@
+{
+  "org_id": "neshoba-general-hospital",
+  "org_name": "Neshoba General Hospital",
+  "category_id": "ch-independent-government-south",
+  "primary_form": "form-1.pdf",
+  "total_forms_found": 1,
+  "parent_system": null,
+  "uses_system_forms": false,
+  "request_pathways": [
+    {
+      "type": "phone",
+      "name": "Phone request to hospital",
+      "is_primary": true
+    },
+    {
+      "type": "in_person",
+      "name": "In-person visit to hospital",
+      "is_primary": false
+    }
+  ],
+  "forms": [
+    {
+      "filename": "form-1.pdf",
+      "source_url": "https://www.neshobageneral.com/documents/Employer-Authorization-Form_Fillable.pdf",
+      "scope": "facility",
+      "language": "en",
+      "document_type": "Employer authorization form for occupational health services (not an ROI form)"
+    }
+  ],
+  "retrieval": {
+    "difficulty": "hard",
+    "bot_blocking_encountered": false,
+    "browser_fallback_needed": false
+  },
+  "access_pathway": {
+    "has_individual_access_pathway": false,
+    "primary_pathway_description": "No online form or process exists; patients must call or visit in person to initiate a records request.",
+    "primary_pathway_type": "phone_or_in_person_only",
+    "differentiates_self_vs_third_party": false,
+    "online_submission_available": false,
+    "requires_physical_delivery": true
+  },
+  "form_quality": {
+    "fillable_fields": false,
+    "field_count_estimate": 0,
+    "page_count": 0,
+    "has_instructions": false,
+    "clear_layout": false,
+    "plain_language": false,
+    "multilingual": false,
+    "languages_available": [],
+    "consent_bundling": false,
+    "includes_patient_rights": false
+  },
+  "barriers": {
+    "requires_notarization_or_witness": false,
+    "requires_in_person": true,
+    "fee_disclosure": "none_mentioned",
+    "response_time_stated": false,
+    "response_time_value": null,
+    "red_flags": [
+      "No ROI form published online after exhaustive search",
+      "No Medical Records or HIM department page on website",
+      "No HIPAA Notice of Privacy Practices published online",
+      "Patients must call or visit in person just to learn how to request records"
+    ],
+    "bright_spots": []
+  },
+  "scores": {
+    "findability": {
+      "score": 1,
+      "rationale": "Level 1: Effectively unfindable online — nine search strategies including web queries, full site navigation, URL guessing, Wayback Machine, and third-party vendor checks all failed to locate any ROI form."
+    },
+    "technical_accessibility": {
+      "score": 1,
+      "rationale": "Level 1: No usable digital form exists for patient records access; the only form found is an unrelated employer authorization document."
+    },
+    "content_design": {
+      "score": 1,
+      "rationale": "Level 1: No patient-facing ROI form exists to evaluate; a patient cannot complete any records request process without outside help (phone call or in-person visit)."
+    },
+    "patient_centeredness": {
+      "score": 1,
+      "rationale": "Level 1: No patient self-access pathway exists online; the website provides no information, forms, or guidance for patients seeking their own health records."
+    },
+    "compliance": {
+      "score": 2,
+      "rationale": "Level 2: While HIPAA does not explicitly require online form publication, the complete absence of any digital pathway, medical records page, or published Notice of Privacy Practices creates illegitimate practical barriers to patient access rights."
+    },
+    "overall": {
+      "score": 1.2,
+      "grade": "F",
+      "summary": "Neshoba General Hospital provides no online pathway for patients to request their health records — no form, no instructions, and no medical records department page — earning the lowest possible assessment."
+    }
+  },
+  "synthesized_at": "2026-02-20T01:10:14.285Z"
+}
