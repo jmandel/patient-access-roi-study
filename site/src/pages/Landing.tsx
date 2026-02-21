@@ -72,6 +72,6 @@ const styles: Record<string, React.CSSProperties> = {
   title: { fontSize: 26, fontWeight: 800, lineHeight: 1.2, maxWidth: 700, margin: "0 auto" },
   subtitle: { fontSize: 15, color: "#4b5563", maxWidth: 640, margin: "8px auto 0", lineHeight: 1.5 },
   overview: { margin: "16px 0 24px", padding: "16px 20px", background: "#fff", borderRadius: 8, border: "1px solid #e5e7eb" },
-  statRow: { display: "flex", justifyContent: "space-around", marginBottom: 12 },
+  statRow: { display: "flex", justifyContent: "space-around", marginBottom: 12, flexWrap: "wrap", gap: 8 },
   gradeBar: { display: "flex", borderRadius: 6, overflow: "hidden" },
 };

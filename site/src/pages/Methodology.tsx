@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import type { OrgData } from "../types";
+import { useIsMobile } from "../hooks";
 
 export function Methodology({ orgs }: { orgs?: OrgData[] }) {
+  const isMobile = useIsMobile();
   // Compute axis distributions from actual data
   const axisCounts: Record<string, Record<string, number>> = {};
   const totalOrgs = orgs?.length ?? 0;
@@ -59,7 +61,7 @@ export function Methodology({ orgs }: { orgs?: OrgData[] }) {
         </p>
 
         <h3 style={h3Style}>Sample Distribution by Axis</h3>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, margin: "16px 0" }}>
+        <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 16, margin: "16px 0" }}>
           {Object.entries(axisCounts).map(([axis, counts]) => {
             const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
             const max = Math.max(...sorted.map(([, n]) => n));

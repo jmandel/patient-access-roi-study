@@ -3,8 +3,10 @@ import type { OrgData } from "../types";
 import { DIMENSIONS, GRADE_COLORS } from "../types";
 import { GradeBadge, BoolIcon, PathwayBadge } from "../components/Charts";
 import { marked } from "marked";
+import { useIsMobile } from "../hooks";
 
 export function OrgDetail({ orgs, orgId }: { orgs: OrgData[]; orgId: string }) {
+  const isMobile = useIsMobile();
   const org = orgs.find((o) => o.org_id === orgId);
   const [narrative, setNarrative] = useState<string>("");
   const [notes, setNotes] = useState<string>("");
@@ -46,7 +48,7 @@ export function OrgDetail({ orgs, orgId }: { orgs: OrgData[]; orgId: string }) {
       <a href="#/explorer" style={{ fontSize: 13, color: "#6b7280" }}>← Back to Explorer</a>
 
       {/* Header */}
-      <div style={styles.header}>
+      <div style={isMobile ? styles.headerMobile : styles.header}>
         <div style={{ flex: 1 }}>
           <h1 style={styles.orgName}>{org.org_name}</h1>
           <div style={styles.location}>
@@ -257,6 +259,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 const styles: Record<string, React.CSSProperties> = {
   header: { display: "flex", gap: 20, alignItems: "flex-start", padding: "20px 0", borderBottom: "1px solid #e5e7eb" },
+  headerMobile: { display: "flex", flexDirection: "column", gap: 12, padding: "20px 0", borderBottom: "1px solid #e5e7eb" },
   orgName: { fontSize: 26, fontWeight: 800 },
   location: { fontSize: 14, color: "#4b5563", marginTop: 4 },
   tags: { display: "flex", gap: 6, marginTop: 8, flexWrap: "wrap" },
@@ -273,7 +276,7 @@ const styles: Record<string, React.CSSProperties> = {
   rationale: { fontSize: 12, color: "#4b5563", lineHeight: 1.4 },
   summaryBox: { marginTop: 12, padding: 12, background: "#f0f9ff", borderRadius: 8, fontSize: 14, lineHeight: 1.5 },
   boolGrid: { display: "flex", gap: 8, flexWrap: "wrap", margin: "8px 0" },
-  pathwayRow: { display: "flex", gap: 8, alignItems: "center", padding: "4px 0", fontSize: 13 },
+  pathwayRow: { display: "flex", gap: 8, alignItems: "center", padding: "4px 0", fontSize: 13, flexWrap: "wrap" },
   pathwayType: { fontWeight: 600, textTransform: "capitalize" },
   primaryBadge: { fontSize: 10, padding: "1px 6px", background: "#dbeafe", color: "#2563eb", borderRadius: 3, fontWeight: 600 },
   qualityGrid: { display: "flex", gap: 20, marginBottom: 12 },
@@ -287,6 +290,6 @@ const styles: Record<string, React.CSSProperties> = {
   brightSpot: { padding: "6px 10px", background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 6, fontSize: 12, marginBottom: 4, lineHeight: 1.4 },
   markdown: { fontFamily: "inherit", fontSize: 13, lineHeight: 1.7, wordBreak: "break-word", background: "#fff", padding: 16, borderRadius: 8, border: "1px solid #e5e7eb" },
   evalDetail: { marginBottom: 8 },
-  evalSummary: { cursor: "pointer", fontSize: 14, fontWeight: 600, padding: "8px 0", display: "flex", alignItems: "center", gap: 8 },
+  evalSummary: { cursor: "pointer", fontSize: 14, fontWeight: 600, padding: "8px 0", display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" },
   evalPdfLink: { fontSize: 11, fontWeight: 400, color: "#2563eb", marginLeft: "auto" },
 };

@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import type { OrgData } from "../types";
 import { GRADE_COLORS, DIMENSIONS } from "../types";
 import { GradeBadge, ScoreBar, PathwayBadge, Histogram } from "../components/Charts";
+import { useIsMobile } from "../hooks";
 
 type SortKey = "org_name" | "state" | "grade" | "overall" | "findability" | "technical_accessibility" | "content_design" | "patient_centeredness" | "compliance" | "pathway" | "forms";
 
@@ -45,9 +46,11 @@ function getAxisValues(orgs: OrgData[]): Record<string, string[]> {
 }
 
 export function Explorer({ orgs }: { orgs: OrgData[] }) {
+  const isMobile = useIsMobile();
   const axisValues = useMemo(() => getAxisValues(orgs), [orgs]);
   const [sortKey, setSortKey] = useState<SortKey>("overall");
   const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [filters, setFilters] = useState<Filters>({
     search: "",
     grades: new Set(),
@@ -144,10 +147,27 @@ export function Explorer({ orgs }: { orgs: OrgData[] }) {
     </th>
   );
 
+  const activeFilterCount = (filters.grades.size || 0)
+    + (filters.pathwayTypes.size || 0)
+    + (filters.difficulty.size || 0)
+    + Object.values(filters.axisFilters).reduce((a, s) => a + s.size, 0)
+    + Object.values(filters.booleans).filter((v) => v != null).length
+    + (filters.search ? 1 : 0);
+
   return (
-    <div style={{ display: "flex", gap: 20 }}>
+    <div style={isMobile ? { display: "flex", flexDirection: "column", gap: 12 } : { display: "flex", gap: 20 }}>
+      {/* Mobile filter toggle */}
+      {isMobile && (
+        <button
+          onClick={() => setFiltersOpen(!filtersOpen)}
+          style={styles.filterToggle}
+        >
+          {filtersOpen ? "Hide Filters" : "Filters"}{activeFilterCount > 0 ? ` (${activeFilterCount})` : ""} {filtersOpen ? "▲" : "▼"}
+        </button>
+      )}
+
       {/* Sidebar */}
-      <aside style={styles.sidebar}>
+      <aside style={isMobile ? { ...styles.sidebar, ...styles.sidebarMobile, display: filtersOpen ? "block" : "none" } : styles.sidebar}>
         <div style={styles.filterSection}>
           <input
             type="text"
@@ -248,7 +268,33 @@ export function Explorer({ orgs }: { orgs: OrgData[] }) {
           </span>
         </div>
 
-        {/* Table */}
+        {/* Table / Card list */}
+        {isMobile ? (
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            {sorted.map((o) => (
+              <div
+                key={o.org_id}
+                onClick={() => (window.location.hash = `/explorer/${o.org_id}`)}
+                style={styles.card}
+              >
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontWeight: 600, fontSize: 14 }}>{o.org_name}</div>
+                    <div style={{ fontSize: 12, color: "#6b7280" }}>{o.city}, {o.state}</div>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", gap: 6, flexShrink: 0 }}>
+                    <span style={{ fontSize: 15, fontWeight: 700 }}>{o.scores?.overall?.score?.toFixed(1)}</span>
+                    <GradeBadge grade={o.scores?.overall?.grade} size="sm" />
+                  </div>
+                </div>
+                <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 6 }}>
+                  <PathwayBadge type={o.access_pathway?.primary_pathway_type} />
+                  <div style={{ flex: 1 }}><ScoreBar scores={o.scores} /></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
         <div style={{ overflowX: "auto" }}>
           <table style={styles.table}>
             <thead>
@@ -292,6 +338,7 @@ export function Explorer({ orgs }: { orgs: OrgData[] }) {
             </tbody>
           </table>
         </div>
+        )}
       </div>
     </div>
   );
@@ -329,6 +376,29 @@ const styles: Record<string, React.CSSProperties> = {
     overflowY: "auto",
     fontSize: 12,
   },
+  sidebarMobile: {
+    width: "100%",
+    maxHeight: "none",
+    position: "static" as const,
+  },
+  filterToggle: {
+    width: "100%",
+    padding: "10px 16px",
+    background: "#fff",
+    border: "1px solid #e5e7eb",
+    borderRadius: 8,
+    fontSize: 14,
+    fontWeight: 600,
+    cursor: "pointer",
+    color: "#374151",
+  },
+  card: {
+    padding: 12,
+    background: "#fff",
+    border: "1px solid #e5e7eb",
+    borderRadius: 8,
+    cursor: "pointer",
+  },
   filterSection: { marginBottom: 16 },
   filterTitle: { fontSize: 11, fontWeight: 700, color: "#6b7280", textTransform: "uppercase", marginBottom: 6 },
   searchInput: {
@@ -352,6 +422,7 @@ const styles: Record<string, React.CSSProperties> = {
     display: "flex",
     gap: 16,
     alignItems: "center",
+    flexWrap: "wrap",
     padding: "8px 12px",
     background: "#fff",
     borderRadius: 8,
